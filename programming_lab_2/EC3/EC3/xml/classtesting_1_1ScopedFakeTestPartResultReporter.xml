@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1ScopedFakeTestPartResultReporter" kind="class" prot="public">
+    <compoundname>testing::ScopedFakeTestPartResultReporter</compoundname>
+    <basecompoundref refid="classtesting_1_1TestPartResultReporterInterface" prot="public" virt="non-virtual">testing::TestPartResultReporterInterface</basecompoundref>
+    <includes refid="gtest-spi_8h" local="no">gtest-spi.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97" prot="public" static="no">
+        <name>InterceptMode</name>
+        <enumvalue id="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97f6654d2e51553256f9253ce7c8f8a481" prot="public">
+          <name>INTERCEPT_ONLY_CURRENT_THREAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b9788d618924c3eff63e27f8b9c8fa14bb5" prot="public">
+          <name>INTERCEPT_ALL_THREADS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1ScopedFakeTestPartResultReporter_1cc17b9581670a36584c4e17facc3a1cf" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97" kindref="member">InterceptMode</ref></type>
+        <definition>const InterceptMode testing::ScopedFakeTestPartResultReporter::intercept_mode_</definition>
+        <argsstring></argsstring>
+        <name>intercept_mode_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="82" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1ScopedFakeTestPartResultReporter_17acda567fdc075536d76939831f85c50" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1TestPartResultReporterInterface" kindref="compound">TestPartResultReporterInterface</ref> *</type>
+        <definition>TestPartResultReporterInterface* testing::ScopedFakeTestPartResultReporter::old_reporter_</definition>
+        <argsstring></argsstring>
+        <name>old_reporter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="83" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1ScopedFakeTestPartResultReporter_1a1211409edea858087b405d93bce8e5a" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *const</type>
+        <definition>TestPartResultArray* const testing::ScopedFakeTestPartResultReporter::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="84" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_1e054e2cdbcd8bd2cff2797308687c75a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type><ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_1b883d7984655ec46b8c17544ad0be7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(InterceptMode intercept_mode, TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type><ref refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97" kindref="member">InterceptMode</ref></type>
+          <declname>intercept_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_1f5c1f85005f6a19993a434c5c9b870eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::ScopedFakeTestPartResultReporter::~ScopedFakeTestPartResultReporter</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedFakeTestPartResultReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_10a1300ac1cff91171aa65ac5470efd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::ScopedFakeTestPartResultReporter::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplements refid="classtesting_1_1TestPartResultReporterInterface_1e5912af5e9bee0ae07acfc83b00a603c">ReportTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_174c048638a2df6d5dbfef4e39542d0db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::ScopedFakeTestPartResultReporter::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1ScopedFakeTestPartResultReporter_1aa895e8ca1ee09ecc6da773366ebc001" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(ScopedFakeTestPartResultReporter)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="181">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+      <node id="180">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1ScopedFakeTestPartResultReporter"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="183">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+      <node id="182">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1ScopedFakeTestPartResultReporter"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+        <childnode refid="183" relation="usage">
+          <edgelabel>old_reporter_</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>result_</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>testing::TestPartResultArray</label>
+        <link refid="classtesting_1_1TestPartResultArray"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="51" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1aa895e8ca1ee09ecc6da773366ebc001" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_174c048638a2df6d5dbfef4e39542d0db" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>Init</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b9788d618924c3eff63e27f8b9c8fa14bb5" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ALL_THREADS</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1cc17b9581670a36584c4e17facc3a1cf" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>intercept_mode_</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97f6654d2e51553256f9253ce7c8f8a481" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ONLY_CURRENT_THREAD</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b8a366f9c642b21186685bdb337e4b97" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>InterceptMode</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_17acda567fdc075536d76939831f85c50" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>old_reporter_</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_10a1300ac1cff91171aa65ac5470efd50" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ReportTestPartResult</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1a1211409edea858087b405d93bce8e5a" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>result_</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1e054e2cdbcd8bd2cff2797308687c75a" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1b883d7984655ec46b8c17544ad0be7a1" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1ScopedFakeTestPartResultReporter_1f5c1f85005f6a19993a434c5c9b870eb" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1TestPartResultReporterInterface_1cfd5b63ec93ef182ed8617f2c5e037d1" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

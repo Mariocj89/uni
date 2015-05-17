@@ -1,0 +1,51 @@
+fmod CONJUNTO{X :: TRIV} is
+protecting BOOL .
+sort Conjunto{X} .
+
+op crear : -> Conjunto{X} [ctor] .
+op insertar : Conjunto{X} X$Elt -> Conjunto{X} [ctor] .
+
+op esVacio : Conjunto{X} -> Bool .
+op pertenece : Conjunto{X} X$Elt -> Bool .
+op borrar : Conjunto{X} X$Elt -> Conjunto{X} .
+
+ops union interseccion diferencia : Conjunto{X} Conjunto{X} -> Conjunto{X} .
+
+
+vars A B : Conjunto{X}.
+var I J : X$Elt .
+
+*** Ecuacion purificadora
+ceq insertar(A, I) = A if pertenece(A,I) .
+
+ *** Resto de ecuaciones 			     	
+eq esVacio (crear) = true .
+eq esVacio (insertar(A, I)) = false .
+
+eq pertenece(crear, I) = false .
+eq pertenece(insertar(A, I), J) = if (I == J) then true
+			     	else pertenece (A, J) fi .
+			     	
+eq borrar(crear, I) = crear .
+eq borrar(insertar(A, I), J) = if (I == J) then borrar(A, J)
+			      	else insertar(borrar(A, J), I) fi .
+			      	
+eq union(crear, A) = A .
+eq union(insertar(A, I), B) = insertar(union(A, B), I) .
+
+eq interseccion(crear, A) = crear .
+eq interseccion(insertar(A, I), B) = if pertenece(B, I) then insertar( interseccion(A, B), I)
+			else interseccion(A, B) fi .
+			
+eq diferencia (A, crear) = A .
+eq diferencia (A, insertar(B, I)) = diferencia (borrar(A, I), B) .
+
+
+endfm
+
+***(
+red pertenece(insertar(insertar(crear,a),a),a) .
+red pertenece(insertar(insertar(crear,a),a),u) .
+red insertar(insertar(crear,a),a) .
+
+) 

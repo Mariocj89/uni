@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1ScopedTrace" kind="class" prot="public">
+    <compoundname>testing::internal::ScopedTrace</compoundname>
+    <includes refid="gtest-internal_8h" local="no">gtest-internal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1ScopedTrace_1b3a178be363a3461663352339987fd33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ScopedTrace::ScopedTrace</definition>
+        <argsstring>(const char *file, int line, const Message &amp;message)</argsstring>
+        <name>ScopedTrace</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1ScopedTrace_17b0084ab8818cd4609b02d308f1e1dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ScopedTrace::~ScopedTrace</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedTrace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="183"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1ScopedTrace_1643f12ea36e5f3a7a4c29371b876f9c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ScopedTrace::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(ScopedTrace)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1ScopedTrace" kindref="compound">ScopedTrace</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="173" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="173" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1ScopedTrace_1643f12ea36e5f3a7a4c29371b876f9c2" prot="private" virt="non-virtual"><scope>testing::internal::ScopedTrace</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1ScopedTrace_1b3a178be363a3461663352339987fd33" prot="public" virt="non-virtual"><scope>testing::internal::ScopedTrace</scope><name>ScopedTrace</name></member>
+      <member refid="classtesting_1_1internal_1_1ScopedTrace_17b0084ab8818cd4609b02d308f1e1dac" prot="public" virt="non-virtual"><scope>testing::internal::ScopedTrace</scope><name>~ScopedTrace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="3" >
+  <Doc0 NumberOfViews="1" URL="file:///media/MARIO/Universidad/Elementos%20de%20programacion/Practica%20EP0708%20-%20Sudoku/sudoku/sudoku/sudoku_base/src/juego.cpp" >
+   <View0 line="59" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///media/MARIO/Universidad/Elementos%20de%20programacion/Practica%20EP0708%20-%20Sudoku/sudoku/sudoku/sudoku_base/src/sudoku_base.cpp" >
+   <View0 line="23" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///media/MARIO/Universidad/Elementos%20de%20programacion/Practica%20EP0708%20-%20Sudoku/sudoku/sudoku/sudoku_base/src/juego.h" >
+   <View0 line="0" Type="Source" />
+  </Doc2>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/media/DATOS/Universidad/Docencia/07_08/EP/La_Practica_Sudoku/sudoku_base/src/prueba_entorno.cpp:11" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
+     <tracedExpressions/>
+    </breakpoint0>
+   </breakpointList>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks>
+    <bookmark url="/home/Mario/Escritorio/sudoku_base/src/entorno.cpp" >
+     <mark line="122" />
+    </bookmark>
+   </bookmarks>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

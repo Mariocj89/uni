@@ -1,0 +1,560 @@
+\section{testing::internal Namespace Reference}
+\label{namespacetesting_1_1internal}\index{testing::internal@{testing::internal}}
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf SingleFailureChecker}
+\item 
+class {\bf HasNewFatalFailureHelper}
+\item 
+class {\bf EqHelper}
+\item 
+class {\bf EqHelper$<$ true $>$}
+\item 
+class {\bf AssertHelper}
+\item 
+class {\bf FilePath}
+\item 
+class {\bf ScopedTrace}
+\item 
+class {\bf FloatingPoint}
+\item 
+class {\bf TypeIdHelper}
+\item 
+class {\bf TestFactoryBase}
+\item 
+class {\bf TestFactoryImpl}
+\item 
+class {\bf linked\_\-ptr\_\-internal}
+\item 
+class {\bf linked\_\-ptr}
+\item 
+class {\bf scoped\_\-ptr}
+\item 
+class {\bf Mutex}
+\item 
+class {\bf GTestMutexLock}
+\item 
+class {\bf ThreadLocal}
+\item 
+struct {\bf bool\_\-constant}
+\item 
+struct {\bf is\_\-pointer}
+\item 
+struct {\bf is\_\-pointer$<$ T $\ast$ $>$}
+\item 
+class {\bf TypeWithSize}
+\item 
+class {\bf TypeWithSize$<$ 4 $>$}
+\item 
+class {\bf TypeWithSize$<$ 8 $>$}
+\item 
+class {\bf GTestCheckProvider}
+\item 
+class {\bf String}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef {\bf FloatingPoint}$<$ float $>$ {\bf Float}
+\item 
+typedef {\bf FloatingPoint}$<$ double $>$ {\bf Double}
+\item 
+typedef const void $\ast$ {\bf TypeId}
+\item 
+typedef void($\ast$) {\bf SetUpTestCaseFunc} ()
+\item 
+typedef void($\ast$) {\bf TearDownTestCaseFunc} ()
+\item 
+typedef ::std::stringstream {\bf StrStream}
+\item 
+typedef {\bf GTestMutexLock} {\bf MutexLock}
+\item 
+typedef {\bf bool\_\-constant}$<$ false $>$ {\bf false\_\-type}
+\item 
+typedef {\bf bool\_\-constant}$<$ true $>$ {\bf true\_\-type}
+\item 
+typedef long long {\bf BiggestInt}
+\item 
+typedef {\bf TypeWithSize}$<$ 4 $>$::Int {\bf Int32}
+\item 
+typedef {\bf TypeWithSize}$<$ 4 $>$::UInt {\bf UInt32}
+\item 
+typedef {\bf TypeWithSize}$<$ 8 $>$::Int {\bf Int64}
+\item 
+typedef {\bf TypeWithSize}$<$ 8 $>$::UInt {\bf UInt64}
+\item 
+typedef {\bf TypeWithSize}$<$ 8 $>$::Int {\bf TimeInMillis}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf GTestLogSeverity} \{ {\bf GTEST\_\-INFO}, 
+{\bf GTEST\_\-WARNING}, 
+{\bf GTEST\_\-ERROR}, 
+{\bf GTEST\_\-FATAL}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf String} {\bf StreamableToString} (const T \&streamable)
+\item 
+{\footnotesize template$<$typename T1, typename T2$>$ }\\{\bf String} {\bf FormatForComparisonFailureMessage} (const T1 \&value, const T2 \&)
+\item 
+{\footnotesize template$<$typename T1, typename T2$>$ }\\{\bf AssertionResult} {\bf CmpHelperEQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const T1 \&expected, const T2 \&actual)
+\item 
+{\bf AssertionResult} {\bf CmpHelperEQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, {\bf BiggestInt} expected, {\bf BiggestInt} actual)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTREQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const char $\ast$expected, const char $\ast$actual)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTRCASEEQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const char $\ast$expected, const char $\ast$actual)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTRNE} (const char $\ast$s1\_\-expression, const char $\ast$s2\_\-expression, const char $\ast$s1, const char $\ast$s2)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTRCASENE} (const char $\ast$s1\_\-expression, const char $\ast$s2\_\-expression, const char $\ast$s1, const char $\ast$s2)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTREQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const wchar\_\-t $\ast$expected, const wchar\_\-t $\ast$actual)
+\item 
+{\bf AssertionResult} {\bf CmpHelperSTRNE} (const char $\ast$s1\_\-expression, const char $\ast$s2\_\-expression, const wchar\_\-t $\ast$s1, const wchar\_\-t $\ast$s2)
+\item 
+{\footnotesize template$<$typename RawType$>$ }\\{\bf AssertionResult} {\bf CmpHelperFloatingPointEQ} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, RawType expected, RawType actual)
+\item 
+{\bf AssertionResult} {\bf DoubleNearPredFormat} (const char $\ast$expr1, const char $\ast$expr2, const char $\ast$abs\_\-error\_\-expr, double val1, double val2, double abs\_\-error)
+\item 
+{\bf GTEST\_\-DECLARE\_\-string\_\-} (internal\_\-run\_\-death\_\-test)
+\item 
+char {\bf IsNullLiteralHelper} (Secret $\ast$p)
+\item 
+{\bf char} (\&IsNullLiteralHelper(...))[2]
+\item 
+{\bf String} {\bf AppendUserMessage} (const {\bf String} \&gtest\_\-msg, const {\bf Message} \&user\_\-msg)
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf String} {\bf FormatForFailureMessage} (const T \&value)
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf String} {\bf FormatForFailureMessage} (T $\ast$pointer)
+\item 
+{\bf String} {\bf FormatForFailureMessage} (char ch)
+\item 
+{\bf String} {\bf FormatForFailureMessage} (wchar\_\-t wchar)
+\item 
+{\bf AssertionResult} {\bf EqFailure} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const {\bf String} \&expected\_\-value, const {\bf String} \&actual\_\-value, bool ignoring\_\-case)
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf TypeId} {\bf GetTypeId} ()
+\item 
+{\bf TypeId} {\bf GetTestTypeId} ()
+\item 
+{\bf String} {\bf FormatFileLocation} (const char $\ast$file, int line)
+\item 
+{\bf TestInfo} $\ast$ {\bf MakeAndRegisterTestInfo} (const char $\ast$test\_\-case\_\-name, const char $\ast$name, const char $\ast$test\_\-case\_\-comment, const char $\ast$comment, {\bf TypeId} fixture\_\-class\_\-id, {\bf SetUpTestCaseFunc} set\_\-up\_\-tc, {\bf TearDownTestCaseFunc} tear\_\-down\_\-tc, {\bf TestFactoryBase} $\ast$factory)
+\item 
+{\bf String} {\bf GetCurrentOsStackTraceExceptTop} ({\bf UnitTest} $\ast$unit\_\-test, int skip\_\-count)
+\item 
+int {\bf GetFailedPartCount} (const TestResult $\ast$result)
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool {\bf operator==} (T $\ast$ptr, const {\bf linked\_\-ptr}$<$ T $>$ \&x)
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool {\bf operator!=} (T $\ast$ptr, const {\bf linked\_\-ptr}$<$ T $>$ \&x)
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf linked\_\-ptr}$<$ T $>$ {\bf make\_\-linked\_\-ptr} (T $\ast$ptr)
+\item 
+void {\bf GTestLog} ({\bf GTestLogSeverity} severity, const char $\ast$file, int line, const char $\ast$msg)
+\item 
+void {\bf LogToStderr} ()
+\item 
+void {\bf FlushInfoLog} ()
+\item 
+size\_\-t {\bf GetThreadCount} ()
+\item 
+const char $\ast$ {\bf GetEnv} (const char $\ast$name)
+\item 
+void {\bf abort} ()
+\item 
+bool {\bf ParseInt32} (const {\bf Message} \&src\_\-text, const char $\ast$str, {\bf Int32} $\ast$value)
+\item 
+bool {\bf BoolFromGTestEnv} (const char $\ast$flag, bool default\_\-val)
+\item 
+{\bf Int32} {\bf Int32FromGTestEnv} (const char $\ast$flag, {\bf Int32} default\_\-val)
+\item 
+const char $\ast$ {\bf StringFromGTestEnv} (const char $\ast$flag, const char $\ast$default\_\-val)
+\item 
+inline::std::ostream \& {\bf operator$<$$<$} (::std::ostream \&os, const {\bf String} \&str)
+\item 
+{\bf String} {\bf StrStreamToString} ({\bf StrStream} $\ast$stream)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+const char {\bf kDeathTestStyleFlag} [$\,$] = \char`\"{}death\_\-test\_\-style\char`\"{}
+\item 
+const char {\bf kInternalRunDeathTestFlag} [$\,$] = \char`\"{}internal\_\-run\_\-death\_\-test\char`\"{}
+\item 
+int {\bf g\_\-init\_\-gtest\_\-count}
+\item 
+const char {\bf kStackTraceMarker} [$\,$]
+\item 
+{\bf testing::internal::ScopedTrace} {\bf GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}
+\item 
+{\bf Mutex} {\bf g\_\-linked\_\-ptr\_\-mutex}
+\item 
+const {\bf BiggestInt} {\bf kMaxBiggestInt}
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{testing::internal@{testing::internal}!BiggestInt@{BiggestInt}}
+\index{BiggestInt@{BiggestInt}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef long long {\bf testing::internal::BiggestInt}}\label{namespacetesting_1_1internal_9992177d67caf887d92231eb20bc23f7}
+
+
+\index{testing::internal@{testing::internal}!Double@{Double}}
+\index{Double@{Double}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FloatingPoint}$<$double$>$ {\bf testing::internal::Double}}\label{namespacetesting_1_1internal_e0e9f41d755c89030f16e5fce899c9bd}
+
+
+\index{testing::internal@{testing::internal}!false_type@{false\_\-type}}
+\index{false_type@{false\_\-type}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf bool\_\-constant}$<$false$>$ {\bf testing::internal::false\_\-type}}\label{namespacetesting_1_1internal_cfd63a63b1a68bf3ac3502206fe5e1aa}
+
+
+\index{testing::internal@{testing::internal}!Float@{Float}}
+\index{Float@{Float}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf FloatingPoint}$<$float$>$ {\bf testing::internal::Float}}\label{namespacetesting_1_1internal_bb33dd123f87b562b6da629e2951a447}
+
+
+\index{testing::internal@{testing::internal}!Int32@{Int32}}
+\index{Int32@{Int32}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TypeWithSize}$<$4$>$::Int {\bf testing::internal::Int32}}\label{namespacetesting_1_1internal_24b6e0b8ea195d5ccee473d5ade4bcbf}
+
+
+\index{testing::internal@{testing::internal}!Int64@{Int64}}
+\index{Int64@{Int64}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TypeWithSize}$<$8$>$::Int {\bf testing::internal::Int64}}\label{namespacetesting_1_1internal_a75b134470b713db97686f1f3df3ffd7}
+
+
+\index{testing::internal@{testing::internal}!MutexLock@{MutexLock}}
+\index{MutexLock@{MutexLock}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf GTestMutexLock} {\bf testing::internal::MutexLock}}\label{namespacetesting_1_1internal_f3be30c9155af46ee8da3aee31fae7f9}
+
+
+\index{testing::internal@{testing::internal}!SetUpTestCaseFunc@{SetUpTestCaseFunc}}
+\index{SetUpTestCaseFunc@{SetUpTestCaseFunc}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$) {\bf testing::internal::SetUpTestCaseFunc}()}\label{namespacetesting_1_1internal_1b8518e7b2cdc051b4379b923be61d5d}
+
+
+\index{testing::internal@{testing::internal}!StrStream@{StrStream}}
+\index{StrStream@{StrStream}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef ::std::stringstream {\bf testing::internal::StrStream}}\label{namespacetesting_1_1internal_2f325a1ea8cfd7eab6843eb4592dde44}
+
+
+\index{testing::internal@{testing::internal}!TearDownTestCaseFunc@{TearDownTestCaseFunc}}
+\index{TearDownTestCaseFunc@{TearDownTestCaseFunc}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$) {\bf testing::internal::TearDownTestCaseFunc}()}\label{namespacetesting_1_1internal_b87631eabafc70771cf3fb20be8b3adc}
+
+
+\index{testing::internal@{testing::internal}!TimeInMillis@{TimeInMillis}}
+\index{TimeInMillis@{TimeInMillis}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TypeWithSize}$<$8$>$::Int {\bf testing::internal::TimeInMillis}}\label{namespacetesting_1_1internal_9876512f16083243cd3632f48ea32a40}
+
+
+\index{testing::internal@{testing::internal}!true_type@{true\_\-type}}
+\index{true_type@{true\_\-type}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf bool\_\-constant}$<$true$>$ {\bf testing::internal::true\_\-type}}\label{namespacetesting_1_1internal_51d53d13936f531880ad6bd101866391}
+
+
+\index{testing::internal@{testing::internal}!TypeId@{TypeId}}
+\index{TypeId@{TypeId}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef const void$\ast$ {\bf testing::internal::TypeId}}\label{namespacetesting_1_1internal_34ce8e1aa9380799f8456ee3a81ceb82}
+
+
+\index{testing::internal@{testing::internal}!UInt32@{UInt32}}
+\index{UInt32@{UInt32}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TypeWithSize}$<$4$>$::UInt {\bf testing::internal::UInt32}}\label{namespacetesting_1_1internal_ca264fcc31afb70922314556daa3c76d}
+
+
+\index{testing::internal@{testing::internal}!UInt64@{UInt64}}
+\index{UInt64@{UInt64}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TypeWithSize}$<$8$>$::UInt {\bf testing::internal::UInt64}}\label{namespacetesting_1_1internal_38e8c1dd01d712e6cddd93c394b02d44}
+
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{testing::internal@{testing::internal}!GTestLogSeverity@{GTestLogSeverity}}
+\index{GTestLogSeverity@{GTestLogSeverity}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf testing::internal::GTestLogSeverity}}\label{namespacetesting_1_1internal_28a7485ef3f5f150ac9718facf55b4c2}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{GTEST_INFO@{GTEST\_\-INFO}!testing::internal@{testing::internal}}\index{testing::internal@{testing::internal}!GTEST_INFO@{GTEST\_\-INFO}}\item[{\em 
+GTEST\_\-INFO\label{namespacetesting_1_1internal_28a7485ef3f5f150ac9718facf55b4c26eab59e3adc63c10ee3c7ab9b4158371}
+}]\index{GTEST_WARNING@{GTEST\_\-WARNING}!testing::internal@{testing::internal}}\index{testing::internal@{testing::internal}!GTEST_WARNING@{GTEST\_\-WARNING}}\item[{\em 
+GTEST\_\-WARNING\label{namespacetesting_1_1internal_28a7485ef3f5f150ac9718facf55b4c271623c73cf79f1a4be31255eedbaef19}
+}]\index{GTEST_ERROR@{GTEST\_\-ERROR}!testing::internal@{testing::internal}}\index{testing::internal@{testing::internal}!GTEST_ERROR@{GTEST\_\-ERROR}}\item[{\em 
+GTEST\_\-ERROR\label{namespacetesting_1_1internal_28a7485ef3f5f150ac9718facf55b4c2999c3fe1cf7b9f50f9ceb4fd4bcb2c76}
+}]\index{GTEST_FATAL@{GTEST\_\-FATAL}!testing::internal@{testing::internal}}\index{testing::internal@{testing::internal}!GTEST_FATAL@{GTEST\_\-FATAL}}\item[{\em 
+GTEST\_\-FATAL\label{namespacetesting_1_1internal_28a7485ef3f5f150ac9718facf55b4c244929c5a55dae8cdd5196c7b80a085f3}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\index{testing::internal@{testing::internal}!abort@{abort}}
+\index{abort@{abort}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::abort ()\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_4745413dab28201711f46860bdf5f8df}
+
+
+\index{testing::internal@{testing::internal}!AppendUserMessage@{AppendUserMessage}}
+\index{AppendUserMessage@{AppendUserMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::AppendUserMessage (const String \& {\em gtest\_\-msg}, const Message \& {\em user\_\-msg})}\label{namespacetesting_1_1internal_901d0ae5e90567e51c455733e1e5da8d}
+
+
+\index{testing::internal@{testing::internal}!BoolFromGTestEnv@{BoolFromGTestEnv}}
+\index{BoolFromGTestEnv@{BoolFromGTestEnv}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::BoolFromGTestEnv (const char $\ast$ {\em flag}, bool {\em default\_\-val})}\label{namespacetesting_1_1internal_448cba1f8ab67d66b52629959993c621}
+
+
+\index{testing::internal@{testing::internal}!char@{char}}
+\index{char@{char}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::char (\& {\em IsNullLiteralHelper}(...))}\label{namespacetesting_1_1internal_661d333b5616fc0c8ce290d86730a7f3}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperEQ@{CmpHelperEQ}}
+\index{CmpHelperEQ@{CmpHelperEQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperEQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, BiggestInt {\em expected}, BiggestInt {\em actual})}\label{namespacetesting_1_1internal_6d1c68524ae5a0abc96b53ac94bcba19}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperEQ@{CmpHelperEQ}}
+\index{CmpHelperEQ@{CmpHelperEQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1, typename T2$>$ {\bf AssertionResult} testing::internal::CmpHelperEQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, const T1 \& {\em expected}, const T2 \& {\em actual})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_45932ad30a954e99267502602cb8f7d4}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperFloatingPointEQ@{CmpHelperFloatingPointEQ}}
+\index{CmpHelperFloatingPointEQ@{CmpHelperFloatingPointEQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf AssertionResult} testing::internal::CmpHelperFloatingPointEQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, RawType {\em expected}, RawType {\em actual})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_0cbdac3d4f193f9e41b888a23967ce49}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTRCASEEQ@{CmpHelperSTRCASEEQ}}
+\index{CmpHelperSTRCASEEQ@{CmpHelperSTRCASEEQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTRCASEEQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, const char $\ast$ {\em expected}, const char $\ast$ {\em actual})}\label{namespacetesting_1_1internal_d8dddafb54dad2b1aba566a0d5dbbe5c}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTRCASENE@{CmpHelperSTRCASENE}}
+\index{CmpHelperSTRCASENE@{CmpHelperSTRCASENE}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTRCASENE (const char $\ast$ {\em s1\_\-expression}, const char $\ast$ {\em s2\_\-expression}, const char $\ast$ {\em s1}, const char $\ast$ {\em s2})}\label{namespacetesting_1_1internal_33d1ce02617d6effefd951178e5036a9}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTREQ@{CmpHelperSTREQ}}
+\index{CmpHelperSTREQ@{CmpHelperSTREQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTREQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, const wchar\_\-t $\ast$ {\em expected}, const wchar\_\-t $\ast$ {\em actual})}\label{namespacetesting_1_1internal_e4281191b4e1e0277917e77eb3ba130e}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTREQ@{CmpHelperSTREQ}}
+\index{CmpHelperSTREQ@{CmpHelperSTREQ}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTREQ (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, const char $\ast$ {\em expected}, const char $\ast$ {\em actual})}\label{namespacetesting_1_1internal_0fa5116298109df6acd3d919223e14db}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTRNE@{CmpHelperSTRNE}}
+\index{CmpHelperSTRNE@{CmpHelperSTRNE}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTRNE (const char $\ast$ {\em s1\_\-expression}, const char $\ast$ {\em s2\_\-expression}, const wchar\_\-t $\ast$ {\em s1}, const wchar\_\-t $\ast$ {\em s2})}\label{namespacetesting_1_1internal_d32db74c173fd831050b6601d981965e}
+
+
+\index{testing::internal@{testing::internal}!CmpHelperSTRNE@{CmpHelperSTRNE}}
+\index{CmpHelperSTRNE@{CmpHelperSTRNE}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::CmpHelperSTRNE (const char $\ast$ {\em s1\_\-expression}, const char $\ast$ {\em s2\_\-expression}, const char $\ast$ {\em s1}, const char $\ast$ {\em s2})}\label{namespacetesting_1_1internal_51488673d7489dbbabf399905632070c}
+
+
+\index{testing::internal@{testing::internal}!DoubleNearPredFormat@{DoubleNearPredFormat}}
+\index{DoubleNearPredFormat@{DoubleNearPredFormat}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::DoubleNearPredFormat (const char $\ast$ {\em expr1}, const char $\ast$ {\em expr2}, const char $\ast$ {\em abs\_\-error\_\-expr}, double {\em val1}, double {\em val2}, double {\em abs\_\-error})}\label{namespacetesting_1_1internal_2ffeb072172886ea1185c03dda4b0d76}
+
+
+\index{testing::internal@{testing::internal}!EqFailure@{EqFailure}}
+\index{EqFailure@{EqFailure}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::internal::EqFailure (const char $\ast$ {\em expected\_\-expression}, const char $\ast$ {\em actual\_\-expression}, const String \& {\em expected\_\-value}, const String \& {\em actual\_\-value}, bool {\em ignoring\_\-case})}\label{namespacetesting_1_1internal_edef6e77f267b3a60fabda1428c6742c}
+
+
+\index{testing::internal@{testing::internal}!FlushInfoLog@{FlushInfoLog}}
+\index{FlushInfoLog@{FlushInfoLog}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::FlushInfoLog ()\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_dfed47bb3f9234ca6c3a6003b69ee602}
+
+
+\index{testing::internal@{testing::internal}!FormatFileLocation@{FormatFileLocation}}
+\index{FormatFileLocation@{FormatFileLocation}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::FormatFileLocation (const char $\ast$ {\em file}, int {\em line})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_67e13a54c56c7495bac6f91447c84aa7}
+
+
+\index{testing::internal@{testing::internal}!FormatForComparisonFailureMessage@{FormatForComparisonFailureMessage}}
+\index{FormatForComparisonFailureMessage@{FormatForComparisonFailureMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1, typename T2$>$ {\bf String} testing::internal::FormatForComparisonFailureMessage (const T1 \& {\em value}, const T2 \&)\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_e47d3997f2f60c466b59eb389761ceed}
+
+
+\index{testing::internal@{testing::internal}!FormatForFailureMessage@{FormatForFailureMessage}}
+\index{FormatForFailureMessage@{FormatForFailureMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::FormatForFailureMessage (wchar\_\-t {\em wchar})}\label{namespacetesting_1_1internal_66c68800468bcff677648f71e7990fad}
+
+
+\index{testing::internal@{testing::internal}!FormatForFailureMessage@{FormatForFailureMessage}}
+\index{FormatForFailureMessage@{FormatForFailureMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::FormatForFailureMessage (char {\em ch})}\label{namespacetesting_1_1internal_ebe9f16cb8eb6270de391c8a586b9ac1}
+
+
+\index{testing::internal@{testing::internal}!FormatForFailureMessage@{FormatForFailureMessage}}
+\index{FormatForFailureMessage@{FormatForFailureMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf String} testing::internal::FormatForFailureMessage (T $\ast$ {\em pointer})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_acc76e6a6f2148c5852b3cc31bd0d4c2}
+
+
+\index{testing::internal@{testing::internal}!FormatForFailureMessage@{FormatForFailureMessage}}
+\index{FormatForFailureMessage@{FormatForFailureMessage}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf String} testing::internal::FormatForFailureMessage (const T \& {\em value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_53f1b197f129e00eb934a988dd5133c0}
+
+
+\index{testing::internal@{testing::internal}!GetCurrentOsStackTraceExceptTop@{GetCurrentOsStackTraceExceptTop}}
+\index{GetCurrentOsStackTraceExceptTop@{GetCurrentOsStackTraceExceptTop}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::GetCurrentOsStackTraceExceptTop (UnitTest $\ast$ {\em unit\_\-test}, int {\em skip\_\-count})}\label{namespacetesting_1_1internal_f9f668c4c45e9655cd0567a8375c34a0}
+
+
+\index{testing::internal@{testing::internal}!GetEnv@{GetEnv}}
+\index{GetEnv@{GetEnv}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::internal::GetEnv (const char $\ast$ {\em name})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_4bfb241fd542948d5e10f3292147b7a5}
+
+
+\index{testing::internal@{testing::internal}!GetFailedPartCount@{GetFailedPartCount}}
+\index{GetFailedPartCount@{GetFailedPartCount}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int testing::internal::GetFailedPartCount (const TestResult $\ast$ {\em result})}\label{namespacetesting_1_1internal_ea1457d3f671c83a060c7221de36f307}
+
+
+\index{testing::internal@{testing::internal}!GetTestTypeId@{GetTestTypeId}}
+\index{GetTestTypeId@{GetTestTypeId}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TypeId} testing::internal::GetTestTypeId ()}\label{namespacetesting_1_1internal_618463a60211a8e13bf0478f1219cd4e}
+
+
+\index{testing::internal@{testing::internal}!GetThreadCount@{GetThreadCount}}
+\index{GetThreadCount@{GetThreadCount}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t testing::internal::GetThreadCount ()\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_c799629c5b4f10c969a44db23e620a3d}
+
+
+\index{testing::internal@{testing::internal}!GetTypeId@{GetTypeId}}
+\index{GetTypeId@{GetTypeId}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf TypeId} testing::internal::GetTypeId ()\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_931b4abea2beb1bd7d50bde8ccd934c5}
+
+
+\index{testing::internal@{testing::internal}!GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}}
+\index{GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::GTEST\_\-DECLARE\_\-string\_\- (internal\_\-run\_\-death\_\-test)}\label{namespacetesting_1_1internal_bc5bc24089267eafbf506fe075348d74}
+
+
+\index{testing::internal@{testing::internal}!GTestLog@{GTestLog}}
+\index{GTestLog@{GTestLog}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::GTestLog (GTestLogSeverity {\em severity}, const char $\ast$ {\em file}, int {\em line}, const char $\ast$ {\em msg})}\label{namespacetesting_1_1internal_d7bcc47e4c219390bd3135920ca0ae0b}
+
+
+\index{testing::internal@{testing::internal}!Int32FromGTestEnv@{Int32FromGTestEnv}}
+\index{Int32FromGTestEnv@{Int32FromGTestEnv}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Int32} testing::internal::Int32FromGTestEnv (const char $\ast$ {\em flag}, Int32 {\em default\_\-val})}\label{namespacetesting_1_1internal_ad50bd05e866f522a61def1c001c2823}
+
+
+\index{testing::internal@{testing::internal}!IsNullLiteralHelper@{IsNullLiteralHelper}}
+\index{IsNullLiteralHelper@{IsNullLiteralHelper}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char testing::internal::IsNullLiteralHelper (Secret $\ast$ {\em p})}\label{namespacetesting_1_1internal_adc94033b643ac8df63f8d4d75d26bcb}
+
+
+\index{testing::internal@{testing::internal}!LogToStderr@{LogToStderr}}
+\index{LogToStderr@{LogToStderr}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::LogToStderr ()\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_136a22e0e7a5535aaf88e4436e6fe43d}
+
+
+\index{testing::internal@{testing::internal}!make_linked_ptr@{make\_\-linked\_\-ptr}}
+\index{make_linked_ptr@{make\_\-linked\_\-ptr}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf linked\_\-ptr}$<$T$>$ testing::internal::make\_\-linked\_\-ptr (T $\ast$ {\em ptr})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_965017fa6e53a7c71d9fc7fee7965f57}
+
+
+\index{testing::internal@{testing::internal}!MakeAndRegisterTestInfo@{MakeAndRegisterTestInfo}}
+\index{MakeAndRegisterTestInfo@{MakeAndRegisterTestInfo}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TestInfo}$\ast$ testing::internal::MakeAndRegisterTestInfo (const char $\ast$ {\em test\_\-case\_\-name}, const char $\ast$ {\em name}, const char $\ast$ {\em test\_\-case\_\-comment}, const char $\ast$ {\em comment}, TypeId {\em fixture\_\-class\_\-id}, SetUpTestCaseFunc {\em set\_\-up\_\-tc}, TearDownTestCaseFunc {\em tear\_\-down\_\-tc}, TestFactoryBase $\ast$ {\em factory})}\label{namespacetesting_1_1internal_c8a4baccf925ac1c597b5bf7956d680e}
+
+
+\index{testing::internal@{testing::internal}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool testing::internal::operator!= (T $\ast$ {\em ptr}, const linked\_\-ptr$<$ T $>$ \& {\em x})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_baa4d7e27908d4cbdfaad4c0839ca048}
+
+
+\index{testing::internal@{testing::internal}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}inline ::std::ostream\& testing::internal::operator$<$$<$ (::std::ostream \& {\em os}, const String \& {\em str})}\label{namespacetesting_1_1internal_85854cbfc0ec814a25a8d25aa31dea04}
+
+
+\index{testing::internal@{testing::internal}!operator==@{operator==}}
+\index{operator==@{operator==}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool testing::internal::operator== (T $\ast$ {\em ptr}, const linked\_\-ptr$<$ T $>$ \& {\em x})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_b82bd34321b3c32eb3631eda982c17d4}
+
+
+\index{testing::internal@{testing::internal}!ParseInt32@{ParseInt32}}
+\index{ParseInt32@{ParseInt32}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::ParseInt32 (const Message \& {\em src\_\-text}, const char $\ast$ {\em str}, Int32 $\ast$ {\em value})}\label{namespacetesting_1_1internal_ec8fe8ad62e268de1acbb6db62ae0eda}
+
+
+\index{testing::internal@{testing::internal}!StreamableToString@{StreamableToString}}
+\index{StreamableToString@{StreamableToString}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf String} testing::internal::StreamableToString (const T \& {\em streamable})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_1_1internal_0406702dd38ef95c6b71991da985c6a5}
+
+
+\index{testing::internal@{testing::internal}!StringFromGTestEnv@{StringFromGTestEnv}}
+\index{StringFromGTestEnv@{StringFromGTestEnv}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::internal::StringFromGTestEnv (const char $\ast$ {\em flag}, const char $\ast$ {\em default\_\-val})}\label{namespacetesting_1_1internal_13668db46614a266f80ca7d3062e5058}
+
+
+\index{testing::internal@{testing::internal}!StrStreamToString@{StrStreamToString}}
+\index{StrStreamToString@{StrStreamToString}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::StrStreamToString (StrStream $\ast$ {\em stream})}\label{namespacetesting_1_1internal_5639f5bf1b9983c51ef166207d2c62b8}
+
+
+
+
+\subsection{Variable Documentation}
+\index{testing::internal@{testing::internal}!g_init_gtest_count@{g\_\-init\_\-gtest\_\-count}}
+\index{g_init_gtest_count@{g\_\-init\_\-gtest\_\-count}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf testing::internal::g\_\-init\_\-gtest\_\-count}}\label{namespacetesting_1_1internal_1602b1208df50f3769d693dd09fb33bf}
+
+
+\index{testing::internal@{testing::internal}!g_linked_ptr_mutex@{g\_\-linked\_\-ptr\_\-mutex}}
+\index{g_linked_ptr_mutex@{g\_\-linked\_\-ptr\_\-mutex}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Mutex} {\bf testing::internal::g\_\-linked\_\-ptr\_\-mutex}}\label{namespacetesting_1_1internal_65be927cd2fdc7032555a3bc33899f64}
+
+
+\index{testing::internal@{testing::internal}!GTEST_ATTRIBUTE_UNUSED_@{GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}}
+\index{GTEST_ATTRIBUTE_UNUSED_@{GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}class {\bf testing::internal::ScopedTrace}  {\bf testing::internal::GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}}\label{namespacetesting_1_1internal_e7717815979cb22fd649441b12065bda}
+
+
+\index{testing::internal@{testing::internal}!kDeathTestStyleFlag@{kDeathTestStyleFlag}}
+\index{kDeathTestStyleFlag@{kDeathTestStyleFlag}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char {\bf testing::internal::kDeathTestStyleFlag}[$\,$] = \char`\"{}death\_\-test\_\-style\char`\"{}}\label{namespacetesting_1_1internal_3554bb2b22f4e166ab16671250040fa6}
+
+
+\index{testing::internal@{testing::internal}!kInternalRunDeathTestFlag@{kInternalRunDeathTestFlag}}
+\index{kInternalRunDeathTestFlag@{kInternalRunDeathTestFlag}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char {\bf testing::internal::kInternalRunDeathTestFlag}[$\,$] = \char`\"{}internal\_\-run\_\-death\_\-test\char`\"{}}\label{namespacetesting_1_1internal_e1af734f5c72323d8c5a2e51ec57cd49}
+
+
+\index{testing::internal@{testing::internal}!kMaxBiggestInt@{kMaxBiggestInt}}
+\index{kMaxBiggestInt@{kMaxBiggestInt}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf BiggestInt} {\bf testing::internal::kMaxBiggestInt}}\label{namespacetesting_1_1internal_24166884965e4288f0b587c512f04b8f}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}
+    ~(static_cast<BiggestInt>(1) << (8*sizeof(BiggestInt) - 1))
+\end{verbatim}
+\end{Code}
+\index{testing::internal@{testing::internal}!kStackTraceMarker@{kStackTraceMarker}}
+\index{kStackTraceMarker@{kStackTraceMarker}!testing::internal@{testing::internal}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char {\bf testing::internal::kStackTraceMarker}[$\,$]}\label{namespacetesting_1_1internal_564f5c46b13edecc1f4556cc06fea89a}
+
+

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classLlaveTest" kind="class" prot="public">
+    <compoundname>LlaveTest</compoundname>
+    <basecompoundref refid="classtesting_1_1Test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classLlaveTest_160ee64c5b59fd2f4c865f89d561eb245" prot="protected" static="no" mutable="no">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave* LlaveTest::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLlaveTest_1407e37243f4e6aeaf44177c33788034d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave * LlaveTest::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLlaveTest_1d1e28d882238c05d30da4d8a3deffa22" prot="protected" static="no" mutable="no">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave * LlaveTest::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classLlaveTest_1582fe44f7d7b2aa6df5c415b95ede8e7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LlaveTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1Test_1aa64e7ad495ea976b98f97a5f3738c35">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlaveTest_12c4dd49f094842f2ff5ac3cb1d054d43" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LlaveTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1Test_11f5480b7d2c1067f7bba77a8993cf12f">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="27" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="117">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="116">
+        <label>LlaveTest</label>
+        <link refid="classLlaveTest"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="119">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="120">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="118">
+        <label>LlaveTest</label>
+        <link refid="classLlaveTest"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+        <childnode refid="120" relation="usage">
+          <edgelabel>a
+b
+c</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="18" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Test_1ccbfb9e722f1f1fef94248d056ed918c" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>__pad0__</name></member>
+      <member refid="classtesting_1_1Test_1b4fbbeba80a377c0ab2ea2793c2a2a33" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>__pad1__</name></member>
+      <member refid="classtesting_1_1Test_111223d23ca155b8a85bf63b8f1b0074c" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>__pad2__</name></member>
+      <member refid="classLlaveTest_160ee64c5b59fd2f4c865f89d561eb245" prot="protected" virt="non-virtual"><scope>LlaveTest</scope><name>a</name></member>
+      <member refid="classLlaveTest_1407e37243f4e6aeaf44177c33788034d" prot="protected" virt="non-virtual"><scope>LlaveTest</scope><name>b</name></member>
+      <member refid="classLlaveTest_1d1e28d882238c05d30da4d8a3deffa22" prot="protected" virt="non-virtual"><scope>LlaveTest</scope><name>c</name></member>
+      <member refid="classtesting_1_1Test_129540d1bf03baf570118c6e56e4ae901" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1Test_1765821feda4da8debf420af85aa597b5" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1Test_15aa7b30faff2d57475f7e9eea1bc8eaa" prot="public" virt="non-virtual"><scope>LlaveTest</scope><name>internal::TestInfoImpl</name></member>
+      <member refid="classtesting_1_1Test_191032b7a73c1881bbab4db263fa44447" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_13992f48623adaaa73107c1b6263cdc56" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_19d4162224b354f9d29e0816d89dde567" prot="package" virt="virtual"><scope>LlaveTest</scope><name>Setup</name></member>
+      <member refid="classLlaveTest_1582fe44f7d7b2aa6df5c415b95ede8e7" prot="protected" virt="virtual"><scope>LlaveTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Test_123c50ad7f4dd7c23eb7bead09ca1e25b" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classLlaveTest_12c4dd49f094842f2ff5ac3cb1d054d43" prot="protected" virt="virtual"><scope>LlaveTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Test_1a9a9d7e19e41c660b6880d2d25918726" prot="package" virt="non-virtual"><scope>LlaveTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" prot="protected" virt="non-virtual"><scope>LlaveTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1Test_1fb788db3d734171957dc11ebe5f1a9cb" prot="package" virt="virtual"><scope>LlaveTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

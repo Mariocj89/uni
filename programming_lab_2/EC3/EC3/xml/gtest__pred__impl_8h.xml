@@ -1,0 +1,1326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="gtest__pred__impl_8h" kind="file">
+    <compoundname>gtest_pred_impl.h</compoundname>
+    <includedby refid="gtest_8h" local="no">Escritorio/EC3/src/gtest/gtest.h</includedby>
+    <invincdepgraph>
+      <node id="573">
+        <label>Escritorio/EC3/src/testcolagen.cpp</label>
+        <link refid="testcolagen_8cpp"/>
+      </node>
+      <node id="579">
+        <label>Escritorio/EC3/src/testpuerta.cpp</label>
+        <link refid="testpuerta_8cpp"/>
+      </node>
+      <node id="577">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="578">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="571">
+        <label>Escritorio/EC3/src/testarbol.cpp</label>
+        <link refid="testarbol_8cpp"/>
+      </node>
+      <node id="569">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="575">
+        <label>Escritorio/EC3/src/testllave.cpp</label>
+        <link refid="testllave_8cpp"/>
+      </node>
+      <node id="572">
+        <label>Escritorio/EC3/src/testcelda.cpp</label>
+        <link refid="testcelda_8cpp"/>
+      </node>
+      <node id="570">
+        <label>Escritorio/EC3/src/gtest/gtest-spi.h</label>
+        <link refid="gtest-spi_8h"/>
+      </node>
+      <node id="574">
+        <label>Escritorio/EC3/src/testgrafo.cpp</label>
+        <link refid="testgrafo_8cpp"/>
+      </node>
+      <node id="568">
+        <label>Escritorio/EC3/src/gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="567">
+        <label>Escritorio/EC3/src/gtest/gtest_pred_impl.h</label>
+        <link refid="gtest_pred_impl.h"/>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gtest__pred__impl_8h_18216a4b47b71c55f51c6889b13115c3d" prot="public" static="no">
+        <name>GTEST_ASSERT_</name>
+        <param><defname>expression</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const ::<ref refid="classtesting_1_1AssertionResult" kindref="compound">testing::AssertionResult</ref> gtest_ar = (expression)) \
+    ; \
+  else \
+    on_failure(gtest_ar.failure_message())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="80" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_17c93df98abc9fd256d6ac9ce0d7dcc7e" prot="public" static="no">
+        <name>GTEST_PRED_FORMAT1_</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(pred_format(#v1, v1),\
+                on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="104" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_17aeea2577a6bd0ad1b25fbe678fd8780" prot="public" static="no">
+        <name>GTEST_PRED1_</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(::testing::AssertPred1Helper(#pred, \
+                                             #v1, \
+                                             pred, \
+                                             v1), on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="112" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1bbc454a39b305b26dadd5a109ed90abc" prot="public" static="no">
+        <name>EXPECT_PRED_FORMAT1</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <initializer>GTEST_PRED_FORMAT1_(pred_format, v1, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="116" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1764e040be09adc3c6a06e877e83e6113" prot="public" static="no">
+        <name>EXPECT_PRED1</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <initializer>GTEST_PRED1_(pred, v1, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="118" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1301d707584448201b6730fcb051cb9d9" prot="public" static="no">
+        <name>ASSERT_PRED_FORMAT1</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <initializer>GTEST_PRED_FORMAT1_(pred_format, v1, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="120" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1a51f864a7cf311d9fb655a96197ef235" prot="public" static="no">
+        <name>ASSERT_PRED1</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <initializer>GTEST_PRED1_(pred, v1, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="122" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_186912f7f5e1f3fbae02b890f53e65183" prot="public" static="no">
+        <name>GTEST_PRED_FORMAT2_</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(pred_format(#v1, #v2, v1, v2),\
+                on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="152" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1212427e5889f40469e842bfc5510d04d" prot="public" static="no">
+        <name>GTEST_PRED2_</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(::testing::AssertPred2Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             pred, \
+                                             v1, \
+                                             v2), on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="162" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1b9587b21308816b3b89f518bee130ea4" prot="public" static="no">
+        <name>EXPECT_PRED_FORMAT2</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <initializer>GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="166" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_183857bdfa95ce84aec0c84f83ee30700" prot="public" static="no">
+        <name>EXPECT_PRED2</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <initializer>GTEST_PRED2_(pred, v1, v2, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="168" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_152b2ca23761186f3e0f6efa7d70e0fa0" prot="public" static="no">
+        <name>ASSERT_PRED_FORMAT2</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <initializer>GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="170" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1b942730da629dcdd58dcdfa674a85f2e" prot="public" static="no">
+        <name>ASSERT_PRED2</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <initializer>GTEST_PRED2_(pred, v1, v2, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="172" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1f0f9deca63ea8518e893d3541bfe74df" prot="public" static="no">
+        <name>GTEST_PRED_FORMAT3_</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(pred_format(#v1, #v2, #v3, v1, v2, v3),\
+                on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="207" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_11a5b8d39351f3ca4feaac2f24e0162ae" prot="public" static="no">
+        <name>GTEST_PRED3_</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(::testing::AssertPred3Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3), on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="219" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1cbdce51982acbbb8145543f470b15b6c" prot="public" static="no">
+        <name>EXPECT_PRED_FORMAT3</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <initializer>GTEST_PRED_FORMAT3_(pred_format, v1, v2, v3, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="223" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1b547a2c9920df9998e46014dfa2f8dee" prot="public" static="no">
+        <name>EXPECT_PRED3</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <initializer>GTEST_PRED3_(pred, v1, v2, v3, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="225" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1d51f5b7293702c4a73e5b85878bbf292" prot="public" static="no">
+        <name>ASSERT_PRED_FORMAT3</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <initializer>GTEST_PRED_FORMAT3_(pred_format, v1, v2, v3, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="227" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_19e06f28bd29270b0d2be12ba4c27cbb6" prot="public" static="no">
+        <name>ASSERT_PRED3</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <initializer>GTEST_PRED3_(pred, v1, v2, v3, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="229" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_17836ad1e19812d0fb8b655bf7c725af6" prot="public" static="no">
+        <name>GTEST_PRED_FORMAT4_</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(pred_format(#v1, #v2, #v3, #v4, v1, v2, v3, v4),\
+                on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="269" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_10254fa4898c5bc62886cced1dc69227a" prot="public" static="no">
+        <name>GTEST_PRED4_</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(::testing::AssertPred4Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             #v4, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3, \
+                                             v4), on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="283" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1773df87450049eee312ca68001446e6a" prot="public" static="no">
+        <name>EXPECT_PRED_FORMAT4</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <initializer>GTEST_PRED_FORMAT4_(pred_format, v1, v2, v3, v4, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="287" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_14b6f8cc85983d75f0975dc10dd5d7830" prot="public" static="no">
+        <name>EXPECT_PRED4</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <initializer>GTEST_PRED4_(pred, v1, v2, v3, v4, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="289" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_15dcb830cd0a1bcab59d2a9245bdc6a42" prot="public" static="no">
+        <name>ASSERT_PRED_FORMAT4</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <initializer>GTEST_PRED_FORMAT4_(pred_format, v1, v2, v3, v4, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="291" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_13c9851d61189a6c4985f9e87d6c13e7f" prot="public" static="no">
+        <name>ASSERT_PRED4</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <initializer>GTEST_PRED4_(pred, v1, v2, v3, v4, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="293" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1c8053ffd624d6c9c634bcd77e7b1ae64" prot="public" static="no">
+        <name>GTEST_PRED_FORMAT5_</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(pred_format(#v1, #v2, #v3, #v4, #v5, v1, v2, v3, v4, v5),\
+                on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="338" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_19ade8b4107951e6cdc254a9e338ae6f6" prot="public" static="no">
+        <name>GTEST_PRED5_</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <param><defname>on_failure</defname></param>
+        <initializer>GTEST_ASSERT_(::testing::AssertPred5Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             #v4, \
+                                             #v5, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3, \
+                                             v4, \
+                                             v5), on_failure)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="354" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_192351507fd71e6cf2b8144edfc32cdac" prot="public" static="no">
+        <name>EXPECT_PRED_FORMAT5</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <initializer>GTEST_PRED_FORMAT5_(pred_format, v1, v2, v3, v4, v5, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="358" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_1a31ecfba6da13bba51bcb8e9b9c64dd9" prot="public" static="no">
+        <name>EXPECT_PRED5</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <initializer>GTEST_PRED5_(pred, v1, v2, v3, v4, v5, GTEST_NONFATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="360" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_15d8232dc55005b6dfdfaf7eb1bc68774" prot="public" static="no">
+        <name>ASSERT_PRED_FORMAT5</name>
+        <param><defname>pred_format</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <initializer>GTEST_PRED_FORMAT5_(pred_format, v1, v2, v3, v4, v5, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="362" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__pred__impl_8h_19ebc6d49002a7d1b54cfb0d42e7032ec" prot="public" static="no">
+        <name>ASSERT_PRED5</name>
+        <param><defname>pred</defname></param>
+        <param><defname>v1</defname></param>
+        <param><defname>v2</defname></param>
+        <param><defname>v3</defname></param>
+        <param><defname>v4</defname></param>
+        <param><defname>v5</defname></param>
+        <initializer>GTEST_PRED5_(pred, v1, v2, v3, v4, v5, GTEST_FATAL_FAILURE_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="364" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__pred__impl_8h_1bff1527f52d111c17363653c1fbcaf17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Pred</declname>
+            <defname>Pred</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+        </templateparamlist>
+        <type>AssertionResult</type>
+        <definition>AssertionResult AssertPred1Helper</definition>
+        <argsstring>(const char *pred_text, const char *e1, Pred pred, const T1 &amp;v1)</argsstring>
+        <name>AssertPred1Helper</name>
+        <param>
+          <type>const char *</type>
+          <declname>pred_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="90" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="87" bodyend="98"/>
+        <references refid="namespacetesting_107666fd50196e9727d0731c056fa1957">testing::AssertionFailure</references>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+      </memberdef>
+      <memberdef kind="function" id="gtest__pred__impl_8h_178043d6a1ec90420da5a0b06999f5da3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Pred</declname>
+            <defname>Pred</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+        </templateparamlist>
+        <type>AssertionResult</type>
+        <definition>AssertionResult AssertPred2Helper</definition>
+        <argsstring>(const char *pred_text, const char *e1, const char *e2, Pred pred, const T1 &amp;v1, const T2 &amp;v2)</argsstring>
+        <name>AssertPred2Helper</name>
+        <param>
+          <type>const char *</type>
+          <declname>pred_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="136" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="131" bodyend="146"/>
+        <references refid="namespacetesting_107666fd50196e9727d0731c056fa1957">testing::AssertionFailure</references>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+      </memberdef>
+      <memberdef kind="function" id="gtest__pred__impl_8h_1c7ee5e2ca4f22d94e70b62deee763c84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Pred</declname>
+            <defname>Pred</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T3</declname>
+            <defname>T3</defname>
+          </param>
+        </templateparamlist>
+        <type>AssertionResult</type>
+        <definition>AssertionResult AssertPred3Helper</definition>
+        <argsstring>(const char *pred_text, const char *e1, const char *e2, const char *e3, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3)</argsstring>
+        <name>AssertPred3Helper</name>
+        <param>
+          <type>const char *</type>
+          <declname>pred_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e3</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const T3 &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="189" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="182" bodyend="201"/>
+        <references refid="namespacetesting_107666fd50196e9727d0731c056fa1957">testing::AssertionFailure</references>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+      </memberdef>
+      <memberdef kind="function" id="gtest__pred__impl_8h_113d4772c4febac7e79847158d3c0c301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Pred</declname>
+            <defname>Pred</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T3</declname>
+            <defname>T3</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T4</declname>
+            <defname>T4</defname>
+          </param>
+        </templateparamlist>
+        <type>AssertionResult</type>
+        <definition>AssertionResult AssertPred4Helper</definition>
+        <argsstring>(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4)</argsstring>
+        <name>AssertPred4Helper</name>
+        <param>
+          <type>const char *</type>
+          <declname>pred_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e4</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const T3 &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <param>
+          <type>const T4 &amp;</type>
+          <declname>v4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="249" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="240" bodyend="263"/>
+        <references refid="namespacetesting_107666fd50196e9727d0731c056fa1957">testing::AssertionFailure</references>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+      </memberdef>
+      <memberdef kind="function" id="gtest__pred__impl_8h_1654b27ad7a124310670cbc3fe40e721b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Pred</declname>
+            <defname>Pred</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T3</declname>
+            <defname>T3</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T4</declname>
+            <defname>T4</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T5</declname>
+            <defname>T5</defname>
+          </param>
+        </templateparamlist>
+        <type>AssertionResult</type>
+        <definition>AssertionResult AssertPred5Helper</definition>
+        <argsstring>(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, const char *e5, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4, const T5 &amp;v5)</argsstring>
+        <name>AssertPred5Helper</name>
+        <param>
+          <type>const char *</type>
+          <declname>pred_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e5</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const T3 &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <param>
+          <type>const T4 &amp;</type>
+          <declname>v4</declname>
+        </param>
+        <param>
+          <type>const T5 &amp;</type>
+          <declname>v5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" line="316" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h" bodystart="305" bodyend="332"/>
+        <references refid="namespacetesting_107666fd50196e9727d0731c056fa1957">testing::AssertionFailure</references>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2006,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>AUTOMATICALLY<sp/>GENERATED<sp/>on<sp/>10/02/2008<sp/>by<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&apos;gen_gtest_pred_impl.py<sp/>5&apos;.<sp/><sp/>DO<sp/>NOT<sp/>EDIT<sp/>BY<sp/>HAND!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Implements<sp/>a<sp/>family<sp/>of<sp/>generic<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Makes<sp/>sure<sp/>this<sp/>header<sp/>is<sp/>not<sp/>included<sp/>before<sp/>gtest.h.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTEST_INCLUDE_GTEST_GTEST_H_</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>Do<sp/>not<sp/>include<sp/>gtest_pred_impl.h<sp/>directly.<sp/><sp/>Include<sp/>gtest.h<sp/>instead.</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>GTEST_INCLUDE_GTEST_GTEST_H_</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>header<sp/>implements<sp/>a<sp/>family<sp/>of<sp/>generic<sp/>predicate<sp/>assertion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>macros:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ASSERT_PRED_FORMAT1(pred_format,<sp/>v1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ASSERT_PRED_FORMAT2(pred_format,<sp/>v1,<sp/>v2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>where<sp/>pred_format<sp/>is<sp/>a<sp/>function<sp/>or<sp/>functor<sp/>that<sp/>takes<sp/>n<sp/>(in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>case<sp/>of<sp/>ASSERT_PRED_FORMATn)<sp/>values<sp/>and<sp/>their<sp/>source<sp/>expression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>text,<sp/>and<sp/>returns<sp/>a<sp/>testing::AssertionResult.<sp/><sp/>See<sp/>the<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>ASSERT_EQ<sp/>in<sp/>gtest.h<sp/>for<sp/>an<sp/>example.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>don&apos;t<sp/>care<sp/>about<sp/>formatting,<sp/>you<sp/>can<sp/>use<sp/>the<sp/>more</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>restrictive<sp/>version:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ASSERT_PRED1(pred,<sp/>v1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ASSERT_PRED2(pred,<sp/>v1,<sp/>v2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>where<sp/>pred<sp/>is<sp/>an<sp/>n-ary<sp/>function<sp/>or<sp/>functor<sp/>that<sp/>returns<sp/>bool,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>values<sp/>v1,<sp/>v2,<sp/>...,<sp/>must<sp/>support<sp/>the<sp/>&lt;&lt;<sp/>operator<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>streaming<sp/>to<sp/>std::ostream.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>also<sp/>define<sp/>the<sp/>EXPECT_*<sp/>variations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>now<sp/>we<sp/>only<sp/>support<sp/>predicates<sp/>whose<sp/>arity<sp/>is<sp/>at<sp/>most<sp/>5.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Please<sp/>email<sp/>googletestframework@googlegroups.com<sp/>if<sp/>you<sp/>need</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>support<sp/>for<sp/>higher<sp/>arities.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTEST_ASSERT_<sp/>is<sp/>the<sp/>basic<sp/>statement<sp/>to<sp/>which<sp/>all<sp/>of<sp/>the<sp/>assertions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>this<sp/>file<sp/>reduce.<sp/><sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="gtest__pred__impl_8h_18216a4b47b71c55f51c6889b13115c3d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_ASSERT_(expression,<sp/>on_failure)<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/>GTEST_AMBIGUOUS_ELSE_BLOCKER_<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/>if<sp/>(const<sp/>::testing::AssertionResult<sp/>gtest_ar<sp/>=<sp/>(expression))<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>;<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/>else<sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>on_failure(gtest_ar.failure_message())</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED1.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1&gt;</highlight></codeline>
+<codeline lineno="87" refid="gtest__pred__impl_8h_1bff1527f52d111c17363653c1fbcaf17" refkind="member"><highlight class="normal">AssertionResult<sp/><ref refid="gtest__pred__impl_8h_1bff1527f52d111c17363653c1fbcaf17" kindref="member">AssertPred1Helper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pred_text,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e1,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pred<sp/>pred,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>v1)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred(v1))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" kindref="member">AssertionSuccess</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>Message<sp/>msg;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>msg<sp/>&lt;&lt;<sp/>pred_text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>evaluates<sp/>to<sp/>false,<sp/>where&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v1;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_107666fd50196e9727d0731c056fa1957" kindref="member">AssertionFailure</ref>(msg);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED_FORMAT1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="gtest__pred__impl_8h_17c93df98abc9fd256d6ac9ce0d7dcc7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED_FORMAT1_(pred_format,<sp/>v1,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(pred_format(#v1,<sp/>v1),\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_failure)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED1.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="gtest__pred__impl_8h_17aeea2577a6bd0ad1b25fbe678fd8780" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED1_(pred,<sp/>v1,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(::testing::AssertPred1Helper(#pred,<sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v1,<sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred,<sp/>\</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1),<sp/>on_failure)</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unary<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="gtest__pred__impl_8h_1bbc454a39b305b26dadd5a109ed90abc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED_FORMAT1(pred_format,<sp/>v1)<sp/>\</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT1_(pred_format,<sp/>v1,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="117" refid="gtest__pred__impl_8h_1764e040be09adc3c6a06e877e83e6113" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED1(pred,<sp/>v1)<sp/>\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED1_(pred,<sp/>v1,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="119" refid="gtest__pred__impl_8h_1301d707584448201b6730fcb051cb9d9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED_FORMAT1(pred_format,<sp/>v1)<sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT1_(pred_format,<sp/>v1,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="121" refid="gtest__pred__impl_8h_1a51f864a7cf311d9fb655a96197ef235" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED1(pred,<sp/>v1)<sp/>\</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED1_(pred,<sp/>v1,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED2.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="131" refid="gtest__pred__impl_8h_178043d6a1ec90420da5a0b06999f5da3" refkind="member"><highlight class="normal">AssertionResult<sp/><ref refid="gtest__pred__impl_8h_178043d6a1ec90420da5a0b06999f5da3" kindref="member">AssertPred2Helper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pred_text,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e1,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e2,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pred<sp/>pred,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>v1,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred(v1,<sp/>v2))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" kindref="member">AssertionSuccess</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>Message<sp/>msg;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>msg<sp/>&lt;&lt;<sp/>pred_text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>evaluates<sp/>to<sp/>false,<sp/>where&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v1</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v2;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_107666fd50196e9727d0731c056fa1957" kindref="member">AssertionFailure</ref>(msg);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED_FORMAT2.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="gtest__pred__impl_8h_186912f7f5e1f3fbae02b890f53e65183" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED_FORMAT2_(pred_format,<sp/>v1,<sp/>v2,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(pred_format(#v1,<sp/>#v2,<sp/>v1,<sp/>v2),\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_failure)</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED2.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="gtest__pred__impl_8h_1212427e5889f40469e842bfc5510d04d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED2_(pred,<sp/>v1,<sp/>v2,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(::testing::AssertPred2Helper(#pred,<sp/>\</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v1,<sp/>\</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v2,<sp/>\</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred,<sp/>\</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1,<sp/>\</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2),<sp/>on_failure)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Binary<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="gtest__pred__impl_8h_1b9587b21308816b3b89f518bee130ea4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED_FORMAT2(pred_format,<sp/>v1,<sp/>v2)<sp/>\</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT2_(pred_format,<sp/>v1,<sp/>v2,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="167" refid="gtest__pred__impl_8h_183857bdfa95ce84aec0c84f83ee30700" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED2(pred,<sp/>v1,<sp/>v2)<sp/>\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED2_(pred,<sp/>v1,<sp/>v2,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="169" refid="gtest__pred__impl_8h_152b2ca23761186f3e0f6efa7d70e0fa0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED_FORMAT2(pred_format,<sp/>v1,<sp/>v2)<sp/>\</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT2_(pred_format,<sp/>v1,<sp/>v2,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="171" refid="gtest__pred__impl_8h_1b942730da629dcdd58dcdfa674a85f2e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED2(pred,<sp/>v1,<sp/>v2)<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED2_(pred,<sp/>v1,<sp/>v2,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED3.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T3&gt;</highlight></codeline>
+<codeline lineno="182" refid="gtest__pred__impl_8h_1c7ee5e2ca4f22d94e70b62deee763c84" refkind="member"><highlight class="normal">AssertionResult<sp/><ref refid="gtest__pred__impl_8h_1c7ee5e2ca4f22d94e70b62deee763c84" kindref="member">AssertPred3Helper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pred_text,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e1,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e2,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e3,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pred<sp/>pred,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>v1,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>v2,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T3&amp;<sp/>v3)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred(v1,<sp/>v2,<sp/>v3))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" kindref="member">AssertionSuccess</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>Message<sp/>msg;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>msg<sp/>&lt;&lt;<sp/>pred_text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>evaluates<sp/>to<sp/>false,<sp/>where&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v1</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v2</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v3;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_107666fd50196e9727d0731c056fa1957" kindref="member">AssertionFailure</ref>(msg);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED_FORMAT3.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="gtest__pred__impl_8h_1f0f9deca63ea8518e893d3541bfe74df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED_FORMAT3_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(pred_format(#v1,<sp/>#v2,<sp/>#v3,<sp/>v1,<sp/>v2,<sp/>v3),\</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_failure)</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED3.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="gtest__pred__impl_8h_11a5b8d39351f3ca4feaac2f24e0162ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED3_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(::testing::AssertPred3Helper(#pred,<sp/>\</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v1,<sp/>\</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v2,<sp/>\</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v3,<sp/>\</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred,<sp/>\</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1,<sp/>\</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2,<sp/>\</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v3),<sp/>on_failure)</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ternary<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="gtest__pred__impl_8h_1cbdce51982acbbb8145543f470b15b6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED_FORMAT3(pred_format,<sp/>v1,<sp/>v2,<sp/>v3)<sp/>\</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT3_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="224" refid="gtest__pred__impl_8h_1b547a2c9920df9998e46014dfa2f8dee" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED3(pred,<sp/>v1,<sp/>v2,<sp/>v3)<sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED3_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="226" refid="gtest__pred__impl_8h_1d51f5b7293702c4a73e5b85878bbf292" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED_FORMAT3(pred_format,<sp/>v1,<sp/>v2,<sp/>v3)<sp/>\</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT3_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="228" refid="gtest__pred__impl_8h_19e06f28bd29270b0d2be12ba4c27cbb6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED3(pred,<sp/>v1,<sp/>v2,<sp/>v3)<sp/>\</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED3_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED4.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T3,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T4&gt;</highlight></codeline>
+<codeline lineno="240" refid="gtest__pred__impl_8h_113d4772c4febac7e79847158d3c0c301" refkind="member"><highlight class="normal">AssertionResult<sp/><ref refid="gtest__pred__impl_8h_113d4772c4febac7e79847158d3c0c301" kindref="member">AssertPred4Helper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pred_text,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e1,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e2,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e3,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e4,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pred<sp/>pred,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>v1,</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>v2,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T3&amp;<sp/>v3,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T4&amp;<sp/>v4)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred(v1,<sp/>v2,<sp/>v3,<sp/>v4))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" kindref="member">AssertionSuccess</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>Message<sp/>msg;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>msg<sp/>&lt;&lt;<sp/>pred_text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e4<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>evaluates<sp/>to<sp/>false,<sp/>where&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v1</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v2</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v3</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e4<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v4;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_107666fd50196e9727d0731c056fa1957" kindref="member">AssertionFailure</ref>(msg);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED_FORMAT4.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="gtest__pred__impl_8h_17836ad1e19812d0fb8b655bf7c725af6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED_FORMAT4_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(pred_format(#v1,<sp/>#v2,<sp/>#v3,<sp/>#v4,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4),\</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_failure)</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED4.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="gtest__pred__impl_8h_10254fa4898c5bc62886cced1dc69227a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED4_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="274"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(::testing::AssertPred4Helper(#pred,<sp/>\</highlight></codeline>
+<codeline lineno="275"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v1,<sp/>\</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v2,<sp/>\</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v3,<sp/>\</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v4,<sp/>\</highlight></codeline>
+<codeline lineno="279"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred,<sp/>\</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1,<sp/>\</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2,<sp/>\</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v3,<sp/>\</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v4),<sp/>on_failure)</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4-ary<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="gtest__pred__impl_8h_1773df87450049eee312ca68001446e6a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED_FORMAT4(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4)<sp/>\</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT4_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="288" refid="gtest__pred__impl_8h_14b6f8cc85983d75f0975dc10dd5d7830" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED4(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4)<sp/>\</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED4_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="290" refid="gtest__pred__impl_8h_15dcb830cd0a1bcab59d2a9245bdc6a42" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED_FORMAT4(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4)<sp/>\</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT4_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="292" refid="gtest__pred__impl_8h_13c9851d61189a6c4985f9e87d6c13e7f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED4(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4)<sp/>\</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED4_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED5.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T3,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T4,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T5&gt;</highlight></codeline>
+<codeline lineno="305" refid="gtest__pred__impl_8h_1654b27ad7a124310670cbc3fe40e721b" refkind="member"><highlight class="normal">AssertionResult<sp/><ref refid="gtest__pred__impl_8h_1654b27ad7a124310670cbc3fe40e721b" kindref="member">AssertPred5Helper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pred_text,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e1,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e2,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e3,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e4,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e5,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pred<sp/>pred,</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>v1,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>v2,</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T3&amp;<sp/>v3,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T4&amp;<sp/>v4,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T5&amp;<sp/>v5)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred(v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" kindref="member">AssertionSuccess</ref>();</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>Message<sp/>msg;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>msg<sp/>&lt;&lt;<sp/>pred_text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e4<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e5<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>evaluates<sp/>to<sp/>false,<sp/>where&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v1</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v2</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e3<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v3</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e4<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v4</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e5<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>evaluates<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v5;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_107666fd50196e9727d0731c056fa1957" kindref="member">AssertionFailure</ref>(msg);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED_FORMAT5.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>use<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="gtest__pred__impl_8h_1c8053ffd624d6c9c634bcd77e7b1ae64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED_FORMAT5_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="337"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(pred_format(#v1,<sp/>#v2,<sp/>#v3,<sp/>#v4,<sp/>#v5,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5),\</highlight></codeline>
+<codeline lineno="338"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_failure)</highlight></codeline>
+<codeline lineno="339"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>macro<sp/>for<sp/>implementing<sp/>{EXPECT|ASSERT}_PRED5.<sp/><sp/>Don&apos;t<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>in<sp/>your<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="gtest__pred__impl_8h_19ade8b4107951e6cdc254a9e338ae6f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_PRED5_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>on_failure)\</highlight></codeline>
+<codeline lineno="343"><highlight class="preprocessor"><sp/><sp/>GTEST_ASSERT_(::testing::AssertPred5Helper(#pred,<sp/>\</highlight></codeline>
+<codeline lineno="344"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v1,<sp/>\</highlight></codeline>
+<codeline lineno="345"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v2,<sp/>\</highlight></codeline>
+<codeline lineno="346"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v3,<sp/>\</highlight></codeline>
+<codeline lineno="347"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v4,<sp/>\</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#v5,<sp/>\</highlight></codeline>
+<codeline lineno="349"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred,<sp/>\</highlight></codeline>
+<codeline lineno="350"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1,<sp/>\</highlight></codeline>
+<codeline lineno="351"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2,<sp/>\</highlight></codeline>
+<codeline lineno="352"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v3,<sp/>\</highlight></codeline>
+<codeline lineno="353"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v4,<sp/>\</highlight></codeline>
+<codeline lineno="354"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v5),<sp/>on_failure)</highlight></codeline>
+<codeline lineno="355"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">//<sp/>5-ary<sp/>predicate<sp/>assertion<sp/>macros.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="gtest__pred__impl_8h_192351507fd71e6cf2b8144edfc32cdac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED_FORMAT5(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5)<sp/>\</highlight></codeline>
+<codeline lineno="358"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT5_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="359" refid="gtest__pred__impl_8h_1a31ecfba6da13bba51bcb8e9b9c64dd9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPECT_PRED5(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5)<sp/>\</highlight></codeline>
+<codeline lineno="360"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED5_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>GTEST_NONFATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="361" refid="gtest__pred__impl_8h_15d8232dc55005b6dfdfaf7eb1bc68774" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED_FORMAT5(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5)<sp/>\</highlight></codeline>
+<codeline lineno="362"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED_FORMAT5_(pred_format,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="363" refid="gtest__pred__impl_8h_19ebc6d49002a7d1b54cfb0d42e7032ec" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_PRED5(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5)<sp/>\</highlight></codeline>
+<codeline lineno="364"><highlight class="preprocessor"><sp/><sp/>GTEST_PRED5_(pred,<sp/>v1,<sp/>v2,<sp/>v3,<sp/>v4,<sp/>v5,<sp/>GTEST_FATAL_FAILURE_)</highlight></codeline>
+<codeline lineno="365"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest_pred_impl.h"/>
+  </compounddef>
+</doxygen>

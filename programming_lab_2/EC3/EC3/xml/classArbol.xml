@@ -1,0 +1,990 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classArbol" kind="class" prot="public">
+    <compoundname>Arbol</compoundname>
+    <includes refid="arbol_8h" local="no">arbol.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classArbol_153d7c5214527a72941cf37f3c44db17a" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Arbol&lt; T &gt;::dato_raiz_</definition>
+        <argsstring></argsstring>
+        <name>dato_raiz_</name>
+        <briefdescription>
+<para>Raiz del arbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="75" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1614b9adb23cb1ddc3a6373affd97ef30" compoundref="arbol_8h" startline="1470" endline="1477">Arbol&lt; T * &gt;::ACola</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_144d2d43078c712e25d722599017bc199" compoundref="arbol_8h" startline="744" endline="758">Arbol&lt; T * &gt;::Arbol</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_126ee7df9d82fd695f36954cf737e44d2" compoundref="arbol_8h" startline="1007" endline="1081">Arbol&lt; T * &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_184b2772f41a7535399275d0031caf477" compoundref="arbol_8h" startline="816" endline="824">Arbol&lt; T * &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" compoundref="arbol_8h" startline="173" endline="181">Arbol&lt; T &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_13450c8f4760b9a1dd83989566dbf091c" compoundref="arbol_8h" startline="897" endline="919">Arbol&lt; T * &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1ff3e209cf30aa712b232d4bc8e040d35" compoundref="arbol_8h" startline="782" endline="785">Arbol&lt; T * &gt;::raiz</referencedby>
+        <referencedby refid="classArbol_1cc8af68589c612d694c83d936598be2e" compoundref="arbol_8h" startline="187" endline="190">Arbol&lt; T &gt;::raiz</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_1795b82d5953a1d8bea9ea7e690882776" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt;T&gt;* Arbol&lt; T &gt;::hizq_</definition>
+        <argsstring></argsstring>
+        <name>hizq_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="76" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_193341b33c98a4f919d8a3ec2311e385a" compoundref="arbol_8h" startline="727" endline="734">Arbol&lt; T * &gt;::Arbol</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_126ee7df9d82fd695f36954cf737e44d2" compoundref="arbol_8h" startline="1007" endline="1081">Arbol&lt; T * &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12819cfd76996801fdf09d936529d816b" compoundref="arbol_8h" startline="1359" endline="1367">Arbol&lt; T * &gt;::DobleRotarDerecha</referencedby>
+        <referencedby refid="classArbol_15961913882418fb1ce5aa36e860244a6" compoundref="arbol_8h" startline="498" endline="506">Arbol&lt; T &gt;::DobleRotarDerecha</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_15917110a4a17df1c681a5ef6c8b7e56f" compoundref="arbol_8h" startline="805" endline="808">Arbol&lt; T * &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" compoundref="arbol_8h" startline="173" endline="181">Arbol&lt; T &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12cafc7ff470af481d93f7f3fc83da280" compoundref="arbol_8h" startline="764" endline="767">Arbol&lt; T * &gt;::hijoIzq</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19ce166a13f2a7c67d4ab9ba034ab2429" compoundref="arbol_8h" startline="793" endline="798">Arbol&lt; T * &gt;::NodosNivel</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_18b60e2dec2f4b233ea435be9f1b081e5" compoundref="arbol_8h" startline="1247" endline="1256">Arbol&lt; T * &gt;::NumNodos</referencedby>
+        <referencedby refid="classArbol_15fb3cf58da4935e8f75b78df636378ad" compoundref="arbol_8h" startline="408" endline="417">Arbol&lt; T &gt;::NumNodos</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12368f3c6b8ac5f21249056f0eb49df67" compoundref="arbol_8h" startline="1170" endline="1174">Arbol&lt; T * &gt;::Profundidad</referencedby>
+        <referencedby refid="classArbol_1c62ba1bf14e1bf03ff1e05ed3f3a8e66" compoundref="arbol_8h" startline="208" endline="212">Arbol&lt; T &gt;::Profundidad</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_10d473bc644c325dc7904a88929ad25a3" compoundref="arbol_8h" startline="1332" endline="1338">Arbol&lt; T * &gt;::RotarDerecha</referencedby>
+        <referencedby refid="classArbol_1cbe307b7b9501912e0619ac7c611133f" compoundref="arbol_8h" startline="471" endline="477">Arbol&lt; T &gt;::RotarDerecha</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt;T&gt; * Arbol&lt; T &gt;::hder_</definition>
+        <argsstring></argsstring>
+        <name>hder_</name>
+        <briefdescription>
+<para>Estos atributos son las 2 ramas del arbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="76" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_193341b33c98a4f919d8a3ec2311e385a" compoundref="arbol_8h" startline="727" endline="734">Arbol&lt; T * &gt;::Arbol</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_126ee7df9d82fd695f36954cf737e44d2" compoundref="arbol_8h" startline="1007" endline="1081">Arbol&lt; T * &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b33a1ed94f8beb5d599ce6e6510cc3d8" compoundref="arbol_8h" startline="1375" endline="1383">Arbol&lt; T * &gt;::DobleRotarIzquierda</referencedby>
+        <referencedby refid="classArbol_169e17c545e54c92db8642c4d472ecd03" compoundref="arbol_8h" startline="514" endline="522">Arbol&lt; T &gt;::DobleRotarIzquierda</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1330f1d0d84ff53a02bae4d512a1dda68" compoundref="arbol_8h" startline="1308" endline="1314">Arbol&lt; T * &gt;::Equilibrado</referencedby>
+        <referencedby refid="classArbol_105798cf3b1a61443b7b945010269f59b" compoundref="arbol_8h" startline="447" endline="453">Arbol&lt; T &gt;::Equilibrado</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_15917110a4a17df1c681a5ef6c8b7e56f" compoundref="arbol_8h" startline="805" endline="808">Arbol&lt; T * &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" compoundref="arbol_8h" startline="173" endline="181">Arbol&lt; T &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1ae55545322760ac0d2ed47f80de40074" compoundref="arbol_8h" startline="1321" endline="1325">Arbol&lt; T * &gt;::FactorBalanceo</referencedby>
+        <referencedby refid="classArbol_17146cd1189b6eb6fce711f29b056b8a8" compoundref="arbol_8h" startline="460" endline="464">Arbol&lt; T &gt;::FactorBalanceo</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b567396b761aef71319a021b4d4ea2d3" compoundref="arbol_8h" startline="773" endline="776">Arbol&lt; T * &gt;::hijoDer</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19ce166a13f2a7c67d4ab9ba034ab2429" compoundref="arbol_8h" startline="793" endline="798">Arbol&lt; T * &gt;::NodosNivel</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_18b60e2dec2f4b233ea435be9f1b081e5" compoundref="arbol_8h" startline="1247" endline="1256">Arbol&lt; T * &gt;::NumNodos</referencedby>
+        <referencedby refid="classArbol_15fb3cf58da4935e8f75b78df636378ad" compoundref="arbol_8h" startline="408" endline="417">Arbol&lt; T &gt;::NumNodos</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12368f3c6b8ac5f21249056f0eb49df67" compoundref="arbol_8h" startline="1170" endline="1174">Arbol&lt; T * &gt;::Profundidad</referencedby>
+        <referencedby refid="classArbol_1c62ba1bf14e1bf03ff1e05ed3f3a8e66" compoundref="arbol_8h" startline="208" endline="212">Arbol&lt; T &gt;::Profundidad</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1adab445680637d252b31e41e22321edf" compoundref="arbol_8h" startline="1345" endline="1351">Arbol&lt; T * &gt;::RotarIzquierda</referencedby>
+        <referencedby refid="classArbol_12a8213d1d2b801abe8fc0765de7900e6" compoundref="arbol_8h" startline="484" endline="490">Arbol&lt; T &gt;::RotarIzquierda</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_1642f2d945dfdf181b4874fb49256d8ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::vacio_</definition>
+        <argsstring></argsstring>
+        <name>vacio_</name>
+        <briefdescription>
+<para>Indica si un arbol esta vacio(es decir, no tenemos que tener en cuenta lo que contenga). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="77" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_193341b33c98a4f919d8a3ec2311e385a" compoundref="arbol_8h" startline="727" endline="734">Arbol&lt; T * &gt;::Arbol</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_11930240962fde966868ee50f854e8990" compoundref="arbol_8h" startline="846" endline="850">Arbol&lt; T * &gt;::vacio</referencedby>
+        <referencedby refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+        <referencedby refid="classArbol_1ad6aee8f131c718d4ebe13399c75d610" compoundref="arbol_8h" startline="555" endline="569">Arbol&lt; T &gt;::~Arbol</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classArbol_133107d8ba11a173d64200ab39a10ea2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::Arbol</definition>
+        <argsstring>()</argsstring>
+        <name>Arbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto. Inicializa un objeto de tipo <ref refid="classArbol" kindref="compound">Arbol</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve un objeto tipo <ref refid="classArbol" kindref="compound">Arbol</ref> inicializado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="96" bodyend="103"/>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1e34f1b9067fc782684b388e1187f0099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::Arbol</definition>
+        <argsstring>(Arbol *hizq_, const T &amp;dato, Arbol *hder_)</argsstring>
+        <name>Arbol</name>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+          <declname>hizq_</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+          <declname>hder_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado. Inicializa un objeto de tipo <ref refid="classArbol" kindref="compound">Arbol</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hizq_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hijo izquierdo del árbol a crear </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dato a insertar en la raíz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hder_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hijo derecho del árbol a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve un objeto de tipo <ref refid="classArbol" kindref="compound">Arbol</ref> inicializado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="113" bodyend="123"/>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_166087389ff653924ecc3beedd7c0596a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::hijoIzq</definition>
+        <argsstring>() const</argsstring>
+        <name>hijoIzq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve un objeto <ref refid="classArbol" kindref="compound">Arbol</ref> con el subárbol izquierdo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="49" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="129" bodyend="132"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_126ee7df9d82fd695f36954cf737e44d2" compoundref="arbol_8h" startline="1007" endline="1081">Arbol&lt; T * &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_13450c8f4760b9a1dd83989566dbf091c" compoundref="arbol_8h" startline="897" endline="919">Arbol&lt; T * &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+        <referencedby refid="classArbol_1ad6aee8f131c718d4ebe13399c75d610" compoundref="arbol_8h" startline="555" endline="569">Arbol&lt; T &gt;::~Arbol</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_14e5e3e62183ddb7f2dcad8a8026de348" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::hijoDer</definition>
+        <argsstring>() const</argsstring>
+        <name>hijoDer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve un objeto <ref refid="classArbol" kindref="compound">Arbol</ref> con el subárbol derecho </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="138" bodyend="141"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1614b9adb23cb1ddc3a6373affd97ef30" compoundref="arbol_8h" startline="1470" endline="1477">Arbol&lt; T * &gt;::ACola</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_13450c8f4760b9a1dd83989566dbf091c" compoundref="arbol_8h" startline="897" endline="919">Arbol&lt; T * &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+        <referencedby refid="classArbol_1ad6aee8f131c718d4ebe13399c75d610" compoundref="arbol_8h" startline="555" endline="569">Arbol&lt; T &gt;::~Arbol</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1cc8af68589c612d694c83d936598be2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Arbol&lt; T &gt;::raiz</definition>
+        <argsstring>() const</argsstring>
+        <name>raiz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el valor almacenado en la raíz </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="51" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="187" bodyend="190"/>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_106b4abd06de95f5e2124017999b298f0" compoundref="arbol_8h" startline="1193" endline="1204">Arbol&lt; T * &gt;::InOrden</referencedby>
+        <referencedby refid="classArbol_14b2f883b8b2851f3ba888facc35e4b98" compoundref="arbol_8h" startline="575" endline="586">Arbol&lt; T &gt;::InOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1c6a62e868b9edc3ebf3ef6e77dc41b97" compoundref="arbol_8h" startline="1227" endline="1238">Arbol&lt; T * &gt;::PostOrden</referencedby>
+        <referencedby refid="classArbol_1b6b5b605d357e5b3e125eb5dadb352de" compoundref="arbol_8h" startline="610" endline="621">Arbol&lt; T &gt;::PostOrden</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::vacio</definition>
+        <argsstring>() const</argsstring>
+        <name>vacio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve true si el árbol está vacío </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="196" bodyend="200"/>
+        <references refid="classArbol_1642f2d945dfdf181b4874fb49256d8ab" compoundref="arbol_8h" startline="77">Arbol&lt; T &gt;::vacio_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_126ee7df9d82fd695f36954cf737e44d2" compoundref="arbol_8h" startline="1007" endline="1081">Arbol&lt; T * &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_19b56f085769de4093a28b3b3b2843f2b" compoundref="arbol_8h" startline="1287" endline="1301">Arbol&lt; T * &gt;::Destruir</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_13450c8f4760b9a1dd83989566dbf091c" compoundref="arbol_8h" startline="897" endline="919">Arbol&lt; T * &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12642a42627008ad0da66e9899b439143" compoundref="arbol_8h" startline="1450" endline="1463">Arbol&lt; T * &gt;::~Arbol</referencedby>
+        <referencedby refid="classArbol_1ad6aee8f131c718d4ebe13399c75d610" compoundref="arbol_8h" startline="555" endline="569">Arbol&lt; T &gt;::~Arbol</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1b3143332dde55b1cc874a545231e1fc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::insertar</definition>
+        <argsstring>(const T &amp;dato)</argsstring>
+        <name>insertar</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta el valor dato en el Árbol Binario de Búsqueda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true si se insertó correctamente </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="53" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="233" bodyend="263"/>
+        <references refid="classArbol_133107d8ba11a173d64200ab39a10ea2a" compoundref="arbol_8h" startline="96" endline="103">Arbol&lt; T &gt;::Arbol</references>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_14e5e3e62183ddb7f2dcad8a8026de348" compoundref="arbol_8h" startline="138" endline="141">Arbol&lt; T &gt;::hijoDer</references>
+        <references refid="classArbol_166087389ff653924ecc3beedd7c0596a" compoundref="arbol_8h" startline="129" endline="132">Arbol&lt; T &gt;::hijoIzq</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <references refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</references>
+        <references refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</references>
+        <references refid="classArbol_1642f2d945dfdf181b4874fb49256d8ab" compoundref="arbol_8h" startline="77">Arbol&lt; T &gt;::vacio_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1858766290b8a2685f81096eeb6711237" compoundref="arbol_8h" startline="858" endline="889">Arbol&lt; T * &gt;::insertar</referencedby>
+        <referencedby refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" compoundref="arbol_8h" startline="233" endline="263">Arbol&lt; T &gt;::insertar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_17be63724b0eceb44a12415f7d3d3df3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::pertenece</definition>
+        <argsstring>(const T &amp;dato) const </argsstring>
+        <name>pertenece</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica si el valor dato existe en el Árbol Binario de Búsqueda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true si encuentra un nodo con ese valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="271" bodyend="293"/>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <references refid="classArbol_14e5e3e62183ddb7f2dcad8a8026de348" compoundref="arbol_8h" startline="138" endline="141">Arbol&lt; T &gt;::hijoDer</references>
+        <references refid="classArbol_166087389ff653924ecc3beedd7c0596a" compoundref="arbol_8h" startline="129" endline="132">Arbol&lt; T &gt;::hijoIzq</references>
+        <references refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</references>
+        <references refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_13450c8f4760b9a1dd83989566dbf091c" compoundref="arbol_8h" startline="897" endline="919">Arbol&lt; T * &gt;::pertenece</referencedby>
+        <referencedby refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" compoundref="arbol_8h" startline="271" endline="293">Arbol&lt; T &gt;::pertenece</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_190ce61b6d9e613728859cec34192c65e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::borrar</definition>
+        <argsstring>(const T &amp;dato)</argsstring>
+        <name>borrar</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elimina el nodo que contenga el valor dato <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor a eliminar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="301" bodyend="317"/>
+        <references refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" compoundref="arbol_8h" startline="325" endline="399">Arbol&lt; T &gt;::borrarOrden</references>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <references refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</references>
+        <references refid="classArbol_1642f2d945dfdf181b4874fb49256d8ab" compoundref="arbol_8h" startline="77">Arbol&lt; T &gt;::vacio_</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1c62ba1bf14e1bf03ff1e05ed3f3a8e66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::Profundidad</definition>
+        <argsstring>() const</argsstring>
+        <name>Profundidad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que halla la profundidad del arbol <simplesect kind="return"><para>profundidad del arbol </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="56" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="208" bodyend="212"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <references refid="classArbol_105e9e7e332030518e1011952b5129865" compoundref="arbol_8h" startline="221" endline="225">Arbol&lt; T &gt;::maximo</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1d518e5fb3fa39a262aff18104d45d29c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::EsHoja</definition>
+        <argsstring>() const</argsstring>
+        <name>EsHoja</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si un arbol es hoja o no <simplesect kind="return"><para>true si el arbol es hoja(no tiene hijos), false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="57" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="161" bodyend="164"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_184b2772f41a7535399275d0031caf477" compoundref="arbol_8h" startline="816" endline="824">Arbol&lt; T * &gt;::EsHoja</referencedby>
+        <referencedby refid="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" compoundref="arbol_8h" startline="173" endline="181">Arbol&lt; T &gt;::EsHoja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::EsHoja</definition>
+        <argsstring>(const T &amp;dato) const </argsstring>
+        <name>EsHoja</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modulo que calcula si un nodo es una hoja o no. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dato que buscamos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si el nodo que buscamos es hoja, false en caso contrario o si esta vacio. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="58" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="173" bodyend="181"/>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <references refid="classArbol_1d518e5fb3fa39a262aff18104d45d29c" compoundref="arbol_8h" startline="161" endline="164">Arbol&lt; T &gt;::EsHoja</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_14b1623deaf1067df268d86193bebc9bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::NodosNivel</definition>
+        <argsstring>(const int &amp;nivel) const </argsstring>
+        <name>NodosNivel</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>nivel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que nos devuelve el numero de nodos que tiene un nivel. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nivel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nivel en el que hallar el numero de nodos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>numero de nodos que tiene el nivel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="59" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="149" bodyend="154"/>
+        <references refid="classArbol_14b1623deaf1067df268d86193bebc9bc" compoundref="arbol_8h" startline="149" endline="154">Arbol&lt; T &gt;::NodosNivel</references>
+        <referencedby refid="classArbol_14b1623deaf1067df268d86193bebc9bc" compoundref="arbol_8h" startline="149" endline="154">Arbol&lt; T &gt;::NodosNivel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_15fb3cf58da4935e8f75b78df636378ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::NumNodos</definition>
+        <argsstring>(int &amp;hojas, int &amp;nodos) const</argsstring>
+        <name>NumNodos</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>hojas</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nodos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve por parametro el numero de hojas y nudos de un arbol. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hojas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de hojas que contiene el arbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de nudos(nodos internos) que contiene el arbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>hojas y nodos deben valer 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="60" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="408" bodyend="417"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_103e7bfd69ed852d5cf3dba2ec8583c62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::NumNodos</definition>
+        <argsstring>(const int &amp;nivel) const </argsstring>
+        <name>NumNodos</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>nivel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve el numero de nodos que contiene un arbol hasta un nivel dado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nivel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ultimo nivel a contar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>numero de nodos que tiene un arbol hasta el nivel &quot;nivel&quot; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="61" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="425" bodyend="429"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1e66fa62144314ad54c1d7f8874f22282" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::NumNodos</definition>
+        <argsstring>() const</argsstring>
+        <name>NumNodos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve el numero de nodos que contiene un arbol <simplesect kind="return"><para>numero de nodos que tiene un arbol </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="62" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="436" bodyend="440"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_105798cf3b1a61443b7b945010269f59b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::Equilibrado</definition>
+        <argsstring>() const</argsstring>
+        <name>Equilibrado</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si un arbol esta correctamente balanceado <simplesect kind="return"><para>true si el arbol esta equilibrado false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="63" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="447" bodyend="453"/>
+        <references refid="classArbol_17146cd1189b6eb6fce711f29b056b8a8" compoundref="arbol_8h" startline="460" endline="464">Arbol&lt; T &gt;::FactorBalanceo</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1bcf420e0ed54c64121b9be329ca08c44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::Equilibrar</definition>
+        <argsstring>()</argsstring>
+        <name>Equilibrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Equilibra el arbol usando las funciones de rotar <simplesect kind="return"><para>retorna el arbol equilibrado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="64" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="529" bodyend="547"/>
+        <references refid="classArbol_15961913882418fb1ce5aa36e860244a6" compoundref="arbol_8h" startline="498" endline="506">Arbol&lt; T &gt;::DobleRotarDerecha</references>
+        <references refid="classArbol_169e17c545e54c92db8642c4d472ecd03" compoundref="arbol_8h" startline="514" endline="522">Arbol&lt; T &gt;::DobleRotarIzquierda</references>
+        <references refid="classArbol_105798cf3b1a61443b7b945010269f59b" compoundref="arbol_8h" startline="447" endline="453">Arbol&lt; T &gt;::Equilibrado</references>
+        <references refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <references refid="classArbol_1cbe307b7b9501912e0619ac7c611133f" compoundref="arbol_8h" startline="471" endline="477">Arbol&lt; T &gt;::RotarDerecha</references>
+        <references refid="classArbol_12a8213d1d2b801abe8fc0765de7900e6" compoundref="arbol_8h" startline="484" endline="490">Arbol&lt; T &gt;::RotarIzquierda</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1d40b836d4feed6d58800e6f2b9c95f9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::operator==</definition>
+        <argsstring>(const Arbol &amp;A) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classArbol" kindref="compound">Arbol</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador == <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo elemento a comparar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool si son iguales, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="65" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="629" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_116df673dded40580aa25477f032c70ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::operator!=</definition>
+        <argsstring>(const Arbol &amp;A) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classArbol" kindref="compound">Arbol</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador != <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo elemento a comparar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool si no son iguales, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="66" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="639" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_14b2f883b8b2851f3ba888facc35e4b98" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::InOrden</definition>
+        <argsstring>() const</argsstring>
+        <name>InOrden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el arbol con un recorrido en profundidad inorden </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="69" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="575" bodyend="586"/>
+        <references refid="classArbol_1cc8af68589c612d694c83d936598be2e" compoundref="arbol_8h" startline="187" endline="190">Arbol&lt; T &gt;::raiz</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1810bb20d7ff307d3a73d13fc3b213fb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::PreOrden</definition>
+        <argsstring>() const</argsstring>
+        <name>PreOrden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el arbol con un recorrido en profundidad preorden </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="70" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="592" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1b6b5b605d357e5b3e125eb5dadb352de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::PostOrden</definition>
+        <argsstring>() const</argsstring>
+        <name>PostOrden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el arbol con un recorrido en profundidad postorden </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="71" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="610" bodyend="621"/>
+        <references refid="classArbol_1cc8af68589c612d694c83d936598be2e" compoundref="arbol_8h" startline="187" endline="190">Arbol&lt; T &gt;::raiz</references>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1ad6aee8f131c718d4ebe13399c75d610" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::~Arbol</definition>
+        <argsstring>()</argsstring>
+        <name>~Arbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor por defecto. Destruye un objeto de tipo <ref refid="classArbol" kindref="compound">Arbol</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="73" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="555" bodyend="569"/>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <references refid="classArbol_14e5e3e62183ddb7f2dcad8a8026de348" compoundref="arbol_8h" startline="138" endline="141">Arbol&lt; T &gt;::hijoDer</references>
+        <references refid="classArbol_166087389ff653924ecc3beedd7c0596a" compoundref="arbol_8h" startline="129" endline="132">Arbol&lt; T &gt;::hijoIzq</references>
+        <references refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</references>
+        <references refid="classArbol_1642f2d945dfdf181b4874fb49256d8ab" compoundref="arbol_8h" startline="77">Arbol&lt; T &gt;::vacio_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classArbol_1d1524377edb94c3884a7889f99b55ad0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::borrarOrden</definition>
+        <argsstring>(const T &amp;dato)</argsstring>
+        <name>borrarOrden</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada auxiliar para realizar el borrado de un nodo. Reestructura el árbol tras el borrado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor a eliminar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el árbol resultado del borrado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="79" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="325" bodyend="399"/>
+        <references refid="classArbol_153d7c5214527a72941cf37f3c44db17a" compoundref="arbol_8h" startline="75">Arbol&lt; T &gt;::dato_raiz_</references>
+        <references refid="arbol_8h_1e42f054a8a8468dd2e7d65dac410e271" compoundref="arbol_8h" startline="34">DEPURAR_ARBOL_MSG</references>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <references refid="classArbol_166087389ff653924ecc3beedd7c0596a" compoundref="arbol_8h" startline="129" endline="132">Arbol&lt; T &gt;::hijoIzq</references>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <references refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" compoundref="arbol_8h" startline="196" endline="200">Arbol&lt; T &gt;::vacio</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1a8ad185ff5dffad9c8ee36878edcce05" compoundref="arbol_8h" startline="958" endline="974">Arbol&lt; T * &gt;::borrar</referencedby>
+        <referencedby refid="classArbol_190ce61b6d9e613728859cec34192c65e" compoundref="arbol_8h" startline="301" endline="317">Arbol&lt; T &gt;::borrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_105e9e7e332030518e1011952b5129865" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::maximo</definition>
+        <argsstring>(const int &amp;a, const int &amp;b) const</argsstring>
+        <name>maximo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el maximo de dos enteros <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>primer entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el mayor de los 2 enteros, en caso de ser iguales devuelve el segundo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="80" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="221" bodyend="225"/>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_12368f3c6b8ac5f21249056f0eb49df67" compoundref="arbol_8h" startline="1170" endline="1174">Arbol&lt; T * &gt;::Profundidad</referencedby>
+        <referencedby refid="classArbol_1c62ba1bf14e1bf03ff1e05ed3f3a8e66" compoundref="arbol_8h" startline="208" endline="212">Arbol&lt; T &gt;::Profundidad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1cbe307b7b9501912e0619ac7c611133f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::RotarDerecha</definition>
+        <argsstring>()</argsstring>
+        <name>RotarDerecha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gira en sentido de las manecillas de reloj P(el puntero al nodo con factor de balance no permitido) alrededor de Q(Hijo izquierdo de P) <simplesect kind="return"><para>retorna el arbol rotado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="81" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="471" bodyend="477"/>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_12a8213d1d2b801abe8fc0765de7900e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::RotarIzquierda</definition>
+        <argsstring>()</argsstring>
+        <name>RotarIzquierda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gira en sentido de contrario a las manecillas de reloj P(el puntero al nodo con factor de balance no permitido) alrededor de Q(Hijo izquierdo de P) <simplesect kind="return"><para>retorna el arbol rotado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="82" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="484" bodyend="490"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_15961913882418fb1ce5aa36e860244a6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::DobleRotarDerecha</definition>
+        <argsstring>()</argsstring>
+        <name>DobleRotarDerecha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rotacion a la izquierda de Q alrededor de R seguida de una rotacion a la derecha de P alrededor de R. <simplesect kind="return"><para>retorna el arbol rotado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="83" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="498" bodyend="506"/>
+        <references refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hizq_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_169e17c545e54c92db8642c4d472ecd03" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; T &gt; *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::DobleRotarIzquierda</definition>
+        <argsstring>()</argsstring>
+        <name>DobleRotarIzquierda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rotacion a la derecha de Q alrededor de R seguida de una rotacion a la izquierda de P alrededor de R <simplesect kind="return"><para>retorna el arbol rotado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="84" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="514" bodyend="522"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1b2025b351d4a8060e679cc0c6af2474d" compoundref="arbol_8h" startline="1390" endline="1408">Arbol&lt; T * &gt;::Equilibrar</referencedby>
+        <referencedby refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" compoundref="arbol_8h" startline="529" endline="547">Arbol&lt; T &gt;::Equilibrar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_17146cd1189b6eb6fce711f29b056b8a8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::FactorBalanceo</definition>
+        <argsstring>() const</argsstring>
+        <name>FactorBalanceo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Halla el factor de balanceo de el arbol actual <simplesect kind="return"><para>el factor de balanceo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="85" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="460" bodyend="464"/>
+        <references refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" compoundref="arbol_8h" startline="76">Arbol&lt; T &gt;::hder_</references>
+        <referencedby refid="classArbol_3_01T_01_5_01_4_1330f1d0d84ff53a02bae4d512a1dda68" compoundref="arbol_8h" startline="1308" endline="1314">Arbol&lt; T * &gt;::Equilibrado</referencedby>
+        <referencedby refid="classArbol_105798cf3b1a61443b7b945010269f59b" compoundref="arbol_8h" startline="447" endline="453">Arbol&lt; T &gt;::Equilibrado</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_19ad3683afe55dca80d31da59b80252e2" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::Iguales</definition>
+        <argsstring>(const Arbol *A) const </argsstring>
+        <name>Iguales</name>
+        <param>
+          <type>const <ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion auxiliar para la sobrecarga del operador == <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo parametro a comparara </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si los 2 arboles son iguales, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="86" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="649" bodyend="655"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase define un Árbol Binario de Búsqueda. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>Arbol&lt; T &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dato_raiz_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/arbol.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/arbol.h" bodystart="44" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classArbol_133107d8ba11a173d64200ab39a10ea2a" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Arbol</name></member>
+      <member refid="classArbol_1e34f1b9067fc782684b388e1187f0099" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Arbol</name></member>
+      <member refid="classArbol_190ce61b6d9e613728859cec34192c65e" prot="public" virt="non-virtual"><scope>Arbol</scope><name>borrar</name></member>
+      <member refid="classArbol_1d1524377edb94c3884a7889f99b55ad0" prot="private" virt="non-virtual"><scope>Arbol</scope><name>borrarOrden</name></member>
+      <member refid="classArbol_153d7c5214527a72941cf37f3c44db17a" prot="private" virt="non-virtual"><scope>Arbol</scope><name>dato_raiz_</name></member>
+      <member refid="classArbol_15961913882418fb1ce5aa36e860244a6" prot="private" virt="non-virtual"><scope>Arbol</scope><name>DobleRotarDerecha</name></member>
+      <member refid="classArbol_169e17c545e54c92db8642c4d472ecd03" prot="private" virt="non-virtual"><scope>Arbol</scope><name>DobleRotarIzquierda</name></member>
+      <member refid="classArbol_105798cf3b1a61443b7b945010269f59b" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Equilibrado</name></member>
+      <member refid="classArbol_1bcf420e0ed54c64121b9be329ca08c44" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Equilibrar</name></member>
+      <member refid="classArbol_1d518e5fb3fa39a262aff18104d45d29c" prot="public" virt="non-virtual"><scope>Arbol</scope><name>EsHoja</name></member>
+      <member refid="classArbol_1ce77fc6079ff4979c80ec22c0cc745c8" prot="public" virt="non-virtual"><scope>Arbol</scope><name>EsHoja</name></member>
+      <member refid="classArbol_17146cd1189b6eb6fce711f29b056b8a8" prot="private" virt="non-virtual"><scope>Arbol</scope><name>FactorBalanceo</name></member>
+      <member refid="classArbol_1029f2cad0781634b9ce38816ab8b0c0e" prot="private" virt="non-virtual"><scope>Arbol</scope><name>hder_</name></member>
+      <member refid="classArbol_14e5e3e62183ddb7f2dcad8a8026de348" prot="public" virt="non-virtual"><scope>Arbol</scope><name>hijoDer</name></member>
+      <member refid="classArbol_166087389ff653924ecc3beedd7c0596a" prot="public" virt="non-virtual"><scope>Arbol</scope><name>hijoIzq</name></member>
+      <member refid="classArbol_1795b82d5953a1d8bea9ea7e690882776" prot="private" virt="non-virtual"><scope>Arbol</scope><name>hizq_</name></member>
+      <member refid="classArbol_19ad3683afe55dca80d31da59b80252e2" prot="private" virt="non-virtual"><scope>Arbol</scope><name>Iguales</name></member>
+      <member refid="classArbol_14b2f883b8b2851f3ba888facc35e4b98" prot="public" virt="non-virtual"><scope>Arbol</scope><name>InOrden</name></member>
+      <member refid="classArbol_1b3143332dde55b1cc874a545231e1fc9" prot="public" virt="non-virtual"><scope>Arbol</scope><name>insertar</name></member>
+      <member refid="classArbol_105e9e7e332030518e1011952b5129865" prot="private" virt="non-virtual"><scope>Arbol</scope><name>maximo</name></member>
+      <member refid="classArbol_14b1623deaf1067df268d86193bebc9bc" prot="public" virt="non-virtual"><scope>Arbol</scope><name>NodosNivel</name></member>
+      <member refid="classArbol_15fb3cf58da4935e8f75b78df636378ad" prot="public" virt="non-virtual"><scope>Arbol</scope><name>NumNodos</name></member>
+      <member refid="classArbol_103e7bfd69ed852d5cf3dba2ec8583c62" prot="public" virt="non-virtual"><scope>Arbol</scope><name>NumNodos</name></member>
+      <member refid="classArbol_1e66fa62144314ad54c1d7f8874f22282" prot="public" virt="non-virtual"><scope>Arbol</scope><name>NumNodos</name></member>
+      <member refid="classArbol_116df673dded40580aa25477f032c70ab" prot="public" virt="non-virtual"><scope>Arbol</scope><name>operator!=</name></member>
+      <member refid="classArbol_1d40b836d4feed6d58800e6f2b9c95f9c" prot="public" virt="non-virtual"><scope>Arbol</scope><name>operator==</name></member>
+      <member refid="classArbol_17be63724b0eceb44a12415f7d3d3df3e" prot="public" virt="non-virtual"><scope>Arbol</scope><name>pertenece</name></member>
+      <member refid="classArbol_1b6b5b605d357e5b3e125eb5dadb352de" prot="public" virt="non-virtual"><scope>Arbol</scope><name>PostOrden</name></member>
+      <member refid="classArbol_1810bb20d7ff307d3a73d13fc3b213fb6" prot="public" virt="non-virtual"><scope>Arbol</scope><name>PreOrden</name></member>
+      <member refid="classArbol_1c62ba1bf14e1bf03ff1e05ed3f3a8e66" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Profundidad</name></member>
+      <member refid="classArbol_1cc8af68589c612d694c83d936598be2e" prot="public" virt="non-virtual"><scope>Arbol</scope><name>raiz</name></member>
+      <member refid="classArbol_1cbe307b7b9501912e0619ac7c611133f" prot="private" virt="non-virtual"><scope>Arbol</scope><name>RotarDerecha</name></member>
+      <member refid="classArbol_12a8213d1d2b801abe8fc0765de7900e6" prot="private" virt="non-virtual"><scope>Arbol</scope><name>RotarIzquierda</name></member>
+      <member refid="classArbol_192b9a61d3dbdc5fbba2d0bc66d828304" prot="public" virt="non-virtual"><scope>Arbol</scope><name>vacio</name></member>
+      <member refid="classArbol_1642f2d945dfdf181b4874fb49256d8ab" prot="private" virt="non-virtual"><scope>Arbol</scope><name>vacio_</name></member>
+      <member refid="classArbol_1ad6aee8f131c718d4ebe13399c75d610" prot="public" virt="non-virtual"><scope>Arbol</scope><name>~Arbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

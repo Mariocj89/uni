@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1HasNewFatalFailureHelper" kind="class" prot="public">
+    <compoundname>testing::internal::HasNewFatalFailureHelper</compoundname>
+    <basecompoundref refid="classtesting_1_1TestPartResultReporterInterface" prot="public" virt="non-virtual">testing::TestPartResultReporterInterface</basecompoundref>
+    <includes refid="gtest-test-part_8h" local="no">gtest-test-part.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_152b33284aa77d626d6f3fb6b9e778a04" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::internal::HasNewFatalFailureHelper::has_new_fatal_failure_</definition>
+        <argsstring></argsstring>
+        <name>has_new_fatal_failure_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="169" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1b92850bdf7b1bf4a56f32d14131e370d" compoundref="gtest-test-part_8h" startline="167" endline="167">has_new_fatal_failure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1c0d721bf2abf2423dc9ca6d56e62cde0" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1TestPartResultReporterInterface" kindref="compound">TestPartResultReporterInterface</ref> *</type>
+        <definition>TestPartResultReporterInterface* testing::internal::HasNewFatalFailureHelper::original_reporter_</definition>
+        <argsstring></argsstring>
+        <name>original_reporter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="170" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_121043bf81bfe8f2b4f568261da80461e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::HasNewFatalFailureHelper::HasNewFatalFailureHelper</definition>
+        <argsstring>()</argsstring>
+        <name>HasNewFatalFailureHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1127cbfc6a4dab1169d997b30d0191fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::internal::HasNewFatalFailureHelper::~HasNewFatalFailureHelper</definition>
+        <argsstring>()</argsstring>
+        <name>~HasNewFatalFailureHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_19767505a6dffafe76cda1735294f0c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::HasNewFatalFailureHelper::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplements refid="classtesting_1_1TestPartResultReporterInterface_1e5912af5e9bee0ae07acfc83b00a603c">ReportTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1b92850bdf7b1bf4a56f32d14131e370d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::HasNewFatalFailureHelper::has_new_fatal_failure</definition>
+        <argsstring>() const</argsstring>
+        <name>has_new_fatal_failure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="167" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="167" bodyend="167"/>
+        <references refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_152b33284aa77d626d6f3fb6b9e778a04" compoundref="gtest-test-part_8h" startline="169">has_new_fatal_failure_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1HasNewFatalFailureHelper_154b6ba63ef3c0f98aa4b80ccd3c7201f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::HasNewFatalFailureHelper::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(HasNewFatalFailureHelper)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper" kindref="compound">HasNewFatalFailureHelper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>testing::internal::HasNewFatalFailureHelper</label>
+        <link refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="98">
+        <label>testing::internal::HasNewFatalFailureHelper</label>
+        <link refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>original_reporter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="162" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="162" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_154b6ba63ef3c0f98aa4b80ccd3c7201f" prot="private" virt="non-virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1b92850bdf7b1bf4a56f32d14131e370d" prot="public" virt="non-virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>has_new_fatal_failure</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_152b33284aa77d626d6f3fb6b9e778a04" prot="private" virt="non-virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>has_new_fatal_failure_</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_121043bf81bfe8f2b4f568261da80461e" prot="public" virt="non-virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>HasNewFatalFailureHelper</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1c0d721bf2abf2423dc9ca6d56e62cde0" prot="private" virt="non-virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>original_reporter_</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_19767505a6dffafe76cda1735294f0c7e" prot="public" virt="virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>ReportTestPartResult</name></member>
+      <member refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_1127cbfc6a4dab1169d997b30d0191fc6" prot="public" virt="virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>~HasNewFatalFailureHelper</name></member>
+      <member refid="classtesting_1_1TestPartResultReporterInterface_1cfd5b63ec93ef182ed8617f2c5e037d1" prot="public" virt="virtual"><scope>testing::internal::HasNewFatalFailureHelper</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

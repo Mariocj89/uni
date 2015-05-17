@@ -1,0 +1,272 @@
+\section{Persona Class Reference}
+\label{classPersona}\index{Persona@{Persona}}
+clase abstracta que define los atributos y metodos generales de una persona de la prision  
+
+
+{\tt \#include $<$persona.h$>$}
+
+Inheritance diagram for Persona::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classPersona}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Persona} (const string \&nombre, const char \&marca, const int \&espera, const int \&p, const int \&c)
+\item 
+virtual {\bf $\sim$Persona} ()
+\item 
+string {\bf get\_\-nombre} ()
+\begin{CompactList}\small\item\em Metodo que devuelve el nombre de la persona. \item\end{CompactList}\item 
+char {\bf get\_\-marca} ()
+\begin{CompactList}\small\item\em Metodo que devuelve la marca de la persona. \item\end{CompactList}\item 
+void {\bf set\_\-celda} (const int \&celda)
+\begin{CompactList}\small\item\em Cambia el atributo celda por el que entra por parametro. \item\end{CompactList}\item 
+int {\bf get\_\-turno} ()
+\item 
+{\bf Llave} $\ast$ {\bf sacar\_\-llave} ()
+\item 
+void {\bf put\_\-llave} ({\bf Llave} $\ast$l)
+\item 
+bool {\bf Actuar} ()
+\item 
+virtual string {\bf P2String} ()
+\item 
+void {\bf MostrarRuta} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void {\bf UsarPuerta} ()=0
+\begin{CompactList}\small\item\em Metodo virtual puro - Destino: Interactua con una persona. \item\end{CompactList}\item 
+virtual void {\bf Interactuar} ()=0
+\begin{CompactList}\small\item\em Metodo virtual puro - Destino: Interactua con otra persona. \item\end{CompactList}\item 
+virtual void {\bf TratarLlave} ()=0
+\begin{CompactList}\small\item\em Metodo virtual puro - Destino: Coge o deja una llave. \item\end{CompactList}\item 
+virtual void {\bf CalcularRuta} ()=0
+\begin{CompactList}\small\item\em Metodo virtual puto - Destino: Calcular la ruta de la persona. \item\end{CompactList}\item 
+virtual bool {\bf Mover} ()=0
+\begin{CompactList}\small\item\em Metodo virtual puto - Destino: Mover a la siguiente celda. \item\end{CompactList}\item 
+int {\bf Destino} () const
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+std::string {\bf nombre\_\-}
+\begin{CompactList}\small\item\em Nombre de la persona (tomaremos -1 como no inicializado). \item\end{CompactList}\item 
+char {\bf marca\_\-}
+\begin{CompactList}\small\item\em Marca de la persona, (tomaremos 0 como no inicializado). \item\end{CompactList}\item 
+queue$<$ {\bf Posicion} $>$ $\ast$ {\bf ruta\_\-}
+\begin{CompactList}\small\item\em Ruta que debe seguir la persona. \item\end{CompactList}\item 
+stack$<$ {\bf Llave} $\ast$ $>$ {\bf llaves\_\-}
+\begin{CompactList}\small\item\em Llaves que tiene la persona. \item\end{CompactList}\item 
+int {\bf planta\_\-}
+\begin{CompactList}\small\item\em \doxyref{Planta}{p.}{classPlanta} en la que se encuentra la persona. \item\end{CompactList}\item 
+int {\bf celda\_\-}
+\begin{CompactList}\small\item\em \doxyref{Celda}{p.}{classCelda} en la que se encuentra la persona. \item\end{CompactList}\item 
+int {\bf turno\_\-}
+\begin{CompactList}\small\item\em Atributo que indica el ultimo turno en el que se han actuado (comienza con el primer turno en el que se puede mover). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+clase abstracta que define los atributos y metodos generales de una persona de la prision 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Persona@{Persona}!Persona@{Persona}}
+\index{Persona@{Persona}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Persona::Persona (const string \& {\em nombre}, const char \& {\em marca}, const int \& {\em espera}, const int \& {\em p}, const int \& {\em c})}\label{classPersona_0b0035b70cb2140c28caea37c4488721}
+
+
+Constructor parametrizado de la clase \doxyref{Persona}{p.}{classPersona} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nombre}]nombre de la persona \item[{\em marca}]marca de la persona \item[{\em espera}]turno en el que comenzara a moverse \item[{\em p}]planta en la que inicia \item[{\em c}]celda en la que inicia \end{description}
+\end{Desc}
+\index{Persona@{Persona}!~Persona@{$\sim$Persona}}
+\index{~Persona@{$\sim$Persona}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Persona::$\sim$Persona ()\hspace{0.3cm}{\tt  [virtual]}}\label{classPersona_0ec7ae504cd0d3c73588cff200755778}
+
+
+Destructor de la clase persona 
+
+\subsection{Member Function Documentation}
+\index{Persona@{Persona}!get_nombre@{get\_\-nombre}}
+\index{get_nombre@{get\_\-nombre}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string Persona::get\_\-nombre ()\hspace{0.3cm}{\tt  [inline]}}\label{classPersona_edd6cec0572d84557723848814c6fb07}
+
+
+Metodo que devuelve el nombre de la persona. 
+
+\index{Persona@{Persona}!get_marca@{get\_\-marca}}
+\index{get_marca@{get\_\-marca}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char Persona::get\_\-marca ()\hspace{0.3cm}{\tt  [inline]}}\label{classPersona_aa564e0699b1b0fcd98ca2c620451a3e}
+
+
+Metodo que devuelve la marca de la persona. 
+
+\index{Persona@{Persona}!set_celda@{set\_\-celda}}
+\index{set_celda@{set\_\-celda}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Persona::set\_\-celda (const int \& {\em celda})\hspace{0.3cm}{\tt  [inline]}}\label{classPersona_6767071fbaa5fd802831182f3067aab6}
+
+
+Cambia el atributo celda por el que entra por parametro. 
+
+\index{Persona@{Persona}!get_turno@{get\_\-turno}}
+\index{get_turno@{get\_\-turno}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Persona::get\_\-turno ()\hspace{0.3cm}{\tt  [inline]}}\label{classPersona_905d516718f6c844ee610c10a276ac8d}
+
+
+\index{Persona@{Persona}!sacar_llave@{sacar\_\-llave}}
+\index{sacar_llave@{sacar\_\-llave}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Llave} $\ast$ Persona::sacar\_\-llave ()}\label{classPersona_8493b4a96356762d54f7185934349351}
+
+
+Saca una llave y la devuelve \begin{Desc}
+\item[Returns:]llave sacada \end{Desc}
+\index{Persona@{Persona}!put_llave@{put\_\-llave}}
+\index{put_llave@{put\_\-llave}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Persona::put\_\-llave ({\bf Llave} $\ast$ {\em l})}\label{classPersona_56c7698f800a43476a72c8f34177c897}
+
+
+Introduce una llave \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]llave a meter \end{description}
+\end{Desc}
+\index{Persona@{Persona}!Actuar@{Actuar}}
+\index{Actuar@{Actuar}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Persona::Actuar ()}\label{classPersona_05ccd9155daffb75e63bf7b33129afb9}
+
+
+Metodo que realiza todas las acciones de la persona \begin{Desc}
+\item[Returns:]false si mover devuelve false \end{Desc}
+\index{Persona@{Persona}!P2String@{P2String}}
+\index{P2String@{P2String}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string Persona::P2String ()\hspace{0.3cm}{\tt  [virtual]}}\label{classPersona_827d49fd22fb68461f1c725fd201c281}
+
+
+Pasa la informacion de la persona a una cadena \begin{Desc}
+\item[Returns:]cadena con la informacion de la persona \end{Desc}
+
+
+Reimplemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_7bdc01bf4017bd45ac861a55e6e52ad7}, and {\bf Preso} \doxyref{}{p.}{classPreso_2bd84753d1ad3c2a2e62ff557776f9d5}.\index{Persona@{Persona}!MostrarRuta@{MostrarRuta}}
+\index{MostrarRuta@{MostrarRuta}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Persona::MostrarRuta ()}\label{classPersona_b7ff6a7c54d2da752d891725cc7713a4}
+
+
+Muestra la ruta por pantalla y la guarda en el \doxyref{Registro}{p.}{classRegistro} \index{Persona@{Persona}!UsarPuerta@{UsarPuerta}}
+\index{UsarPuerta@{UsarPuerta}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Persona::UsarPuerta ()\hspace{0.3cm}{\tt  [protected, pure virtual]}}\label{classPersona_827d80881366e3e086d4d9d5fe726399}
+
+
+Metodo virtual puro - Destino: Interactua con una persona. 
+
+
+
+Implemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_fda4ca67ebab9ab5e307a266b9ae22ee}, and {\bf Preso} \doxyref{}{p.}{classPreso_4529dbfdac1c8a8cbc870e52a90fa056}.\index{Persona@{Persona}!Interactuar@{Interactuar}}
+\index{Interactuar@{Interactuar}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Persona::Interactuar ()\hspace{0.3cm}{\tt  [protected, pure virtual]}}\label{classPersona_fa25ad7cbf9d12b4cf4711800c748920}
+
+
+Metodo virtual puro - Destino: Interactua con otra persona. 
+
+
+
+Implemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_127c9942c98cd5332511d9383c2d76e9}, and {\bf Preso} \doxyref{}{p.}{classPreso_d6070d6e577b06ede93e4e9f5f33da16}.\index{Persona@{Persona}!TratarLlave@{TratarLlave}}
+\index{TratarLlave@{TratarLlave}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Persona::TratarLlave ()\hspace{0.3cm}{\tt  [protected, pure virtual]}}\label{classPersona_91f8eab1f237e3d4e42a227e4f185e4e}
+
+
+Metodo virtual puro - Destino: Coge o deja una llave. 
+
+
+
+Implemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_b14ab83ca126b82fb5b7341545682dcd}, and {\bf Preso} \doxyref{}{p.}{classPreso_9851666862eb7b29c53f4335f2c712f5}.\index{Persona@{Persona}!CalcularRuta@{CalcularRuta}}
+\index{CalcularRuta@{CalcularRuta}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Persona::CalcularRuta ()\hspace{0.3cm}{\tt  [protected, pure virtual]}}\label{classPersona_dfb69e4115ae0f1eddd7130b7cc38b8a}
+
+
+Metodo virtual puto - Destino: Calcular la ruta de la persona. 
+
+
+
+Implemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_ed3d1d16abfad909b98e66b57e6efeac}, and {\bf Preso} \doxyref{}{p.}{classPreso_bef87bbd70ccd79dbcf2dcc68ea96866}.\index{Persona@{Persona}!Mover@{Mover}}
+\index{Mover@{Mover}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Persona::Mover ()\hspace{0.3cm}{\tt  [protected, pure virtual]}}\label{classPersona_dfe58fef614d78a3bd7e728c9ce30c98}
+
+
+Metodo virtual puto - Destino: Mover a la siguiente celda. 
+
+
+
+Implemented in {\bf Guardia} \doxyref{}{p.}{classGuardia_760220917460d685bff7113115a9cbb8}, and {\bf Preso} \doxyref{}{p.}{classPreso_78b299c11367871e1d2cbbcbd8a17e45}.\index{Persona@{Persona}!Destino@{Destino}}
+\index{Destino@{Destino}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Persona::Destino () const\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_33f40e6a924ac59dc360c06a43e5d772}
+
+
+Obtiene la posicion de la celda a la que debe ir la persona segun un destino(Tipo Posicion) \begin{Desc}
+\item[Precondition:]Debe existir una celda adyacente en la direccion indicada por la ruta \end{Desc}
+\begin{Desc}
+\item[Returns:]entero con la posicion a la celda destino \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Persona@{Persona}!nombre_@{nombre\_\-}}
+\index{nombre_@{nombre\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Persona::nombre\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_4b7da84c9a13d1a574d6bc57ca2995f3}
+
+
+Nombre de la persona (tomaremos -1 como no inicializado). 
+
+\index{Persona@{Persona}!marca_@{marca\_\-}}
+\index{marca_@{marca\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char {\bf Persona::marca\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_7d71cc3f4afda6f8342aa726812025de}
+
+
+Marca de la persona, (tomaremos 0 como no inicializado). 
+
+\index{Persona@{Persona}!ruta_@{ruta\_\-}}
+\index{ruta_@{ruta\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}queue$<${\bf Posicion}$>$$\ast$ {\bf Persona::ruta\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_77aae13b0b185d3df95c4c6d8df8cbe4}
+
+
+Ruta que debe seguir la persona. 
+
+\index{Persona@{Persona}!llaves_@{llaves\_\-}}
+\index{llaves_@{llaves\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}stack$<${\bf Llave}$\ast$$>$ {\bf Persona::llaves\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_6307abb90e402a21dd35de5a8fd787da}
+
+
+Llaves que tiene la persona. 
+
+\index{Persona@{Persona}!planta_@{planta\_\-}}
+\index{planta_@{planta\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Persona::planta\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_a5d7a70f9fb654635fd35318b070dcb6}
+
+
+\doxyref{Planta}{p.}{classPlanta} en la que se encuentra la persona. 
+
+\index{Persona@{Persona}!celda_@{celda\_\-}}
+\index{celda_@{celda\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Persona::celda\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_242597c6f6d16bbfbd7c9bb535bc036e}
+
+
+\doxyref{Celda}{p.}{classCelda} en la que se encuentra la persona. 
+
+\index{Persona@{Persona}!turno_@{turno\_\-}}
+\index{turno_@{turno\_\-}!Persona@{Persona}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Persona::turno\_\-}\hspace{0.3cm}{\tt  [protected]}}\label{classPersona_996f9da3f6b66d61b81ff10bddb88883}
+
+
+Atributo que indica el ultimo turno en el que se han actuado (comienza con el primer turno en el que se puede mover). 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf persona.h}\item 
+Escritorio/EC3/src/{\bf persona.cpp}\end{CompactItemize}

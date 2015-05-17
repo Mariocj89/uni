@@ -1,0 +1,83 @@
+1. 
+	mov ax, 5
+	add ax, 9
+
+
+2.
+	neg ax
+	add ax, axç
+
+
+3.
+	xcgh [0], [1]
+
+
+4.
+	Data Segment:
+		vector DB 5
+	mov [vector], al
+	sub bl, vector
+
+
+5.
+	Data Segment:
+		dato DB 2
+	mov al, 25
+	mul dato
+
+
+6.
+	Data Segment:
+		numero DB 10
+	div numero
+
+	shr ax, 1
+	ó
+	dec ax
+	dec ax
+
+
+7.
+	xor cx,cx
+
+
+8.
+	Data Segment:
+		letra DB "a"
+	mov bx, 100h
+	mov cx, 10
+	Bucle1:
+		mov [bx+(10-cx)]
+		add letra, 1
+	LOOP Bucle1
+
+
+9.
+	letra DB "abcdefghi"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

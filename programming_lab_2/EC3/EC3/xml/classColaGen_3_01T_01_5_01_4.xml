@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classColaGen_3_01T_01_5_01_4" kind="class" prot="public">
+    <compoundname>ColaGen&lt; T * &gt;</compoundname>
+    <includes refid="colagen_8h" local="no">colagen.h</includes>
+    <innerclass refid="structColaGen_3_01T_01_5_01_4_1_1TipoNodo" prot="private">ColaGen&lt; T * &gt;::TipoNodo</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classColaGen_3_01T_01_5_01_4_1ab0ba76728741ad5233817c6762af87f" prot="private" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* ColaGen&lt; T * &gt;::frente_</definition>
+        <argsstring></argsstring>
+        <name>frente_</name>
+        <briefdescription>
+<para>Puntero al frente de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="246" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classColaGen_3_01T_01_5_01_4_13184e1674bde60cee5134f4d3d92ce04" prot="private" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* ColaGen&lt; T * &gt;::fin_</definition>
+        <argsstring></argsstring>
+        <name>fin_</name>
+        <briefdescription>
+<para>Puntero al final de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="247" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classColaGen_3_01T_01_5_01_4_12aeaeb0b450fb2adaa69e3d61a1493af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ColaGen&lt; T * &gt;::num_elementos_</definition>
+        <argsstring></argsstring>
+        <name>num_elementos_</name>
+        <briefdescription>
+<para>Número de elementos de la cola, utilizado para realizar recorridos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="248" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_199d7a7cfa69fccd1a73acd808af88c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColaGen&lt; T * &gt;::ColaGen</definition>
+        <argsstring>()</argsstring>
+        <name>ColaGen</name>
+        <briefdescription>
+<para>Inicializa los datos de la cola (punteros a NULL). </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classColaGen" kindref="compound">ColaGen</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="234" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="257" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_1b25f9cad75a2f58c82b1fd87e1907545" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColaGen&lt; T * &gt;::ColaGen</definition>
+        <argsstring>(const ColaGen &amp;C)</argsstring>
+        <name>ColaGen</name>
+        <param>
+          <type>const <ref refid="classColaGen" kindref="compound">ColaGen</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Inicializa los datos de la cola por copia. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructor por copia de la clase <ref refid="classColaGen" kindref="compound">ColaGen</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cola desde la cual se inicializara esta clase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="235" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="270" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_141590110a6b6d1192be95d4616637c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ColaGen&lt; T * &gt;::insertar_dato</definition>
+        <argsstring>(T *dato)</argsstring>
+        <name>insertar_dato</name>
+        <param>
+          <type>T *</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un dato en la cola (por el final). </para>        </briefdescription>
+        <detaileddescription>
+<para>Inserta un dato en la cola <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento que se quiere insertar en la cola </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="236" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="288" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_1983e7a35d48801bc78641275a889dc84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ColaGen&lt; T * &gt;::insertar_nodo</definition>
+        <argsstring>(TipoNodo *nodo)</argsstring>
+        <name>insertar_nodo</name>
+        <param>
+          <type>TipoNodo *</type>
+          <declname>nodo</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un dato enviado en un nodo en la cola (por el final). </para>        </briefdescription>
+        <detaileddescription>
+<para>Inserta el dato, contenido en un nodo, en la cola <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structColaGen_3_01T_01_5_01_4_1_1TipoNodo" kindref="compound">TipoNodo</ref> que contiene el dato que queremos insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="237" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="305" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_1a1a7fd4281e2b426b87ab6d18e55bec9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ColaGen&lt; T * &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Devuelve el dato que se encuentra en el frente de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el frente de la Cola <simplesect kind="return"><para>devuelve el frente de la cola </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="238" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_1c539c3af60a7a2161e0895bfc9d22550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ColaGen&lt; T * &gt;::borrar</definition>
+        <argsstring>()</argsstring>
+        <name>borrar</name>
+        <briefdescription>
+<para>Elimina el dato que se encuentre en el frente de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para>Borra el frente de la cola <simplesect kind="return"><para>true si la cola no esta vacia, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="239" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="337" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_17f9199b41fb2f6524a96f67bbf78825d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; ColaGen&lt; T * &gt;::mostrar</definition>
+        <argsstring>() const</argsstring>
+        <name>mostrar</name>
+        <briefdescription>
+<para>Muestra la cola por pantalla y guarda la informacion mostrada en un flujo. </para>        </briefdescription>
+        <detaileddescription>
+<para>Muestra la cola por panatalla <simplesect kind="return"><para>TODO </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="240" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="371" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_19ab6bbad9e32ab2c4921a8d55be5a84e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ColaGen&lt; T * &gt;::vacia</definition>
+        <argsstring>() const</argsstring>
+        <name>vacia</name>
+        <briefdescription>
+<para>Devuelve verdadero si la cola está vacía. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="241" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_1bdb90c13abef66345b91fb68fd7c7e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ColaGen&lt; T * &gt;::get_num_elementos</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_elementos</name>
+        <briefdescription>
+<para>Devuelve el número de elementos de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="242" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="242" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classColaGen_3_01T_01_5_01_4_13e6a33719cc717cac84ed953623757f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColaGen&lt; T * &gt;::~ColaGen</definition>
+        <argsstring>()</argsstring>
+        <name>~ColaGen</name>
+        <briefdescription>
+<para>libera la memoria de la cola (OJO ¡NO DE LOS DATOS CONTENIDOS!) </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classColaGen" kindref="compound">ColaGen</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="243" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="355" bodyend="363"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="222" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="222" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classColaGen_3_01T_01_5_01_4_1c539c3af60a7a2161e0895bfc9d22550" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>borrar</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_199d7a7cfa69fccd1a73acd808af88c78" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>ColaGen</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_1b25f9cad75a2f58c82b1fd87e1907545" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>ColaGen</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_13184e1674bde60cee5134f4d3d92ce04" prot="private" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>fin_</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_1ab0ba76728741ad5233817c6762af87f" prot="private" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>frente_</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_1a1a7fd4281e2b426b87ab6d18e55bec9" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>get</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_1bdb90c13abef66345b91fb68fd7c7e20" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>get_num_elementos</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_141590110a6b6d1192be95d4616637c67" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>insertar_dato</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_1983e7a35d48801bc78641275a889dc84" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>insertar_nodo</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_17f9199b41fb2f6524a96f67bbf78825d" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>mostrar</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_12aeaeb0b450fb2adaa69e3d61a1493af" prot="private" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>num_elementos_</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_19ab6bbad9e32ab2c4921a8d55be5a84e" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>vacia</name></member>
+      <member refid="classColaGen_3_01T_01_5_01_4_13e6a33719cc717cac84ed953623757f1" prot="public" virt="non-virtual"><scope>ColaGen&lt; T * &gt;</scope><name>~ColaGen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

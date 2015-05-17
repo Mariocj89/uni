@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1TypeWithSize" kind="class" prot="public">
+    <compoundname>testing::internal::TypeWithSize</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>size</declname>
+        <defname>size</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1TypeWithSize_1adebd49e9739f576ff09cb2b0ef5a208" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void testing::internal::TypeWithSize&lt; size &gt;::UInt</definition>
+        <argsstring></argsstring>
+        <name>UInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="717" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="713" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="713" bodyend="718"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1TypeWithSize_1adebd49e9739f576ff09cb2b0ef5a208" prot="public" virt="non-virtual"><scope>testing::internal::TypeWithSize</scope><name>UInt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

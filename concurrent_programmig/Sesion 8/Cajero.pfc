@@ -1,0 +1,67 @@
+program Maximo;
+
+ resource recurso;
+  export coger, meter;
+ var
+  dinero:integer;
+
+  procedure meter(var i:integer);
+  begin
+       writeln('Pongo ',i,' hay ',dinero);
+       dinero := dinero + i;
+  end;
+
+  guarded procedure esperar(var i:integer) when true; forward ;
+
+  guarded procedure coger(var i:integer) when true;
+  begin
+       writeln('Voy a coger ',i,' hay ',dinero);
+       if i > dinero then
+          requeue esperar(i);
+       writeln('Cojo ',i,' hay ',dinero);
+       dinero := dinero - i;
+  end;
+
+  guarded procedure esperar;
+  begin
+       requeue coger(i);
+  end;
+
+ begin
+      dinero := 10;
+ end ;
+
+
+
+process type empleado1;
+var
+  din:integer;
+  begin
+       repeat
+             din := random(10);
+             recurso.coger(din);
+       forever;
+  end ;
+
+process type empleado2;
+var
+  din:integer;
+  begin
+       repeat
+             din := random(10);
+             recurso.meter(din);
+       forever;
+  end ;
+
+
+var emp1: array[1..5] of empleado1;
+var emp2: array[1..5] of empleado2;
+var i:integer;
+begin
+  cobegin
+          for i:=1 to 5 do
+             emp1[i];
+          for i:=1 to 5 do
+             emp2[i];
+  coend;
+end.

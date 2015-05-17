@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="lpi_8cpp" kind="file">
+    <compoundname>lpi.cpp</compoundname>
+    <includes refid="lpi_8h" local="yes">lpi.h</includes>
+    <incdepgraph>
+      <node id="56">
+        <label>lpi.h</label>
+        <link refid="lpi_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>noticias.h</label>
+        <link refid="noticias_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>categoria.h</label>
+        <link refid="categoria_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>fstream</label>
+      </node>
+      <node id="60">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+      <node id="55">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp</label>
+        <link refid="lpi.cpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lpi_8h" kindref="compound">lpi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classlista_17ae1e1582d5b90e6bc26b8ecd2894072" kindref="member">lista::lista</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classlista_19281356b5743c333b7fa382a1befa2e1" kindref="member">lista::ocupadas</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_19767ee9056947047c0c6c204bc4db762" kindref="member">lista::vacia</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>==0);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1982294906d63950bba25f2d1cab21273" kindref="member">lista::llena</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>==<ref refid="categoria_8h_190885325454ef932b9c9514fa3323d8c" kindref="member">MAX_ELEMENTOS</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlista_12ec76266d65e81e2c4940269b261f833" kindref="member">lista::poner_inicio</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>=0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlista_1e1bd3d1b4417a52463b1ef69456ea730" kindref="member">lista::poner_fin</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>=<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlista_1b68bc836734758ca7e0977b1740d31eb" kindref="member">lista::avanzar</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>++;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlista_1f4d2afee307ae39c83eefdeb40b13d71" kindref="member">lista::retroceder</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>--;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1036798860b016f8f5431335002d15b38" kindref="member">lista::fin</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>==<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_129149056d6a592279e575708b0cdc176" kindref="member">lista::inicio</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>==0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_10c433976220721607f6e42f44b7cecfe" kindref="member">lista::insertar</ref><sp/>(<ref refid="classcategoria" kindref="compound">categoria</ref><sp/>&amp;e)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classlista_1982294906d63950bba25f2d1cab21273" kindref="member">llena</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>;<sp/>i&gt;<ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>;i--)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[i].Clonar(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[i-1]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_10b040becb66fe1c60c21f51585f3c70d" kindref="member" tooltip="Copia la categoria de una existente.">Clonar</ref>(e);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>++;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_18cef95497347095d6207dded1b978358" kindref="member">lista::consultar</ref><sp/>(<ref refid="classcategoria" kindref="compound">categoria</ref><sp/>&amp;e)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pi&gt;<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>e.<ref refid="classcategoria_10b040becb66fe1c60c21f51585f3c70d" kindref="member" tooltip="Copia la categoria de una existente.">Clonar</ref>(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi]);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_198cf505fbe1f15ae56f6acef8dca796d" kindref="member">lista::borrar</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classlista_19767ee9056947047c0c6c204bc4db762" kindref="member">vacia</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=pi;<sp/>i&lt;<ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>-1;i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[i].Clonar(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[i+1]);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>ocupacion--;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1c7cbd50511a860cdfb8436a0e31490dc" kindref="member">lista::insertar_Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">TipoDato</ref><sp/>&amp;e)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>r;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia" kindref="compound">TipoDato</ref><sp/>dat;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.<ref refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kindref="member" tooltip="Obtiene el identificador de la noticia.">Obtener_Identificador</ref>(<sp/>r);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_11f2a4822b7c985ad07ce32a2455ce73a" kindref="member" tooltip="Establece el punto de interes al principio de la categoria.">Poner_Inicio</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].Fin()){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_103c69a487c47f05e65a90c3c91369d03" kindref="member" tooltip="Devuelve el elemento apuntado por el punto de interes de la categoria.">Consultar</ref>(dat);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dat.<ref refid="classNoticia_1d26beba5fea62004588a45df2de8627b" kindref="member" tooltip="Compara el identificador de la noticia actual, con el identificador c.">Comparar</ref>(r)==1){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].Insertar(e);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_153baa56d033db9288545c5b550ef172f" kindref="member" tooltip="Avanza el punto de interes de la categoria.">Avanzar</ref>();}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].Fin())<sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_1dba3ec88315d3ca4a9622370de173aa7" kindref="member" tooltip="Inserta un elemento en la categoria.">Insertar</ref>(e);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1d5d12911c92a2c156817844109341a90" kindref="member">lista::borrar_Noticia</ref><sp/>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>cad){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cad2[<ref refid="noticias_8h_196c5e4e15f549c73471fb112e9056bd2" kindref="member">MaxCadRef</ref>];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="classlista_1e1bd3d1b4417a52463b1ef69456ea730" kindref="member">poner_fin</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="classlista_129149056d6a592279e575708b0cdc176" kindref="member">inicio</ref>()){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1f4d2afee307ae39c83eefdeb40b13d71" kindref="member">retroceder</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].Vacia())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia" kindref="compound">TipoDato</ref><sp/>dat;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_11f2a4822b7c985ad07ce32a2455ce73a" kindref="member" tooltip="Establece el punto de interes al principio de la categoria.">Poner_Inicio</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].Fin()==</highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_103c69a487c47f05e65a90c3c91369d03" kindref="member" tooltip="Devuelve el elemento apuntado por el punto de interes de la categoria.">Consultar</ref>(dat);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dat.<ref refid="classNoticia_1d26beba5fea62004588a45df2de8627b" kindref="member" tooltip="Compara el identificador de la noticia actual, con el identificador c.">Comparar</ref>(cad)==0){;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_1b23b572f74f88d48d936595055b1b4e5" kindref="member" tooltip="Borra el elemento apuntado por el punto de interes.">Borrar</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[pi].<ref refid="classcategoria_153baa56d033db9288545c5b550ef172f" kindref="member" tooltip="Avanza el punto de interes de la categoria.">Avanzar</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp"/>
+  </compounddef>
+</doxygen>

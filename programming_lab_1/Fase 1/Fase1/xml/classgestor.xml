@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classgestor" kind="class" prot="public">
+    <compoundname>gestor</compoundname>
+    <includes refid="gestor_8h" local="no">gestor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgestor_1e1776d4983d6847c33ca98bde1bbfdb9" prot="private" static="no" mutable="no">
+        <type><ref refid="classlista" kindref="compound">lista</ref></type>
+        <definition>lista gestor::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="23" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgestor_1d127ac39c3a88b78f10312710df6baca" prot="private" static="no" mutable="no">
+        <type><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref></type>
+        <definition>Tcadena1 gestor::contadorN</definition>
+        <argsstring></argsstring>
+        <name>contadorN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="24" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgestor_162947246b34dfec56cb50c19ef093717" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gestor::contadorC[MaxCadRef]</definition>
+        <argsstring>[MaxCadRef]</argsstring>
+        <name>contadorC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="25" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgestor_1db7360a0cae16de5d47cd550e69ada05" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Aumentar_contadorN</definition>
+        <argsstring>()</argsstring>
+        <name>Aumentar_contadorN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Aumenta el contador de noticias contadorN. <simplesect kind="pre"><para>debe tener un valor entre N000 y N998. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="34" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_109b4362f3720d0e10571ee9e5dffaeaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Aumentar_contadorC</definition>
+        <argsstring>()</argsstring>
+        <name>Aumentar_contadorC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Aumenta el contador de categorias contadorC. <simplesect kind="pre"><para>debe tener un valor entre S0 y S5 </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si se a podido aumentar, false en caso contrario. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="42" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="39" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_13c96931163b8b890da99ab4e9e658e31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Reducir_contadorC</definition>
+        <argsstring>()</argsstring>
+        <name>Reducir_contadorC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduce el contador de categorias contadorC. <simplesect kind="pre"><para>debe tener un valor entre S0 y S5 </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si se a podido reducir, false en caso contrario. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="51" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgestor_12003a8d63d45043877ee4a4b25a2d531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gestor::gestor</definition>
+        <argsstring>()</argsstring>
+        <name>gestor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classgestor" kindref="compound">gestor</ref>, inicia los contadores. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="61" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_14c8d809e4c39e326bcc6abf20f841c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gestor::~gestor</definition>
+        <argsstring>()</argsstring>
+        <name>~gestor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classgestor" kindref="compound">gestor</ref>. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="70" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1151f2dd417d7e112c2ac80f13e5520cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Insertar</definition>
+        <argsstring>(const Noticia &amp;n)</argsstring>
+        <name>Insertar</name>
+        <param>
+          <type>const <ref refid="classNoticia" kindref="compound">Noticia</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una noticia en orden, en una <ref refid="classcategoria" kindref="compound">categoria</ref> especifica. <simplesect kind="pre"><para>n debe estar inicializado </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNoticia" kindref="compound">Noticia</ref> a insertar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a podido insertar bien false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="79" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="88" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1a12ef00d523ae5a1f157a8ae7a93e943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Insertar_Categoria</definition>
+        <argsstring>()</argsstring>
+        <name>Insertar_Categoria</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una <ref refid="classcategoria" kindref="compound">categoria</ref> en orden. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si se a podido insertar bien false en caso contrario. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="87" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="64" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1100cb4ad8aa013103783dcf277d82e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>Mostrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra todas las noticias por categorias y en orden. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="95" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="205" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1e2c07f4989bb9da786908f8586e552f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Mostrar_Categorias</definition>
+        <argsstring>()</argsstring>
+        <name>Mostrar_Categorias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra todas las categorias con el numero de noticias ke tienen. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="103" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="151" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_155b991e1e33572562fb97a430bb22d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Mostrar_Categoria</definition>
+        <argsstring>(const char ref[MaxCadRef])</argsstring>
+        <name>Mostrar_Categoria</name>
+        <param>
+          <type>const char</type>
+          <declname>ref</declname>
+          <array>[MaxCadRef]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra una categoiria con una referencia especifica. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>referencia de la seccion a mostrar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="111" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="173" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1bd2c7542ef2bec7ee252874b4384f096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Eliminar</definition>
+        <argsstring>(Tcadena ident)</argsstring>
+        <name>Eliminar</name>
+        <param>
+          <type><ref refid="gestor_8h_106de4837cf91d89201e34b6af81d98bb" kindref="member">Tcadena</ref></type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elimina una noticia especifica <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identificador de la noticia a borrar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a eliminado correctamente false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="119" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1e43a8854e95a885f33c67baab7cd337c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Eliminar_Categoria</definition>
+        <argsstring>(char ref[MaxCadRef])</argsstring>
+        <name>Eliminar_Categoria</name>
+        <param>
+          <type>char</type>
+          <declname>ref</declname>
+          <array>[MaxCadRef]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elimina una <ref refid="classcategoria" kindref="compound">categoria</ref> especifica <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>referencia de la <ref refid="classcategoria" kindref="compound">categoria</ref> a borrar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a eliminado correctamente false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="127" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="234" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_12e623119e3ddd5f1834a9cae7ed222f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Buscar</definition>
+        <argsstring>(Tcadena ident)</argsstring>
+        <name>Buscar</name>
+        <param>
+          <type><ref refid="gestor_8h_106de4837cf91d89201e34b6af81d98bb" kindref="member">Tcadena</ref></type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Busca una noticia y la muestra <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identificador de la noticia a buscar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a encontrado false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="135" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="329" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_12d1eee9b1d0fa176ea1cdf314ca17936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Guardar</definition>
+        <argsstring>(char nombre[20])</argsstring>
+        <name>Guardar</name>
+        <param>
+          <type>char</type>
+          <declname>nombre</declname>
+          <array>[20]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guarda el blog en un archivo. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>donde se guardara el blog </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a guardado correctamente false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="143" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="355" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1423999fab9520b418a7779e54d2dc244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Cargar</definition>
+        <argsstring>(char nombre[20])</argsstring>
+        <name>Cargar</name>
+        <param>
+          <type>char</type>
+          <declname>nombre</declname>
+          <array>[20]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cargar un blog de un archivo. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de donde se cargara el blog </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a cargado correctamente false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Inicio de la parte consistente en la inserccion correcta de la noticia</para><para>Inicio de la parte consistente en la inserccion correcta de una <ref refid="classcategoria" kindref="compound">categoria</ref></para><para>Fin de la parte consistente en la inserccion correcta de una <ref refid="classcategoria" kindref="compound">categoria</ref></para><para>Fin de la parte consistente en la inserccion correcta de la noticia </para>        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="151" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="381" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_15b65e28ca7f034770ea4f92e8896477a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Obtener_ContadorN</definition>
+        <argsstring>(Tcadena1 cad1)</argsstring>
+        <name>Obtener_ContadorN</name>
+        <param>
+          <type><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref></type>
+          <declname>cad1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene contadorN <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cad1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cadena donde se guardara contadorN </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="159" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1d530d0021279ce4ee8ea35a43ba4c650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Obtener_ContadorC</definition>
+        <argsstring>(Tcadena1 cad1)</argsstring>
+        <name>Obtener_ContadorC</name>
+        <param>
+          <type><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref></type>
+          <declname>cad1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene contadorC <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cad1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cadena donde se guardara contadorC </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="167" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_13bbc3851c0d1489efaac618432bae588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestor::Pedir_Noticia</definition>
+        <argsstring>(TipoDato &amp;Dat)</argsstring>
+        <name>Pedir_Noticia</name>
+        <param>
+          <type><ref refid="classNoticia" kindref="compound">TipoDato</ref> &amp;</type>
+          <declname>Dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pide una noticia al usuario <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>noticia donde se guardaran los datos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="175" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="443" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classgestor_1e26a59f9ceb4879e3fe427c6ee9b4b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gestor::Buscar_Cadena</definition>
+        <argsstring>(Tcadena3 cad1)</argsstring>
+        <name>Buscar_Cadena</name>
+        <param>
+          <type><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref></type>
+          <declname>cad1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Busca una cadena en el titulo subtitulo o contenido de todas las noticias y la muestra. <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cad1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cadena que se busca. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se ha encontrado alguna coincidencia, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="183" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp" bodystart="279" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase GESTOR. Sus atributos son:<itemizedlist>
+<listitem><para>l. Lista Es un interfaz sobre la clase <ref refid="classlista" kindref="compound">lista</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>lista</label>
+        <link refid="classlista"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elemento</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gestor</label>
+        <link refid="classgestor"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>categoria</label>
+        <link refid="classcategoria"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" line="20" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h" bodystart="20" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classgestor_109b4362f3720d0e10571ee9e5dffaeaf" prot="private" virt="non-virtual"><scope>gestor</scope><name>Aumentar_contadorC</name></member>
+      <member refid="classgestor_1db7360a0cae16de5d47cd550e69ada05" prot="private" virt="non-virtual"><scope>gestor</scope><name>Aumentar_contadorN</name></member>
+      <member refid="classgestor_12e623119e3ddd5f1834a9cae7ed222f2" prot="public" virt="non-virtual"><scope>gestor</scope><name>Buscar</name></member>
+      <member refid="classgestor_1e26a59f9ceb4879e3fe427c6ee9b4b89" prot="public" virt="non-virtual"><scope>gestor</scope><name>Buscar_Cadena</name></member>
+      <member refid="classgestor_1423999fab9520b418a7779e54d2dc244" prot="public" virt="non-virtual"><scope>gestor</scope><name>Cargar</name></member>
+      <member refid="classgestor_162947246b34dfec56cb50c19ef093717" prot="private" virt="non-virtual"><scope>gestor</scope><name>contadorC</name></member>
+      <member refid="classgestor_1d127ac39c3a88b78f10312710df6baca" prot="private" virt="non-virtual"><scope>gestor</scope><name>contadorN</name></member>
+      <member refid="classgestor_1bd2c7542ef2bec7ee252874b4384f096" prot="public" virt="non-virtual"><scope>gestor</scope><name>Eliminar</name></member>
+      <member refid="classgestor_1e43a8854e95a885f33c67baab7cd337c" prot="public" virt="non-virtual"><scope>gestor</scope><name>Eliminar_Categoria</name></member>
+      <member refid="classgestor_12003a8d63d45043877ee4a4b25a2d531" prot="public" virt="non-virtual"><scope>gestor</scope><name>gestor</name></member>
+      <member refid="classgestor_12d1eee9b1d0fa176ea1cdf314ca17936" prot="public" virt="non-virtual"><scope>gestor</scope><name>Guardar</name></member>
+      <member refid="classgestor_1151f2dd417d7e112c2ac80f13e5520cc" prot="public" virt="non-virtual"><scope>gestor</scope><name>Insertar</name></member>
+      <member refid="classgestor_1a12ef00d523ae5a1f157a8ae7a93e943" prot="public" virt="non-virtual"><scope>gestor</scope><name>Insertar_Categoria</name></member>
+      <member refid="classgestor_1e1776d4983d6847c33ca98bde1bbfdb9" prot="private" virt="non-virtual"><scope>gestor</scope><name>list</name></member>
+      <member refid="classgestor_1100cb4ad8aa013103783dcf277d82e17" prot="public" virt="non-virtual"><scope>gestor</scope><name>Mostrar</name></member>
+      <member refid="classgestor_155b991e1e33572562fb97a430bb22d64" prot="public" virt="non-virtual"><scope>gestor</scope><name>Mostrar_Categoria</name></member>
+      <member refid="classgestor_1e2c07f4989bb9da786908f8586e552f6" prot="public" virt="non-virtual"><scope>gestor</scope><name>Mostrar_Categorias</name></member>
+      <member refid="classgestor_1d530d0021279ce4ee8ea35a43ba4c650" prot="public" virt="non-virtual"><scope>gestor</scope><name>Obtener_ContadorC</name></member>
+      <member refid="classgestor_15b65e28ca7f034770ea4f92e8896477a" prot="public" virt="non-virtual"><scope>gestor</scope><name>Obtener_ContadorN</name></member>
+      <member refid="classgestor_13bbc3851c0d1489efaac618432bae588" prot="public" virt="non-virtual"><scope>gestor</scope><name>Pedir_Noticia</name></member>
+      <member refid="classgestor_13c96931163b8b890da99ab4e9e658e31" prot="private" virt="non-virtual"><scope>gestor</scope><name>Reducir_contadorC</name></member>
+      <member refid="classgestor_14c8d809e4c39e326bcc6abf20f841c93" prot="public" virt="non-virtual"><scope>gestor</scope><name>~gestor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

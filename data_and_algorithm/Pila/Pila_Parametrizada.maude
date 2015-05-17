@@ -1,0 +1,52 @@
+fmod PILA{X :: TRIV} is
+protecting BOOL .
+protecting NAT .
+sort Pila{X} .
+
+op crear : -> Pila{X} [ctor] .
+op apilar : Pila{X} X$Elt -> Pila{X} [ctor] .
+op desapilar : Pila{X} -> [Pila{X}] .
+op cima : Pila{X} -> [X$Elt] .
+op esVacia : Pila{X} -> Bool .
+op card : Pila{X} -> Nat .
+op _ € _ : X$Elt Pila{X} -> Bool .
+op pertenece : Pila{X} X$Elt -> Bool .
+op concatenar : Pila{X} Pila{X} -> Pila{X} .
+op invertir : Pila{X} -> Pila{X} .
+op fondo : Pila{X} -> [X$Elt] .
+
+vars P Q : Pila{X} .
+vars e r : X$Elt .
+
+cmb desapilar(P) : Pila{X} if (esVacia(P) == false) .
+cmb cima(P) : X$Elt if (esVacia(P) == false) .
+cmb fondo(P) : X$Elt if (esVacia(P) == false) .
+
+eq desapilar(apilar(P,e)) = P .
+eq cima (apilar(P,e)) = e .
+
+eq esVacia(crear) = true .
+eq esVacia(apilar(P,e)) = false .
+
+eq card(crear) = 0 .
+eq card(apilar(P,e)) = s(card(P)) .
+
+eq e € crear = false .
+eq e € apilar(P,r) = if ( e == r ) then true
+					 else e € P fi .
+					 
+eq pertenece(crear,e) = false .
+eq pertenece(apilar(P,r),e) = if ( e == r ) then true
+					 else pertenece(P,e) fi .
+					 
+eq concatenar(P,crear) = P .
+eq concatenar(Q,apilar(P,e)) = apilar(concatenar(Q,P),e) .
+			 
+eq invertir(crear) = crear .
+eq invertir(apilar(P,e)) = concatenar(apilar(crear,e),invertir(P)) .					 
+
+eq fondo(apilar(P,e)) = if esVacia(P) then e
+						else fondo(P) fi .
+						
+endfm
+

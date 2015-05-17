@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="celda_8cpp" kind="file">
+    <compoundname>celda.cpp</compoundname>
+    <includes refid="celda_8h" local="yes">celda.h</includes>
+    <includes refid="prision_8h" local="yes">prision.h</includes>
+    <incdepgraph>
+      <node id="96">
+        <label>list</label>
+      </node>
+      <node id="88">
+        <label>queue</label>
+      </node>
+      <node id="90">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>iterator</label>
+      </node>
+      <node id="92">
+        <label>prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>fstream</label>
+      </node>
+      <node id="100">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>vector</label>
+      </node>
+      <node id="91">
+        <label>stack</label>
+      </node>
+      <node id="85">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda.cpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>cstdlib</label>
+      </node>
+      <node id="104">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>iostream</label>
+      </node>
+      <node id="105">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="celda_8cpp_11ae028893035e539215673ec05256b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Celda &amp;C)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCelda" kindref="compound">Celda</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo al que se introduce la informacion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda de la que obtener la informacion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.cpp" line="69" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los metodos de la clase celda. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>20-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="celda_8h" kindref="compound" tooltip="Declaracion de la clase celda.">celda.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="prision_8h" kindref="compound" tooltip="Implementación de la clase Prision.">prision.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_14282078fa5f3cce5e8efca91e29e622f" kindref="member">Celda::set_id</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>=id;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="classCelda_1255f613383c5100f88c59a402b4b4ac9" kindref="member">Celda::Celda</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>=-1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>=-1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>priority_queue&lt;Llave*,<sp/>vector&lt;Llave*&gt;,<sp/><ref refid="classCompLlavesMayor" kindref="compound" tooltip="Objeto funcion para comparar si un puntero a una llave es mayor que otra.">CompLlavesMayor</ref>&gt;;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>queue&lt;Persona*&gt;;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="classCelda_1255f613383c5100f88c59a402b4b4ac9" kindref="member">Celda::Celda</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>=id;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>=id;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>priority_queue&lt;Llave*,<sp/>vector&lt;Llave*&gt;,<sp/><ref refid="classCompLlavesMayor" kindref="compound" tooltip="Objeto funcion para comparar si un puntero a una llave es mayor que otra.">CompLlavesMayor</ref>&gt;;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>queue&lt;Persona*&gt;;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="classCelda_14991502c5cab11878ab563b4ec819d34" kindref="member">Celda::~ Celda</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Liberamos<sp/>memoria</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>-&gt;empty())<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCelda_165bb99ee45297f1e63326d073ce07593" kindref="member">sacar_llave</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;empty())<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCelda_1bfbb71f6ee86a38a31ed962b8e9d1e7f" kindref="member">sacar_persona</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>=-1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>=-1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">ostream<sp/>&amp;<sp/><ref refid="classCelda_11ae028893035e539215673ec05256b71" kindref="member">operator &lt;&lt;</ref>(ostream<sp/>&amp;<sp/>flujo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref><sp/>&amp;<sp/>C)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>flujo&lt;&lt;C.<ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flujo;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_185495f01557a7c1762619208501a0cb8" kindref="member">Celda::set_llave</ref>(<ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<sp/>llave)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>-&gt;push(llave);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<sp/><ref refid="classCelda_165bb99ee45297f1e63326d073ce07593" kindref="member">Celda::sacar_llave</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>-&gt;empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>*<sp/>llave_aux=<ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>-&gt;top();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>-&gt;pop();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>llave_aux;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment">//<sp/>void<sp/>Celda::Destruir()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>while(!llaves_-&gt;empty())<sp/>delete<sp/>sacar_llave();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>while(!personas_-&gt;empty())<sp/>delete<sp/>sacar_persona();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_129e79a26f399a6bcdd057f86a0c4867f" kindref="member">Celda::set_persona</ref>(<ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*<sp/>p)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;push(p);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*<sp/><ref refid="classCelda_1dfd04055cf6de2c43d06e66d9cbd6ded" kindref="member">Celda::get_persona</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="118"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;front();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*<sp/><ref refid="classCelda_1bfbb71f6ee86a38a31ed962b8e9d1e7f" kindref="member">Celda::sacar_persona</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="127"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/>p=<ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;front();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;pop();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_19cae98c132d67911ad14c6dbebd6656a" kindref="member">Celda::ocupacion</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="139"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;size();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCelda_1bc75b59cd9ee8a0bc7c115c847a0a141" kindref="member">Celda::Simular</ref>()</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aux<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>continuar<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max<sp/>=<sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;size();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*pers;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;max<sp/>&amp;&amp;<sp/>continuar;i++){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>pers<sp/>=<sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;front();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(continuar<sp/>=<sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;front()-&gt;get_turno()<sp/>!=<sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;<ref refid="classPrision_169eed05859f7f338cb200ef2dfdc8d05" kindref="member">get_turno</ref>()){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;push(pers);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>-&gt;pop();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>aux<sp/>=<sp/>aux<sp/>&amp;&amp;<sp/>pers-&gt;<ref refid="classPersona_105ccd9155daffb75e63bf7b33129afb9" kindref="member">Actuar</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aux;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/celda.cpp"/>
+  </compounddef>
+</doxygen>

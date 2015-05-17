@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="gestor_8h" kind="file">
+    <compoundname>gestor.h</compoundname>
+    <includes refid="listaenlazada_8h" local="yes">listaenlazada.h</includes>
+    <includedby refid="fase3_8cpp" local="yes">Escritorio/fase3/src/fase3.cpp</includedby>
+    <includedby refid="gestor_8cpp" local="yes">Escritorio/fase3/src/gestor.cpp</includedby>
+    <incdepgraph>
+      <node id="55">
+        <label>Escritorio/fase3/src/gestor.h</label>
+        <link refid="gestor.h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>meses.h</label>
+        <link refid="meses_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>datospersonales.h</label>
+        <link refid="datospersonales_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>fstream</label>
+      </node>
+      <node id="56">
+        <label>listaenlazada.h</label>
+        <link refid="listaenlazada_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>cstdlib</label>
+      </node>
+      <node id="60">
+        <label>iostream</label>
+      </node>
+      <node id="58">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="63">
+        <label>Escritorio/fase3/src/gestor.h</label>
+        <link refid="gestor.h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Escritorio/fase3/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGestor" prot="public">Gestor</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="gestor_8h_1c4ef82c079edc8d4e76b2af600a462cf" prot="public" static="no">
+        <name>TIdioma</name>
+        <enumvalue id="gestor_8h_1c4ef82c079edc8d4e76b2af600a462cfbfa3b847f812e0f4c547a51e51ec66f1" prot="public">
+          <name>Castellano</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gestor_8h_1c4ef82c079edc8d4e76b2af600a462cfe26f08948cee0501ee9189369e361f40" prot="public">
+          <name>Ingles</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="23" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gestor_8h_1ab8c8d2262055c8cb5b3c20999c82358" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char TLinea[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>TLinea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="22" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>header de la clase gestor x </para>    </briefdescription>
+    <detaileddescription>
+<para>x <simplesect kind="author"><para>Mario Corchero Jiménez x </para></simplesect>
+<simplesect kind="date"><para>15/05/08 x </para></simplesect>
+<simplesect kind="par"><title>Descripción: x</title><para>Este archivo contiene la especificacion de la clase <ref refid="classGestor" kindref="compound">Gestor</ref>, con sus atributos y los headers de todos sus metodos. </para></simplesect>
+<simplesect kind="par"><title>Utilización:</title><para>Para utilizar esta clase, solo hay que añadir este archivo con &lt;include &quot;gestor.h&quot;&gt; al principio del fichero y definir cualquier variable con esta clase. </para></simplesect>
+<simplesect kind="par"><title>Plataforma</title><para>Linux. </para></simplesect>
+<simplesect kind="par"><title>Creado en KDevelop.</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>GESTOR_H</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GESTOR_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="listaenlazada_8h" kindref="compound" tooltip="header de la clase ListaEnlazada x">listaenlazada.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TLinea[50];</highlight><highlight class="comment">//tipo<sp/>de<sp/>variable<sp/>que<sp/>usaremos<sp/>para<sp/>leer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TIdioma{Castellano,Ingles};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classGestor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGestor" kindref="compound">Gestor</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref><sp/>lista;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TIdioma<sp/>Idioma;<sp/></highlight><highlight class="comment">//0-Castellano,<sp/>1-Ingles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1df6bc8e1011a14f0db4ec783decb1f3b" kindref="member" tooltip="Inserta un elemento de forma ordenada en la lista.">InsertarDato</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_13eec53616fd62d0476b47184414b10dd" kindref="member" tooltip="Borra un elemento.">EliminarDato</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>dat);<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_119d1b922fff844a3f5ccbbc4025eb3ba" kindref="member" tooltip="Muestra la informacion en castellano.">MostrarES</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1fa3c20a4de196889f98d902694a0a022" kindref="member" tooltip="Muestra la informacion en ingles.">MostrarEN</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_18f2001c4c56fdd1046e3650e5728d6a3" kindref="member" tooltip="Busca un elemento en la lista.">BuscarDato</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>tfn,<ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGestor_163ab3a451dcedb416578c35b5d57aca4" kindref="member" tooltip="Constructor por defecto de la clase Gestor. Pone Idioma a 0(castellano).">Gestor</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1da86e7063e8399305995bfb1aab5a8af" kindref="member" tooltip="Muestra toda la informacion.">Mostrar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1a50b2f33090dc7ca6a77cfeed3687b89" kindref="member" tooltip="Muestra la informacion de las personas que cumplan años en un mes pedido internamente...">MostrarMes</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_108e54fc629d431a6caf7fe38d065445a" kindref="member" tooltip="Muestra la informacion de las personas que superen una edad indicada por el usuario...">MostrarEdad</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1f0df127a0a6bb0c6572ea365377065d5" kindref="member" tooltip="Pide la informacion necesaria para insertar un dato.">Insertar</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_1725619c35256592988fce8248d4b34e1" kindref="member" tooltip="Solicita informacion para eliminar un elemento.">Eliminar</ref>(<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_16f97ac11a10254981b462ff0c02801ae" kindref="member" tooltip="Carga de datos_per.txt Debe existir datos_per.txt y debe estar correctamente formateado...">Cargar</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_112f31da1244ff5e6f82c1defaa2a889e" kindref="member" tooltip="Guarda todos los datos en datos_per.txt Debe poderse sobrescribir datos_per.txt.">Guardar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGestor_18ad38f2990047eb2be683e02994667b5" kindref="member" tooltip="Pide un numero con el que buscar un dato La clase debe estar inicializada.">Buscar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_160bbd94608bd1ec8ad05784980e1f2ab" kindref="member" tooltip="Alterna entre los 2 idiomas.">CambiarIdioma</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGestor_1f1eb64d25661d44ee24f70e6b5847822" kindref="member" tooltip="Devuelve el idioma actual.">ObtenerIdioma</ref>(TIdioma<sp/>&amp;l);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/fase3/src/gestor.h"/>
+  </compounddef>
+</doxygen>

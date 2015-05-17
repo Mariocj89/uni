@@ -1,0 +1,165 @@
+\section{testing::UnitTest Class Reference}
+\label{classtesting_1_1UnitTest}\index{testing::UnitTest@{testing::UnitTest}}
+{\tt \#include $<$gtest.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Environment} $\ast$ {\bf AddEnvironment} ({\bf Environment} $\ast$env)
+\item 
+void {\bf AddTestPartResult} ({\bf TestPartResultType} result\_\-type, const char $\ast$file\_\-name, int line\_\-number, const {\bf internal::String} \&message, const {\bf internal::String} \&os\_\-stack\_\-trace)
+\item 
+void {\bf RecordPropertyForCurrentTest} (const char $\ast$key, const char $\ast$value)
+\item 
+int {\bf Run} () GTEST\_\-MUST\_\-USE\_\-RESULT\_\-
+\item 
+const char $\ast$ {\bf original\_\-working\_\-dir} () const
+\item 
+const TestCase $\ast$ {\bf current\_\-test\_\-case} () const
+\item 
+const {\bf TestInfo} $\ast$ {\bf current\_\-test\_\-info} () const
+\item 
+internal::UnitTestImpl $\ast$ {\bf impl} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf UnitTest} $\ast$ {\bf GetInstance} ()
+\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-pad0\_\-\_\-}:UnitTestImpl$\ast$ impl() const \{ return {\bf impl\_\-}
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf UnitTest} ()
+\item 
+virtual {\bf $\sim$UnitTest} ()
+\item 
+void {\bf PushGTestTrace} (const internal::TraceInfo \&trace)
+\item 
+void {\bf PopGTestTrace} ()
+\item 
+{\bf GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-} ({\bf UnitTest})
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf internal::Mutex} {\bf mutex\_\-}
+\item 
+internal::UnitTestImpl $\ast$ {\bf impl\_\-}
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+class {\bf internal::ScopedTrace}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::UnitTest@{testing::UnitTest}!UnitTest@{UnitTest}}
+\index{UnitTest@{UnitTest}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::UnitTest::UnitTest ()\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1UnitTest_ad2f55aa951b8975930d7f4022feff08}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!~UnitTest@{$\sim$UnitTest}}
+\index{~UnitTest@{$\sim$UnitTest}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual testing::UnitTest::$\sim$UnitTest ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classtesting_1_1UnitTest_c320ce8c6d7eb6d02240c181ef30bb07}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::UnitTest@{testing::UnitTest}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf UnitTest}$\ast$ testing::UnitTest::GetInstance ()\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1UnitTest_db04e1d682a2d7cfc3aa2c5afe3cac5f}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!AddEnvironment@{AddEnvironment}}
+\index{AddEnvironment@{AddEnvironment}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Environment}$\ast$ testing::UnitTest::AddEnvironment ({\bf Environment} $\ast$ {\em env})}\label{classtesting_1_1UnitTest_b1427eccd1c7b3fd6a033e22d52cbdee}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!AddTestPartResult@{AddTestPartResult}}
+\index{AddTestPartResult@{AddTestPartResult}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::UnitTest::AddTestPartResult ({\bf TestPartResultType} {\em result\_\-type}, const char $\ast$ {\em file\_\-name}, int {\em line\_\-number}, const {\bf internal::String} \& {\em message}, const {\bf internal::String} \& {\em os\_\-stack\_\-trace})}\label{classtesting_1_1UnitTest_fad5417ce02bc444a32f6e1659729a80}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!RecordPropertyForCurrentTest@{RecordPropertyForCurrentTest}}
+\index{RecordPropertyForCurrentTest@{RecordPropertyForCurrentTest}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::UnitTest::RecordPropertyForCurrentTest (const char $\ast$ {\em key}, const char $\ast$ {\em value})}\label{classtesting_1_1UnitTest_aa1fa510a34fb035d88bc5e615fbbd1e}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!Run@{Run}}
+\index{Run@{Run}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int testing::UnitTest::Run ()}\label{classtesting_1_1UnitTest_5fd408b9dd00b8b3495ef66428fa6d1c}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!original_working_dir@{original\_\-working\_\-dir}}
+\index{original_working_dir@{original\_\-working\_\-dir}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::UnitTest::original\_\-working\_\-dir () const}\label{classtesting_1_1UnitTest_8e3dd65ddd6627667a394e909c0687b4}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!current_test_case@{current\_\-test\_\-case}}
+\index{current_test_case@{current\_\-test\_\-case}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const TestCase$\ast$ testing::UnitTest::current\_\-test\_\-case () const}\label{classtesting_1_1UnitTest_d40c5de4a9dada54bbb7b9d4b5f28925}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!current_test_info@{current\_\-test\_\-info}}
+\index{current_test_info@{current\_\-test\_\-info}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf TestInfo}$\ast$ testing::UnitTest::current\_\-test\_\-info () const}\label{classtesting_1_1UnitTest_5e8e59d2d42a24233183a0974d02dd40}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!impl@{impl}}
+\index{impl@{impl}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}internal::UnitTestImpl$\ast$ testing::UnitTest::impl ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1UnitTest_c6c28ca92bf6f5341970f01987f16711}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!PushGTestTrace@{PushGTestTrace}}
+\index{PushGTestTrace@{PushGTestTrace}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::UnitTest::PushGTestTrace (const internal::TraceInfo \& {\em trace})\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1UnitTest_8b32d06aa2322afcef8496aede274d70}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!PopGTestTrace@{PopGTestTrace}}
+\index{PopGTestTrace@{PopGTestTrace}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::UnitTest::PopGTestTrace ()\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1UnitTest_59b3b5d0b33814363fd9d4ff37c251f9}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}}
+\index{GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::UnitTest::GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\- ({\bf UnitTest})\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1UnitTest_599d5ac196b5b3408db7c44e3abc4e11}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{testing::UnitTest@{testing::UnitTest}!internal::ScopedTrace@{internal::ScopedTrace}}
+\index{internal::ScopedTrace@{internal::ScopedTrace}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf internal::ScopedTrace}\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1UnitTest_d38a4df6f8f4b5b203b71edc50a4b815}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::UnitTest@{testing::UnitTest}!__pad0__@{\_\-\_\-pad0\_\-\_\-}}
+\index{__pad0__@{\_\-\_\-pad0\_\-\_\-}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::UnitTest::\_\-\_\-pad0\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1UnitTest_03aec0a97ab57c012431c86abdf69942}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!mutex_@{mutex\_\-}}
+\index{mutex_@{mutex\_\-}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::Mutex} {\bf testing::UnitTest::mutex\_\-}\hspace{0.3cm}{\tt  [mutable, private]}}\label{classtesting_1_1UnitTest_700e6b4b815535175165bfca2f3a57b4}
+
+
+\index{testing::UnitTest@{testing::UnitTest}!impl_@{impl\_\-}}
+\index{impl_@{impl\_\-}!testing::UnitTest@{testing::UnitTest}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}internal::UnitTestImpl$\ast$ {\bf testing::UnitTest::impl\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1UnitTest_bdbc21d9a1264600a85748daef2a0c5a}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest.h}\end{CompactItemize}

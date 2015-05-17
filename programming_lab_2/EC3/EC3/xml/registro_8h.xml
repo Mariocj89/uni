@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="registro_8h" kind="file">
+    <compoundname>registro.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="planta_8h" local="yes">Escritorio/EC3/src/planta.h</includedby>
+    <includedby refid="registro_8cpp" local="yes">Escritorio/EC3/src/registro.cpp</includedby>
+    <incdepgraph>
+      <node id="1127">
+        <label>Escritorio/EC3/src/registro.h</label>
+        <link refid="registro.h"/>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+      </node>
+      <node id="1129">
+        <label>fstream</label>
+      </node>
+      <node id="1128">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1146">
+        <label>Escritorio/EC3/src/registro.cpp</label>
+        <link refid="registro_8cpp"/>
+      </node>
+      <node id="1144">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="1132">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1141" relation="include">
+        </childnode>
+        <childnode refid="1142" relation="include">
+        </childnode>
+        <childnode refid="1143" relation="include">
+        </childnode>
+      </node>
+      <node id="1145">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="1143">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="1135">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="1130">
+        <label>Escritorio/EC3/src/registro.h</label>
+        <link refid="registro.h"/>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1146" relation="include">
+        </childnode>
+      </node>
+      <node id="1141">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="1133">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+      </node>
+      <node id="1140">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="1136">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="1139">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="1131">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1144" relation="include">
+        </childnode>
+        <childnode refid="1145" relation="include">
+        </childnode>
+      </node>
+      <node id="1137">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="1142">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="1138">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="1134">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classRegistro" prot="public">Registro</innerclass>
+    <briefdescription>
+<para>Declaracion de la clase <ref refid="classRegistro" kindref="compound">Registro</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>2-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>REGISTRO_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REGISTRO_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classRegistro" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>*<sp/><ref refid="classRegistro_142d4db3fecc09bcde81e2cb71900a5c8" kindref="member">get_instancia</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_11a61913f579e4c46512658085048dc7f" kindref="member">~Registro</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Escribir</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>mensaje);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Escribir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Escribir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mensaje);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>ostream&amp;<sp/><ref refid="classRegistro_1a3beb0de20dc0421628ff7396d2f76f5" kindref="member">Flujo</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_144c7aa629b33647372b95d8e32f856c7" kindref="member">Destruir</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_179db13a112d147d186e0377c3284b735" kindref="member">Registro</ref>();</highlight></codeline>
+<codeline lineno="33" refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" refkind="member"><highlight class="normal"><sp/><sp/>ofstream<sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>;<sp/></highlight></codeline>
+<codeline lineno="34" refid="classRegistro_1ae3b307bfdfc9572595109242b62059c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classRegistro_1ae3b307bfdfc9572595109242b62059c" kindref="member" tooltip="Nombre de fichero en el que se guardan los datos (por defecto "registro.log").">nombre_fichero_</ref>;<sp/></highlight></codeline>
+<codeline lineno="35" refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>*<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/registro.h"/>
+  </compounddef>
+</doxygen>

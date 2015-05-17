@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structColaGen_1_1TipoNodo" kind="struct" prot="private">
+    <compoundname>ColaGen::TipoNodo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structColaGen_1_1TipoNodo_131f8745e4e161ac46e76898dc7285207" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ColaGen&lt; T &gt;::TipoNodo::dato_</definition>
+        <argsstring></argsstring>
+        <name>dato_</name>
+        <briefdescription>
+<para>Dato que contiene cada nodo de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="39" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classColaGen_12b69d3eccaaa4f6b767448a87e15c087" compoundref="colagen_8h" startline="181" endline="209">ColaGen&lt; T &gt;::mostrar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColaGen_1_1TipoNodo_1db913cdcb6ac7d1f6d2ce4c8ebc06300" prot="public" static="no" mutable="no">
+        <type><ref refid="structColaGen_1_1TipoNodo" kindref="compound">TipoNodo</ref> *</type>
+        <definition>TipoNodo* ColaGen&lt; T &gt;::TipoNodo::sig_</definition>
+        <argsstring></argsstring>
+        <name>sig_</name>
+        <briefdescription>
+<para>Puntero al siguiente nodo de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classColaGen_12b69d3eccaaa4f6b767448a87e15c087" compoundref="colagen_8h" startline="181" endline="209">ColaGen&lt; T &gt;::mostrar</referencedby>
+        <referencedby refid="classColaGen_1a3d0ab114e6a8c0c99bc90ad7d68082d" compoundref="colagen_8h" startline="165" endline="173">ColaGen&lt; T &gt;::~ColaGen</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Este registro representa un nodo de la cola. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>T</label>
+      </node>
+      <node id="39">
+        <label>ColaGen&lt; T &gt;::TipoNodo</label>
+        <link refid="structColaGen_1_1TipoNodo"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>sig_</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>dato_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/colagen.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/colagen.h" bodystart="38" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structColaGen_1_1TipoNodo_131f8745e4e161ac46e76898dc7285207" prot="public" virt="non-virtual"><scope>ColaGen::TipoNodo</scope><name>dato_</name></member>
+      <member refid="structColaGen_1_1TipoNodo_1db913cdcb6ac7d1f6d2ce4c8ebc06300" prot="public" virt="non-virtual"><scope>ColaGen::TipoNodo</scope><name>sig_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

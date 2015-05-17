@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structTipoDato" kind="struct" prot="public">
+    <compoundname>TipoDato</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTipoDato_198638d280a0ef2597cb102889c938a23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TipoDato::Numero</definition>
+        <argsstring></argsstring>
+        <name>Numero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="31" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTipoDato_1d31b304611b934129556f7172591ce14" prot="public" static="no" mutable="no">
+        <type>TipoIdioma</type>
+        <definition>TipoIdioma TipoDato::Idioma[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Idioma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="32" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="30" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="30" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structTipoDato_1d31b304611b934129556f7172591ce14" prot="public" virt="non-virtual"><scope>TipoDato</scope><name>Idioma</name></member>
+      <member refid="structTipoDato_198638d280a0ef2597cb102889c938a23" prot="public" virt="non-virtual"><scope>TipoDato</scope><name>Numero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

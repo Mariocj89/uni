@@ -1,0 +1,210 @@
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD\HOLA
+
+.            <DIR>     12/11/09   15:23
+..           <DIR>     12/11/09   15:23
+AAAA1    TXT        34 12/11/09   15:23
+HOLA     TXT        27 12/11/09   15:23
+        4 archivo(s)         61 bytes
+                  1023932928 bytes libres
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD\AUTORES
+
+.            <DIR>     12/11/09   15:23
+..           <DIR>     12/11/09   15:23
+AUTORES  TXT        65 12/11/09   15:23
+        3 archivo(s)         65 bytes
+                  1023932928 bytes libres
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD\HOLA
+
+.            <DIR>     12/11/09   15:23
+..           <DIR>     12/11/09   15:23
+AAAA1    TXT        34 12/11/09   15:34
+HOLA     TXT        27 12/11/09   15:23
+        4 archivo(s)         61 bytes
+                  1023932928 bytes libres
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD
+
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD
+
+AUTORES  TXT        65 12/11/09   15:37
+        1 archivo(s)         65 bytes
+                  1023932928 bytes libres
+        1 archivo(s) copiado(s)
+
+ El volumen de la unidad C no tiene etiqueta
+ El n£mero de serie del volumen es 3832-A008
+ Directorio de C:\PSCD\HOLA
+
+.            <DIR>     12/11/09   15:37
+..           <DIR>     12/11/09   15:37
+AAAA1    TXT        34 12/11/09   15:37
+        3 archivo(s)         34 bytes
+                  1023932928 bytes libres
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)
+        1 archivo(s) copiado(s)

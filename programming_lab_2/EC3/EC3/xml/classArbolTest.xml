@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classArbolTest" kind="class" prot="public">
+    <compoundname>ArbolTest</compoundname>
+    <basecompoundref refid="classtesting_1_1Test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classArbolTest_1305c46eab22c89aa3fb708549e8d8951" prot="protected" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; int &gt;</type>
+        <definition>Arbol&lt;int&gt; ArbolTest::E1</definition>
+        <argsstring></argsstring>
+        <name>E1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbolTest_1fd8d2b3f69bf9edc23418fd687bd076e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; int &gt;</type>
+        <definition>Arbol&lt;int&gt; ArbolTest::E2</definition>
+        <argsstring></argsstring>
+        <name>E2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbolTest_14b427210bab58f7eb2c19227ef6c1277" prot="protected" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; int * &gt;</type>
+        <definition>Arbol&lt;int*&gt; ArbolTest::D1</definition>
+        <argsstring></argsstring>
+        <name>D1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbolTest_1581f3fbf20265412329758dd564ed026" prot="protected" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; int * &gt; *</type>
+        <definition>Arbol&lt;int*&gt; * ArbolTest::D2</definition>
+        <argsstring></argsstring>
+        <name>D2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbolTest_163b6b91b1771687132ff621a1be0e2b2" prot="protected" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ArbolTest::vector[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="22" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classArbolTest_1a823fbcab8f072ec6737eee597f4856d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ArbolTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1Test_1aa64e7ad495ea976b98f97a5f3738c35">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="23" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbolTest_14ef59e6e743d7178fc177087ebc41bff" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ArbolTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1Test_11f5480b7d2c1067f7bba77a8993cf12f">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="6">
+        <label>ArbolTest</label>
+        <link refid="classArbolTest"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Arbol&lt; int &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>hder_
+hizq_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="8">
+        <label>ArbolTest</label>
+        <link refid="classArbolTest"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>D1
+D2</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>E1
+E2</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Arbol&lt; int * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>hder_
+hizq_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/testarbol.cpp" line="18" bodyfile="/home/Mario/Escritorio/EC3/src/testarbol.cpp" bodystart="18" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Test_1ccbfb9e722f1f1fef94248d056ed918c" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>__pad0__</name></member>
+      <member refid="classtesting_1_1Test_1b4fbbeba80a377c0ab2ea2793c2a2a33" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>__pad1__</name></member>
+      <member refid="classtesting_1_1Test_111223d23ca155b8a85bf63b8f1b0074c" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>__pad2__</name></member>
+      <member refid="classArbolTest_14b427210bab58f7eb2c19227ef6c1277" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>D1</name></member>
+      <member refid="classArbolTest_1581f3fbf20265412329758dd564ed026" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>D2</name></member>
+      <member refid="classArbolTest_1305c46eab22c89aa3fb708549e8d8951" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>E1</name></member>
+      <member refid="classArbolTest_1fd8d2b3f69bf9edc23418fd687bd076e" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>E2</name></member>
+      <member refid="classtesting_1_1Test_129540d1bf03baf570118c6e56e4ae901" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1Test_1765821feda4da8debf420af85aa597b5" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1Test_15aa7b30faff2d57475f7e9eea1bc8eaa" prot="public" virt="non-virtual"><scope>ArbolTest</scope><name>internal::TestInfoImpl</name></member>
+      <member refid="classtesting_1_1Test_191032b7a73c1881bbab4db263fa44447" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_13992f48623adaaa73107c1b6263cdc56" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_19d4162224b354f9d29e0816d89dde567" prot="package" virt="virtual"><scope>ArbolTest</scope><name>Setup</name></member>
+      <member refid="classArbolTest_1a823fbcab8f072ec6737eee597f4856d" prot="protected" virt="virtual"><scope>ArbolTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Test_123c50ad7f4dd7c23eb7bead09ca1e25b" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classArbolTest_14ef59e6e743d7178fc177087ebc41bff" prot="protected" virt="virtual"><scope>ArbolTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Test_1a9a9d7e19e41c660b6880d2d25918726" prot="package" virt="non-virtual"><scope>ArbolTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>Test</name></member>
+      <member refid="classArbolTest_163b6b91b1771687132ff621a1be0e2b2" prot="protected" virt="non-virtual"><scope>ArbolTest</scope><name>vector</name></member>
+      <member refid="classtesting_1_1Test_1fb788db3d734171957dc11ebe5f1a9cb" prot="package" virt="virtual"><scope>ArbolTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1TestPartResultArray" kind="class" prot="public">
+    <compoundname>testing::TestPartResultArray</compoundname>
+    <includes refid="gtest-test-part_8h" local="no">gtest-test-part.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1TestPartResultArray_1c2aead301bd604d826686b9bc671edc4" prot="private" static="no" mutable="no">
+        <type>internal::List&lt; <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &gt; *const</type>
+        <definition>internal::List&lt;TestPartResult&gt;* const testing::TestPartResultArray::list_</definition>
+        <argsstring></argsstring>
+        <name>list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="141" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_1c2936ab40bd56cbfd219f3ac057b93e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResultArray::TestPartResultArray</definition>
+        <argsstring>()</argsstring>
+        <name>TestPartResultArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_14487cbe9868ec9debafab7983bed9400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResultArray::~TestPartResultArray</definition>
+        <argsstring>()</argsstring>
+        <name>~TestPartResultArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_130f266a295d0a2a8f3ee51fb2fdc3617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestPartResultArray::Append</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_18fd6f99c5e4689bf849b5fc97c836191" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+        <definition>const TestPartResult&amp; testing::TestPartResultArray::GetTestPartResult</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetTestPartResult</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_1ea5fa97ad52c76e839cb7d520f5115da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestPartResultArray::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1TestPartResultArray_1dedd5daec4308625ab28f8082ae97d85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResultArray::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestPartResultArray)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="125" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="125" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1TestPartResultArray_130f266a295d0a2a8f3ee51fb2fdc3617" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>Append</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_18fd6f99c5e4689bf849b5fc97c836191" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>GetTestPartResult</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_1dedd5daec4308625ab28f8082ae97d85" prot="private" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_1c2aead301bd604d826686b9bc671edc4" prot="private" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>list_</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_1ea5fa97ad52c76e839cb7d520f5115da" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>size</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_1c2936ab40bd56cbfd219f3ac057b93e6" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>TestPartResultArray</name></member>
+      <member refid="classtesting_1_1TestPartResultArray_14487cbe9868ec9debafab7983bed9400" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>~TestPartResultArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

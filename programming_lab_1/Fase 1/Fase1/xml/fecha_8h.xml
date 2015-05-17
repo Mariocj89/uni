@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="fecha_8h" kind="file">
+    <compoundname>fecha.h</compoundname>
+    <includedby refid="noticias_8h" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h</includedby>
+    <includedby refid="fecha_8cpp" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp</includedby>
+    <invincdepgraph>
+      <node id="28">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h</label>
+        <link refid="lpi_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.cpp</label>
+        <link refid="noticias_8cpp"/>
+      </node>
+      <node id="31">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+      <node id="26">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h</label>
+        <link refid="noticias_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.h</label>
+        <link refid="categoria_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp</label>
+        <link refid="fecha_8cpp"/>
+      </node>
+      <node id="30">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h</label>
+        <link refid="gestor_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h</label>
+        <link refid="fecha.h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/ppal.cpp</label>
+        <link refid="ppal_8cpp"/>
+      </node>
+      <node id="33">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp</label>
+        <link refid="lpi_8cpp"/>
+      </node>
+      <node id="29">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.cpp</label>
+        <link refid="categoria_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classfecha" prot="public">fecha</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FECHA_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FECHA_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classfecha" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classfecha" kindref="compound">fecha</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="classfecha_159c299c690b6584793ed316dd81afa9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_159c299c690b6584793ed316dd81afa9b" kindref="member">dia</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classfecha_1f1e40d8b1eb62d5a03b6fe12a1b95f65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_1f1e40d8b1eb62d5a03b6fe12a1b95f65" kindref="member">mes</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classfecha_194c1d45a967f49f42fa5435dbce3a65d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_194c1d45a967f49f42fa5435dbce3a65d" kindref="member">anio</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>métodos<sp/>privados<sp/>de<sp/>la<sp/>clase</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_16618aab8a9750692a1ecc00969175b69" kindref="member" tooltip="comprueba los dias que tiene un mes, tiene en cuenta si el año es bisiesto.">dias_por_mes</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Un<sp/>año<sp/>es<sp/>bisiesto<sp/>si<sp/>es<sp/>divisible<sp/>por<sp/>4,<sp/>excepto<sp/>los<sp/>principios<sp/>de<sp/>siglo(aquellos<sp/>divisibles<sp/>por<sp/>100)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>que<sp/>para<sp/>ser<sp/>bisiestos<sp/>tambien<sp/>deben<sp/>ser<sp/>divisibles<sp/>por<sp/>400</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classfecha_1746902dbdf76ebd7140bcdad702d0650" kindref="member" tooltip="comprueba si un año es bisiesto.">bisiesto</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classfecha_12ac14aa46a810d2cb0d4d8b639517751" kindref="member" tooltip="comprueba si una fecha es correcta.">fecha_correcta</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha_16775ef84b5838e12e28fd341793f4539" kindref="member" tooltip="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha_16775ef84b5838e12e28fd341793f4539" kindref="member" tooltip="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha_16775ef84b5838e12e28fd341793f4539" kindref="member" tooltip="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha_16775ef84b5838e12e28fd341793f4539" kindref="member" tooltip="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref>&amp;F);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kindref="member" tooltip="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref>&amp;F);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfecha_15691bdd8675b0df1745b05f104cf645b" kindref="member" tooltip="Incrementa la fecha en un dia.">incrementar_fecha</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfecha_1a70e6f4e7c53aa9be72afca3a333faf3" kindref="member" tooltip="Decrementa la fecha en un dia.">decrementar_fecha</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfecha_1f847dd726827b02dba1024a020886e22" kindref="member" tooltip="Asigna una fecha. Establece todos los elementos por parametros.">asignar_fecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_10e88871e98725a3a179d84f3800494cf" kindref="member" tooltip="Devuelve el dia.">obtener_dia</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_1b11a5362f76eb157dd22e90aba2e7f3d" kindref="member" tooltip="Devuelve el mes.">obtener_mes</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classfecha_194687f580581d853ca7841c542e36b10" kindref="member" tooltip="Devuelve el año.">obtener_anio</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfecha_126e7fd7a163a4cb09ccd2e5d023838b3" kindref="member" tooltip="Muestra la fecha en pantalla.">Mostrar_Fecha</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h"/>
+  </compounddef>
+</doxygen>

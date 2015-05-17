@@ -1,0 +1,50 @@
+fmod COLA{X :: TRIV} is
+protecting BOOL .
+protecting NAT .
+sort Cola{X} .
+
+op crear : -> Cola{X} [ctor] .
+op insertar : Cola{X} X$Elt -> Cola{X} [ctor] .
+op esVacia : Cola{X} -> Bool .
+op frente : Cola{X} -> [X$Elt] .
+op borrar : Cola{X} -> [Cola{X}] .
+op card : Cola{X} -> Nat .
+op pertenece : Cola{X} X$Elt -> Bool .
+op concatenar : Cola{X} Cola{X} -> Cola{X} .
+op invertir : Cola{X} -> Cola{X} .
+op final : Cola{X} -> [X$Elt] .
+
+
+vars C V : Cola{X} .
+vars x y : X$Elt .
+
+cmb frente(C) : X$Elt if (esVacia(C) == false) .
+cmb borrar(C) : Cola{X} if (esVacia(C) == false) .
+cmb final(C) : X$Elt if ( esVacia(C) == false) .
+
+eq esVacia(crear) = true .
+eq esVacia(insertar(C,x)) = false .
+
+eq frente(insertar(C,x)) = if esVacia(C) then x
+							else frente(C) fi .
+							
+eq borrar(insertar(C,x)) = if esVacia(C) then crear
+							else insertar(borrar(C),x) fi .		
+							
+eq card (crear) = 0 .
+eq card (insertar(C,x)) = s(card(C)) .	
+
+eq pertenece(crear,x) = false .
+eq pertenece(insertar(C,x),y) = if (x == y) then true
+								else pertenece(C,y) fi .
+								
+eq concatenar(C,crear) = C .
+eq concatenar(C,insertar(V,x)) = insertar(concatenar(C,V),x) . 																	
+							
+eq invertir(crear) = crear .
+eq invertir(insertar(C,x)) = concatenar(insertar(crear,x),invertir(C)) .
+
+eq final(insertar(C,x)) = x .
+							
+endfm
+							

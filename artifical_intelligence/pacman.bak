@@ -1,0 +1,100 @@
+;;; Define :form1
+ 
+(in-package :common-graphics-user)
+
+;; The finder-function, which returns the window if it already
+;; exists, and otherwise creates and returns it.
+;; Call this function if you need only one copy of this window,
+;; and that window is a non-owned top-level window.
+(defun form1 () (find-or-make-application-window :form1 'make-form1))
+ 
+;; The maker-function, which always creates a new window.
+;; Call this function if you need more than one copy,
+;; or the single copy should have a parent or owner window.
+;; (Pass :owner to this function; :parent is for compatibility.)
+(defun make-form1
+    (&key parent (owner (or parent (screen *system*))) exterior
+     (interior (make-box 409 41 1285 391)) (name :form1) (title "Intelli-Pacman")
+     (border :frame) (child-p t) form-p)
+  (let ((owner
+         (make-window name :owner owner
+           :class 'dialog
+           :child-p child-p
+           :exterior exterior
+           :interior interior
+           :border border
+           :close-button t
+           :font (make-font-ex nil "Sans" 9.999683 '(:bold))
+           :form-state :normal
+           :maximize-button t
+           :minimize-button t
+           :name :form1
+           :pop-up nil
+           :resizable t
+           :scrollbars nil
+           :state :normal
+           :system-menu t
+           :title title
+           :title-bar t
+           :dialog-items (make-form1-widgets)
+           :form-p form-p
+           :form-package-name nil)))
+    owner))
+
+(defun make-form1-widgets ()
+  (list (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 354
+                       :name :b_cargar :on-click 'form1-b_cargar-on-click :title
+                       "Cargar Fichero" :top 36 :width 150)
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       354 :name :editable_fich :top 5 :value "")
+        (make-instance 'multi-line-editable-text :font
+                       (make-font-ex nil "Sans" 10 '(:bold)) :height 194 :left 68 :name
+                       :multi_simulacion :read-only t :top 62 :value "" :width 273)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 68 :name
+                       :b_individual :on-click 'form1-b_individual-on-click :title
+                       "Iniciar Partida Individual" :top 24 :width 273)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 68 :name
+                       :b_avanzar :on-click 'form1-b_avanzar-on-click-1 :title "Avanzar"
+                       :top 284)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 220
+                       :name :b_limpiar :on-click 'form1-b_limpiar-on-click :title
+                       "Limpiar" :top 284)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 559
+                       :name :b_parametros :on-click 'form1-b_parametros-on-click :title
+                       "Ajuste de parámetros" :top 118 :width 146)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 705
+                       :name :b_genetico :on-click 'form1-b_genetico-on-click :title
+                       "Algoritmo genético" :top 118 :width 146)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left 578
+                       :name :static_vector :top 204 :value "Vector de pesos")
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       678 :name :editable_vector :top 204 :value "")
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       631 :name :editable_ganadas :top 247 :value "" :width 60)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left 578
+                       :name :static_ganadas :top 247 :value "Ganadas" :width 53)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left 703
+                       :name :static_perdidas :top 247 :value "Perdidas" :width 56)
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       759 :name :editable_perdidas :top 247 :value "" :width 72)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left 578
+                       :name :static_porcentaje :top 288 :value "Porcentaje" :width 71)
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       649 :name :editable_porcentaje :top 288 :value "" :width 59)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :height
+                       33 :left 559 :name :static_numaprendizaje :top 17 :value
+                       "Inserte numero aprendizajes")
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :height
+                       19 :left 662 :name :editable_numaprendizaje :top 17 :value ""
+                       :width 46)
+        (make-instance 'static-text :font (make-font-ex nil "Sans" 10 '(:bold)) :height
+                       30 :left 559 :name :static_iteraciones :top 62 :value
+                       "Inserte numero iteraciones")
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :height
+                       19 :left 662 :name :editable_numiteraciones :top 62 :value ""
+                       :width 46)
+        (make-instance 'button :font (make-font-ex nil "Sans" 10 '(:bold)) :left 403
+                       :name :b_salir :on-click 'form1-b_salir-on-click :title "Salir"
+                       :top 288)
+        (make-instance 'editable-text :font (make-font-ex nil "Sans" 10 '(:bold)) :left
+                       160 :name :editable_numpasos :top 288 :value "0" :width 42)))

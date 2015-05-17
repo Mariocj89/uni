@@ -1,0 +1,119 @@
+\section{Escritorio/EC3/src/gtest/gtest-spi.h File Reference}
+\label{gtest-spi_8h}\index{Escritorio/EC3/src/gtest/gtest-spi.h@{Escritorio/EC3/src/gtest/gtest-spi.h}}
+{\tt \#include $<$gtest/gtest.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::ScopedFakeTestPartResultReporter}
+\item 
+class {\bf testing::internal::SingleFailureChecker}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf EXPECT\_\-FATAL\_\-FAILURE}(statement, substr)
+\item 
+\#define {\bf EXPECT\_\-FATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}(statement, substr)
+\item 
+\#define {\bf EXPECT\_\-NONFATAL\_\-FAILURE}(statement, substr)
+\item 
+\#define {\bf EXPECT\_\-NONFATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}(statement, substr)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{gtest-spi.h@{gtest-spi.h}!EXPECT_FATAL_FAILURE@{EXPECT\_\-FATAL\_\-FAILURE}}
+\index{EXPECT_FATAL_FAILURE@{EXPECT\_\-FATAL\_\-FAILURE}!gtest-spi.h@{gtest-spi.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-FATAL\_\-FAILURE(statement, substr)}\label{gtest-spi_8h_076fe901e36c95b0a001e265ee9abc83}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do { \
+    class GTestExpectFatalFailureHelper {\
+     public:\
+      static void Execute() { statement; }\
+    };\
+    ::testing::TestPartResultArray gtest_failures;\
+    ::testing::internal::SingleFailureChecker gtest_checker(\
+        &gtest_failures, ::testing::TPRT_FATAL_FAILURE, (substr));\
+    {\
+      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\
+          ::testing::ScopedFakeTestPartResultReporter:: \
+          INTERCEPT_ONLY_CURRENT_THREAD, &gtest_failures);\
+      GTestExpectFatalFailureHelper::Execute();\
+    }\
+  } while (false)
+\end{verbatim}
+\end{Code}
+\index{gtest-spi.h@{gtest-spi.h}!EXPECT_FATAL_FAILURE_ON_ALL_THREADS@{EXPECT\_\-FATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}}
+\index{EXPECT_FATAL_FAILURE_ON_ALL_THREADS@{EXPECT\_\-FATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}!gtest-spi.h@{gtest-spi.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-FATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS(statement, substr)}\label{gtest-spi_8h_1918b596228181d663d8ef8975dcf919}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do { \
+    class GTestExpectFatalFailureHelper {\
+     public:\
+      static void Execute() { statement; }\
+    };\
+    ::testing::TestPartResultArray gtest_failures;\
+    ::testing::internal::SingleFailureChecker gtest_checker(\
+        &gtest_failures, ::testing::TPRT_FATAL_FAILURE, (substr));\
+    {\
+      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\
+          ::testing::ScopedFakeTestPartResultReporter:: \
+          INTERCEPT_ALL_THREADS, &gtest_failures);\
+      GTestExpectFatalFailureHelper::Execute();\
+    }\
+  } while (false)
+\end{verbatim}
+\end{Code}
+\index{gtest-spi.h@{gtest-spi.h}!EXPECT_NONFATAL_FAILURE@{EXPECT\_\-NONFATAL\_\-FAILURE}}
+\index{EXPECT_NONFATAL_FAILURE@{EXPECT\_\-NONFATAL\_\-FAILURE}!gtest-spi.h@{gtest-spi.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-NONFATAL\_\-FAILURE(statement, substr)}\label{gtest-spi_8h_451fa59ec46dc912081a08e1eb4fca99}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do {\
+    ::testing::TestPartResultArray gtest_failures;\
+    ::testing::internal::SingleFailureChecker gtest_checker(\
+        &gtest_failures, ::testing::TPRT_NONFATAL_FAILURE, (substr));\
+    {\
+      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\
+          ::testing::ScopedFakeTestPartResultReporter:: \
+          INTERCEPT_ONLY_CURRENT_THREAD, &gtest_failures);\
+      statement;\
+    }\
+  } while (false)
+\end{verbatim}
+\end{Code}
+\index{gtest-spi.h@{gtest-spi.h}!EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS@{EXPECT\_\-NONFATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}}
+\index{EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS@{EXPECT\_\-NONFATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS}!gtest-spi.h@{gtest-spi.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-NONFATAL\_\-FAILURE\_\-ON\_\-ALL\_\-THREADS(statement, substr)}\label{gtest-spi_8h_caebbbbeb2751c3cb027ad57a9546257}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do {\
+    ::testing::TestPartResultArray gtest_failures;\
+    ::testing::internal::SingleFailureChecker gtest_checker(\
+        &gtest_failures, ::testing::TPRT_NONFATAL_FAILURE, (substr));\
+    {\
+      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\
+          ::testing::ScopedFakeTestPartResultReporter::INTERCEPT_ALL_THREADS,\
+          &gtest_failures);\
+      statement;\
+    }\
+  } while (false)
+\end{verbatim}
+\end{Code}

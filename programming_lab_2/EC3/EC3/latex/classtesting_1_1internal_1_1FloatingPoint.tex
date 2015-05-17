@@ -1,0 +1,207 @@
+\section{testing::internal::FloatingPoint$<$ RawType $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1FloatingPoint}\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+{\tt \#include $<$gtest-internal.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef {\bf TypeWithSize}$<$ sizeof(RawType)$>$::UInt {\bf Bits}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf FloatingPoint} (const RawType \&x)
+\item 
+const {\bf Bits} \& {\bf bits} () const
+\item 
+{\bf Bits} {\bf exponent\_\-bits} () const
+\item 
+{\bf Bits} {\bf fraction\_\-bits} () const
+\item 
+{\bf Bits} {\bf sign\_\-bit} () const
+\item 
+bool {\bf is\_\-nan} () const
+\item 
+bool {\bf AlmostEquals} (const {\bf FloatingPoint} \&rhs) const 
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static RawType {\bf ReinterpretBits} (const {\bf Bits} bits)
+\item 
+static RawType {\bf Infinity} ()
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const size\_\-t {\bf kBitCount} = 8$\ast$sizeof(RawType)
+\item 
+static const size\_\-t {\bf kFractionBitCount}
+\item 
+static const size\_\-t {\bf kExponentBitCount} = {\bf kBitCount} - 1 - {\bf kFractionBitCount}
+\item 
+static const {\bf Bits} {\bf kSignBitMask} = static\_\-cast$<${\bf Bits}$>$(1) $<$$<$ ({\bf kBitCount} - 1)
+\item 
+static const {\bf Bits} {\bf kFractionBitMask}
+\item 
+static const {\bf Bits} {\bf kExponentBitMask} = $\sim$({\bf kSignBitMask} $|$ {\bf kFractionBitMask})
+\item 
+static const size\_\-t {\bf kMaxUlps} = 4
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf Bits} {\bf SignAndMagnitudeToBiased} (const {\bf Bits} \&sam)
+\item 
+static {\bf Bits} {\bf DistanceBetweenSignAndMagnitudeNumbers} (const {\bf Bits} \&sam1, const {\bf Bits} \&sam2)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>RawType {\bf value\_}\\
+\>{\bf Bits} {\bf bits\_}\\
+\}; \\
+
+\end{tabbing}\end{CompactItemize}
+\subsubsection*{template$<$typename RawType$>$ class testing::internal::FloatingPoint$<$ RawType $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!Bits@{Bits}}
+\index{Bits@{Bits}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ typedef {\bf TypeWithSize}$<$sizeof(RawType)$>$::UInt {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf Bits}}\label{classtesting_1_1internal_1_1FloatingPoint_62f65c1c1a218664ad46092e6bf43bb3}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!FloatingPoint@{FloatingPoint}}
+\index{FloatingPoint@{FloatingPoint}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf FloatingPoint} (const RawType \& {\em x})\hspace{0.3cm}{\tt  [inline, explicit]}}\label{classtesting_1_1internal_1_1FloatingPoint_bb43acfcef65679c9b31556d0c98f4cc}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!ReinterpretBits@{ReinterpretBits}}
+\index{ReinterpretBits@{ReinterpretBits}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ static RawType {\bf testing::internal::FloatingPoint}$<$ RawType $>$::ReinterpretBits (const {\bf Bits} {\em bits})\hspace{0.3cm}{\tt  [inline, static]}}\label{classtesting_1_1internal_1_1FloatingPoint_03a1d12251225bfc26c6f728603c94d2}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ static RawType {\bf testing::internal::FloatingPoint}$<$ RawType $>$::Infinity ()\hspace{0.3cm}{\tt  [inline, static]}}\label{classtesting_1_1internal_1_1FloatingPoint_162b38c51330902d3a36ab8fb24fc5cd}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!bits@{bits}}
+\index{bits@{bits}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const {\bf Bits}\& {\bf testing::internal::FloatingPoint}$<$ RawType $>$::bits () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_f158aced1acff96e66c0975aacbb7356}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!exponent_bits@{exponent\_\-bits}}
+\index{exponent_bits@{exponent\_\-bits}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::exponent\_\-bits () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_5460e7fb06a67182e2327fb4833412e4}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!fraction_bits@{fraction\_\-bits}}
+\index{fraction_bits@{fraction\_\-bits}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::fraction\_\-bits () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_cfe5d82d36d0a8de4b703184f76cc149}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!sign_bit@{sign\_\-bit}}
+\index{sign_bit@{sign\_\-bit}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::sign\_\-bit () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_d4fa25be27e9956a332dcc3ec8f26abb}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!is_nan@{is\_\-nan}}
+\index{is_nan@{is\_\-nan}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ bool {\bf testing::internal::FloatingPoint}$<$ RawType $>$::is\_\-nan () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_9c07831fe70814a891999c2874125d88}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!AlmostEquals@{AlmostEquals}}
+\index{AlmostEquals@{AlmostEquals}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ bool {\bf testing::internal::FloatingPoint}$<$ RawType $>$::AlmostEquals (const {\bf FloatingPoint}$<$ RawType $>$ \& {\em rhs}) const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FloatingPoint_f1f6e996f98579f783c71e856073607f}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!SignAndMagnitudeToBiased@{SignAndMagnitudeToBiased}}
+\index{SignAndMagnitudeToBiased@{SignAndMagnitudeToBiased}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ static {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::SignAndMagnitudeToBiased (const {\bf Bits} \& {\em sam})\hspace{0.3cm}{\tt  [inline, static, private]}}\label{classtesting_1_1internal_1_1FloatingPoint_5ced567cb80c6deec814b66fdd90e8fc}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!DistanceBetweenSignAndMagnitudeNumbers@{DistanceBetweenSignAndMagnitudeNumbers}}
+\index{DistanceBetweenSignAndMagnitudeNumbers@{DistanceBetweenSignAndMagnitudeNumbers}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ static {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::DistanceBetweenSignAndMagnitudeNumbers (const {\bf Bits} \& {\em sam1}, const {\bf Bits} \& {\em sam2})\hspace{0.3cm}{\tt  [inline, static, private]}}\label{classtesting_1_1internal_1_1FloatingPoint_f5d019f10fb65eb17a95f807cfe48e02}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kBitCount@{kBitCount}}
+\index{kBitCount@{kBitCount}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const size\_\-t {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kBitCount} = 8$\ast$sizeof(RawType)\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_0d1a52d7247b49ffd89b55cc269fa3ae}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kFractionBitCount@{kFractionBitCount}}
+\index{kFractionBitCount@{kFractionBitCount}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const size\_\-t {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kFractionBitCount}\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_2e4bfc4760ad22b9d5ee2065a576ab1f}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}
+    std::numeric_limits<RawType>::digits - 1
+\end{verbatim}
+\end{Code}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kExponentBitCount@{kExponentBitCount}}
+\index{kExponentBitCount@{kExponentBitCount}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const size\_\-t {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kExponentBitCount} = {\bf kBitCount} - 1 - {\bf kFractionBitCount}\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_5790439a5d695303b59362ba54732611}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kSignBitMask@{kSignBitMask}}
+\index{kSignBitMask@{kSignBitMask}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kSignBitMask} = static\_\-cast$<${\bf Bits}$>$(1) $<$$<$ ({\bf kBitCount} - 1)\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_4cdfe31dcfc38670299d0ab202d94a8d}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kFractionBitMask@{kFractionBitMask}}
+\index{kFractionBitMask@{kFractionBitMask}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kFractionBitMask}\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_a11b71352cfaea7de9194099116ac79a}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}
+    ~static_cast<Bits>(0) >> (kExponentBitCount + 1)
+\end{verbatim}
+\end{Code}
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kExponentBitMask@{kExponentBitMask}}
+\index{kExponentBitMask@{kExponentBitMask}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kExponentBitMask} = $\sim$({\bf kSignBitMask} $|$ {\bf kFractionBitMask})\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_23227160d528a7d76ef02135b2ca21bf}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!kMaxUlps@{kMaxUlps}}
+\index{kMaxUlps@{kMaxUlps}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ const size\_\-t {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf kMaxUlps} = 4\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FloatingPoint_313c816e4bb05a9b39ec42a7a8446551}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!value_@{value\_\-}}
+\index{value_@{value\_\-}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ RawType {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf value\_\-}}\label{classtesting_1_1internal_1_1FloatingPoint_e3e22daded9add08de0ce23d04c1834d}
+
+
+\index{testing::internal::FloatingPoint@{testing::internal::FloatingPoint}!bits_@{bits\_\-}}
+\index{bits_@{bits\_\-}!testing::internal::FloatingPoint@{testing::internal::FloatingPoint}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename RawType$>$ {\bf Bits} {\bf testing::internal::FloatingPoint}$<$ RawType $>$::{\bf bits\_\-}}\label{classtesting_1_1internal_1_1FloatingPoint_0447c6c2bdd9eaf07b79f8a3c1702f2b}
+
+
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} \hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1internal_1_1FloatingPoint_22de72d98893704afa622af964ca34a9}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/internal/{\bf gtest-internal.h}\end{CompactItemize}

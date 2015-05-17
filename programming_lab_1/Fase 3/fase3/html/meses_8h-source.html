@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>fase3.kdevelop: Fichero Fuente Escritorio/fase3/src/meses.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Clases</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+  </ul>
+</div>
+<h1>Escritorio/fase3/src/meses.h</h1><a href="meses_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00018"></a>00018 <span class="preprocessor">#ifndef MESES_H</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define MESES_H</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">using namespace </span>std;
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">const</span> <span class="keywordtype">int</span> MAXCAD=15;<span class="comment">//Tamaño maximo ke puede tener un mes.</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="keyword">typedef</span> <span class="keywordtype">char</span> TipoIdioma[MAXCAD];
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="keyword">typedef</span> <span class="keyword">struct </span>TipoDato{
+<a name="l00031"></a>00031         <span class="keywordtype">int</span> Numero;<span class="comment">//El numero del mes</span>
+<a name="l00032"></a>00032         TipoIdioma Idioma[2];<span class="comment">//En el 0 guardaremos el nombre en castellano y en el 1 en ingles.</span>
+<a name="l00033"></a>00033 };
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">typedef</span> <span class="keyword">struct </span>TNodo {
+<a name="l00036"></a>00036         TipoDato dato;
+<a name="l00037"></a>00037         TNodo *suce;<span class="comment">//Apuntador al siguiente nodo</span>
+<a name="l00038"></a>00038 };
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">typedef</span> TNodo *PtrNodo;
+<a name="l00041"></a>00041 
+<a name="l00046"></a><a class="code" href="classMeses.html">00046</a> <span class="keyword">class </span><a class="code" href="classMeses.html">Meses</a> {
+<a name="l00047"></a>00047                 PtrNodo l; <span class="comment">// apuntador al primer elemento de la lista</span>
+<a name="l00048"></a>00048                 
+<a name="l00049"></a>00049         <span class="keyword">public</span>:
+<a name="l00050"></a>00050 
+<a name="l00054"></a>00054         <a class="code" href="classMeses.html#f7908636300cbd454835ffb1af782a8c" title="Constructor por defecto de la clase DatosPersonales.">Meses</a>();
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 
+<a name="l00062"></a>00062         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#6523ac975c165807691c66c320dc5f69" title="Copia la clase meses.">Clonar</a>(<span class="keyword">const</span> <a class="code" href="classMeses.html">Meses</a> &amp;dat);
+<a name="l00063"></a>00063 
+<a name="l00069"></a>00069         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#3182bd3fe6d6c5704f57875bf5deec5b" title="Inserta un elemento al principio.">InsertarPrincipio</a>(<span class="keyword">const</span> TipoDato &amp;dat);
+<a name="l00070"></a>00070 
+<a name="l00076"></a>00076         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#4041fa911214924768c305aab758c69a" title="Inserta un elemento al final.">InsertarFinal</a>(<span class="keyword">const</span> TipoDato &amp;dat);
+<a name="l00077"></a>00077 
+<a name="l00083"></a>00083         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#129f69534c912e5ea7a46f925ce9ff79" title="Inserta un elemento de forma ordenada.">InsertarOrden</a>(<span class="keyword">const</span> TipoDato &amp;dat);
+<a name="l00084"></a>00084 
+<a name="l00089"></a>00089         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#80b257997d4769292b17a6e15730dfea" title="Muestra toda la lista.">Mostrar</a>() <span class="keyword">const</span>;
+<a name="l00090"></a>00090 
+<a name="l00097"></a>00097         <span class="keywordtype">bool</span> <a class="code" href="classMeses.html#76959034cbdd7801be117e84d365eaaa" title="Borra un elemento de la lista.">Borrar</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;i);
+<a name="l00098"></a>00098 
+<a name="l00106"></a>00106         <span class="keywordtype">bool</span> <a class="code" href="classMeses.html#a4d534314ff3677c0a2b204de10abb00" title="Busca un elemento en la lista.">Buscar</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> i, TipoDato &amp;dat) <span class="keyword">const</span>;
+<a name="l00107"></a>00107 
+<a name="l00112"></a>00112         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#6fe9b288dc12957021cfa63c63476ffd" title="Carga la lista de un archivo ("meses.txt").">Cargar</a>();
+<a name="l00113"></a>00113 
+<a name="l00117"></a>00117         <span class="keywordtype">void</span> <a class="code" href="classMeses.html#1b691d588636573359599097af27b54a" title="Vacia la lista.">Eliminar</a>();
+<a name="l00118"></a>00118 
+<a name="l00122"></a>00122         <a class="code" href="classMeses.html#c8ded19df98124383823a52813c45cbd" title="Destructor de la clase.">~Meses</a>();
+<a name="l00123"></a>00123 };
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 
+<a name="l00129"></a>00129 <span class="keywordtype">void</span> <a class="code" href="meses_8cpp.html#691207af44ef54101c9905c74e5ac503" title="Juego de pruebas para la clase Meses.">PruebaMeses</a>();
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139 <span class="preprocessor">#endif</span>
+<a name="l00140"></a>00140 <span class="preprocessor"></span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Wed May 28 10:31:23 2008 para fase3.kdevelop por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

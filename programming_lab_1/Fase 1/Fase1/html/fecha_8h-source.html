@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>parte1.kdevelop: Fichero Fuente /home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li><a href="classes.html"><span>Clases</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+  </ul>
+</div>
+<h1>/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h</h1><a href="fecha_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FECHA_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FECHA_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 
+<a name="l00016"></a><a class="code" href="classfecha.html">00016</a> <span class="keyword">class </span><a class="code" href="classfecha.html">fecha</a>
+<a name="l00017"></a>00017 {
+<a name="l00018"></a><a class="code" href="classfecha.html#59c299c690b6584793ed316dd81afa9b">00018</a>         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#59c299c690b6584793ed316dd81afa9b">dia</a>;
+<a name="l00019"></a><a class="code" href="classfecha.html#f1e40d8b1eb62d5a03b6fe12a1b95f65">00019</a>         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#f1e40d8b1eb62d5a03b6fe12a1b95f65">mes</a>;
+<a name="l00020"></a><a class="code" href="classfecha.html#94c1d45a967f49f42fa5435dbce3a65d">00020</a>         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#94c1d45a967f49f42fa5435dbce3a65d">anio</a>;
+<a name="l00021"></a>00021         <span class="comment">// métodos privados de la clase</span>
+<a name="l00029"></a>00029 <span class="comment"></span>        <span class="keywordtype">int</span> <a class="code" href="classfecha.html#6618aab8a9750692a1ecc00969175b69" title="comprueba los dias que tiene un mes, tiene en cuenta si el año es bisiesto.">dias_por_mes</a> (<span class="keywordtype">int</span> m, <span class="keywordtype">int</span> a);
+<a name="l00030"></a>00030         <span class="comment">/*</span>
+<a name="l00031"></a>00031 <span class="comment">           Un año es bisiesto si es divisible por 4, excepto los principios de siglo(aquellos divisibles por 100)</span>
+<a name="l00032"></a>00032 <span class="comment">           que para ser bisiestos tambien deben ser divisibles por 400</span>
+<a name="l00033"></a>00033 <span class="comment">         */</span>
+<a name="l00040"></a>00040         <span class="keywordtype">bool</span> <a class="code" href="classfecha.html#746902dbdf76ebd7140bcdad702d0650" title="comprueba si un año es bisiesto.">bisiesto</a> (<span class="keywordtype">int</span> a);
+<a name="l00041"></a>00041 
+<a name="l00050"></a>00050         <span class="keywordtype">bool</span> <a class="code" href="classfecha.html#2ac14aa46a810d2cb0d4d8b639517751" title="comprueba si una fecha es correcta.">fecha_correcta</a>(<span class="keywordtype">int</span> d, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> a);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="keyword">public</span>:
+<a name="l00059"></a>00059         <a class="code" href="classfecha.html#6775ef84b5838e12e28fd341793f4539" title="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</a>();
+<a name="l00060"></a>00060 
+<a name="l00068"></a>00068         <a class="code" href="classfecha.html#6775ef84b5838e12e28fd341793f4539" title="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</a> (<span class="keywordtype">int</span> d,<span class="keywordtype">int</span> m);
+<a name="l00069"></a>00069 
+<a name="l00078"></a>00078         <a class="code" href="classfecha.html#6775ef84b5838e12e28fd341793f4539" title="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</a>(<span class="keywordtype">int</span> d,<span class="keywordtype">int</span> m,<span class="keywordtype">int</span> a);
+<a name="l00079"></a>00079 
+<a name="l00086"></a>00086         <a class="code" href="classfecha.html#6775ef84b5838e12e28fd341793f4539" title="Constructor por defecto de la clase Fecha. Establece todos los elementos a 0.">fecha</a> (<span class="keyword">const</span> <a class="code" href="classfecha.html">fecha</a>&amp;F);
+<a name="l00087"></a>00087 
+<a name="l00094"></a>00094         <span class="keywordtype">void</span> <a class="code" href="classfecha.html#06f3a30edf89c4542d7bf260f5bb4be8" title="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</a> (<span class="keyword">const</span> <a class="code" href="classfecha.html">fecha</a>&amp;F);
+<a name="l00095"></a>00095 
+<a name="l00102"></a>00102         <span class="keywordtype">void</span> <a class="code" href="classfecha.html#5691bdd8675b0df1745b05f104cf645b" title="Incrementa la fecha en un dia.">incrementar_fecha</a>();
+<a name="l00103"></a>00103 
+<a name="l00110"></a>00110         <span class="keywordtype">void</span> <a class="code" href="classfecha.html#a70e6f4e7c53aa9be72afca3a333faf3" title="Decrementa la fecha en un dia.">decrementar_fecha</a>();
+<a name="l00111"></a>00111 
+<a name="l00120"></a>00120         <span class="keywordtype">void</span> <a class="code" href="classfecha.html#f847dd726827b02dba1024a020886e22" title="Asigna una fecha. Establece todos los elementos por parametros.">asignar_fecha</a>(<span class="keywordtype">int</span> d, <span class="keywordtype">int</span> m,<span class="keywordtype">int</span> a);
+<a name="l00121"></a>00121 
+<a name="l00128"></a>00128         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#0e88871e98725a3a179d84f3800494cf" title="Devuelve el dia.">obtener_dia</a>() <span class="keyword">const</span>;
+<a name="l00129"></a>00129 
+<a name="l00136"></a>00136         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#b11a5362f76eb157dd22e90aba2e7f3d" title="Devuelve el mes.">obtener_mes</a>() <span class="keyword">const</span>;
+<a name="l00137"></a>00137 
+<a name="l00144"></a>00144         <span class="keywordtype">int</span> <a class="code" href="classfecha.html#94687f580581d853ca7841c542e36b10" title="Devuelve el año.">obtener_anio</a>() <span class="keyword">const</span>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 
+<a name="l00153"></a>00153         <span class="keywordtype">void</span> <a class="code" href="classfecha.html#26e7fd7a163a4cb09ccd2e5d023838b3" title="Muestra la fecha en pantalla.">Mostrar_Fecha</a>() <span class="keyword">const</span>;
+<a name="l00154"></a>00154 };
+<a name="l00155"></a>00155 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Sun Apr 13 19:25:51 2008 para parte1.kdevelop por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

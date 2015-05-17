@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>Productos</TITLE>
+</HEAD>
+<BODY BGCOLOR="Black">
+<p><FONT color="#FFFFFF" size="+3" face="Georgia, Times New Roman"> Realizar un pedido:</FONT>
+
+<p><FONT color="#FFFFFF" size="+1" >Para realizar un pedido rellene los siguientes campos:</FONT>
+<hr><br>
+<!Haremos que el usuario nos envie un e-mail con la informacion del pedido>
+<form name="form" method="post" action="mailto:mariocj89@gmail.com">
+  <p><FONT color="#009999" size="+1"> Nombre: </FONT>
+  <input type="text" name="Nombre" maxlength="20" size="30">
+  <font color="#009999" size="+1"> Apellidos: </font>
+  <input type="text" name="Apellidos" maxlength="50" size="50">
+  
+  <p><FONT color="#009999" size="+1">Direccion de envio :</FONT>
+  <input type="text" name="direccion" maxlength="80" size="50">
+  <FONT color="#009999" size="+1">  Envio urgente:</FONT>
+  <input name="urgente" type="checkbox" value="1">
+  <FONT color="#009999" size="+1">(+5€ de gastos por envio urgente)</FONT>
+  <p><FONT color="#009999" size="+1">¿Que deseas pedir?: </FONT>
+  <p><FONT color="#009999" size="+1">Objeto a Pedir :</FONT>
+  <input type="text" name="direccion" maxlength="80" size="50">
+  <FONT color="#009999" size="+1">Cantidad :</FONT>
+  <input type="text" name="direccion" maxlength="5" size="2">
+
+  
+<div align="center"><INPUT TYPE="SUBMIT" ><INPUT TYPE="RESET"></div>
+</form>
+</BODY>
+</HTML>

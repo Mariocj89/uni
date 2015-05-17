@@ -1,0 +1,152 @@
+\section{Cargador Class Reference}
+\label{classCargador}\index{Cargador@{Cargador}}
+La misión de esta clase es cargar el sistema con los elementos del fichero de configuración.  
+
+
+{\tt \#include $<$cargador.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Cargador} ({\bf Prision} $\ast$p)
+\item 
+void {\bf crear} (string elto, int numCampos, string vCampos[{\bf kMaxCampos}])
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+int {\bf queElemento} (string elto)
+\item 
+void {\bf crearPlanta} (int numCampos, string vCampos[{\bf kMaxCampos}])
+\item 
+void {\bf crearPreso} (int numCampos, string vCampos[{\bf kMaxCampos}])
+\item 
+void {\bf crearGuarda} (int numCampos, string vCampos[{\bf kMaxCampos}])
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Prision} $\ast$ {\bf prision}
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf DatoMapeo} {\bf mapeo} [NUMELTOSCONF]
+\begin{CompactList}\small\item\em Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en el vector) y contiene el número de campos de configuración para cada elemento. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct {\bf DatoMapeo}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+La misión de esta clase es cargar el sistema con los elementos del fichero de configuración. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Cargador@{Cargador}!Cargador@{Cargador}}
+\index{Cargador@{Cargador}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Cargador::Cargador ({\bf Prision} $\ast$ {\em p})}\label{classCargador_a98217ffcf9b63265fad5aeb86b2e487}
+
+
+Constructor de \doxyref{Cargador}{p.}{classCargador} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]Objeto sistema que se va a cargar \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Cargador@{Cargador}!queElemento@{queElemento}}
+\index{queElemento@{queElemento}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Cargador::queElemento (string {\em elto})\hspace{0.3cm}{\tt  [private]}}\label{classCargador_d1f39f31907fde577e25d300070e8b7a}
+
+
+Devuelve la posición que ocupa el elemento en el vector de mapeo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em elto}]nombre del elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]posición que ocupa el elemento en el vector de mapeo \end{Desc}
+\index{Cargador@{Cargador}!crearPlanta@{crearPlanta}}
+\index{crearPlanta@{crearPlanta}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Cargador::crearPlanta (int {\em numCampos}, string {\em vCampos}[kMaxCampos])\hspace{0.3cm}{\tt  [private]}}\label{classCargador_e7d9bf4c1829eb4e3e17ae16e01f3c29}
+
+
+Método que crea una planta y la registra en la prisión \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em numCampos}]número de campos ocupados del vector vCampos \item[{\em vCampos\mbox{[}$\,$\mbox{]}}]valores de configuración del elemento a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Cargador@{Cargador}!crearPreso@{crearPreso}}
+\index{crearPreso@{crearPreso}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Cargador::crearPreso (int {\em numCampos}, string {\em vCampos}[kMaxCampos])\hspace{0.3cm}{\tt  [private]}}\label{classCargador_bc9536db01c68bfffb54e22c4ef61fab}
+
+
+Método que crea un preso y lo registra en la prisión \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em numCampos}]número de campos ocupados del vector vCampos \item[{\em vCampos\mbox{[}$\,$\mbox{]}}]valores de configuración del elemento a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Cargador@{Cargador}!crearGuarda@{crearGuarda}}
+\index{crearGuarda@{crearGuarda}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Cargador::crearGuarda (int {\em numCampos}, string {\em vCampos}[kMaxCampos])\hspace{0.3cm}{\tt  [private]}}\label{classCargador_f6671839f6e5d604381cb936024b65c0}
+
+
+Método que crea un guarda y lo registra en la prisión \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em numCampos}]número de campos ocupados del vector vCampos \item[{\em vCampos\mbox{[}$\,$\mbox{]}}]valores de configuración del elemento a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Cargador@{Cargador}!crear@{crear}}
+\index{crear@{crear}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Cargador::crear (string {\em elto}, int {\em numCampos}, string {\em vCampos}[kMaxCampos])}\label{classCargador_2af26a52a19380d7216cee4bc192cf06}
+
+
+Método que realiza comprobaciones de datos básicos (existe elemento, número campos correcto, existe localidad...) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em elto}]nombre del elemento a crear \item[{\em numCampos}]número de campos ocupados del vector vCampos \item[{\em vCampos\mbox{[}$\,$\mbox{]}}]valores de configuración del elemento a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Cargador@{Cargador}!mapeo@{mapeo}}
+\index{mapeo@{mapeo}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Cargador::mapeo}\hspace{0.3cm}{\tt  [static, private]}}\label{classCargador_b78e3abd0873c21add7485c7c9ab2565}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}{
+            
+            {"PLANTA",8},
+            {"PRESO",5},
+            {"GUARDIA",5}
+        }
+\end{verbatim}
+\end{Code}
+Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en el vector) y contiene el número de campos de configuración para cada elemento. 
+
+\index{Cargador@{Cargador}!prision@{prision}}
+\index{prision@{prision}!Cargador@{Cargador}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Prision}$\ast$ {\bf Cargador::prision}\hspace{0.3cm}{\tt  [private]}}\label{classCargador_49af53fff670a9948f02369c2fdbaf17}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf cargador.h}\item 
+Escritorio/EC3/src/{\bf cargador.cpp}\end{CompactItemize}

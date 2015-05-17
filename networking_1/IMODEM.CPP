@@ -1,0 +1,624 @@
+
+#include "imodem.h"
+
+IModem::IModem(TCom *Puerto):
+recepcion(12,8,620,200,"                           Area de Recepcion:"),
+informacion(12,216,620,150, "                           Area de Informacion:"),
+puerto(12,372,300,100,"  Parametros del puerto:"),
+opciones(332,372,300,100,"       Opciones:"),
+my_modem(Puerto)
+{
+	informacion.EscribirMensaje("Inicio del programa. Modo: Modem");
+	PintarOpciones();
+	fout = NULL;
+	fin = NULL;
+	llamada_entrante = 0;
+}
+
+void IModem::PintarOpciones(){
+	opciones.EscribirMensaje("i: Modelo del modem.");
+	opciones.EscribirMensaje("s: Numero de rings.");
+	opciones.EscribirMensaje("v: Mostrar Configuracion.");
+	opciones.EscribirMensaje("l: Cambiar volumen.");
+	opciones.EscribirMensaje("m: Cambiar modo altavoz.");
+	opciones.EscribirMensaje("r: Cambiar numero de rings.");
+	opciones.EscribirMensaje("F4: Enviar ficheros.");  //enviar
+	opciones.EscribirMensaje("ESC: Fin de aplicacion");
+
+}
+
+void IModem::PintarPuertos(char nom_puerto[5], int &bps, int &bits, char paridad[9], int &parada){
+	char cadena[50];
+
+	sprintf(cadena, "Puerto: %s",nom_puerto);
+	puerto.EscribirMensaje(cadena);
+
+	sprintf(cadena, "bps: %d",bps);
+	puerto.EscribirMensaje(cadena);
+
+	sprintf(cadena, "Bits datos: %d",bits);
+	puerto.EscribirMensaje(cadena);
+
+	sprintf(cadena, "Paridad: %s",paridad);
+	puerto.EscribirMensaje(cadena);
+
+	sprintf(cadena, "Bits parada: %d",parada);
+	puerto.EscribirMensaje(cadena);
+}
+
+void IModem::Iniciar(){
+	int gdriver = DETECT, gmode;
+	initgraph(&gdriver,&gmode,"C:\\ARCHIV~1\\BC3.1\\BGI");
+	setfillstyle(0,0);
+	//bar(0,0,200,200);
+}
+
+void IModem::Procesar(char &car, int &salir)
+{
+	int usuario;
+	switch(car)
+	{
+	case 27:  informacion.EscribirMensaje("Fin de Programa."); salir = 1; break;
+	case 'l':
+	case 'L': informacion.EscribirMensaje("Cambiando el volumen del altavoz"); ModificarVolumen(); break;
+	case 'm':
+	case 'M': informacion.EscribirMensaje("Cambiando el modo del altavoz"); ModificarAltavoz(); break;
+	case 'r':
+	case 'R': informacion.EscribirMensaje("Cambiando el numero de rings"); ModificarRings(); break;
+	case 'i':
+	case 'I': informacion.EscribirMensaje("Mostrando Modelo Del Modem"); ObtenModelo(); break;
+	case 's':
+	case 'S': informacion.EscribirMensaje("Mostrando Numero de Rings para la respuesta automatica."); ObtenNRings(); break;
+	case 'v':
+	case 'V': informacion.EscribirMensaje("Mostrando toda la configuracion del modem"); informacion.EscribirMensaje("Pulse una tecla para refrescar el area de recepcion"); ObtenConfig(); break;
+	case 'a':
+	case 'A':  if(llamada_entrante){ informacion.EscribirMensaje("Aceptada una llamada manualmente."); my_modem.AceptarLlamada(); llamada_entrante=0;} break;
+	case 'c':
+	case 'C':  if(llamada_entrante){ informacion.EscribirMensaje("Se rechaza la llamada."); my_modem.RechazarLlamada(); llamada_entrante = 0;} break;
+	case 62:  informacion.EscribirMensaje("Enviando archivos."); EnviarCorreoModem(); break; //pulsa F4
+	default : informacion.EscribirMensaje("Comando no reconocido"); break;
+
+	}
+
+}
+
+void IModem::ObtenModelo()
+{
+	char salida[100];
+	my_modem.Enviar("ATI3");
+	my_modem.Recibir(salida,2);
+	recepcion.EscribirMensaje(salida);
+}
+
+void IModem::ObtenNRings()
+{
+	char salida[100];
+	my_modem.Enviar("ATS0?");
+	my_modem.Recibir(salida,2);
+	recepcion.EscribirMensaje(salida);
+}
+
+void IModem::ObtenConfig()
+{
+	char salida[600];
+	my_modem.Enviar("AT&V");
+	int i = 0;
+	for (i = 0;i<9;i++){
+		my_modem.Recibir(salida,5);
+		recepcion.EscribirMensaje(salida);
+	}
+}
+
+void IModem::ModificarVolumen()
+{
+	informacion.EscribirMensaje("Introduzca el futuro valor del volumen(0-3):");
+	char gvolumen[2];
+	gvolumen[0] = getch();
+	gvolumen[1] = '\0';
+	char cadenaaux[40] = "Ha elegido cambiar el volumen a: ";
+	strcat(cadenaaux,gvolumen);
+	informacion.EscribirMensaje(cadenaaux);
+	if(gvolumen[0] >'3' || gvolumen[0] < '0')
+	{
+		informacion.EscribirMensaje("Caracter invalido, intentelo de nuevo.");
+		return;
+	}
+	char mensaje[50];
+	sprintf(mensaje,"ATL%c",gvolumen[0]);
+	my_modem.Enviar(mensaje);
+	my_modem.Recibir(mensaje,2);
+	recepcion.EscribirMensaje(mensaje);
+
+}
+
+void IModem::ModificarAltavoz()
+{
+	informacion.EscribirMensaje("Introduzca el futuro valor del modo del altavoz(0-3):");
+	char galtavoz[2];
+	galtavoz[0] = getch();
+	galtavoz[1] = '\0';
+	char cadenaaux[60] = "Ha elegido cambiar el modo del altavoz a: ";
+	strcat(cadenaaux,galtavoz);
+	recepcion.EscribirMensaje(cadenaaux);
+	if(galtavoz[0] >'3' || galtavoz[0] < '0')
+	{
+		informacion.EscribirMensaje("Caracter invalido, intentelo de nuevo.");
+		return;
+	}
+	char mensaje[50];
+	sprintf(mensaje,"ATM%c",galtavoz[0]);
+	my_modem.Enviar(mensaje);
+	my_modem.Recibir(mensaje,2);
+	recepcion.EscribirMensaje(mensaje);
+
+}
+
+void IModem::ModificarRings()
+{
+	informacion.EscribirMensaje("Introduzca el futuro valor del numero de rings con 3 digitos(000-255):");
+	char gring[4];
+	gring[0] = getch();
+	gring[1] = getch();
+	gring[2] = getch();
+	gring[3] = '\0';
+	char cadenaaux[60] = "Ha elegido cambiar el el numero de rings a: ";
+	strcat(cadenaaux,gring);
+	informacion.EscribirMensaje(cadenaaux);
+	if(gring[0] >'2'|| gring[0] < '0')
+	{
+		informacion.EscribirMensaje("Caracter invalido, intentelo de nuevo.");
+		return;
+	}
+	char mensaje[50];
+	sprintf(mensaje,"ATS0=%s",gring);
+	my_modem.Enviar(mensaje);
+	my_modem.Recibir(mensaje,2);
+	recepcion.EscribirMensaje(mensaje);
+
+}
+
+void IModem::ProcesarCabecera(char linea[], int &equipoDestino,
+							  char carpeta[], char *nRings, char &volumen, char &modo)
+{
+
+	char campo[100];
+	int pos = 0, aux;
+	while(linea[pos] != '#') pos++;//el 1er campo no interesa
+	pos++; //saltamos el '#'
+	aux = 0;
+	while(linea[pos] != '#')//Obtenemos PDestino
+	{
+		campo[aux] = linea[pos];
+		pos++;
+		aux++;
+	}
+	pos++;
+	campo[aux] = '\0';
+	equipoDestino = atoi(campo+6);//obtenemos el numero de la 6 posicion(justo despues de "Puesto")
+	aux = 0;
+	while(linea[pos] != '#')//Obtenemos la carpeta
+	{
+		carpeta[aux] = linea[pos];
+		pos++;
+		aux++;
+	}
+	pos++;
+	carpeta[aux] = '\0';
+	aux = 0;
+	while(linea[pos] != '#')//Obtenemos el numero de rings
+	{
+		nRings[aux] = linea[pos];
+		pos++;
+		aux++;
+	}
+	pos++;
+	nRings[aux] = '\0';
+	//Obtenemos el volumen
+	volumen = linea[pos];
+	pos+=2;
+	modo = linea[pos];
+
+}
+
+void IModem::EnviarCorreoModem()
+{
+	struct ffblk archivo;
+	int done;
+	char auxiliar[50], auxiliar2[50];
+	//system("cd Pendie~1 >> log.txt");
+	done = findfirst(".\\Pendie~1\\*.*",&archivo,0);
+	//system("cd .. >> log.txt");
+	while (!done)
+	{
+
+		EnviarFichero(archivo.ff_name);
+		informacion.EscribirMensaje(archivo.ff_name);
+		strcpy(auxiliar2,"copy Pendie~1\\");
+		strcat(auxiliar2, archivo.ff_name);
+		strcpy(auxiliar," Enviado\\");
+		strcat(auxiliar,archivo.ff_name);
+		strcat(auxiliar2,auxiliar);
+		strcat(auxiliar2," >> log.txt");
+		//informacion.EscribirMensaje(auxiliar2);
+		//system("pwd");
+		system(auxiliar2);
+		strcpy(auxiliar2,"del Pendie~1\\");
+		strcat(auxiliar2, archivo.ff_name);
+		strcat(auxiliar2, " >> log.txt");
+		system(auxiliar2);
+		// system("cd Pendie~1 >> log.txt");
+		done = findnext(&archivo);
+		// system("cd ..  >> log.txt");
+	}
+	informacion.EscribirMensaje("Se han enviado todos los archivos pendientes.");
+}
+
+
+void IModem::EnviarFichero(char filename[])
+{
+	char car;
+	char aux [100];
+	char dirfile[50] = ".\\Pendie~1\\";
+	strcat(dirfile,filename);
+	FILE *fout = fopen(dirfile,"rb");
+	if(fout == NULL) {
+		informacion.EscribirMensaje("No se ha podido abrir el fichero");
+		return;
+	}
+
+	sprintf(aux, "Enviando Fichero: %s",filename);
+	informacion.EscribirMensaje(aux);
+
+	char envio = fgetc(fout), salida, recepcion;
+	char linea[100], carpeta[50], nRings[5], volumen, modo;
+	int equipoDestino;
+	int cont=0;
+	while(envio != '\n'){
+		informacion.EscribirChar(envio);
+		linea[cont++] = envio;
+		envio = fgetc(fout);
+	}
+	linea[cont] = '\0';
+	char mensaje[500];
+	ProcesarCabecera(linea, equipoDestino, carpeta, nRings, volumen, modo);
+	/*my_modem.ModificarAltavoz(modo);
+	my_modem.Recibir(mensaje,2);
+	//recepcion.EscribirMensaje(mensaje);
+	my_modem.ModificarVolumen(volumen);
+	my_modem.Recibir(mensaje,2);
+	//recepcion.EscribirMensaje(mensaje);
+	my_modem.ModificarRings(nRings);
+	my_modem.Recibir(mensaje,2);*/
+	//recepcion.EscribirMensaje(mensaje);
+	sprintf(aux,"Llamando al equipo: %d",equipoDestino);
+	informacion.EscribirMensaje(aux);
+	char ret = my_modem.Llamar(equipoDestino);
+	if(ret == NO_CARRIER){
+		informacion.EscribirMensaje("Error al conectar: NO CARRIER");
+		return;
+	}
+	if(ret == NO_DIAL_TONE){
+		informacion.EscribirMensaje("Error al conectar: NO DIALTONE");
+		return;
+	}
+	if(ret == ERROR) {
+		informacion.EscribirMensaje("Error al conectar");
+		return;
+	}
+	if(ret == CONNECT){
+		informacion.EscribirMensaje("Conexion establecida con el equipo destino");
+	}
+	else {
+		informacion.EscribirMensaje("Se ha producido un error no controlado en la funcion EnviarFichero()");
+		return;
+	}
+	//Mandamos el nombre
+	my_modem.Enviar(126);
+	my_modem.Enviar(filename);
+	my_modem.Enviar(125);
+
+	my_modem.Enviar(linea);//Mandamos la cabecera
+
+	char recep;
+	int continuar = 1;
+	while(!feof(fout))
+	{
+		if(my_modem.Recibir(recep)){ //Si recibe algo
+			if(recep == 124){//Se¤al de pausa
+				informacion.EscribirMensaje("La llamada ha sido Pausada");
+				my_modem.Enviar(124); //Le decimos que hemos dejado de enviar.
+				continuar = 1;
+				while(continuar){
+					if(my_modem.Recibir(recep) && recep == 124)
+						continuar = 0;
+				}
+				informacion.EscribirMensaje("Llamada reanudada");
+			}
+			if(recep == 123){//Llamada rechazada
+				informacion.EscribirMensaje("El otro equipo ha rechazado la llamada");
+				fclose(fout);
+
+			}
+		}
+		envio = fgetc(fout);
+		if(!feof(fout)){
+			my_modem.Enviar(envio);
+		}
+	}
+	fclose(fout);
+	my_modem.Enviar(126);//Fin de fichero
+	my_modem.Colgar();
+	informacion.EscribirMensaje("Se ha enviado el fichero satisfactoriamente.");
+}
+
+void IModem::Recibir()
+{
+	char cin;
+	if(my_modem.Recibir(cin)){
+		if(cin == 'R'){
+			my_modem.Recibir(cin);
+			if(cin == 'I'){
+				my_modem.Recibir(cin) ;
+				if(cin == 'N'){
+					my_modem.Recibir(cin);
+					if(cin == 'G') {
+						informacion.EscribirMensaje("Ring, Llamada entrante. C-Colgar. A-Aceptar");
+						llamada_entrante = 1;
+					}
+				}
+			}
+		}
+		if(cin == 126) EscribirFichero();
+	}
+}
+
+void IModem::EscribirFichero()
+{
+	llamada_entrante = 0;//Si estamos aqui es porque hemos recibido la llamada, luego la reseteamos
+	informacion.EscribirMensaje("Se esta recibiendo un fichero");
+	char filename[50] = "recibido.txt";
+	int contadorname = 0;
+	char car=0;
+	while(car != 125&&contadorname<20){
+		if(my_modem.Recibir(car)){
+			filename[contadorname] = car;
+			contadorname++;
+		}
+	}
+	filename[contadorname-2] = '\0'; //al enviar recibe un 013 de mas
+	fin = fopen(filename,"wb");
+	if(fin==NULL) {
+		informacion.EscribirMensaje("No se a podido escribir el archivo");
+		return;
+	}
+	char salida, recepcion;
+	int separadores = 0; //contador de separadores # encontrados
+	char cdestino[50]; //Futura carpeta contenedora del archivo
+	int c_cd = 0;
+	char volumen, modo, rings[4];
+	int aux=0;
+	while(recepcion!=126){
+		if(my_modem.Recibir(recepcion))
+		{
+			if(separadores <= 5){
+				if(recepcion != '#'){
+					if(separadores == 0){} //lee POringen
+					if(separadores == 1){} //lee PDestino
+					if(separadores == 2){ //lee CDestino
+						cdestino[c_cd++] = recepcion;
+					}
+					if(separadores == 3){ //lee rings
+						cdestino[c_cd] = '\0';
+						rings[aux++] = recepcion;
+					}
+					if(separadores == 4){ //lee Volumen
+						rings[aux] = '\0';
+						volumen = recepcion;
+					}
+					if(separadores == 5){ //lee modo
+						modo = recepcion;
+						separadores++;
+					}
+				}
+				else {
+					separadores++;
+				}
+				if(separadores == 6){//cuando termina
+					//Pausamos la llamada y establecemos los valores del modem.
+					my_modem.Enviar(124);//decimos al equipo emisor que vamos a hacer 1 pausa
+				}
+			}
+			if(recepcion == 124 && separadores == 6){
+					my_modem.Enviar('+');
+					my_modem.Enviar('+');
+					my_modem.Enviar('+');
+					//informacion.EscribirMensaje("Pase por aqui!");
+					char mensaje[100];
+					my_modem.Recibir(mensaje,10);//Despreciamos el OK
+					my_modem.ModificarAltavoz(modo);
+					my_modem.Recibir(mensaje,2);
+					my_modem.ModificarVolumen(volumen);
+					my_modem.Recibir(mensaje,2);
+					my_modem.ModificarRings(rings);
+					my_modem.Recibir(mensaje,2);
+					//Reanudamos la llamada
+					my_modem.Enviar("ATO");
+					my_modem.Recibir(mensaje,10);//Despreciamos el OK
+					my_modem.Recibir(mensaje,10);//Despreciamos basura
+					my_modem.Enviar(124);
+					separadores++;
+			}
+			else if(recepcion != 126) fputc(recepcion,fin);
+
+		}
+	}
+	if(fin!=NULL) fclose(fin);
+	fin = NULL;
+	char mensaje[100];
+	my_modem.Recibir(mensaje,60);
+	informacion.EscribirMensaje("Recibido:");
+	informacion.EscribirMensaje(mensaje);
+
+	char cadena[50];
+	strcpy(cadena,"copy ");
+	strcat(cadena, filename);
+	strcat(cadena, " ");
+	strcat(cadena, cdestino);
+	strcat(cadena, "\\");
+	strcat(cadena, filename);
+	strcat(cadena," >> log.txt");
+	//informacion.EscribirMensaje(cadena);
+	system(cadena);
+	strcpy(cadena,"del ");
+	strcat(cadena, filename);
+	strcat(cadena, " >> log.txt");
+	system(cadena);
+
+
+
+	informacion.EscribirMensaje("Fichero recibido satifactoriamente.");
+
+
+}
+
+
+int IModem::Modem::Recibir(char &c)
+{
+	if(PuertoM->OcupacionBufferEntrada() == 0) return 0;
+	(*PuertoM)>>c;
+	return 1;
+}
+
+void IModem::Modem::Colgar()
+{
+	PuertoM->DesactivarDTR();
+	char cadena[50];
+	Recibir(cadena,5);
+	//if(strcmp(cadena,"OK")) printf("FALLO AL COLGAR");
+	PuertoM->ActivarDTR();
+
+}
+
+IModem::Modem::Modem(TCom *PuertoModem){
+	PuertoM = PuertoModem;
+	strcpy(ok_msg,"OK");
+	Enviar("ATZ");
+	//Congiuramos el modem a nuestro gusto
+	Enviar("ATE0");
+	//PuertoM->VaciarBufferEntrada();//No funcina puesto que tarda en responder
+}
+
+void IModem::Modem::Enviar(char mensaje[]){
+	int i=0;
+	//printf("Se envia: %s", mensaje);
+	PuertoM->VaciarBufferEntrada();//Vaciamos para que podamos recibir bien despues
+	while( i < strlen(mensaje)){
+		//while()(PuertoM->OcupacionBufferSalida() != 0);
+		(*PuertoM)<<mensaje[i];
+		i++;
+	}
+	(*PuertoM)<<13;
+}
+
+void IModem::Modem::Enviar(char c){
+	while(PuertoM->OcupacionBufferSalida() != 0);
+	(*PuertoM)<<c;
+}
+
+void IModem::Modem::Recibir(char mensaje[], int seg)
+{
+
+	clock_t  fin; //tiempo maximo que debe tardar
+	fin = clock() + seg*CLOCKS_PER_SEC;
+	int i = 0;
+	int primer10= 0, seguir = 1;
+	while((clock()<fin)&&seguir)
+	{
+		if((*PuertoM).OcupacionBufferEntrada() != 0){
+
+			(*PuertoM)>>mensaje[i];
+			if(mensaje[i] == 13){
+				i--;
+			}
+			if(mensaje[i] ==  10){
+				i--;
+				if(primer10)
+					seguir = 0;
+				primer10 = 1;
+			}
+			i++;
+		}
+	}
+	mensaje[i] = '\0';
+//printf("Recibido: %s\n",mensaje);
+	if(clock() > fin){
+		seguir = 0;
+		strcpy(mensaje, "ERROR, demasiado tiempo de espera");
+		return ;//ERROR. Demasiado tiempo de ejecucion.
+	}
+}
+
+int IModem::Modem::Llamar(const int &equipo)
+{
+	PuertoM->ActivarDTR();
+	if(equipo > 8 || equipo < 0)
+	{
+		//informacion.EscribirMensaje("ERROR o.");
+		return ERROR;
+	}
+	char cadena[100];
+	sprintf(cadena,"ATD%d",equipo);
+	Enviar(cadena);
+	Recibir(cadena,60);
+	if(strcmp(cadena,"CONNECT 2400") == 0) return CONNECT;
+	if(strcmp(cadena,"NO CARRIER") == 0) {
+		//informacion.EscribirMensaje("DTR desactivado. Activelo antes de llamar");
+		return NO_CARRIER; //indica que el emisor tiene el DTR = 0
+	}
+	if(strcmp(cadena,"NO DIALTONE") == 0) return NO_DIAL_TONE;
+	return ERROR; //si tarda mas tiempo del asignado es porque el receptor tiene el DTR = 0
+}
+
+int IModem::Modem::AceptarLlamada()
+{
+	Enviar("ATA");
+	char cadena[100];
+	Recibir(cadena,TRECFICH);
+	if(strcmp(cadena,"CONNECT 2400") == 0) return CONNECT;
+	if(strcmp(cadena,"NO CARRIER") == 0) return NO_CARRIER;
+	return ERROR;
+}
+
+void IModem::Modem::RechazarLlamada()
+{
+	Enviar("ATA");
+	char cadena[100];
+	Recibir(cadena,TRECFICH);
+	Enviar(125);//Decimos que rechazamos la llamada
+	PuertoM->DesactivarDTR();
+    Recibir(cadena,2);
+	PuertoM->ActivarDTR();
+	Recibir(cadena,4); //Desechamos toda la basura
+}
+
+void IModem::Modem::ModificarVolumen(char &volumen)
+{
+	char mensaje[50];
+	sprintf(mensaje,"ATL%c",volumen);
+	Enviar(mensaje);
+}
+
+void IModem::Modem::ModificarAltavoz(char &altavoz)
+{
+	char mensaje[50];
+	sprintf(mensaje,"ATM%c",altavoz);
+	Enviar(mensaje);
+}
+
+
+void IModem::Modem::ModificarRings(char *rings)
+{
+	char mensaje[50];
+	sprintf(mensaje,"ATS0=%s",rings);
+	Enviar(mensaje);
+}

@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testllave_8cpp" kind="file">
+    <compoundname>testllave.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="llave_8h" local="yes">llave.h</includes>
+    <incdepgraph>
+      <node id="1282">
+        <label>iomanip</label>
+      </node>
+      <node id="1272">
+        <label>limits</label>
+      </node>
+      <node id="1275">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1293">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1290">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+      </node>
+      <node id="1278">
+        <label>string</label>
+      </node>
+      <node id="1270">
+        <label>Escritorio/EC3/src/testllave.cpp</label>
+        <link refid="testllave.cpp"/>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1288" relation="include">
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1288">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1273" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+      </node>
+      <node id="1281">
+        <label>string.h</label>
+      </node>
+      <node id="1284">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+      </node>
+      <node id="1274">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1275" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>utility</label>
+      </node>
+      <node id="1279">
+        <label>sstream</label>
+      </node>
+      <node id="1271">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>iosfwd</label>
+      </node>
+      <node id="1277">
+        <label>iostream</label>
+      </node>
+      <node id="1280">
+        <label>ctype.h</label>
+      </node>
+      <node id="1273">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1283">
+        <label>set</label>
+      </node>
+      <node id="1286">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1276">
+        <label>stdio.h</label>
+      </node>
+      <node id="1285">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classLlaveTest" prot="public">LlaveTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testllave_8cpp_1a65dbeacc97db56ce80fcb9c544f6755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(LlaveTest, ModificadoresyConsultores)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classLlaveTest" kindref="compound">LlaveTest</ref></type>
+        </param>
+        <param>
+          <type>ModificadoresyConsultores</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="34" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="testllave_8cpp_1c83985d09b7e7c4020497cf974522475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(LlaveTest, SobrecargaOperadores)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classLlaveTest" kindref="compound">LlaveTest</ref></type>
+        </param>
+        <param>
+          <type>SobrecargaOperadores</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp" line="43" bodyfile="/home/Mario/Escritorio/EC3/src/testllave.cpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase llave. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>06-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="llave_8h" kindref="compound" tooltip="Implementacion del header de la clase Llave.">llave.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//Creamos<sp/>varias<sp/>instancias<sp/>con<sp/>las<sp/>que<sp/>trabajar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classLlaveTest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLlaveTest" kindref="compound">LlaveTest</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>testing::<ref refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" kindref="member">Test</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<ref refid="classLlaveTest_160ee64c5b59fd2f4c865f89d561eb245" kindref="member">a</ref>,<sp/>*<ref refid="classLlaveTest_1407e37243f4e6aeaf44177c33788034d" kindref="member">b</ref>,<sp/>*<ref refid="classLlaveTest_1d1e28d882238c05d30da4d8a3deffa22" kindref="member">c</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLlaveTest_1582fe44f7d7b2aa6df5c415b95ede8e7" kindref="member">SetUp</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlaveTest_160ee64c5b59fd2f4c865f89d561eb245" kindref="member">a</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(1);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlaveTest_1407e37243f4e6aeaf44177c33788034d" kindref="member">b</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(2);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlaveTest_1d1e28d882238c05d30da4d8a3deffa22" kindref="member">c</ref>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(3);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLlaveTest_12c4dd49f094842f2ff5ac3cb1d054d43" kindref="member">TearDown</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classLlaveTest_160ee64c5b59fd2f4c865f89d561eb245" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classLlaveTest_1407e37243f4e6aeaf44177c33788034d" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classLlaveTest_1d1e28d882238c05d30da4d8a3deffa22" kindref="member">c</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classLlaveTest" kindref="compound">LlaveTest</ref>,ModificadoresyConsultores){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(1,a-&gt;get_id());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(3,c-&gt;get_id());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>a-&gt;set_id(7);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(7,a-&gt;get_id());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>a-&gt;set_id(1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(1,a-&gt;get_id());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classLlaveTest" kindref="compound">LlaveTest</ref>,SobrecargaOperadores){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(*a&lt;*b);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(*c&lt;*a);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(*b&gt;*a);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(*b!=*a);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(*c==*c);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testllave.cpp"/>
+  </compounddef>
+</doxygen>

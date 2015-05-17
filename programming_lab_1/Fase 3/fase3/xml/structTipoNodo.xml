@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structTipoNodo" kind="struct" prot="public">
+    <compoundname>TipoNodo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTipoNodo_11b530dc8069a97b5c9a44810f4f4c9c4" prot="public" static="no" mutable="no">
+        <type><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref></type>
+        <definition>DatosPersonales TipoNodo::dato</definition>
+        <argsstring></argsstring>
+        <name>dato</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="25" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTipoNodo_15bd8cec11ba12b51c24d45dbacabc28b" prot="public" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* TipoNodo::suce</definition>
+        <argsstring></argsstring>
+        <name>suce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="26" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>DatosPersonales</label>
+        <link refid="classDatosPersonales"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>FechaNacimiento</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>TipoNodo</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>dato</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>fecha</label>
+        <link refid="classfecha"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="24" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="24" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structTipoNodo_11b530dc8069a97b5c9a44810f4f4c9c4" prot="public" virt="non-virtual"><scope>TipoNodo</scope><name>dato</name></member>
+      <member refid="structTipoNodo_15bd8cec11ba12b51c24d45dbacabc28b" prot="public" virt="non-virtual"><scope>TipoNodo</scope><name>suce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

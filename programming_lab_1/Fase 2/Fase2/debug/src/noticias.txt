@@ -1,0 +1,10 @@
+LPI: Guguel Blog
+Información de las noticias:
+N001#S1#Madrid#Fichaje#El madrid fichara a un nuevo jugador por 100 millones de euros#mad.gif#20#4#2007
+N002#S1#Valencia#Copa de europa#Este año el valencia F.C. jugara la copa de europa.#copa.gif#21#4#2007
+N003#S2#BioShock#Agua y Fuego#El motor grafico del bioshock obtiene un 10 encuanto a la calidad del agua y del fuego.#agua.png#5#10#2008
+N004#S2#UT3#Nostferatul#Nostferatul fue declarado campeon en el torneo de UT3 desarrollado por xtrelan2008.#ut3.png#24#4#2008
+N005#S3#Womad#Caceres#El womad se celebrara de nuevo en caceres.#womad.png#5#5#2008
+
+
+

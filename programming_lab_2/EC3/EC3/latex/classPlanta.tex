@@ -1,0 +1,540 @@
+\section{Planta Class Reference}
+\label{classPlanta}\index{Planta@{Planta}}
+Esta representa una planta de la prision.  
+
+
+{\tt \#include $<$planta.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Planta} (const int \&identificador, const int \&ancho, const int \&alto, const int \&entrada, const int \&salida, const int \&n\_\-llaves, const int \&altura\_\-control)
+\item 
+{\bf $\sim$Planta} ()
+\item 
+int {\bf get\_\-id} () const
+\item 
+void {\bf Pintar} () const
+\item 
+void {\bf set\_\-persona} (const int pos, {\bf Persona} $\ast$p)
+\item 
+{\bf Persona} $\ast$ {\bf get\_\-persona} (const int \&pos) const 
+\item 
+{\bf Persona} $\ast$ {\bf sacar\_\-persona} (const int \&pos)
+\item 
+void {\bf set\_\-llave} (const int \&celda, {\bf Llave} $\ast$llave)
+\item 
+{\bf Llave} $\ast$ {\bf sacar\_\-llave} (const int \&celda)
+\item 
+int {\bf ocupacion} (const int \&pos) const 
+\item 
+int {\bf get\_\-ancho} () const
+\item 
+int {\bf get\_\-alto} () const
+\item 
+bool {\bf Accesible} (const int \&origen, const int \&destino) const
+\item 
+int {\bf get\_\-entrada} () const
+\item 
+int {\bf get\_\-salida} () const
+\item 
+bool {\bf ProbarLlave} ({\bf Llave} $\ast$llave)
+\item 
+bool {\bf AbrirPuerta} ()
+\item 
+bool {\bf CerrarPuerta} ()
+\item 
+{\bf TipoEstado} {\bf EstadoPuerta} ()
+\item 
+void {\bf CaminoMinimo} (const int \&origen, const int \&destino, queue$<$ {\bf Posicion} $>$ \&camino) const
+\item 
+int {\bf get\_\-vecina} (const {\bf Posicion} \&p, const int \&id) const
+\item 
+bool {\bf Simular} ()
+\item 
+void {\bf RegistrarGuardia} ({\bf Guardia} $\ast$g)
+\item 
+int {\bf get\_\-num\_\-guardias} () const
+\item 
+{\bf Guardia} $\ast$ {\bf get\_\-guardia} (const int \&numero) const 
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf IniciarParedes} ()
+\item 
+void {\bf GenerarAtajos} ()
+\item 
+bool {\bf HayAtajo} (const {\bf Posicion} \&p, const int \&id) const
+\item 
+bool {\bf ParedValida} (const {\bf Posicion} \&p, const int \&id) const
+\item 
+bool {\bf GeneraAtajo} (const {\bf Posicion} \&p, const int \&id)
+\item 
+void {\bf ColocarLlaves} (queue$<$ {\bf Llave} $\ast$ $>$ \&llaves)
+\item 
+void {\bf PrepararLlaves} (const int \&n\_\-llaves, {\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$configuracion, queue$<$ {\bf Llave} $\ast$ $>$ \&llaves)
+\item 
+bool {\bf RutaRecursivo} (const int \&posicion, bool visitados[{\bf kMaxVert}], list$<$ {\bf Posicion} $>$ \&ruta, int ultimo\_\-movimiento) const
+\item 
+void {\bf ObtenerMasVisitadas} (int frecuencia[{\bf kMaxVert}]) const 
+\item 
+void {\bf VisitadosRecursivo} (const int \&posicion, bool visitados[{\bf kMaxVert}], stack$<$ int $>$ ruta, int frecuencia[{\bf kMaxVert}]) const
+\item 
+void {\bf MostrarRutaEscape} ()
+\item 
+void {\bf CalcularRuta} (list$<$ {\bf Posicion} $>$ \&ruta) const
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf id\_\-}
+\begin{CompactList}\small\item\em identificador de la planta. \item\end{CompactList}\item 
+int {\bf ancho\_\-}
+\begin{CompactList}\small\item\em ancho de la planta \item\end{CompactList}\item 
+int {\bf alto\_\-}
+\begin{CompactList}\small\item\em alto de la planta \item\end{CompactList}\item 
+int {\bf entrada\_\-}
+\begin{CompactList}\small\item\em entrada de la planta \item\end{CompactList}\item 
+int {\bf salida\_\-}
+\begin{CompactList}\small\item\em salida de la planta \item\end{CompactList}\item 
+{\bf Grafo} {\bf grafo\_\-}
+\begin{CompactList}\small\item\em grafo que controla los caminos de la planta \item\end{CompactList}\item 
+{\bf Puerta} $\ast$ {\bf puerta\_\-}
+\begin{CompactList}\small\item\em puntero a puerta de la planta \item\end{CompactList}\item 
+vector$<$ {\bf Celda} $\ast$ $>$ {\bf celdas\_\-}
+\begin{CompactList}\small\item\em vector que almacena punteros a todas las celdas. \item\end{CompactList}\item 
+int {\bf n\_\-llaves\_\-}
+\begin{CompactList}\small\item\em Numero de llaves diferentes generadas en la planta. \item\end{CompactList}\item 
+vector$<$ {\bf Guardia} $\ast$ $>$ {\bf guardias\_\-}
+\begin{CompactList}\small\item\em Lista de los guardias de la planta. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&salida, const {\bf Planta} \&p)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta representa una planta de la prision. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Planta@{Planta}!Planta@{Planta}}
+\index{Planta@{Planta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Planta::Planta (const int \& {\em identificador}, const int \& {\em ancho}, const int \& {\em alto}, const int \& {\em entrada}, const int \& {\em salida}, const int \& {\em n\_\-llaves}, const int \& {\em altura\_\-control})}\label{classPlanta_9d23b8f5859a94f9bfc87ba195af61cf}
+
+
+Constructor parametrizado de la clase \doxyref{Planta}{p.}{classPlanta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em identificador}]identificador de la planta \item[{\em ancho}]ancho de la planta \item[{\em alto}]alto de la planta \item[{\em entrada}]posicion de entrada \item[{\em salida}]posicion de salida \item[{\em n\_\-llaves}]numero de llaves a generar \item[{\em altura\_\-control}]altura de control del arbol de la puerta \end{description}
+\end{Desc}
+\index{Planta@{Planta}!~Planta@{$\sim$Planta}}
+\index{~Planta@{$\sim$Planta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Planta::$\sim$Planta ()}\label{classPlanta_3aae754edf5fc8162bedc0c087d8d968}
+
+
+Destructor de la clase \doxyref{Planta}{p.}{classPlanta} 
+
+\subsection{Member Function Documentation}
+\index{Planta@{Planta}!get_id@{get\_\-id}}
+\index{get_id@{get\_\-id}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-id () const}\label{classPlanta_7ab0fe78527d4b7b7ab554244849ebdf}
+
+
+Devuelve la id de la planta \begin{Desc}
+\item[Returns:]id de la planta \end{Desc}
+\index{Planta@{Planta}!Pintar@{Pintar}}
+\index{Pintar@{Pintar}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::Pintar () const}\label{classPlanta_a8158eb55c8d51b78d4059c0dd7ed955}
+
+
+Pinta la planta junto con el contenido de celdas, estado de puertas, estado de personajes, etc... \index{Planta@{Planta}!set_persona@{set\_\-persona}}
+\index{set_persona@{set\_\-persona}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::set\_\-persona (const int {\em pos}, {\bf Persona} $\ast$ {\em p})}\label{classPlanta_af5e05150b26f7e7d92c58a09c7a19a9}
+
+
+Introduce una persona en la celda indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]celda en la que introducir la persona \item[{\em p}]persona a introducir \end{description}
+\end{Desc}
+\index{Planta@{Planta}!get_persona@{get\_\-persona}}
+\index{get_persona@{get\_\-persona}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Planta::get\_\-persona (const int \& {\em pos}) const}\label{classPlanta_dc9c23b85d4632654e47843f6fa907e1}
+
+
+Metodo que devuelve la primera persona de la celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]celda de la que obtener la primera persona \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]puntero a la primera persona de la celda \end{Desc}
+\index{Planta@{Planta}!sacar_persona@{sacar\_\-persona}}
+\index{sacar_persona@{sacar\_\-persona}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Planta::sacar\_\-persona (const int \& {\em pos})}\label{classPlanta_e4ca2659fafa66ab961e1a5f3b6ce3eb}
+
+
+Obtiene y elimina la primera persona de la celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]indicador de la celda de la que sacar la persona \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]persona sacada \end{Desc}
+\index{Planta@{Planta}!set_llave@{set\_\-llave}}
+\index{set_llave@{set\_\-llave}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::set\_\-llave (const int \& {\em celda}, {\bf Llave} $\ast$ {\em llave})}\label{classPlanta_688ace848d1e4a8bb22eac846d3276f9}
+
+
+Introduce una llave en la celda indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em celda}]celda en la que insertar la llave \item[{\em llave}]llave a insertar \end{description}
+\end{Desc}
+\index{Planta@{Planta}!sacar_llave@{sacar\_\-llave}}
+\index{sacar_llave@{sacar\_\-llave}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Llave} $\ast$ Planta::sacar\_\-llave (const int \& {\em celda})}\label{classPlanta_8789024ef50b7b3a3cc86e5decff8ef5}
+
+
+Obtiene la primera llave de la celda indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em celda}]celda de la que sacar la llave \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]llave extraida \end{Desc}
+\index{Planta@{Planta}!ocupacion@{ocupacion}}
+\index{ocupacion@{ocupacion}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::ocupacion (const int \& {\em pos}) const}\label{classPlanta_fb02150b9b257b45d0378603bd2c0284}
+
+
+Obtiene la ocupacion de la celda indicada(-1 = error) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]posicion de la celda \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]ocupacion de la celda(-1 = error) \end{Desc}
+\index{Planta@{Planta}!get_ancho@{get\_\-ancho}}
+\index{get_ancho@{get\_\-ancho}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-ancho () const}\label{classPlanta_42c9d18589f2c0c76f0abd9848f8b428}
+
+
+Devuelve el ancho de la planta \begin{Desc}
+\item[Returns:]ancho de la planta \end{Desc}
+\index{Planta@{Planta}!get_alto@{get\_\-alto}}
+\index{get_alto@{get\_\-alto}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-alto () const}\label{classPlanta_9dc42ed423c2aa444a2a9a2f5d021327}
+
+
+devuelve el alto de la planta \begin{Desc}
+\item[Returns:]alto de la planta \end{Desc}
+\index{Planta@{Planta}!Accesible@{Accesible}}
+\index{Accesible@{Accesible}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::Accesible (const int \& {\em origen}, const int \& {\em destino}) const\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_21e8fd7acb76cbf0cfe947ef2fd3cb10}
+
+
+\index{Planta@{Planta}!get_entrada@{get\_\-entrada}}
+\index{get_entrada@{get\_\-entrada}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-entrada () const\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_27b1073cd8b5d664b0d1d025e5c6f09e}
+
+
+\index{Planta@{Planta}!get_salida@{get\_\-salida}}
+\index{get_salida@{get\_\-salida}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-salida () const\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_78a6cd383d37f8f9106a08a7fb13889f}
+
+
+Devuelve la entrada de la planta \index{Planta@{Planta}!ProbarLlave@{ProbarLlave}}
+\index{ProbarLlave@{ProbarLlave}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::ProbarLlave ({\bf Llave} $\ast$ {\em llave})\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_be73652992f5af3f9bc5d8fa485450d2}
+
+
+Devuelve la salida de la planta \index{Planta@{Planta}!AbrirPuerta@{AbrirPuerta}}
+\index{AbrirPuerta@{AbrirPuerta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::AbrirPuerta ()\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_575eb9db2f4a0580cf548b2a543b03c3}
+
+
+Prueba una llave en la puerta \par
+ $\ast$\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em llave}]llave a probar \end{description}
+\end{Desc}
+\index{Planta@{Planta}!CerrarPuerta@{CerrarPuerta}}
+\index{CerrarPuerta@{CerrarPuerta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::CerrarPuerta ()\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_ae61a9e6eb3a10da3d95568537105263}
+
+
+Intenta abrir la puerta de la planta \par
+ $\ast$\begin{Desc}
+\item[Returns:]true si se abre, false en caso contrario \end{Desc}
+\index{Planta@{Planta}!EstadoPuerta@{EstadoPuerta}}
+\index{EstadoPuerta@{EstadoPuerta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoEstado} Planta::EstadoPuerta ()\hspace{0.3cm}{\tt  [inline]}}\label{classPlanta_b915a391ce7a46dbe477e8e46a1de071}
+
+
+Cierra la puerta de la planta \par
+ $\ast$\begin{Desc}
+\item[Returns:]true si se ha cerrado correctamente,false en caso contrario \end{Desc}
+\index{Planta@{Planta}!CaminoMinimo@{CaminoMinimo}}
+\index{CaminoMinimo@{CaminoMinimo}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::CaminoMinimo (const int \& {\em origen}, const int \& {\em destino}, queue$<$ {\bf Posicion} $>$ \& {\em camino}) const}\label{classPlanta_4ecaec03cdb438056c0b4c170546c8e1}
+
+
+Obtiene el estado de la puerta \par
+ $\ast$\begin{Desc}
+\item[Returns:]estado de la puerta \end{Desc}
+\index{Planta@{Planta}!get_vecina@{get\_\-vecina}}
+\index{get_vecina@{get\_\-vecina}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-vecina (const {\bf Posicion} \& {\em p}, const int \& {\em id}) const}\label{classPlanta_3fcbb6808ac4c92a95abe4d5e697f8dc}
+
+
+Obtiene el identificador de la celda en la direccion indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]direccion en la que buscamos la pared \item[{\em id}]celda actual \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]identificador de la celda (-1 = no valida) \end{Desc}
+\index{Planta@{Planta}!Simular@{Simular}}
+\index{Simular@{Simular}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::Simular ()}\label{classPlanta_02e8f12ce3f97f31f5fc17e5619694ac}
+
+
+Realiza el algoritmo de simulacion en la planta \begin{Desc}
+\item[Returns:]true si algun preso sale de la simulacion, false en caso contrario \end{Desc}
+\index{Planta@{Planta}!RegistrarGuardia@{RegistrarGuardia}}
+\index{RegistrarGuardia@{RegistrarGuardia}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::RegistrarGuardia ({\bf Guardia} $\ast$ {\em g})}\label{classPlanta_918aa25a8d2e12b09b8761fcd2acecc8}
+
+
+Inserta un \doxyref{guardia}{p.}{classguardia} en la lista de guardias de la planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em g}]\doxyref{guardia}{p.}{classguardia} a insertar \end{description}
+\end{Desc}
+\index{Planta@{Planta}!get_num_guardias@{get\_\-num\_\-guardias}}
+\index{get_num_guardias@{get\_\-num\_\-guardias}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Planta::get\_\-num\_\-guardias () const}\label{classPlanta_76795ec64e2d645bdbfb8d89ce882e3d}
+
+
+Obtiene el numero de guardias que hay en una planta \index{Planta@{Planta}!get_guardia@{get\_\-guardia}}
+\index{get_guardia@{get\_\-guardia}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Guardia} $\ast$ Planta::get\_\-guardia (const int \& {\em numero}) const}\label{classPlanta_f8c0bf30de848a7008854a830e7d458d}
+
+
+Obtiene el \doxyref{guardia}{p.}{classguardia} colocado en la posicion indicada por numero dentro de la lista \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em numero}]posicion de la lista de la que extraer el \doxyref{guardia}{p.}{classguardia} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Puntero a \doxyref{Guardia}{p.}{classGuardia} buscado \end{Desc}
+\index{Planta@{Planta}!IniciarParedes@{IniciarParedes}}
+\index{IniciarParedes@{IniciarParedes}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::IniciarParedes ()\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_0201b3bb45b62c1f34325ce8f1bc9464}
+
+
+Metodo privado para iniciar las paredes de una planta \index{Planta@{Planta}!GenerarAtajos@{GenerarAtajos}}
+\index{GenerarAtajos@{GenerarAtajos}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::GenerarAtajos ()\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_b919c44685d9f9e2f47e12f0eea79fef}
+
+
+Algoritmo que genera los atajos de la prision \index{Planta@{Planta}!HayAtajo@{HayAtajo}}
+\index{HayAtajo@{HayAtajo}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::HayAtajo (const {\bf Posicion} \& {\em p}, const int \& {\em id}) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_38a071a1218ba5dcccfdb5b916be5bb3}
+
+
+Comprueba si se puede generar un atajo en la direccion indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]direccion en la que se quiere tirar la pared \item[{\em id}]casilla de la que se parte \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se puede tirar la pared \end{Desc}
+\index{Planta@{Planta}!ParedValida@{ParedValida}}
+\index{ParedValida@{ParedValida}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::ParedValida (const {\bf Posicion} \& {\em p}, const int \& {\em id}) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_c0e594febcc9067667191dec0b10f57b}
+
+
+Comprueba si hay una casilla en la direccion indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]direccion a mirar \item[{\em id}]celda desde la que mirar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si hay casilla en la direccion indicada \end{Desc}
+\index{Planta@{Planta}!GeneraAtajo@{GeneraAtajo}}
+\index{GeneraAtajo@{GeneraAtajo}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::GeneraAtajo (const {\bf Posicion} \& {\em p}, const int \& {\em id})\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_33c45e90dac76cd82e157e2755a76aa2}
+
+
+Intenta generar un atajo en la direccion indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]direccion indicada \item[{\em id}]celda desde la que partimos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se elimina correctamente \end{Desc}
+\index{Planta@{Planta}!ColocarLlaves@{ColocarLlaves}}
+\index{ColocarLlaves@{ColocarLlaves}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::ColocarLlaves (queue$<$ {\bf Llave} $\ast$ $>$ \& {\em llaves})\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_e6d703d68dc9a61ac2f162340104e76d}
+
+
+Coloca las llaves en la planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em llaves}]cola de llaves a colocar \end{description}
+\end{Desc}
+\index{Planta@{Planta}!PrepararLlaves@{PrepararLlaves}}
+\index{PrepararLlaves@{PrepararLlaves}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::PrepararLlaves (const int \& {\em n\_\-llaves}, {\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\em configuracion}, queue$<$ {\bf Llave} $\ast$ $>$ \& {\em llaves})\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_732b8fff1b9390bc2a5cc1592094088d}
+
+
+Crea y prepara las llaves para tratarlas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n\_\-llaves}]numero de llaves a crear \item[{\em configuracion}]configuracion de la puerta \item[{\em llaves}]llaves a insertar en la planta \end{description}
+\end{Desc}
+\index{Planta@{Planta}!RutaRecursivo@{RutaRecursivo}}
+\index{RutaRecursivo@{RutaRecursivo}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Planta::RutaRecursivo (const int \& {\em posicion}, bool {\em visitados}[kMaxVert], list$<$ {\bf Posicion} $>$ \& {\em ruta}, int {\em ultimo\_\-movimiento}) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_84706b6abbbc832d01d0e9e1c675148d}
+
+
+Metodo recursivo para el calculo de la ruta de escape \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em posicion}]posicion de la que se parte \item[{\em visitados\mbox{[}$\,$\mbox{]}}]vector de visitados \item[{\em ruta}]ruta de escape \item[{\em ultimo\_\-movimiento}]entero que informa del la direccion del ultimo movimiento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si ha encontrado el elemento \end{Desc}
+\index{Planta@{Planta}!ObtenerMasVisitadas@{ObtenerMasVisitadas}}
+\index{ObtenerMasVisitadas@{ObtenerMasVisitadas}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::ObtenerMasVisitadas (int {\em frecuencia}[kMaxVert]) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_96270bb755977aa1d962cfeff8d8570f}
+
+
+Calcula el numero de veces que se pasa por cada celda y lo devuelve por parametro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em frecuencia\mbox{[}$\,$\mbox{]}}]numero de veces que se pasa por cada celda \end{description}
+\end{Desc}
+\index{Planta@{Planta}!VisitadosRecursivo@{VisitadosRecursivo}}
+\index{VisitadosRecursivo@{VisitadosRecursivo}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::VisitadosRecursivo (const int \& {\em posicion}, bool {\em visitados}[kMaxVert], stack$<$ int $>$ {\em ruta}, int {\em frecuencia}[kMaxVert]) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_8440435c7884d2a38864f556d7850806}
+
+
+Metodo auxiliar que calcula recursivamente el numero de veces que se visita una celda pasando 1 vez por cada ruta de escape \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em posicion}]posicion actual \item[{\em visitados\mbox{[}$\,$\mbox{]}}]nodos visitados en la ruta actual \item[{\em ruta}]ruta actual \item[{\em frecuencia\mbox{[}$\,$\mbox{]}}]numero de veces que aparece cada nodo \end{description}
+\end{Desc}
+\index{Planta@{Planta}!MostrarRutaEscape@{MostrarRutaEscape}}
+\index{MostrarRutaEscape@{MostrarRutaEscape}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::MostrarRutaEscape ()\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_bd71eb7f9db2353a4b68d7641a23971c}
+
+
+\index{Planta@{Planta}!CalcularRuta@{CalcularRuta}}
+\index{CalcularRuta@{CalcularRuta}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Planta::CalcularRuta (list$<$ {\bf Posicion} $>$ \& {\em ruta}) const\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_d138cdcaf3fff6dd080b04bbe94f0ad1}
+
+
+Calcula la ruta de escape segun lo indicado en el guion \begin{Desc}
+\item[Returns:]cola STL con la ruta de escape \end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Planta@{Planta}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em salida}, const {\bf Planta} \& {\em p})\hspace{0.3cm}{\tt  [friend]}}\label{classPlanta_319bef3f6e27b792e645f3db7bc82726}
+
+
+Sobrecarga del operador $<$$<$ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em salida}]flujo de salida \item[{\em p}]planta a mostrar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]flujo con la informacion \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Planta@{Planta}!id_@{id\_\-}}
+\index{id_@{id\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::id\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_1cb61304a7f5e75b5fa7f72416e2f09c}
+
+
+identificador de la planta. 
+
+\index{Planta@{Planta}!ancho_@{ancho\_\-}}
+\index{ancho_@{ancho\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::ancho\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_3d867f2849c4bff480e1e6cdb0855fcd}
+
+
+ancho de la planta 
+
+\index{Planta@{Planta}!alto_@{alto\_\-}}
+\index{alto_@{alto\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::alto\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_b5749956a1159afda09baaa812a50626}
+
+
+alto de la planta 
+
+\index{Planta@{Planta}!entrada_@{entrada\_\-}}
+\index{entrada_@{entrada\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::entrada\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_5bc5684b9358581b3611d56406b64cbc}
+
+
+entrada de la planta 
+
+\index{Planta@{Planta}!salida_@{salida\_\-}}
+\index{salida_@{salida\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::salida\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_4cbf21dc21898b7ba3b63e097f2fcbc4}
+
+
+salida de la planta 
+
+\index{Planta@{Planta}!grafo_@{grafo\_\-}}
+\index{grafo_@{grafo\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Grafo} {\bf Planta::grafo\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_f2148d617bfb5d95398f5d3e6b22d9d6}
+
+
+grafo que controla los caminos de la planta 
+
+\index{Planta@{Planta}!puerta_@{puerta\_\-}}
+\index{puerta_@{puerta\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Puerta}$\ast$ {\bf Planta::puerta\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_67e97ee096d0483cbe277fed5b903ba9}
+
+
+puntero a puerta de la planta 
+
+\index{Planta@{Planta}!celdas_@{celdas\_\-}}
+\index{celdas_@{celdas\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Celda}$\ast$$>$ {\bf Planta::celdas\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_7659fd47941f40677ce06d19e870e5c0}
+
+
+vector que almacena punteros a todas las celdas. 
+
+\index{Planta@{Planta}!n_llaves_@{n\_\-llaves\_\-}}
+\index{n_llaves_@{n\_\-llaves\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Planta::n\_\-llaves\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_216b465f1e4e0d9b8c468f4468741304}
+
+
+Numero de llaves diferentes generadas en la planta. 
+
+\index{Planta@{Planta}!guardias_@{guardias\_\-}}
+\index{guardias_@{guardias\_\-}!Planta@{Planta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Guardia}$\ast$$>$ {\bf Planta::guardias\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPlanta_7970944dc30cb250e6959f0a661937ec}
+
+
+Lista de los guardias de la planta. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf planta.h}\item 
+Escritorio/EC3/src/{\bf planta.cpp}\end{CompactItemize}

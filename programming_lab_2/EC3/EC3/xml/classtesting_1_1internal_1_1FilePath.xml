@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1FilePath" kind="class" prot="public">
+    <compoundname>testing::internal::FilePath</compoundname>
+    <includes refid="gtest-filepath_8h" local="no">gtest-filepath.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1FilePath_1eab1072b81471f0a34b124cb855cdcd2" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FilePath::pathname_</definition>
+        <argsstring></argsstring>
+        <name>pathname_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="186" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_1aee7529864bf992b612ab0441ef919bd" compoundref="gtest-filepath_8h" startline="82" endline="82">c_str</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_1a5fd8ef9690d1bcb7e1fe7c0438be399" compoundref="gtest-filepath_8h" startline="77" endline="79">Set</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_14fdd5dfdf13e194e8cf12b9b256b4585" compoundref="gtest-filepath_8h" startline="81" endline="81">ToString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1cdb606cae6ec2709a1559fd247e5c162" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FilePath::FilePath</definition>
+        <argsstring>()</argsstring>
+        <name>FilePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="61" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1d7a74f993a6d42abaf0a6b3404038cb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FilePath::FilePath</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>FilePath</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="62" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_19ec00e94b94c757aa045b576b5c4de02" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FilePath::FilePath</definition>
+        <argsstring>(const char *pathname)</argsstring>
+        <name>FilePath</name>
+        <param>
+          <type>const char *</type>
+          <declname>pathname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="64" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="64" bodyend="66"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1677a926927b14966947bba1271683f8a">Normalize</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1b8597e7a22ecb8e124d1014755b841eb" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FilePath::FilePath</definition>
+        <argsstring>(const String &amp;pathname)</argsstring>
+        <name>FilePath</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="68" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="68" bodyend="70"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1677a926927b14966947bba1271683f8a">Normalize</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_11c74972f756e9259b36bf0fabef07494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+        <definition>FilePath&amp; testing::internal::FilePath::operator=</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="72" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="72" bodyend="75"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1a5fd8ef9690d1bcb7e1fe7c0438be399" compoundref="gtest-filepath_8h" startline="77" endline="79">Set</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1a5fd8ef9690d1bcb7e1fe7c0438be399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::FilePath::Set</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="77" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="77" bodyend="79"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1eab1072b81471f0a34b124cb855cdcd2" compoundref="gtest-filepath_8h" startline="186">pathname_</references>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_11c74972f756e9259b36bf0fabef07494" compoundref="gtest-filepath_8h" startline="72" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_14fdd5dfdf13e194e8cf12b9b256b4585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FilePath::ToString</definition>
+        <argsstring>() const</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="81" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="81" bodyend="81"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1eab1072b81471f0a34b124cb855cdcd2" compoundref="gtest-filepath_8h" startline="186">pathname_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1aee7529864bf992b612ab0441ef919bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::FilePath::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="82" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="82" bodyend="82"/>
+        <references refid="classtesting_1_1internal_1_1String_188be98337a01ae18eb6c3f084288e0a5" compoundref="gtest-string_8h" startline="285" endline="285">testing::internal::String::c_str</references>
+        <references refid="classtesting_1_1internal_1_1FilePath_1eab1072b81471f0a34b124cb855cdcd2" compoundref="gtest-filepath_8h" startline="186">pathname_</references>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_116edae2ccd6d0a52385e983d1d7f3b06" compoundref="gtest-filepath_8h" startline="109" endline="109">IsEmpty</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_116edae2ccd6d0a52385e983d1d7f3b06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="109" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="109" bodyend="109"/>
+        <references refid="classtesting_1_1internal_1_1FilePath_1aee7529864bf992b612ab0441ef919bd" compoundref="gtest-filepath_8h" startline="82" endline="82">c_str</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_19109b89d58fd7ed24d399b655da334ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>FilePath testing::internal::FilePath::RemoveTrailingPathSeparator</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveTrailingPathSeparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_17da5d0fb3a12c152a7d7429dbe830aff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>FilePath testing::internal::FilePath::RemoveDirectoryName</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveDirectoryName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_187faaadfad0a7f691b4a08eb3936c8f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>FilePath testing::internal::FilePath::RemoveFileName</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_168dfb3865dd28f4a11ea1c266e42eade" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>FilePath testing::internal::FilePath::RemoveExtension</definition>
+        <argsstring>(const char *extension) const</argsstring>
+        <name>RemoveExtension</name>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_17380f058cec1dc63522652fece8edc8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::CreateDirectoriesRecursively</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateDirectoriesRecursively</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1fec5082480123b79240dd022480065ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::CreateFolder</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateFolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1bd0152908a123e22606b366a575a3e30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::FileOrDirectoryExists</definition>
+        <argsstring>() const</argsstring>
+        <name>FileOrDirectoryExists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_18075510434baf939fe1e3b15a8c93aac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::DirectoryExists</definition>
+        <argsstring>() const</argsstring>
+        <name>DirectoryExists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1e299e75dc94443f8acf2c7590ddf0daa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::IsDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1dab127e965db469f6e95d09eed1c8c7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::FilePath::IsRootDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRootDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_125a54bc69aed16dba66e822b38b925ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>static FilePath testing::internal::FilePath::GetCurrentDir</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_19ec27f86501db59e3ff350be5252654c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>static FilePath testing::internal::FilePath::MakeFileName</definition>
+        <argsstring>(const FilePath &amp;directory, const FilePath &amp;base_name, int number, const char *extension)</argsstring>
+        <name>MakeFileName</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>base_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_16cbdcdc15dee358415637e125d116452" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref></type>
+        <definition>static FilePath testing::internal::FilePath::GenerateUniqueFileName</definition>
+        <argsstring>(const FilePath &amp;directory, const FilePath &amp;base_name, const char *extension)</argsstring>
+        <name>GenerateUniqueFileName</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>base_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1FilePath_1677a926927b14966947bba1271683f8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::FilePath::Normalize</definition>
+        <argsstring>()</argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="184"/>
+        <referencedby refid="classtesting_1_1internal_1_1FilePath_19ec00e94b94c757aa045b576b5c4de02" compoundref="gtest-filepath_8h" startline="64" endline="66">FilePath</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="72">
+        <label>testing::internal::FilePath</label>
+        <link refid="classtesting_1_1internal_1_1FilePath"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>pathname_</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>testing::internal::String</label>
+        <link refid="classtesting_1_1internal_1_1String"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" line="59" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-filepath.h" bodystart="59" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1FilePath_1aee7529864bf992b612ab0441ef919bd" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>c_str</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_17380f058cec1dc63522652fece8edc8a" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>CreateDirectoriesRecursively</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1fec5082480123b79240dd022480065ba" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>CreateFolder</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_18075510434baf939fe1e3b15a8c93aac" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>DirectoryExists</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1bd0152908a123e22606b366a575a3e30" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FileOrDirectoryExists</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1cdb606cae6ec2709a1559fd247e5c162" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1d7a74f993a6d42abaf0a6b3404038cb4" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_19ec00e94b94c757aa045b576b5c4de02" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1b8597e7a22ecb8e124d1014755b841eb" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_16cbdcdc15dee358415637e125d116452" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>GenerateUniqueFileName</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_125a54bc69aed16dba66e822b38b925ad" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>GetCurrentDir</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1e299e75dc94443f8acf2c7590ddf0daa" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsDirectory</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_116edae2ccd6d0a52385e983d1d7f3b06" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsEmpty</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1dab127e965db469f6e95d09eed1c8c7c" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsRootDirectory</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_19ec27f86501db59e3ff350be5252654c" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>MakeFileName</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1677a926927b14966947bba1271683f8a" prot="private" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>Normalize</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_11c74972f756e9259b36bf0fabef07494" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>operator=</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1eab1072b81471f0a34b124cb855cdcd2" prot="private" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>pathname_</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_17da5d0fb3a12c152a7d7429dbe830aff" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveDirectoryName</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_168dfb3865dd28f4a11ea1c266e42eade" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveExtension</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_187faaadfad0a7f691b4a08eb3936c8f2" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveFileName</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_19109b89d58fd7ed24d399b655da334ad" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveTrailingPathSeparator</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_1a5fd8ef9690d1bcb7e1fe7c0438be399" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>Set</name></member>
+      <member refid="classtesting_1_1internal_1_1FilePath_14fdd5dfdf13e194e8cf12b9b256b4585" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+program Maximo;
+
+ resource recurso;
+  export coger, meter;
+ var
+  items: array [1..20] of integer;
+  cima:integer;
+  pendientes:integer;
+  i:integer;
+  fin:boolean;
+
+  procedure meter(i:integer);
+  begin
+       writeln('Pongo con la cima en: ',cima);
+       pendientes := pendientes -1;
+       items[cima] := i;
+       cima := cima + 1;
+       if (pendientes = 0) AND (cima = 2) then
+       begin
+            fin := true;
+            writeln('El maximo es: ',i);
+       end
+  end;
+
+  guarded procedure coger(var item1,item2:integer; var final:boolean) when (fin) OR (cima > 2) ;
+  begin
+       final:= fin;
+       if NOT fin then
+       begin
+       writeln('Cojo con la cima en: ',cima);
+       pendientes := pendientes +1;
+       cima:= cima-1;
+       item1 := items[cima];
+       cima:= cima-1;
+       item2 := items[cima];
+       end;
+  end;
+ begin
+      for i:=1 to 20 do
+          items[i] := i*10;
+      cima := 21;
+      fin:=false;
+      pendientes := 0;
+ end ;
+
+
+
+process type trabajador;
+var
+  maximo:integer;
+  item1,item2:integer;
+  fin:boolean;
+  begin
+       repeat
+             recurso.coger(item1,item2,fin);
+             if NOT fin then
+             begin;
+                    maximo:=item1;
+                    if maximo < item2 then
+                       maximo:= item2;
+                    recurso.meter(maximo);
+             end;
+       until fin;
+  end ;
+
+
+var trab: array[1..5] of trabajador;
+var i:integer;
+begin
+  cobegin
+          for i:=1 to 5 do
+             trab[i];
+  coend;
+end.
+

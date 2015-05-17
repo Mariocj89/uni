@@ -1,0 +1,195 @@
+\section{testing::internal::linked\_\-ptr$<$ T $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1linked__ptr}\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+{\tt \#include $<$gtest-linked\_\-ptr.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef T {\bf element\_\-type}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf linked\_\-ptr} (T $\ast$ptr=NULL)
+\item 
+{\bf $\sim$linked\_\-ptr} ()
+\item 
+{\footnotesize template$<$typename U$>$ }\\{\bf linked\_\-ptr} ({\bf linked\_\-ptr}$<$ U $>$ const \&ptr)
+\item 
+{\bf linked\_\-ptr} ({\bf linked\_\-ptr} const \&ptr)
+\item 
+{\footnotesize template$<$typename U$>$ }\\{\bf linked\_\-ptr} \& {\bf operator=} ({\bf linked\_\-ptr}$<$ U $>$ const \&ptr)
+\item 
+{\bf linked\_\-ptr} \& {\bf operator=} ({\bf linked\_\-ptr} const \&ptr)
+\item 
+void {\bf reset} (T $\ast$ptr=NULL)
+\item 
+T $\ast$ {\bf get} () const
+\item 
+T $\ast$ {\bf operator $\rightarrow$ } () const
+\item 
+T \& {\bf operator $\ast$} () const
+\item 
+T $\ast$ {\bf release} ()
+\item 
+bool {\bf operator==} (T $\ast$p) const
+\item 
+bool {\bf operator!=} (T $\ast$p) const
+\item 
+{\footnotesize template$<$typename U$>$ }\\bool {\bf operator==} ({\bf linked\_\-ptr}$<$ U $>$ const \&ptr) const
+\item 
+{\footnotesize template$<$typename U$>$ }\\bool {\bf operator!=} ({\bf linked\_\-ptr}$<$ U $>$ const \&ptr) const
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf depart} ()
+\item 
+void {\bf capture} (T $\ast$ptr)
+\item 
+{\footnotesize template$<$typename U$>$ }\\void {\bf copy} ({\bf linked\_\-ptr}$<$ U $>$ const $\ast$ptr)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+T $\ast$ {\bf value\_\-}
+\item 
+{\bf linked\_\-ptr\_\-internal} {\bf link\_\-}
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+class {\bf linked\_\-ptr}
+\end{CompactItemize}
+\subsubsection*{template$<$typename T$>$ class testing::internal::linked\_\-ptr$<$ T $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!element_type@{element\_\-type}}
+\index{element_type@{element\_\-type}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef T {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf element\_\-type}}\label{classtesting_1_1internal_1_1linked__ptr_312c4b57c4c2df9342554d614279d37c}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!linked_ptr@{linked\_\-ptr}}
+\index{linked_ptr@{linked\_\-ptr}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf linked\_\-ptr} (T $\ast$ {\em ptr} = {\tt NULL})\hspace{0.3cm}{\tt  [inline, explicit]}}\label{classtesting_1_1internal_1_1linked__ptr_fee2c530490bbf62163efdb6a7e6ad96}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!~linked_ptr@{$\sim$linked\_\-ptr}}
+\index{~linked_ptr@{$\sim$linked\_\-ptr}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::$\sim${\bf linked\_\-ptr} ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_e31e49a912133a17b07fb59c726e633c}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!linked_ptr@{linked\_\-ptr}}
+\index{linked_ptr@{linked\_\-ptr}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U$>$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf linked\_\-ptr} ({\bf linked\_\-ptr}$<$ U $>$ const \& {\em ptr})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_2040b2fb92bc10b152de48cc2e48879a}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!linked_ptr@{linked\_\-ptr}}
+\index{linked_ptr@{linked\_\-ptr}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf linked\_\-ptr} ({\bf linked\_\-ptr}$<$ T $>$ const \& {\em ptr})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_3f2f41e3f81027fc746646b84f931883}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U$>$ {\bf linked\_\-ptr}\& {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator= ({\bf linked\_\-ptr}$<$ U $>$ const \& {\em ptr})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_9063b35923382bd9c62dae820c6a8b58}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf linked\_\-ptr}\& {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator= ({\bf linked\_\-ptr}$<$ T $>$ const \& {\em ptr})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_62fc8f5deb899d1ad33b0af1eef9e1e5}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!reset@{reset}}
+\index{reset@{reset}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf testing::internal::linked\_\-ptr}$<$ T $>$::reset (T $\ast$ {\em ptr} = {\tt NULL})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_2b836129776f7700f37b90f0890fb46c}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!get@{get}}
+\index{get@{get}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::get () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_8b7954505bb1b14e34eaa47d92ea4075}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator->@{operator-$>$}}
+\index{operator->@{operator-$>$}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator $\rightarrow$  () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_a09be2ad0c24b1c830655c9dd0c92456}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T\& {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator $\ast$ () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_0bec652c50b628cd1b8c4430ccdc6e73}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!release@{release}}
+\index{release@{release}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::release ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_6f79e7e201c337620347641bb61a2c3b}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator==@{operator==}}
+\index{operator==@{operator==}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator== (T $\ast$ {\em p}) const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_281fabc5d4f9ac0ccb65ba3a1efb7ec9}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator!= (T $\ast$ {\em p}) const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_ba8189100059f024c66c2be29e0f0d9b}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator==@{operator==}}
+\index{operator==@{operator==}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U$>$ bool {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator== ({\bf linked\_\-ptr}$<$ U $>$ const \& {\em ptr}) const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_c618d1de3b2301ed948a0dec77e3b06d}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U$>$ bool {\bf testing::internal::linked\_\-ptr}$<$ T $>$::operator!= ({\bf linked\_\-ptr}$<$ U $>$ const \& {\em ptr}) const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1linked__ptr_e905063925f323f3d2d9599e8b73ea4e}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!depart@{depart}}
+\index{depart@{depart}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf testing::internal::linked\_\-ptr}$<$ T $>$::depart ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classtesting_1_1internal_1_1linked__ptr_6f879af34554ee346e3ae0e565267570}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!capture@{capture}}
+\index{capture@{capture}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf testing::internal::linked\_\-ptr}$<$ T $>$::capture (T $\ast$ {\em ptr})\hspace{0.3cm}{\tt  [inline, private]}}\label{classtesting_1_1internal_1_1linked__ptr_00c045212e8fccccccced175621eae76}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!copy@{copy}}
+\index{copy@{copy}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename U$>$ void {\bf testing::internal::linked\_\-ptr}$<$ T $>$::copy ({\bf linked\_\-ptr}$<$ U $>$ const $\ast$ {\em ptr})\hspace{0.3cm}{\tt  [inline, private]}}\label{classtesting_1_1internal_1_1linked__ptr_d6cce2be047efe59f5a40f7db072494f}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!linked_ptr@{linked\_\-ptr}}
+\index{linked_ptr@{linked\_\-ptr}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class {\bf linked\_\-ptr}\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1internal_1_1linked__ptr_238a008ee4d0e9ffe7265fac621a282d}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!value_@{value\_\-}}
+\index{value_@{value\_\-}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf value\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1internal_1_1linked__ptr_2bd820d72c6e913a5a3dcc076b06f47f}
+
+
+\index{testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}!link_@{link\_\-}}
+\index{link_@{link\_\-}!testing::internal::linked_ptr@{testing::internal::linked\_\-ptr}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf linked\_\-ptr\_\-internal} {\bf testing::internal::linked\_\-ptr}$<$ T $>$::{\bf link\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1internal_1_1linked__ptr_2c970516b35e03f2103f8bab1bc6db7e}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/internal/{\bf gtest-linked\_\-ptr.h}\end{CompactItemize}

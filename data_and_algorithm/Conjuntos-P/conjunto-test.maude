@@ -1,0 +1,20 @@
+load conjunto-parametrizado.maude
+
+fmod CONJUNTO-TEST is
+protecting CONJUNTO{Int} .
+endfm
+
+***( 
+red pertenece(insertar(insertar(insertar(insertar(crear, 1),2),3),4),1) .
+--- result Bool: true
+
+red pertenece(insertar(crear,5),4) .
+--- result Bool: false
+
+red union(insertar(crear,2),  insertar(insertar(crear,2),3)) .
+--- result Conjunto{Int}: insertar(insertar(crear, 2), 3)
+
+red interseccion(insertar(insertar(crear,1),5) , insertar(insertar(insertar(insertar(crear, 1),2),3),2)) .
+--- result Conjunto{Int}: insertar(crear, 1)
+
+)

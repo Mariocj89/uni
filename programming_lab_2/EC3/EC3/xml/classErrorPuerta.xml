@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classErrorPuerta" kind="class" prot="public">
+    <compoundname>ErrorPuerta</compoundname>
+    <includes refid="errorpuerta_8h" local="no">errorpuerta.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classErrorPuerta_1ccdb1855844fd9649c0ddf55f28b64ed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ErrorPuerta::id_planta_</definition>
+        <argsstring></argsstring>
+        <name>id_planta_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errorpuerta.h" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/errorpuerta.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classErrorPuerta_1de2001a7f43f39c883863e76344ab68d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorPuerta::ErrorPuerta</definition>
+        <argsstring>(const int &amp;id)</argsstring>
+        <name>ErrorPuerta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classErrorPuerta" kindref="compound">ErrorPuerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identificador de la planta en la que ha saltado la excepcion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errorpuerta.h" line="25" bodyfile="/home/Mario/Escritorio/EC3/src/errorpuerta.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorPuerta_1eeef73861ba2c48352b9fe2c0e8f10cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ErrorPuerta::what</definition>
+        <argsstring>()</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que informa de la excepcion ocurrida <simplesect kind="return"><para>string con la informacion a mostrar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errorpuerta.h" line="26" bodyfile="/home/Mario/Escritorio/EC3/src/errorpuerta.cpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorPuerta_10b4ea283c77c08f923ed25235db42e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorPuerta::~ErrorPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>~ErrorPuerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classErrorPuerta" kindref="compound">ErrorPuerta</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errorpuerta.h" line="27" bodyfile="/home/Mario/Escritorio/EC3/src/errorpuerta.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase para controlar las excepciones producidas al obtener una entrada o salida erronea. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/errorpuerta.h" line="23" bodyfile="/home/Mario/Escritorio/EC3/src/errorpuerta.h" bodystart="23" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classErrorPuerta_1de2001a7f43f39c883863e76344ab68d" prot="public" virt="non-virtual"><scope>ErrorPuerta</scope><name>ErrorPuerta</name></member>
+      <member refid="classErrorPuerta_1ccdb1855844fd9649c0ddf55f28b64ed" prot="private" virt="non-virtual"><scope>ErrorPuerta</scope><name>id_planta_</name></member>
+      <member refid="classErrorPuerta_1eeef73861ba2c48352b9fe2c0e8f10cb" prot="public" virt="non-virtual"><scope>ErrorPuerta</scope><name>what</name></member>
+      <member refid="classErrorPuerta_10b4ea283c77c08f923ed25235db42e2b" prot="public" virt="non-virtual"><scope>ErrorPuerta</scope><name>~ErrorPuerta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

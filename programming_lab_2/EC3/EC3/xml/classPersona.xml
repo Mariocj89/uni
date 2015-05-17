@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPersona" kind="class" prot="public">
+    <compoundname>Persona</compoundname>
+    <derivedcompoundref refid="classGuardia" prot="public" virt="non-virtual">Guardia</derivedcompoundref>
+    <derivedcompoundref refid="classPreso" prot="public" virt="non-virtual">Preso</derivedcompoundref>
+    <includes refid="persona_8h" local="no">persona.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPersona_14b7da84c9a13d1a574d6bc57ca2995f3" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Persona::nombre_</definition>
+        <argsstring></argsstring>
+        <name>nombre_</name>
+        <briefdescription>
+<para>Nombre de la persona (tomaremos -1 como no inicializado). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classPersona_1edd6cec0572d84557723848814c6fb07" compoundref="persona_8h" startline="40">get_nombre</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_17d71cc3f4afda6f8342aa726812025de" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Persona::marca_</definition>
+        <argsstring></argsstring>
+        <name>marca_</name>
+        <briefdescription>
+<para>Marca de la persona, (tomaremos 0 como no inicializado). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="51" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classPersona_1aa564e0699b1b0fcd98ca2c620451a3e" compoundref="persona_8h" startline="41" endline="40">get_marca</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_177aae13b0b185d3df95c4c6d8df8cbe4" prot="protected" static="no" mutable="no">
+        <type>queue&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; *</type>
+        <definition>queue&lt;Posicion&gt;* Persona::ruta_</definition>
+        <argsstring></argsstring>
+        <name>ruta_</name>
+        <briefdescription>
+<para>Ruta que debe seguir la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_16307abb90e402a21dd35de5a8fd787da" prot="protected" static="no" mutable="no">
+        <type>stack&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt;</type>
+        <definition>stack&lt;Llave*&gt; Persona::llaves_</definition>
+        <argsstring></argsstring>
+        <name>llaves_</name>
+        <briefdescription>
+<para>Llaves que tiene la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="53" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_1a5d7a70f9fb654635fd35318b070dcb6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Persona::planta_</definition>
+        <argsstring></argsstring>
+        <name>planta_</name>
+        <briefdescription>
+<para><ref refid="classPlanta" kindref="compound">Planta</ref> en la que se encuentra la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_1242597c6f6d16bbfbd7c9bb535bc036e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Persona::celda_</definition>
+        <argsstring></argsstring>
+        <name>celda_</name>
+        <briefdescription>
+<para><ref refid="classCelda" kindref="compound">Celda</ref> en la que se encuentra la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classPersona_16767071fbaa5fd802831182f3067aab6" compoundref="persona_8h" startline="42" endline="41">set_celda</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPersona_1996f9da3f6b66d61b81ff10bddb88883" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Persona::turno_</definition>
+        <argsstring></argsstring>
+        <name>turno_</name>
+        <briefdescription>
+<para>Atributo que indica el ultimo turno en el que se han actuado (comienza con el primer turno en el que se puede mover). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="56" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classPersona_1905d516718f6c844ee610c10a276ac8d" compoundref="persona_8h" startline="43" endline="43">get_turno</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersona_10b0035b70cb2140c28caea37c4488721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Persona::Persona</definition>
+        <argsstring>(const string &amp;nombre, const char &amp;marca, const int &amp;espera, const int &amp;p, const int &amp;c)</argsstring>
+        <name>Persona</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>marca</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>espera</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classPersona" kindref="compound">Persona</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre de la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marca</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>marca de la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>espera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>turno en el que comenzara a moverse </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta en la que inicia </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que inicia </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="57" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_10ec7ae504cd0d3c73588cff200755778" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>Persona::~Persona</definition>
+        <argsstring>()</argsstring>
+        <name>~Persona</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase persona </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="39" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1edd6cec0572d84557723848814c6fb07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Persona::get_nombre</definition>
+        <argsstring>()</argsstring>
+        <name>get_nombre</name>
+        <briefdescription>
+<para>Metodo que devuelve el nombre de la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="40" bodyend="-1"/>
+        <references refid="classPersona_14b7da84c9a13d1a574d6bc57ca2995f3" compoundref="persona_8h" startline="50">nombre_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1aa564e0699b1b0fcd98ca2c620451a3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Persona::get_marca</definition>
+        <argsstring>()</argsstring>
+        <name>get_marca</name>
+        <briefdescription>
+<para>Metodo que devuelve la marca de la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="41" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="41" bodyend="40"/>
+        <references refid="classPersona_17d71cc3f4afda6f8342aa726812025de" compoundref="persona_8h" startline="51">marca_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_16767071fbaa5fd802831182f3067aab6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Persona::set_celda</definition>
+        <argsstring>(const int &amp;celda)</argsstring>
+        <name>set_celda</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>celda</declname>
+        </param>
+        <briefdescription>
+<para>Cambia el atributo celda por el que entra por parametro. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="42" bodyend="41"/>
+        <references refid="classPersona_1242597c6f6d16bbfbd7c9bb535bc036e" compoundref="persona_8h" startline="55">celda_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1905d516718f6c844ee610c10a276ac8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Persona::get_turno</definition>
+        <argsstring>()</argsstring>
+        <name>get_turno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="43" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="43" bodyend="43"/>
+        <references refid="classPersona_1996f9da3f6b66d61b81ff10bddb88883" compoundref="persona_8h" startline="56">turno_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_18493b4a96356762d54f7185934349351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave * Persona::sacar_llave</definition>
+        <argsstring>()</argsstring>
+        <name>sacar_llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saca una llave y la devuelve <simplesect kind="return"><para>llave sacada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="88" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_156c7698f800a43476a72c8f34177c897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Persona::put_llave</definition>
+        <argsstring>(Llave *l)</argsstring>
+        <name>put_llave</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Introduce una llave <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llave a meter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_105ccd9155daffb75e63bf7b33129afb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Persona::Actuar</definition>
+        <argsstring>()</argsstring>
+        <name>Actuar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza todas las acciones de la persona <simplesect kind="return"><para>false si mover devuelve false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="46" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="32" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1827d49fd22fb68461f1c725fd201c281" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Persona::P2String</definition>
+        <argsstring>()</argsstring>
+        <name>P2String</name>
+        <reimplementedby refid="classPreso_12bd84753d1ad3c2a2e62ff557776f9d5">P2String</reimplementedby>
+        <reimplementedby refid="classGuardia_17bdc01bf4017bd45ac861a55e6e52ad7">P2String</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pasa la informacion de la persona a una cadena <simplesect kind="return"><para>cadena con la informacion de la persona </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="114" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1b7ff6a7c54d2da752d891725cc7713a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Persona::MostrarRuta</definition>
+        <argsstring>()</argsstring>
+        <name>MostrarRuta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra la ruta por pantalla y la guarda en el <ref refid="classRegistro" kindref="compound">Registro</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="145" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPersona_1827d80881366e3e086d4d9d5fe726399" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Persona::UsarPuerta</definition>
+        <argsstring>()=0</argsstring>
+        <name>UsarPuerta</name>
+        <reimplementedby refid="classPreso_14529dbfdac1c8a8cbc870e52a90fa056">UsarPuerta</reimplementedby>
+        <reimplementedby refid="classGuardia_1fda4ca67ebab9ab5e307a266b9ae22ee">UsarPuerta</reimplementedby>
+        <briefdescription>
+<para>Metodo virtual puro - Destino: Interactua con una persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1fa25ad7cbf9d12b4cf4711800c748920" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Persona::Interactuar</definition>
+        <argsstring>()=0</argsstring>
+        <name>Interactuar</name>
+        <reimplementedby refid="classPreso_1d6070d6e577b06ede93e4e9f5f33da16">Interactuar</reimplementedby>
+        <reimplementedby refid="classGuardia_1127c9942c98cd5332511d9383c2d76e9">Interactuar</reimplementedby>
+        <briefdescription>
+<para>Metodo virtual puro - Destino: Interactua con otra persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_191f8eab1f237e3d4e42a227e4f185e4e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Persona::TratarLlave</definition>
+        <argsstring>()=0</argsstring>
+        <name>TratarLlave</name>
+        <reimplementedby refid="classPreso_19851666862eb7b29c53f4335f2c712f5">TratarLlave</reimplementedby>
+        <reimplementedby refid="classGuardia_1b14ab83ca126b82fb5b7341545682dcd">TratarLlave</reimplementedby>
+        <briefdescription>
+<para>Metodo virtual puro - Destino: Coge o deja una llave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1dfb69e4115ae0f1eddd7130b7cc38b8a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Persona::CalcularRuta</definition>
+        <argsstring>()=0</argsstring>
+        <name>CalcularRuta</name>
+        <reimplementedby refid="classPreso_1bef87bbd70ccd79dbcf2dcc68ea96866">CalcularRuta</reimplementedby>
+        <reimplementedby refid="classGuardia_1ed3d1d16abfad909b98e66b57e6efeac">CalcularRuta</reimplementedby>
+        <briefdescription>
+<para>Metodo virtual puto - Destino: Calcular la ruta de la persona. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_1dfe58fef614d78a3bd7e728c9ce30c98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Persona::Mover</definition>
+        <argsstring>()=0</argsstring>
+        <name>Mover</name>
+        <reimplementedby refid="classPreso_178b299c11367871e1d2cbbcbd8a17e45">Mover</reimplementedby>
+        <reimplementedby refid="classGuardia_1760220917460d685bff7113115a9cbb8">Mover</reimplementedby>
+        <briefdescription>
+<para>Metodo virtual puto - Destino: Mover a la siguiente celda. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersona_133f40e6a924ac59dc360c06a43e5d772" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Persona::Destino</definition>
+        <argsstring>() const</argsstring>
+        <name>Destino</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la posicion de la celda a la que debe ir la persona segun un destino(Tipo Posicion) <simplesect kind="pre"><para>Debe existir una celda adyacente en la direccion indicada por la ruta </para></simplesect>
+<simplesect kind="return"><para>entero con la posicion a la celda destino </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="64" bodyfile="/home/Mario/Escritorio/EC3/src/persona.cpp" bodystart="72" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>clase abstracta que define los atributos y metodos generales de una persona de la prision </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>Guardia</label>
+        <link refid="classGuardia"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>Preso</label>
+        <link refid="classPreso"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>Persona</label>
+        <link refid="classPersona"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/Mario/Escritorio/EC3/src/persona.h" line="36" bodyfile="/home/Mario/Escritorio/EC3/src/persona.h" bodystart="36" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classPersona_105ccd9155daffb75e63bf7b33129afb9" prot="public" virt="non-virtual"><scope>Persona</scope><name>Actuar</name></member>
+      <member refid="classPersona_1dfb69e4115ae0f1eddd7130b7cc38b8a" prot="protected" virt="pure-virtual"><scope>Persona</scope><name>CalcularRuta</name></member>
+      <member refid="classPersona_1242597c6f6d16bbfbd7c9bb535bc036e" prot="protected" virt="non-virtual"><scope>Persona</scope><name>celda_</name></member>
+      <member refid="classPersona_133f40e6a924ac59dc360c06a43e5d772" prot="protected" virt="non-virtual"><scope>Persona</scope><name>Destino</name></member>
+      <member refid="classPersona_1aa564e0699b1b0fcd98ca2c620451a3e" prot="public" virt="non-virtual"><scope>Persona</scope><name>get_marca</name></member>
+      <member refid="classPersona_1edd6cec0572d84557723848814c6fb07" prot="public" virt="non-virtual"><scope>Persona</scope><name>get_nombre</name></member>
+      <member refid="classPersona_1905d516718f6c844ee610c10a276ac8d" prot="public" virt="non-virtual"><scope>Persona</scope><name>get_turno</name></member>
+      <member refid="classPersona_1fa25ad7cbf9d12b4cf4711800c748920" prot="protected" virt="pure-virtual"><scope>Persona</scope><name>Interactuar</name></member>
+      <member refid="classPersona_16307abb90e402a21dd35de5a8fd787da" prot="protected" virt="non-virtual"><scope>Persona</scope><name>llaves_</name></member>
+      <member refid="classPersona_17d71cc3f4afda6f8342aa726812025de" prot="protected" virt="non-virtual"><scope>Persona</scope><name>marca_</name></member>
+      <member refid="classPersona_1b7ff6a7c54d2da752d891725cc7713a4" prot="public" virt="non-virtual"><scope>Persona</scope><name>MostrarRuta</name></member>
+      <member refid="classPersona_1dfe58fef614d78a3bd7e728c9ce30c98" prot="protected" virt="pure-virtual"><scope>Persona</scope><name>Mover</name></member>
+      <member refid="classPersona_14b7da84c9a13d1a574d6bc57ca2995f3" prot="protected" virt="non-virtual"><scope>Persona</scope><name>nombre_</name></member>
+      <member refid="classPersona_1827d49fd22fb68461f1c725fd201c281" prot="public" virt="virtual"><scope>Persona</scope><name>P2String</name></member>
+      <member refid="classPersona_10b0035b70cb2140c28caea37c4488721" prot="public" virt="non-virtual"><scope>Persona</scope><name>Persona</name></member>
+      <member refid="classPersona_1a5d7a70f9fb654635fd35318b070dcb6" prot="protected" virt="non-virtual"><scope>Persona</scope><name>planta_</name></member>
+      <member refid="classPersona_156c7698f800a43476a72c8f34177c897" prot="public" virt="non-virtual"><scope>Persona</scope><name>put_llave</name></member>
+      <member refid="classPersona_177aae13b0b185d3df95c4c6d8df8cbe4" prot="protected" virt="non-virtual"><scope>Persona</scope><name>ruta_</name></member>
+      <member refid="classPersona_18493b4a96356762d54f7185934349351" prot="public" virt="non-virtual"><scope>Persona</scope><name>sacar_llave</name></member>
+      <member refid="classPersona_16767071fbaa5fd802831182f3067aab6" prot="public" virt="non-virtual"><scope>Persona</scope><name>set_celda</name></member>
+      <member refid="classPersona_191f8eab1f237e3d4e42a227e4f185e4e" prot="protected" virt="pure-virtual"><scope>Persona</scope><name>TratarLlave</name></member>
+      <member refid="classPersona_1996f9da3f6b66d61b81ff10bddb88883" prot="protected" virt="non-virtual"><scope>Persona</scope><name>turno_</name></member>
+      <member refid="classPersona_1827d80881366e3e086d4d9d5fe726399" prot="protected" virt="pure-virtual"><scope>Persona</scope><name>UsarPuerta</name></member>
+      <member refid="classPersona_10ec7ae504cd0d3c73588cff200755778" prot="public" virt="virtual"><scope>Persona</scope><name>~Persona</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>fase3.kdevelop: Fichero Fuente Escritorio/fase3/src/listaenlazada.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Clases</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+  </ul>
+</div>
+<h1>Escritorio/fase3/src/listaenlazada.h</h1><a href="listaenlazada_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00018"></a>00018 <span class="preprocessor">#ifndef LISTAENLAZADA_H</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define LISTAENLAZADA_H</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="preprocessor">#include "<a class="code" href="datospersonales_8h.html" title="header de la clase DatosPersonales x">datospersonales.h</a>"</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">typedef</span> <span class="keyword">struct </span>TipoNodo {
+<a name="l00025"></a>00025         <a class="code" href="classDatosPersonales.html">DatosPersonales</a> dato;
+<a name="l00026"></a>00026         TipoNodo *suce;<span class="comment">//Apuntador al siguiente nodo</span>
+<a name="l00027"></a>00027 };
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="keyword">typedef</span> TipoNodo *PNodo;
+<a name="l00030"></a>00030 
+<a name="l00036"></a><a class="code" href="classListaEnlazada.html">00036</a> <span class="keyword">class </span><a class="code" href="classListaEnlazada.html">ListaEnlazada</a> {
+<a name="l00037"></a>00037                 PNodo l; <span class="comment">// apuntador al primer elemento de la lista</span>
+<a name="l00038"></a>00038                 <a class="code" href="classMeses.html">Meses</a> M; <span class="comment">// Almacena la informacion relativa a los meses</span>
+<a name="l00039"></a>00039                 
+<a name="l00040"></a>00040         <span class="keyword">public</span>:
+<a name="l00041"></a>00041 
+<a name="l00045"></a>00045         <a class="code" href="classListaEnlazada.html#e82643ddd50a2ffb28f0903d586ae3c2" title="Constructor por defecto de la clase DatosPersonales. Apunta l a NULL y carga M.">ListaEnlazada</a>();
+<a name="l00046"></a>00046 
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#5592c9afc4a35722b87ae9fc2639d20f" title="Copia la clase a dat.">Clonar</a>(<a class="code" href="classListaEnlazada.html">ListaEnlazada</a> &amp;dat);
+<a name="l00054"></a>00054 
+<a name="l00060"></a>00060         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#47219ac2729b7daa6ab41bbb29ec540e" title="Devuelve por parametro la configuracion de los Meses.">ObtenerMeses</a>(<a class="code" href="classMeses.html">Meses</a> &amp;mes) <span class="keyword">const</span>;
+<a name="l00061"></a>00061 
+<a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#77ad8bdb80ddeb2d9fec40b2868b9425" title="Elimina todos los elementos que no sean del mes i.">FiltrarPorMes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> i);
+<a name="l00068"></a>00068 
+<a name="l00074"></a>00074         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#7f38a3fa6c85ca3fe229aa52b38405f5" title="Elimina todos los elementos menores(o =) que i.">FiltrarPorEdad</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> i);
+<a name="l00075"></a>00075 
+<a name="l00081"></a>00081         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#e5bfbfd897fbec690d9a2eea8f575fa8" title="Inserta un elemento al principio.">InsertarPrincipio</a>(<span class="keyword">const</span> <a class="code" href="classDatosPersonales.html">DatosPersonales</a> &amp;dat);
+<a name="l00082"></a>00082 
+<a name="l00088"></a>00088         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#801bed36c4e29f62a8bc060b5bba220e" title="Inserta un elemento al final.">InsertarFinal</a>(<span class="keyword">const</span> <a class="code" href="classDatosPersonales.html">DatosPersonales</a> &amp;dat);
+<a name="l00089"></a>00089 
+<a name="l00095"></a>00095         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#65c51ce247c1b6e1994b27d83428a896" title="Inserta un elemento de forma ordenada.">InsertarOrden</a>(<span class="keyword">const</span> <a class="code" href="classDatosPersonales.html">DatosPersonales</a> &amp;dat);
+<a name="l00096"></a>00096 
+<a name="l00102"></a>00102         <span class="keywordtype">int</span>  <a class="code" href="classListaEnlazada.html#234cfa905fe5a10240dc20bdd58471fb" title="Halla el numero de elementos.">Ocupacion</a>() <span class="keyword">const</span>;
+<a name="l00103"></a>00103 
+<a name="l00110"></a>00110         <span class="keywordtype">bool</span> <a class="code" href="classListaEnlazada.html#0dca1b9ee554e8c08c15d045a858de78" title="Borra un elemento de la lista.">Borrar</a>( <span class="keyword">const</span> TCadena1 dat);
+<a name="l00111"></a>00111 
+<a name="l00116"></a>00116         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#12d1c81f7461cb71d418373482f69d95" title="Muestra toda la lista en castellano.">MostrarES</a>() <span class="keyword">const</span>;
+<a name="l00117"></a>00117 
+<a name="l00122"></a>00122         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#1099e1a3a94174dc44ed553b6c4cfff8" title="Muestra toda la lista en ingles.">MostrarEN</a>() <span class="keyword">const</span>;
+<a name="l00123"></a>00123 
+<a name="l00131"></a>00131         <span class="keywordtype">bool</span> <a class="code" href="classListaEnlazada.html#d635249684ab87a395f0760d0c8e2df6" title="Busca un elemento en la lista.">Buscar</a>( <span class="keyword">const</span> TCadena1 i, <a class="code" href="classDatosPersonales.html">DatosPersonales</a> &amp;dat) <span class="keyword">const</span>;
+<a name="l00132"></a>00132 
+<a name="l00139"></a>00139         <span class="keywordtype">bool</span> <a class="code" href="classListaEnlazada.html#800a9e74ebe60e7e53daec71a1a2cec3" title="Carga de datos_per.txt Debe existir nombre y debe estar correctamente formateado...">Cargar</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[20]);
+<a name="l00140"></a>00140 
+<a name="l00147"></a>00147         <span class="keywordtype">bool</span> <a class="code" href="classListaEnlazada.html#c40cfd38c3ac55fdff959ad62addcd2c" title="Guarda todos los datos en nombre Debe poderse sobrescribir nombre. Nombre del fichero...">Guardar</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[20]) <span class="keyword">const</span>;
+<a name="l00148"></a>00148 
+<a name="l00152"></a>00152         <span class="keywordtype">void</span> <a class="code" href="classListaEnlazada.html#5e595393fb9bd8539629eaca34550721" title="Vacia toda la lista.">Eliminar</a>();
+<a name="l00153"></a>00153 
+<a name="l00157"></a>00157         <a class="code" href="classListaEnlazada.html#df08c43000ede48ffa5ced078616c2b1" title="Destructor de la clase.">~ListaEnlazada</a>();
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159 };
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161 
+<a name="l00165"></a>00165 <span class="keywordtype">void</span> <a class="code" href="listaenlazada_8cpp.html#31178a4d6a939b08c869928590e958da" title="Juego de pruebas para la clase ListaEnlazada.">PruebaListaEnlazada</a>();
+<a name="l00166"></a>00166 
+<a name="l00167"></a>00167 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Wed May 28 10:31:23 2008 para fase3.kdevelop por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,28 @@
+Tabla: empleados{
+    Atributos:
+	-dni: varchar(100) Clave
+	-Nombre: varchar(100)
+	-Apellidos: varchar(100)
+	-contrasenia: varchar(100)
+}
+
+
+
+
+Tabla: noticias{
+    Atributos:
+	-titulo: varchar(100) Clave
+	-fecha: varchar(100)
+	-texto: varchar(255)
+}
+
+
+
+
+Tabla: productos{
+    Atributos:
+	-Nombre: varchar(100) Clave
+	-Tipo: varchar(100)
+	-Precio: float
+	-Imagen: varchar(100)
+}

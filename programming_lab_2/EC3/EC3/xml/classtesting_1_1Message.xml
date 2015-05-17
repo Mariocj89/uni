@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1Message" kind="class" prot="public">
+    <compoundname>testing::Message</compoundname>
+    <includes refid="gtest-message_8h" local="no">gtest-message.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtesting_1_1Message_1d6592b46e80a587f99786b9a5a30eb17" prot="private" static="no">
+        <type>std::ostream &amp;(*)</type>
+        <definition>typedef std::ostream&amp;(*) testing::Message::BasicNarrowIoManip(std::ostream &amp;)</definition>
+        <argsstring>(std::ostream &amp;)</argsstring>
+        <name>BasicNarrowIoManip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="84" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetesting_1_1internal_12f325a1ea8cfd7eab6843eb4592dde44" kindref="member">internal::StrStream</ref> *const</type>
+        <definition>internal::StrStream* const testing::Message::ss_</definition>
+        <argsstring></argsstring>
+        <name>ss_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="210" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="210" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" compoundref="gtest-message_8h" startline="185" endline="187">GetString</referencedby>
+        <referencedby refid="classtesting_1_1Message_17785c2b6d507a324c48336929b2faf3d" compoundref="gtest-message_8h" startline="95" endline="97">Message</referencedby>
+        <referencedby refid="classtesting_1_1Message_1dfe842bea389a49e1864d7e7f54f8fdc" compoundref="gtest-message_8h" startline="115" endline="118">operator&lt;&lt;</referencedby>
+        <referencedby refid="classtesting_1_1Message_1e205ceac5588868de2368db75c26a9cf" compoundref="gtest-message_8h" startline="104" endline="104">~Message</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1Message_12d0cd79d4b67c118d558c4e5a435bc62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::Message::Message</definition>
+        <argsstring>()</argsstring>
+        <name>Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="92" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_17785c2b6d507a324c48336929b2faf3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::Message::Message</definition>
+        <argsstring>(const Message &amp;msg)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="95" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="95" bodyend="97"/>
+        <references refid="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" compoundref="gtest-message_8h" startline="185" endline="187">GetString</references>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_1f7cdc4dce6187411fd1ce5cb96f55d63" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::Message::Message</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="100" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="100" bodyend="102"/>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_1e205ceac5588868de2368db75c26a9cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::Message::~Message</definition>
+        <argsstring>()</argsstring>
+        <name>~Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="104" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="104" bodyend="104"/>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_1dfe842bea389a49e1864d7e7f54f8fdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="115" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="115" bodyend="118"/>
+        <references refid="gtest-internal_8h_1e4bfe31edc2850cacf0d087ee1681e22" compoundref="gtest-internal_8h" startline="96" endline="98">GTestStreamToHelper</references>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_168575c2d7ba8cb70456880e7b8422121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(T *const &amp;pointer)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>pointer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="134" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="134" bodyend="141"/>
+        <references refid="gtest-internal_8h_1e4bfe31edc2850cacf0d087ee1681e22" compoundref="gtest-internal_8h" startline="96" endline="98">GTestStreamToHelper</references>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_1253269cbcb113ee43bd69b2ef7f72140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(BasicNarrowIoManip val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="classtesting_1_1Message_1d6592b46e80a587f99786b9a5a30eb17" kindref="member">BasicNarrowIoManip</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="150" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="150" bodyend="153"/>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_18ea6366f309631bbbb487ebff903f777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="156" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_11a609a356e5b6dbc1a8a7525254d11ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(const wchar_t *wide_c_str)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>wide_c_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="162" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="162" bodyend="164"/>
+        <references refid="classtesting_1_1internal_1_1String_1f1ca1c0fab05b95e63f0cce726567065">testing::internal::String::ShowWideCString</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_19056fdc99c3291e31fd3a0c0a22575ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        <definition>Message&amp; testing::Message::operator&lt;&lt;</definition>
+        <argsstring>(wchar_t *wide_c_str)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>wchar_t *</type>
+          <declname>wide_c_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="165" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="165" bodyend="167"/>
+        <references refid="classtesting_1_1internal_1_1String_1f1ca1c0fab05b95e63f0cce726567065">testing::internal::String::ShowWideCString</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref></type>
+        <definition>internal::String testing::Message::GetString</definition>
+        <argsstring>() const</argsstring>
+        <name>GetString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="185" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="185" bodyend="187"/>
+        <references refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" compoundref="gtest-message_8h" startline="210">ss_</references>
+        <references refid="namespacetesting_1_1internal_15639f5bf1b9983c51ef166207d2c62b8">testing::internal::StrStreamToString</references>
+        <referencedby refid="classtesting_1_1Message_17785c2b6d507a324c48336929b2faf3d" compoundref="gtest-message_8h" startline="95" endline="97">Message</referencedby>
+        <referencedby refid="namespacetesting_165c959bf8be30a10b2a122c50f36305b" compoundref="gtest-message_8h" startline="218" endline="220">testing::operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1Message_13f7cad27f17733b0797950b80810de0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::Message::operator=</definition>
+        <argsstring>(const Message &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="80" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="80" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Message_1d6592b46e80a587f99786b9a5a30eb17" prot="private" virt="non-virtual"><scope>testing::Message</scope><name>BasicNarrowIoManip</name></member>
+      <member refid="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>GetString</name></member>
+      <member refid="classtesting_1_1Message_12d0cd79d4b67c118d558c4e5a435bc62" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>Message</name></member>
+      <member refid="classtesting_1_1Message_17785c2b6d507a324c48336929b2faf3d" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>Message</name></member>
+      <member refid="classtesting_1_1Message_1f7cdc4dce6187411fd1ce5cb96f55d63" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>Message</name></member>
+      <member refid="classtesting_1_1Message_1dfe842bea389a49e1864d7e7f54f8fdc" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_168575c2d7ba8cb70456880e7b8422121" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_1253269cbcb113ee43bd69b2ef7f72140" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_18ea6366f309631bbbb487ebff903f777" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_11a609a356e5b6dbc1a8a7525254d11ae" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_19056fdc99c3291e31fd3a0c0a22575ba" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1Message_13f7cad27f17733b0797950b80810de0c" prot="private" virt="non-virtual"><scope>testing::Message</scope><name>operator=</name></member>
+      <member refid="classtesting_1_1Message_17e03bff5728112914f4c1abba631d25a" prot="private" virt="non-virtual"><scope>testing::Message</scope><name>ss_</name></member>
+      <member refid="classtesting_1_1Message_1e205ceac5588868de2368db75c26a9cf" prot="public" virt="non-virtual"><scope>testing::Message</scope><name>~Message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

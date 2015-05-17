@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="grafo_8h" kind="file">
+    <compoundname>grafo.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">queue</includes>
+    <includedby refid="planta_8h" local="yes">Escritorio/EC3/src/planta.h</includedby>
+    <includedby refid="grafo_8cpp" local="yes">Escritorio/EC3/src/grafo.cpp</includedby>
+    <includedby refid="testgrafo_8cpp" local="yes">Escritorio/EC3/src/testgrafo.cpp</includedby>
+    <incdepgraph>
+      <node id="348">
+        <label>queue</label>
+      </node>
+      <node id="347">
+        <label>cstdlib</label>
+      </node>
+      <node id="346">
+        <label>iostream</label>
+      </node>
+      <node id="345">
+        <label>Escritorio/EC3/src/grafo.h</label>
+        <link refid="grafo.h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="363">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="351">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="362">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="354">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="365">
+        <label>Escritorio/EC3/src/grafo.cpp</label>
+        <link refid="grafo_8cpp"/>
+      </node>
+      <node id="360">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="352">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="355">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="366">
+        <label>Escritorio/EC3/src/testgrafo.cpp</label>
+        <link refid="testgrafo_8cpp"/>
+      </node>
+      <node id="358">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="350">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="361">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="357">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="349">
+        <label>Escritorio/EC3/src/grafo.h</label>
+        <link refid="grafo.h"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structTipoArco" prot="public">TipoArco</innerclass>
+    <innerclass refid="classGrafo" prot="public">Grafo</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="grafo_8h_1fa8a7967855e3d2edac83a77459ac60e" prot="public" static="no">
+        <name>kDepurarGrafos</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable constante utilizada para mostrar o no mensajes de depuracion de programa </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" prot="public" static="no">
+        <name>DEPURAR_GRAFO_MSG</name>
+        <param><defname>msg</defname></param>
+        <initializer>if (kDepurarGrafos){ cout&lt;&lt;msg; cin.get();}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro utilizada para mostrar mensajes de depuracion de programa y retener los mensajes en pantalla </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="grafo_8h_171455579228718609881a5156b723110" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kMaxVert</definition>
+        <argsstring></argsstring>
+        <name>kMaxVert</name>
+        <initializer> 300</initializer>
+        <briefdescription>
+<para>Constante con el numero maximo de vertices que tendra el grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="19" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kInfinito</definition>
+        <argsstring></argsstring>
+        <name>kInfinito</name>
+        <initializer> 9999</initializer>
+        <briefdescription>
+<para>Constante para tratar el valor 9999 como infinito. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="25" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="grafo_8h_191cb155352045d96938a4a803e140268" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kNoValor</definition>
+        <argsstring></argsstring>
+        <name>kNoValor</name>
+        <initializer> -1</initializer>
+        <briefdescription>
+<para>Constante para tratar el valor -1 como ausencia de valor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="grafo_8h_18e423b2f186557a37affc95091e047cb" prot="public" static="no">
+        <type>int</type>
+        <definition>TipoNodoGrafo</definition>
+        <argsstring></argsstring>
+        <name>TipoNodoGrafo</name>
+        <briefdescription>
+<para>Tipo referente a los nodos del grafo.(entero). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_1100ccbbce021b9022905e74b443960e3" prot="public" static="no">
+        <type>int</type>
+        <definition>TipoArcoGrafo</definition>
+        <argsstring></argsstring>
+        <name>TipoArcoGrafo</name>
+        <briefdescription>
+<para>Tipo referente al valor de los arcos del grafo.(entero). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="60" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" prot="public" static="no">
+        <type><ref refid="grafo_8h_1100ccbbce021b9022905e74b443960e3" kindref="member">TipoArcoGrafo</ref></type>
+        <definition>TipoMatrizAdyacencia</definition>
+        <argsstring>[kMaxVert][kMaxVert]</argsstring>
+        <name>TipoMatrizAdyacencia</name>
+        <briefdescription>
+<para>Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar la matriz de adyacencia del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="66" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" prot="public" static="no">
+        <type>bool</type>
+        <definition>TipoMatrizBooleana</definition>
+        <argsstring>[kMaxVert][kMaxVert]</argsstring>
+        <name>TipoMatrizBooleana</name>
+        <briefdescription>
+<para>Matriz de bool de tamaño kMaxVert x kMaxVert. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="72" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_1e05f8d1796227eaf9027828807e77936" prot="public" static="no">
+        <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+        <definition>TipoVectorNodos</definition>
+        <argsstring>[kMaxVert]</argsstring>
+        <name>TipoVectorNodos</name>
+        <briefdescription>
+<para>Tipo que representa un vector estatico de nodos de tamaño kMaxVert. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="78" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" prot="public" static="no">
+        <type>queue&lt; <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &gt;</type>
+        <definition>TipoCjtoNodos</definition>
+        <argsstring></argsstring>
+        <name>TipoCjtoNodos</name>
+        <briefdescription>
+<para>Cola para almacenar nodos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="88" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="grafo_8h_1bd67fd90183cf2cea5f41d88b098ba97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Maximo</definition>
+        <argsstring>(const int &amp;a, const int &amp;b)</argsstring>
+        <name>Maximo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion auxiliar que halla el máximo de dos enteros <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>primer entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximo de los 2, el segundo si son iguales </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="100" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="380" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="grafo_8h_1ad08456ae6cb5f9aaaee75537f6ef90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Minimo</definition>
+        <argsstring>(const int &amp;a, const int &amp;b)</argsstring>
+        <name>Minimo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion auxiliar que halla el mínimo de dos enteros <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>primer entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>minimo de los 2, el segundo si son iguales </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="101" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="393" bodyend="398"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declaracion de la clase grafo. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>11-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>GRAFO_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GRAFO_H</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="19" refid="grafo_8h_171455579228718609881a5156b723110" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref><sp/>=<sp/>300;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref><sp/>=<sp/>9999;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="grafo_8h_191cb155352045d96938a4a803e140268" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_191cb155352045d96938a4a803e140268" kindref="member" tooltip="Constante para tratar el valor -1 como ausencia de valor.">kNoValor</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="grafo_8h_1fa8a7967855e3d2edac83a77459ac60e" refkind="member"><highlight class="preprocessor">#define<sp/>kDepurarGrafos<sp/>0</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="48" refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" refkind="member"><highlight class="preprocessor">#define<sp/>DEPURAR_GRAFO_MSG(msg)<sp/>if<sp/>(kDepurarGrafos){<sp/>cout&lt;&lt;msg;<sp/>cin.get();}</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="54" refid="grafo_8h_18e423b2f186557a37affc95091e047cb" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="grafo_8h_1100ccbbce021b9022905e74b443960e3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_1100ccbbce021b9022905e74b443960e3" kindref="member" tooltip="Tipo referente al valor de los arcos del grafo.(entero).">TipoArcoGrafo</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_1100ccbbce021b9022905e74b443960e3" kindref="member" tooltip="Tipo referente al valor de los arcos del grafo.(entero).">TipoArcoGrafo</ref><sp/><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>][<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member" tooltip="Matriz de bool de tamaño kMaxVert x kMaxVert.">TipoMatrizBooleana</ref><sp/>[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>][<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="grafo_8h_1e05f8d1796227eaf9027828807e77936" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="grafo_8h_1e05f8d1796227eaf9027828807e77936" kindref="member" tooltip="Tipo que representa un vector estatico de nodos de tamaño kMaxVert.">TipoVectorNodos</ref>[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Para<sp/>calcular<sp/>los<sp/>adyacentes<sp/>a<sp/>un<sp/>nodo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>queue&lt;TipoNodoGrafo&gt;<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structTipoArco" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structTipoArco" kindref="compound" tooltip="Tipo que representa un arco, con su origen "x" y su destino "y".">TipoArco</ref>{</highlight></codeline>
+<codeline lineno="95" refid="structTipoArco_1e8c5ce405fb4d5f3787fd6a0b0f39320" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="structTipoArco_1e8c5ce405fb4d5f3787fd6a0b0f39320" kindref="member" tooltip="Nodo de origen del arco.">x</ref>;<sp/></highlight></codeline>
+<codeline lineno="96" refid="structTipoArco_12d2138f47d0cbefb0f8d4ad91952955a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="structTipoArco_12d2138f47d0cbefb0f8d4ad91952955a" kindref="member" tooltip="Nodo de destino del arco.">y</ref>;<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8cpp_1bd67fd90183cf2cea5f41d88b098ba97" kindref="member">Maximo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;b);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8cpp_1ad08456ae6cb5f9aaaee75537f6ef90a" kindref="member">Minimo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;b);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classGrafo" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="classGrafo_1d3c8b45fb50abc45e49d42ef78b79ee7" kindref="member">Grafo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112" refid="classGrafo_15321811e9af692715820ae9bd6423637" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_15321811e9af692715820ae9bd6423637" kindref="member" tooltip="Metodo que devuelve el numero de nodos del grafo.">get_num_nodos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>;<sp/>}<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_100c241c3e011cb2b67e24ee803b30662" kindref="member">EsVacio</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_15ff1c53f81913e5cdb13d6b1077c667f" kindref="member">set_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;valor);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1202743d0396c9ccd66a16797a95a2a20" kindref="member">del_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" kindref="member">Adyacente</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classGrafo_16f7d1daa75771801a8cb5b15869ba72d" kindref="member">get_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16333bfcd9102154c2ca00effd457ac76" kindref="member">set_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;n);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_163e6892c0bad12eb9c9d969462356ecf" kindref="member">del_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1344e71ffc946fe568abd87be23081a94" kindref="member">get_warshall_path</ref>(<ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member" tooltip="Matriz de bool de tamaño kMaxVert x kMaxVert.">TipoMatrizBooleana</ref><sp/>&amp;WP)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1ea3df48d2408f0a4b4e60876e5220ff6" kindref="member">get_floyd_path</ref>(<ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>&amp;FP)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1012df6698661eb60303cf0bdb3977044" kindref="member">get_floyd_cost</ref>(<ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>&amp;FC)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;N)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------<sp/>Metodos<sp/>para<sp/>mostrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_15c365de560d70bb0f943827be01e3a6a" kindref="member">MostrarArcos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f398482951c2d0d9ed485ae3a737158c" kindref="member">MostrarNodos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_112cff6a9e93b23ab60eb5d5d12f8e218" kindref="member">MostrarPW</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_12c46ec74829edbedd9edd09f0a2d5919" kindref="member">MostrarFloydC</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_12612ac12da97ad8c1de4046521dfd41a" kindref="member">MostrarEnProfundidad</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_18977179d2a324518ae9c5739ed73f3b0" kindref="member">MostrarEnAnchura</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------<sp/>Algoritmos<sp/>sobre<sp/>Grafos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1c8c3d8903ad014b5b6e7540e46a81cb6" kindref="member">Warshall</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16ea9d2c7f7ebf7ae473d0bc42041cb4f" kindref="member">Floyd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_14c0ba27c2dd5a3677e66af2acdb348e4" kindref="member">Siguiente</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>destino,<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;sig)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight><highlight class="comment">//NO<sp/>&amp;destino<sp/>(debido<sp/>a<sp/>recursividad)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_125a7ac274277ddc0861a03785f29ec87" kindref="member">Adyacentes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;ady)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="classGrafo_1901231e4cb7c93017e36b7491e2db26c" kindref="member">MayorGrado</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;grado)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1a33a7c07992fbf47a0125701f6fd729a" kindref="member">MasDistantes</ref>(<ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;a,<ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_19d6cbd612abdef73a92f6fb120eb4946" kindref="member">MasCorto</ref>(<ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref>&amp;a,<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_11e658641dd50ffafdbaa0a1a16035bfe" kindref="member">ANSaltos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo,<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;nodos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;distancia)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1759e2bb306cf3830a2fdd66d6de1a62f" kindref="member">Excentricidad</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="classGrafo_1352046b0d3e115ac6e013657b4cead0e" kindref="member">Centro</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_144b9f53140ae14ad60054104c105fc34" kindref="member">ExisteCiclo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="classGrafo_1a10916bc791b8c23a52309107d104932" kindref="member">operator &lt;&lt;</ref>(ostream<sp/>&amp;flujo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref><sp/>&amp;G);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_19d0eb1c3977698da6d05cd8b0d1d9c0c" kindref="member">ObtenerEnProf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>],<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;prof)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f085eaf3d58dbcdaa78f0514f9b42d40" kindref="member">ObtenerEnAnch</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>],<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;anch)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="152" refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1e05f8d1796227eaf9027828807e77936" kindref="member" tooltip="Tipo que representa un vector estatico de nodos de tamaño kMaxVert.">TipoVectorNodos</ref><sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member" tooltip="Matriz de bool de tamaño kMaxVert x kMaxVert.">TipoMatrizBooleana</ref><sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>;</highlight></codeline>
+<codeline lineno="157" refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>;</highlight></codeline>
+<codeline lineno="158" refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/grafo.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="genaleatorios_8cpp" kind="file">
+    <compoundname>genaleatorios.cpp</compoundname>
+    <includes refid="genaleatorios_8h" local="yes">genaleatorios.h</includes>
+    <incdepgraph>
+      <node id="317">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>Escritorio/EC3/src/genaleatorios.cpp</label>
+        <link refid="genaleatorios.cpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementación de la clase <ref refid="classGenAleatorios" kindref="compound">GenAleatorios</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Profesores</bold> LPII <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="genaleatorios_8h" kindref="compound" tooltip="Implementación de la clase GenAleatorios.">genaleatorios.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Inicialización<sp/>de<sp/>la<sp/>única<sp/>instancia<sp/>de<sp/>la<sp/>clase<sp/>que<sp/>existe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="classGenAleatorios" kindref="compound" tooltip="Permite generar números aleatorios dentro de un rango determinado.">GenAleatorios</ref>*<sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">GenAleatorios::instancia</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="classGenAleatorios_1bf8654f8ff5bf388a0a5f03f6984fdfc" kindref="member">GenAleatorios::GenAleatorios</ref>(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inicialización<sp/>de<sp/>la<sp/>semilla<sp/>para<sp/>generar<sp/>los<sp/>números<sp/>aleatorios</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(this-&gt;SEMILLA);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inicialización<sp/>del<sp/>atributo<sp/>que<sp/>cuenta<sp/>cuántos<sp/>números<sp/>aleatorios<sp/>se<sp/>han<sp/>generado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGenAleatorios_1584a6c1aea4dd394d8c0de7e333857f6" kindref="member" tooltip="Contador de números aleatorios generados.">numGenerados</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios_18c9cb059ca18f36c5810d64b6f1b70f0" kindref="member">GenAleatorios::generarNumero</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>limiteRango){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>==<sp/>NULL)<sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios" kindref="compound" tooltip="Permite generar números aleatorios dentro de un rango determinado.">GenAleatorios</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref>-&gt;<ref refid="classGenAleatorios_1584a6c1aea4dd394d8c0de7e333857f6" kindref="member" tooltip="Contador de números aleatorios generados.">numGenerados</ref>++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rand()<sp/>%<sp/>limiteRango);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios_1ec36e68adb22469824733ee76b67d766" kindref="member">GenAleatorios::numerosGenerados</ref>(){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>==<sp/>NULL)<sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios" kindref="compound" tooltip="Permite generar números aleatorios dentro de un rango determinado.">GenAleatorios</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref>-&gt;<ref refid="classGenAleatorios_1584a6c1aea4dd394d8c0de7e333857f6" kindref="member" tooltip="Contador de números aleatorios generados.">numGenerados</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios_1cf3fedd25338479f79b83f4b7ded39c3" kindref="member">GenAleatorios::destruir</ref>(){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>!=<sp/>NULL)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;-<sp/>Destruyendo<sp/>instancia<sp/>generador<sp/>aleatorios<sp/>-&quot;<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGenAleatorios_1832bc9078b4d400498802f118e8bb5a8" kindref="member" tooltip="Instancia de la propia clase (sólo habrá una en el sistema).">instancia</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="classGenAleatorios_186186428323af5ee809de88721851861" kindref="member">GenAleatorios::~GenAleatorios</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/genaleatorios.cpp"/>
+  </compounddef>
+</doxygen>

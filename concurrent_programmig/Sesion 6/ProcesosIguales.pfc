@@ -1,0 +1,37 @@
+program ProcesosIguales;
+
+var
+   canales:array[1..5,1..5] of channel of integer;
+process type proceso(id,num:integer);
+  var n,i,j,aux, contador:integer;
+      enviados:array[1..5] of boolean;
+  begin
+      contador := 0;
+      for aux:=1 to 5 do
+          enviados[aux]:=false;
+      for n:=1 to 8 do
+      select
+            for i:=1 to 5 replicate
+                when not enviados[i] =>
+                     canales[id][i] ! num;
+                     enviados[i] :=true;
+            or
+            for j:=1 to 5 replicate
+                canales[j][id] ? aux;
+                if aux = num then
+                   contador:=contador+1;
+      end;
+      writeln(id,' dice: hay ',contador,' como yo!');
+  end;
+var
+   procesos: array[1..5] of proceso;
+   i:integer;
+begin
+  cobegin
+         procesos[1](1,2);
+         procesos[2](2,2);
+         procesos[3](3,3);
+         procesos[4](4,3);
+         procesos[5](5,3);
+  coend;
+end.

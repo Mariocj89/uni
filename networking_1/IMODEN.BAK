@@ -1,0 +1,26 @@
+
+#ifndef IMODEM_H
+#define IMODEM_H
+
+#include "string.h"
+#include "COMDOS.H"
+
+#include "area.h"
+
+
+class IModem{
+   public:
+	IModem();
+	static void Iniciar();
+
+
+
+   private:
+
+
+
+
+}
+
+#endif //IMODEM_H
+

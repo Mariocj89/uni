@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPrision" kind="class" prot="public">
+    <compoundname>Prision</compoundname>
+    <includes refid="prision_8h" local="no">prision.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classPrision_11eb513ef25f72b55c20f35007edabc8b" prot="private" static="yes" mutable="no">
+        <type><ref refid="classPrision" kindref="compound">Prision</ref> *</type>
+        <definition>Prision * Prision::instancia_</definition>
+        <argsstring></argsstring>
+        <name>instancia_</name>
+        <initializer> NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que obtiene el turno actual de la simulacion <linebreak/>
+ * <simplesect kind="return"><para>turno de la simulacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPrision_1a4a1d11a59f4c03c80493927ded230bf" prot="private" static="no" mutable="no">
+        <type>list&lt; <ref refid="classPersona" kindref="compound">Persona</ref> * &gt;</type>
+        <definition>list&lt;Persona*&gt; Prision::celda_castigo_</definition>
+        <argsstring></argsstring>
+        <name>celda_castigo_</name>
+        <briefdescription>
+<para>Lista de las personas almacenadas en la celda de castigo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="53" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPrision_1ca386e5c333f80b5cee1ee678d6859f4" prot="private" static="no" mutable="no">
+        <type>list&lt; <ref refid="classPersona" kindref="compound">Persona</ref> * &gt;</type>
+        <definition>list&lt;Persona*&gt; Prision::fugados_</definition>
+        <argsstring></argsstring>
+        <name>fugados_</name>
+        <briefdescription>
+<para>Lista de personas que se han fugado. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPrision_1faaa9958fc4848607ae84709e0984101" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Prision::turno_</definition>
+        <argsstring></argsstring>
+        <name>turno_</name>
+        <briefdescription>
+<para>Entero que almacena el turno actual de la simulacion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classPrision_169eed05859f7f338cb200ef2dfdc8d05" compoundref="prision_8h" startline="47" endline="47">get_turno</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPrision_1620a8c402f03da4cdf93004eab3179c9" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classPlanta" kindref="compound">Planta</ref> * &gt; *</type>
+        <definition>vector&lt;Planta*&gt;* Prision::plantas_</definition>
+        <argsstring></argsstring>
+        <name>plantas_</name>
+        <briefdescription>
+<para>Vector que contiene todas las plantas de la prision. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="56" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPrision_1a62c797daed7c29aa6a4cda35e4d6543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Prision::~Prision</definition>
+        <argsstring>()</argsstring>
+        <name>~Prision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase planta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="28" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_101a3dc1399ddf80453e3f93c95c971b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::set_planta</definition>
+        <argsstring>(Planta *p)</argsstring>
+        <name>set_planta</name>
+        <param>
+          <type><ref refid="classPlanta" kindref="compound">Planta</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_156a0a7eae363c587c04922dde613ca84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_numero_plantas</definition>
+        <argsstring>() const</argsstring>
+        <name>get_numero_plantas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el numero de plantas <simplesect kind="return"><para>numero de plantas </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_139bb839541f452289be3215ac7c9d4b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPlanta" kindref="compound">Planta</ref> *</type>
+        <definition>Planta * Prision::get_planta</definition>
+        <argsstring>(const int &amp;posicion) const</argsstring>
+        <name>get_planta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extrae la planta en la posicion indicada, null si no exite <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion indicada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>planta buscada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_1878f3ec84a96b71263251cc0b0bea362" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::MostrarPrision</definition>
+        <argsstring>() const</argsstring>
+        <name>MostrarPrision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra todas las plantas de la prision </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="33" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_17446ac4094d9a93a0542d567a92e95e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::Destruir</definition>
+        <argsstring>()</argsstring>
+        <name>Destruir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_1ac30af72defaeddd1d534f8762116b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::set_persona</definition>
+        <argsstring>(const int &amp;planta, const int &amp;pos, Persona *p)</argsstring>
+        <name>set_persona</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una persona en la prision <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta en la que insertarla </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que insertarla </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>persona a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_10a4c122c6743e7fab7a5b62c05e79dd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::ocupacion_celda</definition>
+        <argsstring>(const int &amp;planta, const int &amp;celda) const</argsstring>
+        <name>ocupacion_celda</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>celda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la ocupacion de una celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta en la que se encuentra la celda buscada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>celda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda buscada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ocupacion de la celda buscada (-1 si error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="36" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="134" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_167c18411597da6386892fff0a046e3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Prision::sacar_persona</definition>
+        <argsstring>(const int &amp;planta, const int celda)</argsstring>
+        <name>sacar_persona</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>celda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene y borra la primera persona de la celda indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta indicada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>celda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda indicada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>primera persona de la planta (NULL si no hay) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="37" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_11969c3f8073eabb4343529a10287e2a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Prision::get_persona</definition>
+        <argsstring>(const int &amp;planta, const int &amp;celda) const</argsstring>
+        <name>get_persona</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>celda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la primera persona de la celda indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta indicada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>celda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda indicada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>primera persona de la planta (NULL si no hay) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_12c7faa2a038b1fdfc45eb6469c9d7acc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_ancho_planta</definition>
+        <argsstring>(const int &amp;planta) const </argsstring>
+        <name>get_ancho_planta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el ancho de una planta indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta de la que obtener el ancho </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ancho de la planta indicada(-1 en caso de error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="39" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_115faba9849c3836b7380f6bf7a06caca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_alto_planta</definition>
+        <argsstring>(const int &amp;planta) const </argsstring>
+        <name>get_alto_planta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el alto de la planta indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta de la que obtener el alto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>alto de la planta (-1 si error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_1a6ef2f3c44c5d2ff1ad1e8c3899ea7c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_entrada_panta</definition>
+        <argsstring>(const int &amp;planta) const </argsstring>
+        <name>get_entrada_panta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la entrada de la planta indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta de la que obtener la posicion de la entrada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>posicion de la entrada (-1 si error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="41" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_1582cc08fb4f7c12e9010b0e31f5a6bf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_salida_planta</definition>
+        <argsstring>(const int &amp;planta) const </argsstring>
+        <name>get_salida_planta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>planta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la salida de la planta indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta de la que obtener la posicion de la salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>posicion de la salida (-1 si error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="191" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_1458e85aca8aee3aa41ae16753093a5f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::meter_celda_castigo</definition>
+        <argsstring>(Persona *p)</argsstring>
+        <name>meter_celda_castigo</name>
+        <param>
+          <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mete un preso en la celda de castigo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>persona a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="43" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_11a5595f579bfab6b95308707365b472a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::meter_en_fugados</definition>
+        <argsstring>(Persona *p)</argsstring>
+        <name>meter_en_fugados</name>
+        <param>
+          <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mete un preso en la lista que almacena los presos que se ha fugado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>presos fugados </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_161926ad8f4236bc9bc4598779bc017ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Prision::IniciarSimulacion</definition>
+        <argsstring>()</argsstring>
+        <name>IniciarSimulacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inicia la simulacion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="223" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrision_169eed05859f7f338cb200ef2dfdc8d05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Prision::get_turno</definition>
+        <argsstring>()</argsstring>
+        <name>get_turno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="47" bodyend="47"/>
+        <references refid="classPrision_1faaa9958fc4848607ae84709e0984101" compoundref="prision_8h" startline="55">turno_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classPrision_125471045152afdba8a74f273f8f7ebab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPrision" kindref="compound">Prision</ref> *</type>
+        <definition>Prision * Prision::get_instancia</definition>
+        <argsstring>()</argsstring>
+        <name>get_instancia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la instancia de la clase <ref refid="classPrision" kindref="compound">Prision</ref>, si no existe la crea. <simplesect kind="return"><para>instancia de la clase prision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPrision_16bee875b59952faf2eba1e7cfe1c19f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Prision::Prision</definition>
+        <argsstring>()</argsstring>
+        <name>Prision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase prision </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="51" bodyfile="/home/Mario/Escritorio/EC3/src/prision.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase con un modelo singleton que controla la prision. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="157">
+        <label>Prision</label>
+        <link refid="classPrision"/>
+        <childnode refid="157" relation="usage">
+          <edgelabel>instancia_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="26" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="26" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classPrision_1a4a1d11a59f4c03c80493927ded230bf" prot="private" virt="non-virtual"><scope>Prision</scope><name>celda_castigo_</name></member>
+      <member refid="classPrision_17446ac4094d9a93a0542d567a92e95e7" prot="public" virt="non-virtual"><scope>Prision</scope><name>Destruir</name></member>
+      <member refid="classPrision_1ca386e5c333f80b5cee1ee678d6859f4" prot="private" virt="non-virtual"><scope>Prision</scope><name>fugados_</name></member>
+      <member refid="classPrision_115faba9849c3836b7380f6bf7a06caca" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_alto_planta</name></member>
+      <member refid="classPrision_12c7faa2a038b1fdfc45eb6469c9d7acc" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_ancho_planta</name></member>
+      <member refid="classPrision_1a6ef2f3c44c5d2ff1ad1e8c3899ea7c2" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_entrada_panta</name></member>
+      <member refid="classPrision_125471045152afdba8a74f273f8f7ebab" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_instancia</name></member>
+      <member refid="classPrision_156a0a7eae363c587c04922dde613ca84" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_numero_plantas</name></member>
+      <member refid="classPrision_11969c3f8073eabb4343529a10287e2a0" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_persona</name></member>
+      <member refid="classPrision_139bb839541f452289be3215ac7c9d4b8" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_planta</name></member>
+      <member refid="classPrision_1582cc08fb4f7c12e9010b0e31f5a6bf3" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_salida_planta</name></member>
+      <member refid="classPrision_169eed05859f7f338cb200ef2dfdc8d05" prot="public" virt="non-virtual"><scope>Prision</scope><name>get_turno</name></member>
+      <member refid="classPrision_161926ad8f4236bc9bc4598779bc017ff" prot="public" virt="non-virtual"><scope>Prision</scope><name>IniciarSimulacion</name></member>
+      <member refid="classPrision_11eb513ef25f72b55c20f35007edabc8b" prot="private" virt="non-virtual"><scope>Prision</scope><name>instancia_</name></member>
+      <member refid="classPrision_1458e85aca8aee3aa41ae16753093a5f0" prot="public" virt="non-virtual"><scope>Prision</scope><name>meter_celda_castigo</name></member>
+      <member refid="classPrision_11a5595f579bfab6b95308707365b472a" prot="public" virt="non-virtual"><scope>Prision</scope><name>meter_en_fugados</name></member>
+      <member refid="classPrision_1878f3ec84a96b71263251cc0b0bea362" prot="public" virt="non-virtual"><scope>Prision</scope><name>MostrarPrision</name></member>
+      <member refid="classPrision_10a4c122c6743e7fab7a5b62c05e79dd4" prot="public" virt="non-virtual"><scope>Prision</scope><name>ocupacion_celda</name></member>
+      <member refid="classPrision_1620a8c402f03da4cdf93004eab3179c9" prot="private" virt="non-virtual"><scope>Prision</scope><name>plantas_</name></member>
+      <member refid="classPrision_16bee875b59952faf2eba1e7cfe1c19f4" prot="private" virt="non-virtual"><scope>Prision</scope><name>Prision</name></member>
+      <member refid="classPrision_167c18411597da6386892fff0a046e3b5" prot="public" virt="non-virtual"><scope>Prision</scope><name>sacar_persona</name></member>
+      <member refid="classPrision_1ac30af72defaeddd1d534f8762116b8a" prot="public" virt="non-virtual"><scope>Prision</scope><name>set_persona</name></member>
+      <member refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" prot="public" virt="non-virtual"><scope>Prision</scope><name>set_planta</name></member>
+      <member refid="classPrision_1faaa9958fc4848607ae84709e0984101" prot="private" virt="non-virtual"><scope>Prision</scope><name>turno_</name></member>
+      <member refid="classPrision_1a62c797daed7c29aa6a4cda35e4d6543" prot="public" virt="non-virtual"><scope>Prision</scope><name>~Prision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

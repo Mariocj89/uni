@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPuerta" kind="class" prot="public">
+    <compoundname>Puerta</compoundname>
+    <includes refid="puerta_8h" local="no">puerta.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPuerta_1d57517192d6fceea23d94dc0b086e1b7" prot="private" static="no" mutable="no">
+        <type><ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c" kindref="member">TipoEstado</ref></type>
+        <definition>TipoEstado Puerta::estado_</definition>
+        <argsstring></argsstring>
+        <name>estado_</name>
+        <briefdescription>
+<para>atributo que nos indica si la puerta esta NOCONFIGURADA(0), CERRADA(1) o ABIERTA(2) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="63" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuerta_1603f11fb3dd40a96fd9a55bf069d7c4d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Puerta::altura_</definition>
+        <argsstring></argsstring>
+        <name>altura_</name>
+        <briefdescription>
+<para>atributo que inidica la altura que no debe superar el arbol para poder abrir la puerta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="64" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuerta_1dd1a6210a20da838fc81a489f0473c81" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt;Llave*&gt;* Puerta::combinacion_</definition>
+        <argsstring></argsstring>
+        <name>combinacion_</name>
+        <briefdescription>
+<para>atributo tipo arbol binario de busqueda que alamacena la combinacion correcta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="65" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuerta_1a906197a4305ae1155e8b5ca6736fea2" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt;Llave*&gt;* Puerta::probadas_</definition>
+        <argsstring></argsstring>
+        <name>probadas_</name>
+        <briefdescription>
+<para>atributo tipo arbol binario de busqueda que almacena las llaves probadas en la puerta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="66" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuerta_15eff2b829879b69f07fdc3f6c5720897" prot="private" static="no" mutable="no">
+        <type><ref refid="classColaGen" kindref="compound">ColaGen</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>ColaGen&lt;Llave*&gt;* Puerta::copia_combinacion_</definition>
+        <argsstring></argsstring>
+        <name>copia_combinacion_</name>
+        <briefdescription>
+<para>atributo que contiene una copia de la combinacion secreta para poder reconfigur la puerta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="67" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPuerta_1d5c064d8f7c8662e9566afe74b273f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Puerta::Puerta</definition>
+        <argsstring>()</argsstring>
+        <name>Puerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classPuerta" kindref="compound">Puerta</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="17" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_1862e751796c6a34e1143999793f861af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Puerta::Puerta</definition>
+        <argsstring>(const int &amp;alt)</argsstring>
+        <name>Puerta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>alt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classPuerta" kindref="compound">Puerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro que se copiara al atributo altura_ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="43" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_189e7530ca0c24ce3110c68dfbfd5019f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Puerta::Configurar</definition>
+        <argsstring>(ColaGen&lt; Llave * &gt; *cop)</argsstring>
+        <name>Configurar</name>
+        <param>
+          <type><ref refid="classColaGen" kindref="compound">ColaGen</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+          <declname>cop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copia de una cola a copia_combinacion_ todas las llaves <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro desde el cual se va a copiar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="43" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_11512476a99d735fe79657733c9180faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Puerta::ProbarLlave</definition>
+        <argsstring>(Llave *L)</argsstring>
+        <name>ProbarLlave</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prueba una llave: intenta insertarla en probadas, si no puede(por que ya se encuentra en probadas) llama al metodo de alerta, si no se encuentra en probadas pero si en combinacion, la elimina de combinacion, la inserta en probadas y devuelve true y si no se enceutra en ninguna de las 2, la inserta en probadas y devuelve false <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>puntero a llavellave que queremos probar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si pertenece a la combinacion y no ha sido probada previamente, false si no se encuentra en la combinacion o a sido probada previamente. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="86" bodyend="103"/>
+        <referencedby refid="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" compoundref="planta_8h" startline="79" endline="79">Planta::ProbarLlave</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_163a48f11c6c76da1b38baee281f1699a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Puerta::ProbarLlave</definition>
+        <argsstring>(const Llave &amp;L2)</argsstring>
+        <name>ProbarLlave</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prueba una llave: intenta insertarla en probadas, si no puede(por que ya se encuentra en probadas) llama al metodo de alerta, si no se encuentra en probadas pero si en combinacion, la elimina de combinacion, la inserta en probadas y devuelve true y si no se enceutra en ninguna de las 2, la inserta en probadas y devuelve false <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llave que queremos probar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si pertenece a la combinacion y no ha sido probada previamente, false si no se encuentra en la combinacion o a sido probada previamente. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="46" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="112" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_12819c557f9e872958fa6ba43b639b2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Puerta::Abrir</definition>
+        <argsstring>()</argsstring>
+        <name>Abrir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intenta abrir una puerta comprobando si se cumplen las condiciones. <simplesect kind="return"><para>true si se consigue abrir correctamente, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="136" bodyend="145"/>
+        <referencedby refid="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" compoundref="planta_8h" startline="80" endline="80">Planta::AbrirPuerta</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_129ee270aaf40fdd8f74a7d82c51e8d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Puerta::Cerrar</definition>
+        <argsstring>()</argsstring>
+        <name>Cerrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que cierra la puerta, copiando la configuracion desde copia_configuracion_ a configuracion_ y borra el arbol de probadas_ <simplesect kind="return"><para>true si esta abierta y se cierra, false en otro caso </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="151" bodyend="162"/>
+        <referencedby refid="classPlanta_1ae61a9e6eb3a10da3d95568537105263" compoundref="planta_8h" startline="81" endline="81">Planta::CerrarPuerta</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_17d74afd1b3a6ac6cf4ecb8638e45c580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt; Llave * &gt; * Puerta::get_combinacion</definition>
+        <argsstring>()</argsstring>
+        <name>get_combinacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el atributo combinacion_, que es un arbol <simplesect kind="return"><para>arbol con combinacion_ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="49" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_16c08e9b6968fabe0a9f7dc0d5f2615df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt; Llave * &gt; * Puerta::get_probadas</definition>
+        <argsstring>()</argsstring>
+        <name>get_probadas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el atributo probadas_, que es un arbol <simplesect kind="return"><para>arbol con probadas_ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_16114debbfb5484e955661839fcb7d650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classColaGen" kindref="compound">ColaGen</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>ColaGen&lt; Llave * &gt; * Puerta::get_copia_combinacion</definition>
+        <argsstring>()</argsstring>
+        <name>get_copia_combinacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene copia_combinacion <simplesect kind="return"><para>cola generica de punteros a llaves con copia_combinacion_ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="51" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_189cbff52e02af4f4357d6d4e5cfbe4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c" kindref="member">TipoEstado</ref></type>
+        <definition>TipoEstado Puerta::get_estado</definition>
+        <argsstring>()</argsstring>
+        <name>get_estado</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve el estado de la puerta (0-NOCONFIGURAR, 1-CERRADA, 2-ABIERTA) <simplesect kind="return"><para>Tipoestado con la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="195" bodyend="198"/>
+        <referencedby refid="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" compoundref="planta_8h" startline="82" endline="82">Planta::EstadoPuerta</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPuerta_1acdd5b061defc91d6de1c6d2ab8d58ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Puerta::~Puerta</definition>
+        <argsstring>()</argsstring>
+        <name>~Puerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classPuerta" kindref="compound">Puerta</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="58" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="203" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classPuerta_1516b51c884e82a945ca7bbebe4973467" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Puerta::Alarma</definition>
+        <argsstring>()</argsstring>
+        <name>Alarma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo en respuesta a que se han probado 2 veces la misma llave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="53" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPuerta_1a270c39be551d05e243428b241868eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Puerta &amp;P)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classPuerta" kindref="compound">Puerta</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo al que se le pasara la informacion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classPuerta" kindref="compound">Puerta</ref> a mostrar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con los datos </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="238" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPuerta_18f9b4490249197f5c9d39d50fd85edd8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Puerta::set_combinacion</definition>
+        <argsstring>()</argsstring>
+        <name>set_combinacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copia la combinacion desde copia_combinacion_ <simplesect kind="return"><para>true si en copia_combinacion_ hay datos, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="61" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.cpp" bodystart="60" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase representa los atributos y metodos de puertas. </para>    </briefdescription>
+    <detaileddescription>
+<para>La clase puerta contendra un entero con el identificador de cada llave, usado mas adelante en las puertas, 2 arboles binarios de busqueda y una cola con llaves </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="159">
+        <label>Puerta</label>
+        <link refid="classPuerta"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>probadas_
+combinacion_</edgelabel>
+        </childnode>
+        <childnode refid="162" relation="usage">
+          <edgelabel>copia_combinacion_</edgelabel>
+        </childnode>
+      </node>
+      <node id="164">
+        <label>T</label>
+      </node>
+      <node id="160">
+        <label>Arbol&lt; Llave * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>hder_
+hizq_</edgelabel>
+        </childnode>
+        <childnode refid="161" relation="usage">
+          <edgelabel>dato_raiz_</edgelabel>
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="163">
+        <label>ColaGen&lt; T &gt;::TipoNodo</label>
+        <link refid="structColaGen_1_1TipoNodo"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>sig_</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>dato_</edgelabel>
+        </childnode>
+      </node>
+      <node id="162">
+        <label>ColaGen&lt; Llave * &gt;</label>
+        <link refid="classColaGen"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>fin_
+frente_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/puerta.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/puerta.h" bodystart="40" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classPuerta_12819c557f9e872958fa6ba43b639b2bb" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Abrir</name></member>
+      <member refid="classPuerta_1516b51c884e82a945ca7bbebe4973467" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Alarma</name></member>
+      <member refid="classPuerta_1603f11fb3dd40a96fd9a55bf069d7c4d" prot="private" virt="non-virtual"><scope>Puerta</scope><name>altura_</name></member>
+      <member refid="classPuerta_129ee270aaf40fdd8f74a7d82c51e8d8a" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Cerrar</name></member>
+      <member refid="classPuerta_1dd1a6210a20da838fc81a489f0473c81" prot="private" virt="non-virtual"><scope>Puerta</scope><name>combinacion_</name></member>
+      <member refid="classPuerta_189e7530ca0c24ce3110c68dfbfd5019f" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Configurar</name></member>
+      <member refid="classPuerta_15eff2b829879b69f07fdc3f6c5720897" prot="private" virt="non-virtual"><scope>Puerta</scope><name>copia_combinacion_</name></member>
+      <member refid="classPuerta_1d57517192d6fceea23d94dc0b086e1b7" prot="private" virt="non-virtual"><scope>Puerta</scope><name>estado_</name></member>
+      <member refid="classPuerta_17d74afd1b3a6ac6cf4ecb8638e45c580" prot="public" virt="non-virtual"><scope>Puerta</scope><name>get_combinacion</name></member>
+      <member refid="classPuerta_16114debbfb5484e955661839fcb7d650" prot="public" virt="non-virtual"><scope>Puerta</scope><name>get_copia_combinacion</name></member>
+      <member refid="classPuerta_189cbff52e02af4f4357d6d4e5cfbe4de" prot="public" virt="non-virtual"><scope>Puerta</scope><name>get_estado</name></member>
+      <member refid="classPuerta_16c08e9b6968fabe0a9f7dc0d5f2615df" prot="public" virt="non-virtual"><scope>Puerta</scope><name>get_probadas</name></member>
+      <member refid="classPuerta_1a270c39be551d05e243428b241868eb2" prot="public" virt="non-virtual"><scope>Puerta</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classPuerta_1a906197a4305ae1155e8b5ca6736fea2" prot="private" virt="non-virtual"><scope>Puerta</scope><name>probadas_</name></member>
+      <member refid="classPuerta_11512476a99d735fe79657733c9180faf" prot="public" virt="non-virtual"><scope>Puerta</scope><name>ProbarLlave</name></member>
+      <member refid="classPuerta_163a48f11c6c76da1b38baee281f1699a" prot="public" virt="non-virtual"><scope>Puerta</scope><name>ProbarLlave</name></member>
+      <member refid="classPuerta_1d5c064d8f7c8662e9566afe74b273f69" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Puerta</name></member>
+      <member refid="classPuerta_1862e751796c6a34e1143999793f861af" prot="public" virt="non-virtual"><scope>Puerta</scope><name>Puerta</name></member>
+      <member refid="classPuerta_18f9b4490249197f5c9d39d50fd85edd8" prot="private" virt="non-virtual"><scope>Puerta</scope><name>set_combinacion</name></member>
+      <member refid="classPuerta_1acdd5b061defc91d6de1c6d2ab8d58ac" prot="public" virt="non-virtual"><scope>Puerta</scope><name>~Puerta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

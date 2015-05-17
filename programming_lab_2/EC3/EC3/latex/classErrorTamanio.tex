@@ -1,0 +1,67 @@
+\section{ErrorTamanio Class Reference}
+\label{classErrorTamanio}\index{ErrorTamanio@{ErrorTamanio}}
+{\tt \#include $<$errortamanio.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf ErrorTamanio} (const int \&id)
+\item 
+{\bf $\sim$ErrorTamanio} ()
+\item 
+string {\bf what} (int \&ancho, int \&alto) const
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf id\_\-planta\_\-}
+\begin{CompactList}\small\item\em Identificador de la planta que lanzo el throw. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ErrorTamanio@{ErrorTamanio}!ErrorTamanio@{ErrorTamanio}}
+\index{ErrorTamanio@{ErrorTamanio}!ErrorTamanio@{ErrorTamanio}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ErrorTamanio::ErrorTamanio (const int \& {\em id})}\label{classErrorTamanio_bdbfa9109e8e5be237f166a9c3d415a9}
+
+
+Constructor de la clase \doxyref{ErrorTamanio}{p.}{classErrorTamanio} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]valor con el que inicializar el id\_\-planta\_\- \end{description}
+\end{Desc}
+\index{ErrorTamanio@{ErrorTamanio}!~ErrorTamanio@{$\sim$ErrorTamanio}}
+\index{~ErrorTamanio@{$\sim$ErrorTamanio}!ErrorTamanio@{ErrorTamanio}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ErrorTamanio::$\sim$ErrorTamanio ()}\label{classErrorTamanio_4445403295d4308d5192b05e916c8dd9}
+
+
+Destructor de la clase \doxyref{ErrorTamanio}{p.}{classErrorTamanio} 
+
+\subsection{Member Function Documentation}
+\index{ErrorTamanio@{ErrorTamanio}!what@{what}}
+\index{what@{what}!ErrorTamanio@{ErrorTamanio}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string ErrorTamanio::what (int \& {\em ancho}, int \& {\em alto}) const}\label{classErrorTamanio_45471ee0f66dfc0a2c53089c2348a335}
+
+
+Metodo para procesar la excepcion, devuelve el ancho y el alto que debera tener la planta ademas de un mensaje \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ancho}]nuevo ancho de la planta \item[{\em alto}]nuevo alto de la planta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string con un aviso de la excepcion \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{ErrorTamanio@{ErrorTamanio}!id_planta_@{id\_\-planta\_\-}}
+\index{id_planta_@{id\_\-planta\_\-}!ErrorTamanio@{ErrorTamanio}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf ErrorTamanio::id\_\-planta\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classErrorTamanio_ef15b2ba7020a76a9cc11544c0438dd3}
+
+
+Identificador de la planta que lanzo el throw. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf errortamanio.h}\item 
+Escritorio/EC3/src/{\bf errortamanio.cpp}\end{CompactItemize}

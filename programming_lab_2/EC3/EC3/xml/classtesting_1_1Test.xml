@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1Test" kind="class" prot="public">
+    <compoundname>testing::Test</compoundname>
+    <derivedcompoundref refid="classArbolTest" prot="public" virt="non-virtual">ArbolTest</derivedcompoundref>
+    <derivedcompoundref refid="classCeldaTest" prot="public" virt="non-virtual">CeldaTest</derivedcompoundref>
+    <derivedcompoundref refid="classColaGenTest" prot="public" virt="non-virtual">ColaGenTest</derivedcompoundref>
+    <derivedcompoundref refid="classGrafoTest" prot="public" virt="non-virtual">GrafoTest</derivedcompoundref>
+    <derivedcompoundref refid="classLlaveTest" prot="public" virt="non-virtual">LlaveTest</derivedcompoundref>
+    <derivedcompoundref refid="classPersonaTest" prot="public" virt="non-virtual">PersonaTest</derivedcompoundref>
+    <derivedcompoundref refid="classPuertaTest" prot="public" virt="non-virtual">PuertaTest</derivedcompoundref>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+    <innerclass refid="structtesting_1_1Test_1_1Setup__should__be__spelled__SetUp" prot="package">testing::Test::Setup_should_be_spelled_SetUp</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1Test_15aa7b30faff2d57475f7e9eea1bc8eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::TestInfoImpl</definition>
+        <argsstring></argsstring>
+        <name>internal::TestInfoImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="211" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classtesting_1_1Test_1ccbfb9e722f1f1fef94248d056ed918c" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>testing::Test::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield>SetUpTestCaseFunc SetUpTestCaseFunc</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="215" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1Test_1b4fbbeba80a377c0ab2ea2793c2a2a33" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>testing::Test::__pad1__</definition>
+        <argsstring></argsstring>
+        <name>__pad1__</name>
+        <bitfield>TearDownTestCaseFunc TearDownTestCaseFunc</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="216" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1Test_111223d23ca155b8a85bf63b8f1b0074c" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>testing::Test::__pad2__</definition>
+        <argsstring></argsstring>
+        <name>__pad2__</name>
+        <bitfield>GTestFlagSaver* const gtest_flag_saver_</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="282" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classtesting_1_1Test_1fb788db3d734171957dc11ebe5f1a9cb" prot="package" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::Test::~Test</definition>
+        <argsstring>()</argsstring>
+        <name>~Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_19d4162224b354f9d29e0816d89dde567" prot="package" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structtesting_1_1Test_1_1Setup__should__be__spelled__SetUp" kindref="compound">Setup_should_be_spelled_SetUp</ref> *</type>
+        <definition>virtual Setup_should_be_spelled_SetUp* testing::Test::Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="301" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="301" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_129540d1bf03baf570118c6e56e4ae901" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::Test::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(Test)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1Test" kindref="compound">Test</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="304"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classtesting_1_1Test_123c50ad7f4dd7c23eb7bead09ca1e25b" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::Test::SetUpTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="227" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_1a9a9d7e19e41c660b6880d2d25918726" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::Test::TearDownTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>TearDownTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="235" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_1765821feda4da8debf420af85aa597b5" prot="package" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::Test::HasFatalFailure</definition>
+        <argsstring>()</argsstring>
+        <name>HasFatalFailure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_191032b7a73c1881bbab4db263fa44447" prot="package" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::Test::RecordProperty</definition>
+        <argsstring>(const char *key, const char *value)</argsstring>
+        <name>RecordProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_13992f48623adaaa73107c1b6263cdc56" prot="package" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::Test::RecordProperty</definition>
+        <argsstring>(const char *key, int value)</argsstring>
+        <name>RecordProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="253"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::Test::Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_1aa64e7ad495ea976b98f97a5f3738c35" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Test::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplementedby refid="classPuertaTest_1042e0662ae8c4750bda875799ed23205">SetUp</reimplementedby>
+        <reimplementedby refid="classPersonaTest_1e49bbdf5cebf1ebe26e15fcfbacaa35c">SetUp</reimplementedby>
+        <reimplementedby refid="classLlaveTest_1582fe44f7d7b2aa6df5c415b95ede8e7">SetUp</reimplementedby>
+        <reimplementedby refid="classGrafoTest_17fc48d95e60f64fce936a7213fea2e3c">SetUp</reimplementedby>
+        <reimplementedby refid="classColaGenTest_1f8bcfa3f92ebce820d5a862fa5eca5a7">SetUp</reimplementedby>
+        <reimplementedby refid="classCeldaTest_15ff73c9b8bc9ca8fc62c3acbc8dc0144">SetUp</reimplementedby>
+        <reimplementedby refid="classArbolTest_1a823fbcab8f072ec6737eee597f4856d">SetUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_11f5480b7d2c1067f7bba77a8993cf12f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Test::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplementedby refid="classPuertaTest_1904a39a38b4e64472702662c9ffa258c">TearDown</reimplementedby>
+        <reimplementedby refid="classPersonaTest_1dba37f312fd5ccd6f0a8d3983d756cc8">TearDown</reimplementedby>
+        <reimplementedby refid="classLlaveTest_12c4dd49f094842f2ff5ac3cb1d054d43">TearDown</reimplementedby>
+        <reimplementedby refid="classGrafoTest_1ceaca37aadcf19e25f5d975b50524f23">TearDown</reimplementedby>
+        <reimplementedby refid="classColaGenTest_1400b35cff4bb5eb074025459342ae25f">TearDown</reimplementedby>
+        <reimplementedby refid="classCeldaTest_1694fd2a9195c4618135af2485af87d01">TearDown</reimplementedby>
+        <reimplementedby refid="classArbolTest_14ef59e6e743d7178fc177087ebc41bff">TearDown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="263"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1Test_1b3e94213b33ebf1443b00c11b777ef98" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::Test::HasSameFixtureClass</definition>
+        <argsstring>()</argsstring>
+        <name>HasSameFixtureClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="268"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1Test_17c987a80f78dec5eba1aee0b9bb726a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testing::Test::TestBody</definition>
+        <argsstring>()=0</argsstring>
+        <name>TestBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Test_19cc0df5ee0753f4578f12e0e72c1aa85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::Test::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="196">
+        <label>ColaGenTest</label>
+        <link refid="classColaGenTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>GrafoTest</label>
+        <link refid="classGrafoTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="199">
+        <label>PersonaTest</label>
+        <link refid="classPersonaTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>CeldaTest</label>
+        <link refid="classCeldaTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>ArbolTest</label>
+        <link refid="classArbolTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>LlaveTest</label>
+        <link refid="classLlaveTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>PuertaTest</label>
+        <link refid="classPuertaTest"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="209" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="209" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Test_1ccbfb9e722f1f1fef94248d056ed918c" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>__pad0__</name></member>
+      <member refid="classtesting_1_1Test_1b4fbbeba80a377c0ab2ea2793c2a2a33" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>__pad1__</name></member>
+      <member refid="classtesting_1_1Test_111223d23ca155b8a85bf63b8f1b0074c" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>__pad2__</name></member>
+      <member refid="classtesting_1_1Test_129540d1bf03baf570118c6e56e4ae901" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1Test_1765821feda4da8debf420af85aa597b5" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1Test_1b3e94213b33ebf1443b00c11b777ef98" prot="private" virt="non-virtual"><scope>testing::Test</scope><name>HasSameFixtureClass</name></member>
+      <member refid="classtesting_1_1Test_15aa7b30faff2d57475f7e9eea1bc8eaa" prot="public" virt="non-virtual"><scope>testing::Test</scope><name>internal::TestInfoImpl</name></member>
+      <member refid="classtesting_1_1Test_191032b7a73c1881bbab4db263fa44447" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_13992f48623adaaa73107c1b6263cdc56" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_19cc0df5ee0753f4578f12e0e72c1aa85" prot="private" virt="non-virtual"><scope>testing::Test</scope><name>Run</name></member>
+      <member refid="classtesting_1_1Test_19d4162224b354f9d29e0816d89dde567" prot="package" virt="virtual"><scope>testing::Test</scope><name>Setup</name></member>
+      <member refid="classtesting_1_1Test_1aa64e7ad495ea976b98f97a5f3738c35" prot="protected" virt="virtual"><scope>testing::Test</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Test_123c50ad7f4dd7c23eb7bead09ca1e25b" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1Test_11f5480b7d2c1067f7bba77a8993cf12f" prot="protected" virt="virtual"><scope>testing::Test</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Test_1a9a9d7e19e41c660b6880d2d25918726" prot="package" virt="non-virtual"><scope>testing::Test</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" prot="protected" virt="non-virtual"><scope>testing::Test</scope><name>Test</name></member>
+      <member refid="classtesting_1_1Test_17c987a80f78dec5eba1aee0b9bb726a8" prot="private" virt="pure-virtual"><scope>testing::Test</scope><name>TestBody</name></member>
+      <member refid="classtesting_1_1Test_1fb788db3d734171957dc11ebe5f1a9cb" prot="package" virt="virtual"><scope>testing::Test</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

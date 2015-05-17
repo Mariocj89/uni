@@ -1,0 +1,198 @@
+\section{testing::internal::FilePath Class Reference}
+\label{classtesting_1_1internal_1_1FilePath}\index{testing::internal::FilePath@{testing::internal::FilePath}}
+{\tt \#include $<$gtest-filepath.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf FilePath} ()
+\item 
+{\bf FilePath} (const {\bf FilePath} \&rhs)
+\item 
+{\bf FilePath} (const char $\ast$pathname)
+\item 
+{\bf FilePath} (const {\bf String} \&pathname)
+\item 
+{\bf FilePath} \& {\bf operator=} (const {\bf FilePath} \&rhs)
+\item 
+void {\bf Set} (const {\bf FilePath} \&rhs)
+\item 
+{\bf String} {\bf ToString} () const
+\item 
+const char $\ast$ {\bf c\_\-str} () const
+\item 
+bool {\bf IsEmpty} () const
+\item 
+{\bf FilePath} {\bf RemoveTrailingPathSeparator} () const
+\item 
+{\bf FilePath} {\bf RemoveDirectoryName} () const
+\item 
+{\bf FilePath} {\bf RemoveFileName} () const
+\item 
+{\bf FilePath} {\bf RemoveExtension} (const char $\ast$extension) const
+\item 
+bool {\bf CreateDirectoriesRecursively} () const
+\item 
+bool {\bf CreateFolder} () const
+\item 
+bool {\bf FileOrDirectoryExists} () const
+\item 
+bool {\bf DirectoryExists} () const
+\item 
+bool {\bf IsDirectory} () const
+\item 
+bool {\bf IsRootDirectory} () const
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf FilePath} {\bf GetCurrentDir} ()
+\item 
+static {\bf FilePath} {\bf MakeFileName} (const {\bf FilePath} \&directory, const {\bf FilePath} \&base\_\-name, int number, const char $\ast$extension)
+\item 
+static {\bf FilePath} {\bf GenerateUniqueFileName} (const {\bf FilePath} \&directory, const {\bf FilePath} \&base\_\-name, const char $\ast$extension)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf Normalize} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf String} {\bf pathname\_\-}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::FilePath::FilePath ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_cdb606cae6ec2709a1559fd247e5c162}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::FilePath::FilePath (const {\bf FilePath} \& {\em rhs})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_d7a74f993a6d42abaf0a6b3404038cb4}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::FilePath::FilePath (const char $\ast$ {\em pathname})\hspace{0.3cm}{\tt  [inline, explicit]}}\label{classtesting_1_1internal_1_1FilePath_9ec00e94b94c757aa045b576b5c4de02}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::internal::FilePath::FilePath (const {\bf String} \& {\em pathname})\hspace{0.3cm}{\tt  [inline, explicit]}}\label{classtesting_1_1internal_1_1FilePath_b8597e7a22ecb8e124d1014755b841eb}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::internal::FilePath@{testing::internal::FilePath}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf FilePath}\& testing::internal::FilePath::operator= (const {\bf FilePath} \& {\em rhs})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_1c74972f756e9259b36bf0fabef07494}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!Set@{Set}}
+\index{Set@{Set}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::FilePath::Set (const {\bf FilePath} \& {\em rhs})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_a5fd8ef9690d1bcb7e1fe7c0438be399}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!ToString@{ToString}}
+\index{ToString@{ToString}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} testing::internal::FilePath::ToString () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_4fdd5dfdf13e194e8cf12b9b256b4585}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!c_str@{c\_\-str}}
+\index{c_str@{c\_\-str}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::internal::FilePath::c\_\-str () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_aee7529864bf992b612ab0441ef919bd}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!GetCurrentDir@{GetCurrentDir}}
+\index{GetCurrentDir@{GetCurrentDir}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf FilePath} testing::internal::FilePath::GetCurrentDir ()\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FilePath_25a54bc69aed16dba66e822b38b925ad}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!MakeFileName@{MakeFileName}}
+\index{MakeFileName@{MakeFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf FilePath} testing::internal::FilePath::MakeFileName (const {\bf FilePath} \& {\em directory}, const {\bf FilePath} \& {\em base\_\-name}, int {\em number}, const char $\ast$ {\em extension})\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FilePath_9ec27f86501db59e3ff350be5252654c}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!GenerateUniqueFileName@{GenerateUniqueFileName}}
+\index{GenerateUniqueFileName@{GenerateUniqueFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf FilePath} testing::internal::FilePath::GenerateUniqueFileName (const {\bf FilePath} \& {\em directory}, const {\bf FilePath} \& {\em base\_\-name}, const char $\ast$ {\em extension})\hspace{0.3cm}{\tt  [static]}}\label{classtesting_1_1internal_1_1FilePath_6cbdcdc15dee358415637e125d116452}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::IsEmpty () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1internal_1_1FilePath_16edae2ccd6d0a52385e983d1d7f3b06}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveTrailingPathSeparator@{RemoveTrailingPathSeparator}}
+\index{RemoveTrailingPathSeparator@{RemoveTrailingPathSeparator}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf FilePath} testing::internal::FilePath::RemoveTrailingPathSeparator () const}\label{classtesting_1_1internal_1_1FilePath_9109b89d58fd7ed24d399b655da334ad}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveDirectoryName@{RemoveDirectoryName}}
+\index{RemoveDirectoryName@{RemoveDirectoryName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf FilePath} testing::internal::FilePath::RemoveDirectoryName () const}\label{classtesting_1_1internal_1_1FilePath_7da5d0fb3a12c152a7d7429dbe830aff}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveFileName@{RemoveFileName}}
+\index{RemoveFileName@{RemoveFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf FilePath} testing::internal::FilePath::RemoveFileName () const}\label{classtesting_1_1internal_1_1FilePath_87faaadfad0a7f691b4a08eb3936c8f2}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveExtension@{RemoveExtension}}
+\index{RemoveExtension@{RemoveExtension}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf FilePath} testing::internal::FilePath::RemoveExtension (const char $\ast$ {\em extension}) const}\label{classtesting_1_1internal_1_1FilePath_68dfb3865dd28f4a11ea1c266e42eade}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!CreateDirectoriesRecursively@{CreateDirectoriesRecursively}}
+\index{CreateDirectoriesRecursively@{CreateDirectoriesRecursively}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::CreateDirectoriesRecursively () const}\label{classtesting_1_1internal_1_1FilePath_7380f058cec1dc63522652fece8edc8a}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!CreateFolder@{CreateFolder}}
+\index{CreateFolder@{CreateFolder}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::CreateFolder () const}\label{classtesting_1_1internal_1_1FilePath_fec5082480123b79240dd022480065ba}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FileOrDirectoryExists@{FileOrDirectoryExists}}
+\index{FileOrDirectoryExists@{FileOrDirectoryExists}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::FileOrDirectoryExists () const}\label{classtesting_1_1internal_1_1FilePath_bd0152908a123e22606b366a575a3e30}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!DirectoryExists@{DirectoryExists}}
+\index{DirectoryExists@{DirectoryExists}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::DirectoryExists () const}\label{classtesting_1_1internal_1_1FilePath_8075510434baf939fe1e3b15a8c93aac}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsDirectory@{IsDirectory}}
+\index{IsDirectory@{IsDirectory}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::IsDirectory () const}\label{classtesting_1_1internal_1_1FilePath_e299e75dc94443f8acf2c7590ddf0daa}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsRootDirectory@{IsRootDirectory}}
+\index{IsRootDirectory@{IsRootDirectory}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::internal::FilePath::IsRootDirectory () const}\label{classtesting_1_1internal_1_1FilePath_dab127e965db469f6e95d09eed1c8c7c}
+
+
+\index{testing::internal::FilePath@{testing::internal::FilePath}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::internal::FilePath::Normalize ()\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1internal_1_1FilePath_677a926927b14966947bba1271683f8a}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::internal::FilePath@{testing::internal::FilePath}!pathname_@{pathname\_\-}}
+\index{pathname_@{pathname\_\-}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf String} {\bf testing::internal::FilePath::pathname\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1internal_1_1FilePath_eab1072b81471f0a34b124cb855cdcd2}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/internal/{\bf gtest-filepath.h}\end{CompactItemize}

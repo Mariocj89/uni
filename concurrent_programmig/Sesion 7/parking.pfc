@@ -1,0 +1,131 @@
+program Parking;
+
+process ticketEntrada provides
+        entry pedirTicket;
+end;
+process  sensorEntrada provides
+         entry pasar;
+end;
+process  sensorSalida provides
+         entry pasar;
+end;
+process  pagos provides
+         entry darTicket(var var1:integer);
+         entry pagar(var pagado:boolean);
+end;
+process  ticketSalida provides
+         entry darTicket(pagado:boolean);
+end;
+
+
+  var ocupacion: integer;
+
+process type coche(id:integer);
+  var tiempo:integer;
+  var ticketPagado:boolean;
+  begin
+       writeln(id,': Voy a entrar al parking');
+       ticketPagado := false;
+       ticketEntrada.pedirTicket;
+       sensorEntrada.pasar;
+       writeln(id,': Estoy dentro del parking  <-------');
+       tiempo:=1;
+       sleep(tiempo);
+       pagos.darTicket(tiempo);
+       pagos.pagar(ticketPagado);
+       ticketSalida.darTicket(ticketPagado);
+       sensorSalida.pasar;
+       writeln(id,': -------> Estoy fuera del parking');
+  end ;
+
+process barreraEntrada;
+  entry subir;
+  entry bajar;
+  begin
+       repeat
+             accept subir do
+                    writeln('Sube la barrera de entrada');
+             accept bajar do
+                    writeln('Baja la barrera de entrada');
+       forever
+  end ;
+
+process barreraSalida;
+  entry subir;
+  entry bajar;
+  begin
+       repeat
+             accept subir do
+                    writeln('Sube la barrera de salida');
+             accept bajar do
+                    writeln('Baja la barrera de salida');
+       forever
+  end ;
+
+process ticketEntrada;
+  entry pedirTicket;
+  begin
+       repeat
+             if ocupacion < 10 then
+             accept pedirTicket do begin
+                    barreraEntrada.subir;
+                    ocupacion:=ocupacion+1;
+             end;
+       forever
+  end ;
+
+process sensorEntrada;
+  entry pasar;
+  begin
+       repeat
+             accept pasar do
+                    barreraEntrada.bajar;
+       forever
+  end ;
+
+process pagos;
+  entry darTicket( var var1:integer);
+  entry pagar(var pagado:boolean);
+  begin
+       repeat
+             accept darTicket(var var1:integer) do
+                    var1:=var1*5;
+             accept pagar (var pagado:boolean) do
+                    pagado:=true;
+       forever
+  end ;
+
+process ticketSalida;
+  entry darTicket(pagado: boolean);
+  begin
+       repeat
+             accept darTicket(pagado: boolean) do
+                    if pagado then
+                       barreraSalida.subir;
+       forever
+  end ;
+
+process sensorSalida;
+  entry pasar;
+  begin
+       repeat
+             accept pasar do
+                    barreraSalida.bajar;
+       forever
+  end ;
+
+var coches: array[1..12] of coche;
+var i:integer;
+begin
+  cobegin
+         for i:=1 to 11 do
+             coches[i](i);
+         barreraEntrada;
+         barreraSalida;
+         sensorEntrada;
+         ticketEntrada;
+         ticketSalida;
+         pagos;
+         sensorSalida;
+  coend;
+end.

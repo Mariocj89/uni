@@ -1,0 +1,528 @@
+\section{Grafo Class Reference}
+\label{classGrafo}\index{Grafo@{Grafo}}
+Esta clase define un grafo no dirigido valuado.  
+
+
+{\tt \#include $<$grafo.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Grafo} (void)
+\item 
+int {\bf get\_\-num\_\-nodos} (void) const
+\begin{CompactList}\small\item\em Metodo que devuelve el numero de nodos del grafo. \item\end{CompactList}\item 
+bool {\bf EsVacio} (void) const
+\item 
+bool {\bf set\_\-arco} (const {\bf TipoNodoGrafo} \&origen, const {\bf TipoNodoGrafo} \&destino, const int \&valor)
+\item 
+bool {\bf del\_\-arco} (const {\bf TipoNodoGrafo} \&origen, const {\bf TipoNodoGrafo} \&destino)
+\item 
+bool {\bf Adyacente} (const {\bf TipoNodoGrafo} \&origen, const {\bf TipoNodoGrafo} \&destino) const
+\item 
+int {\bf get\_\-arco} (const {\bf TipoNodoGrafo} \&origen, const {\bf TipoNodoGrafo} \&destino) const
+\item 
+bool {\bf set\_\-nodo} (const {\bf TipoNodoGrafo} \&n)
+\item 
+bool {\bf del\_\-nodo} (const {\bf TipoNodoGrafo} \&nodo)
+\item 
+void {\bf get\_\-warshall\_\-path} ({\bf TipoMatrizBooleana} \&WP) const
+\item 
+void {\bf get\_\-floyd\_\-path} ({\bf TipoMatrizAdyacencia} \&FP) const 
+\item 
+void {\bf get\_\-floyd\_\-cost} ({\bf TipoMatrizAdyacencia} \&FC) const 
+\item 
+int {\bf get\_\-pos\_\-nodo} (const {\bf TipoNodoGrafo} \&N) const
+\item 
+void {\bf MostrarArcos} (void) const
+\item 
+void {\bf MostrarNodos} (void) const
+\item 
+void {\bf MostrarPW} (void) const
+\item 
+void {\bf MostrarFloydC} (void) const
+\item 
+void {\bf MostrarEnProfundidad} (void) const
+\item 
+void {\bf MostrarEnAnchura} (void) const
+\item 
+void {\bf Warshall} (void)
+\item 
+void {\bf Floyd} (void)
+\item 
+void {\bf Siguiente} (const {\bf TipoNodoGrafo} \&origen, const {\bf TipoNodoGrafo} destino, {\bf TipoNodoGrafo} \&sig) const 
+\item 
+void {\bf Adyacentes} (const {\bf TipoNodoGrafo} \&origen, {\bf TipoCjtoNodos} \&ady) const 
+\item 
+{\bf TipoNodoGrafo} {\bf MayorGrado} (int \&grado) const
+\item 
+int {\bf MasDistantes} ({\bf TipoNodoGrafo} \&a, {\bf TipoNodoGrafo} \&b) const
+\item 
+int {\bf MasCorto} ({\bf TipoNodoGrafo} \&a, {\bf TipoNodoGrafo} \&b) const
+\item 
+void {\bf ANSaltos} (const {\bf TipoNodoGrafo} \&nodo, {\bf TipoCjtoNodos} \&nodos, const int \&distancia) const
+\item 
+int {\bf Excentricidad} (const {\bf TipoNodoGrafo} \&nodo) const
+\item 
+{\bf TipoNodoGrafo} {\bf Centro} () const
+\item 
+bool {\bf ExisteCiclo} (const {\bf TipoNodoGrafo} \&nodo) const
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf ObtenerEnProf} (const int \&posicion, bool visitados[{\bf kMaxVert}], {\bf TipoCjtoNodos} \&prof) const
+\item 
+void {\bf ObtenerEnAnch} (const int \&posicion, bool visitados[{\bf kMaxVert}], {\bf TipoCjtoNodos} \&anch) const
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf num\_\-nodos\_\-}
+\begin{CompactList}\small\item\em Numero de nodos del grafo. \item\end{CompactList}\item 
+{\bf TipoVectorNodos} {\bf nodos\_\-}
+\begin{CompactList}\small\item\em Vector que almacena los nodos del grafo. \item\end{CompactList}\item 
+{\bf TipoMatrizAdyacencia} {\bf arcos\_\-}
+\begin{CompactList}\small\item\em Matriz de adyacencia, para almacenar los arcos del grafo. \item\end{CompactList}\item 
+{\bf TipoMatrizBooleana} {\bf warshall\_\-path\_\-}
+\begin{CompactList}\small\item\em Matriz boleana de Camino (Warshall - Path). \item\end{CompactList}\item 
+{\bf TipoMatrizAdyacencia} {\bf floyd\_\-cost\_\-}
+\begin{CompactList}\small\item\em Matriz de Costes (Floyd - Cost). \item\end{CompactList}\item 
+{\bf TipoMatrizAdyacencia} {\bf floyd\_\-path\_\-}
+\begin{CompactList}\small\item\em Matriz de Camino (Floyd - Path). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&flujo, const {\bf Grafo} \&G)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta clase define un grafo no dirigido valuado. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Grafo::Grafo (void)}\label{classGrafo_d3c8b45fb50abc45e49d42ef78b79ee7}
+
+
+Metodo constructor por defecto de la clase grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Grafo@{Grafo}!get_num_nodos@{get\_\-num\_\-nodos}}
+\index{get_num_nodos@{get\_\-num\_\-nodos}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::get\_\-num\_\-nodos (void) const\hspace{0.3cm}{\tt  [inline]}}\label{classGrafo_5321811e9af692715820ae9bd6423637}
+
+
+Metodo que devuelve el numero de nodos del grafo. 
+
+\index{Grafo@{Grafo}!EsVacio@{EsVacio}}
+\index{EsVacio@{EsVacio}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::EsVacio (void) const}\label{classGrafo_00c241c3e011cb2b67e24ee803b30662}
+
+
+Metodo que comprueba si el grafo esta vacio \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un valor booleano que indica si el grafo esta o no vacio \end{Desc}
+\index{Grafo@{Grafo}!set_arco@{set\_\-arco}}
+\index{set_arco@{set\_\-arco}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::set\_\-arco (const {\bf TipoNodoGrafo} \& {\em origen}, const {\bf TipoNodoGrafo} \& {\em destino}, const int \& {\em valor})}\label{classGrafo_5ff1c53f81913e5cdb13d6b1077c667f}
+
+
+Metodo que inserta un nuevo arco en el grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el nodo de origen del arco nuevo \item[{\em destino}]es el nodo de destino del arco nuevo \item[{\em valor}]es el peso del arco nuevo \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se pudo insertar \end{Desc}
+\index{Grafo@{Grafo}!del_arco@{del\_\-arco}}
+\index{del_arco@{del\_\-arco}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::del\_\-arco (const {\bf TipoNodoGrafo} \& {\em origen}, const {\bf TipoNodoGrafo} \& {\em destino})}\label{classGrafo_202743d0396c9ccd66a16797a95a2a20}
+
+
+Metodo que borra un arco del grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el nodo de origen del arco nuevo \item[{\em destino}]es el nodo de destino del arco nuevo \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se pudo borrar \end{Desc}
+\index{Grafo@{Grafo}!Adyacente@{Adyacente}}
+\index{Adyacente@{Adyacente}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::Adyacente (const {\bf TipoNodoGrafo} \& {\em origen}, const {\bf TipoNodoGrafo} \& {\em destino}) const}\label{classGrafo_f4a79e0c0678ecd61759570bdb42a773}
+
+
+Metodo que comprueba si dos nodos son adyacentes \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el primer nodo \item[{\em destino}]es el segundo nodo \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un valor booleano que indica si los dos nodos son adyacentes \end{Desc}
+\index{Grafo@{Grafo}!get_arco@{get\_\-arco}}
+\index{get_arco@{get\_\-arco}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::get\_\-arco (const {\bf TipoNodoGrafo} \& {\em origen}, const {\bf TipoNodoGrafo} \& {\em destino}) const}\label{classGrafo_6f7d1daa75771801a8cb5b15869ba72d}
+
+
+Metodo que retorna el peso de un arco \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el primer nodo del arco \item[{\em destino}]es el segundo nodo del arco \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un valor entero que contiene el peso del arco \end{Desc}
+\index{Grafo@{Grafo}!set_nodo@{set\_\-nodo}}
+\index{set_nodo@{set\_\-nodo}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::set\_\-nodo (const {\bf TipoNodoGrafo} \& {\em n})}\label{classGrafo_6333bfcd9102154c2ca00effd457ac76}
+
+
+Metodo que inserta un nuevo nodo en el grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es el nodo que se desea insertar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se pudo insertar \end{Desc}
+\index{Grafo@{Grafo}!del_nodo@{del\_\-nodo}}
+\index{del_nodo@{del\_\-nodo}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::del\_\-nodo (const {\bf TipoNodoGrafo} \& {\em nodo})}\label{classGrafo_63e6892c0bad12eb9c9d969462356ecf}
+
+
+Metodo que elimina un nodo del grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nodo}]Nodo que se desea eliminar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si se pudo borrar \end{Desc}
+\index{Grafo@{Grafo}!get_warshall_path@{get\_\-warshall\_\-path}}
+\index{get_warshall_path@{get\_\-warshall\_\-path}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::get\_\-warshall\_\-path ({\bf TipoMatrizBooleana} \& {\em WP}) const}\label{classGrafo_344e71ffc946fe568abd87be23081a94}
+
+
+Devuelve por parametro la matriz de caminos calculada por el algoritmo de warshall \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em WP}]matriz booleana de caminos \end{description}
+\end{Desc}
+\index{Grafo@{Grafo}!get_floyd_path@{get\_\-floyd\_\-path}}
+\index{get_floyd_path@{get\_\-floyd\_\-path}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::get\_\-floyd\_\-path ({\bf TipoMatrizAdyacencia} \& {\em FP}) const}\label{classGrafo_ea3df48d2408f0a4b4e60876e5220ff6}
+
+
+Devuelve por parametro la matriz de caminos calculada por el algoritmo de floyd \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em FP}]matriz de caminos \end{description}
+\end{Desc}
+\index{Grafo@{Grafo}!get_floyd_cost@{get\_\-floyd\_\-cost}}
+\index{get_floyd_cost@{get\_\-floyd\_\-cost}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::get\_\-floyd\_\-cost ({\bf TipoMatrizAdyacencia} \& {\em FC}) const}\label{classGrafo_012df6698661eb60303cf0bdb3977044}
+
+
+Devuelve por parametro la matriz de costes hallada por el algoritmo de floyd \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em FC}]matriz de costes \end{description}
+\end{Desc}
+\index{Grafo@{Grafo}!get_pos_nodo@{get\_\-pos\_\-nodo}}
+\index{get_pos_nodo@{get\_\-pos\_\-nodo}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::get\_\-pos\_\-nodo (const {\bf TipoNodoGrafo} \& {\em N}) const}\label{classGrafo_36fbfae4091a6d8ba809f93c7f29cb74}
+
+
+Metodo que nos devuelve la posicion de un nodo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em N}]nodo que buscamos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]la posicion del nodo, -1 quiere decir que no se encuentra \end{Desc}
+\index{Grafo@{Grafo}!MostrarArcos@{MostrarArcos}}
+\index{MostrarArcos@{MostrarArcos}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarArcos (void) const}\label{classGrafo_5c365de560d70bb0f943827be01e3a6a}
+
+
+Metodo que muestra los arcos del grafo (la matriz de adyacencia) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!MostrarNodos@{MostrarNodos}}
+\index{MostrarNodos@{MostrarNodos}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarNodos (void) const}\label{classGrafo_f398482951c2d0d9ed485ae3a737158c}
+
+
+Metodo que muestra el vector de nodos del grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!MostrarPW@{MostrarPW}}
+\index{MostrarPW@{MostrarPW}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarPW (void) const}\label{classGrafo_12cff6a9e93b23ab60eb5d5d12f8e218}
+
+
+Metodo que muestra la matriz de Warshall \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!MostrarFloydC@{MostrarFloydC}}
+\index{MostrarFloydC@{MostrarFloydC}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarFloydC (void) const}\label{classGrafo_2c46ec74829edbedd9edd09f0a2d5919}
+
+
+Metodo que muestra las matrices de coste y camino de Floyd \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!MostrarEnProfundidad@{MostrarEnProfundidad}}
+\index{MostrarEnProfundidad@{MostrarEnProfundidad}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarEnProfundidad (void) const}\label{classGrafo_2612ac12da97ad8c1de4046521dfd41a}
+
+
+Metodo que muestra el recorrido en profundidad del grafo \index{Grafo@{Grafo}!MostrarEnAnchura@{MostrarEnAnchura}}
+\index{MostrarEnAnchura@{MostrarEnAnchura}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::MostrarEnAnchura (void) const}\label{classGrafo_8977179d2a324518ae9c5739ed73f3b0}
+
+
+Metodo que muestra el recorrido en anchura del grafo \index{Grafo@{Grafo}!Warshall@{Warshall}}
+\index{Warshall@{Warshall}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::Warshall (void)}\label{classGrafo_c8c3d8903ad014b5b6e7540e46a81cb6}
+
+
+Metodo que realiza el algoritmo de Warshall sobre el grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!Floyd@{Floyd}}
+\index{Floyd@{Floyd}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::Floyd (void)}\label{classGrafo_6ea9d2c7f7ebf7ae473d0bc42041cb4f}
+
+
+Metodo que realiza el algoritmo de Floyd sobre el grafo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!Siguiente@{Siguiente}}
+\index{Siguiente@{Siguiente}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::Siguiente (const {\bf TipoNodoGrafo} \& {\em origen}, const {\bf TipoNodoGrafo} {\em destino}, {\bf TipoNodoGrafo} \& {\em sig}) const}\label{classGrafo_4c0ba27c2dd5a3677e66af2acdb348e4}
+
+
+Metodo que devuelve el siguiente nodo en la ruta entre un origen y un destino \begin{Desc}
+\item[Precondition:]Debe estar inicializada la matriz de floyd \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el primer nodo \item[{\em destino}]es el segundo nodo \item[{\em origen}]es el primer nodo \item[{\em sig}]parametro de entrada salida que devuelve el siguiente nodo en la ruta entre origen y destino \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!Adyacentes@{Adyacentes}}
+\index{Adyacentes@{Adyacentes}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::Adyacentes (const {\bf TipoNodoGrafo} \& {\em origen}, {\bf TipoCjtoNodos} \& {\em ady}) const}\label{classGrafo_25a7ac274277ddc0861a03785f29ec87}
+
+
+Metodo que devuelve el conjunto de nodos adyacentes al nodo actual \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es el nodo actual \item[{\em ady}]parametro de entrada salida que devuelve el conjunto de nodos adyacentes (en una cola) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\index{Grafo@{Grafo}!MayorGrado@{MayorGrado}}
+\index{MayorGrado@{MayorGrado}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoNodoGrafo} Grafo::MayorGrado (int \& {\em grado}) const}\label{classGrafo_901231e4cb7c93017e36b7491e2db26c}
+
+
+\begin{Desc}
+\item[Precondition:]debe existir algun nodo Funcion que devuelve el elemento con mayor grado de entrada y salida(es no dirigido) \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em grado}]grado del elemento con mayor grado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]elemento con mayor grado \end{Desc}
+\index{Grafo@{Grafo}!MasDistantes@{MasDistantes}}
+\index{MasDistantes@{MasDistantes}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::MasDistantes ({\bf TipoNodoGrafo} \& {\em a}, {\bf TipoNodoGrafo} \& {\em b}) const}\label{classGrafo_a33a7c07992fbf47a0125701f6fd729a}
+
+
+Funcion que halla los 2 elementos mas distantes entre si en cuanto a caminos minimos, los devuelve por parametro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]uno de los 2 elementos mas distantes entre si \item[{\em b}]uno de los 2 elementos mas distantes entre si \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]entero con la distancia entre los 2 nodos \end{Desc}
+\index{Grafo@{Grafo}!MasCorto@{MasCorto}}
+\index{MasCorto@{MasCorto}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::MasCorto ({\bf TipoNodoGrafo} \& {\em a}, {\bf TipoNodoGrafo} \& {\em b}) const}\label{classGrafo_9d6cbd612abdef73a92f6fb120eb4946}
+
+
+Funcion que halla los 2 elementos menos distantes entre si, los devuelve por parametro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]uno de los 2 elementos menoss distantes entre si \item[{\em b}]uno de los 2 elementos menoss distantes entre si \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]entero con la distancia entre los 2 nodos \end{Desc}
+\index{Grafo@{Grafo}!ANSaltos@{ANSaltos}}
+\index{ANSaltos@{ANSaltos}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::ANSaltos (const {\bf TipoNodoGrafo} \& {\em nodo}, {\bf TipoCjtoNodos} \& {\em nodos}, const int \& {\em distancia}) const}\label{classGrafo_1e658641dd50ffafdbaa0a1a16035bfe}
+
+
+Obtiene todos los nodos que se encuentran a n saltos de un nodo dado. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nodo}]Nodo desde el que empezar \item[{\em nodos}]nodos encontrados \item[{\em distancia}]distancia dada \end{description}
+\end{Desc}
+\index{Grafo@{Grafo}!Excentricidad@{Excentricidad}}
+\index{Excentricidad@{Excentricidad}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Grafo::Excentricidad (const {\bf TipoNodoGrafo} \& {\em nodo}) const}\label{classGrafo_759e2bb306cf3830a2fdd66d6de1a62f}
+
+
+\begin{Desc}
+\item[Precondition:]debe haberse calculado la matriz de costes de floyd Metodo que calcula la excentricidad de un nodo, (el maximo de las distancias minimas a todos los nodos) \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nodo}]nodo del que se quiere calcular la excentricidad \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]entero con la excentricidad del nodo \end{Desc}
+\index{Grafo@{Grafo}!Centro@{Centro}}
+\index{Centro@{Centro}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoNodoGrafo} Grafo::Centro () const}\label{classGrafo_352046b0d3e115ac6e013657b4cead0e}
+
+
+Calcula el centro del grafo, es decir, el nodo que tiene menor excentricidad \begin{Desc}
+\item[Returns:]nodo considerado centro del grafo \end{Desc}
+\index{Grafo@{Grafo}!ExisteCiclo@{ExisteCiclo}}
+\index{ExisteCiclo@{ExisteCiclo}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Grafo::ExisteCiclo (const {\bf TipoNodoGrafo} \& {\em nodo}) const}\label{classGrafo_44b9f53140ae14ad60054104c105fc34}
+
+
+Nodo que comprueba si existe un ciclo a partir de un nodo dado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nodo}]nodo de partida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si existe un cilo, false en caso contrario \end{Desc}
+\index{Grafo@{Grafo}!ObtenerEnProf@{ObtenerEnProf}}
+\index{ObtenerEnProf@{ObtenerEnProf}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::ObtenerEnProf (const int \& {\em posicion}, bool {\em visitados}[kMaxVert], {\bf TipoCjtoNodos} \& {\em prof}) const\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_9d0eb1c3977698da6d05cd8b0d1d9c0c}
+
+
+Devuelve por parametro todos los nodos en el orden obtenido por el recorrido en profundidad, para despues tratarlos en otro metodo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em posicion}]posicion en el vector \char`\"{}nodos\char`\"{} del cual se va a partir \item[{\em visitados\mbox{[}$\,$\mbox{]}}]nodos visitados previamente \item[{\em prof}]conjunto con todos los elementos en el orden indicado por el recorrido en profundidad \end{description}
+\end{Desc}
+\index{Grafo@{Grafo}!ObtenerEnAnch@{ObtenerEnAnch}}
+\index{ObtenerEnAnch@{ObtenerEnAnch}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Grafo::ObtenerEnAnch (const int \& {\em posicion}, bool {\em visitados}[kMaxVert], {\bf TipoCjtoNodos} \& {\em anch}) const\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_f085eaf3d58dbcdaa78f0514f9b42d40}
+
+
+Devuelve por parametro todos los nodos en el orden obtenido por el recorrido en anchura, para despues tratarlos en otro metodo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em posicion}]posicion en el vector \char`\"{}nodos\char`\"{} del cual se va a partir \item[{\em visitados\mbox{[}$\,$\mbox{]}}]nodos visitados previamente \item[{\em anch}]conjunto con todos los elementos en el orden inidicado por el recorrido en anchura \end{description}
+\end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Grafo@{Grafo}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em flujo}, const {\bf Grafo} \& {\em G})\hspace{0.3cm}{\tt  [friend]}}\label{classGrafo_a10916bc791b8c23a52309107d104932}
+
+
+Sobrecarga del operador $<$$<$, muestra la matrid de adyacencia \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flujo}]flujo en el que se almacena toda la informacion \item[{\em G}]grafo a mostrar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]flujo con toda la informacion \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Grafo@{Grafo}!num_nodos_@{num\_\-nodos\_\-}}
+\index{num_nodos_@{num\_\-nodos\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Grafo::num\_\-nodos\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_0eb4578d75539d2bddb3c056cc5140f6}
+
+
+Numero de nodos del grafo. 
+
+\index{Grafo@{Grafo}!nodos_@{nodos\_\-}}
+\index{nodos_@{nodos\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoVectorNodos} {\bf Grafo::nodos\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_6c9cfc668919f622d4b3ebf3736c67ab}
+
+
+Vector que almacena los nodos del grafo. 
+
+\index{Grafo@{Grafo}!arcos_@{arcos\_\-}}
+\index{arcos_@{arcos\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoMatrizAdyacencia} {\bf Grafo::arcos\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_e330a15971717243fd7469f7e79f8ba0}
+
+
+Matriz de adyacencia, para almacenar los arcos del grafo. 
+
+\index{Grafo@{Grafo}!warshall_path_@{warshall\_\-path\_\-}}
+\index{warshall_path_@{warshall\_\-path\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoMatrizBooleana} {\bf Grafo::warshall\_\-path\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_4f1d21e22a26e5e06878318a8b3d8b44}
+
+
+Matriz boleana de Camino (Warshall - Path). 
+
+\index{Grafo@{Grafo}!floyd_cost_@{floyd\_\-cost\_\-}}
+\index{floyd_cost_@{floyd\_\-cost\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoMatrizAdyacencia} {\bf Grafo::floyd\_\-cost\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_6122b3cf632d33f1cb5d385363ed8f4c}
+
+
+Matriz de Costes (Floyd - Cost). 
+
+\index{Grafo@{Grafo}!floyd_path_@{floyd\_\-path\_\-}}
+\index{floyd_path_@{floyd\_\-path\_\-}!Grafo@{Grafo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoMatrizAdyacencia} {\bf Grafo::floyd\_\-path\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classGrafo_d6d3d4c5e457e9f8b43de4a69001722e}
+
+
+Matriz de Camino (Floyd - Path). 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf grafo.h}\item 
+Escritorio/EC3/src/{\bf grafo.cpp}\end{CompactItemize}

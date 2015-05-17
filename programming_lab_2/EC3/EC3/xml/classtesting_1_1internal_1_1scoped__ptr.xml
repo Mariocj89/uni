@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1scoped__ptr" kind="class" prot="public">
+    <compoundname>testing::internal::scoped_ptr</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* testing::internal::scoped_ptr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="486" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="486" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_13cc9b026c4c227c0376245adae59cece" compoundref="gtest-port_8h" startline="469" endline="469">testing::internal::scoped_ptr&lt; T &gt;::get</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_14f09b3605e25cc95de3f11605536897f" compoundref="gtest-port_8h" startline="467" endline="467">testing::internal::scoped_ptr&lt; T &gt;::operator *</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_16fd9083f55e1422d34cc5c224594dcc5" compoundref="gtest-port_8h" startline="468" endline="468">testing::internal::scoped_ptr&lt; T &gt;::operator-&gt;</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_1422e6acaaee55a45525f98ef55ff2173" compoundref="gtest-port_8h" startline="471" endline="475">testing::internal::scoped_ptr&lt; T &gt;::release</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_18cc6f8f719e9984cab2620e66af9a2aa" compoundref="gtest-port_8h" startline="477" endline="484">testing::internal::scoped_ptr&lt; T &gt;::reset</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_1d64fd9cf7bd2fbedc33faab80936bc76" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::scoped_ptr&lt; T &gt;::scoped_ptr</definition>
+        <argsstring>(T *p=NULL)</argsstring>
+        <name>scoped_ptr</name>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="464" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="464" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_1247b0c77a21d51f27162969ffbaba0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::scoped_ptr&lt; T &gt;::~scoped_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>~scoped_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="465" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="465" bodyend="465"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_18cc6f8f719e9984cab2620e66af9a2aa" compoundref="gtest-port_8h" startline="477" endline="484">testing::internal::scoped_ptr&lt; T &gt;::reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_14f09b3605e25cc95de3f11605536897f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; testing::internal::scoped_ptr&lt; T &gt;::operator *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="467" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="467" bodyend="467"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" compoundref="gtest-port_8h" startline="486">testing::internal::scoped_ptr&lt; T &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_16fd9083f55e1422d34cc5c224594dcc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* testing::internal::scoped_ptr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="468" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="468" bodyend="468"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" compoundref="gtest-port_8h" startline="486">testing::internal::scoped_ptr&lt; T &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_13cc9b026c4c227c0376245adae59cece" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* testing::internal::scoped_ptr&lt; T &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="469" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="469" bodyend="469"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" compoundref="gtest-port_8h" startline="486">testing::internal::scoped_ptr&lt; T &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_1422e6acaaee55a45525f98ef55ff2173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* testing::internal::scoped_ptr&lt; T &gt;::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="471" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="471" bodyend="475"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" compoundref="gtest-port_8h" startline="486">testing::internal::scoped_ptr&lt; T &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_18cc6f8f719e9984cab2620e66af9a2aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::scoped_ptr&lt; T &gt;::reset</definition>
+        <argsstring>(T *p=NULL)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="477" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="477" bodyend="484"/>
+        <references refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" compoundref="gtest-port_8h" startline="486">testing::internal::scoped_ptr&lt; T &gt;::ptr_</references>
+        <referencedby refid="classtesting_1_1internal_1_1scoped__ptr_1247b0c77a21d51f27162969ffbaba0b9" compoundref="gtest-port_8h" startline="465" endline="465">testing::internal::scoped_ptr&lt; T &gt;::~scoped_ptr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1scoped__ptr_10c40d5d0d3b15ec1f8308ab6d9310547" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::scoped_ptr&lt; T &gt;::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(scoped_ptr)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1scoped__ptr" kindref="compound">scoped_ptr</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="488"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="179">
+        <label>T</label>
+      </node>
+      <node id="178">
+        <label>testing::internal::scoped_ptr&lt; T &gt;</label>
+        <link refid="classtesting_1_1internal_1_1scoped__ptr"/>
+        <childnode refid="179" relation="usage">
+          <edgelabel>ptr_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="462" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="462" bodyend="489"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_13cc9b026c4c227c0376245adae59cece" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>get</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_10c40d5d0d3b15ec1f8308ab6d9310547" prot="private" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_14f09b3605e25cc95de3f11605536897f" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>operator *</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_16fd9083f55e1422d34cc5c224594dcc5" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_1e3a07cf93fd19d2be0f294e605c23f62" prot="private" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>ptr_</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_1422e6acaaee55a45525f98ef55ff2173" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>release</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_18cc6f8f719e9984cab2620e66af9a2aa" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>reset</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_1d64fd9cf7bd2fbedc33faab80936bc76" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>scoped_ptr</name></member>
+      <member refid="classtesting_1_1internal_1_1scoped__ptr_1247b0c77a21d51f27162969ffbaba0b9" prot="public" virt="non-virtual"><scope>testing::internal::scoped_ptr</scope><name>~scoped_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

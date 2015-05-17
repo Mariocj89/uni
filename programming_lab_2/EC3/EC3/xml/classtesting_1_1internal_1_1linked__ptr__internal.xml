@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1linked__ptr__internal" kind="class" prot="public">
+    <compoundname>testing::internal::linked_ptr_internal</compoundname>
+    <includes refid="gtest-linked__ptr_8h" local="no">gtest-linked_ptr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1linked__ptr__internal_10a4d24e61d33c5085b4164e37969ac07" prot="private" static="no" mutable="yes">
+        <type><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref> const *</type>
+        <definition>linked_ptr_internal const* testing::internal::linked_ptr_internal::next_</definition>
+        <argsstring></argsstring>
+        <name>next_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="132" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr__internal_1106b031aa6c9ddade172e45a578e8c80" compoundref="gtest-linked__ptr_8h" startline="121" endline="129">depart</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr__internal_11dc51661a0b98ea373237b3d9eeb2bc9" compoundref="gtest-linked__ptr_8h" startline="109" endline="116">join</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr__internal_1c6568ecdc7613bebe9e649ed9162f36d" compoundref="gtest-linked__ptr_8h" startline="92" endline="94">join_new</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1linked__ptr__internal_1c6568ecdc7613bebe9e649ed9162f36d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::linked_ptr_internal::join_new</definition>
+        <argsstring>()</argsstring>
+        <name>join_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="92" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="92" bodyend="94"/>
+        <references refid="classtesting_1_1internal_1_1linked__ptr__internal_10a4d24e61d33c5085b4164e37969ac07" compoundref="gtest-linked__ptr_8h" startline="132">next_</references>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr_100c045212e8fccccccced175621eae76" compoundref="gtest-linked__ptr_8h" startline="207" endline="210">testing::internal::linked_ptr&lt; T &gt;::capture</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr_1d6cce2be047efe59f5a40f7db072494f" compoundref="gtest-linked__ptr_8h" startline="212" endline="218">testing::internal::linked_ptr&lt; T &gt;::copy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1linked__ptr__internal_11dc51661a0b98ea373237b3d9eeb2bc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::linked_ptr_internal::join</definition>
+        <argsstring>(linked_ptr_internal const *ptr)</argsstring>
+        <name>join</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref> const *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="109" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="109" bodyend="116"/>
+        <references refid="namespacetesting_1_1internal_165be927cd2fdc7032555a3bc33899f64">testing::internal::g_linked_ptr_mutex</references>
+        <references refid="classtesting_1_1internal_1_1linked__ptr__internal_10a4d24e61d33c5085b4164e37969ac07" compoundref="gtest-linked__ptr_8h" startline="132">next_</references>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr_1d6cce2be047efe59f5a40f7db072494f" compoundref="gtest-linked__ptr_8h" startline="212" endline="218">testing::internal::linked_ptr&lt; T &gt;::copy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1linked__ptr__internal_1106b031aa6c9ddade172e45a578e8c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::linked_ptr_internal::depart</definition>
+        <argsstring>()</argsstring>
+        <name>depart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="121" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="121" bodyend="129"/>
+        <references refid="namespacetesting_1_1internal_165be927cd2fdc7032555a3bc33899f64">testing::internal::g_linked_ptr_mutex</references>
+        <references refid="classtesting_1_1internal_1_1linked__ptr__internal_10a4d24e61d33c5085b4164e37969ac07" compoundref="gtest-linked__ptr_8h" startline="132">next_</references>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr_16f879af34554ee346e3ae0e565267570" compoundref="gtest-linked__ptr_8h" startline="203" endline="205">testing::internal::linked_ptr&lt; T &gt;::depart</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr_16f79e7e201c337620347641bb61a2c3b" compoundref="gtest-linked__ptr_8h" startline="177" endline="183">testing::internal::linked_ptr&lt; T &gt;::release</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="113">
+        <label>testing::internal::linked_ptr_internal</label>
+        <link refid="classtesting_1_1internal_1_1linked__ptr__internal"/>
+        <childnode refid="113" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="89" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="89" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1linked__ptr__internal_1106b031aa6c9ddade172e45a578e8c80" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>depart</name></member>
+      <member refid="classtesting_1_1internal_1_1linked__ptr__internal_11dc51661a0b98ea373237b3d9eeb2bc9" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join</name></member>
+      <member refid="classtesting_1_1internal_1_1linked__ptr__internal_1c6568ecdc7613bebe9e649ed9162f36d" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join_new</name></member>
+      <member refid="classtesting_1_1internal_1_1linked__ptr__internal_10a4d24e61d33c5085b4164e37969ac07" prot="private" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>next_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

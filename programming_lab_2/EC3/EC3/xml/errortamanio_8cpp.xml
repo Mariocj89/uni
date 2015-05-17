@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="errortamanio_8cpp" kind="file">
+    <compoundname>errortamanio.cpp</compoundname>
+    <includes refid="errortamanio_8h" local="yes">errortamanio.h</includes>
+    <incdepgraph>
+      <node id="255">
+        <label>Escritorio/EC3/src/errortamanio.cpp</label>
+        <link refid="errortamanio.cpp"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>iostream</label>
+      </node>
+      <node id="256">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementacion de los metodos de la clase <ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>4-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="errortamanio_8h" kindref="compound" tooltip="Declaracion de la clase ErrorTamanio.">errortamanio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classErrorTamanio_1bdbfa9109e8e5be237f166a9c3d415a9" kindref="member">ErrorTamanio::ErrorTamanio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" kindref="member" tooltip="Identificador de la planta que lanzo el throw.">id_planta_</ref>=id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="classErrorTamanio_14445403295d4308d5192b05e916c8dd9" kindref="member">ErrorTamanio::~ErrorTamanio</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classErrorTamanio_145471ee0f66dfc0a2c53089c2348a335" kindref="member">ErrorTamanio::what</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/>ancho,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;alto)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="38"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aux[100];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>sprintf(aux,<sp/></highlight><highlight class="stringliteral">&quot;El<sp/>tamaño<sp/>de<sp/>la<sp/>planta<sp/>con<sp/>identificador<sp/>%d<sp/>es<sp/>incorrecto\n<sp/>Se<sp/>procede<sp/>a<sp/>crear<sp/>una<sp/>nueva<sp/>planta:\n\t<sp/>Tamaño:6x6&quot;</highlight><highlight class="normal">,<ref refid="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" kindref="member" tooltip="Identificador de la planta que lanzo el throw.">id_planta_</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>error(aux);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>ancho=6;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>alto=6;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/errortamanio.cpp"/>
+  </compounddef>
+</doxygen>

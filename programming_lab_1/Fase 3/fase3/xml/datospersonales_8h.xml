@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="datospersonales_8h" kind="file">
+    <compoundname>datospersonales.h</compoundname>
+    <includes refid="fecha_8h" local="yes">fecha.h</includes>
+    <includes refid="meses_8h" local="yes">meses.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="datospersonales_8cpp" local="yes">Escritorio/fase3/src/datospersonales.cpp</includedby>
+    <includedby refid="listaenlazada_8h" local="yes">Escritorio/fase3/src/listaenlazada.h</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>meses.h</label>
+        <link refid="meses_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Escritorio/fase3/src/datospersonales.h</label>
+        <link refid="datospersonales.h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="15">
+        <label>cstdlib</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>Escritorio/fase3/src/gestor.h</label>
+        <link refid="gestor_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Escritorio/fase3/src/datospersonales.h</label>
+        <link refid="datospersonales.h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Escritorio/fase3/src/listaenlazada.h</label>
+        <link refid="listaenlazada_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Escritorio/fase3/src/listaenlazada.cpp</label>
+        <link refid="listaenlazada_8cpp"/>
+      </node>
+      <node id="17">
+        <label>Escritorio/fase3/src/datospersonales.cpp</label>
+        <link refid="datospersonales_8cpp"/>
+      </node>
+      <node id="20">
+        <label>Escritorio/fase3/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDatosPersonales" prot="public">DatosPersonales</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="datospersonales_8h_1f872c4d94dc854ae039ec3496da6f3c3" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MAXCAD1</definition>
+        <argsstring></argsstring>
+        <name>MAXCAD1</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="30" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="datospersonales_8h_17ba24594604a61f1c17b6d3456c61576" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MAXCAD2</definition>
+        <argsstring></argsstring>
+        <name>MAXCAD2</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="31" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="datospersonales_8h_1f10e44feb3e69eb8dd883fb5b8bce077" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char TCadena1[MAXCAD1]</definition>
+        <argsstring>[MAXCAD1]</argsstring>
+        <name>TCadena1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="33" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="datospersonales_8h_1387f37be9fdadb404a5e3c9b3e81ef62" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char TCadena2[MAXCAD2]</definition>
+        <argsstring>[MAXCAD2]</argsstring>
+        <name>TCadena2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="34" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="datospersonales_8h_1b78ac509c01cdf175c7b5b7d6e793a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PruebaDatosPersonales</definition>
+        <argsstring>()</argsstring>
+        <name>PruebaDatosPersonales</name>
+        <briefdescription>
+<para>Juego de pruebas para la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Provamos los dos pedir y los dos mostrar(con los mostrar estamos provando tambien calcular edad)</para><para>Provamos los obtener y los poner</para><para>Provamos Cargar</para><para>Provamos Guardar </para>        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="267" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="377" bodyend="449"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>header de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> x </para>    </briefdescription>
+    <detaileddescription>
+<para>x <simplesect kind="author"><para>Mario Corchero Jiménez x </para></simplesect>
+<simplesect kind="date"><para>15/05/08 x </para></simplesect>
+<simplesect kind="par"><title>Descripción: x</title><para>Este archivo contiene la especificacion de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, con sus atributos, los headers de todos sus metodos y la cabecera de un modulo de prueba. </para></simplesect>
+<simplesect kind="par"><title>Utilización:</title><para>Para utilizar esta clase, solo hay que añadir este archivo con &lt;include &quot;datospersonales.h&quot;&gt; al principio del fichero y definir cualquier variable con esta clase, y para usar el modulo de prueba basta con llamar a <ref refid="datospersonales_8cpp_1b78ac509c01cdf175c7b5b7d6e793a53" kindref="member">PruebaDatosPersonales()</ref> </para></simplesect>
+<simplesect kind="par"><title>Plataforma</title><para>Linux. </para></simplesect>
+<simplesect kind="par"><title>Creado en KDevelop.</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>DATOSPERSONALES_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DATOSPERSONALES_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fecha_8h" kindref="compound" tooltip="header de la clase fecha x">fecha.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="meses_8h" kindref="compound" tooltip="header de la clase Meses x">meses.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MAXCAD1=10;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MAXCAD2=20;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TCadena1[MAXCAD1];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TCadena2[MAXCAD2];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classDatosPersonales" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TCadena2<sp/>Nombre;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TCadena2<sp/>Apellido1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TCadena2<sp/>Apellido2;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>FechaNacimiento;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TCadena1<sp/>Telefono;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1daf353e12d70a774ec2df032c4b3db2e" kindref="member" tooltip="Modulo privado que devuelve la edad teniendo encuenta la fecha de nacimiento y la...">CalcularEdad</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales_1b16ce8577d7821760aff29410130d695" kindref="member" tooltip="Constructor por defecto de la clase DatosPersonales.">DatosPersonales</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales_1b16ce8577d7821760aff29410130d695" kindref="member" tooltip="Constructor por defecto de la clase DatosPersonales.">DatosPersonales</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales_1b16ce8577d7821760aff29410130d695" kindref="member" tooltip="Constructor por defecto de la clase DatosPersonales.">DatosPersonales</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;Date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>Number);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1a6018eaebcf01229f1f34d7a093e8435" kindref="member" tooltip="Establece nombre de la clase.">PonerNombre</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Name);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_16b1debed992686ba8ba402a23f2ab407" kindref="member" tooltip="Establece Apellido1 de la clase.">PonerApellido1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname1);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_19e9aa8614e54385386b34532473d9079" kindref="member" tooltip="Establece Apellido2 de la clase.">PonerApellido2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname2);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1ba43702c2a4844ef7bc441e232ea3014" kindref="member" tooltip="Establece FechaNacimiento de la clase.(sobrecargado).">PonerFecha</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;Date);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1ba43702c2a4844ef7bc441e232ea3014" kindref="member" tooltip="Establece FechaNacimiento de la clase.(sobrecargado).">PonerFecha</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;d,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_19551ac68bfc7ee28bbc145d392c54f69" kindref="member" tooltip="Establece Telefono de la clase.">PonerTelefono</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>Number);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_19d5e4258740f66b9cb249fa9763c2c3a" kindref="member" tooltip="Establece todos los atributos de la clase a traves de los parametros de entrada.">PonerTodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena2<sp/>Surname2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;Date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>Number);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1b8cd03cbc9025d517200f82bc910cb8e" kindref="member" tooltip="Obtiene por parametro de salida el atributo Nombre.">ObtenerNombre</ref>(TCadena2<sp/>&amp;Name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_101b7dcfc683528de4289da5ea2191959" kindref="member" tooltip="Obtiene por parametro de salida el atributo Apellido1.">ObtenerApellido1</ref>(TCadena2<sp/>&amp;Surname1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_137ca275334b66506ee86932c5a723f3b" kindref="member" tooltip="Obtiene por parametro de salida el atributo Apellido2.">ObtenerApellido2</ref>(TCadena2<sp/>&amp;Surname2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_19546d71727e0a1f61a89cfdfed722bfd" kindref="member" tooltip="Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado).">ObtenerFecha</ref>(<ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;Date)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_19546d71727e0a1f61a89cfdfed722bfd" kindref="member" tooltip="Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado).">ObtenerFecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;d,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;m,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_18aeace66165809ecacf1362b6903fa3c" kindref="member" tooltip="Obtiene por parametro de salida el atributo Numero.">ObtenerTelefono</ref>(TCadena1<sp/>&amp;Number)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1913ceb1dfc7294f2238367bffc3e46b9" kindref="member" tooltip="Obtiene por parametro de salida todos los atributos.">ObtenerTodo</ref>(TCadena2<sp/>&amp;Name,<sp/>TCadena2<sp/>&amp;Surname1,<sp/>TCadena2<sp/>&amp;Surname2,<sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;Date,<sp/>TCadena1<sp/>&amp;Number)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_16b04fa9f0d905fc4ffac22b7bd898eed" kindref="member" tooltip="Copia dat a la clase actual.">Clonar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_10804283841f32fb53b91d119dba2edc4" kindref="member" tooltip="Compara las dos clases a traves del numero de telefono.">CompararA</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_108089848e92b4abc249dca7f78ec33ca" kindref="member" tooltip="Muestra la clase actual en castellano.">MostrarES</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMeses" kindref="compound">Meses</ref><sp/>&amp;M)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1bbfb6282517df4f02235ea69a19a41fd" kindref="member" tooltip="Muestra la clase actual en ingles.">MostrarEN</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMeses" kindref="compound">Meses</ref><sp/>&amp;M)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1d2a391dc31997f2e41d09e1b58cff428" kindref="member" tooltip="Pide la informacion para rellenar la clase en castellano.">PedirES</ref>();</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_1d7fdf0b6b094a7c90f388628c3283387" kindref="member" tooltip="Pide la informacion para rellenar la clase en ingles.">PedirEN</ref>();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" kindref="member" tooltip="Carga la informacion de un dato personal, usando un flujo dado.">Cargar</ref>(ifstream<sp/>&amp;entrada);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales_17532391e8227d45aef3c15c6ff8be661" kindref="member" tooltip="Guarda la informacion de un dato personal, usando un flujo dado.">Guardar</ref>(ofstream<sp/>&amp;salida)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales_1f31ea83cfb9bb2c7a6c4e566cc5eacd6" kindref="member" tooltip="Destructor de la clase DatosPersonales.">~DatosPersonales</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="datospersonales_8cpp_1b78ac509c01cdf175c7b5b7d6e793a53" kindref="member" tooltip="Juego de pruebas para la clase DatosPersonales.">PruebaDatosPersonales</ref>();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h"/>
+  </compounddef>
+</doxygen>

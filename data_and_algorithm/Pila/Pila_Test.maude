@@ -1,0 +1,5 @@
+load Pila_Parametrizada.maude
+
+fmod PRUEBA-PILA is
+protecting PILA{Int} .
+endfm

@@ -1,0 +1,39 @@
+# Host: localhost
+# Database: tiendaonline
+# Table: 'noticias'
+# 
+CREATE TABLE `noticias` (
+  `titulo` varchar(100) NOT NULL default '',
+  `fecha` varchar(100) NOT NULL default '',
+  `texto` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`titulo`)
+) TYPE=MyISAM; 
+
+
+
+# Host: localhost
+# Database: tiendaonline
+# Table: 'productos'
+# 
+CREATE TABLE `productos` (
+  `Nombre` varchar(100) NOT NULL default '',
+  `Tipo` varchar(100) NOT NULL default '',
+  `Precio` float NOT NULL,
+  `imagen` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`Nombre`)
+) TYPE=MyISAM; 
+
+
+
+# Host: localhost
+# Database: tiendaonline
+# Table: 'empeados'
+# 
+CREATE TABLE `periodistas` (
+  `Nombre` varchar(100) NOT NULL default '',
+  `Apellidos` varchar(100) NOT NULL default '',
+  `dni` varchar(100) NOT NULL default '',
+  `Contrasenia` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`DNI`)
+) TYPE=MyISAM; 
+

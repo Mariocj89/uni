@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="errortamanio_8h" kind="file">
+    <compoundname>errortamanio.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="planta_8h" local="yes">Escritorio/EC3/src/planta.h</includedby>
+    <includedby refid="errortamanio_8cpp" local="yes">Escritorio/EC3/src/errortamanio.cpp</includedby>
+    <incdepgraph>
+      <node id="260">
+        <label>iostream</label>
+      </node>
+      <node id="259">
+        <label>Escritorio/EC3/src/errortamanio.h</label>
+        <link refid="errortamanio.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="275">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="263">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="274">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="266">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="272">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="264">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="267">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="277">
+        <label>Escritorio/EC3/src/errortamanio.cpp</label>
+        <link refid="errortamanio_8cpp"/>
+      </node>
+      <node id="270">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="262">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="273">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="269">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="261">
+        <label>Escritorio/EC3/src/errortamanio.h</label>
+        <link refid="errortamanio.h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classErrorTamanio" prot="public">ErrorTamanio</innerclass>
+    <briefdescription>
+<para>Declaracion de la clase <ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>4-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>ERRORTAMANIO_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERRORTAMANIO_H</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classErrorTamanio" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classErrorTamanio_1bdbfa9109e8e5be237f166a9c3d415a9" kindref="member">ErrorTamanio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classErrorTamanio_14445403295d4308d5192b05e916c8dd9" kindref="member">~ErrorTamanio</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classErrorTamanio_145471ee0f66dfc0a2c53089c2348a335" kindref="member">what</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;ancho,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;alto)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" kindref="member" tooltip="Identificador de la planta que lanzo el throw.">id_planta_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h"/>
+  </compounddef>
+</doxygen>

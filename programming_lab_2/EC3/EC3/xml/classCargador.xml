@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classCargador" kind="class" prot="public">
+    <compoundname>Cargador</compoundname>
+    <includes refid="cargador_8h" local="no">cargador.h</includes>
+    <innerclass refid="structCargador_1_1DatoMapeo" prot="private">Cargador::DatoMapeo</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCargador_1b78e3abd0873c21add7485c7c9ab2565" prot="private" static="yes" mutable="no">
+        <type><ref refid="structCargador_1_1DatoMapeo" kindref="compound">DatoMapeo</ref></type>
+        <definition>Cargador::mapeo</definition>
+        <argsstring>[NUMELTOSCONF]</argsstring>
+        <name>mapeo</name>
+        <initializer>{
+            
+            {&quot;PLANTA&quot;,8},
+            {&quot;PRESO&quot;,5},
+            {&quot;GUARDIA&quot;,5}
+        }</initializer>
+        <briefdescription>
+<para>Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en el vector) y contiene el número de campos de configuración para cada elemento. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="56" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCargador_149af53fff670a9948f02369c2fdbaf17" prot="private" static="no" mutable="no">
+        <type><ref refid="classPrision" kindref="compound">Prision</ref> *</type>
+        <definition>Prision* Cargador::prision</definition>
+        <argsstring></argsstring>
+        <name>prision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="58" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCargador_1d1f39f31907fde577e25d300070e8b7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cargador::queElemento</definition>
+        <argsstring>(string elto)</argsstring>
+        <name>queElemento</name>
+        <param>
+          <type>string</type>
+          <declname>elto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve la posición que ocupa el elemento en el vector de mapeo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>posición que ocupa el elemento en el vector de mapeo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="60" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="36" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_1e7d9bf4c1829eb4e3e17ae16e01f3c29" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearPlanta</definition>
+        <argsstring>(int numCampos, string vCampos[kMaxCampos])</argsstring>
+        <name>crearPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea una planta y la registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="61" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="95" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_1bc9536db01c68bfffb54e22c4ef61fab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearPreso</definition>
+        <argsstring>(int numCampos, string vCampos[kMaxCampos])</argsstring>
+        <name>crearPreso</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea un preso y lo registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="62" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="121" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_1f6671839f6e5d604381cb936024b65c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearGuarda</definition>
+        <argsstring>(int numCampos, string vCampos[kMaxCampos])</argsstring>
+        <name>crearGuarda</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea un guarda y lo registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="63" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="149" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCargador_1a98217ffcf9b63265fad5aeb86b2e487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cargador::Cargador</definition>
+        <argsstring>(Prision *p)</argsstring>
+        <name>Cargador</name>
+        <param>
+          <type><ref refid="classPrision" kindref="compound">Prision</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de <ref refid="classCargador" kindref="compound">Cargador</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Objeto sistema que se va a cargar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="66" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_12af26a52a19380d7216cee4bc192cf06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crear</definition>
+        <argsstring>(string elto, int numCampos, string vCampos[kMaxCampos])</argsstring>
+        <name>crear</name>
+        <param>
+          <type>string</type>
+          <declname>elto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que realiza comprobaciones de datos básicos (existe elemento, número campos correcto, existe localidad...) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del elemento a crear </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="67" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.cpp" bodystart="61" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>La misión de esta clase es cargar el sistema con los elementos del fichero de configuración. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>Cargador::DatoMapeo</label>
+        <link refid="structCargador_1_1DatoMapeo"/>
+      </node>
+      <node id="21">
+        <label>Cargador</label>
+        <link refid="classCargador"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mapeo</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>prision</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Prision</label>
+        <link refid="classPrision"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>instancia_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/cargador.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/cargador.h" bodystart="44" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classCargador_1a98217ffcf9b63265fad5aeb86b2e487" prot="public" virt="non-virtual"><scope>Cargador</scope><name>Cargador</name></member>
+      <member refid="classCargador_12af26a52a19380d7216cee4bc192cf06" prot="public" virt="non-virtual"><scope>Cargador</scope><name>crear</name></member>
+      <member refid="classCargador_1f6671839f6e5d604381cb936024b65c0" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearGuarda</name></member>
+      <member refid="classCargador_1e7d9bf4c1829eb4e3e17ae16e01f3c29" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearPlanta</name></member>
+      <member refid="classCargador_1bc9536db01c68bfffb54e22c4ef61fab" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearPreso</name></member>
+      <member refid="classCargador_1b78e3abd0873c21add7485c7c9ab2565" prot="private" virt="non-virtual"><scope>Cargador</scope><name>mapeo</name></member>
+      <member refid="classCargador_149af53fff670a9948f02369c2fdbaf17" prot="private" virt="non-virtual"><scope>Cargador</scope><name>prision</name></member>
+      <member refid="classCargador_1d1f39f31907fde577e25d300070e8b7a" prot="private" virt="non-virtual"><scope>Cargador</scope><name>queElemento</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

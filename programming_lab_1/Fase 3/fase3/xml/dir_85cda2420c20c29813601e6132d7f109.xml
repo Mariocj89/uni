@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="dir_85cda2420c20c29813601e6132d7f109" kind="dir">
+    <compoundname>Escritorio/fase3/</compoundname>
+    <innerdir refid="dir_5410b793c2c8ac0b348e33b7e80dcb4f">Escritorio/fase3/debug/</innerdir>
+    <innerdir refid="dir_79888489a5bf42ed3d7440d93d60c797">Escritorio/fase3/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/fase3/"/>
+  </compounddef>
+</doxygen>

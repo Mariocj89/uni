@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="listaenlazada_8h" kind="file">
+    <compoundname>listaenlazada.h</compoundname>
+    <includes refid="datospersonales_8h" local="yes">datospersonales.h</includes>
+    <includedby refid="gestor_8h" local="yes">Escritorio/fase3/src/gestor.h</includedby>
+    <includedby refid="listaenlazada_8cpp" local="yes">Escritorio/fase3/src/listaenlazada.cpp</includedby>
+    <incdepgraph>
+      <node id="77">
+        <label>meses.h</label>
+        <link refid="meses_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>datospersonales.h</label>
+        <link refid="datospersonales_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>fstream</label>
+      </node>
+      <node id="74">
+        <label>Escritorio/fase3/src/listaenlazada.h</label>
+        <link refid="listaenlazada.h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>cstdlib</label>
+      </node>
+      <node id="78">
+        <label>iostream</label>
+      </node>
+      <node id="76">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="82">
+        <label>Escritorio/fase3/src/gestor.h</label>
+        <link refid="gestor_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Escritorio/fase3/src/listaenlazada.h</label>
+        <link refid="listaenlazada.h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>Escritorio/fase3/src/listaenlazada.cpp</label>
+        <link refid="listaenlazada_8cpp"/>
+      </node>
+      <node id="83">
+        <label>Escritorio/fase3/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structTipoNodo" prot="public">TipoNodo</innerclass>
+    <innerclass refid="classListaEnlazada" prot="public">ListaEnlazada</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="listaenlazada_8h_19e4fe87447d3571b246e20694b54a6aa" prot="public" static="no">
+        <type>TipoNodo *</type>
+        <definition>typedef TipoNodo* PNodo</definition>
+        <argsstring></argsstring>
+        <name>PNodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="29" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="listaenlazada_8h_131178a4d6a939b08c869928590e958da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PruebaListaEnlazada</definition>
+        <argsstring>()</argsstring>
+        <name>PruebaListaEnlazada</name>
+        <briefdescription>
+<para>Juego de pruebas para la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="165" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="285" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>header de la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref> x </para>    </briefdescription>
+    <detaileddescription>
+<para>x <simplesect kind="author"><para>Mario Corchero Jiménez x </para></simplesect>
+<simplesect kind="date"><para>15/05/08 x </para></simplesect>
+<simplesect kind="par"><title>Descripción: x</title><para>Este archivo contiene la especificacion de la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref>, con sus atributos, los headers de todos sus metodos y la cabecera de un modulo de prueba. </para></simplesect>
+<simplesect kind="par"><title>Utilización:</title><para>Para utilizar esta clase, solo hay que añadir este archivo con &lt;include &quot;listaenlazada.h&quot;&gt; al principio del fichero y definir cualquier variable con esta clase, y para usar el modulo de prueba basta con llamar a Prueba_ListaEnlazada() </para></simplesect>
+<simplesect kind="par"><title>Plataforma</title><para>Linux. </para></simplesect>
+<simplesect kind="par"><title>Creado en KDevelop.</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>LISTAENLAZADA_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LISTAENLAZADA_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datospersonales_8h" kindref="compound" tooltip="header de la clase DatosPersonales x">datospersonales.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TipoNodo<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>dato;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TipoNodo<sp/>*suce;</highlight><highlight class="comment">//Apuntador<sp/>al<sp/>siguiente<sp/>nodo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TipoNodo<sp/>*PNodo;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classListaEnlazada" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PNodo<sp/>l;<sp/></highlight><highlight class="comment">//<sp/>apuntador<sp/>al<sp/>primer<sp/>elemento<sp/>de<sp/>la<sp/>lista</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMeses" kindref="compound">Meses</ref><sp/>M;<sp/></highlight><highlight class="comment">//<sp/>Almacena<sp/>la<sp/>informacion<sp/>relativa<sp/>a<sp/>los<sp/>meses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada_1e82643ddd50a2ffb28f0903d586ae3c2" kindref="member" tooltip="Constructor por defecto de la clase DatosPersonales. Apunta l a NULL y carga M.">ListaEnlazada</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_15592c9afc4a35722b87ae9fc2639d20f" kindref="member" tooltip="Copia la clase a dat.">Clonar</ref>(<ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_147219ac2729b7daa6ab41bbb29ec540e" kindref="member" tooltip="Devuelve por parametro la configuracion de los Meses.">ObtenerMeses</ref>(<ref refid="classMeses" kindref="compound">Meses</ref><sp/>&amp;mes)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_177ad8bdb80ddeb2d9fec40b2868b9425" kindref="member" tooltip="Elimina todos los elementos que no sean del mes i.">FiltrarPorMes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_17f38a3fa6c85ca3fe229aa52b38405f5" kindref="member" tooltip="Elimina todos los elementos menores(o =) que i.">FiltrarPorEdad</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" kindref="member" tooltip="Inserta un elemento al principio.">InsertarPrincipio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">InsertarFinal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">InsertarOrden</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classListaEnlazada_1234cfa905fe5a10240dc20bdd58471fb" kindref="member" tooltip="Halla el numero de elementos.">Ocupacion</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" kindref="member" tooltip="Borra un elemento de la lista.">Borrar</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>dat);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">MostrarES</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_11099e1a3a94174dc44ed553b6c4cfff8" kindref="member" tooltip="Muestra toda la lista en ingles.">MostrarEN</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1d635249684ab87a395f0760d0c8e2df6" kindref="member" tooltip="Busca un elemento en la lista.">Buscar</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>i,<sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1800a9e74ebe60e7e53daec71a1a2cec3" kindref="member" tooltip="Carga de datos_per.txt Debe existir nombre y debe estar correctamente formateado...">Cargar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nombre[20]);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1c40cfd38c3ac55fdff959ad62addcd2c" kindref="member" tooltip="Guarda todos los datos en nombre Debe poderse sobrescribir nombre. Nombre del fichero...">Guardar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nombre[20])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_15e595393fb9bd8539629eaca34550721" kindref="member" tooltip="Vacia toda la lista.">Eliminar</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada_1df08c43000ede48ffa5ced078616c2b1" kindref="member" tooltip="Destructor de la clase.">~ListaEnlazada</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="listaenlazada_8cpp_131178a4d6a939b08c869928590e958da" kindref="member" tooltip="Juego de pruebas para la clase ListaEnlazada.">PruebaListaEnlazada</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h"/>
+  </compounddef>
+</doxygen>

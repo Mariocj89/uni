@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="guardia_8h" kind="file">
+    <compoundname>guardia.h</compoundname>
+    <includes local="no">iterator</includes>
+    <includes refid="persona_8h" local="yes">persona.h</includes>
+    <includedby refid="planta_8h" local="yes">Escritorio/EC3/src/planta.h</includedby>
+    <includedby refid="cargador_8h" local="yes">Escritorio/EC3/src/cargador.h</includedby>
+    <includedby refid="guardia_8cpp" local="yes">Escritorio/EC3/src/guardia.cpp</includedby>
+    <incdepgraph>
+      <node id="829">
+        <label>queue</label>
+      </node>
+      <node id="827">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="826">
+        <label>iterator</label>
+      </node>
+      <node id="831">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="830">
+        <label>stack</label>
+      </node>
+      <node id="825">
+        <label>Escritorio/EC3/src/guardia.h</label>
+        <link refid="guardia.h"/>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="846">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="834">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="845" relation="include">
+        </childnode>
+      </node>
+      <node id="847">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="845">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="837">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="843">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="835">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+      </node>
+      <node id="842">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="838">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="841">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="833">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="832">
+        <label>Escritorio/EC3/src/guardia.h</label>
+        <link refid="guardia.h"/>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+      </node>
+      <node id="844">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="840">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="836">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGuardia" prot="public">Guardia</innerclass>
+    <briefdescription>
+<para>Declaracion de la clase <ref refid="classguardia" kindref="compound">guardia</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>14-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="persona_8h" kindref="compound" tooltip="Declaracion de la clase abstracta Persona.">persona.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GUARDIA_H</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GUARDIA_H</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="21" refid="classGuardia" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGuardia" kindref="compound">Guardia</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classGuardia_17bdc01bf4017bd45ac861a55e6e52ad7" kindref="member">P2String</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="classGuardia_1968b1d9571cf0532a8e5fe0f7aad0018" kindref="member">Guardia</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;nombre,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>&amp;marca,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;espera,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;c);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classGuardia_159312eeabb75f2c0b1659ba2d73c9732" kindref="member">~Guardia</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1fda4ca67ebab9ab5e307a266b9ae22ee" kindref="member">UsarPuerta</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1127c9942c98cd5332511d9383c2d76e9" kindref="member">Interactuar</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1b14ab83ca126b82fb5b7341545682dcd" kindref="member">TratarLlave</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1ed3d1d16abfad909b98e66b57e6efeac" kindref="member">CalcularRuta</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1760220917460d685bff7113115a9cbb8" kindref="member">Mover</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGuardia_1dcf3ca4b4e21e2f658e4df726522b0f3" kindref="member">DestinoRuta</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//GUARDIA_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/guardia.h"/>
+  </compounddef>
+</doxygen>

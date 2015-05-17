@@ -1,0 +1,62 @@
+program ProcesosIguales;
+
+var
+   canalesfum:array[1..3] of channel of synchronous;
+   agen:channel of integer;
+process mesa;
+  var i,x,y,num:integer;
+  var items: array[1..3] of boolean ;
+  begin
+       repeat
+             select
+                   when num < 1 =>
+                        agen ? x;
+                        items[x] := true;
+                        y:=x;
+                        while items[y] do
+                        agen ? y;
+                        items[y] := true;
+                        num := 2;
+             or
+                   for i:=1 to 3 replicate
+                   when (num = 2) AND (not items[i]) =>
+                        canalesfum[i] ? any;
+                        items[1] := false;
+                        items[2] := false;
+                        items[3] := false;
+                        num := 0;
+             end;
+       forever
+  end ;
+
+process agente;
+  var i,x:integer;
+  begin
+       repeat
+             i:=random(2)+1;
+             agen ! i;
+             writeln('Agente pone: ',i);
+       forever
+  end ;
+
+process type fumador(id:integer);
+  var i,x:integer;
+  begin
+       repeat
+             canalesfum[id] ! any;
+             writeln('Yo Fumo: ',id);
+       forever
+  end ;
+
+
+var
+   i:integer;
+   fumadores:array[1..3] of fumador;
+begin
+  cobegin
+         mesa;
+         agente;
+         for i:=1 to 3 do
+             fumadores[i](i);
+  coend;
+end.

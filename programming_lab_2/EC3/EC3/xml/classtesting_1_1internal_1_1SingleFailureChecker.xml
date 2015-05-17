@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1SingleFailureChecker" kind="class" prot="public">
+    <compoundname>testing::internal::SingleFailureChecker</compoundname>
+    <includes refid="gtest-spi_8h" local="no">gtest-spi.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1SingleFailureChecker_133031b09d43a503d2f8cdafdec9165b7" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *const</type>
+        <definition>const TestPartResultArray* const testing::internal::SingleFailureChecker::results_</definition>
+        <argsstring></argsstring>
+        <name>results_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="104" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1SingleFailureChecker_1165c6f90fa61e8153ea943880587bc57" prot="private" static="no" mutable="no">
+        <type>const <ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+        <definition>const TestPartResultType testing::internal::SingleFailureChecker::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="105" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1SingleFailureChecker_1ab11e92b0c1dc5f6d829220eb10702d4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>const String testing::internal::SingleFailureChecker::substr_</definition>
+        <argsstring></argsstring>
+        <name>substr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="106" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1SingleFailureChecker_1db2fca6490daa064df398e400fdba6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SingleFailureChecker::SingleFailureChecker</definition>
+        <argsstring>(const TestPartResultArray *results, TestPartResultType type, const char *substr)</argsstring>
+        <name>SingleFailureChecker</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>results</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>substr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1SingleFailureChecker_136c4d86bd8b3b26482a5dc4136a077f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SingleFailureChecker::~SingleFailureChecker</definition>
+        <argsstring>()</argsstring>
+        <name>~SingleFailureChecker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1SingleFailureChecker_17b2ff8ae42c97a824193ca3d2cee453f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SingleFailureChecker::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(SingleFailureChecker)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">SingleFailureChecker</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="189">
+        <label>testing::internal::String</label>
+        <link refid="classtesting_1_1internal_1_1String"/>
+      </node>
+      <node id="188">
+        <label>testing::internal::SingleFailureChecker</label>
+        <link refid="classtesting_1_1internal_1_1SingleFailureChecker"/>
+        <childnode refid="189" relation="usage">
+          <edgelabel>substr_</edgelabel>
+        </childnode>
+        <childnode refid="190" relation="usage">
+          <edgelabel>results_</edgelabel>
+        </childnode>
+      </node>
+      <node id="190">
+        <label>testing::TestPartResultArray</label>
+        <link refid="classtesting_1_1TestPartResultArray"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="96" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" bodystart="96" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_17b2ff8ae42c97a824193ca3d2cee453f" prot="private" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_133031b09d43a503d2f8cdafdec9165b7" prot="private" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>results_</name></member>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_1db2fca6490daa064df398e400fdba6c9" prot="public" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>SingleFailureChecker</name></member>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_1ab11e92b0c1dc5f6d829220eb10702d4" prot="private" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>substr_</name></member>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_1165c6f90fa61e8153ea943880587bc57" prot="private" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>type_</name></member>
+      <member refid="classtesting_1_1internal_1_1SingleFailureChecker_136c4d86bd8b3b26482a5dc4136a077f4" prot="public" virt="non-virtual"><scope>testing::internal::SingleFailureChecker</scope><name>~SingleFailureChecker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classlista" kind="class" prot="public">
+    <compoundname>lista</compoundname>
+    <includes refid="lpi_8h" local="no">lpi.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlista_1959745edbf6ef1901d52358137e4b55a" prot="private" static="no" mutable="no">
+        <type><ref refid="classcategoria" kindref="compound">categoria</ref></type>
+        <definition>categoria lista::elemento[Max_Categorias]</definition>
+        <argsstring>[Max_Categorias]</argsstring>
+        <name>elemento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="20" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lista::ocupacion</definition>
+        <argsstring></argsstring>
+        <name>ocupacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="21" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlista_1d5ee420d7672bea5fd4d191c401733be" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lista::pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="22" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlista_17ae1e1582d5b90e6bc26b8ecd2894072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lista::lista</definition>
+        <argsstring>()</argsstring>
+        <name>lista</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase <ref refid="classlista" kindref="compound">lista</ref>. Establece el numero de elementos a 0 <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="31" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_19281356b5743c333b7fa382a1befa2e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lista::ocupadas</definition>
+        <argsstring>() const</argsstring>
+        <name>ocupadas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la ocupacion de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el numero de categorias en la <ref refid="classlista" kindref="compound">lista</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="39" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_19767ee9056947047c0c6c204bc4db762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::vacia</definition>
+        <argsstring>()</argsstring>
+        <name>vacia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Averigua si una <ref refid="classlista" kindref="compound">lista</ref> esta vacia <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si la <ref refid="classlista" kindref="compound">lista</ref> esta vacia, false en caso contrario </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="47" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1982294906d63950bba25f2d1cab21273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::llena</definition>
+        <argsstring>()</argsstring>
+        <name>llena</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Averigua si la <ref refid="classlista" kindref="compound">lista</ref> esta llena <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si la <ref refid="classlista" kindref="compound">lista</ref> esta llena, false en caso contrario </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="55" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_12ec76266d65e81e2c4940269b261f833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lista::poner_inicio</definition>
+        <argsstring>()</argsstring>
+        <name>poner_inicio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Establece el punto de interes al principio de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para>que la <ref refid="classlista" kindref="compound">lista</ref> esté creada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="63" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1e1bd3d1b4417a52463b1ef69456ea730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lista::poner_fin</definition>
+        <argsstring>()</argsstring>
+        <name>poner_fin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Establece el punto de interes al final de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para>que la <ref refid="classlista" kindref="compound">lista</ref> esté creada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="71" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1b68bc836734758ca7e0977b1740d31eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lista::avanzar</definition>
+        <argsstring>()</argsstring>
+        <name>avanzar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avanza el punto de interes de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para>La <ref refid="classlista" kindref="compound">lista</ref> debe estar creada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="79" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1f4d2afee307ae39c83eefdeb40b13d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lista::retroceder</definition>
+        <argsstring>()</argsstring>
+        <name>retroceder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrocede el punto de interes de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para>La <ref refid="classlista" kindref="compound">lista</ref> debe estar creada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="87" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1036798860b016f8f5431335002d15b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::fin</definition>
+        <argsstring>()</argsstring>
+        <name>fin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si el punto de interes esta al final de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si el punto de interes esta al final de la <ref refid="classlista" kindref="compound">lista</ref>, false en caso contrario </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="95" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_129149056d6a592279e575708b0cdc176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::inicio</definition>
+        <argsstring>()</argsstring>
+        <name>inicio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si el punto de interes esta al inicio de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si el punto de interes esta al inicio de la <ref refid="classlista" kindref="compound">lista</ref>, false en caso contrario </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="103" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_10c433976220721607f6e42f44b7cecfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::insertar</definition>
+        <argsstring>(categoria &amp;e)</argsstring>
+        <name>insertar</name>
+        <param>
+          <type><ref refid="classcategoria" kindref="compound">categoria</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una <ref refid="classcategoria" kindref="compound">categoria</ref> en la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para>que la <ref refid="classlista" kindref="compound">lista</ref> no este llena </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="111" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_18cef95497347095d6207dded1b978358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::consultar</definition>
+        <argsstring>(categoria &amp;e)</argsstring>
+        <name>consultar</name>
+        <param>
+          <type><ref refid="classcategoria" kindref="compound">categoria</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve el elemento apuntado por el punto de interes de la <ref refid="classlista" kindref="compound">lista</ref> <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Elemento apuntado por el punto de interes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="119" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_198cf505fbe1f15ae56f6acef8dca796d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::borrar</definition>
+        <argsstring>()</argsstring>
+        <name>borrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Borra el elemento apuntado por el punto de interes <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="127" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1c7cbd50511a860cdfb8436a0e31490dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::insertar_Noticia</definition>
+        <argsstring>(const TipoDato &amp;e)</argsstring>
+        <name>insertar_Noticia</name>
+        <param>
+          <type>const <ref refid="classNoticia" kindref="compound">TipoDato</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Introduce una noticia en la <ref refid="classcategoria" kindref="compound">categoria</ref> señalada por el pi <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la noticia a inertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a podido insertar, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="135" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="74" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classlista_1d5d12911c92a2c156817844109341a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lista::borrar_Noticia</definition>
+        <argsstring>(Tcadena1 cad)</argsstring>
+        <name>borrar_Noticia</name>
+        <param>
+          <type><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref></type>
+          <declname>cad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Borrar una noticia <simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cad</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>referencia de la noticia a borrar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se a podido insertar, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="143" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp" bodystart="89" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase LISTA con punto de interés. Sus atributos son:<itemizedlist>
+<listitem><para>elemento: Vector de elementos almacenados</para></listitem><listitem><para>ocupacion: Numero de elementos actual</para></listitem><listitem><para>pi: Apuntador al elemento de interes </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>lista</label>
+        <link refid="classlista"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>elemento</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>categoria</label>
+        <link refid="classcategoria"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="17" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" bodystart="17" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classlista_1b68bc836734758ca7e0977b1740d31eb" prot="public" virt="non-virtual"><scope>lista</scope><name>avanzar</name></member>
+      <member refid="classlista_198cf505fbe1f15ae56f6acef8dca796d" prot="public" virt="non-virtual"><scope>lista</scope><name>borrar</name></member>
+      <member refid="classlista_1d5d12911c92a2c156817844109341a90" prot="public" virt="non-virtual"><scope>lista</scope><name>borrar_Noticia</name></member>
+      <member refid="classlista_18cef95497347095d6207dded1b978358" prot="public" virt="non-virtual"><scope>lista</scope><name>consultar</name></member>
+      <member refid="classlista_1959745edbf6ef1901d52358137e4b55a" prot="private" virt="non-virtual"><scope>lista</scope><name>elemento</name></member>
+      <member refid="classlista_1036798860b016f8f5431335002d15b38" prot="public" virt="non-virtual"><scope>lista</scope><name>fin</name></member>
+      <member refid="classlista_129149056d6a592279e575708b0cdc176" prot="public" virt="non-virtual"><scope>lista</scope><name>inicio</name></member>
+      <member refid="classlista_10c433976220721607f6e42f44b7cecfe" prot="public" virt="non-virtual"><scope>lista</scope><name>insertar</name></member>
+      <member refid="classlista_1c7cbd50511a860cdfb8436a0e31490dc" prot="public" virt="non-virtual"><scope>lista</scope><name>insertar_Noticia</name></member>
+      <member refid="classlista_17ae1e1582d5b90e6bc26b8ecd2894072" prot="public" virt="non-virtual"><scope>lista</scope><name>lista</name></member>
+      <member refid="classlista_1982294906d63950bba25f2d1cab21273" prot="public" virt="non-virtual"><scope>lista</scope><name>llena</name></member>
+      <member refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" prot="private" virt="non-virtual"><scope>lista</scope><name>ocupacion</name></member>
+      <member refid="classlista_19281356b5743c333b7fa382a1befa2e1" prot="public" virt="non-virtual"><scope>lista</scope><name>ocupadas</name></member>
+      <member refid="classlista_1d5ee420d7672bea5fd4d191c401733be" prot="private" virt="non-virtual"><scope>lista</scope><name>pi</name></member>
+      <member refid="classlista_1e1bd3d1b4417a52463b1ef69456ea730" prot="public" virt="non-virtual"><scope>lista</scope><name>poner_fin</name></member>
+      <member refid="classlista_12ec76266d65e81e2c4940269b261f833" prot="public" virt="non-virtual"><scope>lista</scope><name>poner_inicio</name></member>
+      <member refid="classlista_1f4d2afee307ae39c83eefdeb40b13d71" prot="public" virt="non-virtual"><scope>lista</scope><name>retroceder</name></member>
+      <member refid="classlista_19767ee9056947047c0c6c204bc4db762" prot="public" virt="non-virtual"><scope>lista</scope><name>vacia</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testcolagen_8cpp" kind="file">
+    <compoundname>testcolagen.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="colagen_8h" local="yes">colagen.h</includes>
+    <incdepgraph>
+      <node id="1210">
+        <label>Escritorio/EC3/src/testcolagen.cpp</label>
+        <link refid="testcolagen.cpp"/>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>iomanip</label>
+      </node>
+      <node id="1212">
+        <label>limits</label>
+      </node>
+      <node id="1215">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1233">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1237">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="1217" relation="include">
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1214" relation="include">
+        </childnode>
+      </node>
+      <node id="1218">
+        <label>string</label>
+      </node>
+      <node id="1229">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1228" relation="include">
+        </childnode>
+      </node>
+      <node id="1228">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1235">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>string.h</label>
+      </node>
+      <node id="1224">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1214" relation="include">
+        </childnode>
+      </node>
+      <node id="1214">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>utility</label>
+      </node>
+      <node id="1219">
+        <label>sstream</label>
+      </node>
+      <node id="1211">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1229" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+      </node>
+      <node id="1234">
+        <label>iosfwd</label>
+      </node>
+      <node id="1217">
+        <label>iostream</label>
+      </node>
+      <node id="1220">
+        <label>ctype.h</label>
+      </node>
+      <node id="1213">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
+      </node>
+      <node id="1236">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1223">
+        <label>set</label>
+      </node>
+      <node id="1226">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1216">
+        <label>stdio.h</label>
+      </node>
+      <node id="1225">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1232">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classColaGenTest" prot="public">ColaGenTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testcolagen_8cpp_1c8f950f3bd6403c61259a581df892d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ColaGenTest, ConsultoresyModificadores)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classColaGenTest" kindref="compound">ColaGenTest</ref></type>
+        </param>
+        <param>
+          <type>ConsultoresyModificadores</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testcolagen.cpp" line="34" bodyfile="/home/Mario/Escritorio/EC3/src/testcolagen.cpp" bodystart="34" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="testcolagen_8cpp_12f3c5a555a1cc6ffca2bca2b960f44e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ColaGenTest, Constructores)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classColaGenTest" kindref="compound">ColaGenTest</ref></type>
+        </param>
+        <param>
+          <type>Constructores</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testcolagen.cpp" line="74" bodyfile="/home/Mario/Escritorio/EC3/src/testcolagen.cpp" bodystart="74" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase <ref refid="classColaGen" kindref="compound">ColaGen</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>07-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="colagen_8h" kindref="compound" tooltip="Implementacion de la plantilla de la clase ColaGen.">colagen.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//Creamos<sp/>varias<sp/>instancias<sp/>con<sp/>las<sp/>que<sp/>trabajar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classColaGenTest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classColaGenTest" kindref="compound">ColaGenTest</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>testing::<ref refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" kindref="member">Test</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;int&gt;<sp/><ref refid="classColaGenTest_15bc59c8f59d990dd634d308807f449d6" kindref="member">C1</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;int*&gt;<sp/><ref refid="classColaGenTest_1c86497e0549c884f9c2232393eb335f1" kindref="member">D1</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="classColaGenTest_181fa4fe7084b16db79844f0683a5d89d" kindref="member">vector</ref>[10];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classColaGenTest_1f8bcfa3f92ebce820d5a862fa5eca5a7" kindref="member">SetUp</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classColaGenTest_181fa4fe7084b16db79844f0683a5d89d" kindref="member">vector</ref>[i]=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classColaGenTest_1400b35cff4bb5eb074025459342ae25f" kindref="member">TearDown</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classColaGenTest_181fa4fe7084b16db79844f0683a5d89d" kindref="member">vector</ref>[i];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classColaGenTest" kindref="compound">ColaGenTest</ref>,ConsultoresyModificadores){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(C1.vacia());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>C1.insertar_dato(1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_19e00bbd67f469acb8893a2ec0a08806d" kindref="member">ASSERT_FALSE</ref>(C1.vacia());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(1,C1.get());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>C1.insertar_dato(2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>C1.insertar_dato(3);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>C1.insertar_dato(4);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(4,C1.get_num_elementos());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(C1.borrar());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(2,C1.get());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(C1.borrar());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(3,C1.get());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(C1.borrar());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(4,C1.get());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(C1.borrar());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(C1.borrar());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//con<sp/>elementos<sp/>dinamicos:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(D1.vacia());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>D1.insertar_dato(vector[1]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_19e00bbd67f469acb8893a2ec0a08806d" kindref="member">ASSERT_FALSE</ref>(D1.vacia());</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(vector[1],D1.get());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>D1.insertar_dato(vector[2]);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>D1.insertar_dato(vector[3]);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>D1.insertar_dato(vector[4]);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(4,D1.get_num_elementos());</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(D1.borrar());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(vector[2],D1.get());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(D1.borrar());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(vector[3],D1.get());</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(D1.borrar());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(vector[4],D1.get());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(D1.borrar());</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(D1.borrar());</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classColaGenTest" kindref="compound">ColaGenTest</ref>,Constructores){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(C1.vacia()&amp;&amp;D1.vacia());</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>C1.insertar_dato(2);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>C1.insertar_dato(3);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>C1.insertar_dato(4);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;int&gt;<sp/>CC(C1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(C1.get_num_elementos(),CC.get_num_elementos());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;C1.get_num_elementos();i++){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(C1.get(),CC.get());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>C1.borrar();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>CC.borrar();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//con<sp/>elementos<sp/>dinamicos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>D1.insertar_dato(vector[i]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;int*&gt;<sp/>DD(D1);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(D1.get_num_elementos(),DD.get_num_elementos());</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;D1.get_num_elementos();i++){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(D1.get(),DD.get());</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>D1.borrar();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>DD.borrar();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testcolagen.cpp"/>
+  </compounddef>
+</doxygen>

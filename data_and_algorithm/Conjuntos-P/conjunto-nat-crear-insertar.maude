@@ -1,0 +1,91 @@
+fmod CONJUNTO-NATURALES is
+  protecting NAT .
+  protecting BOOL .
+  sort Conjunto .
+  
+  op crear : -> Conjunto [ctor] .
+  op insertar : Conjunto Nat -> Conjunto [ctor] .
+  op esVacio : Conjunto -> Bool .
+  op _€_ : Nat Conjunto -> Bool .
+  
+  op borrar : Conjunto Nat -> Conjunto .
+  ops union interseccion : Conjunto Conjunto -> Conjunto [comm assoc] .
+  op diferencia : Conjunto Conjunto -> Conjunto . ---- diferencia simétrica
+ 
+
+  vars N M : Nat .
+  vars C C' : Conjunto .
+  
+ *** Ecuacion purificadora
+  ceq insertar(C, M) = C if M € C .
+   
+ *** Resto de ecuaciones 
+
+  eq esVacio(crear) = true .
+  eq esVacio(insertar(C, N)) = false .
+
+  eq N € crear = false .
+  eq N € insertar(C, N) = true . 
+  eq N € insertar(C, M) = N € C [owise] .
+  
+  *** Las dos ultimas ecuaciones podían haberse sustituido por el operador if_then_else_fi
+  *** eq N € insertar(C, M) = if (N == M) then true
+  ***						  else N € C fi .
+  						  
+  eq borrar(crear, N) = crear .
+  eq borrar(insertar(C, M), N) = if M == N then borrar(C, N) 
+  								 else insertar(borrar(C, N),M) fi .
+  
+  eq union(crear, C) = C .
+  eq union(insertar(C, M), C') = insertar (union(C, C'), M) .
+  
+  eq interseccion(crear, C) = crear .
+  eq interseccion(insertar(C, M), C') = if M € C' then insertar( interseccion(C, C'), M)
+										else interseccion(C, C') fi .
+			
+  eq diferencia (C, crear) = C .
+  eq diferencia (C, insertar(C', M)) = diferencia (borrar(C, M), C') .
+
+endfm
+***( 
+red 1 € insertar(insertar(insertar(insertar(crear, 1),2),3),4) .
+---- result Bool: true
+red 5 € union(insertar(crear, 2), insertar(insertar(crear, 2), 3)) .
+---- result Bool: false
+red 3 € union(insertar(crear, 2), insertar(insertar(crear, 2), 3)) .
+---- result Bool: true
+
+red borrar(insertar(insertar(insertar(insertar(crear, 1),2),3),4), 1) .
+---- result Conjunto: insertar(insertar(insertar(crear, 2), 3), 4)
+red borrar(insertar(insertar(insertar(insertar(crear, 1),2),3),4), 5) .
+---- result Conjunto: insertar(insertar(insertar(insertar(crear, 1), 2), 3), 4)
+red borrar(union(insertar(crear,2),  insertar(insertar(crear,2),3)), 2) .
+---- result Conjunto: insertar(crear, 3)
+
+red union(insertar(crear,2),  insertar(insertar(crear,2),3)) .
+---- result Conjunto: insertar(insertar(crear, 2), 3)
+
+red interseccion(insertar(insertar(insertar(insertar(crear, 1),2),3),4), insertar(crear, 5)) .
+---- result Conjunto: crear
+red interseccion(insertar(insertar(insertar(insertar(crear, 1),2),3),4), crear) .
+---- result Conjunto: crear
+red interseccion(insertar(insertar(crear,1),5) , insertar(insertar(insertar(insertar(crear, 1),2),3),2)) .
+---- result Conjunto: insertar(crear, 1)
+
+red diferencia(insertar(insertar(insertar(insertar(crear, 1),2),3),4), insertar(crear, 5)) .
+---- result Conjunto: insertar(insertar(insertar(insertar(crear, 1), 2), 3), 4)
+red diferencia(insertar(insertar(crear,1),5) , insertar(insertar(insertar(insertar(crear, 1),2),3),4)) .
+---- result Conjunto: insertar(crear, 5)
+red diferencia(insertar(insertar(insertar(insertar(crear, 1),2),3),4),insertar(insertar(insertar(crear,1),5),3) ) .
+---- result Conjunto: insertar(insertar(crear, 2), 4)
+
+---- Cuando se defina como ejercicio la operacion Cardinal, probar estas reducciones:
+red card(insertar(insertar(crear,1),2)) .
+---- result NzNat: 2
+red card(union(insertar(crear, 2), insertar(insertar(crear, 2), 3))) .
+---- result NzNat: 2
+red card(borrar(insertar(insertar(insertar(insertar(crear, 1),2),3),4), 1) ).
+---- result NzNat: 3
+
+
+)

@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classLlave" kind="class" prot="public">
+    <compoundname>Llave</compoundname>
+    <includes refid="llave_8h" local="no">llave.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLlave_138bfe1bd01818c4d647d3117793da954" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Llave::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <briefdescription>
+<para>Entero que contiene el identificador de la llave, (-1 representa inicializado pero sin valor asignado). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/llave.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLlave_17fd5f7306371c7c3b190b80d86f5e4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>()</argsstring>
+        <name>Llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase llave, pone el identificador a -1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1390ec4f0160010df03971d08c536a189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>(const int &amp;i)</argsstring>
+        <name>Llave</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase llave <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero con el cual se va a inicializar la clase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1822f75869c5566fac2d1d7b67dbf115f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>(const Llave &amp;L)</argsstring>
+        <name>Llave</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por copia de la clase llave <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tipo <ref refid="classLlave" kindref="compound">Llave</ref> del cual se copiaran los atributos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1b26899de1c81551d751bdd0c81986285" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo consultor que obtiene el identificador de la llave <simplesect kind="return"><para>identificador de la llave </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="34" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="46" bodyend="49"/>
+        <referencedby refid="classCompLlavesMayor_1f703cdd5a443ff24b8a4b6d2e5317e34" compoundref="llave_8h" startline="56" endline="56">CompLlavesMayor::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_14dac6b5967be18669a17898ff1dac007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Llave::set_id</definition>
+        <argsstring>(const int &amp;a)</argsstring>
+        <name>set_id</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modificador que inserta un valor en el identificador de la clase <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que se copiara como identificador de la clase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1f341bf8376a92c91bf0ec87a6173a472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::~Llave</definition>
+        <argsstring>()</argsstring>
+        <name>~Llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase llave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="37" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_10f2eb466ab9403a0113e035d422d613f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref></type>
+        <definition>Llave Llave::operator=</definition>
+        <argsstring>(const Llave &amp;L)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del metodo =, asigna a la primera clase la segunda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>resultado de la asignacion(la clase actual) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1fabfc9e023a0cc7ed2a1546869253601" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Llave::operator&lt;</definition>
+        <argsstring>(const Llave &amp;L) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del metodo &lt;, comprueba si la primera llave es menor que la segunda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si el primero elemento es menor que el segundo(comparando los id_) y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="39" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_12a122594cdffeac7d7a76a340728123c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Llave::operator&gt;</definition>
+        <argsstring>(const Llave &amp;L) const </argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del metodo &gt;, comprueba si la primera llave es mayor que la segunda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si el primero elemento es mayor que el segundo(comparando los id_) y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_11c7296c36a22931ca9a0aad141794269" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Llave::operator==</definition>
+        <argsstring>(const Llave &amp;L) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del metodo ==, comprueba si la primera llave es igual que la segunda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si el primero elemento es igual que el segundo(comparando los id_) y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="41" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1522a52a45c83e003dc5fe4b099da3b2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Llave::operator!=</definition>
+        <argsstring>(const Llave &amp;L) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del metodo !=, comprueba si la primera llave es distinta a la segunda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si el primero elemento es distinto del segundo(comparando los id_) y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classLlave_16c539c87157e9ae5fe9d5d1727b05623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Llave &amp;L)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga de &quot;&lt;&lt;&quot;, copia la informacion de la llave a un flujo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento del que copiamos la informacion que se insertara en el flujo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un flujo con la informacion de la clase </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase representa los atributos y metodos de llaves. </para>    </briefdescription>
+    <detaileddescription>
+<para>La clase llave contendra un entero con el identificador de cada llave, usado mas adelante en las puertas. </para>    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/llave.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/llave.h" bodystart="28" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classLlave_1b26899de1c81551d751bdd0c81986285" prot="public" virt="non-virtual"><scope>Llave</scope><name>get_id</name></member>
+      <member refid="classLlave_138bfe1bd01818c4d647d3117793da954" prot="private" virt="non-virtual"><scope>Llave</scope><name>id_</name></member>
+      <member refid="classLlave_17fd5f7306371c7c3b190b80d86f5e4a5" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_1390ec4f0160010df03971d08c536a189" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_1822f75869c5566fac2d1d7b67dbf115f" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_1522a52a45c83e003dc5fe4b099da3b2b" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator!=</name></member>
+      <member refid="classLlave_1fabfc9e023a0cc7ed2a1546869253601" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;</name></member>
+      <member refid="classLlave_16c539c87157e9ae5fe9d5d1727b05623" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classLlave_10f2eb466ab9403a0113e035d422d613f" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator=</name></member>
+      <member refid="classLlave_11c7296c36a22931ca9a0aad141794269" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator==</name></member>
+      <member refid="classLlave_12a122594cdffeac7d7a76a340728123c" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&gt;</name></member>
+      <member refid="classLlave_14dac6b5967be18669a17898ff1dac007" prot="public" virt="non-virtual"><scope>Llave</scope><name>set_id</name></member>
+      <member refid="classLlave_1f341bf8376a92c91bf0ec87a6173a472" prot="public" virt="non-virtual"><scope>Llave</scope><name>~Llave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classCelda" kind="class" prot="public">
+    <compoundname>Celda</compoundname>
+    <includes refid="celda_8h" local="no">celda.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Celda::marca_</definition>
+        <argsstring></argsstring>
+        <name>marca_</name>
+        <briefdescription>
+<para>atributo usado por el algoritmo de kruskall </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="49" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classCelda_12dd0e57428817f6d4a59876660ce1111" compoundref="celda_8h" startline="40" endline="39">get_marca</referencedby>
+        <referencedby refid="classCelda_17cd701245d716ad4ee0c6f23a1e7eeac" compoundref="celda_8h" startline="39">set_marca</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCelda_11a63da7317f8a091b8e88f645b83471c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Celda::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <briefdescription>
+<para>identificador de la celda (-1 si no esta inicializado) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classCelda_19ebf77f2c605693c10cb670d275f2399" compoundref="celda_8h" startline="34">get_id</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" prot="private" static="no" mutable="no">
+        <type>priority_queue&lt; <ref refid="classLlave" kindref="compound">Llave</ref> *, vector&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt;, <ref refid="classCompLlavesMayor" kindref="compound">CompLlavesMayor</ref> &gt; *</type>
+        <definition>priority_queue&lt;Llave*, vector&lt;Llave*&gt;, CompLlavesMayor&gt;* Celda::llaves_</definition>
+        <argsstring></argsstring>
+        <name>llaves_</name>
+        <briefdescription>
+<para>llaves que contiene la celda </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="51" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCelda_1074964127aaa40f1b9794cdf01344dd9" prot="private" static="no" mutable="no">
+        <type>queue&lt; <ref refid="classPersona" kindref="compound">Persona</ref> * &gt; *</type>
+        <definition>queue&lt;Persona*&gt;* Celda::personas_</definition>
+        <argsstring></argsstring>
+        <name>personas_</name>
+        <briefdescription>
+<para>personas que estan en la celda </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCelda_1255f613383c5100f88c59a402b4b4ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Celda::Celda</definition>
+        <argsstring>()</argsstring>
+        <name>Celda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase celda </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_1418d48636d6a5007dee995d06db42d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Celda::Celda</definition>
+        <argsstring>(const int &amp;id)</argsstring>
+        <name>Celda</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro a estabalecer como el atributo id_ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_14991502c5cab11878ab563b4ec819d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Celda::~Celda</definition>
+        <argsstring>()</argsstring>
+        <name>~Celda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase celda </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="50" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_19ebf77f2c605693c10cb670d275f2399" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Celda::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <briefdescription>
+<para>Metodo que devuelve la id_ de la celda. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="34" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="34" bodyend="-1"/>
+        <references refid="classCelda_11a63da7317f8a091b8e88f645b83471c" compoundref="celda_8h" startline="50">id_</references>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_14282078fa5f3cce5e8efca91e29e622f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Celda::set_id</definition>
+        <argsstring>(const int &amp;id)</argsstring>
+        <name>set_id</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modificador que establece la id de la celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id a copiar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_185495f01557a7c1762619208501a0cb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Celda::set_llave</definition>
+        <argsstring>(Llave *llave)</argsstring>
+        <name>set_llave</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>llave</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta una llave en la celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>llave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llave a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="37" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_165bb99ee45297f1e63326d073ce07593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave * Celda::sacar_llave</definition>
+        <argsstring>()</argsstring>
+        <name>sacar_llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene y saca la primera llave <simplesect kind="return"><para>llave sacada de la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_17cd701245d716ad4ee0c6f23a1e7eeac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Celda::set_marca</definition>
+        <argsstring>(const int &amp;marca)</argsstring>
+        <name>set_marca</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>marca</declname>
+        </param>
+        <briefdescription>
+<para>Cambia el valor de la marca por uno pasado por parametro. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="39" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="39" bodyend="-1"/>
+        <references refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" compoundref="celda_8h" startline="49">marca_</references>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_12dd0e57428817f6d4a59876660ce1111" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Celda::get_marca</definition>
+        <argsstring>() const</argsstring>
+        <name>get_marca</name>
+        <briefdescription>
+<para>obtiene el valor de la marca. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>marca de la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="40" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="40" bodyend="39"/>
+        <references refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" compoundref="celda_8h" startline="49">marca_</references>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_129e79a26f399a6bcdd057f86a0c4867f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Celda::set_persona</definition>
+        <argsstring>(Persona *p)</argsstring>
+        <name>set_persona</name>
+        <param>
+          <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Introduce una persona en la celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>persona a introducir a la celda </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="42" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_19cae98c132d67911ad14c6dbebd6656a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Celda::ocupacion</definition>
+        <argsstring>() const</argsstring>
+        <name>ocupacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la cantidad de personas que hay en una celda <simplesect kind="return"><para>numero de personas que hay en la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="43" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_1dfd04055cf6de2c43d06e66d9cbd6ded" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Celda::get_persona</definition>
+        <argsstring>() const</argsstring>
+        <name>get_persona</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la primera persona de la celda <simplesect kind="return"><para>devuelve la primera persona de la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_1bfbb71f6ee86a38a31ed962b8e9d1e7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Celda::sacar_persona</definition>
+        <argsstring>() const</argsstring>
+        <name>sacar_persona</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saca y devuelve la primera persona de la celda <simplesect kind="return"><para>devuelve la primera persona de la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="126" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classCelda_1bc75b59cd9ee8a0bc7c115c847a0a141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Celda::Simular</definition>
+        <argsstring>()</argsstring>
+        <name>Simular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Realiza el algoritmo de simulacion en la celda <simplesect kind="return"><para>devuelve false si algun preso ha salido de la simulacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="46" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="147" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCelda_11ae028893035e539215673ec05256b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Celda &amp;C)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCelda" kindref="compound">Celda</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo al que se introduce la informacion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda de la que obtener la informacion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="36" bodyfile="/home/Mario/Escritorio/EC3/src/celda.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta representa una celda de una planta. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/celda.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/celda.h" bodystart="27" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classCelda_1255f613383c5100f88c59a402b4b4ac9" prot="public" virt="non-virtual"><scope>Celda</scope><name>Celda</name></member>
+      <member refid="classCelda_1418d48636d6a5007dee995d06db42d1a" prot="public" virt="non-virtual"><scope>Celda</scope><name>Celda</name></member>
+      <member refid="classCelda_19ebf77f2c605693c10cb670d275f2399" prot="public" virt="non-virtual"><scope>Celda</scope><name>get_id</name></member>
+      <member refid="classCelda_12dd0e57428817f6d4a59876660ce1111" prot="public" virt="non-virtual"><scope>Celda</scope><name>get_marca</name></member>
+      <member refid="classCelda_1dfd04055cf6de2c43d06e66d9cbd6ded" prot="public" virt="non-virtual"><scope>Celda</scope><name>get_persona</name></member>
+      <member refid="classCelda_11a63da7317f8a091b8e88f645b83471c" prot="private" virt="non-virtual"><scope>Celda</scope><name>id_</name></member>
+      <member refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" prot="private" virt="non-virtual"><scope>Celda</scope><name>llaves_</name></member>
+      <member refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" prot="private" virt="non-virtual"><scope>Celda</scope><name>marca_</name></member>
+      <member refid="classCelda_19cae98c132d67911ad14c6dbebd6656a" prot="public" virt="non-virtual"><scope>Celda</scope><name>ocupacion</name></member>
+      <member refid="classCelda_11ae028893035e539215673ec05256b71" prot="public" virt="non-virtual"><scope>Celda</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" prot="private" virt="non-virtual"><scope>Celda</scope><name>personas_</name></member>
+      <member refid="classCelda_165bb99ee45297f1e63326d073ce07593" prot="public" virt="non-virtual"><scope>Celda</scope><name>sacar_llave</name></member>
+      <member refid="classCelda_1bfbb71f6ee86a38a31ed962b8e9d1e7f" prot="public" virt="non-virtual"><scope>Celda</scope><name>sacar_persona</name></member>
+      <member refid="classCelda_14282078fa5f3cce5e8efca91e29e622f" prot="public" virt="non-virtual"><scope>Celda</scope><name>set_id</name></member>
+      <member refid="classCelda_185495f01557a7c1762619208501a0cb8" prot="public" virt="non-virtual"><scope>Celda</scope><name>set_llave</name></member>
+      <member refid="classCelda_17cd701245d716ad4ee0c6f23a1e7eeac" prot="public" virt="non-virtual"><scope>Celda</scope><name>set_marca</name></member>
+      <member refid="classCelda_129e79a26f399a6bcdd057f86a0c4867f" prot="public" virt="non-virtual"><scope>Celda</scope><name>set_persona</name></member>
+      <member refid="classCelda_1bc75b59cd9ee8a0bc7c115c847a0a141" prot="public" virt="non-virtual"><scope>Celda</scope><name>Simular</name></member>
+      <member refid="classCelda_14991502c5cab11878ab563b4ec819d34" prot="public" virt="non-virtual"><scope>Celda</scope><name>~Celda</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

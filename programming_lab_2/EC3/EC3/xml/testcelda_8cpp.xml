@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testcelda_8cpp" kind="file">
+    <compoundname>testcelda.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="celda_8h" local="yes">celda.h</includes>
+    <incdepgraph>
+      <node id="1189">
+        <label>iomanip</label>
+      </node>
+      <node id="1205">
+        <label>queue</label>
+      </node>
+      <node id="1179">
+        <label>limits</label>
+      </node>
+      <node id="1207">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="1184" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+      </node>
+      <node id="1182">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1204">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="1184" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1197">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+      </node>
+      <node id="1185">
+        <label>string</label>
+      </node>
+      <node id="1177">
+        <label>Escritorio/EC3/src/testcelda.cpp</label>
+        <link refid="testcelda.cpp"/>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+      </node>
+      <node id="1196">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1194">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+      </node>
+      <node id="1206">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1195">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1202">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1188">
+        <label>string.h</label>
+      </node>
+      <node id="1191">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>stack</label>
+      </node>
+      <node id="1198">
+        <label>utility</label>
+      </node>
+      <node id="1186">
+        <label>sstream</label>
+      </node>
+      <node id="1178">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1201">
+        <label>iosfwd</label>
+      </node>
+      <node id="1184">
+        <label>iostream</label>
+      </node>
+      <node id="1187">
+        <label>ctype.h</label>
+      </node>
+      <node id="1180">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1203">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1190">
+        <label>set</label>
+      </node>
+      <node id="1193">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1183">
+        <label>stdio.h</label>
+      </node>
+      <node id="1192">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCeldaTest" prot="public">CeldaTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testcelda_8cpp_12a0f7a10fa53a2fed0d2ac4c4bf3562e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(CeldaTest, Modificadores_y_consultores_basicos)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classCeldaTest" kindref="compound">CeldaTest</ref></type>
+        </param>
+        <param>
+          <type>Modificadores_y_consultores_basicos</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testcelda.cpp" line="36" bodyfile="/home/Mario/Escritorio/EC3/src/testcelda.cpp" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="testcelda_8cpp_18b44a4650c74eb4923d8e6f618626086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(CeldaTest, Operaciones_con_llaves)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classCeldaTest" kindref="compound">CeldaTest</ref></type>
+        </param>
+        <param>
+          <type>Operaciones_con_llaves</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testcelda.cpp" line="47" bodyfile="/home/Mario/Escritorio/EC3/src/testcelda.cpp" bodystart="47" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase celda. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>04-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="celda_8h" kindref="compound" tooltip="Declaracion de la clase celda.">celda.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//Creamos<sp/>varias<sp/>instancias<sp/>con<sp/>las<sp/>que<sp/>trabajar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classCeldaTest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCeldaTest" kindref="compound">CeldaTest</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>testing::<ref refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" kindref="member">Test</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref><sp/><ref refid="classCeldaTest_10ef47afb7af8f36ea30fb01bede62793" kindref="member">ce1</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref><sp/>*<ref refid="classCeldaTest_100b8fc7f0802f5a10c9e2f8b1569c884" kindref="member">cd2</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<ref refid="classCeldaTest_14086c3d4d95bc197691932bd57a6aa4c" kindref="member">llave1</ref>,<sp/>*<ref refid="classCeldaTest_1b59367bd8e993883b7e3a72e74c32526" kindref="member">llave2</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCeldaTest_15ff73c9b8bc9ca8fc62c3acbc8dc0144" kindref="member">SetUp</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCeldaTest_14086c3d4d95bc197691932bd57a6aa4c" kindref="member">llave1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCeldaTest_1b59367bd8e993883b7e3a72e74c32526" kindref="member">llave2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(2);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCeldaTest_100b8fc7f0802f5a10c9e2f8b1569c884" kindref="member">cd2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref>(1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCeldaTest_1694fd2a9195c4618135af2485af87d01" kindref="member">TearDown</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCeldaTest_100b8fc7f0802f5a10c9e2f8b1569c884" kindref="member">cd2</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCeldaTest_14086c3d4d95bc197691932bd57a6aa4c" kindref="member">llave1</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCeldaTest_1b59367bd8e993883b7e3a72e74c32526" kindref="member">llave2</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classCeldaTest" kindref="compound">CeldaTest</ref>,<sp/>Modificadores_y_consultores_basicos){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(1,cd2-&gt;get_id());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(1,cd2-&gt;get_marca());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(-1,ce1.get_id());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(-1,ce1.get_id());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>cd2-&gt;set_id(5);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>ce1.set_marca(3);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(5,cd2-&gt;get_id());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(3,ce1.get_marca());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classCeldaTest" kindref="compound">CeldaTest</ref>,<sp/>Operaciones_con_llaves){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>cd2-&gt;set_llave(llave1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>cd2-&gt;set_llave(llave2);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(1,cd2-&gt;sacar_llave()-&gt;get_id());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(2,cd2-&gt;sacar_llave()-&gt;get_id());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(0,cd2-&gt;sacar_llave());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testcelda.cpp"/>
+  </compounddef>
+</doxygen>

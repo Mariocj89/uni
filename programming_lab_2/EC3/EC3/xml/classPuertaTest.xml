@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPuertaTest" kind="class" prot="public">
+    <compoundname>PuertaTest</compoundname>
+    <basecompoundref refid="classtesting_1_1Test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPuertaTest_1abbc6bb6438ccb7cbb4bc7ab96ea4e53" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPuerta" kindref="compound">Puerta</ref></type>
+        <definition>Puerta PuertaTest::PE</definition>
+        <argsstring></argsstring>
+        <name>PE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuertaTest_1259be514186f3576b757fd436a8a86bb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPuerta" kindref="compound">Puerta</ref> *</type>
+        <definition>Puerta * PuertaTest::PD</definition>
+        <argsstring></argsstring>
+        <name>PD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPuertaTest_108d0224c804e7ea5482104babfe58b71" prot="protected" static="no" mutable="no">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave* PuertaTest::vector[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPuertaTest_1042e0662ae8c4750bda875799ed23205" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PuertaTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1Test_1aa64e7ad495ea976b98f97a5f3738c35">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="22" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classPuertaTest_1904a39a38b4e64472702662c9ffa258c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PuertaTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1Test_11f5480b7d2c1067f7bba77a8993cf12f">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="166">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="165">
+        <label>PuertaTest</label>
+        <link refid="classPuertaTest"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="170">
+        <label>Puerta</label>
+        <link refid="classPuerta"/>
+        <childnode refid="171" relation="usage">
+          <edgelabel>probadas_
+combinacion_</edgelabel>
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>copia_combinacion_</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
+        <label>T</label>
+      </node>
+      <node id="171">
+        <label>Arbol&lt; Llave * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="171" relation="usage">
+          <edgelabel>hder_
+hizq_</edgelabel>
+        </childnode>
+        <childnode refid="169" relation="usage">
+          <edgelabel>dato_raiz_</edgelabel>
+        </childnode>
+      </node>
+      <node id="168">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1Test"/>
+      </node>
+      <node id="169">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="173">
+        <label>ColaGen&lt; T &gt;::TipoNodo</label>
+        <link refid="structColaGen_1_1TipoNodo"/>
+        <childnode refid="173" relation="usage">
+          <edgelabel>sig_</edgelabel>
+        </childnode>
+        <childnode refid="174" relation="usage">
+          <edgelabel>dato_</edgelabel>
+        </childnode>
+      </node>
+      <node id="167">
+        <label>PuertaTest</label>
+        <link refid="classPuertaTest"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+        <childnode refid="169" relation="usage">
+          <edgelabel>vector</edgelabel>
+        </childnode>
+        <childnode refid="170" relation="usage">
+          <edgelabel>PD
+PE</edgelabel>
+        </childnode>
+      </node>
+      <node id="172">
+        <label>ColaGen&lt; Llave * &gt;</label>
+        <link refid="classColaGen"/>
+        <childnode refid="173" relation="usage">
+          <edgelabel>fin_
+frente_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="18" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="18" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Test_1ccbfb9e722f1f1fef94248d056ed918c" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>__pad0__</name></member>
+      <member refid="classtesting_1_1Test_1b4fbbeba80a377c0ab2ea2793c2a2a33" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>__pad1__</name></member>
+      <member refid="classtesting_1_1Test_111223d23ca155b8a85bf63b8f1b0074c" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>__pad2__</name></member>
+      <member refid="classtesting_1_1Test_129540d1bf03baf570118c6e56e4ae901" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1Test_1765821feda4da8debf420af85aa597b5" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1Test_15aa7b30faff2d57475f7e9eea1bc8eaa" prot="public" virt="non-virtual"><scope>PuertaTest</scope><name>internal::TestInfoImpl</name></member>
+      <member refid="classPuertaTest_1259be514186f3576b757fd436a8a86bb" prot="protected" virt="non-virtual"><scope>PuertaTest</scope><name>PD</name></member>
+      <member refid="classPuertaTest_1abbc6bb6438ccb7cbb4bc7ab96ea4e53" prot="protected" virt="non-virtual"><scope>PuertaTest</scope><name>PE</name></member>
+      <member refid="classtesting_1_1Test_191032b7a73c1881bbab4db263fa44447" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1Test_13992f48623adaaa73107c1b6263cdc56" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>RecordProperty</name></member>
+      <member refid="classPuertaTest_1042e0662ae8c4750bda875799ed23205" prot="protected" virt="virtual"><scope>PuertaTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Test_19d4162224b354f9d29e0816d89dde567" prot="package" virt="virtual"><scope>PuertaTest</scope><name>Setup</name></member>
+      <member refid="classtesting_1_1Test_123c50ad7f4dd7c23eb7bead09ca1e25b" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classPuertaTest_1904a39a38b4e64472702662c9ffa258c" prot="protected" virt="virtual"><scope>PuertaTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Test_1a9a9d7e19e41c660b6880d2d25918726" prot="package" virt="non-virtual"><scope>PuertaTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" prot="protected" virt="non-virtual"><scope>PuertaTest</scope><name>Test</name></member>
+      <member refid="classPuertaTest_108d0224c804e7ea5482104babfe58b71" prot="protected" virt="non-virtual"><scope>PuertaTest</scope><name>vector</name></member>
+      <member refid="classtesting_1_1Test_1fb788db3d734171957dc11ebe5f1a9cb" prot="package" virt="virtual"><scope>PuertaTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

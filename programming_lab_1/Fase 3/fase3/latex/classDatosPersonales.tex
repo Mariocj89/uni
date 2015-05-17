@@ -1,0 +1,425 @@
+\section{Referencia de la Clase DatosPersonales}
+\label{classDatosPersonales}\index{DatosPersonales@{DatosPersonales}}
+{\tt \#include $<$datospersonales.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+int {\bf CalcularEdad} () const
+\begin{CompactList}\small\item\em Modulo privado que devuelve la edad teniendo encuenta la \doxyref{fecha}{p.}{classfecha} de nacimiento y la \doxyref{fecha}{p.}{classfecha} actual. \item\end{CompactList}\item 
+{\bf DatosPersonales} ()
+\begin{CompactList}\small\item\em Constructor por defecto de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. \item\end{CompactList}\item 
+{\bf DatosPersonales} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Constructor por copia de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. \item\end{CompactList}\item 
+{\bf DatosPersonales} (const TCadena2 Name, const TCadena2 Surname1, const TCadena2 Surname2, const {\bf fecha} \&Date, const TCadena1 Number)
+\begin{CompactList}\small\item\em Constructor parametrizado de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. \item\end{CompactList}\item 
+void {\bf PonerNombre} (const TCadena2 Name)
+\begin{CompactList}\small\item\em Establece nombre de la clase. \item\end{CompactList}\item 
+void {\bf PonerApellido1} (const TCadena2 Surname1)
+\begin{CompactList}\small\item\em Establece Apellido1 de la clase. \item\end{CompactList}\item 
+void {\bf PonerApellido2} (const TCadena2 Surname2)
+\begin{CompactList}\small\item\em Establece Apellido2 de la clase. \item\end{CompactList}\item 
+void {\bf PonerFecha} (const {\bf fecha} \&Date)
+\begin{CompactList}\small\item\em Establece FechaNacimiento de la clase.(sobrecargado). \item\end{CompactList}\item 
+void {\bf PonerFecha} (const int \&d, const int \&m, const int \&a)
+\begin{CompactList}\small\item\em Establece FechaNacimiento de la clase.(sobrecargado). \item\end{CompactList}\item 
+void {\bf PonerTelefono} (const TCadena1 Number)
+\begin{CompactList}\small\item\em Establece Telefono de la clase. \item\end{CompactList}\item 
+void {\bf PonerTodo} (const TCadena2 Name, const TCadena2 Surname1, const TCadena2 Surname2, const {\bf fecha} \&Date, const TCadena1 Number)
+\begin{CompactList}\small\item\em Establece todos los atributos de la clase a traves de los parametros de entrada. \item\end{CompactList}\item 
+void {\bf ObtenerNombre} (TCadena2 \&Name) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo Nombre. \item\end{CompactList}\item 
+void {\bf ObtenerApellido1} (TCadena2 \&Surname1) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo Apellido1. \item\end{CompactList}\item 
+void {\bf ObtenerApellido2} (TCadena2 \&Surname2) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo Apellido2. \item\end{CompactList}\item 
+void {\bf ObtenerFecha} ({\bf fecha} \&Date) const 
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). \item\end{CompactList}\item 
+void {\bf ObtenerFecha} (int \&d, int \&m, int \&a) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). \item\end{CompactList}\item 
+void {\bf ObtenerTelefono} (TCadena1 \&Number) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida el atributo Numero. \item\end{CompactList}\item 
+void {\bf ObtenerTodo} (TCadena2 \&Name, TCadena2 \&Surname1, TCadena2 \&Surname2, {\bf fecha} \&Date, TCadena1 \&Number) const
+\begin{CompactList}\small\item\em Obtiene por parametro de salida todos los atributos. \item\end{CompactList}\item 
+void {\bf Clonar} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Copia dat a la clase actual. \item\end{CompactList}\item 
+int {\bf CompararA} (const {\bf DatosPersonales} \&dat) const
+\begin{CompactList}\small\item\em Compara las dos clases a traves del numero de telefono. \item\end{CompactList}\item 
+void {\bf MostrarES} (const {\bf Meses} \&M) const
+\begin{CompactList}\small\item\em Muestra la clase actual en castellano. \item\end{CompactList}\item 
+void {\bf MostrarEN} (const {\bf Meses} \&M) const
+\begin{CompactList}\small\item\em Muestra la clase actual en ingles. \item\end{CompactList}\item 
+void {\bf PedirES} ()
+\begin{CompactList}\small\item\em Pide la informacion para rellenar la clase en castellano. \item\end{CompactList}\item 
+void {\bf PedirEN} ()
+\begin{CompactList}\small\item\em Pide la informacion para rellenar la clase en ingles. \item\end{CompactList}\item 
+void {\bf Cargar} (ifstream \&entrada)
+\begin{CompactList}\small\item\em Carga la informacion de un dato personal, usando un flujo dado. \item\end{CompactList}\item 
+void {\bf Guardar} (ofstream \&salida) const
+\begin{CompactList}\small\item\em Guarda la informacion de un dato personal, usando un flujo dado. \item\end{CompactList}\item 
+{\bf $\sim$DatosPersonales} ()\label{classDatosPersonales_f31ea83cfb9bb2c7a6c4e566cc5eacd6}
+
+\begin{CompactList}\small\item\em Destructor de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos privados}
+\begin{CompactItemize}
+\item 
+TCadena2 \textbf{Nombre}\label{classDatosPersonales_8018c746e88d521bd07aa37eb0ced685}
+
+\item 
+TCadena2 \textbf{Apellido1}\label{classDatosPersonales_1f5883adb18929bce487219af2ced98d}
+
+\item 
+TCadena2 \textbf{Apellido2}\label{classDatosPersonales_caa800d51a1e4036e08607c2916d7c00}
+
+\item 
+{\bf fecha} \textbf{FechaNacimiento}\label{classDatosPersonales_aa15af8c4fe8fd1c89d5ad8dd4cbded8}
+
+\item 
+TCadena1 \textbf{Telefono}\label{classDatosPersonales_95e40c68b7aa9ea0d1eb5e5dd0972e7c}
+
+\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}, almacena cierta informacion sobre una persona y permite trabajar con esta. Sus atributos son:\begin{itemize}
+\item Nombre: cadena de caracteres que guarda el nombre.\item Apellido1: cadena de caracteres que guarda el primer apellido.\item Apellido2: cadena de caracteres que guarda el segundo apellido.\item Fecha: Tipo \doxyref{fecha}{p.}{classfecha} que almacena la \doxyref{fecha}{p.}{classfecha} de cumpleaños.\item Telefono: cadena de caracteres que guarda el telefono. \end{itemize}
+
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}DatosPersonales::DatosPersonales ()}\label{classDatosPersonales_b16ce8577d7821760aff29410130d695}
+
+
+Constructor por defecto de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. 
+
+Constructores \index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}DatosPersonales::DatosPersonales (const {\bf DatosPersonales} \& {\em dat})}\label{classDatosPersonales_70a7fe0252810867a3df6eb0d18f891c}
+
+
+Constructor por copia de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. 
+
+\begin{Desc}
+\item[Precondición:]dat debe estar previamente inicializado correctamente. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales}, parametro con la que se va a iniciar la clase. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\index{DatosPersonales@{DatosPersonales}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}DatosPersonales::DatosPersonales (const TCadena2 {\em Name}, const TCadena2 {\em Surname1}, const TCadena2 {\em Surname2}, const {\bf fecha} \& {\em Date}, const TCadena1 {\em Number})}\label{classDatosPersonales_0a1dda5828c93b244601b983454d4550}
+
+
+Constructor parametrizado de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Name,:}]TCadena2, Nombre. \item[{\em Surname1,:}]TCadena2, Apellido1. \item[{\em Surname2,:}]TCadena2, Apellido2. \item[{\em Date,:}]\doxyref{fecha}{p.}{classfecha}, FechaNacimiento. \item[{\em Number,:}]TCadena1, Telefono. \end{description}
+\end{Desc}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{DatosPersonales@{DatosPersonales}!CalcularEdad@{CalcularEdad}}
+\index{CalcularEdad@{CalcularEdad}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int DatosPersonales::CalcularEdad () const}\label{classDatosPersonales_daf353e12d70a774ec2df032c4b3db2e}
+
+
+Modulo privado que devuelve la edad teniendo encuenta la \doxyref{fecha}{p.}{classfecha} de nacimiento y la \doxyref{fecha}{p.}{classfecha} actual. 
+
+\begin{Desc}
+\item[Precondición:]FechaNacimiento debe estar inicializado correctamente. \end{Desc}
+
+
+Obtenemos la \doxyref{fecha}{p.}{classfecha} actual \index{DatosPersonales@{DatosPersonales}!PonerNombre@{PonerNombre}}
+\index{PonerNombre@{PonerNombre}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerNombre (const TCadena2 {\em Name})}\label{classDatosPersonales_a6018eaebcf01229f1f34d7a093e8435}
+
+
+Establece nombre de la clase. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Name,:}]TCadena2 que se copiara a Nombre. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerApellido1@{PonerApellido1}}
+\index{PonerApellido1@{PonerApellido1}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerApellido1 (const TCadena2 {\em Surname1})}\label{classDatosPersonales_6b1debed992686ba8ba402a23f2ab407}
+
+
+Establece Apellido1 de la clase. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Surname1,:}]TCadena2 que se copiara a Apellido1. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerApellido2@{PonerApellido2}}
+\index{PonerApellido2@{PonerApellido2}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerApellido2 (const TCadena2 {\em Surname2})}\label{classDatosPersonales_9e9aa8614e54385386b34532473d9079}
+
+
+Establece Apellido2 de la clase. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Surname2,:}]TCadena2 que se copiara a Apellido2. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerFecha@{PonerFecha}}
+\index{PonerFecha@{PonerFecha}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerFecha (const {\bf fecha} \& {\em Date})}\label{classDatosPersonales_ba43702c2a4844ef7bc441e232ea3014}
+
+
+Establece FechaNacimiento de la clase.(sobrecargado). 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Date,:}]Tipo \doxyref{fecha}{p.}{classfecha} que se copiara a FechaNacimiento. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerFecha@{PonerFecha}}
+\index{PonerFecha@{PonerFecha}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerFecha (const int \& {\em d}, const int \& {\em m}, const int \& {\em a})}\label{classDatosPersonales_a027c302e2537aa78f4943d8a0ac9abb}
+
+
+Establece FechaNacimiento de la clase.(sobrecargado). 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]Entero que sera el dia de FechaNacimiento. \item[{\em m,:}]Entero que sera el mes de FechaNacimiento. \item[{\em a,:}]Entero que sera el año de FechaNacimiento. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerTelefono@{PonerTelefono}}
+\index{PonerTelefono@{PonerTelefono}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerTelefono (const TCadena1 {\em Number})}\label{classDatosPersonales_9551ac68bfc7ee28bbc145d392c54f69}
+
+
+Establece Telefono de la clase. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Number,:}]TCadena1 que se copiara a Number. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PonerTodo@{PonerTodo}}
+\index{PonerTodo@{PonerTodo}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PonerTodo (const TCadena2 {\em Name}, const TCadena2 {\em Surname1}, const TCadena2 {\em Surname2}, const {\bf fecha} \& {\em Date}, const TCadena1 {\em Number})}\label{classDatosPersonales_9d5e4258740f66b9cb249fa9763c2c3a}
+
+
+Establece todos los atributos de la clase a traves de los parametros de entrada. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Name,:}]TCadena2, Nombre. \item[{\em Surname1,:}]TCadena2, Apellido1. \item[{\em Surname2,:}]TCadena2, Apellido2. \item[{\em Date,:}]\doxyref{fecha}{p.}{classfecha}, FechaNacimiento. \item[{\em Number,:}]TCadena1, Telefono. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerNombre@{ObtenerNombre}}
+\index{ObtenerNombre@{ObtenerNombre}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerNombre (TCadena2 \& {\em Name}) const}\label{classDatosPersonales_b8cd03cbc9025d517200f82bc910cb8e}
+
+
+Obtiene por parametro de salida el atributo Nombre. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Name,:}]TCadena1 donde se copiara el atributo. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerApellido1@{ObtenerApellido1}}
+\index{ObtenerApellido1@{ObtenerApellido1}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerApellido1 (TCadena2 \& {\em Surname1}) const}\label{classDatosPersonales_01b7dcfc683528de4289da5ea2191959}
+
+
+Obtiene por parametro de salida el atributo Apellido1. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Surname1,:}]TCadena1 donde se copiara el atributo. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerApellido2@{ObtenerApellido2}}
+\index{ObtenerApellido2@{ObtenerApellido2}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerApellido2 (TCadena2 \& {\em Surname2}) const}\label{classDatosPersonales_37ca275334b66506ee86932c5a723f3b}
+
+
+Obtiene por parametro de salida el atributo Apellido2. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Surname2,:}]TCadena1 donde se copiara el atributo. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerFecha@{ObtenerFecha}}
+\index{ObtenerFecha@{ObtenerFecha}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerFecha ({\bf fecha} \& {\em Date}) const}\label{classDatosPersonales_9546d71727e0a1f61a89cfdfed722bfd}
+
+
+Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Date,:}]TCadena1 donde se copiara el atributo. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerFecha@{ObtenerFecha}}
+\index{ObtenerFecha@{ObtenerFecha}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerFecha (int \& {\em d}, int \& {\em m}, int \& {\em a}) const}\label{classDatosPersonales_f8add8dfb4d577893603e9d603b41e32}
+
+
+Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]Entero donde se copiara el dia de FechaNacimiento. \item[{\em m,:}]Entero donde se copiara el mes de FechaNacimiento. \item[{\em a,:}]Entero donde se copiara el año de FechaNacimiento. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerTelefono@{ObtenerTelefono}}
+\index{ObtenerTelefono@{ObtenerTelefono}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerTelefono (TCadena1 \& {\em Number}) const}\label{classDatosPersonales_8aeace66165809ecacf1362b6903fa3c}
+
+
+Obtiene por parametro de salida el atributo Numero. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Number,:}]TCadena1 donde se copiara el atributo. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!ObtenerTodo@{ObtenerTodo}}
+\index{ObtenerTodo@{ObtenerTodo}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::ObtenerTodo (TCadena2 \& {\em Name}, TCadena2 \& {\em Surname1}, TCadena2 \& {\em Surname2}, {\bf fecha} \& {\em Date}, TCadena1 \& {\em Number}) const}\label{classDatosPersonales_913ceb1dfc7294f2238367bffc3e46b9}
+
+
+Obtiene por parametro de salida todos los atributos. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar correctamente inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em Name,:}]TCadena2, Nombre. \item[{\em Surname1,:}]TCadena2, Apellido1. \item[{\em Surname2,:}]TCadena2, Apellido2. \item[{\em Date,:}]\doxyref{fecha}{p.}{classfecha}, FechaNacimiento. \item[{\em Number,:}]TCadena1, Telefono. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!Clonar@{Clonar}}
+\index{Clonar@{Clonar}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::Clonar (const {\bf DatosPersonales} \& {\em dat})}\label{classDatosPersonales_6b04fa9f0d905fc4ffac22b7bd898eed}
+
+
+Copia dat a la clase actual. 
+
+\begin{Desc}
+\item[Precondición:]dat debe estar previamente inicializado correctamente. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales}, parametro que se va a copiar a la clase actual. \end{description}
+\end{Desc}
+\index{DatosPersonales@{DatosPersonales}!CompararA@{CompararA}}
+\index{CompararA@{CompararA}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int DatosPersonales::CompararA (const {\bf DatosPersonales} \& {\em dat}) const}\label{classDatosPersonales_0804283841f32fb53b91d119dba2edc4}
+
+
+Compara las dos clases a traves del numero de telefono. 
+
+\begin{Desc}
+\item[Precondición:]dat y la clase actual deben estar previamente inicializadas correctamente. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales}, clase que se va a comparar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]1 si la clase actual es mayor, -1 si es menor y 0 si es igual. \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!MostrarES@{MostrarES}}
+\index{MostrarES@{MostrarES}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::MostrarES (const {\bf Meses} \& {\em M}) const}\label{classDatosPersonales_08089848e92b4abc249dca7f78ec33ca}
+
+
+Muestra la clase actual en castellano. 
+
+\begin{Desc}
+\item[Precondición:]debe estar correctamenete inicializada \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!MostrarEN@{MostrarEN}}
+\index{MostrarEN@{MostrarEN}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::MostrarEN (const {\bf Meses} \& {\em M}) const}\label{classDatosPersonales_bbfb6282517df4f02235ea69a19a41fd}
+
+
+Muestra la clase actual en ingles. 
+
+\begin{Desc}
+\item[Precondición:]debe estar correctamenete inicializada \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PedirES@{PedirES}}
+\index{PedirES@{PedirES}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PedirES ()}\label{classDatosPersonales_d2a391dc31997f2e41d09e1b58cff428}
+
+
+Pide la informacion para rellenar la clase en castellano. 
+
+\begin{Desc}
+\item[Precondición:]el usuario debe introducir la informacion de manera correcta. \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!PedirEN@{PedirEN}}
+\index{PedirEN@{PedirEN}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::PedirEN ()}\label{classDatosPersonales_d7fdf0b6b094a7c90f388628c3283387}
+
+
+Pide la informacion para rellenar la clase en ingles. 
+
+\begin{Desc}
+\item[Precondición:]el usuario debe introducir la informacion de manera correcta. \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!Cargar@{Cargar}}
+\index{Cargar@{Cargar}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::Cargar (ifstream \& {\em entrada})}\label{classDatosPersonales_0d8c3a8392466978c99e191a89dcb9d3}
+
+
+Carga la informacion de un dato personal, usando un flujo dado. 
+
+\begin{Desc}
+\item[Precondición:]debe estar abierto correctamente el flujo. \end{Desc}
+\index{DatosPersonales@{DatosPersonales}!Guardar@{Guardar}}
+\index{Guardar@{Guardar}!DatosPersonales@{DatosPersonales}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void DatosPersonales::Guardar (ofstream \& {\em salida}) const}\label{classDatosPersonales_7532391e8227d45aef3c15c6ff8be661}
+
+
+Guarda la informacion de un dato personal, usando un flujo dado. 
+
+\begin{Desc}
+\item[Precondición:]debe estar abierto correctamente el flujo. \end{Desc}
+
+
+La documentación para esta clase fué generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+Escritorio/fase3/src/{\bf datospersonales.h}\item 
+Escritorio/fase3/src/{\bf datospersonales.cpp}\end{CompactItemize}

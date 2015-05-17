@@ -1,0 +1,1298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPlanta" kind="class" prot="public">
+    <compoundname>Planta</compoundname>
+    <includes refid="planta_8h" local="no">planta.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPlanta_11cb61304a7f5e75b5fa7f72416e2f09c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <briefdescription>
+<para>identificador de la planta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="92" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_13d867f2849c4bff480e1e6cdb0855fcd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::ancho_</definition>
+        <argsstring></argsstring>
+        <name>ancho_</name>
+        <briefdescription>
+<para>ancho de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="93" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_1b5749956a1159afda09baaa812a50626" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::alto_</definition>
+        <argsstring></argsstring>
+        <name>alto_</name>
+        <briefdescription>
+<para>alto de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="94" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_15bc5684b9358581b3611d56406b64cbc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::entrada_</definition>
+        <argsstring></argsstring>
+        <name>entrada_</name>
+        <briefdescription>
+<para>entrada de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="95" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classPlanta_127b1073cd8b5d664b0d1d025e5c6f09e" compoundref="planta_8h" startline="77" endline="77">get_entrada</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::salida_</definition>
+        <argsstring></argsstring>
+        <name>salida_</name>
+        <briefdescription>
+<para>salida de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="96" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classPlanta_178a6cd383d37f8f9106a08a7fb13889f" compoundref="planta_8h" startline="78" endline="78">get_salida</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" prot="private" static="no" mutable="no">
+        <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+        <definition>Grafo Planta::grafo_</definition>
+        <argsstring></argsstring>
+        <name>grafo_</name>
+        <briefdescription>
+<para>grafo que controla los caminos de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="97" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" compoundref="planta_8h" startline="76" endline="76">Accesible</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_167e97ee096d0483cbe277fed5b903ba9" prot="private" static="no" mutable="no">
+        <type><ref refid="classPuerta" kindref="compound">Puerta</ref> *</type>
+        <definition>Puerta* Planta::puerta_</definition>
+        <argsstring></argsstring>
+        <name>puerta_</name>
+        <briefdescription>
+<para>puntero a puerta de la planta </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="98" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" compoundref="planta_8h" startline="80" endline="80">AbrirPuerta</referencedby>
+        <referencedby refid="classPlanta_1ae61a9e6eb3a10da3d95568537105263" compoundref="planta_8h" startline="81" endline="81">CerrarPuerta</referencedby>
+        <referencedby refid="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" compoundref="planta_8h" startline="82" endline="82">EstadoPuerta</referencedby>
+        <referencedby refid="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" compoundref="planta_8h" startline="79" endline="79">ProbarLlave</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_17659fd47941f40677ce06d19e870e5c0" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classCelda" kindref="compound">Celda</ref> * &gt;</type>
+        <definition>vector&lt;Celda*&gt; Planta::celdas_</definition>
+        <argsstring></argsstring>
+        <name>celdas_</name>
+        <briefdescription>
+<para>vector que almacena punteros a todas las celdas. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="99" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_1216b465f1e4e0d9b8c468f4468741304" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Planta::n_llaves_</definition>
+        <argsstring></argsstring>
+        <name>n_llaves_</name>
+        <briefdescription>
+<para>Numero de llaves diferentes generadas en la planta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="100" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlanta_17970944dc30cb250e6959f0a661937ec" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classGuardia" kindref="compound">Guardia</ref> * &gt;</type>
+        <definition>vector&lt; Guardia*&gt; Planta::guardias_</definition>
+        <argsstring></argsstring>
+        <name>guardias_</name>
+        <briefdescription>
+<para>Lista de los guardias de la planta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="101" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPlanta_19d23b8f5859a94f9bfc87ba195af61cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Planta::Planta</definition>
+        <argsstring>(const int &amp;identificador, const int &amp;ancho, const int &amp;alto, const int &amp;entrada, const int &amp;salida, const int &amp;n_llaves, const int &amp;altura_control)</argsstring>
+        <name>Planta</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>identificador</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>ancho</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>alto</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>entrada</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>salida</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>n_llaves</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>altura_control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classPlanta" kindref="compound">Planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identificador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identificador de la planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ancho</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ancho de la planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alto de la planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entrada</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de entrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>salida</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_llaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de llaves a generar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altura_control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>altura de control del arbol de la puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="62" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="47" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_13aae754edf5fc8162bedc0c087d8d968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Planta::~Planta</definition>
+        <argsstring>()</argsstring>
+        <name>~Planta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classPlanta" kindref="compound">Planta</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="63" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="517" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_17ab0fe78527d4b7b7ab554244849ebdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve la id de la planta <simplesect kind="return"><para>id de la planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="64" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="497" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1a8158eb55c8d51b78d4059c0dd7ed955" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::Pintar</definition>
+        <argsstring>() const</argsstring>
+        <name>Pintar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinta la planta junto con el contenido de celdas, estado de puertas, estado de personajes, etc... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="65" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="678" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1af5e05150b26f7e7d92c58a09c7a19a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::set_persona</definition>
+        <argsstring>(const int pos, Persona *p)</argsstring>
+        <name>set_persona</name>
+        <param>
+          <type>const int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Introduce una persona en la celda indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que introducir la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>persona a introducir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="68" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="532" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1dc9c23b85d4632654e47843f6fa907e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Planta::get_persona</definition>
+        <argsstring>(const int &amp;pos) const </argsstring>
+        <name>get_persona</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve la primera persona de la celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda de la que obtener la primera persona </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>puntero a la primera persona de la celda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="69" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="543" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1e4ca2659fafa66ab961e1a5f3b6ce3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPersona" kindref="compound">Persona</ref> *</type>
+        <definition>Persona * Planta::sacar_persona</definition>
+        <argsstring>(const int &amp;pos)</argsstring>
+        <name>sacar_persona</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene y elimina la primera persona de la celda <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicador de la celda de la que sacar la persona </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>persona sacada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="70" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="554" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1688ace848d1e4a8bb22eac846d3276f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::set_llave</definition>
+        <argsstring>(const int &amp;celda, Llave *llave)</argsstring>
+        <name>set_llave</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>celda</declname>
+        </param>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>llave</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Introduce una llave en la celda indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>celda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que insertar la llave </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>llave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llave a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="71" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="619" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_18789024ef50b7b3a3cc86e5decff8ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+        <definition>Llave * Planta::sacar_llave</definition>
+        <argsstring>(const int &amp;celda)</argsstring>
+        <name>sacar_llave</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>celda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la primera llave de la celda indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>celda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda de la que sacar la llave </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>llave extraida </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="72" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="629" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1fb02150b9b257b45d0378603bd2c0284" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::ocupacion</definition>
+        <argsstring>(const int &amp;pos) const </argsstring>
+        <name>ocupacion</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la ocupacion de la celda indicada(-1 = error) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de la celda </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ocupacion de la celda(-1 = error) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="73" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="565" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_142c9d18589f2c0c76f0abd9848f8b428" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_ancho</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ancho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve el ancho de la planta <simplesect kind="return"><para>ancho de la planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="74" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="575" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_19dc42ed423c2aa444a2a9a2f5d021327" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_alto</definition>
+        <argsstring>() const</argsstring>
+        <name>get_alto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>devuelve el alto de la planta <simplesect kind="return"><para>alto de la planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="75" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="609" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::Accesible</definition>
+        <argsstring>(const int &amp;origen, const int &amp;destino) const</argsstring>
+        <name>Accesible</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="76" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="76" bodyend="76"/>
+        <references refid="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" compoundref="grafo_8cpp" startline="102" endline="112">Grafo::Adyacente</references>
+        <references refid="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" compoundref="planta_8h" startline="97">grafo_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_127b1073cd8b5d664b0d1d025e5c6f09e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_entrada</definition>
+        <argsstring>() const</argsstring>
+        <name>get_entrada</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="77" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="77" bodyend="77"/>
+        <references refid="classPlanta_15bc5684b9358581b3611d56406b64cbc" compoundref="planta_8h" startline="95">entrada_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_178a6cd383d37f8f9106a08a7fb13889f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_salida</definition>
+        <argsstring>() const</argsstring>
+        <name>get_salida</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve la entrada de la planta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="78" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="78" bodyend="78"/>
+        <references refid="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" compoundref="planta_8h" startline="96">salida_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::ProbarLlave</definition>
+        <argsstring>(Llave *llave)</argsstring>
+        <name>ProbarLlave</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>llave</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve la salida de la planta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="79" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="79" bodyend="79"/>
+        <references refid="classPuerta_11512476a99d735fe79657733c9180faf" compoundref="puerta_8cpp" startline="86" endline="103">Puerta::ProbarLlave</references>
+        <references refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" compoundref="planta_8h" startline="98">puerta_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::AbrirPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>AbrirPuerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prueba una llave en la puerta <linebreak/>
+ *<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>llave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llave a probar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="80" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="80" bodyend="80"/>
+        <references refid="classPuerta_12819c557f9e872958fa6ba43b639b2bb" compoundref="puerta_8cpp" startline="136" endline="145">Puerta::Abrir</references>
+        <references refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" compoundref="planta_8h" startline="98">puerta_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1ae61a9e6eb3a10da3d95568537105263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::CerrarPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>CerrarPuerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intenta abrir la puerta de la planta <linebreak/>
+ *<simplesect kind="return"><para>true si se abre, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="81" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="81" bodyend="81"/>
+        <references refid="classPuerta_129ee270aaf40fdd8f74a7d82c51e8d8a" compoundref="puerta_8cpp" startline="151" endline="162">Puerta::Cerrar</references>
+        <references refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" compoundref="planta_8h" startline="98">puerta_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c" kindref="member">TipoEstado</ref></type>
+        <definition>TipoEstado Planta::EstadoPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>EstadoPuerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cierra la puerta de la planta <linebreak/>
+ *<simplesect kind="return"><para>true si se ha cerrado correctamente,false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="82" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="82" bodyend="82"/>
+        <references refid="classPuerta_189cbff52e02af4f4357d6d4e5cfbe4de" compoundref="puerta_8cpp" startline="195" endline="198">Puerta::get_estado</references>
+        <references refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" compoundref="planta_8h" startline="98">puerta_</references>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_14ecaec03cdb438056c0b4c170546c8e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::CaminoMinimo</definition>
+        <argsstring>(const int &amp;origen, const int &amp;destino, queue&lt; Posicion &gt; &amp;camino) const</argsstring>
+        <name>CaminoMinimo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type>queue&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; &amp;</type>
+          <declname>camino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el estado de la puerta <linebreak/>
+ *<simplesect kind="return"><para>estado de la puerta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="83" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="587" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_13fcbb6808ac4c92a95abe4d5e697f8dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_vecina</definition>
+        <argsstring>(const Posicion &amp;p, const int &amp;id) const</argsstring>
+        <name>get_vecina</name>
+        <param>
+          <type>const <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el identificador de la celda en la direccion indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direccion en la que buscamos la pared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda actual </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>identificador de la celda (-1 = no valida) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="84" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="259" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_102e8f12ce3f97f31f5fc17e5619694ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::Simular</definition>
+        <argsstring>()</argsstring>
+        <name>Simular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Realiza el algoritmo de simulacion en la planta <simplesect kind="return"><para>true si algun preso sale de la simulacion, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="85" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="638" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1918aa25a8d2e12b09b8761fcd2acecc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::RegistrarGuardia</definition>
+        <argsstring>(Guardia *g)</argsstring>
+        <name>RegistrarGuardia</name>
+        <param>
+          <type><ref refid="classGuardia" kindref="compound">Guardia</ref> *</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserta un <ref refid="classguardia" kindref="compound">guardia</ref> en la lista de guardias de la planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classguardia" kindref="compound">guardia</ref> a insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="86" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="650" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_176795ec64e2d645bdbfb8d89ce882e3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Planta::get_num_guardias</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_guardias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el numero de guardias que hay en una planta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="87" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="660" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1f8c0bf30de848a7008854a830e7d458d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGuardia" kindref="compound">Guardia</ref> *</type>
+        <definition>Guardia * Planta::get_guardia</definition>
+        <argsstring>(const int &amp;numero) const </argsstring>
+        <name>get_guardia</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>numero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene el <ref refid="classguardia" kindref="compound">guardia</ref> colocado en la posicion indicada por numero dentro de la lista <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de la lista de la que extraer el <ref refid="classguardia" kindref="compound">guardia</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Puntero a <ref refid="classGuardia" kindref="compound">Guardia</ref> buscado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="88" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="670" bodyend="673"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPlanta_1319bef3f6e27b792e645f3db7bc82726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;salida, const Planta &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>salida</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classPlanta" kindref="compound">Planta</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>salida</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta a mostrar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="66" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="296" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPlanta_10201b3bb45b62c1f34325ce8f1bc9464" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::IniciarParedes</definition>
+        <argsstring>()</argsstring>
+        <name>IniciarParedes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo privado para iniciar las paredes de una planta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="103" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="107" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1b919c44685d9f9e2f47e12f0eea79fef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::GenerarAtajos</definition>
+        <argsstring>()</argsstring>
+        <name>GenerarAtajos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Algoritmo que genera los atajos de la prision </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="104" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="169" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_138a071a1218ba5dcccfdb5b916be5bb3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::HayAtajo</definition>
+        <argsstring>(const Posicion &amp;p, const int &amp;id) const</argsstring>
+        <name>HayAtajo</name>
+        <param>
+          <type>const <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si se puede generar un atajo en la direccion indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direccion en la que se quiere tirar la pared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>casilla de la que se parte </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se puede tirar la pared </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="105" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="210" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1c0e594febcc9067667191dec0b10f57b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::ParedValida</definition>
+        <argsstring>(const Posicion &amp;p, const int &amp;id) const</argsstring>
+        <name>ParedValida</name>
+        <param>
+          <type>const <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprueba si hay una casilla en la direccion indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direccion a mirar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda desde la que mirar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si hay casilla en la direccion indicada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="106" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="193" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_133c45e90dac76cd82e157e2755a76aa2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::GeneraAtajo</definition>
+        <argsstring>(const Posicion &amp;p, const int &amp;id)</argsstring>
+        <name>GeneraAtajo</name>
+        <param>
+          <type>const <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intenta generar un atajo en la direccion indicada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direccion indicada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda desde la que partimos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se elimina correctamente </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="107" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="278" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1e6d703d68dc9a61ac2f162340104e76d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::ColocarLlaves</definition>
+        <argsstring>(queue&lt; Llave * &gt; &amp;llaves)</argsstring>
+        <name>ColocarLlaves</name>
+        <param>
+          <type>queue&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; &amp;</type>
+          <declname>llaves</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coloca las llaves en la planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>llaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cola de llaves a colocar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="108" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="321" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1732b8fff1b9390bc2a5cc1592094088d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::PrepararLlaves</definition>
+        <argsstring>(const int &amp;n_llaves, ColaGen&lt; Llave * &gt; *configuracion, queue&lt; Llave * &gt; &amp;llaves)</argsstring>
+        <name>PrepararLlaves</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>n_llaves</declname>
+        </param>
+        <param>
+          <type><ref refid="classColaGen" kindref="compound">ColaGen</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+          <declname>configuracion</declname>
+        </param>
+        <param>
+          <type>queue&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; &amp;</type>
+          <declname>llaves</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crea y prepara las llaves para tratarlas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_llaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de llaves a crear </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configuracion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>configuracion de la puerta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>llaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>llaves a insertar en la planta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="109" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="22" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_184706b6abbbc832d01d0e9e1c675148d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Planta::RutaRecursivo</definition>
+        <argsstring>(const int &amp;posicion, bool visitados[kMaxVert], list&lt; Posicion &gt; &amp;ruta, int ultimo_movimiento) const</argsstring>
+        <name>RutaRecursivo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visitados</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <param>
+          <type>list&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; &amp;</type>
+          <declname>ruta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ultimo_movimiento</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo recursivo para el calculo de la ruta de escape <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de la que se parte </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitados[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector de visitados </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ruta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ruta de escape </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ultimo_movimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que informa del la direccion del ultimo movimiento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si ha encontrado el elemento </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="110" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="373" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_196270bb755977aa1d962cfeff8d8570f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::ObtenerMasVisitadas</definition>
+        <argsstring>(int frecuencia[kMaxVert]) const </argsstring>
+        <name>ObtenerMasVisitadas</name>
+        <param>
+          <type>int</type>
+          <declname>frecuencia</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcula el numero de veces que se pasa por cada celda y lo devuelve por parametro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frecuencia[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de veces que se pasa por cada celda </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="111" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="415" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_18440435c7884d2a38864f556d7850806" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::VisitadosRecursivo</definition>
+        <argsstring>(const int &amp;posicion, bool visitados[kMaxVert], stack&lt; int &gt; ruta, int frecuencia[kMaxVert]) const</argsstring>
+        <name>VisitadosRecursivo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visitados</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <param>
+          <type>stack&lt; int &gt;</type>
+          <declname>ruta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frecuencia</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo auxiliar que calcula recursivamente el numero de veces que se visita una celda pasando 1 vez por cada ruta de escape <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion actual </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitados[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodos visitados en la ruta actual </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ruta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ruta actual </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frecuencia[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de veces que aparece cada nodo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="112" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="432" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1bd71eb7f9db2353a4b68d7641a23971c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::MostrarRutaEscape</definition>
+        <argsstring>()</argsstring>
+        <name>MostrarRutaEscape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="113" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="471" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlanta_1d138cdcaf3fff6dd080b04bbe94f0ad1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Planta::CalcularRuta</definition>
+        <argsstring>(list&lt; Posicion &gt; &amp;ruta) const</argsstring>
+        <name>CalcularRuta</name>
+        <param>
+          <type>list&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; &amp;</type>
+          <declname>ruta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcula la ruta de escape segun lo indicado en el guion <simplesect kind="return"><para>cola STL con la ruta de escape </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="114" bodyfile="/home/Mario/Escritorio/EC3/src/planta.cpp" bodystart="359" bodyend="363"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta representa una planta de la prision. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="146">
+        <label>Puerta</label>
+        <link refid="classPuerta"/>
+        <childnode refid="147" relation="usage">
+          <edgelabel>probadas_
+combinacion_</edgelabel>
+        </childnode>
+        <childnode refid="149" relation="usage">
+          <edgelabel>copia_combinacion_</edgelabel>
+        </childnode>
+      </node>
+      <node id="151">
+        <label>T</label>
+      </node>
+      <node id="144">
+        <label>Planta</label>
+        <link refid="classPlanta"/>
+        <childnode refid="145" relation="usage">
+          <edgelabel>grafo_</edgelabel>
+        </childnode>
+        <childnode refid="146" relation="usage">
+          <edgelabel>puerta_</edgelabel>
+        </childnode>
+      </node>
+      <node id="147">
+        <label>Arbol&lt; Llave * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="147" relation="usage">
+          <edgelabel>hder_
+hizq_</edgelabel>
+        </childnode>
+        <childnode refid="148" relation="usage">
+          <edgelabel>dato_raiz_</edgelabel>
+        </childnode>
+      </node>
+      <node id="148">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="150">
+        <label>ColaGen&lt; T &gt;::TipoNodo</label>
+        <link refid="structColaGen_1_1TipoNodo"/>
+        <childnode refid="150" relation="usage">
+          <edgelabel>sig_</edgelabel>
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>dato_</edgelabel>
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Grafo</label>
+        <link refid="classGrafo"/>
+      </node>
+      <node id="149">
+        <label>ColaGen&lt; Llave * &gt;</label>
+        <link refid="classColaGen"/>
+        <childnode refid="150" relation="usage">
+          <edgelabel>fin_
+frente_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="60" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="59" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" prot="public" virt="non-virtual"><scope>Planta</scope><name>AbrirPuerta</name></member>
+      <member refid="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" prot="public" virt="non-virtual"><scope>Planta</scope><name>Accesible</name></member>
+      <member refid="classPlanta_1b5749956a1159afda09baaa812a50626" prot="private" virt="non-virtual"><scope>Planta</scope><name>alto_</name></member>
+      <member refid="classPlanta_13d867f2849c4bff480e1e6cdb0855fcd" prot="private" virt="non-virtual"><scope>Planta</scope><name>ancho_</name></member>
+      <member refid="classPlanta_1d138cdcaf3fff6dd080b04bbe94f0ad1" prot="private" virt="non-virtual"><scope>Planta</scope><name>CalcularRuta</name></member>
+      <member refid="classPlanta_14ecaec03cdb438056c0b4c170546c8e1" prot="public" virt="non-virtual"><scope>Planta</scope><name>CaminoMinimo</name></member>
+      <member refid="classPlanta_17659fd47941f40677ce06d19e870e5c0" prot="private" virt="non-virtual"><scope>Planta</scope><name>celdas_</name></member>
+      <member refid="classPlanta_1ae61a9e6eb3a10da3d95568537105263" prot="public" virt="non-virtual"><scope>Planta</scope><name>CerrarPuerta</name></member>
+      <member refid="classPlanta_1e6d703d68dc9a61ac2f162340104e76d" prot="private" virt="non-virtual"><scope>Planta</scope><name>ColocarLlaves</name></member>
+      <member refid="classPlanta_15bc5684b9358581b3611d56406b64cbc" prot="private" virt="non-virtual"><scope>Planta</scope><name>entrada_</name></member>
+      <member refid="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" prot="public" virt="non-virtual"><scope>Planta</scope><name>EstadoPuerta</name></member>
+      <member refid="classPlanta_133c45e90dac76cd82e157e2755a76aa2" prot="private" virt="non-virtual"><scope>Planta</scope><name>GeneraAtajo</name></member>
+      <member refid="classPlanta_1b919c44685d9f9e2f47e12f0eea79fef" prot="private" virt="non-virtual"><scope>Planta</scope><name>GenerarAtajos</name></member>
+      <member refid="classPlanta_19dc42ed423c2aa444a2a9a2f5d021327" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_alto</name></member>
+      <member refid="classPlanta_142c9d18589f2c0c76f0abd9848f8b428" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_ancho</name></member>
+      <member refid="classPlanta_127b1073cd8b5d664b0d1d025e5c6f09e" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_entrada</name></member>
+      <member refid="classPlanta_1f8c0bf30de848a7008854a830e7d458d" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_guardia</name></member>
+      <member refid="classPlanta_17ab0fe78527d4b7b7ab554244849ebdf" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_id</name></member>
+      <member refid="classPlanta_176795ec64e2d645bdbfb8d89ce882e3d" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_num_guardias</name></member>
+      <member refid="classPlanta_1dc9c23b85d4632654e47843f6fa907e1" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_persona</name></member>
+      <member refid="classPlanta_178a6cd383d37f8f9106a08a7fb13889f" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_salida</name></member>
+      <member refid="classPlanta_13fcbb6808ac4c92a95abe4d5e697f8dc" prot="public" virt="non-virtual"><scope>Planta</scope><name>get_vecina</name></member>
+      <member refid="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" prot="private" virt="non-virtual"><scope>Planta</scope><name>grafo_</name></member>
+      <member refid="classPlanta_17970944dc30cb250e6959f0a661937ec" prot="private" virt="non-virtual"><scope>Planta</scope><name>guardias_</name></member>
+      <member refid="classPlanta_138a071a1218ba5dcccfdb5b916be5bb3" prot="private" virt="non-virtual"><scope>Planta</scope><name>HayAtajo</name></member>
+      <member refid="classPlanta_11cb61304a7f5e75b5fa7f72416e2f09c" prot="private" virt="non-virtual"><scope>Planta</scope><name>id_</name></member>
+      <member refid="classPlanta_10201b3bb45b62c1f34325ce8f1bc9464" prot="private" virt="non-virtual"><scope>Planta</scope><name>IniciarParedes</name></member>
+      <member refid="classPlanta_1bd71eb7f9db2353a4b68d7641a23971c" prot="private" virt="non-virtual"><scope>Planta</scope><name>MostrarRutaEscape</name></member>
+      <member refid="classPlanta_1216b465f1e4e0d9b8c468f4468741304" prot="private" virt="non-virtual"><scope>Planta</scope><name>n_llaves_</name></member>
+      <member refid="classPlanta_196270bb755977aa1d962cfeff8d8570f" prot="private" virt="non-virtual"><scope>Planta</scope><name>ObtenerMasVisitadas</name></member>
+      <member refid="classPlanta_1fb02150b9b257b45d0378603bd2c0284" prot="public" virt="non-virtual"><scope>Planta</scope><name>ocupacion</name></member>
+      <member refid="classPlanta_1319bef3f6e27b792e645f3db7bc82726" prot="public" virt="non-virtual"><scope>Planta</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classPlanta_1c0e594febcc9067667191dec0b10f57b" prot="private" virt="non-virtual"><scope>Planta</scope><name>ParedValida</name></member>
+      <member refid="classPlanta_1a8158eb55c8d51b78d4059c0dd7ed955" prot="public" virt="non-virtual"><scope>Planta</scope><name>Pintar</name></member>
+      <member refid="classPlanta_19d23b8f5859a94f9bfc87ba195af61cf" prot="public" virt="non-virtual"><scope>Planta</scope><name>Planta</name></member>
+      <member refid="classPlanta_1732b8fff1b9390bc2a5cc1592094088d" prot="private" virt="non-virtual"><scope>Planta</scope><name>PrepararLlaves</name></member>
+      <member refid="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" prot="public" virt="non-virtual"><scope>Planta</scope><name>ProbarLlave</name></member>
+      <member refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" prot="private" virt="non-virtual"><scope>Planta</scope><name>puerta_</name></member>
+      <member refid="classPlanta_1918aa25a8d2e12b09b8761fcd2acecc8" prot="public" virt="non-virtual"><scope>Planta</scope><name>RegistrarGuardia</name></member>
+      <member refid="classPlanta_184706b6abbbc832d01d0e9e1c675148d" prot="private" virt="non-virtual"><scope>Planta</scope><name>RutaRecursivo</name></member>
+      <member refid="classPlanta_18789024ef50b7b3a3cc86e5decff8ef5" prot="public" virt="non-virtual"><scope>Planta</scope><name>sacar_llave</name></member>
+      <member refid="classPlanta_1e4ca2659fafa66ab961e1a5f3b6ce3eb" prot="public" virt="non-virtual"><scope>Planta</scope><name>sacar_persona</name></member>
+      <member refid="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" prot="private" virt="non-virtual"><scope>Planta</scope><name>salida_</name></member>
+      <member refid="classPlanta_1688ace848d1e4a8bb22eac846d3276f9" prot="public" virt="non-virtual"><scope>Planta</scope><name>set_llave</name></member>
+      <member refid="classPlanta_1af5e05150b26f7e7d92c58a09c7a19a9" prot="public" virt="non-virtual"><scope>Planta</scope><name>set_persona</name></member>
+      <member refid="classPlanta_102e8f12ce3f97f31f5fc17e5619694ac" prot="public" virt="non-virtual"><scope>Planta</scope><name>Simular</name></member>
+      <member refid="classPlanta_18440435c7884d2a38864f556d7850806" prot="private" virt="non-virtual"><scope>Planta</scope><name>VisitadosRecursivo</name></member>
+      <member refid="classPlanta_13aae754edf5fc8162bedc0c087d8d968" prot="public" virt="non-virtual"><scope>Planta</scope><name>~Planta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

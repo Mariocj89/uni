@@ -1,0 +1,36 @@
+\section{Escritorio/EC3/src/gtest/gtest-test-part.h File Reference}
+\label{gtest-test-part_8h}\index{Escritorio/EC3/src/gtest/gtest-test-part.h@{Escritorio/EC3/src/gtest/gtest-test-part.h}}
+{\tt \#include $<$iosfwd$>$}\par
+{\tt \#include $<$gtest/internal/gtest-internal.h$>$}\par
+{\tt \#include $<$gtest/internal/gtest-string.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::TestPartResult}
+\item 
+class {\bf testing::TestPartResultArray}
+\item 
+class {\bf testing::TestPartResultReporterInterface}
+\item 
+class {\bf testing::internal::HasNewFatalFailureHelper}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf testing::TestPartResultType} \{ {\bf testing::TPRT\_\-SUCCESS}, 
+{\bf testing::TPRT\_\-NONFATAL\_\-FAILURE}, 
+{\bf testing::TPRT\_\-FATAL\_\-FAILURE}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+std::ostream \& {\bf testing::operator$<$$<$} (std::ostream \&os, const TestPartResult \&result)
+\end{CompactItemize}

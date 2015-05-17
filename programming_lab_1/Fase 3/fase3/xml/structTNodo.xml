@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structTNodo" kind="struct" prot="public">
+    <compoundname>TNodo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTNodo_13748411e8fe7956d827acb5570770612" prot="public" static="no" mutable="no">
+        <type>TipoDato</type>
+        <definition>TipoDato TNodo::dato</definition>
+        <argsstring></argsstring>
+        <name>dato</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="36" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTNodo_155611106752b41ec1bbf495d76656ed7" prot="public" static="no" mutable="no">
+        <type>TNodo *</type>
+        <definition>TNodo* TNodo::suce</definition>
+        <argsstring></argsstring>
+        <name>suce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="37" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="35" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="35" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structTNodo_13748411e8fe7956d827acb5570770612" prot="public" virt="non-virtual"><scope>TNodo</scope><name>dato</name></member>
+      <member refid="structTNodo_155611106752b41ec1bbf495d76656ed7" prot="public" virt="non-virtual"><scope>TNodo</scope><name>suce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

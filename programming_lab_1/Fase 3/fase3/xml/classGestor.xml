@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classGestor" kind="class" prot="public">
+    <compoundname>Gestor</compoundname>
+    <includes refid="gestor_8h" local="no">gestor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGestor_17e54eead07075f6efebf76661ef4d380" prot="private" static="no" mutable="no">
+        <type><ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref></type>
+        <definition>ListaEnlazada Gestor::lista</definition>
+        <argsstring></argsstring>
+        <name>lista</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="32" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGestor_172b7455e5f8530644b64d6e0cb8816b7" prot="private" static="no" mutable="no">
+        <type>TIdioma</type>
+        <definition>TIdioma Gestor::Idioma</definition>
+        <argsstring></argsstring>
+        <name>Idioma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="33" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGestor_1df6bc8e1011a14f0db4ec783decb1f3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::InsertarDato</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>InsertarDato</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento de forma ordenada en la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> que se insertara. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="40" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_13eec53616fd62d0476b47184414b10dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::EliminarDato</definition>
+        <argsstring>(const TCadena1 dat)</argsstring>
+        <name>EliminarDato</name>
+        <param>
+          <type>const TCadena1</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Borra un elemento. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>telefono para buscar el elemento a borrar de la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si lo ha borrado correctamente, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="48" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_119d1b922fff844a3f5ccbbc4025eb3ba" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::MostrarES</definition>
+        <argsstring>() const</argsstring>
+        <name>MostrarES</name>
+        <briefdescription>
+<para>Muestra la informacion en castellano. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="54" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1fa3c20a4de196889f98d902694a0a022" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::MostrarEN</definition>
+        <argsstring>() const</argsstring>
+        <name>MostrarEN</name>
+        <briefdescription>
+<para>Muestra la informacion en ingles. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="60" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_18f2001c4c56fdd1046e3650e5728d6a3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::BuscarDato</definition>
+        <argsstring>(const TCadena1 tfn, DatosPersonales &amp;dat) const</argsstring>
+        <name>BuscarDato</name>
+        <param>
+          <type>const TCadena1</type>
+          <declname>tfn</declname>
+        </param>
+        <param>
+          <type><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Busca un elemento en la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> buscado. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tfn</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero con el que buscar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se encuentra, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="70" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGestor_163ab3a451dcedb416578c35b5d57aca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gestor::Gestor</definition>
+        <argsstring>()</argsstring>
+        <name>Gestor</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase <ref refid="classGestor" kindref="compound">Gestor</ref>. Pone Idioma a 0(castellano). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="77" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1da86e7063e8399305995bfb1aab5a8af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::Mostrar</definition>
+        <argsstring>() const</argsstring>
+        <name>Mostrar</name>
+        <briefdescription>
+<para>Muestra toda la informacion. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="84" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1a50b2f33090dc7ca6a77cfeed3687b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::MostrarMes</definition>
+        <argsstring>()</argsstring>
+        <name>MostrarMes</name>
+        <briefdescription>
+<para>Muestra la informacion de las personas que cumplan años en un mes pedido internamente. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="91" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="63" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_108e54fc629d431a6caf7fe38d065445a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::MostrarEdad</definition>
+        <argsstring>()</argsstring>
+        <name>MostrarEdad</name>
+        <briefdescription>
+<para>Muestra la informacion de las personas que superen una edad indicada por el usuario. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="97" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="79" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1f0df127a0a6bb0c6572ea365377065d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::Insertar</definition>
+        <argsstring>()</argsstring>
+        <name>Insertar</name>
+        <briefdescription>
+<para>Pide la informacion necesaria para insertar un dato. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="103" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1725619c35256592988fce8248d4b34e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::Eliminar</definition>
+        <argsstring>()</argsstring>
+        <name>Eliminar</name>
+        <briefdescription>
+<para>Solicita informacion para eliminar un elemento. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<simplesect kind="return"><para>true si lo ha borrado correctamente, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="110" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="107" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_16f97ac11a10254981b462ff0c02801ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::Cargar</definition>
+        <argsstring>()</argsstring>
+        <name>Cargar</name>
+        <briefdescription>
+<para>Carga de datos_per.txt <simplesect kind="pre"><para>Debe existir datos_per.txt y debe estar correctamente formateado. </para></simplesect>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false si se ha encontrado algun error de apertura </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="119" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="143" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_112f31da1244ff5e6f82c1defaa2a889e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::Guardar</definition>
+        <argsstring>() const</argsstring>
+        <name>Guardar</name>
+        <briefdescription>
+<para>Guarda todos los datos en datos_per.txt <simplesect kind="pre"><para>Debe poderse sobrescribir datos_per.txt. </para></simplesect>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false si se ha encontrado algun error de apertura </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="126" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="155" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_18ad38f2990047eb2be683e02994667b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gestor::Buscar</definition>
+        <argsstring>() const</argsstring>
+        <name>Buscar</name>
+        <briefdescription>
+<para>Pide un numero con el que buscar un dato <simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>devuelve true si se ha encontrado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="133" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="165" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_160bbd94608bd1ec8ad05784980e1f2ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::CambiarIdioma</definition>
+        <argsstring>()</argsstring>
+        <name>CambiarIdioma</name>
+        <briefdescription>
+<para>Alterna entre los 2 idiomas. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>en caso de añadir un nuevo idoma habria que modificar este metodo</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="139" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classGestor_1f1eb64d25661d44ee24f70e6b5847822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gestor::ObtenerIdioma</definition>
+        <argsstring>(TIdioma &amp;l)</argsstring>
+        <name>ObtenerIdioma</name>
+        <param>
+          <type>TIdioma &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve el idioma actual. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>el idoma debe ser &quot;Castellano&quot;(0) o &quot;Ingles&quot;(1) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TipoIdioma con la informacion respectiva al idoma actual </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="146" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.cpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase <ref refid="classGestor" kindref="compound">Gestor</ref>, gestiona los datos a traves de una lista enlazada y un &quot;selector de idioma&quot;. Sus atributos son:<itemizedlist>
+<listitem><para>lista: listaenlazada que almacena los datospersonales.</para></listitem><listitem><para>idioma: TipoEnum que servira para elegir idioma(0-Castellano, 1-Ingles), 0 por defecto </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>ListaEnlazada</label>
+        <link refid="classListaEnlazada"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>M</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gestor</label>
+        <link refid="classGestor"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Meses</label>
+        <link refid="classMeses"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/fase3/src/gestor.h" line="30" bodyfile="/home/Mario/Escritorio/fase3/src/gestor.h" bodystart="30" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classGestor_18ad38f2990047eb2be683e02994667b5" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Buscar</name></member>
+      <member refid="classGestor_18f2001c4c56fdd1046e3650e5728d6a3" prot="private" virt="non-virtual"><scope>Gestor</scope><name>BuscarDato</name></member>
+      <member refid="classGestor_160bbd94608bd1ec8ad05784980e1f2ab" prot="public" virt="non-virtual"><scope>Gestor</scope><name>CambiarIdioma</name></member>
+      <member refid="classGestor_16f97ac11a10254981b462ff0c02801ae" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Cargar</name></member>
+      <member refid="classGestor_1725619c35256592988fce8248d4b34e1" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Eliminar</name></member>
+      <member refid="classGestor_13eec53616fd62d0476b47184414b10dd" prot="private" virt="non-virtual"><scope>Gestor</scope><name>EliminarDato</name></member>
+      <member refid="classGestor_163ab3a451dcedb416578c35b5d57aca4" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Gestor</name></member>
+      <member refid="classGestor_112f31da1244ff5e6f82c1defaa2a889e" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Guardar</name></member>
+      <member refid="classGestor_172b7455e5f8530644b64d6e0cb8816b7" prot="private" virt="non-virtual"><scope>Gestor</scope><name>Idioma</name></member>
+      <member refid="classGestor_1f0df127a0a6bb0c6572ea365377065d5" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Insertar</name></member>
+      <member refid="classGestor_1df6bc8e1011a14f0db4ec783decb1f3b" prot="private" virt="non-virtual"><scope>Gestor</scope><name>InsertarDato</name></member>
+      <member refid="classGestor_17e54eead07075f6efebf76661ef4d380" prot="private" virt="non-virtual"><scope>Gestor</scope><name>lista</name></member>
+      <member refid="classGestor_1da86e7063e8399305995bfb1aab5a8af" prot="public" virt="non-virtual"><scope>Gestor</scope><name>Mostrar</name></member>
+      <member refid="classGestor_108e54fc629d431a6caf7fe38d065445a" prot="public" virt="non-virtual"><scope>Gestor</scope><name>MostrarEdad</name></member>
+      <member refid="classGestor_1fa3c20a4de196889f98d902694a0a022" prot="private" virt="non-virtual"><scope>Gestor</scope><name>MostrarEN</name></member>
+      <member refid="classGestor_119d1b922fff844a3f5ccbbc4025eb3ba" prot="private" virt="non-virtual"><scope>Gestor</scope><name>MostrarES</name></member>
+      <member refid="classGestor_1a50b2f33090dc7ca6a77cfeed3687b89" prot="public" virt="non-virtual"><scope>Gestor</scope><name>MostrarMes</name></member>
+      <member refid="classGestor_1f1eb64d25661d44ee24f70e6b5847822" prot="public" virt="non-virtual"><scope>Gestor</scope><name>ObtenerIdioma</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1Mutex" kind="class" prot="public">
+    <compoundname>testing::internal::Mutex</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtesting_1_1internal_1_1Mutex_1b750ba1374a7029d4042fef9092f1792" prot="public" static="no">
+        <name>@2</name>
+        <enumvalue id="classtesting_1_1internal_1_1Mutex_1b750ba1374a7029d4042fef9092f17926599ff46df87f87d2f7c0236395ace12" prot="public">
+          <name>NO_CONSTRUCTOR_NEEDED_FOR_STATIC_MUTEX</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="608" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="608" bodyend="608"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1Mutex_1c98eef913c0cc92d61c814223246dc39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::Mutex::Mutex</definition>
+        <argsstring>()</argsstring>
+        <name>Mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="605" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="605" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1Mutex_1ef72699121099a967c94913f52a333f7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::Mutex::Mutex</definition>
+        <argsstring>(int)</argsstring>
+        <name>Mutex</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="606" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="606" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1Mutex_1a97ea28d27b7ca2799245fda377bd961" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::Mutex::AssertHeld</definition>
+        <argsstring>() const</argsstring>
+        <name>AssertHeld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="607" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="607" bodyend="607"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="603" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="603" bodyend="609"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1Mutex_1b750ba1374a7029d4042fef9092f1792" prot="public" virt="non-virtual"><scope>testing::internal::Mutex</scope><name>@2</name></member>
+      <member refid="classtesting_1_1internal_1_1Mutex_1a97ea28d27b7ca2799245fda377bd961" prot="public" virt="non-virtual"><scope>testing::internal::Mutex</scope><name>AssertHeld</name></member>
+      <member refid="classtesting_1_1internal_1_1Mutex_1c98eef913c0cc92d61c814223246dc39" prot="public" virt="non-virtual"><scope>testing::internal::Mutex</scope><name>Mutex</name></member>
+      <member refid="classtesting_1_1internal_1_1Mutex_1ef72699121099a967c94913f52a333f7" prot="public" virt="non-virtual"><scope>testing::internal::Mutex</scope><name>Mutex</name></member>
+      <member refid="classtesting_1_1internal_1_1Mutex_1b750ba1374a7029d4042fef9092f17926599ff46df87f87d2f7c0236395ace12" prot="public" virt="non-virtual"><scope>testing::internal::Mutex</scope><name>NO_CONSTRUCTOR_NEEDED_FOR_STATIC_MUTEX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

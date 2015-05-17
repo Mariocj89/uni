@@ -1,0 +1,241 @@
+\section{Referencia de la Clase Gestor}
+\label{classGestor}\index{Gestor@{Gestor}}
+{\tt \#include $<$gestor.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+{\bf Gestor} ()\label{classGestor_63ab3a451dcedb416578c35b5d57aca4}
+
+\begin{CompactList}\small\item\em Constructor por defecto de la clase \doxyref{Gestor}{p.}{classGestor}. Pone Idioma a 0(castellano). \item\end{CompactList}\item 
+void {\bf Mostrar} () const
+\begin{CompactList}\small\item\em Muestra toda la informacion. \item\end{CompactList}\item 
+void {\bf MostrarMes} ()
+\begin{CompactList}\small\item\em Muestra la informacion de las personas que cumplan años en un mes pedido internamente. \item\end{CompactList}\item 
+void {\bf MostrarEdad} ()
+\begin{CompactList}\small\item\em Muestra la informacion de las personas que superen una edad indicada por el usuario. \item\end{CompactList}\item 
+void {\bf Insertar} ()
+\begin{CompactList}\small\item\em Pide la informacion necesaria para insertar un dato. \item\end{CompactList}\item 
+bool {\bf Eliminar} ()
+\begin{CompactList}\small\item\em Solicita informacion para eliminar un elemento. \item\end{CompactList}\item 
+bool {\bf Cargar} ()
+\begin{CompactList}\small\item\em Carga de datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe existir datos\_\-per.txt y debe estar correctamente formateado. \end{Desc}
+\item\end{CompactList}\item 
+bool {\bf Guardar} () const
+\begin{CompactList}\small\item\em Guarda todos los datos en datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe poderse sobrescribir datos\_\-per.txt. \end{Desc}
+\item\end{CompactList}\item 
+bool {\bf Buscar} () const
+\begin{CompactList}\small\item\em Pide un numero con el que buscar un dato \begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\item\end{CompactList}\item 
+void {\bf CambiarIdioma} ()
+\begin{CompactList}\small\item\em Alterna entre los 2 idiomas. \item\end{CompactList}\item 
+void {\bf ObtenerIdioma} (TIdioma \&l)
+\begin{CompactList}\small\item\em Devuelve el idioma actual. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Métodos privados}
+\begin{CompactItemize}
+\item 
+void {\bf InsertarDato} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento de forma ordenada en la lista. \item\end{CompactList}\item 
+bool {\bf EliminarDato} (const TCadena1 dat)
+\begin{CompactList}\small\item\em Borra un elemento. \item\end{CompactList}\item 
+void {\bf MostrarES} () const
+\begin{CompactList}\small\item\em Muestra la informacion en castellano. \item\end{CompactList}\item 
+void {\bf MostrarEN} () const
+\begin{CompactList}\small\item\em Muestra la informacion en ingles. \item\end{CompactList}\item 
+bool {\bf BuscarDato} (const TCadena1 tfn, {\bf DatosPersonales} \&dat) const
+\begin{CompactList}\small\item\em Busca un elemento en la lista. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos privados}
+\begin{CompactItemize}
+\item 
+{\bf ListaEnlazada} \textbf{lista}\label{classGestor_7e54eead07075f6efebf76661ef4d380}
+
+\item 
+TIdioma \textbf{Idioma}\label{classGestor_72b7455e5f8530644b64d6e0cb8816b7}
+
+\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase \doxyref{Gestor}{p.}{classGestor}, gestiona los datos a traves de una lista enlazada y un \char`\"{}selector de idioma\char`\"{}. Sus atributos son:\begin{itemize}
+\item lista: listaenlazada que almacena los datospersonales.\item idioma: TipoEnum que servira para elegir idioma(0-Castellano, 1-Ingles), 0 por defecto \end{itemize}
+
+
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Gestor@{Gestor}!InsertarDato@{InsertarDato}}
+\index{InsertarDato@{InsertarDato}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::InsertarDato (const {\bf DatosPersonales} \& {\em dat})\hspace{0.3cm}{\tt  [private]}}\label{classGestor_df6bc8e1011a14f0db4ec783decb1f3b}
+
+
+Inserta un elemento de forma ordenada en la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} que se insertara. \end{description}
+\end{Desc}
+\index{Gestor@{Gestor}!EliminarDato@{EliminarDato}}
+\index{EliminarDato@{EliminarDato}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::EliminarDato (const TCadena1 {\em dat})\hspace{0.3cm}{\tt  [private]}}\label{classGestor_3eec53616fd62d0476b47184414b10dd}
+
+
+Borra un elemento. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]telefono para buscar el elemento a borrar de la lista. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha borrado correctamente, false en caso contrario. \end{Desc}
+\index{Gestor@{Gestor}!MostrarES@{MostrarES}}
+\index{MostrarES@{MostrarES}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::MostrarES () const\hspace{0.3cm}{\tt  [private]}}\label{classGestor_19d1b922fff844a3f5ccbbc4025eb3ba}
+
+
+Muestra la informacion en castellano. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Gestor@{Gestor}!MostrarEN@{MostrarEN}}
+\index{MostrarEN@{MostrarEN}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::MostrarEN () const\hspace{0.3cm}{\tt  [private]}}\label{classGestor_fa3c20a4de196889f98d902694a0a022}
+
+
+Muestra la informacion en ingles. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Gestor@{Gestor}!BuscarDato@{BuscarDato}}
+\index{BuscarDato@{BuscarDato}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::BuscarDato (const TCadena1 {\em tfn}, {\bf DatosPersonales} \& {\em dat}) const\hspace{0.3cm}{\tt  [private]}}\label{classGestor_8f2001c4c56fdd1046e3650e5728d6a3}
+
+
+Busca un elemento en la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} buscado. \item[{\em tfn,:}]Numero con el que buscar. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si se encuentra, false en caso contrario \end{Desc}
+\index{Gestor@{Gestor}!Mostrar@{Mostrar}}
+\index{Mostrar@{Mostrar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::Mostrar () const}\label{classGestor_da86e7063e8399305995bfb1aab5a8af}
+
+
+Muestra toda la informacion. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Gestor@{Gestor}!MostrarMes@{MostrarMes}}
+\index{MostrarMes@{MostrarMes}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::MostrarMes ()}\label{classGestor_a50b2f33090dc7ca6a77cfeed3687b89}
+
+
+Muestra la informacion de las personas que cumplan años en un mes pedido internamente. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Gestor@{Gestor}!MostrarEdad@{MostrarEdad}}
+\index{MostrarEdad@{MostrarEdad}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::MostrarEdad ()}\label{classGestor_08e54fc629d431a6caf7fe38d065445a}
+
+
+Muestra la informacion de las personas que superen una edad indicada por el usuario. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Gestor@{Gestor}!Insertar@{Insertar}}
+\index{Insertar@{Insertar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::Insertar ()}\label{classGestor_f0df127a0a6bb0c6572ea365377065d5}
+
+
+Pide la informacion necesaria para insertar un dato. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\index{Gestor@{Gestor}!Eliminar@{Eliminar}}
+\index{Eliminar@{Eliminar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::Eliminar ()}\label{classGestor_725619c35256592988fce8248d4b34e1}
+
+
+Solicita informacion para eliminar un elemento. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha borrado correctamente, false en caso contrario. \end{Desc}
+\index{Gestor@{Gestor}!Cargar@{Cargar}}
+\index{Cargar@{Cargar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::Cargar ()}\label{classGestor_6f97ac11a10254981b462ff0c02801ae}
+
+
+Carga de datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe existir datos\_\-per.txt y debe estar correctamente formateado. \end{Desc}
+
+
+\begin{Desc}
+\item[Devuelve:]false si se ha encontrado algun error de apertura \end{Desc}
+\index{Gestor@{Gestor}!Guardar@{Guardar}}
+\index{Guardar@{Guardar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::Guardar () const}\label{classGestor_12f31da1244ff5e6f82c1defaa2a889e}
+
+
+Guarda todos los datos en datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe poderse sobrescribir datos\_\-per.txt. \end{Desc}
+
+
+\begin{Desc}
+\item[Devuelve:]false si se ha encontrado algun error de apertura \end{Desc}
+\index{Gestor@{Gestor}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Gestor::Buscar () const}\label{classGestor_8ad38f2990047eb2be683e02994667b5}
+
+
+Pide un numero con el que buscar un dato \begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+
+
+\begin{Desc}
+\item[Devuelve:]devuelve true si se ha encontrado \end{Desc}
+\index{Gestor@{Gestor}!CambiarIdioma@{CambiarIdioma}}
+\index{CambiarIdioma@{CambiarIdioma}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::CambiarIdioma ()}\label{classGestor_60bbd94608bd1ec8ad05784980e1f2ab}
+
+
+Alterna entre los 2 idiomas. 
+
+\begin{Desc}
+\item[en caso de añadir un nuevo idoma habria que modificar este metodo]\end{Desc}
+\index{Gestor@{Gestor}!ObtenerIdioma@{ObtenerIdioma}}
+\index{ObtenerIdioma@{ObtenerIdioma}!Gestor@{Gestor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Gestor::ObtenerIdioma (TIdioma \& {\em l})}\label{classGestor_f1eb64d25661d44ee24f70e6b5847822}
+
+
+Devuelve el idioma actual. 
+
+\begin{Desc}
+\item[Precondición:]el idoma debe ser \char`\"{}Castellano\char`\"{}(0) o \char`\"{}Ingles\char`\"{}(1) \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em l,:}]TipoIdioma con la informacion respectiva al idoma actual \end{description}
+\end{Desc}
+
+
+La documentación para esta clase fué generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+Escritorio/fase3/src/{\bf gestor.h}\item 
+Escritorio/fase3/src/{\bf gestor.cpp}\end{CompactItemize}

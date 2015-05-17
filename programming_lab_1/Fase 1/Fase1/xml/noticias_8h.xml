@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="noticias_8h" kind="file">
+    <compoundname>noticias.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes refid="fecha_8h" local="yes">fecha.h</includes>
+    <includedby refid="categoria_8h" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.h</includedby>
+    <includedby refid="noticias_8cpp" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.cpp</includedby>
+    <incdepgraph>
+      <node id="79">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h</label>
+        <link refid="noticias.h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>fstream</label>
+      </node>
+      <node id="81">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="84">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h</label>
+        <link refid="lpi_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.cpp</label>
+        <link refid="noticias_8cpp"/>
+      </node>
+      <node id="87">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+      <node id="82">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h</label>
+        <link refid="noticias.h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.h</label>
+        <link refid="categoria_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h</label>
+        <link refid="gestor_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/ppal.cpp</label>
+        <link refid="ppal_8cpp"/>
+      </node>
+      <node id="89">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp</label>
+        <link refid="lpi_8cpp"/>
+      </node>
+      <node id="85">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.cpp</label>
+        <link refid="categoria_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNoticia" prot="public">Noticia</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MaxCad1</definition>
+        <argsstring></argsstring>
+        <name>MaxCad1</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="11" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="noticias_8h_130362814f157e71716d9bab11bc2004b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MaxCad2</definition>
+        <argsstring></argsstring>
+        <name>MaxCad2</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="12" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="noticias_8h_195183747f01886dcfbb6b81a05b0971b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MaxCad3</definition>
+        <argsstring></argsstring>
+        <name>MaxCad3</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="13" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="noticias_8h_196c5e4e15f549c73471fb112e9056bd2" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MaxCadRef</definition>
+        <argsstring></argsstring>
+        <name>MaxCadRef</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="14" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="noticias_8h_1c792eacc19904bc5ae9ac858adb30767" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MaxCadSec</definition>
+        <argsstring></argsstring>
+        <name>MaxCadSec</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="15" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char Tcadena1[MaxCad1]</definition>
+        <argsstring>[MaxCad1]</argsstring>
+        <name>Tcadena1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="18" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="noticias_8h_14d9cef939352594212276f52943bd480" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char Tcadena2[MaxCad2]</definition>
+        <argsstring>[MaxCad2]</argsstring>
+        <name>Tcadena2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="19" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char Tcadena3[MaxCad3]</definition>
+        <argsstring>[MaxCad3]</argsstring>
+        <name>Tcadena3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" line="20" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NOTICIAS_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NOTICIAS_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fecha_8h" kindref="compound">fecha.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" kindref="member">MaxCad1</ref>=10;</highlight></codeline>
+<codeline lineno="12" refid="noticias_8h_130362814f157e71716d9bab11bc2004b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>=40;</highlight></codeline>
+<codeline lineno="13" refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kindref="member">MaxCad3</ref>=200;</highlight></codeline>
+<codeline lineno="14" refid="noticias_8h_196c5e4e15f549c73471fb112e9056bd2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_196c5e4e15f549c73471fb112e9056bd2" kindref="member">MaxCadRef</ref>=3;</highlight></codeline>
+<codeline lineno="15" refid="noticias_8h_1c792eacc19904bc5ae9ac858adb30767" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1c792eacc19904bc5ae9ac858adb30767" kindref="member">MaxCadSec</ref>=20;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref>[<ref refid="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" kindref="member">MaxCad1</ref>];</highlight></codeline>
+<codeline lineno="19" refid="noticias_8h_14d9cef939352594212276f52943bd480" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref>[<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>];</highlight></codeline>
+<codeline lineno="20" refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref>[<ref refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kindref="member">MaxCad3</ref>];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classNoticia" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNoticia" kindref="compound">Noticia</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/><ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classNoticia_117037ae5eb5be04babbf631175ab831c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/><ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/><ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/><ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/><ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/><ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>Id);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">Noticia</ref><sp/>&amp;J);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_163c07120d139ee6a943efadb124e71f3" kindref="member" tooltip="Copia la clase Noticia. Establece todos los elementos obteniendolos de J.">Clonar</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">Noticia</ref><sp/>&amp;J);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_123b71b8079ef1f9c585805627798991b" kindref="member" tooltip="Pone un identificador a la noticia.">Poner_Identificador</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>I);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_13cf4fd9fa2c7f493ba127fda6ecaf4a4" kindref="member" tooltip="Pone un Titulo a la noticia.">Poner_Titulo</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>T);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_14fcfe11186521629039996d3e05a6662" kindref="member" tooltip="Pone un Subtitulo a la noticia.">Poner_SubTitulo</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>ST);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1a1ff7c5fbd7a5400d47160a9abdea2aa" kindref="member" tooltip="Pone un contenido a la noticia.">Poner_Contenido</ref>(<ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>C);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18d3ef0dbf9467d008c4ee840a90b1b4d" kindref="member" tooltip="Pone una imagen a la noticia.">Poner_Imagen</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>Im);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_12b7604d405817157cf6f4bace2e13e59" kindref="member" tooltip="Pone una fecha a la noticia.">Poner_Fecha</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;F);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kindref="member" tooltip="Obtiene el identificador de la noticia.">Obtener_Identificador</ref><sp/>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>&amp;T)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_12e7230a54be139dda293d683369e418d" kindref="member" tooltip="Obtiene el titulo de la noticia.">Obtener_Titulo</ref><sp/>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;T)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1a49b2bbc3030feaffaa6c8a19cc1364f" kindref="member" tooltip="Obtiene el subtitulo de la noticia.">Obtener_SubTitulo</ref><sp/>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;ST)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_190f7edf708afa34797a0210fe857438c" kindref="member" tooltip="Obtiene la fecha de la noticia.">Obtener_Fecha</ref>(<ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;F)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1140c5fb3c38b471056758ba797f42c96" kindref="member" tooltip="Obtiene el contenido de la noticia.">Obtener_Contenido</ref><sp/>(<ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>&amp;C)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_14492711e6298259e6857bff5387d97a7" kindref="member" tooltip="Obtiene la imagen de la noticia.">Obtener_Imagen</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;Im)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classNoticia_1d26beba5fea62004588a45df2de8627b" kindref="member" tooltip="Compara el identificador de la noticia actual, con el identificador c.">Comparar</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1bff9262f8b083eb62bcd252dd4c47287" kindref="member" tooltip="Muestra la noticia en pantalla.">Mostrar_Noticia</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18366558e0b77bc9c431f4dd5392f4751" kindref="member" tooltip="Guarda la noticia en un fichero.">Guardar_Noticia</ref>(ofstream<sp/>&amp;salida);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_144d9d79493df0f17dddba3f2213240de" kindref="member" tooltip="Carga la noticia de un fichero.">Cargar_Noticia</ref>(ifstream<sp/>&amp;entrada);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1d18df61d4aea02bbed8cb2920688aa9c" kindref="member" tooltip="Pide por pantalla los datos de una noticia(salco el contador) y lo inserta en la...">PedirNoticia</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/><sp/>contador);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_11cc5f06574fa1c9cdec4bc277b975185" kindref="member">~Noticia</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.h"/>
+  </compounddef>
+</doxygen>

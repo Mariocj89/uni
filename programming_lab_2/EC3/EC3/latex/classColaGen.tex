@@ -1,0 +1,179 @@
+\section{ColaGen$<$ T $>$ Class Template Reference}
+\label{classColaGen}\index{ColaGen@{ColaGen}}
+Esta clase implementa una estructura lineal de tipo Cola generica.  
+
+
+{\tt \#include $<$colagen.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf ColaGen} ()
+\begin{CompactList}\small\item\em Inicializa los datos de la cola (punteros a NULL). \item\end{CompactList}\item 
+{\bf ColaGen} (const {\bf ColaGen} \&C)
+\begin{CompactList}\small\item\em Inicializa los datos de la cola por copia. \item\end{CompactList}\item 
+void {\bf insertar\_\-dato} (const T \&dato)
+\begin{CompactList}\small\item\em Inserta un dato en la cola (por el final). \item\end{CompactList}\item 
+void {\bf insertar\_\-nodo} (const {\bf TipoNodo} \&nodo)
+\begin{CompactList}\small\item\em Inserta un dato enviado en un nodo en la cola (por el final). \item\end{CompactList}\item 
+T {\bf get} () const
+\begin{CompactList}\small\item\em Devuelve el dato que se encuentra en el frente de la cola. \item\end{CompactList}\item 
+bool {\bf borrar} ()
+\begin{CompactList}\small\item\em Elimina el dato que se encuentre en el frente de la cola. \item\end{CompactList}\item 
+ostream \& {\bf mostrar} () const
+\begin{CompactList}\small\item\em Muestra la cola por pantalla y guarda la informacion mostrada en un flujo. \item\end{CompactList}\item 
+bool {\bf vacia} () const
+\begin{CompactList}\small\item\em Devuelve verdadero si la cola está vacía. \item\end{CompactList}\item 
+int {\bf get\_\-num\_\-elementos} ()
+\begin{CompactList}\small\item\em Devuelve el número de elementos de la cola. \item\end{CompactList}\item 
+{\bf $\sim$ColaGen} ()
+\begin{CompactList}\small\item\em libera la memoria de la cola (OJO ¡NO DE LOS DATOS CONTENIDOS!) \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf TipoNodo} $\ast$ {\bf frente\_\-}
+\begin{CompactList}\small\item\em Puntero al frente de la cola. \item\end{CompactList}\item 
+{\bf TipoNodo} $\ast$ {\bf fin\_\-}
+\begin{CompactList}\small\item\em Puntero al final de la cola. \item\end{CompactList}\item 
+int {\bf num\_\-elementos\_\-}
+\begin{CompactList}\small\item\em Número de elementos de la cola, utilizado para realizar recorridos. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct {\bf TipoNodo}
+\begin{CompactList}\small\item\em Este registro representa un nodo de la cola. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class ColaGen$<$ T $>$}
+
+Esta clase implementa una estructura lineal de tipo Cola generica. 
+
+Esta clase permite insertar elementos por el principio de la cola y extraerlos por el final 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ColaGen@{ColaGen}!ColaGen@{ColaGen}}
+\index{ColaGen@{ColaGen}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf ColaGen}$<$ T $>$::{\bf ColaGen} ()\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_d50024bd876f5a0300735fbc3b2ad85b}
+
+
+Inicializa los datos de la cola (punteros a NULL). 
+
+Constructor por defecto de la clase \doxyref{ColaGen}{p.}{classColaGen}, pone los punteros a NULL y num\_\-elementos a 0 \index{ColaGen@{ColaGen}!ColaGen@{ColaGen}}
+\index{ColaGen@{ColaGen}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf ColaGen}$<$ T $>$::{\bf ColaGen} (const {\bf ColaGen}$<$ T $>$ \& {\em C})\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_6b1542d930d6192e53fd655f00ace301}
+
+
+Inicializa los datos de la cola por copia. 
+
+Constructor por copia de la clase \doxyref{ColaGen}{p.}{classColaGen} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em C}]Cola desde la que se inicializa esta clase \end{description}
+\end{Desc}
+\index{ColaGen@{ColaGen}!~ColaGen@{$\sim$ColaGen}}
+\index{~ColaGen@{$\sim$ColaGen}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf ColaGen}$<$ T $>$::$\sim${\bf ColaGen} ()\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_a3d0ab114e6a8c0c99bc90ad7d68082d}
+
+
+libera la memoria de la cola (OJO ¡NO DE LOS DATOS CONTENIDOS!) 
+
+Destructor de la clase \doxyref{ColaGen}{p.}{classColaGen}, elimina todo los elementos 
+
+\subsection{Member Function Documentation}
+\index{ColaGen@{ColaGen}!insertar_dato@{insertar\_\-dato}}
+\index{insertar_dato@{insertar\_\-dato}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf ColaGen}$<$ T $>$::insertar\_\-dato (const T \& {\em dato})\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_fb6e23589a639af8b19d27ccad1bce05}
+
+
+Inserta un dato en la cola (por el final). 
+
+Metodo que inserta un dato en la cola \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]dato a insertar \end{description}
+\end{Desc}
+\index{ColaGen@{ColaGen}!insertar_nodo@{insertar\_\-nodo}}
+\index{insertar_nodo@{insertar\_\-nodo}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf ColaGen}$<$ T $>$::insertar\_\-nodo (const {\bf TipoNodo} \& {\em nodo})\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_cf26fc295c091e5da43c0f66bac4d2eb}
+
+
+Inserta un dato enviado en un nodo en la cola (por el final). 
+
+Metodo que inserta el dato contenido en un nodo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nodo}]Nodo del cual se extraera el dato para insertarlo \end{description}
+\end{Desc}
+\index{ColaGen@{ColaGen}!get@{get}}
+\index{get@{get}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf ColaGen}$<$ T $>$::get () const\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_1d627f467a03c875889fd3b2e86a4baa}
+
+
+Devuelve el dato que se encuentra en el frente de la cola. 
+
+Obtiene el frente de la cola \begin{Desc}
+\item[Returns:]devuelve el frente de la cola \end{Desc}
+\index{ColaGen@{ColaGen}!borrar@{borrar}}
+\index{borrar@{borrar}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf ColaGen}$<$ T $>$::borrar ()\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_3354603d2251388731a72d49727a2d5e}
+
+
+Elimina el dato que se encuentre en el frente de la cola. 
+
+Elimina el frente de la cola \begin{Desc}
+\item[Returns:]true si la cola no esta vacia \end{Desc}
+\index{ColaGen@{ColaGen}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ ostream \& {\bf ColaGen}$<$ T $>$::mostrar () const\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_2b69d3eccaaa4f6b767448a87e15c087}
+
+
+Muestra la cola por pantalla y guarda la informacion mostrada en un flujo. 
+
+Muestra la cola por Pantalla \begin{Desc}
+\item[Returns:]TODO \end{Desc}
+\index{ColaGen@{ColaGen}!vacia@{vacia}}
+\index{vacia@{vacia}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf ColaGen}$<$ T $>$::vacia () const\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_cb6ec29691dd45ee74a435e5027c2f7d}
+
+
+Devuelve verdadero si la cola está vacía. 
+
+\index{ColaGen@{ColaGen}!get_num_elementos@{get\_\-num\_\-elementos}}
+\index{get_num_elementos@{get\_\-num\_\-elementos}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf ColaGen}$<$ T $>$::get\_\-num\_\-elementos ()\hspace{0.3cm}{\tt  [inline]}}\label{classColaGen_0bf7db003e1afd90e17b098e36208365}
+
+
+Devuelve el número de elementos de la cola. 
+
+
+
+\subsection{Member Data Documentation}
+\index{ColaGen@{ColaGen}!frente_@{frente\_\-}}
+\index{frente_@{frente\_\-}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf TipoNodo}$\ast$ {\bf ColaGen}$<$ T $>$::{\bf frente\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classColaGen_e9ba94a862fc829daa387f42123bf705}
+
+
+Puntero al frente de la cola. 
+
+\index{ColaGen@{ColaGen}!fin_@{fin\_\-}}
+\index{fin_@{fin\_\-}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf TipoNodo}$\ast$ {\bf ColaGen}$<$ T $>$::{\bf fin\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classColaGen_e3027a623340f36f285c315a802b43e5}
+
+
+Puntero al final de la cola. 
+
+\index{ColaGen@{ColaGen}!num_elementos_@{num\_\-elementos\_\-}}
+\index{num_elementos_@{num\_\-elementos\_\-}!ColaGen@{ColaGen}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf ColaGen}$<$ T $>$::{\bf num\_\-elementos\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classColaGen_3fe24a792adb9d63948cbc8de208380d}
+
+
+Número de elementos de la cola, utilizado para realizar recorridos. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf colagen.h}\end{CompactItemize}

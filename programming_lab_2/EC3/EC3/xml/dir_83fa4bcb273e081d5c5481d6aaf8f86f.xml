@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="dir_83fa4bcb273e081d5c5481d6aaf8f86f" kind="dir">
+    <compoundname>Escritorio/EC3/src/</compoundname>
+    <innerdir refid="dir_10199d94d332a5c04e67f1711e178131">Escritorio/EC3/src/gtest/</innerdir>
+    <innerfile refid="arbol_8h">arbol.h</innerfile>
+    <innerfile refid="cargador_8cpp">cargador.cpp</innerfile>
+    <innerfile refid="cargador_8h">cargador.h</innerfile>
+    <innerfile refid="celda_8cpp">celda.cpp</innerfile>
+    <innerfile refid="celda_8h">celda.h</innerfile>
+    <innerfile refid="colagen_8h">colagen.h</innerfile>
+    <innerfile refid="ec3_8cpp">ec3.cpp</innerfile>
+    <innerfile refid="errornumerollaves_8cpp">errornumerollaves.cpp</innerfile>
+    <innerfile refid="errornumerollaves_8h">errornumerollaves.h</innerfile>
+    <innerfile refid="errorpuerta_8cpp">errorpuerta.cpp</innerfile>
+    <innerfile refid="errorpuerta_8h">errorpuerta.h</innerfile>
+    <innerfile refid="errortamanio_8cpp">errortamanio.cpp</innerfile>
+    <innerfile refid="errortamanio_8h">errortamanio.h</innerfile>
+    <innerfile refid="fichero_8cpp">fichero.cpp</innerfile>
+    <innerfile refid="fichero_8h">fichero.h</innerfile>
+    <innerfile refid="genaleatorios_8cpp">genaleatorios.cpp</innerfile>
+    <innerfile refid="genaleatorios_8h">genaleatorios.h</innerfile>
+    <innerfile refid="grafo_8cpp">grafo.cpp</innerfile>
+    <innerfile refid="grafo_8h">grafo.h</innerfile>
+    <innerfile refid="guardia_8cpp">guardia.cpp</innerfile>
+    <innerfile refid="guardia_8h">guardia.h</innerfile>
+    <innerfile refid="llave_8cpp">llave.cpp</innerfile>
+    <innerfile refid="llave_8h">llave.h</innerfile>
+    <innerfile refid="persona_8cpp">persona.cpp</innerfile>
+    <innerfile refid="persona_8h">persona.h</innerfile>
+    <innerfile refid="planta_8cpp">planta.cpp</innerfile>
+    <innerfile refid="planta_8h">planta.h</innerfile>
+    <innerfile refid="preso_8cpp">preso.cpp</innerfile>
+    <innerfile refid="preso_8h">preso.h</innerfile>
+    <innerfile refid="prision_8cpp">prision.cpp</innerfile>
+    <innerfile refid="prision_8h">prision.h</innerfile>
+    <innerfile refid="puerta_8cpp">puerta.cpp</innerfile>
+    <innerfile refid="puerta_8h">puerta.h</innerfile>
+    <innerfile refid="registro_8cpp">registro.cpp</innerfile>
+    <innerfile refid="registro_8h">registro.h</innerfile>
+    <innerfile refid="testarbol_8cpp">testarbol.cpp</innerfile>
+    <innerfile refid="testcelda_8cpp">testcelda.cpp</innerfile>
+    <innerfile refid="testcolagen_8cpp">testcolagen.cpp</innerfile>
+    <innerfile refid="testgrafo_8cpp">testgrafo.cpp</innerfile>
+    <innerfile refid="testllave_8cpp">testllave.cpp</innerfile>
+    <innerfile refid="testpersona_8cpp">testpersona.cpp</innerfile>
+    <innerfile refid="testplanta_8cpp">testplanta.cpp</innerfile>
+    <innerfile refid="testprision_8cpp">testprision.cpp</innerfile>
+    <innerfile refid="testpuerta_8cpp">testpuerta.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="planta_8h" kind="file">
+    <compoundname>planta.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">list</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">stack</includes>
+    <includes refid="celda_8h" local="yes">celda.h</includes>
+    <includes refid="grafo_8h" local="yes">grafo.h</includes>
+    <includes refid="puerta_8h" local="yes">puerta.h</includes>
+    <includes refid="genaleatorios_8h" local="yes">genaleatorios.h</includes>
+    <includes refid="errorpuerta_8h" local="yes">errorpuerta.h</includes>
+    <includes refid="errornumerollaves_8h" local="yes">errornumerollaves.h</includes>
+    <includes refid="errortamanio_8h" local="yes">errortamanio.h</includes>
+    <includes refid="registro_8h" local="yes">registro.h</includes>
+    <includes refid="guardia_8h" local="yes">guardia.h</includes>
+    <includedby refid="prision_8h" local="yes">Escritorio/EC3/src/prision.h</includedby>
+    <includedby refid="planta_8cpp" local="yes">Escritorio/EC3/src/planta.cpp</includedby>
+    <includedby refid="testplanta_8cpp" local="yes">Escritorio/EC3/src/testplanta.cpp</includedby>
+    <incdepgraph>
+      <node id="956">
+        <label>list</label>
+      </node>
+      <node id="958">
+        <label>queue</label>
+      </node>
+      <node id="963">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+      </node>
+      <node id="957">
+        <label>iterator</label>
+      </node>
+      <node id="960">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+      </node>
+      <node id="966">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+      </node>
+      <node id="970">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="968">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="973">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="969">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>fstream</label>
+      </node>
+      <node id="967">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+      </node>
+      <node id="954">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta.h"/>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="966" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="975" relation="include">
+        </childnode>
+      </node>
+      <node id="959">
+        <label>stack</label>
+      </node>
+      <node id="955">
+        <label>vector</label>
+      </node>
+      <node id="975">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+      </node>
+      <node id="965">
+        <label>cstdlib</label>
+      </node>
+      <node id="971">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="961">
+        <label>iostream</label>
+      </node>
+      <node id="972">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="964">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="989">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="977">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+      </node>
+      <node id="990">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="988">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="980">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="986">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="978">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+      </node>
+      <node id="985">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="981">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="984">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="976">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta.h"/>
+        <childnode refid="977" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+      </node>
+      <node id="982">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="987">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="983">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="979">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPlanta" prot="public">Planta</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="planta_8h_1145cac595903edc296d4a86e423d21f2" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kDepurarPlanta</definition>
+        <argsstring></argsstring>
+        <name>kDepurarPlanta</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable constante utilizada para mostrar o no mensajes de depuracion de programa </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="38" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="planta_8h_1257accb2041f0acff27a81ca90809992" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kMaxLlavesPorCelda</definition>
+        <argsstring></argsstring>
+        <name>kMaxLlavesPorCelda</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable constante utilizada para mostrar o no mensajes de depuracion de programa </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/planta.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/planta.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declaracion de la clase planta. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>20-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="celda_8h" kindref="compound" tooltip="Declaracion de la clase celda.">celda.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="grafo_8h" kindref="compound" tooltip="Declaracion de la clase grafo.">grafo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="puerta_8h" kindref="compound" tooltip="Implementacion del header de la clase puerta.">puerta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="genaleatorios_8h" kindref="compound" tooltip="Implementación de la clase GenAleatorios.">genaleatorios.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="errorpuerta_8h" kindref="compound" tooltip="Declaracion de la clase ErrorPuerta.">errorpuerta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="errornumerollaves_8h" kindref="compound" tooltip="Declaracion de la clase ErrorPuerta.">errornumerollaves.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="errortamanio_8h" kindref="compound" tooltip="Declaracion de la clase ErrorTamanio.">errortamanio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="registro_8h" kindref="compound" tooltip="Declaracion de la clase Registro.">registro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="guardia_8h" kindref="compound" tooltip="Declaracion de la clase guardia.">guardia.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLANTA_H</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PLANTA_H</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="planta_8h_1145cac595903edc296d4a86e423d21f2" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="planta_8h_1145cac595903edc296d4a86e423d21f2" kindref="member">kDepurarPlanta</ref>=0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="planta_8h_1257accb2041f0acff27a81ca90809992" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="planta_8h_1257accb2041f0acff27a81ca90809992" kindref="member">kMaxLlavesPorCelda</ref>=5;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ENUM_POSICION</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ENUM_POSICION</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref>{<ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbeac1228117cf5f6ce83a82d7e3d20a939" kindref="member">NORTE</ref>,<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbefebceb65588dba8950a8c373955b54ed" kindref="member">SUR</ref>,<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbed27507cc04e07855d6fb320348a1d0e4" kindref="member">OESTE</ref>,<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe0d56eccc4309385d24c9618eef44d945" kindref="member">ESTE</ref>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//ENUMPOSICION</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="59" refid="classPlanta" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classPlanta_19d23b8f5859a94f9bfc87ba195af61cf" kindref="member">Planta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;identificador,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;ancho,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;alto,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;entrada,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;salida,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;n_llaves,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;altura_control);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="classPlanta_13aae754edf5fc8162bedc0c087d8d968" kindref="member">~Planta</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_17ab0fe78527d4b7b7ab554244849ebdf" kindref="member">get_id</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1a8158eb55c8d51b78d4059c0dd7ed955" kindref="member">Pintar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="classPlanta_1319bef3f6e27b792e645f3db7bc82726" kindref="member">operator&lt;&lt;</ref>(ostream<sp/>&amp;salida,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref><sp/>&amp;p);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>void<sp/>Destruir();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1af5e05150b26f7e7d92c58a09c7a19a9" kindref="member">set_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos,<sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*<sp/>p);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classPlanta_1dc9c23b85d4632654e47843f6fa907e1" kindref="member">get_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classPlanta_1e4ca2659fafa66ab961e1a5f3b6ce3eb" kindref="member">sacar_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;pos);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1688ace848d1e4a8bb22eac846d3276f9" kindref="member">set_llave</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;celda,<sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>*<sp/>llave);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>*<sp/><ref refid="classPlanta_18789024ef50b7b3a3cc86e5decff8ef5" kindref="member">sacar_llave</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;celda);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1fb02150b9b257b45d0378603bd2c0284" kindref="member">ocupacion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_142c9d18589f2c0c76f0abd9848f8b428" kindref="member">get_ancho</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_19dc42ed423c2aa444a2a9a2f5d021327" kindref="member">get_alto</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76" refid="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" kindref="member">Accesible</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;destino)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" kindref="member" tooltip="grafo que controla los caminos de la planta">grafo_</ref>.<ref refid="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" kindref="member">Adyacente</ref>(origen,destino);}</highlight></codeline>
+<codeline lineno="77" refid="classPlanta_127b1073cd8b5d664b0d1d025e5c6f09e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_127b1073cd8b5d664b0d1d025e5c6f09e" kindref="member">get_entrada</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_15bc5684b9358581b3611d56406b64cbc" kindref="member" tooltip="entrada de la planta">entrada_</ref>;}<sp/></highlight></codeline>
+<codeline lineno="78" refid="classPlanta_178a6cd383d37f8f9106a08a7fb13889f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_178a6cd383d37f8f9106a08a7fb13889f" kindref="member">get_salida</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" kindref="member" tooltip="salida de la planta">salida_</ref>;}<sp/></highlight></codeline>
+<codeline lineno="79" refid="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1be73652992f5af3f9bc5d8fa485450d2" kindref="member">ProbarLlave</ref>(<ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<sp/>llave)<sp/>{<ref refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" kindref="member" tooltip="puntero a puerta de la planta">puerta_</ref>-&gt;<ref refid="classPuerta_11512476a99d735fe79657733c9180faf" kindref="member">ProbarLlave</ref>(llave);}<sp/></highlight></codeline>
+<codeline lineno="80" refid="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1575eb9db2f4a0580cf548b2a543b03c3" kindref="member">AbrirPuerta</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" kindref="member" tooltip="puntero a puerta de la planta">puerta_</ref>-&gt;<ref refid="classPuerta_12819c557f9e872958fa6ba43b639b2bb" kindref="member">Abrir</ref>();}<sp/></highlight></codeline>
+<codeline lineno="81" refid="classPlanta_1ae61a9e6eb3a10da3d95568537105263" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1ae61a9e6eb3a10da3d95568537105263" kindref="member">CerrarPuerta</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" kindref="member" tooltip="puntero a puerta de la planta">puerta_</ref>-&gt;<ref refid="classPuerta_129ee270aaf40fdd8f74a7d82c51e8d8a" kindref="member">Cerrar</ref>();}<sp/></highlight></codeline>
+<codeline lineno="82" refid="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c" kindref="member">TipoEstado</ref><sp/><ref refid="classPlanta_1b915a391ce7a46dbe477e8e46a1de071" kindref="member">EstadoPuerta</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" kindref="member" tooltip="puntero a puerta de la planta">puerta_</ref>-&gt;<ref refid="classPuerta_189cbff52e02af4f4357d6d4e5cfbe4de" kindref="member">get_estado</ref>();}<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_14ecaec03cdb438056c0b4c170546c8e1" kindref="member">CaminoMinimo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;destino,<sp/>queue&lt;Posicion&gt;<sp/>&amp;camino)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_13fcbb6808ac4c92a95abe4d5e697f8dc" kindref="member">get_vecina</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref><sp/>&amp;p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_102e8f12ce3f97f31f5fc17e5619694ac" kindref="member">Simular</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1918aa25a8d2e12b09b8761fcd2acecc8" kindref="member">RegistrarGuardia</ref>(<ref refid="classGuardia" kindref="compound">Guardia</ref><sp/>*g);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_176795ec64e2d645bdbfb8d89ce882e3d" kindref="member">get_num_guardias</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="classGuardia" kindref="compound">Guardia</ref>*<sp/><ref refid="classPlanta_1f8c0bf30de848a7008854a830e7d458d" kindref="member">get_guardia</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;numero)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92" refid="classPlanta_11cb61304a7f5e75b5fa7f72416e2f09c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_11cb61304a7f5e75b5fa7f72416e2f09c" kindref="member" tooltip="identificador de la planta.">id_</ref>;<sp/></highlight></codeline>
+<codeline lineno="93" refid="classPlanta_13d867f2849c4bff480e1e6cdb0855fcd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_13d867f2849c4bff480e1e6cdb0855fcd" kindref="member" tooltip="ancho de la planta">ancho_</ref>;<sp/></highlight></codeline>
+<codeline lineno="94" refid="classPlanta_1b5749956a1159afda09baaa812a50626" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1b5749956a1159afda09baaa812a50626" kindref="member" tooltip="alto de la planta">alto_</ref>;<sp/></highlight></codeline>
+<codeline lineno="95" refid="classPlanta_15bc5684b9358581b3611d56406b64cbc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_15bc5684b9358581b3611d56406b64cbc" kindref="member" tooltip="entrada de la planta">entrada_</ref>;<sp/></highlight></codeline>
+<codeline lineno="96" refid="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_14cbf21dc21898b7ba3b63e097f2fcbc4" kindref="member" tooltip="salida de la planta">salida_</ref>;<sp/></highlight></codeline>
+<codeline lineno="97" refid="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref><sp/><ref refid="classPlanta_1f2148d617bfb5d95398f5d3e6b22d9d6" kindref="member" tooltip="grafo que controla los caminos de la planta">grafo_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classPuerta" kindref="compound" tooltip="Esta clase representa los atributos y metodos de puertas.">Puerta</ref><sp/>*<ref refid="classPlanta_167e97ee096d0483cbe277fed5b903ba9" kindref="member" tooltip="puntero a puerta de la planta">puerta_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="classPlanta_17659fd47941f40677ce06d19e870e5c0" refkind="member"><highlight class="normal"><sp/><sp/>vector<sp/>&lt;Celda*&gt;<sp/><ref refid="classPlanta_17659fd47941f40677ce06d19e870e5c0" kindref="member" tooltip="vector que almacena punteros a todas las celdas.">celdas_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="classPlanta_1216b465f1e4e0d9b8c468f4468741304" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1216b465f1e4e0d9b8c468f4468741304" kindref="member" tooltip="Numero de llaves diferentes generadas en la planta.">n_llaves_</ref>;<sp/></highlight></codeline>
+<codeline lineno="101" refid="classPlanta_17970944dc30cb250e6959f0a661937ec" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;<sp/>Guardia*&gt;<sp/><ref refid="classPlanta_17970944dc30cb250e6959f0a661937ec" kindref="member" tooltip="Lista de los guardias de la planta.">guardias_</ref>;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_10201b3bb45b62c1f34325ce8f1bc9464" kindref="member">IniciarParedes</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1b919c44685d9f9e2f47e12f0eea79fef" kindref="member">GenerarAtajos</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_138a071a1218ba5dcccfdb5b916be5bb3" kindref="member">HayAtajo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref><sp/>&amp;p,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1c0e594febcc9067667191dec0b10f57b" kindref="member">ParedValida</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref><sp/>&amp;p,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_133c45e90dac76cd82e157e2755a76aa2" kindref="member">GeneraAtajo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref><sp/>&amp;p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1e6d703d68dc9a61ac2f162340104e76d" kindref="member">ColocarLlaves</ref>(queue<sp/>&lt;Llave*&gt;<sp/>&amp;llaves);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1732b8fff1b9390bc2a5cc1592094088d" kindref="member">PrepararLlaves</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;n_llaves,<sp/><ref refid="classColaGen" kindref="compound" tooltip="Esta clase implementa una estructura lineal de tipo Cola generica.">ColaGen&lt;Llave*&gt;</ref><sp/>*configuracion,<sp/>queue&lt;Llave*&gt;<sp/>&amp;llaves);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlanta_184706b6abbbc832d01d0e9e1c675148d" kindref="member">RutaRecursivo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>],list&lt;Posicion&gt;<sp/>&amp;ruta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ultimo_movimiento)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_196270bb755977aa1d962cfeff8d8570f" kindref="member">ObtenerMasVisitadas</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frecuencia[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_18440435c7884d2a38864f556d7850806" kindref="member">VisitadosRecursivo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>],<sp/>stack<sp/>&lt;<sp/>int<sp/>&gt;<sp/>ruta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frecuencia[kMaxVert])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1bd71eb7f9db2353a4b68d7641a23971c" kindref="member">MostrarRutaEscape</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlanta_1d138cdcaf3fff6dd080b04bbe94f0ad1" kindref="member">CalcularRuta</ref>(list&lt;Posicion&gt;<sp/>&amp;ruta)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//de<sp/>PLANTA_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/planta.h"/>
+  </compounddef>
+</doxygen>

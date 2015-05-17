@@ -1,0 +1,340 @@
+\section{Escritorio/EC3/src/gtest/internal/gtest-internal.h File Reference}
+\label{gtest-internal_8h}\index{Escritorio/EC3/src/gtest/internal/gtest-internal.h@{Escritorio/EC3/src/gtest/internal/gtest-internal.h}}
+{\tt \#include $<$gtest/internal/gtest-port.h$>$}\par
+{\tt \#include $<$ctype.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$iomanip$>$}\par
+{\tt \#include $<$limits$>$}\par
+{\tt \#include $<$set$>$}\par
+{\tt \#include $<$gtest/internal/gtest-string.h$>$}\par
+{\tt \#include $<$gtest/internal/gtest-filepath.h$>$}\par
+{\tt \#include $<$gtest/internal/gtest-type-util.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::internal::ScopedTrace}
+\item 
+class {\bf testing::internal::FloatingPoint$<$ RawType $>$}
+\item 
+class {\bf testing::internal::TypeIdHelper$<$ T $>$}
+\item 
+class {\bf testing::internal::TestFactoryBase}
+\item 
+class {\bf testing::internal::TestFactoryImpl$<$ TestClass $>$}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf GTEST\_\-CONCAT\_\-TOKEN\_\-}(foo, bar)~GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-(foo, bar)
+\item 
+\#define {\bf GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-}(foo, bar)~foo \#\# bar
+\item 
+\#define {\bf GTEST\_\-IS\_\-NULL\_\-LITERAL\_\-}(x)~(sizeof(::testing::internal::IsNullLiteralHelper(x)) == 1)
+\item 
+\#define {\bf GTEST\_\-FORMAT\_\-IMPL\_\-}(operand2\_\-type, operand1\_\-printer)
+\item 
+\#define {\bf GTEST\_\-MESSAGE\_\-}(message, result\_\-type)
+\item 
+\#define {\bf GTEST\_\-FATAL\_\-FAILURE\_\-}(message)~return GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-FATAL\_\-FAILURE)
+\item 
+\#define {\bf GTEST\_\-NONFATAL\_\-FAILURE\_\-}(message)~GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-NONFATAL\_\-FAILURE)
+\item 
+\#define {\bf GTEST\_\-SUCCESS\_\-}(message)~GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-SUCCESS)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-THROW\_\-}(statement, expected\_\-exception, fail)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-NO\_\-THROW\_\-}(statement, fail)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-ANY\_\-THROW\_\-}(statement, fail)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-BOOLEAN\_\-}(boolexpr, booltext, actual, expected, fail)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-NO\_\-FATAL\_\-FAILURE\_\-}(statement, fail)
+\item 
+\#define {\bf GTEST\_\-TEST\_\-CLASS\_\-NAME\_\-}(test\_\-case\_\-name, test\_\-name)~test\_\-case\_\-name\#\#\_\-\#\#test\_\-name\#\#\_\-Test
+\item 
+\#define {\bf GTEST\_\-TEST\_\-}(test\_\-case\_\-name, test\_\-name, parent\_\-class, parent\_\-id)
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef FloatingPoint$<$ float $>$ {\bf testing::internal::Float}
+\item 
+typedef FloatingPoint$<$ double $>$ {\bf testing::internal::Double}
+\item 
+typedef const void $\ast$ {\bf testing::internal::TypeId}
+\item 
+typedef void($\ast$) {\bf testing::internal::SetUpTestCaseFunc} ()
+\item 
+typedef void($\ast$) {\bf testing::internal::TearDownTestCaseFunc} ()
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\void {\bf GTestStreamToHelper} (std::ostream $\ast$os, const T \&val)
+\item 
+char {\bf testing::internal::IsNullLiteralHelper} (Secret $\ast$p)
+\item 
+{\bf testing::internal::char} (\&IsNullLiteralHelper(...))[2]
+\item 
+String {\bf testing::internal::AppendUserMessage} (const String \&gtest\_\-msg, const Message \&user\_\-msg)
+\item 
+{\footnotesize template$<$typename T$>$ }\\String {\bf testing::internal::StreamableToString} (const T \&streamable)
+\item 
+{\footnotesize template$<$typename T$>$ }\\String {\bf testing::internal::FormatForFailureMessage} (const T \&value)
+\item 
+{\footnotesize template$<$typename T$>$ }\\String {\bf testing::internal::FormatForFailureMessage} (T $\ast$pointer)
+\item 
+String {\bf testing::internal::FormatForFailureMessage} (char ch)
+\item 
+String {\bf testing::internal::FormatForFailureMessage} (wchar\_\-t wchar)
+\item 
+AssertionResult {\bf testing::internal::EqFailure} (const char $\ast$expected\_\-expression, const char $\ast$actual\_\-expression, const String \&expected\_\-value, const String \&actual\_\-value, bool ignoring\_\-case)
+\item 
+{\footnotesize template$<$typename T$>$ }\\TypeId {\bf testing::internal::GetTypeId} ()
+\item 
+TypeId {\bf testing::internal::GetTestTypeId} ()
+\item 
+String {\bf testing::internal::FormatFileLocation} (const char $\ast$file, int line)
+\item 
+TestInfo $\ast$ {\bf testing::internal::MakeAndRegisterTestInfo} (const char $\ast$test\_\-case\_\-name, const char $\ast$name, const char $\ast$test\_\-case\_\-comment, const char $\ast$comment, TypeId fixture\_\-class\_\-id, SetUpTestCaseFunc set\_\-up\_\-tc, TearDownTestCaseFunc tear\_\-down\_\-tc, TestFactoryBase $\ast$factory)
+\item 
+String {\bf testing::internal::GetCurrentOsStackTraceExceptTop} (UnitTest $\ast$unit\_\-test, int skip\_\-count)
+\item 
+int {\bf testing::internal::GetFailedPartCount} (const TestResult $\ast$result)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+int {\bf testing::internal::g\_\-init\_\-gtest\_\-count}
+\item 
+const char {\bf testing::internal::kStackTraceMarker} [$\,$]
+\item 
+{\bf testing::internal::ScopedTrace} {\bf testing::internal::GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_CONCAT_TOKEN_@{GTEST\_\-CONCAT\_\-TOKEN\_\-}}
+\index{GTEST_CONCAT_TOKEN_@{GTEST\_\-CONCAT\_\-TOKEN\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-CONCAT\_\-TOKEN\_\-(foo, bar)~GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-(foo, bar)}\label{gtest-internal_8h_379cc8ac79c138b1313b8e86ce7772d3}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_CONCAT_TOKEN_IMPL_@{GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-}}
+\index{GTEST_CONCAT_TOKEN_IMPL_@{GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-CONCAT\_\-TOKEN\_\-IMPL\_\-(foo, bar)~foo \#\# bar}\label{gtest-internal_8h_ffecc6107e87e253f0d2ec65ea047d76}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_FATAL_FAILURE_@{GTEST\_\-FATAL\_\-FAILURE\_\-}}
+\index{GTEST_FATAL_FAILURE_@{GTEST\_\-FATAL\_\-FAILURE\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-FATAL\_\-FAILURE\_\-(message)~return GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-FATAL\_\-FAILURE)}\label{gtest-internal_8h_72658de9b27092fb1db0c03b9b710f0f}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_FORMAT_IMPL_@{GTEST\_\-FORMAT\_\-IMPL\_\-}}
+\index{GTEST_FORMAT_IMPL_@{GTEST\_\-FORMAT\_\-IMPL\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-FORMAT\_\-IMPL\_\-(operand2\_\-type, operand1\_\-printer)}\label{gtest-internal_8h_b28df812a3f2058e7055b99b81f9b329}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}inline String FormatForComparisonFailureMessage(\
+    operand2_type::value_type* str, const operand2_type& /*operand2*/) {\
+  return operand1_printer(str);\
+}\
+inline String FormatForComparisonFailureMessage(\
+    const operand2_type::value_type* str, const operand2_type& /*operand2*/) {\
+  return operand1_printer(str);\
+}
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_IS_NULL_LITERAL_@{GTEST\_\-IS\_\-NULL\_\-LITERAL\_\-}}
+\index{GTEST_IS_NULL_LITERAL_@{GTEST\_\-IS\_\-NULL\_\-LITERAL\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-IS\_\-NULL\_\-LITERAL\_\-(x)~(sizeof(::testing::internal::IsNullLiteralHelper(x)) == 1)}\label{gtest-internal_8h_2fb2ba8dad1e80ba6033003532d1792e}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_MESSAGE_@{GTEST\_\-MESSAGE\_\-}}
+\index{GTEST_MESSAGE_@{GTEST\_\-MESSAGE\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-MESSAGE\_\-(message, result\_\-type)}\label{gtest-internal_8h_2c2f05a173d1ce255815db3f0941a89d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}::testing::internal::AssertHelper(result_type, __FILE__, __LINE__, message) \
+    = ::testing::Message()
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_NONFATAL_FAILURE_@{GTEST\_\-NONFATAL\_\-FAILURE\_\-}}
+\index{GTEST_NONFATAL_FAILURE_@{GTEST\_\-NONFATAL\_\-FAILURE\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-NONFATAL\_\-FAILURE\_\-(message)~GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-NONFATAL\_\-FAILURE)}\label{gtest-internal_8h_3f0f8842dd14a389859c49760088cdee}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_SUCCESS_@{GTEST\_\-SUCCESS\_\-}}
+\index{GTEST_SUCCESS_@{GTEST\_\-SUCCESS\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-SUCCESS\_\-(message)~GTEST\_\-MESSAGE\_\-(message, ::testing::TPRT\_\-SUCCESS)}\label{gtest-internal_8h_4b58a8f280d5e2872738d4305404cc28}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_@{GTEST\_\-TEST\_\-}}
+\index{GTEST_TEST_@{GTEST\_\-TEST\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-(test\_\-case\_\-name, test\_\-name, parent\_\-class, parent\_\-id)}\label{gtest-internal_8h_0cc6e3639205bae2d72b3eb08d257e34}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}class GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
+ public:\
+  GTEST_TEST_CLASS_NAME_(test_case_name, test_name)() {}\
+ private:\
+  virtual void TestBody();\
+  static ::testing::TestInfo* const test_info_;\
+  GTEST_DISALLOW_COPY_AND_ASSIGN_(\
+      GTEST_TEST_CLASS_NAME_(test_case_name, test_name));\
+};\
+\
+::testing::TestInfo* const GTEST_TEST_CLASS_NAME_(test_case_name, test_name)\
+  ::test_info_ =\
+    ::testing::internal::MakeAndRegisterTestInfo(\
+        #test_case_name, #test_name, "", "", \
+        (parent_id), \
+        parent_class::SetUpTestCase, \
+        parent_class::TearDownTestCase, \
+        new ::testing::internal::TestFactoryImpl<\
+            GTEST_TEST_CLASS_NAME_(test_case_name, test_name)>);\
+void GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_ANY_THROW_@{GTEST\_\-TEST\_\-ANY\_\-THROW\_\-}}
+\index{GTEST_TEST_ANY_THROW_@{GTEST\_\-TEST\_\-ANY\_\-THROW\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-ANY\_\-THROW\_\-(statement, fail)}\label{gtest-internal_8h_296441eb7d4240ae2378daac84516e72}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const char* gtest_msg = "") { \
+    bool gtest_caught_any = false; \
+    try { \
+      statement; \
+    } \
+    catch (...) { \
+      gtest_caught_any = true; \
+    } \
+    if (!gtest_caught_any) { \
+      gtest_msg = "Expected: " #statement " throws an exception.\n" \
+                  "  Actual: it doesn't."; \
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testanythrow_, __LINE__); \
+    } \
+  } else \
+    GTEST_CONCAT_TOKEN_(gtest_label_testanythrow_, __LINE__): \
+      fail(gtest_msg)
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_BOOLEAN_@{GTEST\_\-TEST\_\-BOOLEAN\_\-}}
+\index{GTEST_TEST_BOOLEAN_@{GTEST\_\-TEST\_\-BOOLEAN\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-BOOLEAN\_\-(boolexpr, booltext, actual, expected, fail)}\label{gtest-internal_8h_7953c0920da3a3bcf8256aa05cc49b9d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (boolexpr) \
+    ; \
+  else \
+    fail("Value of: " booltext "\n  Actual: " #actual "\nExpected: " #expected)
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_CLASS_NAME_@{GTEST\_\-TEST\_\-CLASS\_\-NAME\_\-}}
+\index{GTEST_TEST_CLASS_NAME_@{GTEST\_\-TEST\_\-CLASS\_\-NAME\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-CLASS\_\-NAME\_\-(test\_\-case\_\-name, test\_\-name)~test\_\-case\_\-name\#\#\_\-\#\#test\_\-name\#\#\_\-Test}\label{gtest-internal_8h_746d78de91616e1beb42c02d7bfaf8c6}
+
+
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_NO_FATAL_FAILURE_@{GTEST\_\-TEST\_\-NO\_\-FATAL\_\-FAILURE\_\-}}
+\index{GTEST_TEST_NO_FATAL_FAILURE_@{GTEST\_\-TEST\_\-NO\_\-FATAL\_\-FAILURE\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-NO\_\-FATAL\_\-FAILURE\_\-(statement, fail)}\label{gtest-internal_8h_1e9beba69154c63eeeb9cb0d0d7904ab}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const char* gtest_msg = "") { \
+    ::testing::internal::HasNewFatalFailureHelper gtest_fatal_failure_checker; \
+    { statement; } \
+    if (gtest_fatal_failure_checker.has_new_fatal_failure()) { \
+      gtest_msg = "Expected: " #statement " doesn't generate new fatal " \
+                  "failures in the current thread.\n" \
+                  "  Actual: it does."; \
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testnofatal_, __LINE__); \
+    } \
+  } else \
+    GTEST_CONCAT_TOKEN_(gtest_label_testnofatal_, __LINE__): \
+      fail(gtest_msg)
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_NO_THROW_@{GTEST\_\-TEST\_\-NO\_\-THROW\_\-}}
+\index{GTEST_TEST_NO_THROW_@{GTEST\_\-TEST\_\-NO\_\-THROW\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-NO\_\-THROW\_\-(statement, fail)}\label{gtest-internal_8h_f532432189eeefbc5f0228a7eda6a3a4}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const char* gtest_msg = "") { \
+    try { \
+      statement; \
+    } \
+    catch (...) { \
+      gtest_msg = "Expected: " #statement " doesn't throw an exception.\n" \
+                  "  Actual: it throws."; \
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testnothrow_, __LINE__); \
+    } \
+  } else \
+    GTEST_CONCAT_TOKEN_(gtest_label_testnothrow_, __LINE__): \
+      fail(gtest_msg)
+\end{verbatim}
+\end{Code}
+\index{gtest-internal.h@{gtest-internal.h}!GTEST_TEST_THROW_@{GTEST\_\-TEST\_\-THROW\_\-}}
+\index{GTEST_TEST_THROW_@{GTEST\_\-TEST\_\-THROW\_\-}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-TEST\_\-THROW\_\-(statement, expected\_\-exception, fail)}\label{gtest-internal_8h_0a353cb81f7d68f65063db098b73a8cf}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const char* gtest_msg = "") { \
+    bool gtest_caught_expected = false; \
+    try { \
+      statement; \
+    } \
+    catch (expected_exception const&) { \
+      gtest_caught_expected = true; \
+    } \
+    catch (...) { \
+      gtest_msg = "Expected: " #statement " throws an exception of type " \
+                  #expected_exception ".\n  Actual: it throws a different " \
+                  "type."; \
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__); \
+    } \
+    if (!gtest_caught_expected) { \
+      gtest_msg = "Expected: " #statement " throws an exception of type " \
+                  #expected_exception ".\n  Actual: it throws nothing."; \
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__); \
+    } \
+  } else \
+    GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__): \
+      fail(gtest_msg)
+\end{verbatim}
+\end{Code}
+
+
+\subsection{Function Documentation}
+\index{gtest-internal.h@{gtest-internal.h}!GTestStreamToHelper@{GTestStreamToHelper}}
+\index{GTestStreamToHelper@{GTestStreamToHelper}!gtest-internal.h@{gtest-internal.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void GTestStreamToHelper (std::ostream $\ast$ {\em os}, const T \& {\em val})\hspace{0.3cm}{\tt  [inline]}}\label{gtest-internal_8h_e4bfe31edc2850cacf0d087ee1681e22}
+
+

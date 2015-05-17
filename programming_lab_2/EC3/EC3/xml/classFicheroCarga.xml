@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classFicheroCarga" kind="class" prot="public">
+    <compoundname>FicheroCarga</compoundname>
+    <includes refid="fichero_8h" local="no">fichero.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" prot="private" static="no" mutable="no">
+        <type>ifstream</type>
+        <definition>ifstream FicheroCarga::f_in_</definition>
+        <argsstring></argsstring>
+        <name>f_in_</name>
+        <briefdescription>
+<para>atributo que contiene el flujo de entrada utilizado para extraer informacion del fichero. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="53" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FicheroCarga::nombre_fichero_</definition>
+        <argsstring></argsstring>
+        <name>nombre_fichero_</name>
+        <briefdescription>
+<para>atributo que contiene el nombre del fichero, se inicializa con el constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFicheroCarga_142d9d8b4602a24c26a2f2e5bf2c5a55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FicheroCarga::FicheroCarga</definition>
+        <argsstring>(string nombre)</argsstring>
+        <name>FicheroCarga</name>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase <ref refid="classFicheroCarga" kindref="compound">FicheroCarga</ref>. Se encarga de abrir el fichero <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del fichero que se va a abrir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Objecto <ref refid="classFicheroCarga" kindref="compound">FicheroCarga</ref> que permite realizar operaciones sobre el fichero con nombre pasado por parametro </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.cpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFicheroCarga_16883d83049078fdf92cd8b8964b425d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FicheroCarga::ProcesarFichero</definition>
+        <argsstring>()</argsstring>
+        <name>ProcesarFichero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Procesa el fichero de configuracion para cargar el sistema No procesa las lineas que comienzan por -- </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="49" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.cpp" bodystart="33" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classFicheroCarga_1f48c4dabc5df8fab5899a57fd194300e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FicheroCarga::ProcesarDatos</definition>
+        <argsstring>(int numCampos, string vCampos[kMaxCampos])</argsstring>
+        <name>ProcesarDatos</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+          <defname>num_campos</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <defname>vector_campos</defname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra por pantalla todas los datos contenidos en un vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_campos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de campos que tiene el vector que queremos mostrar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector_campos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector que contiene toda la informacion de una linea </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="50" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFicheroCarga_1f3eda8296f8e63ca76cae9e122da6dc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FicheroCarga::TrocearLinea</definition>
+        <argsstring>(string linea, string vCampos[kMaxCampos])</argsstring>
+        <name>TrocearLinea</name>
+        <param>
+          <type>string</type>
+          <declname>linea</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <defname>vector_campos</defname>
+          <array>[kMaxCampos]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divide una cadena en los campos que la forman, token de separacion &apos;#&apos; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cadena orgien a dividir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector_campos[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector que contendra los valores de los campos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de campos que contenia la cadena origen </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="55" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.cpp" bodystart="68" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase carga el sistema con los elementos indicados en el fichero de configuración. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="45" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="45" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" prot="private" virt="non-virtual"><scope>FicheroCarga</scope><name>f_in_</name></member>
+      <member refid="classFicheroCarga_142d9d8b4602a24c26a2f2e5bf2c5a55b" prot="public" virt="non-virtual"><scope>FicheroCarga</scope><name>FicheroCarga</name></member>
+      <member refid="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" prot="private" virt="non-virtual"><scope>FicheroCarga</scope><name>nombre_fichero_</name></member>
+      <member refid="classFicheroCarga_1f48c4dabc5df8fab5899a57fd194300e" prot="public" virt="non-virtual"><scope>FicheroCarga</scope><name>ProcesarDatos</name></member>
+      <member refid="classFicheroCarga_16883d83049078fdf92cd8b8964b425d1" prot="public" virt="non-virtual"><scope>FicheroCarga</scope><name>ProcesarFichero</name></member>
+      <member refid="classFicheroCarga_1f3eda8296f8e63ca76cae9e122da6dc1" prot="private" virt="non-virtual"><scope>FicheroCarga</scope><name>TrocearLinea</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

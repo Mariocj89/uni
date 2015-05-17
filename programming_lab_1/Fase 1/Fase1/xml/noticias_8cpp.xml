@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="noticias_8cpp" kind="file">
+    <compoundname>noticias.cpp</compoundname>
+    <includes refid="noticias_8h" local="yes">noticias.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="73">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.cpp</label>
+        <link refid="noticias.cpp"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>noticias.h</label>
+        <link refid="noticias_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>fstream</label>
+      </node>
+      <node id="76">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+      <node id="77">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="noticias_8h" kindref="compound">noticias.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia::Noticia</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia::Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>Id)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,Id);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kindref="member" tooltip="Constructor por defecto de la clase Noticia. Establece el identificador con: "";...">Noticia::Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">Noticia</ref><sp/>&amp;N)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>c1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>c2;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>c3;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>F;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kindref="member" tooltip="Obtiene el identificador de la noticia.">Obtener_Identificador</ref>(c1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,c1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_12e7230a54be139dda293d683369e418d" kindref="member" tooltip="Obtiene el titulo de la noticia.">Obtener_Titulo</ref>(c2);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_1a49b2bbc3030feaffaa6c8a19cc1364f" kindref="member" tooltip="Obtiene el subtitulo de la noticia.">Obtener_SubTitulo</ref>(c2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_1140c5fb3c38b471056758ba797f42c96" kindref="member" tooltip="Obtiene el contenido de la noticia.">Obtener_Contenido</ref>(c3);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>,<sp/>c3);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_14492711e6298259e6857bff5387d97a7" kindref="member" tooltip="Obtiene la imagen de la noticia.">Obtener_Imagen</ref>(c2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_190f7edf708afa34797a0210fe857438c" kindref="member" tooltip="Obtiene la fecha de la noticia.">Obtener_Fecha</ref>(F);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kindref="member" tooltip="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</ref>(F);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_163c07120d139ee6a943efadb124e71f3" kindref="member" tooltip="Copia la clase Noticia. Establece todos los elementos obteniendolos de J.">Noticia::Clonar</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">Noticia</ref><sp/>&amp;N)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>c1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>c2;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>c3;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>F;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kindref="member" tooltip="Obtiene el identificador de la noticia.">Obtener_Identificador</ref>(c1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,c1);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_12e7230a54be139dda293d683369e418d" kindref="member" tooltip="Obtiene el titulo de la noticia.">Obtener_Titulo</ref>(c2);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_1a49b2bbc3030feaffaa6c8a19cc1364f" kindref="member" tooltip="Obtiene el subtitulo de la noticia.">Obtener_SubTitulo</ref>(c2);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N.<ref refid="classNoticia_1140c5fb3c38b471056758ba797f42c96" kindref="member" tooltip="Obtiene el contenido de la noticia.">Obtener_Contenido</ref>(c3);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>,<sp/>c3);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/>N.<ref refid="classNoticia_14492711e6298259e6857bff5387d97a7" kindref="member" tooltip="Obtiene la imagen de la noticia.">Obtener_Imagen</ref>(c2);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>,<sp/>c2);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>N.<ref refid="classNoticia_190f7edf708afa34797a0210fe857438c" kindref="member" tooltip="Obtiene la fecha de la noticia.">Obtener_Fecha</ref>(F);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kindref="member" tooltip="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</ref>(F);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_123b71b8079ef1f9c585805627798991b" kindref="member" tooltip="Pone un identificador a la noticia.">Noticia::Poner_Identificador</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>I)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,I);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_13cf4fd9fa2c7f493ba127fda6ecaf4a4" kindref="member" tooltip="Pone un Titulo a la noticia.">Noticia::Poner_Titulo</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>T)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>,T);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_14fcfe11186521629039996d3e05a6662" kindref="member" tooltip="Pone un Subtitulo a la noticia.">Noticia::Poner_SubTitulo</ref>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>ST)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>,ST);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1a1ff7c5fbd7a5400d47160a9abdea2aa" kindref="member" tooltip="Pone un contenido a la noticia.">Noticia::Poner_Contenido</ref>(<ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>C)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(<ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>,C);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18d3ef0dbf9467d008c4ee840a90b1b4d" kindref="member" tooltip="Pone una imagen a la noticia.">Noticia::Poner_Imagen</ref>(<sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>Im<sp/>)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(<ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>,<sp/>Im);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_12b7604d405817157cf6f4bace2e13e59" kindref="member" tooltip="Pone una fecha a la noticia.">Noticia::Poner_Fecha</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;F)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kindref="member" tooltip="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</ref>(F);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kindref="member" tooltip="Obtiene el identificador de la noticia.">Noticia::Obtener_Identificador</ref><sp/>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>&amp;I)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="109"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(I,<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_12e7230a54be139dda293d683369e418d" kindref="member" tooltip="Obtiene el titulo de la noticia.">Noticia::Obtener_Titulo</ref><sp/>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;T)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="113"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(T,<ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1a49b2bbc3030feaffaa6c8a19cc1364f" kindref="member" tooltip="Obtiene el subtitulo de la noticia.">Noticia::Obtener_SubTitulo</ref><sp/>(<ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;ST)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="118"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(ST,<ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1140c5fb3c38b471056758ba797f42c96" kindref="member" tooltip="Obtiene el contenido de la noticia.">Noticia::Obtener_Contenido</ref><sp/>(<ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>&amp;C)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="123"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(C,<ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_14492711e6298259e6857bff5387d97a7" kindref="member" tooltip="Obtiene la imagen de la noticia.">Noticia::Obtener_Imagen</ref>(<sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>&amp;<sp/>Im<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="127"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy<sp/>(Im,<sp/><ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_190f7edf708afa34797a0210fe857438c" kindref="member" tooltip="Obtiene la fecha de la noticia.">Noticia::Obtener_Fecha</ref>(<ref refid="classfecha" kindref="compound">fecha</ref><sp/>&amp;F)</highlight><highlight class="keyword">const<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>F.<ref refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kindref="member" tooltip="Copia la clase Fecha. Establece todos los elementos obteniendolos de F.">Clonar</ref>(<ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1d26beba5fea62004588a45df2de8627b" kindref="member" tooltip="Compara el identificador de la noticia actual, con el identificador c.">Noticia::Comparar</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>c)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>strcmp(<ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref>,<sp/>c);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1bff9262f8b083eb62bcd252dd4c47287" kindref="member" tooltip="Muestra la noticia en pantalla.">Noticia::Mostrar_Noticia</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="143"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;================================================================&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Noticia<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kindref="member">Ident_N</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Mostrar<sp/>seccion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Fecha:<sp/>&quot;</highlight><highlight class="normal">;<sp/><ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_126e7fd7a163a4cb09ccd2e5d023838b3" kindref="member" tooltip="Muestra la fecha en pantalla.">Mostrar_Fecha</ref>();<sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Título:<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<sp/><ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Subtítulo:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Imagen<sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/><ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Contenido:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;================================================================&quot;</highlight><highlight class="normal">&lt;&lt;endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_18366558e0b77bc9c431f4dd5392f4751" kindref="member" tooltip="Guarda la noticia en un fichero.">Noticia::Guardar_Noticia</ref>(ofstream<sp/>&amp;salida)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>salida&lt;&lt;<ref refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kindref="member">Titulo</ref>&lt;&lt;</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kindref="member">SubTitulo</ref>&lt;&lt;</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kindref="member">Contenido</ref>&lt;&lt;</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kindref="member">Imagen</ref>&lt;&lt;</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_10e88871e98725a3a179d84f3800494cf" kindref="member" tooltip="Devuelve el dia.">obtener_dia</ref>()&lt;&lt;</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_1b11a5362f76eb157dd22e90aba2e7f3d" kindref="member" tooltip="Devuelve el mes.">obtener_mes</ref>()&lt;&lt;</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">&lt;&lt;<ref refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kindref="member">Fecha_N</ref>.<ref refid="classfecha_194687f580581d853ca7841c542e36b10" kindref="member" tooltip="Devuelve el año.">obtener_anio</ref>()&lt;&lt;</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><ref refid="classNoticia_11cc5f06574fa1c9cdec4bc277b975185" kindref="member">Noticia::~Noticia</ref>()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_144d9d79493df0f17dddba3f2213240de" kindref="member" tooltip="Carga la noticia de un fichero.">Noticia::Cargar_Noticia</ref>(ifstream<sp/>&amp;entrada){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>linea[<ref refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kindref="member">MaxCad3</ref>];</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>f;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dia,mes,anio;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>,</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_13cf4fd9fa2c7f493ba127fda6ecaf4a4" kindref="member" tooltip="Pone un Titulo a la noticia.">Poner_Titulo</ref>(linea);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!entrada.eof()){</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>,</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_14fcfe11186521629039996d3e05a6662" kindref="member" tooltip="Pone un Subtitulo a la noticia.">Poner_SubTitulo</ref>(linea);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<sp/><ref refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kindref="member">MaxCad3</ref>,</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_1a1ff7c5fbd7a5400d47160a9abdea2aa" kindref="member" tooltip="Pone un contenido a la noticia.">Poner_Contenido</ref>(linea);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<ref refid="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" kindref="member">MaxCad1</ref>,</highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_18d3ef0dbf9467d008c4ee840a90b1b4d" kindref="member" tooltip="Pone una imagen a la noticia.">Poner_Imagen</ref>(linea);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<sp/>10,<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dia=atoi(linea);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<sp/>10,<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mes=atoi(linea);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.getline(linea,<sp/>10,<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anio=atoi(linea);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f.<ref refid="classfecha_1f847dd726827b02dba1024a020886e22" kindref="member" tooltip="Asigna una fecha. Establece todos los elementos por parametros.">asignar_fecha</ref>(dia,mes,anio);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_12b7604d405817157cf6f4bace2e13e59" kindref="member" tooltip="Pone una fecha a la noticia.">Poner_Fecha</ref>(f);}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNoticia_1d18df61d4aea02bbed8cb2920688aa9c" kindref="member" tooltip="Pide por pantalla los datos de una noticia(salco el contador) y lo inserta en la...">Noticia::PedirNoticia</ref>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/><sp/>contador){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>f;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><ref refid="noticias_8h_14d9cef939352594212276f52943bd480" kindref="member">Tcadena2</ref><sp/>Tit,Sub,imagen;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><ref refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kindref="member">Tcadena3</ref><sp/>cont;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,m,a;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_123b71b8079ef1f9c585805627798991b" kindref="member" tooltip="Pone un identificador a la noticia.">Poner_Identificador</ref>(contador);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>título:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cin.getline(Tit,<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cin.fail())<sp/>{cin.clear();<sp/>cin.ignore(10,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_13cf4fd9fa2c7f493ba127fda6ecaf4a4" kindref="member" tooltip="Pone un Titulo a la noticia.">Poner_Titulo</ref>(Tit);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>el<sp/>subtitulo:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cin.fail())<sp/>{cin.clear();<sp/>cin.ignore(10,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>cin.getline(Sub,<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNoticia_14fcfe11186521629039996d3e05a6662" kindref="member" tooltip="Pone un Subtitulo a la noticia.">Poner_SubTitulo</ref>(Sub);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>el<sp/>contenido:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/>cin.getline(cont,<ref refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kindref="member">MaxCad3</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cin.fail())<sp/>{cin.clear();<sp/>cin.ignore(10,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><ref refid="classNoticia_1a1ff7c5fbd7a5400d47160a9abdea2aa" kindref="member" tooltip="Pone un contenido a la noticia.">Poner_Contenido</ref>(cont);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>la<sp/>imagen:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>cin.getline(imagen,<ref refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kindref="member">MaxCad2</ref>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cin.fail())<sp/>{cin.clear();<sp/>cin.ignore(10,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><ref refid="classNoticia_18d3ef0dbf9467d008c4ee840a90b1b4d" kindref="member" tooltip="Pone una imagen a la noticia.">Poner_Imagen</ref>(imagen);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>el<sp/>día:&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/>cin&gt;&gt;d;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>el<sp/>mes:&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/>cin&gt;&gt;m;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Introduce<sp/>el<sp/>año:&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/>cin&gt;&gt;a;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f.<ref refid="classfecha_1f847dd726827b02dba1024a020886e22" kindref="member" tooltip="Asigna una fecha. Establece todos los elementos por parametros.">asignar_fecha</ref>(d,m,a);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNoticia_12b7604d405817157cf6f4bace2e13e59" kindref="member" tooltip="Pone una fecha a la noticia.">Poner_Fecha</ref>(f);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/noticias.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+\section{Escritorio/EC3/src/gtest/internal/gtest-string.h File Reference}
+\label{gtest-string_8h}\index{Escritorio/EC3/src/gtest/internal/gtest-string.h@{Escritorio/EC3/src/gtest/internal/gtest-string.h}}
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$gtest/internal/gtest-port.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::internal::String}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+inline::std::ostream \& {\bf testing::internal::operator$<$$<$} (::std::ostream \&os, const String \&str)
+\item 
+String {\bf testing::internal::StrStreamToString} (StrStream $\ast$stream)
+\item 
+{\footnotesize template$<$typename T$>$ }\\String {\bf testing::internal::StreamableToString} (const T \&streamable)
+\end{CompactItemize}

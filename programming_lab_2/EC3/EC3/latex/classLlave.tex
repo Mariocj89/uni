@@ -1,0 +1,193 @@
+\section{Llave Class Reference}
+\label{classLlave}\index{Llave@{Llave}}
+Esta clase representa los atributos y metodos de llaves.  
+
+
+{\tt \#include $<$llave.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Llave} ()
+\item 
+{\bf Llave} (const int \&i)
+\item 
+{\bf Llave} (const {\bf Llave} \&L)
+\item 
+int {\bf get\_\-id} () const
+\item 
+void {\bf set\_\-id} (const int \&a)
+\item 
+{\bf $\sim$Llave} ()
+\item 
+{\bf Llave} {\bf operator=} (const {\bf Llave} \&L)
+\item 
+bool {\bf operator$<$} (const {\bf Llave} \&L) const 
+\item 
+bool {\bf operator$>$} (const {\bf Llave} \&L) const 
+\item 
+bool {\bf operator==} (const {\bf Llave} \&L) const 
+\item 
+bool {\bf operator!=} (const {\bf Llave} \&L) const 
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf id\_\-}
+\begin{CompactList}\small\item\em Entero que contiene el identificador de la llave, (-1 representa inicializado pero sin valor asignado). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&flujo, const {\bf Llave} \&L)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta clase representa los atributos y metodos de llaves. 
+
+La clase llave contendra un entero con el identificador de cada llave, usado mas adelante en las puertas. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Llave@{Llave}!Llave@{Llave}}
+\index{Llave@{Llave}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Llave::Llave ()}\label{classLlave_7fd5f7306371c7c3b190b80d86f5e4a5}
+
+
+Constructor por defecto de la clase llave, pone el identificador a -1 \index{Llave@{Llave}!Llave@{Llave}}
+\index{Llave@{Llave}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Llave::Llave (const int \& {\em i})}\label{classLlave_390ec4f0160010df03971d08c536a189}
+
+
+Constructor parametrizado de la clase llave \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em i}]entero con el cual se va a inicializar la clase \end{description}
+\end{Desc}
+\index{Llave@{Llave}!Llave@{Llave}}
+\index{Llave@{Llave}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Llave::Llave (const {\bf Llave} \& {\em L})}\label{classLlave_822f75869c5566fac2d1d7b67dbf115f}
+
+
+Constructor por copia de la clase llave \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]tipo \doxyref{Llave}{p.}{classLlave} del cual se copiaran los atributos \end{description}
+\end{Desc}
+\index{Llave@{Llave}!~Llave@{$\sim$Llave}}
+\index{~Llave@{$\sim$Llave}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Llave::$\sim$Llave ()}\label{classLlave_f341bf8376a92c91bf0ec87a6173a472}
+
+
+Destructor de la clase llave 
+
+\subsection{Member Function Documentation}
+\index{Llave@{Llave}!get_id@{get\_\-id}}
+\index{get_id@{get\_\-id}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Llave::get\_\-id () const}\label{classLlave_b26899de1c81551d751bdd0c81986285}
+
+
+Metodo consultor que obtiene el identificador de la llave \begin{Desc}
+\item[Returns:]identificador de la llave \end{Desc}
+\index{Llave@{Llave}!set_id@{set\_\-id}}
+\index{set_id@{set\_\-id}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Llave::set\_\-id (const int \& {\em a})}\label{classLlave_4dac6b5967be18669a17898ff1dac007}
+
+
+Modificador que inserta un valor en el identificador de la clase \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]entero que se copiara como identificador de la clase \end{description}
+\end{Desc}
+\index{Llave@{Llave}!operator=@{operator=}}
+\index{operator=@{operator=}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Llave} Llave::operator= (const {\bf Llave} \& {\em L})}\label{classLlave_0f2eb466ab9403a0113e035d422d613f}
+
+
+Sobrecarga del metodo =, asigna a la primera clase la segunda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]Segundo elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]resultado de la asignacion(la clase actual) \end{Desc}
+\index{Llave@{Llave}!operator<@{operator$<$}}
+\index{operator<@{operator$<$}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Llave::operator$<$ (const {\bf Llave} \& {\em L}) const}\label{classLlave_fabfc9e023a0cc7ed2a1546869253601}
+
+
+Sobrecarga del metodo $<$, comprueba si la primera llave es menor que la segunda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]Segundo elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el primero elemento es menor que el segundo(comparando los id\_\-) y false en caso contrario \end{Desc}
+\index{Llave@{Llave}!operator>@{operator$>$}}
+\index{operator>@{operator$>$}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Llave::operator$>$ (const {\bf Llave} \& {\em L}) const}\label{classLlave_2a122594cdffeac7d7a76a340728123c}
+
+
+Sobrecarga del metodo $>$, comprueba si la primera llave es mayor que la segunda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]Segundo elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el primero elemento es mayor que el segundo(comparando los id\_\-) y false en caso contrario \end{Desc}
+\index{Llave@{Llave}!operator==@{operator==}}
+\index{operator==@{operator==}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Llave::operator== (const {\bf Llave} \& {\em L}) const}\label{classLlave_1c7296c36a22931ca9a0aad141794269}
+
+
+Sobrecarga del metodo ==, comprueba si la primera llave es igual que la segunda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]Segundo elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el primero elemento es igual que el segundo(comparando los id\_\-) y false en caso contrario \end{Desc}
+\index{Llave@{Llave}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Llave::operator!= (const {\bf Llave} \& {\em L}) const}\label{classLlave_522a52a45c83e003dc5fe4b099da3b2b}
+
+
+Sobrecarga del metodo !=, comprueba si la primera llave es distinta a la segunda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]Segundo elemento \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el primero elemento es distinto del segundo(comparando los id\_\-) y false en caso contrario \end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Llave@{Llave}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em flujo}, const {\bf Llave} \& {\em L})\hspace{0.3cm}{\tt  [friend]}}\label{classLlave_6c539c87157e9ae5fe9d5d1727b05623}
+
+
+Sobrecarga de \char`\"{}$<$$<$\char`\"{}, copia la informacion de la llave a un flujo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flujo}]flujo \item[{\em L}]elemento del que copiamos la informacion que se insertara en el flujo \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]un flujo con la informacion de la clase \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Llave@{Llave}!id_@{id\_\-}}
+\index{id_@{id\_\-}!Llave@{Llave}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Llave::id\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classLlave_38bfe1bd01818c4d647d3117793da954}
+
+
+Entero que contiene el identificador de la llave, (-1 representa inicializado pero sin valor asignado). 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf llave.h}\item 
+Escritorio/EC3/src/{\bf llave.cpp}\end{CompactItemize}

@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="listaenlazada_8cpp" kind="file">
+    <compoundname>listaenlazada.cpp</compoundname>
+    <includes refid="listaenlazada_8h" local="yes">listaenlazada.h</includes>
+    <incdepgraph>
+      <node id="69">
+        <label>meses.h</label>
+        <link refid="meses_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>datospersonales.h</label>
+        <link refid="datospersonales_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>fstream</label>
+      </node>
+      <node id="66">
+        <label>listaenlazada.h</label>
+        <link refid="listaenlazada_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Escritorio/fase3/src/listaenlazada.cpp</label>
+        <link refid="listaenlazada.cpp"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>cstdlib</label>
+      </node>
+      <node id="70">
+        <label>iostream</label>
+      </node>
+      <node id="68">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="listaenlazada_8cpp_131178a4d6a939b08c869928590e958da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PruebaListaEnlazada</definition>
+        <argsstring>()</argsstring>
+        <name>PruebaListaEnlazada</name>
+        <briefdescription>
+<para>Juego de pruebas para la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" line="286" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="285" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>source de la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref> x </para>    </briefdescription>
+    <detaileddescription>
+<para>x <simplesect kind="author"><para>Mario Corchero Jiménez x </para></simplesect>
+<simplesect kind="date"><para>15/05/08 x </para></simplesect>
+<simplesect kind="par"><title>Descripción: x</title><para>Este archivo contiene la implementacion de todos los modulos contenidos en la clase <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref> y de su modulo de prueba, definidos en <ref refid="listaenlazada_8h" kindref="compound">listaenlazada.h</ref>. </para></simplesect>
+<simplesect kind="par"><title>Utilización:</title><para>Para utilizar cualquiera de estos modulos hay que llamar a las cabeceras a traves de la clase, exceptuando el caso del modulo de prueba que se llama como a un modulo normal al no estar incluido en la clase. </para></simplesect>
+<simplesect kind="par"><title>Plataforma</title><para>Linux. </para></simplesect>
+<simplesect kind="par"><title>Creado en KDevelop.</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="listaenlazada_8h" kindref="compound" tooltip="header de la clase ListaEnlazada x">listaenlazada.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="classListaEnlazada_1e82643ddd50a2ffb28f0903d586ae3c2" kindref="member" tooltip="Constructor por defecto de la clase DatosPersonales. Apunta l a NULL y carga M.">ListaEnlazada::ListaEnlazada</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>l=NULL;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>M.<ref refid="classMeses_16fe9b288dc12957021cfa63c63476ffd" kindref="member" tooltip="Carga la lista de un archivo ("meses.txt").">Cargar</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_15592c9afc4a35722b87ae9fc2639d20f" kindref="member" tooltip="Copia la clase a dat.">ListaEnlazada::Clonar</ref>(<ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref><sp/>&amp;dat)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat.<ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">InsertarFinal</ref>(<sp/>Aux-&gt;dato);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_147219ac2729b7daa6ab41bbb29ec540e" kindref="member" tooltip="Devuelve por parametro la configuracion de los Meses.">ListaEnlazada::ObtenerMeses</ref>(<ref refid="classMeses" kindref="compound">Meses</ref><sp/>&amp;mes)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>mes.<ref refid="classMeses_16523ac975c165807691c66c320dc5f69" kindref="member" tooltip="Copia la clase meses.">Clonar</ref>(<sp/>M);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_177ad8bdb80ddeb2d9fec40b2868b9425" kindref="member" tooltip="Elimina todos los elementos que no sean del mes i.">ListaEnlazada::FiltrarPorMes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classfecha" kindref="compound">fecha</ref><sp/>f;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight><highlight class="comment">//Usaremos<sp/>aux<sp/>para<sp/>recorrer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>TCadena1<sp/>tfn;</highlight><highlight class="comment">//usaremos<sp/>el<sp/>telefono<sp/>para<sp/>borrar<sp/>desde<sp/>el<sp/>modulo<sp/>borrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.ObtenerFecha(f);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m=f.obtener_mes();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m!=i){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.ObtenerTelefono(tfn);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" kindref="member" tooltip="Borra un elemento de la lista.">Borrar</ref>(<sp/>tfn);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_17f38a3fa6c85ca3fe229aa52b38405f5" kindref="member" tooltip="Elimina todos los elementos menores(o =) que i.">ListaEnlazada::FiltrarPorEdad</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight><highlight class="comment">//Usaremos<sp/>aux<sp/>para<sp/>recorrer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>TCadena1<sp/>tfn;</highlight><highlight class="comment">//usaremos<sp/>el<sp/>telefono<sp/>para<sp/>borrar<sp/>desde<sp/>el<sp/>modulo<sp/>borrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Aux-&gt;dato.CalcularEdad()&lt;=i){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.ObtenerTelefono(tfn);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" kindref="member" tooltip="Borra un elemento de la lista.">Borrar</ref>(<sp/>tfn);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" kindref="member" tooltip="Inserta un elemento al principio.">ListaEnlazada::InsertarPrincipio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>PNodo<sp/>Nuevo;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>Nuevo=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TipoNodo;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>Nuevo-&gt;dato=dat;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>Nuevo-&gt;suce=l;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>l=Nuevo;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">ListaEnlazada::InsertarFinal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>PNodo<sp/>Nuevo;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>Nuevo=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TipoNodo;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>Nuevo-&gt;dato=dat;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>Nuevo-&gt;suce=NULL;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(l==NULL)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=Nuevo;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux-&gt;suce!=NULL)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;suce=Nuevo;}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">ListaEnlazada::InsertarOrden</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>PNodo<sp/>Nuevo,Indicador,Anterior;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Encontrado=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>Nuevo=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TipoNodo;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>Nuevo-&gt;dato=dat;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>Anterior=NULL;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>Indicador=l;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>TCadena2<sp/>Tlf1,<sp/>Tlf2;</highlight><highlight class="comment">//Usaremos<sp/>estas<sp/>variables<sp/>para<sp/>comprar<sp/>a<sp/>traves<sp/>de<sp/>los<sp/>telefonos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Indicador!=NULL<sp/>&amp;&amp;<sp/>!Encontrado)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Indicador-&gt;dato.CompararA(dat)==1)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encontrado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Anterior=Indicador;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Indicador=Indicador-&gt;suce;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Nuevo-&gt;suce=Indicador;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Anterior==NULL)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=Nuevo;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Anterior-&gt;suce=Nuevo;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classListaEnlazada_1234cfa905fe5a10240dc20bdd58471fb" kindref="member" tooltip="Halla el numero de elementos.">ListaEnlazada::Ocupacion</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="134"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;i+1;i++){</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Aux==NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" kindref="member" tooltip="Borra un elemento de la lista.">ListaEnlazada::Borrar</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>dat)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux,Aux2;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>borrado=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>TCadena1<sp/>Tfn;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>l-&gt;dato.ObtenerTelefono(Tfn);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strcmp(dat,Tfn)==0){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=l-&gt;suce;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Aux;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>borrado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux-&gt;suce!=NULL){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;suce-&gt;dato.ObtenerTelefono(Tfn);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strcmp(dat,Tfn)==0){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux2=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;suce=Aux2-&gt;suce;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Aux2;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>borrado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Aux-&gt;suce==NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>borrado;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">ListaEnlazada::MostrarES</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="175"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Aux==NULL)<sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;No<sp/>existen<sp/>ningun<sp/>elemento.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Elemento<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;i&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>:&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.MostrarES(M);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_11099e1a3a94174dc44ed553b6c4cfff8" kindref="member" tooltip="Muestra toda la lista en ingles.">ListaEnlazada::MostrarEN</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="192"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Aux==NULL)<sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>no<sp/>elemets.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Element<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;i&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>:&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.MostrarEN(M);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1d635249684ab87a395f0760d0c8e2df6" kindref="member" tooltip="Busca un elemento en la lista.">ListaEnlazada::Buscar</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCadena1<sp/>i,<sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>&amp;dat)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="210"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>TCadena1<sp/>Tfn;<sp/></highlight><highlight class="comment">//Variable<sp/>destinada<sp/>a<sp/>guardar<sp/>el<sp/>telefono<sp/>de<sp/>la<sp/>actual<sp/>clase<sp/>DatosPersonales<sp/>dentro<sp/>del<sp/>siguiente<sp/>bucle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.ObtenerTelefono(Tfn);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strcmp(i,Tfn)==0){</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat.<ref refid="classDatosPersonales_16b04fa9f0d905fc4ffac22b7bd898eed" kindref="member" tooltip="Copia dat a la clase actual.">Clonar</ref>(<sp/>Aux-&gt;dato);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1800a9e74ebe60e7e53daec71a1a2cec3" kindref="member" tooltip="Carga de datos_per.txt Debe existir nombre y debe estar correctamente formateado...">ListaEnlazada::Cargar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nombre[20])</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>dat;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>ifstream<sp/>entrada;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>entrada.open(nombre);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!entrada)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!entrada.eof()){</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat.<ref refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" kindref="member" tooltip="Carga la informacion de un dato personal, usando un flujo dado.">Cargar</ref>(<sp/>entrada);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!entrada.eof()){</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">InsertarOrden</ref>(<sp/>dat);</highlight><highlight class="comment">//Si<sp/>no<sp/>se<sp/>desea<sp/>que<sp/>la<sp/>lista<sp/>que<sp/>se<sp/>carge<sp/>sea<sp/>ordenada<sp/>hay<sp/>que<sp/>cambiar<sp/>esta<sp/>instruccion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>entrada.close();</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_1c40cfd38c3ac55fdff959ad62addcd2c" kindref="member" tooltip="Guarda todos los datos en nombre Debe poderse sobrescribir nombre. Nombre del fichero...">ListaEnlazada::Guardar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nombre[20])</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="247"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>dat;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>ofstream<sp/>salida;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>salida.open(nombre);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!salida)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Aux!=NULL){</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux-&gt;dato.<ref refid="classDatosPersonales_17532391e8227d45aef3c15c6ff8be661" kindref="member" tooltip="Guarda la informacion de un dato personal, usando un flujo dado.">Guardar</ref>(salida);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=Aux-&gt;suce;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>salida.close();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classListaEnlazada_15e595393fb9bd8539629eaca34550721" kindref="member" tooltip="Vacia toda la lista.">ListaEnlazada::Eliminar</ref>()</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(l!=NULL){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=l-&gt;suce;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Aux;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><ref refid="classListaEnlazada_1df08c43000ede48ffa5ced078616c2b1" kindref="member" tooltip="Destructor de la clase.">ListaEnlazada::~ListaEnlazada</ref>()</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>PNodo<sp/>Aux=l;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(l!=NULL){</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=l-&gt;suce;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Aux;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Aux=l;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="listaenlazada_8cpp_131178a4d6a939b08c869928590e958da" kindref="member" tooltip="Juego de pruebas para la clase ListaEnlazada.">PruebaListaEnlazada</ref>()</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref><sp/>lis,lis2;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>dat1,dat2,dat3;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>ifstream<sp/>entrada;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>entrada.open(</highlight><highlight class="stringliteral">&quot;datos_per.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!entrada)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Error<sp/>al<sp/>abrir<sp/>el<sp/>flujo<sp/>en<sp/>el<sp/>modulo<sp/>PruebaListaEnlazada()\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cargamos<sp/>3<sp/>elementos<sp/>para<sp/>insertar,<sp/>es<sp/>necesario<sp/>que<sp/>haya<sp/>almenos<sp/>3<sp/>en<sp/>el<sp/>archivo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat1.<ref refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" kindref="member" tooltip="Carga la informacion de un dato personal, usando un flujo dado.">Cargar</ref>(entrada);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat2.<ref refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" kindref="member" tooltip="Carga la informacion de un dato personal, usando un flujo dado.">Cargar</ref>(entrada);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat3.<ref refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" kindref="member" tooltip="Carga la informacion de un dato personal, usando un flujo dado.">Cargar</ref>(entrada);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entrada.close();</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>los<sp/>insertar<sp/>en<sp/>orden<sp/>y<sp/>MostrarES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">InsertarOrden</ref>(<sp/>dat1);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">InsertarOrden</ref>(<sp/>dat2);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" kindref="member" tooltip="Inserta un elemento de forma ordenada.">InsertarOrden</ref>(<sp/>dat3);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">MostrarES</ref>();</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>los<sp/>insertar<sp/>al<sp/>final<sp/>y<sp/>Mostrar<sp/>EN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_15e595393fb9bd8539629eaca34550721" kindref="member" tooltip="Vacia toda la lista.">Eliminar</ref>();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">InsertarFinal</ref>(<sp/>dat1);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">InsertarFinal</ref>(<sp/>dat2);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" kindref="member" tooltip="Inserta un elemento al final.">InsertarFinal</ref>(<sp/>dat3);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_11099e1a3a94174dc44ed553b6c4cfff8" kindref="member" tooltip="Muestra toda la lista en ingles.">MostrarEN</ref>();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>los<sp/>insertar<sp/>al<sp/>principio</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_15e595393fb9bd8539629eaca34550721" kindref="member" tooltip="Vacia toda la lista.">Eliminar</ref>();</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" kindref="member" tooltip="Inserta un elemento al principio.">InsertarPrincipio</ref>(<sp/>dat1);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" kindref="member" tooltip="Inserta un elemento al principio.">InsertarPrincipio</ref>(<sp/>dat2);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" kindref="member" tooltip="Inserta un elemento al principio.">InsertarPrincipio</ref>(<sp/>dat3);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">MostrarES</ref>();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Borrar<sp/>y<sp/>Ocupacion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TCadena1<sp/>Tfn;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat2.<ref refid="classDatosPersonales_18aeace66165809ecacf1362b6903fa3c" kindref="member" tooltip="Obtiene por parametro de salida el atributo Numero.">ObtenerTelefono</ref>(<sp/>Tfn);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" kindref="member" tooltip="Borra un elemento de la lista.">Borrar</ref>(<sp/>Tfn);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lis.<ref refid="classListaEnlazada_1234cfa905fe5a10240dc20bdd58471fb" kindref="member" tooltip="Halla el numero de elementos.">Ocupacion</ref>()!=2)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;No<sp/>funciona<sp/>el<sp/>modulo<sp/>ocuapcion!<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">MostrarES</ref>();</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Buscar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref><sp/>datper;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dat3.<ref refid="classDatosPersonales_18aeace66165809ecacf1362b6903fa3c" kindref="member" tooltip="Obtiene por parametro de salida el atributo Numero.">ObtenerTelefono</ref>(<sp/>Tfn);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lis.<ref refid="classListaEnlazada_1d635249684ab87a395f0760d0c8e2df6" kindref="member" tooltip="Busca un elemento en la lista.">Buscar</ref>(<sp/>Tfn,datper))<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Modulo<sp/>Buscar<sp/>no<sp/>funciona<sp/>correctamente\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Guardar<sp/>y<sp/>Cargar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Mostrando<sp/>de<sp/>nuevo<sp/>la<sp/>ultima<sp/>lista:\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis.<ref refid="classListaEnlazada_1c40cfd38c3ac55fdff959ad62addcd2c" kindref="member" tooltip="Guarda todos los datos en nombre Debe poderse sobrescribir nombre. Nombre del fichero...">Guardar</ref>(<sp/></highlight><highlight class="stringliteral">&quot;prueba&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis2.<ref refid="classListaEnlazada_1800a9e74ebe60e7e53daec71a1a2cec3" kindref="member" tooltip="Carga de datos_per.txt Debe existir nombre y debe estar correctamente formateado...">Cargar</ref>(<sp/></highlight><highlight class="stringliteral">&quot;prueba&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lis2.<ref refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" kindref="member" tooltip="Muestra toda la lista en castellano.">MostrarES</ref>();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp"/>
+  </compounddef>
+</doxygen>

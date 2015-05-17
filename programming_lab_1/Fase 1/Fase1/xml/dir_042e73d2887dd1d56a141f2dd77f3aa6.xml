@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="dir_042e73d2887dd1d56a141f2dd77f3aa6" kind="dir">
+    <compoundname>/home/Mario/Escritorio/Proyecto/Fase1/</compoundname>
+    <innerdir refid="dir_08ea3a53910d09e368a9621df7bf3fdd">/home/Mario/Escritorio/Proyecto/Fase1/debug/</innerdir>
+    <innerdir refid="dir_7ae67d5a50438faba21da39db89f58c0">/home/Mario/Escritorio/Proyecto/Fase1/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/"/>
+  </compounddef>
+</doxygen>

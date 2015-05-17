@@ -1,0 +1,242 @@
+\section{Puerta Class Reference}
+\label{classPuerta}\index{Puerta@{Puerta}}
+Esta clase representa los atributos y metodos de puertas.  
+
+
+{\tt \#include $<$puerta.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Puerta} ()
+\item 
+{\bf Puerta} (const int \&alt)
+\item 
+void {\bf Configurar} ({\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$cop)
+\item 
+bool {\bf ProbarLlave} ({\bf Llave} $\ast$L)
+\item 
+bool {\bf ProbarLlave} (const {\bf Llave} \&L2)
+\item 
+bool {\bf Abrir} ()
+\item 
+bool {\bf Cerrar} ()
+\item 
+{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf get\_\-combinacion} ()
+\item 
+{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf get\_\-probadas} ()
+\item 
+{\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf get\_\-copia\_\-combinacion} ()
+\item 
+{\bf TipoEstado} {\bf get\_\-estado} ()
+\item 
+{\bf $\sim$Puerta} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void {\bf Alarma} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool {\bf set\_\-combinacion} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf TipoEstado} {\bf estado\_\-}
+\begin{CompactList}\small\item\em atributo que nos indica si la puerta esta NOCONFIGURADA(0), CERRADA(1) o ABIERTA(2) \item\end{CompactList}\item 
+int {\bf altura\_\-}
+\begin{CompactList}\small\item\em atributo que inidica la altura que no debe superar el arbol para poder abrir la puerta \item\end{CompactList}\item 
+{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf combinacion\_\-}
+\begin{CompactList}\small\item\em atributo tipo arbol binario de busqueda que alamacena la combinacion correcta. \item\end{CompactList}\item 
+{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf probadas\_\-}
+\begin{CompactList}\small\item\em atributo tipo arbol binario de busqueda que almacena las llaves probadas en la puerta. \item\end{CompactList}\item 
+{\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\bf copia\_\-combinacion\_\-}
+\begin{CompactList}\small\item\em atributo que contiene una copia de la combinacion secreta para poder reconfigur la puerta. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&flujo, const {\bf Puerta} \&P)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta clase representa los atributos y metodos de puertas. 
+
+La clase puerta contendra un entero con el identificador de cada llave, usado mas adelante en las puertas, 2 arboles binarios de busqueda y una cola con llaves 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Puerta@{Puerta}!Puerta@{Puerta}}
+\index{Puerta@{Puerta}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Puerta::Puerta ()}\label{classPuerta_d5c064d8f7c8662e9566afe74b273f69}
+
+
+Constructor por defecto de la clase \doxyref{Puerta}{p.}{classPuerta} \index{Puerta@{Puerta}!Puerta@{Puerta}}
+\index{Puerta@{Puerta}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Puerta::Puerta (const int \& {\em alt})}\label{classPuerta_862e751796c6a34e1143999793f861af}
+
+
+Constructor parametrizado de la clase \doxyref{Puerta}{p.}{classPuerta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em alt}]parametro que se copiara al atributo altura\_\- \end{description}
+\end{Desc}
+\index{Puerta@{Puerta}!~Puerta@{$\sim$Puerta}}
+\index{~Puerta@{$\sim$Puerta}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Puerta::$\sim$Puerta ()}\label{classPuerta_acdd5b061defc91d6de1c6d2ab8d58ac}
+
+
+Destructor de la clase \doxyref{Puerta}{p.}{classPuerta} 
+
+\subsection{Member Function Documentation}
+\index{Puerta@{Puerta}!Configurar@{Configurar}}
+\index{Configurar@{Configurar}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Puerta::Configurar ({\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\em cop})}\label{classPuerta_89e7530ca0c24ce3110c68dfbfd5019f}
+
+
+Copia de una cola a copia\_\-combinacion\_\- todas las llaves \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cop}]parametro desde el cual se va a copiar \end{description}
+\end{Desc}
+\index{Puerta@{Puerta}!ProbarLlave@{ProbarLlave}}
+\index{ProbarLlave@{ProbarLlave}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Puerta::ProbarLlave ({\bf Llave} $\ast$ {\em L})}\label{classPuerta_1512476a99d735fe79657733c9180faf}
+
+
+Prueba una llave: intenta insertarla en probadas, si no puede(por que ya se encuentra en probadas) llama al metodo de alerta, si no se encuentra en probadas pero si en combinacion, la elimina de combinacion, la inserta en probadas y devuelve true y si no se enceutra en ninguna de las 2, la inserta en probadas y devuelve false \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L}]puntero a llavellave que queremos probar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si pertenece a la combinacion y no ha sido probada previamente, false si no se encuentra en la combinacion o a sido probada previamente. \end{Desc}
+\index{Puerta@{Puerta}!ProbarLlave@{ProbarLlave}}
+\index{ProbarLlave@{ProbarLlave}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Puerta::ProbarLlave (const {\bf Llave} \& {\em L2})}\label{classPuerta_63a48f11c6c76da1b38baee281f1699a}
+
+
+Prueba una llave: intenta insertarla en probadas, si no puede(por que ya se encuentra en probadas) llama al metodo de alerta, si no se encuentra en probadas pero si en combinacion, la elimina de combinacion, la inserta en probadas y devuelve true y si no se enceutra en ninguna de las 2, la inserta en probadas y devuelve false \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em L2}]llave que queremos probar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si pertenece a la combinacion y no ha sido probada previamente, false si no se encuentra en la combinacion o a sido probada previamente. \end{Desc}
+\index{Puerta@{Puerta}!Abrir@{Abrir}}
+\index{Abrir@{Abrir}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Puerta::Abrir ()}\label{classPuerta_2819c557f9e872958fa6ba43b639b2bb}
+
+
+Intenta abrir una puerta comprobando si se cumplen las condiciones. \begin{Desc}
+\item[Returns:]true si se consigue abrir correctamente, false en caso contrario \end{Desc}
+\index{Puerta@{Puerta}!Cerrar@{Cerrar}}
+\index{Cerrar@{Cerrar}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Puerta::Cerrar ()}\label{classPuerta_29ee270aaf40fdd8f74a7d82c51e8d8a}
+
+
+Metodo que cierra la puerta, copiando la configuracion desde copia\_\-configuracion\_\- a configuracion\_\- y borra el arbol de probadas\_\- \begin{Desc}
+\item[Returns:]true si esta abierta y se cierra, false en otro caso \end{Desc}
+\index{Puerta@{Puerta}!get_combinacion@{get\_\-combinacion}}
+\index{get_combinacion@{get\_\-combinacion}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ Puerta::get\_\-combinacion ()}\label{classPuerta_7d74afd1b3a6ac6cf4ecb8638e45c580}
+
+
+Obtiene el atributo combinacion\_\-, que es un arbol \begin{Desc}
+\item[Returns:]arbol con combinacion\_\- \end{Desc}
+\index{Puerta@{Puerta}!get_probadas@{get\_\-probadas}}
+\index{get_probadas@{get\_\-probadas}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$ Puerta::get\_\-probadas ()}\label{classPuerta_6c08e9b6968fabe0a9f7dc0d5f2615df}
+
+
+Obtiene el atributo probadas\_\-, que es un arbol \begin{Desc}
+\item[Returns:]arbol con probadas\_\- \end{Desc}
+\index{Puerta@{Puerta}!get_copia_combinacion@{get\_\-copia\_\-combinacion}}
+\index{get_copia_combinacion@{get\_\-copia\_\-combinacion}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ColaGen}$<$ {\bf Llave} $\ast$ $>$ $\ast$ Puerta::get\_\-copia\_\-combinacion ()}\label{classPuerta_6114debbfb5484e955661839fcb7d650}
+
+
+Obtiene copia\_\-combinacion \begin{Desc}
+\item[Returns:]cola generica de punteros a llaves con copia\_\-combinacion\_\- \end{Desc}
+\index{Puerta@{Puerta}!get_estado@{get\_\-estado}}
+\index{get_estado@{get\_\-estado}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoEstado} Puerta::get\_\-estado ()}\label{classPuerta_89cbff52e02af4f4357d6d4e5cfbe4de}
+
+
+Devuelve el estado de la puerta (0-NOCONFIGURAR, 1-CERRADA, 2-ABIERTA) \begin{Desc}
+\item[Returns:]Tipoestado con la informacion \end{Desc}
+\index{Puerta@{Puerta}!Alarma@{Alarma}}
+\index{Alarma@{Alarma}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Puerta::Alarma ()\hspace{0.3cm}{\tt  [static]}}\label{classPuerta_516b51c884e82a945ca7bbebe4973467}
+
+
+Metodo en respuesta a que se han probado 2 veces la misma llave \index{Puerta@{Puerta}!set_combinacion@{set\_\-combinacion}}
+\index{set_combinacion@{set\_\-combinacion}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Puerta::set\_\-combinacion ()\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_8f9b4490249197f5c9d39d50fd85edd8}
+
+
+Copia la combinacion desde copia\_\-combinacion\_\- \begin{Desc}
+\item[Returns:]true si en copia\_\-combinacion\_\- hay datos, false en caso contrario \end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Puerta@{Puerta}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em flujo}, const {\bf Puerta} \& {\em P})\hspace{0.3cm}{\tt  [friend]}}\label{classPuerta_a270c39be551d05e243428b241868eb2}
+
+
+Sobrecarga del operador $<$$<$ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flujo}]flujo al que se le pasara la informacion \item[{\em P}]\doxyref{Puerta}{p.}{classPuerta} a mostrar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]flujo con los datos \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Puerta@{Puerta}!estado_@{estado\_\-}}
+\index{estado_@{estado\_\-}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoEstado} {\bf Puerta::estado\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_d57517192d6fceea23d94dc0b086e1b7}
+
+
+atributo que nos indica si la puerta esta NOCONFIGURADA(0), CERRADA(1) o ABIERTA(2) 
+
+\index{Puerta@{Puerta}!altura_@{altura\_\-}}
+\index{altura_@{altura\_\-}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Puerta::altura\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_603f11fb3dd40a96fd9a55bf069d7c4d}
+
+
+atributo que inidica la altura que no debe superar el arbol para poder abrir la puerta 
+
+\index{Puerta@{Puerta}!combinacion_@{combinacion\_\-}}
+\index{combinacion_@{combinacion\_\-}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbol}$<${\bf Llave}$\ast$$>$$\ast$ {\bf Puerta::combinacion\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_dd1a6210a20da838fc81a489f0473c81}
+
+
+atributo tipo arbol binario de busqueda que alamacena la combinacion correcta. 
+
+\index{Puerta@{Puerta}!probadas_@{probadas\_\-}}
+\index{probadas_@{probadas\_\-}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbol}$<${\bf Llave}$\ast$$>$$\ast$ {\bf Puerta::probadas\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_a906197a4305ae1155e8b5ca6736fea2}
+
+
+atributo tipo arbol binario de busqueda que almacena las llaves probadas en la puerta. 
+
+\index{Puerta@{Puerta}!copia_combinacion_@{copia\_\-combinacion\_\-}}
+\index{copia_combinacion_@{copia\_\-combinacion\_\-}!Puerta@{Puerta}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ColaGen}$<${\bf Llave}$\ast$$>$$\ast$ {\bf Puerta::copia\_\-combinacion\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPuerta_5eff2b829879b69f07fdc3f6c5720897}
+
+
+atributo que contiene una copia de la combinacion secreta para poder reconfigur la puerta. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf puerta.h}\item 
+Escritorio/EC3/src/{\bf puerta.cpp}\end{CompactItemize}

@@ -1,0 +1,26 @@
+load pila-parametrizada-simple.maude
+
+fmod PRUEBA-PILA is
+protecting PILA{Int} .
+endfm
+
+***(
+red desapilar(crear) .
+--- result [Pila{Int}]: desapilar(crear)
+red desapilar(apilar(apilar(apilar(crear,4),5),6)) .
+--- result Pila{Int}: apilar(apilar(crear, 4), 5)
+
+red cima(desapilar(apilar(apilar(apilar(crear,4),5),6))) .
+--- result NzNat: 5
+red cima(apilar(apilar(crear,5),6)) .
+--- result NzNat: 6
+red cima(crear) .
+--- result [Int]: cima(crear)
+
+red esVacia(apilar(crear,5)) .
+--- result Bool: false
+red esVacia(crear) .
+--- result Bool: true
+
+)
+

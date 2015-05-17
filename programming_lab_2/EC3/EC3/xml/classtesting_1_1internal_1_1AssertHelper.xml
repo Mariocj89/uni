@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1AssertHelper" kind="class" prot="public">
+    <compoundname>testing::internal::AssertHelper</compoundname>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1AssertHelper_18d7abde365f98254e2220f5affd41853" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref> const</type>
+        <definition>TestPartResultType const testing::internal::AssertHelper::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="886" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1AssertHelper_12f390e195e3b1ea244c62d77c6d39051" prot="private" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const testing::internal::AssertHelper::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="887" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1AssertHelper_17c7cef5c21780f81b597233bccaacbe3" prot="private" static="no" mutable="no">
+        <type>int const</type>
+        <definition>int const testing::internal::AssertHelper::line_</definition>
+        <argsstring></argsstring>
+        <name>line_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="888" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1AssertHelper_1fa76642e1a4a34a970bcd5a2360bafa7" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> const</type>
+        <definition>String const testing::internal::AssertHelper::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="889" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="889" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1AssertHelper_1f28f11ad1b22a81480325011929068bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::AssertHelper::AssertHelper</definition>
+        <argsstring>(TestPartResultType type, const char *file, int line, const char *message)</argsstring>
+        <name>AssertHelper</name>
+        <param>
+          <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="881"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1AssertHelper_1f34713ddd123368c1453da566f54fe9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::AssertHelper::operator=</definition>
+        <argsstring>(const Message &amp;message) const</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="884"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1AssertHelper_13fa661b6161d44c4fd054f7d8d47cb46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::AssertHelper::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(AssertHelper)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1AssertHelper" kindref="compound">AssertHelper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="891"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>testing::internal::AssertHelper</label>
+        <link refid="classtesting_1_1internal_1_1AssertHelper"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>message_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>testing::internal::String</label>
+        <link refid="classtesting_1_1internal_1_1String"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="877" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="877" bodyend="892"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_1f28f11ad1b22a81480325011929068bb" prot="public" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>AssertHelper</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_12f390e195e3b1ea244c62d77c6d39051" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>file_</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_13fa661b6161d44c4fd054f7d8d47cb46" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_17c7cef5c21780f81b597233bccaacbe3" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>line_</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_1fa76642e1a4a34a970bcd5a2360bafa7" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>message_</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_1f34713ddd123368c1453da566f54fe9c" prot="public" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>operator=</name></member>
+      <member refid="classtesting_1_1internal_1_1AssertHelper_18d7abde365f98254e2220f5affd41853" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>type_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

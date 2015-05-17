@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classDatosPersonales" kind="class" prot="public">
+    <compoundname>DatosPersonales</compoundname>
+    <includes refid="datospersonales_8h" local="no">datospersonales.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDatosPersonales_18018c746e88d521bd07aa37eb0ced685" prot="private" static="no" mutable="no">
+        <type>TCadena2</type>
+        <definition>TCadena2 DatosPersonales::Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="46" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDatosPersonales_11f5883adb18929bce487219af2ced98d" prot="private" static="no" mutable="no">
+        <type>TCadena2</type>
+        <definition>TCadena2 DatosPersonales::Apellido1</definition>
+        <argsstring></argsstring>
+        <name>Apellido1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="47" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDatosPersonales_1caa800d51a1e4036e08607c2916d7c00" prot="private" static="no" mutable="no">
+        <type>TCadena2</type>
+        <definition>TCadena2 DatosPersonales::Apellido2</definition>
+        <argsstring></argsstring>
+        <name>Apellido2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="48" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDatosPersonales_1aa15af8c4fe8fd1c89d5ad8dd4cbded8" prot="private" static="no" mutable="no">
+        <type><ref refid="classfecha" kindref="compound">fecha</ref></type>
+        <definition>fecha DatosPersonales::FechaNacimiento</definition>
+        <argsstring></argsstring>
+        <name>FechaNacimiento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="49" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDatosPersonales_195e40c68b7aa9ea0d1eb5e5dd0972e7c" prot="private" static="no" mutable="no">
+        <type>TCadena1</type>
+        <definition>TCadena1 DatosPersonales::Telefono</definition>
+        <argsstring></argsstring>
+        <name>Telefono</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="50" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDatosPersonales_1daf353e12d70a774ec2df032c4b3db2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DatosPersonales::CalcularEdad</definition>
+        <argsstring>() const</argsstring>
+        <name>CalcularEdad</name>
+        <briefdescription>
+<para>Modulo privado que devuelve la edad teniendo encuenta la <ref refid="classfecha" kindref="compound">fecha</ref> de nacimiento y la <ref refid="classfecha" kindref="compound">fecha</ref> actual. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>FechaNacimiento debe estar inicializado correctamente. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Obtenemos la <ref refid="classfecha" kindref="compound">fecha</ref> actual </para>        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="59" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="24" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1b16ce8577d7821760aff29410130d695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DatosPersonales::DatosPersonales</definition>
+        <argsstring>()</argsstring>
+        <name>DatosPersonales</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructores </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="68" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_170a7fe0252810867a3df6eb0d18f891c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DatosPersonales::DatosPersonales</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>DatosPersonales</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Constructor por copia de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>dat debe estar previamente inicializado correctamente. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, parametro con la que se va a iniciar la clase. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="75" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_10a1dda5828c93b244601b983454d4550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DatosPersonales::DatosPersonales</definition>
+        <argsstring>(const TCadena2 Name, const TCadena2 Surname1, const TCadena2 Surname2, const fecha &amp;Date, const TCadena1 Number)</argsstring>
+        <name>DatosPersonales</name>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname1</declname>
+        </param>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>Date</declname>
+        </param>
+        <param>
+          <type>const TCadena1</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Constructor parametrizado de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Nombre. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname2</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Date</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classfecha" kindref="compound">fecha</ref>, FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1, Telefono. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="86" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1a6018eaebcf01229f1f34d7a093e8435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerNombre</definition>
+        <argsstring>(const TCadena2 Name)</argsstring>
+        <name>PonerNombre</name>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>Establece nombre de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2 que se copiara a Nombre. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="95" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_16b1debed992686ba8ba402a23f2ab407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerApellido1</definition>
+        <argsstring>(const TCadena2 Surname1)</argsstring>
+        <name>PonerApellido1</name>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname1</declname>
+        </param>
+        <briefdescription>
+<para>Establece Apellido1 de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Surname1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2 que se copiara a Apellido1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="102" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_19e9aa8614e54385386b34532473d9079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerApellido2</definition>
+        <argsstring>(const TCadena2 Surname2)</argsstring>
+        <name>PonerApellido2</name>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname2</declname>
+        </param>
+        <briefdescription>
+<para>Establece Apellido2 de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Surname2</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2 que se copiara a Apellido2. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="109" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1ba43702c2a4844ef7bc441e232ea3014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerFecha</definition>
+        <argsstring>(const fecha &amp;Date)</argsstring>
+        <name>PonerFecha</name>
+        <param>
+          <type>const <ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>Date</declname>
+        </param>
+        <briefdescription>
+<para>Establece FechaNacimiento de la clase.(sobrecargado). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Date</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo <ref refid="classfecha" kindref="compound">fecha</ref> que se copiara a FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="116" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1a027c302e2537aa78f4943d8a0ac9abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerFecha</definition>
+        <argsstring>(const int &amp;d, const int &amp;m, const int &amp;a)</argsstring>
+        <name>PonerFecha</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Establece FechaNacimiento de la clase.(sobrecargado). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero que sera el dia de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero que sera el mes de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero que sera el año de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="125" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_19551ac68bfc7ee28bbc145d392c54f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerTelefono</definition>
+        <argsstring>(const TCadena1 Number)</argsstring>
+        <name>PonerTelefono</name>
+        <param>
+          <type>const TCadena1</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Establece Telefono de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 que se copiara a Number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="132" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_19d5e4258740f66b9cb249fa9763c2c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PonerTodo</definition>
+        <argsstring>(const TCadena2 Name, const TCadena2 Surname1, const TCadena2 Surname2, const fecha &amp;Date, const TCadena1 Number)</argsstring>
+        <name>PonerTodo</name>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname1</declname>
+        </param>
+        <param>
+          <type>const TCadena2</type>
+          <declname>Surname2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>Date</declname>
+        </param>
+        <param>
+          <type>const TCadena1</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Establece todos los atributos de la clase a traves de los parametros de entrada. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Nombre. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname2</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Date</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classfecha" kindref="compound">fecha</ref>, FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1, Telefono. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="143" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1b8cd03cbc9025d517200f82bc910cb8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerNombre</definition>
+        <argsstring>(TCadena2 &amp;Name) const</argsstring>
+        <name>ObtenerNombre</name>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo Nombre. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 donde se copiara el atributo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="152" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_101b7dcfc683528de4289da5ea2191959" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerApellido1</definition>
+        <argsstring>(TCadena2 &amp;Surname1) const</argsstring>
+        <name>ObtenerApellido1</name>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Surname1</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo Apellido1. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Surname1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 donde se copiara el atributo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="159" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_137ca275334b66506ee86932c5a723f3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerApellido2</definition>
+        <argsstring>(TCadena2 &amp;Surname2) const</argsstring>
+        <name>ObtenerApellido2</name>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Surname2</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo Apellido2. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Surname2</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 donde se copiara el atributo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="166" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_19546d71727e0a1f61a89cfdfed722bfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerFecha</definition>
+        <argsstring>(fecha &amp;Date) const </argsstring>
+        <name>ObtenerFecha</name>
+        <param>
+          <type><ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>Date</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Date</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 donde se copiara el atributo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="173" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1f8add8dfb4d577893603e9d603b41e32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerFecha</definition>
+        <argsstring>(int &amp;d, int &amp;m, int &amp;a) const</argsstring>
+        <name>ObtenerFecha</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo FechaNacimiento.(Sobrecargado). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero donde se copiara el dia de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero donde se copiara el mes de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero donde se copiara el año de FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="182" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="161" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_18aeace66165809ecacf1362b6903fa3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerTelefono</definition>
+        <argsstring>(TCadena1 &amp;Number) const</argsstring>
+        <name>ObtenerTelefono</name>
+        <param>
+          <type>TCadena1 &amp;</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida el atributo Numero. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1 donde se copiara el atributo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="189" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1913ceb1dfc7294f2238367bffc3e46b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::ObtenerTodo</definition>
+        <argsstring>(TCadena2 &amp;Name, TCadena2 &amp;Surname1, TCadena2 &amp;Surname2, fecha &amp;Date, TCadena1 &amp;Number) const</argsstring>
+        <name>ObtenerTodo</name>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Surname1</declname>
+        </param>
+        <param>
+          <type>TCadena2 &amp;</type>
+          <declname>Surname2</declname>
+        </param>
+        <param>
+          <type><ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>Date</declname>
+        </param>
+        <param>
+          <type>TCadena1 &amp;</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene por parametro de salida todos los atributos. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar correctamente inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Nombre. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname1</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Surname2</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena2, Apellido2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Date</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classfecha" kindref="compound">fecha</ref>, FechaNacimiento. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCadena1, Telefono. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="200" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="175" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_16b04fa9f0d905fc4ffac22b7bd898eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::Clonar</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>Clonar</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Copia dat a la clase actual. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>dat debe estar previamente inicializado correctamente. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, parametro que se va a copiar a la clase actual. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="210" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="188" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_10804283841f32fb53b91d119dba2edc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DatosPersonales::CompararA</definition>
+        <argsstring>(const DatosPersonales &amp;dat) const</argsstring>
+        <name>CompararA</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Compara las dos clases a traves del numero de telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>dat y la clase actual deben estar previamente inicializadas correctamente. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, clase que se va a comparar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si la clase actual es mayor, -1 si es menor y 0 si es igual. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="218" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="199" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_108089848e92b4abc249dca7f78ec33ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::MostrarES</definition>
+        <argsstring>(const Meses &amp;M) const</argsstring>
+        <name>MostrarES</name>
+        <param>
+          <type>const <ref refid="classMeses" kindref="compound">Meses</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+<para>Muestra la clase actual en castellano. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe estar correctamenete inicializada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="224" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="206" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1bbfb6282517df4f02235ea69a19a41fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::MostrarEN</definition>
+        <argsstring>(const Meses &amp;M) const</argsstring>
+        <name>MostrarEN</name>
+        <param>
+          <type>const <ref refid="classMeses" kindref="compound">Meses</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+<para>Muestra la clase actual en ingles. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe estar correctamenete inicializada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="230" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="230" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1d2a391dc31997f2e41d09e1b58cff428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PedirES</definition>
+        <argsstring>()</argsstring>
+        <name>PedirES</name>
+        <briefdescription>
+<para>Pide la informacion para rellenar la clase en castellano. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>el usuario debe introducir la informacion de manera correcta. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="236" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="254" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1d7fdf0b6b094a7c90f388628c3283387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::PedirEN</definition>
+        <argsstring>()</argsstring>
+        <name>PedirEN</name>
+        <briefdescription>
+<para>Pide la informacion para rellenar la clase en ingles. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>el usuario debe introducir la informacion de manera correcta. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="242" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="289" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::Cargar</definition>
+        <argsstring>(ifstream &amp;entrada)</argsstring>
+        <name>Cargar</name>
+        <param>
+          <type>ifstream &amp;</type>
+          <declname>entrada</declname>
+        </param>
+        <briefdescription>
+<para>Carga la informacion de un dato personal, usando un flujo dado. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe estar abierto correctamente el flujo. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="248" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="324" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_17532391e8227d45aef3c15c6ff8be661" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatosPersonales::Guardar</definition>
+        <argsstring>(ofstream &amp;salida) const</argsstring>
+        <name>Guardar</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>salida</declname>
+        </param>
+        <briefdescription>
+<para>Guarda la informacion de un dato personal, usando un flujo dado. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe estar abierto correctamente el flujo. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="254" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="354" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatosPersonales_1f31ea83cfb9bb2c7a6c4e566cc5eacd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DatosPersonales::~DatosPersonales</definition>
+        <argsstring>()</argsstring>
+        <name>~DatosPersonales</name>
+        <briefdescription>
+<para>Destructor de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="259" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.cpp" bodystart="371" bodyend="374"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, almacena cierta informacion sobre una persona y permite trabajar con esta. Sus atributos son:<itemizedlist>
+<listitem><para>Nombre: cadena de caracteres que guarda el nombre.</para></listitem><listitem><para>Apellido1: cadena de caracteres que guarda el primer apellido.</para></listitem><listitem><para>Apellido2: cadena de caracteres que guarda el segundo apellido.</para></listitem><listitem><para>Fecha: Tipo <ref refid="classfecha" kindref="compound">fecha</ref> que almacena la <ref refid="classfecha" kindref="compound">fecha</ref> de cumpleaños.</para></listitem><listitem><para>Telefono: cadena de caracteres que guarda el telefono. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>DatosPersonales</label>
+        <link refid="classDatosPersonales"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>FechaNacimiento</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fecha</label>
+        <link refid="classfecha"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/fase3/src/datospersonales.h" line="44" bodyfile="/home/Mario/Escritorio/fase3/src/datospersonales.h" bodystart="44" bodyend="261"/>
+    <listofallmembers>
+      <member refid="classDatosPersonales_11f5883adb18929bce487219af2ced98d" prot="private" virt="non-virtual"><scope>DatosPersonales</scope><name>Apellido1</name></member>
+      <member refid="classDatosPersonales_1caa800d51a1e4036e08607c2916d7c00" prot="private" virt="non-virtual"><scope>DatosPersonales</scope><name>Apellido2</name></member>
+      <member refid="classDatosPersonales_1daf353e12d70a774ec2df032c4b3db2e" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>CalcularEdad</name></member>
+      <member refid="classDatosPersonales_10d8c3a8392466978c99e191a89dcb9d3" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>Cargar</name></member>
+      <member refid="classDatosPersonales_16b04fa9f0d905fc4ffac22b7bd898eed" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>Clonar</name></member>
+      <member refid="classDatosPersonales_10804283841f32fb53b91d119dba2edc4" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>CompararA</name></member>
+      <member refid="classDatosPersonales_1b16ce8577d7821760aff29410130d695" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>DatosPersonales</name></member>
+      <member refid="classDatosPersonales_170a7fe0252810867a3df6eb0d18f891c" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>DatosPersonales</name></member>
+      <member refid="classDatosPersonales_10a1dda5828c93b244601b983454d4550" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>DatosPersonales</name></member>
+      <member refid="classDatosPersonales_1aa15af8c4fe8fd1c89d5ad8dd4cbded8" prot="private" virt="non-virtual"><scope>DatosPersonales</scope><name>FechaNacimiento</name></member>
+      <member refid="classDatosPersonales_17532391e8227d45aef3c15c6ff8be661" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>Guardar</name></member>
+      <member refid="classDatosPersonales_1bbfb6282517df4f02235ea69a19a41fd" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>MostrarEN</name></member>
+      <member refid="classDatosPersonales_108089848e92b4abc249dca7f78ec33ca" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>MostrarES</name></member>
+      <member refid="classDatosPersonales_18018c746e88d521bd07aa37eb0ced685" prot="private" virt="non-virtual"><scope>DatosPersonales</scope><name>Nombre</name></member>
+      <member refid="classDatosPersonales_101b7dcfc683528de4289da5ea2191959" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerApellido1</name></member>
+      <member refid="classDatosPersonales_137ca275334b66506ee86932c5a723f3b" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerApellido2</name></member>
+      <member refid="classDatosPersonales_19546d71727e0a1f61a89cfdfed722bfd" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerFecha</name></member>
+      <member refid="classDatosPersonales_1f8add8dfb4d577893603e9d603b41e32" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerFecha</name></member>
+      <member refid="classDatosPersonales_1b8cd03cbc9025d517200f82bc910cb8e" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerNombre</name></member>
+      <member refid="classDatosPersonales_18aeace66165809ecacf1362b6903fa3c" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerTelefono</name></member>
+      <member refid="classDatosPersonales_1913ceb1dfc7294f2238367bffc3e46b9" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>ObtenerTodo</name></member>
+      <member refid="classDatosPersonales_1d7fdf0b6b094a7c90f388628c3283387" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PedirEN</name></member>
+      <member refid="classDatosPersonales_1d2a391dc31997f2e41d09e1b58cff428" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PedirES</name></member>
+      <member refid="classDatosPersonales_16b1debed992686ba8ba402a23f2ab407" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerApellido1</name></member>
+      <member refid="classDatosPersonales_19e9aa8614e54385386b34532473d9079" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerApellido2</name></member>
+      <member refid="classDatosPersonales_1ba43702c2a4844ef7bc441e232ea3014" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerFecha</name></member>
+      <member refid="classDatosPersonales_1a027c302e2537aa78f4943d8a0ac9abb" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerFecha</name></member>
+      <member refid="classDatosPersonales_1a6018eaebcf01229f1f34d7a093e8435" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerNombre</name></member>
+      <member refid="classDatosPersonales_19551ac68bfc7ee28bbc145d392c54f69" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerTelefono</name></member>
+      <member refid="classDatosPersonales_19d5e4258740f66b9cb249fa9763c2c3a" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>PonerTodo</name></member>
+      <member refid="classDatosPersonales_195e40c68b7aa9ea0d1eb5e5dd0972e7c" prot="private" virt="non-virtual"><scope>DatosPersonales</scope><name>Telefono</name></member>
+      <member refid="classDatosPersonales_1f31ea83cfb9bb2c7a6c4e566cc5eacd6" prot="public" virt="non-virtual"><scope>DatosPersonales</scope><name>~DatosPersonales</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

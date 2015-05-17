@@ -1,0 +1,101 @@
+\section{FicheroCarga Class Reference}
+\label{classFicheroCarga}\index{FicheroCarga@{FicheroCarga}}
+Esta clase carga el sistema con los elementos indicados en el fichero de configuración.  
+
+
+{\tt \#include $<$fichero.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf FicheroCarga} (string nombre)
+\item 
+void {\bf ProcesarFichero} ()
+\item 
+void {\bf ProcesarDatos} (int numCampos, string vCampos[{\bf kMaxCampos}])
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+int {\bf TrocearLinea} (string linea, string vCampos[{\bf kMaxCampos}])
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+ifstream {\bf f\_\-in\_\-}
+\begin{CompactList}\small\item\em atributo que contiene el flujo de entrada utilizado para extraer informacion del fichero. \item\end{CompactList}\item 
+string {\bf nombre\_\-fichero\_\-}
+\begin{CompactList}\small\item\em atributo que contiene el nombre del fichero, se inicializa con el constructor. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta clase carga el sistema con los elementos indicados en el fichero de configuración. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{FicheroCarga@{FicheroCarga}!FicheroCarga@{FicheroCarga}}
+\index{FicheroCarga@{FicheroCarga}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}FicheroCarga::FicheroCarga (string {\em nombre})}\label{classFicheroCarga_42d9d8b4602a24c26a2f2e5bf2c5a55b}
+
+
+Constructor de la clase \doxyref{FicheroCarga}{p.}{classFicheroCarga}. Se encarga de abrir el fichero \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nombre}]Nombre del fichero que se va a abrir \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Objecto \doxyref{FicheroCarga}{p.}{classFicheroCarga} que permite realizar operaciones sobre el fichero con nombre pasado por parametro \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{FicheroCarga@{FicheroCarga}!ProcesarFichero@{ProcesarFichero}}
+\index{ProcesarFichero@{ProcesarFichero}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void FicheroCarga::ProcesarFichero ()}\label{classFicheroCarga_6883d83049078fdf92cd8b8964b425d1}
+
+
+Procesa el fichero de configuracion para cargar el sistema No procesa las lineas que comienzan por -- \index{FicheroCarga@{FicheroCarga}!ProcesarDatos@{ProcesarDatos}}
+\index{ProcesarDatos@{ProcesarDatos}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void FicheroCarga::ProcesarDatos (int {\em num\_\-campos}, string {\em vector\_\-campos}[kMaxCampos])}\label{classFicheroCarga_f48c4dabc5df8fab5899a57fd194300e}
+
+
+Metodo que muestra por pantalla todas los datos contenidos en un vector \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em num\_\-campos}]numero de campos que tiene el vector que queremos mostrar \item[{\em vector\_\-campos\mbox{[}$\,$\mbox{]}}]vector que contiene toda la informacion de una linea \end{description}
+\end{Desc}
+\index{FicheroCarga@{FicheroCarga}!TrocearLinea@{TrocearLinea}}
+\index{TrocearLinea@{TrocearLinea}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int FicheroCarga::TrocearLinea (string {\em linea}, string {\em vector\_\-campos}[kMaxCampos])\hspace{0.3cm}{\tt  [private]}}\label{classFicheroCarga_f3eda8296f8e63ca76cae9e122da6dc1}
+
+
+Divide una cadena en los campos que la forman, token de separacion '\#' \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em linea}]cadena orgien a dividir \item[{\em vector\_\-campos\mbox{[}$\,$\mbox{]}}]vector que contendra los valores de los campos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Número de campos que contenia la cadena origen \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{FicheroCarga@{FicheroCarga}!f_in_@{f\_\-in\_\-}}
+\index{f_in_@{f\_\-in\_\-}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ifstream {\bf FicheroCarga::f\_\-in\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classFicheroCarga_f6f1330ca6f4db508d25515af90eed80}
+
+
+atributo que contiene el flujo de entrada utilizado para extraer informacion del fichero. 
+
+\index{FicheroCarga@{FicheroCarga}!nombre_fichero_@{nombre\_\-fichero\_\-}}
+\index{nombre_fichero_@{nombre\_\-fichero\_\-}!FicheroCarga@{FicheroCarga}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf FicheroCarga::nombre\_\-fichero\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classFicheroCarga_7e3ed176862d0fffc46975fbce4845b3}
+
+
+atributo que contiene el nombre del fichero, se inicializa con el constructor. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf fichero.h}\item 
+Escritorio/EC3/src/{\bf fichero.cpp}\end{CompactItemize}

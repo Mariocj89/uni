@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classListaEnlazada" kind="class" prot="public">
+    <compoundname>ListaEnlazada</compoundname>
+    <includes refid="listaenlazada_8h" local="no">listaenlazada.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classListaEnlazada_11911f69a7ec86d04fc02fadf9405ff61" prot="private" static="no" mutable="no">
+        <type>PNodo</type>
+        <definition>PNodo ListaEnlazada::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="37" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classListaEnlazada_1e26f5f0bf901b0a87bf46924cb71abce" prot="private" static="no" mutable="no">
+        <type><ref refid="classMeses" kindref="compound">Meses</ref></type>
+        <definition>Meses ListaEnlazada::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="38" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classListaEnlazada_1e82643ddd50a2ffb28f0903d586ae3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ListaEnlazada::ListaEnlazada</definition>
+        <argsstring>()</argsstring>
+        <name>ListaEnlazada</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. Apunta l a NULL y carga M. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="45" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_15592c9afc4a35722b87ae9fc2639d20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::Clonar</definition>
+        <argsstring>(ListaEnlazada &amp;dat)</argsstring>
+        <name>Clonar</name>
+        <param>
+          <type><ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Copia la clase a dat. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>ATENCION: SE COPIARA A dat, Y NO AL CONTRARIO, se ha elegido esta impementacion por ser mas sencilla.</title><para></para></simplesect>
+<simplesect kind="pre"><para>la clase debe estar correctamente inicializado. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo <ref refid="classListaEnlazada" kindref="compound">ListaEnlazada</ref> a donde se copiara la configuracion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="53" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_147219ac2729b7daa6ab41bbb29ec540e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::ObtenerMeses</definition>
+        <argsstring>(Meses &amp;mes) const</argsstring>
+        <name>ObtenerMeses</name>
+        <param>
+          <type><ref refid="classMeses" kindref="compound">Meses</ref> &amp;</type>
+          <declname>mes</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve por parametro la configuracion de los <ref refid="classMeses" kindref="compound">Meses</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mes</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parametro que se usara para guardar y devolver la configuracion de los meses </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="60" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_177ad8bdb80ddeb2d9fec40b2868b9425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::FiltrarPorMes</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>FiltrarPorMes</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Elimina todos los elementos que no sean del mes i. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mes que permanecera </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="67" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="44" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_17f38a3fa6c85ca3fe229aa52b38405f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::FiltrarPorEdad</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>FiltrarPorEdad</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Elimina todos los elementos menores(o =) que i. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>edad que debe superar para permanecer el dato </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="74" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="63" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::InsertarPrincipio</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>InsertarPrincipio</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento al principio. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> que se insertara en la lista </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="81" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::InsertarFinal</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>InsertarFinal</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento al final. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> que se insertara en la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="88" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="88" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::InsertarOrden</definition>
+        <argsstring>(const DatosPersonales &amp;dat)</argsstring>
+        <name>InsertarOrden</name>
+        <param>
+          <type>const <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento de forma ordenada. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada y ordenada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> que se insertara en la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="95" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="106" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1234cfa905fe5a10240dc20bdd58471fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ListaEnlazada::Ocupacion</definition>
+        <argsstring>() const</argsstring>
+        <name>Ocupacion</name>
+        <briefdescription>
+<para>Halla el numero de elementos. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<simplesect kind="return"><para>entero con en numero de elementos de la lista. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="102" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListaEnlazada::Borrar</definition>
+        <argsstring>(const TCadena1 dat)</argsstring>
+        <name>Borrar</name>
+        <param>
+          <type>const TCadena1</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Borra un elemento de la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>telefono para buscar el elemento a borrar de la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si lo ha borrado correctamente, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="110" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="143" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::MostrarES</definition>
+        <argsstring>() const</argsstring>
+        <name>MostrarES</name>
+        <briefdescription>
+<para>Muestra toda la lista en castellano. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="116" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="174" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_11099e1a3a94174dc44ed553b6c4cfff8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::MostrarEN</definition>
+        <argsstring>() const</argsstring>
+        <name>MostrarEN</name>
+        <briefdescription>
+<para>Muestra toda la lista en ingles. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="122" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="191" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1d635249684ab87a395f0760d0c8e2df6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListaEnlazada::Buscar</definition>
+        <argsstring>(const TCadena1 i, DatosPersonales &amp;dat) const</argsstring>
+        <name>Buscar</name>
+        <param>
+          <type>const TCadena1</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Busca un elemento en la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref> donde se copiara el elemento encontrado. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>telefono para buscar el elemento a borrar de la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si lo ha encontrado, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="131" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="209" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1800a9e74ebe60e7e53daec71a1a2cec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListaEnlazada::Cargar</definition>
+        <argsstring>(const char nombre[20])</argsstring>
+        <name>Cargar</name>
+        <param>
+          <type>const char</type>
+          <declname>nombre</declname>
+          <array>[20]</array>
+        </param>
+        <briefdescription>
+<para>Carga de datos_per.txt <simplesect kind="pre"><para>Debe existir nombre y debe estar correctamente formateado. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del fichero del que se volcara la informacion a la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false si se ha encontrado algun error de apertura </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="139" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="227" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1c40cfd38c3ac55fdff959ad62addcd2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListaEnlazada::Guardar</definition>
+        <argsstring>(const char nombre[20]) const</argsstring>
+        <name>Guardar</name>
+        <param>
+          <type>const char</type>
+          <declname>nombre</declname>
+          <array>[20]</array>
+        </param>
+        <briefdescription>
+<para>Guarda todos los datos en nombre <simplesect kind="pre"><para>Debe poderse sobrescribir nombre. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del fichero en el que se volcara la informacion de la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false si se ha encontrado algun error de apertura </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="147" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="246" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_15e595393fb9bd8539629eaca34550721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaEnlazada::Eliminar</definition>
+        <argsstring>()</argsstring>
+        <name>Eliminar</name>
+        <briefdescription>
+<para>Vacia toda la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="152" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="264" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classListaEnlazada_1df08c43000ede48ffa5ced078616c2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ListaEnlazada::~ListaEnlazada</definition>
+        <argsstring>()</argsstring>
+        <name>~ListaEnlazada</name>
+        <briefdescription>
+<para>Destructor de la clase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="157" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.cpp" bodystart="275" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, almacena la informacion relativa a los meses en una lista enlazada. Sus atributos son:<itemizedlist>
+<listitem><para>l: puntero que apunta a un TipoNodo, el comienzo de la lista.</para></listitem><listitem><para>M: Tipo <ref refid="classMeses" kindref="compound">Meses</ref>, contiene la informacion relativa a los meses. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>ListaEnlazada</label>
+        <link refid="classListaEnlazada"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>M</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Meses</label>
+        <link refid="classMeses"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/fase3/src/listaenlazada.h" line="36" bodyfile="/home/Mario/Escritorio/fase3/src/listaenlazada.h" bodystart="36" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classListaEnlazada_10dca1b9ee554e8c08c15d045a858de78" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Borrar</name></member>
+      <member refid="classListaEnlazada_1d635249684ab87a395f0760d0c8e2df6" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Buscar</name></member>
+      <member refid="classListaEnlazada_1800a9e74ebe60e7e53daec71a1a2cec3" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Cargar</name></member>
+      <member refid="classListaEnlazada_15592c9afc4a35722b87ae9fc2639d20f" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Clonar</name></member>
+      <member refid="classListaEnlazada_15e595393fb9bd8539629eaca34550721" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Eliminar</name></member>
+      <member refid="classListaEnlazada_17f38a3fa6c85ca3fe229aa52b38405f5" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>FiltrarPorEdad</name></member>
+      <member refid="classListaEnlazada_177ad8bdb80ddeb2d9fec40b2868b9425" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>FiltrarPorMes</name></member>
+      <member refid="classListaEnlazada_1c40cfd38c3ac55fdff959ad62addcd2c" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Guardar</name></member>
+      <member refid="classListaEnlazada_1801bed36c4e29f62a8bc060b5bba220e" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>InsertarFinal</name></member>
+      <member refid="classListaEnlazada_165c51ce247c1b6e1994b27d83428a896" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>InsertarOrden</name></member>
+      <member refid="classListaEnlazada_1e5bfbfd897fbec690d9a2eea8f575fa8" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>InsertarPrincipio</name></member>
+      <member refid="classListaEnlazada_11911f69a7ec86d04fc02fadf9405ff61" prot="private" virt="non-virtual"><scope>ListaEnlazada</scope><name>l</name></member>
+      <member refid="classListaEnlazada_1e82643ddd50a2ffb28f0903d586ae3c2" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>ListaEnlazada</name></member>
+      <member refid="classListaEnlazada_1e26f5f0bf901b0a87bf46924cb71abce" prot="private" virt="non-virtual"><scope>ListaEnlazada</scope><name>M</name></member>
+      <member refid="classListaEnlazada_11099e1a3a94174dc44ed553b6c4cfff8" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>MostrarEN</name></member>
+      <member refid="classListaEnlazada_112d1c81f7461cb71d418373482f69d95" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>MostrarES</name></member>
+      <member refid="classListaEnlazada_147219ac2729b7daa6ab41bbb29ec540e" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>ObtenerMeses</name></member>
+      <member refid="classListaEnlazada_1234cfa905fe5a10240dc20bdd58471fb" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>Ocupacion</name></member>
+      <member refid="classListaEnlazada_1df08c43000ede48ffa5ced078616c2b1" prot="public" virt="non-virtual"><scope>ListaEnlazada</scope><name>~ListaEnlazada</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

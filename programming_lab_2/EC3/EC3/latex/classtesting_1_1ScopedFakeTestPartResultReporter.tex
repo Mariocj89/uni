@@ -1,0 +1,123 @@
+\section{testing::ScopedFakeTestPartResultReporter Class Reference}
+\label{classtesting_1_1ScopedFakeTestPartResultReporter}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+{\tt \#include $<$gtest-spi.h$>$}
+
+Inheritance diagram for testing::ScopedFakeTestPartResultReporter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classtesting_1_1ScopedFakeTestPartResultReporter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum {\bf InterceptMode} \{ {\bf INTERCEPT\_\-ONLY\_\-CURRENT\_\-THREAD}, 
+{\bf INTERCEPT\_\-ALL\_\-THREADS}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf ScopedFakeTestPartResultReporter} ({\bf TestPartResultArray} $\ast$result)
+\item 
+{\bf ScopedFakeTestPartResultReporter} ({\bf InterceptMode} intercept\_\-mode, {\bf TestPartResultArray} $\ast$result)
+\item 
+virtual {\bf $\sim$ScopedFakeTestPartResultReporter} ()
+\item 
+virtual void {\bf ReportTestPartResult} (const {\bf TestPartResult} \&result)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf Init} ()
+\item 
+{\bf GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-} ({\bf ScopedFakeTestPartResultReporter})
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+const {\bf InterceptMode} {\bf intercept\_\-mode\_\-}
+\item 
+{\bf TestPartResultReporterInterface} $\ast$ {\bf old\_\-reporter\_\-}
+\item 
+{\bf TestPartResultArray} $\ast$const {\bf result\_\-}
+\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!InterceptMode@{InterceptMode}}
+\index{InterceptMode@{InterceptMode}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf testing::ScopedFakeTestPartResultReporter::InterceptMode}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_b8a366f9c642b21186685bdb337e4b97}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{INTERCEPT_ONLY_CURRENT_THREAD@{INTERCEPT\_\-ONLY\_\-CURRENT\_\-THREAD}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!INTERCEPT_ONLY_CURRENT_THREAD@{INTERCEPT\_\-ONLY\_\-CURRENT\_\-THREAD}}\item[{\em 
+INTERCEPT\_\-ONLY\_\-CURRENT\_\-THREAD\label{classtesting_1_1ScopedFakeTestPartResultReporter_b8a366f9c642b21186685bdb337e4b97f6654d2e51553256f9253ce7c8f8a481}
+}]\index{INTERCEPT_ALL_THREADS@{INTERCEPT\_\-ALL\_\-THREADS}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!INTERCEPT_ALL_THREADS@{INTERCEPT\_\-ALL\_\-THREADS}}\item[{\em 
+INTERCEPT\_\-ALL\_\-THREADS\label{classtesting_1_1ScopedFakeTestPartResultReporter_b8a366f9c642b21186685bdb337e4b9788d618924c3eff63e27f8b9c8fa14bb5}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}}
+\index{ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter ({\bf TestPartResultArray} $\ast$ {\em result})\hspace{0.3cm}{\tt  [explicit]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_e054e2cdbcd8bd2cff2797308687c75a}
+
+
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}}
+\index{ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter ({\bf InterceptMode} {\em intercept\_\-mode}, {\bf TestPartResultArray} $\ast$ {\em result})}\label{classtesting_1_1ScopedFakeTestPartResultReporter_b883d7984655ec46b8c17544ad0be7a1}
+
+
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!~ScopedFakeTestPartResultReporter@{$\sim$ScopedFakeTestPartResultReporter}}
+\index{~ScopedFakeTestPartResultReporter@{$\sim$ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual testing::ScopedFakeTestPartResultReporter::$\sim$ScopedFakeTestPartResultReporter ()\hspace{0.3cm}{\tt  [virtual]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_f5c1f85005f6a19993a434c5c9b870eb}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ReportTestPartResult@{ReportTestPartResult}}
+\index{ReportTestPartResult@{ReportTestPartResult}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void testing::ScopedFakeTestPartResultReporter::ReportTestPartResult (const {\bf TestPartResult} \& {\em result})\hspace{0.3cm}{\tt  [virtual]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_0a1300ac1cff91171aa65ac5470efd50}
+
+
+
+
+Implements {\bf testing::TestPartResultReporterInterface} \doxyref{}{p.}{classtesting_1_1TestPartResultReporterInterface_e5912af5e9bee0ae07acfc83b00a603c}.\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!Init@{Init}}
+\index{Init@{Init}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::ScopedFakeTestPartResultReporter::Init ()\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_74c048638a2df6d5dbfef4e39542d0db}
+
+
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}}
+\index{GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::ScopedFakeTestPartResultReporter::GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\- ({\bf ScopedFakeTestPartResultReporter})\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_aa895e8ca1ee09ecc6da773366ebc001}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!intercept_mode_@{intercept\_\-mode\_\-}}
+\index{intercept_mode_@{intercept\_\-mode\_\-}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf InterceptMode} {\bf testing::ScopedFakeTestPartResultReporter::intercept\_\-mode\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_cc17b9581670a36584c4e17facc3a1cf}
+
+
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!old_reporter_@{old\_\-reporter\_\-}}
+\index{old_reporter_@{old\_\-reporter\_\-}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TestPartResultReporterInterface}$\ast$ {\bf testing::ScopedFakeTestPartResultReporter::old\_\-reporter\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_7acda567fdc075536d76939831f85c50}
+
+
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!result_@{result\_\-}}
+\index{result_@{result\_\-}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TestPartResultArray}$\ast$ const {\bf testing::ScopedFakeTestPartResultReporter::result\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1ScopedFakeTestPartResultReporter_a1211409edea858087b405d93bce8e5a}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest-spi.h}\end{CompactItemize}

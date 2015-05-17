@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classfecha" kind="class" prot="public">
+    <compoundname>fecha</compoundname>
+    <includes refid="fecha_8h" local="no">fecha.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfecha_159c299c690b6584793ed316dd81afa9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fecha::dia</definition>
+        <argsstring></argsstring>
+        <name>dia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="18" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfecha_1f1e40d8b1eb62d5a03b6fe12a1b95f65" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fecha::mes</definition>
+        <argsstring></argsstring>
+        <name>mes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="19" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfecha_194c1d45a967f49f42fa5435dbce3a65d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fecha::anio</definition>
+        <argsstring></argsstring>
+        <name>anio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="20" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfecha_16618aab8a9750692a1ecc00969175b69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fecha::dias_por_mes</definition>
+        <argsstring>(int m, int a)</argsstring>
+        <name>dias_por_mes</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>comprueba los dias que tiene un mes, tiene en cuenta si el año es bisiesto. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mes que se quiere comprobar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>año del mes que se quiere comprobar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int: numero de dias que tiene el mes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="29" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="40" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1746902dbdf76ebd7140bcdad702d0650" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fecha::bisiesto</definition>
+        <argsstring>(int a)</argsstring>
+        <name>bisiesto</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>comprueba si un año es bisiesto. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>año a comprobar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int: numero de dias que tiene el mes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="40" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="73" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_12ac14aa46a810d2cb0d4d8b639517751" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fecha::fecha_correcta</definition>
+        <argsstring>(int d, int m, int a)</argsstring>
+        <name>fecha_correcta</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>comprueba si una <ref refid="classfecha" kindref="compound">fecha</ref> es correcta. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dia a comprovar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mes a comprovar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>año a comprovar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si es correcta, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="50" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="92" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfecha_16775ef84b5838e12e28fd341793f4539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fecha::fecha</definition>
+        <argsstring>()</argsstring>
+        <name>fecha</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase Fecha. Establece todos los elementos a 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="59" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="6" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_165cd911ad05a136da161bffdfc56e523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fecha::fecha</definition>
+        <argsstring>(int d, int m)</argsstring>
+        <name>fecha</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Constructor parametrizado de la clase Fecha. Establece el mes y el dia por parametro y pone el año a 2008. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el dia que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el mes que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="68" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1f9c51c65e530811dcbcdac769647f890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fecha::fecha</definition>
+        <argsstring>(int d, int m, int a)</argsstring>
+        <name>fecha</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Constructor parametrizado de la clase Fecha. Establece todos los elementos por parametro. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el dia que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el mes que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el año que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="78" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1ffbc58390398cbbc117bdfa754b0cd35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fecha::fecha</definition>
+        <argsstring>(const fecha &amp;F)</argsstring>
+        <name>fecha</name>
+        <param>
+          <type>const <ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>F</declname>
+        </param>
+        <briefdescription>
+<para>Constructor por copia de la clase Fecha. Establece todos los elementos obteniendolos de F. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha origen que se va a usar para establecer la <ref refid="classfecha" kindref="compound">fecha</ref> tratada. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="86" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fecha::Clonar</definition>
+        <argsstring>(const fecha &amp;F)</argsstring>
+        <name>Clonar</name>
+        <param>
+          <type>const <ref refid="classfecha" kindref="compound">fecha</ref> &amp;</type>
+          <declname>F</declname>
+        </param>
+        <briefdescription>
+<para>Copia la clase Fecha. Establece todos los elementos obteniendolos de F. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>F debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha origen que se va a usar para establecer la <ref refid="classfecha" kindref="compound">fecha</ref> tratada. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="94" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_15691bdd8675b0df1745b05f104cf645b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fecha::incrementar_fecha</definition>
+        <argsstring>()</argsstring>
+        <name>incrementar_fecha</name>
+        <briefdescription>
+<para>Incrementa la <ref refid="classfecha" kindref="compound">fecha</ref> en un dia. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="102" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="114" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1a70e6f4e7c53aa9be72afca3a333faf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fecha::decrementar_fecha</definition>
+        <argsstring>()</argsstring>
+        <name>decrementar_fecha</name>
+        <briefdescription>
+<para>Decrementa la <ref refid="classfecha" kindref="compound">fecha</ref> en un dia. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="110" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="136" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1f847dd726827b02dba1024a020886e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fecha::asignar_fecha</definition>
+        <argsstring>(int d, int m, int a)</argsstring>
+        <name>asignar_fecha</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Asigna una <ref refid="classfecha" kindref="compound">fecha</ref>. Establece todos los elementos por parametros. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el dia que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el mes que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el año que se va a insertar en la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="120" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_10e88871e98725a3a179d84f3800494cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fecha::obtener_dia</definition>
+        <argsstring>() const</argsstring>
+        <name>obtener_dia</name>
+        <briefdescription>
+<para>Devuelve el dia. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>un entero que indica el dia de la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="128" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_1b11a5362f76eb157dd22e90aba2e7f3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fecha::obtener_mes</definition>
+        <argsstring>() const</argsstring>
+        <name>obtener_mes</name>
+        <briefdescription>
+<para>Devuelve el mes. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>un entero que indica el mes de la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="136" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_194687f580581d853ca7841c542e36b10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fecha::obtener_anio</definition>
+        <argsstring>() const</argsstring>
+        <name>obtener_anio</name>
+        <briefdescription>
+<para>Devuelve el año. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>un entero que indica el año de la <ref refid="classfecha" kindref="compound">fecha</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="144" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classfecha_126e7fd7a163a4cb09ccd2e5d023838b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fecha::Mostrar_Fecha</definition>
+        <argsstring>() const</argsstring>
+        <name>Mostrar_Fecha</name>
+        <briefdescription>
+<para>Muestra la <ref refid="classfecha" kindref="compound">fecha</ref> en pantalla. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La <ref refid="classfecha" kindref="compound">fecha</ref> debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>@return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="153" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.cpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase Fecha, permite tratar fechas reales. Sus atributos son:<itemizedlist>
+<listitem><para>dia: Vector de elementos almacenados</para></listitem><listitem><para>mes: Numero de elementos actual</para></listitem><listitem><para>anio: Apuntador al elemento de interes </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" line="17" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/fecha.h" bodystart="16" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classfecha_194c1d45a967f49f42fa5435dbce3a65d" prot="private" virt="non-virtual"><scope>fecha</scope><name>anio</name></member>
+      <member refid="classfecha_1f847dd726827b02dba1024a020886e22" prot="public" virt="non-virtual"><scope>fecha</scope><name>asignar_fecha</name></member>
+      <member refid="classfecha_1746902dbdf76ebd7140bcdad702d0650" prot="private" virt="non-virtual"><scope>fecha</scope><name>bisiesto</name></member>
+      <member refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" prot="public" virt="non-virtual"><scope>fecha</scope><name>Clonar</name></member>
+      <member refid="classfecha_1a70e6f4e7c53aa9be72afca3a333faf3" prot="public" virt="non-virtual"><scope>fecha</scope><name>decrementar_fecha</name></member>
+      <member refid="classfecha_159c299c690b6584793ed316dd81afa9b" prot="private" virt="non-virtual"><scope>fecha</scope><name>dia</name></member>
+      <member refid="classfecha_16618aab8a9750692a1ecc00969175b69" prot="private" virt="non-virtual"><scope>fecha</scope><name>dias_por_mes</name></member>
+      <member refid="classfecha_16775ef84b5838e12e28fd341793f4539" prot="public" virt="non-virtual"><scope>fecha</scope><name>fecha</name></member>
+      <member refid="classfecha_165cd911ad05a136da161bffdfc56e523" prot="public" virt="non-virtual"><scope>fecha</scope><name>fecha</name></member>
+      <member refid="classfecha_1f9c51c65e530811dcbcdac769647f890" prot="public" virt="non-virtual"><scope>fecha</scope><name>fecha</name></member>
+      <member refid="classfecha_1ffbc58390398cbbc117bdfa754b0cd35" prot="public" virt="non-virtual"><scope>fecha</scope><name>fecha</name></member>
+      <member refid="classfecha_12ac14aa46a810d2cb0d4d8b639517751" prot="private" virt="non-virtual"><scope>fecha</scope><name>fecha_correcta</name></member>
+      <member refid="classfecha_15691bdd8675b0df1745b05f104cf645b" prot="public" virt="non-virtual"><scope>fecha</scope><name>incrementar_fecha</name></member>
+      <member refid="classfecha_1f1e40d8b1eb62d5a03b6fe12a1b95f65" prot="private" virt="non-virtual"><scope>fecha</scope><name>mes</name></member>
+      <member refid="classfecha_126e7fd7a163a4cb09ccd2e5d023838b3" prot="public" virt="non-virtual"><scope>fecha</scope><name>Mostrar_Fecha</name></member>
+      <member refid="classfecha_194687f580581d853ca7841c542e36b10" prot="public" virt="non-virtual"><scope>fecha</scope><name>obtener_anio</name></member>
+      <member refid="classfecha_10e88871e98725a3a179d84f3800494cf" prot="public" virt="non-virtual"><scope>fecha</scope><name>obtener_dia</name></member>
+      <member refid="classfecha_1b11a5362f76eb157dd22e90aba2e7f3d" prot="public" virt="non-virtual"><scope>fecha</scope><name>obtener_mes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

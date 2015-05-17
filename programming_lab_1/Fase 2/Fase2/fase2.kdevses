@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="8" >
+  <Doc0 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/gestor.cpp" >
+   <View0 line="132" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/ppal.cpp" >
+   <View0 line="260" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/noticias.h" >
+   <View0 line="0" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/noticias.cpp" >
+   <View0 line="284" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/fecha.cpp" >
+   <View0 line="209" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/categoria.cpp" >
+   <View0 line="132" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/lpi.cpp" >
+   <View0 line="135" Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///home/Mario/Escritorio/Fase2/src/gestor.h" >
+   <View0 line="150" Type="Source" />
+  </Doc7>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList/>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

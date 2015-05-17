@@ -1,0 +1,297 @@
+\section{Referencia de la Clase fecha}
+\label{classfecha}\index{fecha@{fecha}}
+{\tt \#include $<$fecha.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+{\bf fecha} ()
+\begin{CompactList}\small\item\em Constructor por defecto de la clase Fecha. Establece todos los elementos a 0. \item\end{CompactList}\item 
+{\bf fecha} (int d, int m)
+\begin{CompactList}\small\item\em Constructor parametrizado de la clase Fecha. Establece el mes y el dia por parametro y pone el año a 2008. \item\end{CompactList}\item 
+{\bf fecha} (int d, int m, int a)
+\begin{CompactList}\small\item\em Constructor parametrizado de la clase Fecha. Establece todos los elementos por parametro. \item\end{CompactList}\item 
+{\bf fecha} (const {\bf fecha} \&F)
+\begin{CompactList}\small\item\em Constructor por copia de la clase Fecha. Establece todos los elementos obteniendolos de F. \item\end{CompactList}\item 
+void {\bf Clonar} (const {\bf fecha} \&F)
+\begin{CompactList}\small\item\em Copia la clase Fecha. Establece todos los elementos obteniendolos de F. \item\end{CompactList}\item 
+void {\bf incrementar\_\-fecha} ()
+\begin{CompactList}\small\item\em Incrementa la \doxyref{fecha}{p.}{classfecha} en un dia. \item\end{CompactList}\item 
+void {\bf decrementar\_\-fecha} ()
+\begin{CompactList}\small\item\em Decrementa la \doxyref{fecha}{p.}{classfecha} en un dia. \item\end{CompactList}\item 
+void {\bf asignar\_\-fecha} (int d, int m, int a)
+\begin{CompactList}\small\item\em Asigna una \doxyref{fecha}{p.}{classfecha}. Establece todos los elementos por parametros. \item\end{CompactList}\item 
+int {\bf obtener\_\-dia} () const
+\begin{CompactList}\small\item\em Devuelve el dia. \item\end{CompactList}\item 
+int {\bf obtener\_\-mes} () const
+\begin{CompactList}\small\item\em Devuelve el mes. \item\end{CompactList}\item 
+int {\bf obtener\_\-anio} () const
+\begin{CompactList}\small\item\em Devuelve el año. \item\end{CompactList}\item 
+void {\bf Mostrar\_\-Fecha} () const
+\begin{CompactList}\small\item\em Muestra la \doxyref{fecha}{p.}{classfecha} en pantalla. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Métodos privados}
+\begin{CompactItemize}
+\item 
+int {\bf dias\_\-por\_\-mes} (int m, int a)
+\begin{CompactList}\small\item\em comprueba los dias que tiene un mes, tiene en cuenta si el año es bisiesto. \item\end{CompactList}\item 
+bool {\bf bisiesto} (int a)
+\begin{CompactList}\small\item\em comprueba si un año es bisiesto. \item\end{CompactList}\item 
+bool {\bf fecha\_\-correcta} (int d, int m, int a)
+\begin{CompactList}\small\item\em comprueba si una \doxyref{fecha}{p.}{classfecha} es correcta. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos privados}
+\begin{CompactItemize}
+\item 
+int \textbf{dia}\label{classfecha_59c299c690b6584793ed316dd81afa9b}
+
+\item 
+int \textbf{mes}\label{classfecha_f1e40d8b1eb62d5a03b6fe12a1b95f65}
+
+\item 
+int \textbf{anio}\label{classfecha_94c1d45a967f49f42fa5435dbce3a65d}
+
+\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase Fecha, permite tratar fechas reales. Sus atributos son:\begin{itemize}
+\item dia: Vector de elementos almacenados\item mes: Numero de elementos actual\item anio: Apuntador al elemento de interes \end{itemize}
+
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{fecha@{fecha}!fecha@{fecha}}
+\index{fecha@{fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}fecha::fecha ()}\label{classfecha_6775ef84b5838e12e28fd341793f4539}
+
+
+Constructor por defecto de la clase Fecha. Establece todos los elementos a 0. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]\end{description}
+\end{Desc}
+\index{fecha@{fecha}!fecha@{fecha}}
+\index{fecha@{fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}fecha::fecha (int {\em d}, int {\em m})}\label{classfecha_65cd911ad05a136da161bffdfc56e523}
+
+
+Constructor parametrizado de la clase Fecha. Establece el mes y el dia por parametro y pone el año a 2008. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]el dia que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \item[{\em m,:}]el mes que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]\end{Desc}
+\index{fecha@{fecha}!fecha@{fecha}}
+\index{fecha@{fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}fecha::fecha (int {\em d}, int {\em m}, int {\em a})}\label{classfecha_f9c51c65e530811dcbcdac769647f890}
+
+
+Constructor parametrizado de la clase Fecha. Establece todos los elementos por parametro. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]el dia que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \item[{\em m,:}]el mes que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \item[{\em a,:}]el año que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]\end{Desc}
+\index{fecha@{fecha}!fecha@{fecha}}
+\index{fecha@{fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}fecha::fecha (const {\bf fecha} \& {\em F})}\label{classfecha_ffbc58390398cbbc117bdfa754b0cd35}
+
+
+Constructor por copia de la clase Fecha. Establece todos los elementos obteniendolos de F. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em F,:}]Fecha origen que se va a usar para establecer la \doxyref{fecha}{p.}{classfecha} tratada. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]\end{Desc}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{fecha@{fecha}!dias_por_mes@{dias\_\-por\_\-mes}}
+\index{dias_por_mes@{dias\_\-por\_\-mes}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int fecha::dias\_\-por\_\-mes (int {\em m}, int {\em a})\hspace{0.3cm}{\tt  [private]}}\label{classfecha_6618aab8a9750692a1ecc00969175b69}
+
+
+comprueba los dias que tiene un mes, tiene en cuenta si el año es bisiesto. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em m,:}]mes que se quiere comprobar. \item[{\em a,:}]año del mes que se quiere comprobar. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]int: numero de dias que tiene el mes. \end{Desc}
+\index{fecha@{fecha}!bisiesto@{bisiesto}}
+\index{bisiesto@{bisiesto}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool fecha::bisiesto (int {\em a})\hspace{0.3cm}{\tt  [private]}}\label{classfecha_746902dbdf76ebd7140bcdad702d0650}
+
+
+comprueba si un año es bisiesto. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em a,:}]año a comprobar. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]int: numero de dias que tiene el mes. \end{Desc}
+\index{fecha@{fecha}!fecha_correcta@{fecha\_\-correcta}}
+\index{fecha_correcta@{fecha\_\-correcta}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool fecha::fecha\_\-correcta (int {\em d}, int {\em m}, int {\em a})\hspace{0.3cm}{\tt  [private]}}\label{classfecha_2ac14aa46a810d2cb0d4d8b639517751}
+
+
+comprueba si una \doxyref{fecha}{p.}{classfecha} es correcta. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]dia a comprovar. \item[{\em m,:}]mes a comprovar. \item[{\em a,:}]año a comprovar. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si es correcta, false en caso contrario. \end{Desc}
+\index{fecha@{fecha}!Clonar@{Clonar}}
+\index{Clonar@{Clonar}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void fecha::Clonar (const {\bf fecha} \& {\em F})}\label{classfecha_06f3a30edf89c4542d7bf260f5bb4be8}
+
+
+Copia la clase Fecha. Establece todos los elementos obteniendolos de F. 
+
+\begin{Desc}
+\item[Precondición:]F debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em F,:}]Fecha origen que se va a usar para establecer la \doxyref{fecha}{p.}{classfecha} tratada. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]\end{Desc}
+\index{fecha@{fecha}!incrementar_fecha@{incrementar\_\-fecha}}
+\index{incrementar_fecha@{incrementar\_\-fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void fecha::incrementar\_\-fecha ()}\label{classfecha_5691bdd8675b0df1745b05f104cf645b}
+
+
+Incrementa la \doxyref{fecha}{p.}{classfecha} en un dia. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]\end{description}
+\end{Desc}
+\index{fecha@{fecha}!decrementar_fecha@{decrementar\_\-fecha}}
+\index{decrementar_fecha@{decrementar\_\-fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void fecha::decrementar\_\-fecha ()}\label{classfecha_a70e6f4e7c53aa9be72afca3a333faf3}
+
+
+Decrementa la \doxyref{fecha}{p.}{classfecha} en un dia. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]\end{description}
+\end{Desc}
+\index{fecha@{fecha}!asignar_fecha@{asignar\_\-fecha}}
+\index{asignar_fecha@{asignar\_\-fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void fecha::asignar\_\-fecha (int {\em d}, int {\em m}, int {\em a})}\label{classfecha_f847dd726827b02dba1024a020886e22}
+
+
+Asigna una \doxyref{fecha}{p.}{classfecha}. Establece todos los elementos por parametros. 
+
+\begin{Desc}
+\item[Precondición:]\end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em d,:}]el dia que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \item[{\em m,:}]el mes que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \item[{\em a,:}]el año que se va a insertar en la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]\end{Desc}
+\index{fecha@{fecha}!obtener_dia@{obtener\_\-dia}}
+\index{obtener_dia@{obtener\_\-dia}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int fecha::obtener\_\-dia () const}\label{classfecha_0e88871e98725a3a179d84f3800494cf}
+
+
+Devuelve el dia. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]un entero que indica el dia de la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\index{fecha@{fecha}!obtener_mes@{obtener\_\-mes}}
+\index{obtener_mes@{obtener\_\-mes}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int fecha::obtener\_\-mes () const}\label{classfecha_b11a5362f76eb157dd22e90aba2e7f3d}
+
+
+Devuelve el mes. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]un entero que indica el mes de la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\index{fecha@{fecha}!obtener_anio@{obtener\_\-anio}}
+\index{obtener_anio@{obtener\_\-anio}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int fecha::obtener\_\-anio () const}\label{classfecha_94687f580581d853ca7841c542e36b10}
+
+
+Devuelve el año. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]un entero que indica el año de la \doxyref{fecha}{p.}{classfecha}. \end{description}
+\end{Desc}
+\index{fecha@{fecha}!Mostrar_Fecha@{Mostrar\_\-Fecha}}
+\index{Mostrar_Fecha@{Mostrar\_\-Fecha}!fecha@{fecha}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void fecha::Mostrar\_\-Fecha () const}\label{classfecha_26e7fd7a163a4cb09ccd2e5d023838b3}
+
+
+Muestra la \doxyref{fecha}{p.}{classfecha} en pantalla. 
+
+\begin{Desc}
+\item[Precondición:]La \doxyref{fecha}{p.}{classfecha} debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em @return}]\end{description}
+\end{Desc}
+
+
+La documentación para esta clase fué generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+Escritorio/fase3/src/{\bf fecha.h}\item 
+Escritorio/fase3/src/{\bf fecha.cpp}\end{CompactItemize}

@@ -1,0 +1,33 @@
+\section{Escritorio/EC3/src/gtest/internal/gtest-linked\_\-ptr.h File Reference}
+\label{gtest-linked__ptr_8h}\index{Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h@{Escritorio/EC3/src/gtest/internal/gtest-linked\_\-ptr.h}}
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$assert.h$>$}\par
+{\tt \#include $<$gtest/internal/gtest-port.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::internal::linked\_\-ptr\_\-internal}
+\item 
+class {\bf testing::internal::linked\_\-ptr$<$ T $>$}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool {\bf testing::internal::operator==} (T $\ast$ptr, const linked\_\-ptr$<$ T $>$ \&x)
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool {\bf testing::internal::operator!=} (T $\ast$ptr, const linked\_\-ptr$<$ T $>$ \&x)
+\item 
+{\footnotesize template$<$typename T$>$ }\\linked\_\-ptr$<$ T $>$ {\bf testing::internal::make\_\-linked\_\-ptr} (T $\ast$ptr)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+Mutex {\bf testing::internal::g\_\-linked\_\-ptr\_\-mutex}
+\end{CompactItemize}

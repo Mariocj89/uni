@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="registro_8cpp" kind="file">
+    <compoundname>registro.cpp</compoundname>
+    <includes refid="registro_8h" local="yes">registro.h</includes>
+    <incdepgraph>
+      <node id="1122">
+        <label>Escritorio/EC3/src/registro.cpp</label>
+        <link refid="registro.cpp"/>
+        <childnode refid="1123" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>fstream</label>
+      </node>
+      <node id="1124">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementación de la clase <ref refid="classRegistro" kindref="compound">Registro</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Profesores</bold> LPII <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="registro_8h" kindref="compound" tooltip="Declaracion de la clase Registro.">registro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//inicializacion<sp/>de<sp/>la<sp/>unica<sp/>instancia<sp/>que<sp/>existe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>*<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">Registro::instancia_</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classRegistro_179db13a112d147d186e0377c3284b735" kindref="member">Registro::Registro</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_1ae3b307bfdfc9572595109242b62059c" kindref="member" tooltip="Nombre de fichero en el que se guardan los datos (por defecto "registro.log").">nombre_fichero_</ref>=</highlight><highlight class="stringliteral">&quot;registro.log&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.open(<ref refid="classRegistro_1ae3b307bfdfc9572595109242b62059c" kindref="member" tooltip="Nombre de fichero en el que se guardan los datos (por defecto "registro.log").">nombre_fichero_</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.good())<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>apertura<sp/>en<sp/>Registro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="classRegistro_11a61913f579e4c46512658085048dc7f" kindref="member">Registro::~Registro</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>*<sp/><ref refid="classRegistro_142d4db3fecc09bcde81e2cb71900a5c8" kindref="member">Registro::get_instancia</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>==NULL)<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Registro::Escribir</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>mensaje)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>==NULL)<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>&lt;&lt;mensaje;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.good())<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>escritura<sp/>en<sp/>Registro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Registro::Escribir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>==NULL)<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>&lt;&lt;mensaje;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.good())<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>escritura<sp/>en<sp/>Registro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" kindref="member">Registro::Escribir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mensaje)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>==NULL)<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>&lt;&lt;mensaje;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.good())<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>escritura<sp/>en<sp/>Registro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">ostream<sp/>&amp;<sp/><ref refid="classRegistro_1a3beb0de20dc0421628ff7396d2f76f5" kindref="member">Registro::Flujo</ref>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>==NULL)<sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classRegistro" kindref="compound" tooltip="Permite mandar datos a un fichero de texto ("registro.log").">Registro</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistro_144c7aa629b33647372b95d8e32f856c7" kindref="member">Registro::Destruir</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>!=NULL){<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.close();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" kindref="member" tooltip="flujo a traves del cual se mandan los datos">f_out_</ref>.good())<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>cierre<sp/>en<sp/>Registro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" kindref="member" tooltip="Instancia de la propia clase (solo habra una en el sistema).">instancia_</ref>=NULL;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/registro.cpp"/>
+  </compounddef>
+</doxygen>

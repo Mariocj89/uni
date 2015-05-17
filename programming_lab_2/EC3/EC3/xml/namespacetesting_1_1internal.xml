@@ -1,0 +1,1398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="namespacetesting_1_1internal" kind="namespace">
+    <compoundname>testing::internal</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1SingleFailureChecker" prot="public">testing::internal::SingleFailureChecker</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper" prot="public">testing::internal::HasNewFatalFailureHelper</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1EqHelper" prot="public">testing::internal::EqHelper</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1EqHelper_3_01true_01_4" prot="public">testing::internal::EqHelper&lt; true &gt;</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1AssertHelper" prot="public">testing::internal::AssertHelper</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1FilePath" prot="public">testing::internal::FilePath</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1ScopedTrace" prot="public">testing::internal::ScopedTrace</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1FloatingPoint" prot="public">testing::internal::FloatingPoint</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TypeIdHelper" prot="public">testing::internal::TypeIdHelper</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TestFactoryBase" prot="public">testing::internal::TestFactoryBase</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TestFactoryImpl" prot="public">testing::internal::TestFactoryImpl</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1linked__ptr__internal" prot="public">testing::internal::linked_ptr_internal</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1linked__ptr" prot="public">testing::internal::linked_ptr</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1scoped__ptr" prot="public">testing::internal::scoped_ptr</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1Mutex" prot="public">testing::internal::Mutex</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1GTestMutexLock" prot="public">testing::internal::GTestMutexLock</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1ThreadLocal" prot="public">testing::internal::ThreadLocal</innerclass>
+    <innerclass refid="structtesting_1_1internal_1_1bool__constant" prot="public">testing::internal::bool_constant</innerclass>
+    <innerclass refid="structtesting_1_1internal_1_1is__pointer" prot="public">testing::internal::is_pointer</innerclass>
+    <innerclass refid="structtesting_1_1internal_1_1is__pointer_3_01T_01_5_01_4" prot="public">testing::internal::is_pointer&lt; T * &gt;</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TypeWithSize" prot="public">testing::internal::TypeWithSize</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4" prot="public">testing::internal::TypeWithSize&lt; 4 &gt;</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1TypeWithSize_3_018_01_4" prot="public">testing::internal::TypeWithSize&lt; 8 &gt;</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1GTestCheckProvider" prot="public">testing::internal::GTestCheckProvider</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1String" prot="public">testing::internal::String</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c2" prot="public" static="no">
+        <name>GTestLogSeverity</name>
+        <enumvalue id="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c26eab59e3adc63c10ee3c7ab9b4158371" prot="public">
+          <name>GTEST_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c271623c73cf79f1a4be31255eedbaef19" prot="public">
+          <name>GTEST_WARNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c2999c3fe1cf7b9f50f9ceb4fd4bcb2c76" prot="public">
+          <name>GTEST_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c244929c5a55dae8cdd5196c7b80a085f3" prot="public">
+          <name>GTEST_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="562" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="562" bodyend="567"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetesting_1_1internal_13554bb2b22f4e166ab16671250040fa6" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char testing::internal::kDeathTestStyleFlag[]</definition>
+        <argsstring>[]</argsstring>
+        <name>kDeathTestStyleFlag</name>
+        <initializer> &quot;death_test_style&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-death-test-internal.h" line="48" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-death-test-internal.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_1e1af734f5c72323d8c5a2e51ec57cd49" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char testing::internal::kInternalRunDeathTestFlag[]</definition>
+        <argsstring>[]</argsstring>
+        <name>kInternalRunDeathTestFlag</name>
+        <initializer> &quot;internal_run_death_test&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-death-test-internal.h" line="49" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-death-test-internal.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_11602b1208df50f3769d693dd09fb33bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::internal::g_init_gtest_count</definition>
+        <argsstring></argsstring>
+        <name>g_init_gtest_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="125"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_1564f5c46b13edecc1f4556cc06fea89a" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char testing::internal::kStackTraceMarker[]</definition>
+        <argsstring>[]</argsstring>
+        <name>kStackTraceMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="129"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_1e7717815979cb22fd649441b12065bda" prot="public" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1ScopedTrace" kindref="compound">testing::internal::ScopedTrace</ref></type>
+        <definition>class testing::internal::ScopedTrace  testing::internal::GTEST_ATTRIBUTE_UNUSED_</definition>
+        <argsstring></argsstring>
+        <name>GTEST_ATTRIBUTE_UNUSED_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="187"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_165be927cd2fdc7032555a3bc33899f64" prot="public" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex testing::internal::g_linked_ptr_mutex</definition>
+        <argsstring></argsstring>
+        <name>g_linked_ptr_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="80"/>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr__internal_1106b031aa6c9ddade172e45a578e8c80" compoundref="gtest-linked__ptr_8h" startline="121" endline="129">testing::internal::linked_ptr_internal::depart</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1linked__ptr__internal_11dc51661a0b98ea373237b3d9eeb2bc9" compoundref="gtest-linked__ptr_8h" startline="109" endline="116">testing::internal::linked_ptr_internal::join</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetesting_1_1internal_124166884965e4288f0b587c512f04b8f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" kindref="member">BiggestInt</ref></type>
+        <definition>const BiggestInt testing::internal::kMaxBiggestInt</definition>
+        <argsstring></argsstring>
+        <name>kMaxBiggestInt</name>
+        <initializer>
+    ~(static_cast&lt;<ref refid="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" kindref="member">BiggestInt</ref>&gt;(1) &lt;&lt; (8*sizeof(<ref refid="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" kindref="member">BiggestInt</ref>) - 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="692" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1bb33dd123f87b562b6da629e2951a447" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1FloatingPoint" kindref="compound">FloatingPoint</ref>&lt; float &gt;</type>
+        <definition>typedef FloatingPoint&lt;float&gt; testing::internal::Float</definition>
+        <argsstring></argsstring>
+        <name>Float</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="482" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1e0e9f41d755c89030f16e5fce899c9bd" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1FloatingPoint" kindref="compound">FloatingPoint</ref>&lt; double &gt;</type>
+        <definition>typedef FloatingPoint&lt;double&gt; testing::internal::Double</definition>
+        <argsstring></argsstring>
+        <name>Double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="483" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_134ce8e1aa9380799f8456ee3a81ceb82" prot="public" static="no">
+        <type>const void *</type>
+        <definition>typedef const void* testing::internal::TypeId</definition>
+        <argsstring></argsstring>
+        <name>TypeId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="491" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_11b8518e7b2cdc051b4379b923be61d5d" prot="public" static="no">
+        <type>void(*)</type>
+        <definition>typedef void(*) testing::internal::SetUpTestCaseFunc()</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpTestCaseFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="575" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1b87631eabafc70771cf3fb20be8b3adc" prot="public" static="no">
+        <type>void(*)</type>
+        <definition>typedef void(*) testing::internal::TearDownTestCaseFunc()</definition>
+        <argsstring>()</argsstring>
+        <name>TearDownTestCaseFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="576" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_12f325a1ea8cfd7eab6843eb4592dde44" prot="public" static="no">
+        <type>::std::stringstream</type>
+        <definition>typedef ::std::stringstream testing::internal::StrStream</definition>
+        <argsstring></argsstring>
+        <name>StrStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="452" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1f3be30c9155af46ee8da3aee31fae7f9" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1GTestMutexLock" kindref="compound">GTestMutexLock</ref></type>
+        <definition>typedef GTestMutexLock testing::internal::MutexLock</definition>
+        <argsstring></argsstring>
+        <name>MutexLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="619" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1cfd63a63b1a68bf3ac3502206fe5e1aa" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1bool__constant" kindref="compound">bool_constant</ref>&lt; false &gt;</type>
+        <definition>typedef bool_constant&lt;false&gt; testing::internal::false_type</definition>
+        <argsstring></argsstring>
+        <name>false_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="666" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_151d53d13936f531880ad6bd101866391" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1bool__constant" kindref="compound">bool_constant</ref>&lt; true &gt;</type>
+        <definition>typedef bool_constant&lt;true&gt; testing::internal::true_type</definition>
+        <argsstring></argsstring>
+        <name>true_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="667" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long testing::internal::BiggestInt</definition>
+        <argsstring></argsstring>
+        <name>BiggestInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="681" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_124b6e0b8ea195d5ccee473d5ade4bcbf" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1TypeWithSize" kindref="compound">TypeWithSize</ref>&lt; 4 &gt;::Int</type>
+        <definition>typedef TypeWithSize&lt;4&gt;::Int testing::internal::Int32</definition>
+        <argsstring></argsstring>
+        <name>Int32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="746" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1ca264fcc31afb70922314556daa3c76d" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1TypeWithSize" kindref="compound">TypeWithSize</ref>&lt; 4 &gt;::UInt</type>
+        <definition>typedef TypeWithSize&lt;4&gt;::UInt testing::internal::UInt32</definition>
+        <argsstring></argsstring>
+        <name>UInt32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="747" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_1a75b134470b713db97686f1f3df3ffd7" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1TypeWithSize" kindref="compound">TypeWithSize</ref>&lt; 8 &gt;::Int</type>
+        <definition>typedef TypeWithSize&lt;8&gt;::Int testing::internal::Int64</definition>
+        <argsstring></argsstring>
+        <name>Int64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="748" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_138e8c1dd01d712e6cddd93c394b02d44" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1TypeWithSize" kindref="compound">TypeWithSize</ref>&lt; 8 &gt;::UInt</type>
+        <definition>typedef TypeWithSize&lt;8&gt;::UInt testing::internal::UInt64</definition>
+        <argsstring></argsstring>
+        <name>UInt64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="749" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetesting_1_1internal_19876512f16083243cd3632f48ea32a40" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1TypeWithSize" kindref="compound">TypeWithSize</ref>&lt; 8 &gt;::Int</type>
+        <definition>typedef TypeWithSize&lt;8&gt;::Int testing::internal::TimeInMillis</definition>
+        <argsstring></argsstring>
+        <name>TimeInMillis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="750" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetesting_1_1internal_10406702dd38ef95c6b71991da985c6a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::StreamableToString</definition>
+        <argsstring>(const T &amp;streamable)</argsstring>
+        <name>StreamableToString</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>streamable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="119" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="119" bodyend="121"/>
+        <referencedby refid="namespacetesting_1_1internal_153f1b197f129e00eb934a988dd5133c0" compoundref="gtest-internal_8h" startline="238" endline="240">FormatForFailureMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1e47d3997f2f60c466b59eb389761ceed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatForComparisonFailureMessage</definition>
+        <argsstring>(const T1 &amp;value, const T2 &amp;)</argsstring>
+        <name>FormatForComparisonFailureMessage</name>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="607" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="606" bodyend="609"/>
+        <references refid="namespacetesting_1_1internal_153f1b197f129e00eb934a988dd5133c0" compoundref="gtest-internal_8h" startline="238" endline="240">FormatForFailureMessage</references>
+        <referencedby refid="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" compoundref="gtest_8h" startline="613" endline="626">CmpHelperEQ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperEQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const T1 &amp;expected, const T2 &amp;actual)</argsstring>
+        <name>CmpHelperEQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="616" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="613" bodyend="626"/>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+        <references refid="namespacetesting_1_1internal_1edef6e77f267b3a60fabda1428c6742c">EqFailure</references>
+        <references refid="namespacetesting_1_1internal_1e47d3997f2f60c466b59eb389761ceed" compoundref="gtest_8h" startline="606" endline="609">FormatForComparisonFailureMessage</references>
+        <referencedby refid="classtesting_1_1internal_1_1EqHelper_3_01true_01_4_15282d5770e00c45f40ba4824425e230c" compoundref="gtest_8h" startline="678" endline="684">testing::internal::EqHelper&lt; true &gt;::Compare</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1EqHelper_1b60379c1c1456b9901ac99b9a9a3b0bf" compoundref="gtest_8h" startline="645" endline="651">testing::internal::EqHelper&lt; lhs_is_null_literal &gt;::Compare</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_16d1c68524ae5a0abc96b53ac94bcba19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperEQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, BiggestInt expected, BiggestInt actual)</argsstring>
+        <name>CmpHelperEQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" kindref="member">BiggestInt</ref></type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_19992177d67caf887d92231eb20bc23f7" kindref="member">BiggestInt</ref></type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="634"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_10fa5116298109df6acd3d919223e14db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTREQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const char *expected, const char *actual)</argsstring>
+        <name>CmpHelperSTREQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="747"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1d8dddafb54dad2b1aba566a0d5dbbe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTRCASEEQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const char *expected, const char *actual)</argsstring>
+        <name>CmpHelperSTRCASEEQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="755"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_151488673d7489dbbabf399905632070c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTRNE</definition>
+        <argsstring>(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</argsstring>
+        <name>CmpHelperSTRNE</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="763"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_133d1ce02617d6effefd951178e5036a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTRCASENE</definition>
+        <argsstring>(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</argsstring>
+        <name>CmpHelperSTRCASENE</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="771"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1e4281191b4e1e0277917e77eb3ba130e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTREQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const wchar_t *expected, const wchar_t *actual)</argsstring>
+        <name>CmpHelperSTREQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="780"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1d32db74c173fd831050b6601d981965e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperSTRNE</definition>
+        <argsstring>(const char *s1_expression, const char *s2_expression, const wchar_t *s1, const wchar_t *s2)</argsstring>
+        <name>CmpHelperSTRNE</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2_expression</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="788"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_10cbdac3d4f193f9e41b888a23967ce49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>RawType</declname>
+            <defname>RawType</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::CmpHelperFloatingPointEQ</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, RawType expected, RawType actual)</argsstring>
+        <name>CmpHelperFloatingPointEQ</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>RawType</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>RawType</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="843" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="840" bodyend="863"/>
+        <references refid="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4">testing::AssertionSuccess</references>
+        <references refid="namespacetesting_1_1internal_1edef6e77f267b3a60fabda1428c6742c">EqFailure</references>
+        <references refid="namespacetesting_1_1internal_15639f5bf1b9983c51ef166207d2c62b8">StrStreamToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_12ffeb072172886ea1185c03dda4b0d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::DoubleNearPredFormat</definition>
+        <argsstring>(const char *expr1, const char *expr2, const char *abs_error_expr, double val1, double val2, double abs_error)</argsstring>
+        <name>DoubleNearPredFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>expr1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>abs_error_expr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>abs_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="873"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1bc5bc24089267eafbf506fe075348d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::GTEST_DECLARE_string_</definition>
+        <argsstring>(internal_run_death_test)</argsstring>
+        <name>GTEST_DECLARE_string_</name>
+        <param>
+          <type>internal_run_death_test</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-death-test-internal.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1adc94033b643ac8df63f8d4d75d26bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char testing::internal::IsNullLiteralHelper</definition>
+        <argsstring>(Secret *p)</argsstring>
+        <name>IsNullLiteralHelper</name>
+        <param>
+          <type>Secret *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1661d333b5616fc0c8ce290d86730a7f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::char</definition>
+        <argsstring>(&amp;IsNullLiteralHelper(...))[2]</argsstring>
+        <name>char</name>
+        <param>
+          <type>&amp;</type>
+          <declname>IsNullLiteralHelper</declname>
+          <array>(...)</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1901d0ae5e90567e51c455733e1e5da8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::AppendUserMessage</definition>
+        <argsstring>(const String &amp;gtest_msg, const Message &amp;user_msg)</argsstring>
+        <name>AppendUserMessage</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>gtest_msg</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>user_msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_153f1b197f129e00eb934a988dd5133c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatForFailureMessage</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>FormatForFailureMessage</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="238" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="238" bodyend="240"/>
+        <references refid="namespacetesting_1_1internal_10406702dd38ef95c6b71991da985c6a5" compoundref="gtest_8h" startline="119" endline="121">StreamableToString</references>
+        <referencedby refid="namespacetesting_1_1internal_1e47d3997f2f60c466b59eb389761ceed" compoundref="gtest_8h" startline="606" endline="609">FormatForComparisonFailureMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1acc76e6a6f2148c5852b3cc31bd0d4c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatForFailureMessage</definition>
+        <argsstring>(T *pointer)</argsstring>
+        <name>FormatForFailureMessage</name>
+        <param>
+          <type>T *</type>
+          <declname>pointer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="245" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="245" bodyend="247"/>
+        <references refid="namespacetesting_1_1internal_10406702dd38ef95c6b71991da985c6a5" compoundref="gtest_8h" startline="119" endline="121">StreamableToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1ebe9f16cb8eb6270de391c8a586b9ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatForFailureMessage</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>FormatForFailureMessage</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_166c68800468bcff677648f71e7990fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatForFailureMessage</definition>
+        <argsstring>(wchar_t wchar)</argsstring>
+        <name>FormatForFailureMessage</name>
+        <param>
+          <type>wchar_t</type>
+          <declname>wchar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="253"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1edef6e77f267b3a60fabda1428c6742c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::EqFailure</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const String &amp;expected_value, const String &amp;actual_value, bool ignoring_case)</argsstring>
+        <name>EqFailure</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>expected_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>actual_value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoring_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="305"/>
+        <referencedby refid="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" compoundref="gtest_8h" startline="613" endline="626">CmpHelperEQ</referencedby>
+        <referencedby refid="namespacetesting_1_1internal_10cbdac3d4f193f9e41b888a23967ce49" compoundref="gtest_8h" startline="840" endline="863">CmpHelperFloatingPointEQ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1931b4abea2beb1bd7d50bde8ccd934c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacetesting_1_1internal_134ce8e1aa9380799f8456ee3a81ceb82" kindref="member">TypeId</ref></type>
+        <definition>TypeId testing::internal::GetTypeId</definition>
+        <argsstring>()</argsstring>
+        <name>GetTypeId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="509" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="509" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1618463a60211a8e13bf0478f1219cd4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetesting_1_1internal_134ce8e1aa9380799f8456ee3a81ceb82" kindref="member">TypeId</ref></type>
+        <definition>TypeId testing::internal::GetTestTypeId</definition>
+        <argsstring>()</argsstring>
+        <name>GetTestTypeId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="522"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_167e13a54c56c7495bac6f91447c84aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::FormatFileLocation</definition>
+        <argsstring>(const char *file, int line)</argsstring>
+        <name>FormatFileLocation</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="562" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="562" bodyend="572"/>
+        <references refid="classtesting_1_1internal_1_1String_157c9a15fc48fc1b9d3d1a823d0d85829">testing::internal::String::Format</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1c8a4baccf925ac1c597b5bf7956d680e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> *</type>
+        <definition>TestInfo* testing::internal::MakeAndRegisterTestInfo</definition>
+        <argsstring>(const char *test_case_name, const char *name, const char *test_case_comment, const char *comment, TypeId fixture_class_id, SetUpTestCaseFunc set_up_tc, TearDownTestCaseFunc tear_down_tc, TestFactoryBase *factory)</argsstring>
+        <name>MakeAndRegisterTestInfo</name>
+        <param>
+          <type>const char *</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>test_case_comment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>comment</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_134ce8e1aa9380799f8456ee3a81ceb82" kindref="member">TypeId</ref></type>
+          <declname>fixture_class_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_11b8518e7b2cdc051b4379b923be61d5d" kindref="member">SetUpTestCaseFunc</ref></type>
+          <declname>set_up_tc</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_1b87631eabafc70771cf3fb20be8b3adc" kindref="member">TearDownTestCaseFunc</ref></type>
+          <declname>tear_down_tc</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1TestFactoryBase" kindref="compound">TestFactoryBase</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="601"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1f9f668c4c45e9655cd0567a8375c34a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::GetCurrentOsStackTraceExceptTop</definition>
+        <argsstring>(UnitTest *unit_test, int skip_count)</argsstring>
+        <name>GetCurrentOsStackTraceExceptTop</name>
+        <param>
+          <type><ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> *</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skip_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="746"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1ea1457d3f671c83a060c7221de36f307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::GetFailedPartCount</definition>
+        <argsstring>(const TestResult *result)</argsstring>
+        <name>GetFailedPartCount</name>
+        <param>
+          <type>const TestResult *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="749"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1b82bd34321b3c32eb3631eda982c17d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::operator==</definition>
+        <argsstring>(T *ptr, const linked_ptr&lt; T &gt; &amp;x)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="222" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="222" bodyend="224"/>
+        <references refid="classtesting_1_1internal_1_1linked__ptr_18b7954505bb1b14e34eaa47d92ea4075" compoundref="gtest-linked__ptr_8h" startline="172" endline="172">testing::internal::linked_ptr&lt; T &gt;::get</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1baa4d7e27908d4cbdfaad4c0839ca048" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::operator!=</definition>
+        <argsstring>(T *ptr, const linked_ptr&lt; T &gt; &amp;x)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="227" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="227" bodyend="229"/>
+        <references refid="classtesting_1_1internal_1_1linked__ptr_18b7954505bb1b14e34eaa47d92ea4075" compoundref="gtest-linked__ptr_8h" startline="172" endline="172">testing::internal::linked_ptr&lt; T &gt;::get</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1965017fa6e53a7c71d9fc7fee7965f57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&lt; T &gt;</type>
+        <definition>linked_ptr&lt;T&gt; testing::internal::make_linked_ptr</definition>
+        <argsstring>(T *ptr)</argsstring>
+        <name>make_linked_ptr</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" line="235" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-linked_ptr.h" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1d7bcc47e4c219390bd3135920ca0ae0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::GTestLog</definition>
+        <argsstring>(GTestLogSeverity severity, const char *file, int line, const char *msg)</argsstring>
+        <name>GTestLog</name>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_128a7485ef3f5f150ac9718facf55b4c2" kindref="member">GTestLogSeverity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="570"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1136a22e0e7a5535aaf88e4436e6fe43d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::LogToStderr</definition>
+        <argsstring>()</argsstring>
+        <name>LogToStderr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="577" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="577" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1dfed47bb3f9234ca6c3a6003b69ee602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::FlushInfoLog</definition>
+        <argsstring>()</argsstring>
+        <name>FlushInfoLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="578" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="578" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1c799629c5b4f10c969a44db23e620a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t testing::internal::GetThreadCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetThreadCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="636" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="636" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_14bfb241fd542948d5e10f3292147b7a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::GetEnv</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetEnv</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="755" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="755" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_14745413dab28201711f46860bdf5f8df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::abort</definition>
+        <argsstring>()</argsstring>
+        <name>abort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="777" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="777" bodyend="777"/>
+        <referencedby refid="classtesting_1_1internal_1_1GTestCheckProvider_1389abd44d5f8b7878c607ac17887053b" compoundref="gtest-port_8h" startline="800" endline="803">testing::internal::GTestCheckProvider::~GTestCheckProvider</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1ec8fe8ad62e268de1acbb6db62ae0eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::ParseInt32</definition>
+        <argsstring>(const Message &amp;src_text, const char *str, Int32 *value)</argsstring>
+        <name>ParseInt32</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>src_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_124b6e0b8ea195d5ccee473d5ade4bcbf" kindref="member">Int32</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="851"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1448cba1f8ab67d66b52629959993c621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::BoolFromGTestEnv</definition>
+        <argsstring>(const char *flag, bool default_val)</argsstring>
+        <name>BoolFromGTestEnv</name>
+        <param>
+          <type>const char *</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="855"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_1ad50bd05e866f522a61def1c001c2823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetesting_1_1internal_124b6e0b8ea195d5ccee473d5ade4bcbf" kindref="member">Int32</ref></type>
+        <definition>Int32 testing::internal::Int32FromGTestEnv</definition>
+        <argsstring>(const char *flag, Int32 default_val)</argsstring>
+        <name>Int32FromGTestEnv</name>
+        <param>
+          <type>const char *</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_124b6e0b8ea195d5ccee473d5ade4bcbf" kindref="member">Int32</ref></type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="856"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_113668db46614a266f80ca7d3062e5058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::StringFromGTestEnv</definition>
+        <argsstring>(const char *flag, const char *default_val)</argsstring>
+        <name>StringFromGTestEnv</name>
+        <param>
+          <type>const char *</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="857"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_185854cbfc0ec814a25a8d25aa31dea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>inline::std::ostream &amp;</type>
+        <definition>inline ::std::ostream&amp; testing::internal::operator&lt;&lt;</definition>
+        <argsstring>(::std::ostream &amp;os, const String &amp;str)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-string.h" line="311" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-string.h" bodystart="311" bodyend="315"/>
+        <references refid="classtesting_1_1internal_1_1String_188be98337a01ae18eb6c3f084288e0a5" compoundref="gtest-string_8h" startline="285" endline="285">testing::internal::String::c_str</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1internal_15639f5bf1b9983c51ef166207d2c62b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">String</ref></type>
+        <definition>String testing::internal::StrStreamToString</definition>
+        <argsstring>(StrStream *stream)</argsstring>
+        <name>StrStreamToString</name>
+        <param>
+          <type><ref refid="namespacetesting_1_1internal_12f325a1ea8cfd7eab6843eb4592dde44" kindref="member">StrStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-string.h" line="319"/>
+        <referencedby refid="namespacetesting_1_1internal_10cbdac3d4f193f9e41b888a23967ce49" compoundref="gtest_8h" startline="840" endline="863">CmpHelperFloatingPointEQ</referencedby>
+        <referencedby refid="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" compoundref="gtest-message_8h" startline="185" endline="187">testing::Message::GetString</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-spi.h" line="89"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1TestPartResult" kind="class" prot="public">
+    <compoundname>testing::TestPartResult</compoundname>
+    <includes refid="gtest-test-part_8h" local="no">gtest-test-part.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+        <definition>TestPartResultType testing::TestPartResult::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="99" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1TestPartResult_10b9816c26825936aa94916bdab569248" compoundref="gtest-test-part_8h" startline="91" endline="91">failed</referencedby>
+        <referencedby refid="classtesting_1_1TestPartResult_18aaacd9cfa46bd72c96318b418aeb434" compoundref="gtest-test-part_8h" startline="97" endline="97">fatally_failed</referencedby>
+        <referencedby refid="classtesting_1_1TestPartResult_17b8d0aea098a5fb35c853eceb8f8ea0d" compoundref="gtest-test-part_8h" startline="94" endline="94">nonfatally_failed</referencedby>
+        <referencedby refid="classtesting_1_1TestPartResult_1346f2ee6609398adce9a909614781b4f" compoundref="gtest-test-part_8h" startline="88" endline="88">passed</referencedby>
+        <referencedby refid="classtesting_1_1TestPartResult_18db8444af31c1e7bfb6e6e6ce83bf766" compoundref="gtest-test-part_8h" startline="71" endline="71">type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1TestPartResult_1a874f042527f6acf586877bf671135cb" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref></type>
+        <definition>internal::String testing::TestPartResult::file_name_</definition>
+        <argsstring></argsstring>
+        <name>file_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="107" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1TestPartResult_1eb8bff9315635a4ae3bf77570bc7af55" compoundref="gtest-test-part_8h" startline="75" endline="75">file_name</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1TestPartResult_1e65a873935245f28134cebd1e6387352" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::TestPartResult::line_number_</definition>
+        <argsstring></argsstring>
+        <name>line_number_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="110" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1TestPartResult_131f20b0b0c42da5fec6449645cab358c" compoundref="gtest-test-part_8h" startline="79" endline="79">line_number</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1TestPartResult_190814d8e72d5957d4a5018b7a8efc0ce" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref></type>
+        <definition>internal::String testing::TestPartResult::summary_</definition>
+        <argsstring></argsstring>
+        <name>summary_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="111" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1TestPartResult_149b7714b6ca4c3bdc6417560f004faf1" compoundref="gtest-test-part_8h" startline="82" endline="82">summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1TestPartResult_1dcdf56e5defd129d26438bc829d5ad48" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref></type>
+        <definition>internal::String testing::TestPartResult::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="112" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1TestPartResult_183f21ab742b9d2b4e3cfcf1984d9f599" compoundref="gtest-test-part_8h" startline="85" endline="85">message</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_11f216fe3a45f57431e069d5452d099f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResult::TestPartResult</definition>
+        <argsstring>(TestPartResultType type, const char *file_name, int line_number, const char *message)</argsstring>
+        <name>TestPartResult</name>
+        <param>
+          <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="67" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="59" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_18db8444af31c1e7bfb6e6e6ce83bf766" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+        <definition>TestPartResultType testing::TestPartResult::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="71" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="71" bodyend="71"/>
+        <references refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" compoundref="gtest-test-part_8h" startline="99">type_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_1eb8bff9315635a4ae3bf77570bc7af55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::file_name</definition>
+        <argsstring>() const</argsstring>
+        <name>file_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="75" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="75" bodyend="75"/>
+        <references refid="classtesting_1_1internal_1_1String_188be98337a01ae18eb6c3f084288e0a5" compoundref="gtest-string_8h" startline="285" endline="285">testing::internal::String::c_str</references>
+        <references refid="classtesting_1_1TestPartResult_1a874f042527f6acf586877bf671135cb" compoundref="gtest-test-part_8h" startline="107">file_name_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_131f20b0b0c42da5fec6449645cab358c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestPartResult::line_number</definition>
+        <argsstring>() const</argsstring>
+        <name>line_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="79" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="79" bodyend="79"/>
+        <references refid="classtesting_1_1TestPartResult_1e65a873935245f28134cebd1e6387352" compoundref="gtest-test-part_8h" startline="110">line_number_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_149b7714b6ca4c3bdc6417560f004faf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::summary</definition>
+        <argsstring>() const</argsstring>
+        <name>summary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="82" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="82" bodyend="82"/>
+        <references refid="classtesting_1_1internal_1_1String_188be98337a01ae18eb6c3f084288e0a5" compoundref="gtest-string_8h" startline="285" endline="285">testing::internal::String::c_str</references>
+        <references refid="classtesting_1_1TestPartResult_190814d8e72d5957d4a5018b7a8efc0ce" compoundref="gtest-test-part_8h" startline="111">summary_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_183f21ab742b9d2b4e3cfcf1984d9f599" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::message</definition>
+        <argsstring>() const</argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="85" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="85" bodyend="85"/>
+        <references refid="classtesting_1_1internal_1_1String_188be98337a01ae18eb6c3f084288e0a5" compoundref="gtest-string_8h" startline="285" endline="285">testing::internal::String::c_str</references>
+        <references refid="classtesting_1_1TestPartResult_1dcdf56e5defd129d26438bc829d5ad48" compoundref="gtest-test-part_8h" startline="112">message_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_1346f2ee6609398adce9a909614781b4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::passed</definition>
+        <argsstring>() const</argsstring>
+        <name>passed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="88" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="88" bodyend="88"/>
+        <references refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975e815b64e766eaff67a27e79f4346a037" compoundref="gtest-test-part_8h" startline="45">testing::TPRT_SUCCESS</references>
+        <references refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" compoundref="gtest-test-part_8h" startline="99">type_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_10b9816c26825936aa94916bdab569248" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::failed</definition>
+        <argsstring>() const</argsstring>
+        <name>failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="91" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="91" bodyend="91"/>
+        <references refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975e815b64e766eaff67a27e79f4346a037" compoundref="gtest-test-part_8h" startline="45">testing::TPRT_SUCCESS</references>
+        <references refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" compoundref="gtest-test-part_8h" startline="99">type_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_17b8d0aea098a5fb35c853eceb8f8ea0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::nonfatally_failed</definition>
+        <argsstring>() const</argsstring>
+        <name>nonfatally_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="94" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="94" bodyend="94"/>
+        <references refid="namespacetesting_1e87109d90628580ab2d751fcb36fc97512d14e9cb7a971c442a978b125fef228" compoundref="gtest-test-part_8h" startline="46">testing::TPRT_NONFATAL_FAILURE</references>
+        <references refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" compoundref="gtest-test-part_8h" startline="99">type_</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_18aaacd9cfa46bd72c96318b418aeb434" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::fatally_failed</definition>
+        <argsstring>() const</argsstring>
+        <name>fatally_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="97" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="97" bodyend="97"/>
+        <references refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975be071bd93da3babe196a6e02914ee679" compoundref="gtest-test-part_8h" startline="47">testing::TPRT_FATAL_FAILURE</references>
+        <references refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" compoundref="gtest-test-part_8h" startline="99">type_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1TestPartResult_1324608df1fe5b130a9fe70341a06c1d6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref></type>
+        <definition>static internal::String testing::TestPartResult::ExtractSummary</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>ExtractSummary</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="215">
+        <label>testing::TestPartResult</label>
+        <link refid="classtesting_1_1TestPartResult"/>
+        <childnode refid="216" relation="usage">
+          <edgelabel>message_
+file_name_
+summary_</edgelabel>
+        </childnode>
+      </node>
+      <node id="216">
+        <label>testing::internal::String</label>
+        <link refid="classtesting_1_1internal_1_1String"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="54" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="54" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1TestPartResult_1324608df1fe5b130a9fe70341a06c1d6" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>ExtractSummary</name></member>
+      <member refid="classtesting_1_1TestPartResult_10b9816c26825936aa94916bdab569248" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>failed</name></member>
+      <member refid="classtesting_1_1TestPartResult_18aaacd9cfa46bd72c96318b418aeb434" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>fatally_failed</name></member>
+      <member refid="classtesting_1_1TestPartResult_1eb8bff9315635a4ae3bf77570bc7af55" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>file_name</name></member>
+      <member refid="classtesting_1_1TestPartResult_1a874f042527f6acf586877bf671135cb" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>file_name_</name></member>
+      <member refid="classtesting_1_1TestPartResult_131f20b0b0c42da5fec6449645cab358c" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>line_number</name></member>
+      <member refid="classtesting_1_1TestPartResult_1e65a873935245f28134cebd1e6387352" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>line_number_</name></member>
+      <member refid="classtesting_1_1TestPartResult_183f21ab742b9d2b4e3cfcf1984d9f599" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>message</name></member>
+      <member refid="classtesting_1_1TestPartResult_1dcdf56e5defd129d26438bc829d5ad48" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>message_</name></member>
+      <member refid="classtesting_1_1TestPartResult_17b8d0aea098a5fb35c853eceb8f8ea0d" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>nonfatally_failed</name></member>
+      <member refid="classtesting_1_1TestPartResult_1346f2ee6609398adce9a909614781b4f" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>passed</name></member>
+      <member refid="classtesting_1_1TestPartResult_149b7714b6ca4c3bdc6417560f004faf1" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>summary</name></member>
+      <member refid="classtesting_1_1TestPartResult_190814d8e72d5957d4a5018b7a8efc0ce" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>summary_</name></member>
+      <member refid="classtesting_1_1TestPartResult_11f216fe3a45f57431e069d5452d099f3" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>TestPartResult</name></member>
+      <member refid="classtesting_1_1TestPartResult_18db8444af31c1e7bfb6e6e6ce83bf766" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>type</name></member>
+      <member refid="classtesting_1_1TestPartResult_1c4f4167d0feb97e22e5194cbbfcfa405" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>type_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

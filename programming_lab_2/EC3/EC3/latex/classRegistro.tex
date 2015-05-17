@@ -1,0 +1,142 @@
+\section{Registro Class Reference}
+\label{classRegistro}\index{Registro@{Registro}}
+Permite mandar datos a un fichero de texto (\char`\"{}registro.log\char`\"{}).  
+
+
+{\tt \#include $<$registro.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf $\sim$Registro} ()
+\item 
+void {\bf Escribir} (char $\ast$mensaje)
+\item 
+void {\bf Escribir} (const string mensaje)
+\item 
+void {\bf Escribir} (const int mensaje)
+\item 
+ostream \& {\bf Flujo} ()
+\item 
+void {\bf Destruir} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf Registro} $\ast$ {\bf get\_\-instancia} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Registro} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+ofstream {\bf f\_\-out\_\-}
+\begin{CompactList}\small\item\em flujo a traves del cual se mandan los datos \item\end{CompactList}\item 
+char $\ast$ {\bf nombre\_\-fichero\_\-}
+\begin{CompactList}\small\item\em Nombre de fichero en el que se guardan los datos (por defecto \char`\"{}registro.log\char`\"{}). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf Registro} $\ast$ {\bf instancia\_\-} = NULL
+\begin{CompactList}\small\item\em Instancia de la propia clase (solo habra una en el sistema). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Permite mandar datos a un fichero de texto (\char`\"{}registro.log\char`\"{}). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Registro@{Registro}!~Registro@{$\sim$Registro}}
+\index{~Registro@{$\sim$Registro}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Registro::$\sim$Registro ()}\label{classRegistro_1a61913f579e4c46512658085048dc7f}
+
+
+Destructor de la clase registro \index{Registro@{Registro}!Registro@{Registro}}
+\index{Registro@{Registro}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Registro::Registro ()\hspace{0.3cm}{\tt  [private]}}\label{classRegistro_79db13a112d147d186e0377c3284b735}
+
+
+Constructor de la clase registro 
+
+\subsection{Member Function Documentation}
+\index{Registro@{Registro}!get_instancia@{get\_\-instancia}}
+\index{get_instancia@{get\_\-instancia}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Registro} $\ast$ Registro::get\_\-instancia ()\hspace{0.3cm}{\tt  [static]}}\label{classRegistro_42d4db3fecc09bcde81e2cb71900a5c8}
+
+
+Obtiene la instancia de la clase \index{Registro@{Registro}!Escribir@{Escribir}}
+\index{Escribir@{Escribir}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Registro::Escribir (char $\ast$ {\em mensaje})}\label{classRegistro_c1dc4d4b45b2a88ea6671e416d579add}
+
+
+Metodo que escribe un mensaje en el registro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mensaje}]char$\ast$ a mandar por el flujo \end{description}
+\end{Desc}
+\index{Registro@{Registro}!Escribir@{Escribir}}
+\index{Escribir@{Escribir}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Registro::Escribir (const string {\em mensaje})}\label{classRegistro_77370e6de3ea251fa2205de8bac6e2c5}
+
+
+Metodo que escribe un mensaje en el registro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mensaje}]string a mandar por el flujo \end{description}
+\end{Desc}
+\index{Registro@{Registro}!Escribir@{Escribir}}
+\index{Escribir@{Escribir}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Registro::Escribir (const int {\em mensaje})}\label{classRegistro_6d4fdee492751e8155111b2a11d8b429}
+
+
+Metodo que escribe un mensaje en el registro \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mensaje}]int a mandar por el flujo \end{description}
+\end{Desc}
+\index{Registro@{Registro}!Flujo@{Flujo}}
+\index{Flujo@{Flujo}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream \& Registro::Flujo ()}\label{classRegistro_a3beb0de20dc0421628ff7396d2f76f5}
+
+
+Obiene el flujo abierto por la clase \begin{Desc}
+\item[Returns:]flujo abierto por la clase \end{Desc}
+\index{Registro@{Registro}!Destruir@{Destruir}}
+\index{Destruir@{Destruir}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Registro::Destruir ()}\label{classRegistro_44c7aa629b33647372b95d8e32f856c7}
+
+
+Libera toda la memoria almacenada en la instancia 
+
+\subsection{Member Data Documentation}
+\index{Registro@{Registro}!f_out_@{f\_\-out\_\-}}
+\index{f_out_@{f\_\-out\_\-}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ofstream {\bf Registro::f\_\-out\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classRegistro_2b8b1307bcd751f3b004519c51bcf497}
+
+
+flujo a traves del cual se mandan los datos 
+
+\index{Registro@{Registro}!nombre_fichero_@{nombre\_\-fichero\_\-}}
+\index{nombre_fichero_@{nombre\_\-fichero\_\-}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Registro::nombre\_\-fichero\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classRegistro_ae3b307bfdfc9572595109242b62059c}
+
+
+Nombre de fichero en el que se guardan los datos (por defecto \char`\"{}registro.log\char`\"{}). 
+
+\index{Registro@{Registro}!instancia_@{instancia\_\-}}
+\index{instancia_@{instancia\_\-}!Registro@{Registro}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Registro} $\ast$ {\bf Registro::instancia\_\-} = NULL\hspace{0.3cm}{\tt  [static, private]}}\label{classRegistro_0ea6b1afa36c1cf3fab4169cf6568e58}
+
+
+Instancia de la propia clase (solo habra una en el sistema). 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf registro.h}\item 
+Escritorio/EC3/src/{\bf registro.cpp}\end{CompactItemize}

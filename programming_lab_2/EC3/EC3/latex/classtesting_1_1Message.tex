@@ -1,0 +1,131 @@
+\section{testing::Message Class Reference}
+\label{classtesting_1_1Message}\index{testing::Message@{testing::Message}}
+{\tt \#include $<$gtest-message.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Message} ()
+\item 
+{\bf Message} (const {\bf Message} \&msg)
+\item 
+{\bf Message} (const char $\ast$str)
+\item 
+{\bf $\sim$Message} ()
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf Message} \& {\bf operator$<$$<$} (const T \&val)
+\item 
+{\footnotesize template$<$typename T$>$ }\\{\bf Message} \& {\bf operator$<$$<$} (T $\ast$const \&pointer)
+\item 
+{\bf Message} \& {\bf operator$<$$<$} ({\bf BasicNarrowIoManip} val)
+\item 
+{\bf Message} \& {\bf operator$<$$<$} (bool b)
+\item 
+{\bf Message} \& {\bf operator$<$$<$} (const wchar\_\-t $\ast$wide\_\-c\_\-str)
+\item 
+{\bf Message} \& {\bf operator$<$$<$} (wchar\_\-t $\ast$wide\_\-c\_\-str)
+\item 
+{\bf internal::String} {\bf GetString} () const
+\end{CompactItemize}
+\subsection*{Private Types}
+\begin{CompactItemize}
+\item 
+typedef std::ostream \&($\ast$) {\bf BasicNarrowIoManip} (std::ostream \&)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf operator=} (const {\bf Message} \&)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf internal::StrStream} $\ast$const {\bf ss\_\-}
+\end{CompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{testing::Message@{testing::Message}!BasicNarrowIoManip@{BasicNarrowIoManip}}
+\index{BasicNarrowIoManip@{BasicNarrowIoManip}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::ostream\&($\ast$) {\bf testing::Message::BasicNarrowIoManip}(std::ostream \&)\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1Message_d6592b46e80a587f99786b9a5a30eb17}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::Message@{testing::Message}!Message@{Message}}
+\index{Message@{Message}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Message::Message ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_2d0cd79d4b67c118d558c4e5a435bc62}
+
+
+\index{testing::Message@{testing::Message}!Message@{Message}}
+\index{Message@{Message}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Message::Message (const {\bf Message} \& {\em msg})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_7785c2b6d507a324c48336929b2faf3d}
+
+
+\index{testing::Message@{testing::Message}!Message@{Message}}
+\index{Message@{Message}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Message::Message (const char $\ast$ {\em str})\hspace{0.3cm}{\tt  [inline, explicit]}}\label{classtesting_1_1Message_f7cdc4dce6187411fd1ce5cb96f55d63}
+
+
+\index{testing::Message@{testing::Message}!~Message@{$\sim$Message}}
+\index{~Message@{$\sim$Message}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Message::$\sim$Message ()\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_e205ceac5588868de2368db75c26a9cf}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Message}\& testing::Message::operator$<$$<$ (const T \& {\em val})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_dfe842bea389a49e1864d7e7f54f8fdc}
+
+
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Message}\& testing::Message::operator$<$$<$ (T $\ast$const \& {\em pointer})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_68575c2d7ba8cb70456880e7b8422121}
+
+
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}\& testing::Message::operator$<$$<$ ({\bf BasicNarrowIoManip} {\em val})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_253269cbcb113ee43bd69b2ef7f72140}
+
+
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}\& testing::Message::operator$<$$<$ (bool {\em b})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_8ea6366f309631bbbb487ebff903f777}
+
+
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}\& testing::Message::operator$<$$<$ (const wchar\_\-t $\ast$ {\em wide\_\-c\_\-str})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_1a609a356e5b6dbc1a8a7525254d11ae}
+
+
+\index{testing::Message@{testing::Message}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Message}\& testing::Message::operator$<$$<$ (wchar\_\-t $\ast$ {\em wide\_\-c\_\-str})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_9056fdc99c3291e31fd3a0c0a22575ba}
+
+
+\index{testing::Message@{testing::Message}!GetString@{GetString}}
+\index{GetString@{GetString}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::String} testing::Message::GetString () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1Message_6143ce78324693b7b505c4a0c862c033}
+
+
+\index{testing::Message@{testing::Message}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::Message::operator= (const {\bf Message} \&)\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1Message_3f7cad27f17733b0797950b80810de0c}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::Message@{testing::Message}!ss_@{ss\_\-}}
+\index{ss_@{ss\_\-}!testing::Message@{testing::Message}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::StrStream}$\ast$ const {\bf testing::Message::ss\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1Message_7e03bff5728112914f4c1abba631d25a}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest-message.h}\end{CompactItemize}

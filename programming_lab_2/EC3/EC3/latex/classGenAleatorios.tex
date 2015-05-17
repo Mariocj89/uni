@@ -1,0 +1,131 @@
+\section{GenAleatorios Class Reference}
+\label{classGenAleatorios}\index{GenAleatorios@{GenAleatorios}}
+Permite generar números aleatorios dentro de un rango determinado.  
+
+
+{\tt \#include $<$genaleatorios.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static int {\bf generarNumero} (int limiteRango)
+\item 
+static int {\bf numerosGenerados} ()
+\item 
+static void {\bf destruir} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf GenAleatorios} ()
+\item 
+{\bf $\sim$GenAleatorios} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf numGenerados}
+\begin{CompactList}\small\item\em Contador de números aleatorios generados. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const int {\bf SEMILLA} = 1976
+\begin{CompactList}\small\item\em Semilla para inicializar la generación de números aleatorios. \item\end{CompactList}\item 
+static {\bf GenAleatorios} $\ast$ {\bf instancia} = NULL
+\begin{CompactList}\small\item\em Instancia de la propia clase (sólo habrá una en el sistema). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Permite generar números aleatorios dentro de un rango determinado. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{GenAleatorios@{GenAleatorios}!GenAleatorios@{GenAleatorios}}
+\index{GenAleatorios@{GenAleatorios}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}GenAleatorios::GenAleatorios ()\hspace{0.3cm}{\tt  [private]}}\label{classGenAleatorios_bf8654f8ff5bf388a0a5f03f6984fdfc}
+
+
+Constructor por defecto. Inicializa un objeto de tipo GenAleatorio \begin{Desc}
+\item[Returns:]Devuelve un objeto de tipo GenAleatorio inicializado \end{Desc}
+\index{GenAleatorios@{GenAleatorios}!~GenAleatorios@{$\sim$GenAleatorios}}
+\index{~GenAleatorios@{$\sim$GenAleatorios}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}GenAleatorios::$\sim$GenAleatorios ()\hspace{0.3cm}{\tt  [private]}}\label{classGenAleatorios_86186428323af5ee809de88721851861}
+
+
+Destructor. Destructor de la clase \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parámetros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{GenAleatorios@{GenAleatorios}!generarNumero@{generarNumero}}
+\index{generarNumero@{generarNumero}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int GenAleatorios::generarNumero (int {\em limiteRango})\hspace{0.3cm}{\tt  [static]}}\label{classGenAleatorios_8c9cb059ca18f36c5810d64b6f1b70f0}
+
+
+Metodo generarNumero. Genera un número aleatorio entre 0 y (limiteRango-1) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em limiteRango}]Límite del rango entre el que se genera el número aleatorio \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el número aleatorio generado \end{Desc}
+\index{GenAleatorios@{GenAleatorios}!numerosGenerados@{numerosGenerados}}
+\index{numerosGenerados@{numerosGenerados}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int GenAleatorios::numerosGenerados ()\hspace{0.3cm}{\tt  [static]}}\label{classGenAleatorios_ec36e68adb22469824733ee76b67d766}
+
+
+Metodo numerosGenearados. Devuelve el número de números aleatorios que se han generado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parámetros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el contador de números aleatorios generados \end{Desc}
+\index{GenAleatorios@{GenAleatorios}!destruir@{destruir}}
+\index{destruir@{destruir}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void GenAleatorios::destruir ()\hspace{0.3cm}{\tt  [static]}}\label{classGenAleatorios_cf3fedd25338479f79b83f4b7ded39c3}
+
+
+Metodo destruir. Detruye la única instancia de tipo \doxyref{GenAleatorios}{p.}{classGenAleatorios} que existe \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parámetros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{GenAleatorios@{GenAleatorios}!SEMILLA@{SEMILLA}}
+\index{SEMILLA@{SEMILLA}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int {\bf GenAleatorios::SEMILLA} = 1976\hspace{0.3cm}{\tt  [static, private]}}\label{classGenAleatorios_f600dcd1055eb2ae87ffab577b0f344f}
+
+
+Semilla para inicializar la generación de números aleatorios. 
+
+\index{GenAleatorios@{GenAleatorios}!numGenerados@{numGenerados}}
+\index{numGenerados@{numGenerados}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf GenAleatorios::numGenerados}\hspace{0.3cm}{\tt  [private]}}\label{classGenAleatorios_584a6c1aea4dd394d8c0de7e333857f6}
+
+
+Contador de números aleatorios generados. 
+
+\index{GenAleatorios@{GenAleatorios}!instancia@{instancia}}
+\index{instancia@{instancia}!GenAleatorios@{GenAleatorios}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf GenAleatorios} $\ast$ {\bf GenAleatorios::instancia} = NULL\hspace{0.3cm}{\tt  [static, private]}}\label{classGenAleatorios_832bc9078b4d400498802f118e8bb5a8}
+
+
+Instancia de la propia clase (sólo habrá una en el sistema). 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf genaleatorios.h}\item 
+Escritorio/EC3/src/{\bf genaleatorios.cpp}\end{CompactItemize}

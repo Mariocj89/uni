@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="grafo_8cpp" kind="file">
+    <compoundname>grafo.cpp</compoundname>
+    <includes refid="grafo_8h" local="yes">grafo.h</includes>
+    <incdepgraph>
+      <node id="343">
+        <label>queue</label>
+      </node>
+      <node id="339">
+        <label>Escritorio/EC3/src/grafo.cpp</label>
+        <link refid="grafo.cpp"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>cstdlib</label>
+      </node>
+      <node id="341">
+        <label>iostream</label>
+      </node>
+      <node id="340">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="grafo_8cpp_1bd67fd90183cf2cea5f41d88b098ba97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Maximo</definition>
+        <argsstring>(const int &amp;a, const int &amp;b)</argsstring>
+        <name>Maximo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion auxiliar que halla el máximo de dos enteros <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>primer entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximo de los 2, el segundo si son iguales </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.cpp" line="380" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="380" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="grafo_8cpp_1ad08456ae6cb5f9aaaee75537f6ef90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Minimo</definition>
+        <argsstring>(const int &amp;a, const int &amp;b)</argsstring>
+        <name>Minimo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion auxiliar que halla el mínimo de dos enteros <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>primer entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segundo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>minimo de los 2, el segundo si son iguales </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.cpp" line="393" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="393" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="grafo_8cpp_1a10916bc791b8c23a52309107d104932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Grafo &amp;G)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGrafo" kindref="compound">Grafo</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt;, muestra la matrid de adyacencia <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo en el que se almacena toda la informacion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>grafo a mostrar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con toda la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.cpp" line="406" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="406" bodyend="422"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los metodos de la clase grafo. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="grafo_8h" kindref="compound" tooltip="Declaracion de la clase grafo.">grafo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classGrafo_1d3c8b45fb50abc45e49d42ef78b79ee7" kindref="member">Grafo::Grafo</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::Grafo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>=0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;<ref refid="grafo_8h_171455579228718609881a5156b723110" kindref="member" tooltip="Constante con el numero maximo de vertices que tendra el grafo.">kMaxVert</ref>;x++)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[x]=<sp/><ref refid="grafo_8h_191cb155352045d96938a4a803e140268" kindref="member" tooltip="Constante para tratar el valor -1 como ausencia de valor.">kNoValor</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;kMaxVert;x++)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;kMaxVert;y++){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[x][y]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[x][y]=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[x][y]=<ref refid="grafo_8h_191cb155352045d96938a4a803e140268" kindref="member" tooltip="Constante para tratar el valor -1 como ausencia de valor.">kNoValor</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Diagonales</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;kMaxVert;x++){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][x]=0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[x][x]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[x][x]=0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//floyd_path_[x][x]=kNoValor;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::Grafo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_100c241c3e011cb2b67e24ee803b30662" kindref="member">Grafo::EsVacio</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::EsVacio()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bool<sp/>(<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>==0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::EsVacio()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_15ff1c53f81913e5cdb13d6b1077c667f" kindref="member">Grafo::set_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;valor)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::set_arco(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/>int<sp/>valor)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultado=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>)<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>))</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[(int)(destino)][(int)(origen)]=valor;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[(int)(origen)][(int)(destino)]=valor;<sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>resultado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::set_arco(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/>int<sp/>valor):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;resultado&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1202743d0396c9ccd66a16797a95a2a20" kindref="member">Grafo::del_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::del_arco(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultado=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(origen)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(origen)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>)<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>(<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(destino)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(destino)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>))<sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(origen)][<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(destino)]=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(destino)][<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(origen)]=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::del_arco(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;resultado&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" kindref="member">Grafo::Adyacente</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::Adyacente<sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultado=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>)<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>))<sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultado<sp/>=<sp/>(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[(int)(origen)][(int)(destino)]!=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>);<sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::Adyacente<sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;resultado&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16f7d1daa75771801a8cb5b15869ba72d" kindref="member">Grafo::get_arco</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;destino)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::get_arco<sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arco=<ref refid="grafo_8h_191cb155352045d96938a4a803e140268" kindref="member" tooltip="Constante para tratar el valor -1 como ausencia de valor.">kNoValor</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(origen)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>)<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(destino)<sp/>&lt;<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>))<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>arco=<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[(int)(origen)][(int)(destino)];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cambiado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::get_arco<sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;arco&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>arco;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16333bfcd9102154c2ca00effd457ac76" kindref="member">Grafo::set_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;n)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::set_nodo(TipoNodoGrafo<sp/>n)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultado=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>&lt;kMaxVert){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>]=n;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>++;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>resultado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::set_nodo(TipoNodoGrafo<sp/>n):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;resultado&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_163e6892c0bad12eb9c9d969462356ecf" kindref="member">Grafo::del_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::del_nodo(TipoNodoGrafo<sp/>pos)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultado=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>(int)(nodo);<sp/></highlight><highlight class="comment">//<sp/>Añadido<sp/>para<sp/>borrar<sp/>el<sp/>nodo<sp/>correcto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>&gt;0)<sp/>&amp;&amp;<sp/>(pos<sp/>&lt;=<sp/><ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>)){</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Borrar<sp/>el<sp/>nodo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=pos;<sp/>x&lt;<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>-1;<sp/>x++){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Añadido<sp/>el<sp/>-1<sp/>porque<sp/>si<sp/>no<sp/>se<sp/>salía<sp/>de<sp/>límites<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[x]=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[x+1];</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[x+1];</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Borrar<sp/>en<sp/>la<sp/>Matriz<sp/>de<sp/>Adyacencia</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Borra<sp/>la<sp/>fila</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=pos;<sp/>x&lt;num_nodos_-1;<sp/>x++)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Añadido<sp/>el<sp/>-1<sp/>porque<sp/>si<sp/>no<sp/>se<sp/>salía<sp/>de<sp/>límites<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;num_nodos_;<sp/>y++)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]=<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x+1][y];</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Borra<sp/>la<sp/>columna</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;<sp/>x&lt;num_nodos_;<sp/>x++)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=pos;y&lt;num_nodos_-1;<sp/>y++)<sp/></highlight><highlight class="comment">//<sp/>Añadido<sp/>el<sp/>-1<sp/>porque<sp/>si<sp/>no<sp/>se<sp/>salía<sp/>de<sp/>límites<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]=<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y+1];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decrementa<sp/>el<sp/>numero<sp/>de<sp/>nodos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>num_nodos_--;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>resultado=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::del_nodo(TipoNodoGrafo<sp/>pos):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;resultado&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f398482951c2d0d9ed485ae3a737158c" kindref="member">Grafo::MostrarNodos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::MostrarNodos()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;NODOS:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;num_nodos_;x++)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[x]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::MostrarNodos()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_15c365de560d70bb0f943827be01e3a6a" kindref="member">Grafo::MostrarArcos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::MostrarArcos()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ARCOS:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;num_nodos_;x++){</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;num_nodos_;y++){</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout.width(3);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]!=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::MostrarArcos()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_112cff6a9e93b23ab60eb5d5d12f8e218" kindref="member">Grafo::MostrarPW</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::MostrarPW()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;warshallC:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;num_nodos_;x++){</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;num_nodos_;y++)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[x][y]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::MostrarPW()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_12c46ec74829edbedd9edd09f0a2d5919" kindref="member">Grafo::MostrarFloydC</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::MostrarFloydC()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;floydC:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;num_nodos_;y++)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;num_nodos_;x++){</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout.width(3);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[x][y]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;floydP:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;num_nodos_;x++){</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;num_nodos_;y++){</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout.width(2);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[x][y]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::MostrarFloydC()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1c8c3d8903ad014b5b6e7540e46a81cb6" kindref="member">Grafo::Warshall</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::Warshall()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Copìamos<sp/>la<sp/>matrid<sp/>de<sp/>adyacencia<sp/>a<sp/>warshal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;kMaxVert;j++)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[i][j]<sp/>=<sp/>(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[i][j]!=0);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k=0;k&lt;kMaxVert;k++)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;kMaxVert;j++)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[i][j])<sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[i][j]<sp/>=<sp/><ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[i][k]&amp;&amp;<ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[k][j];</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::Warshall()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16ea9d2c7f7ebf7ae473d0bc42041cb4f" kindref="member">Grafo::Floyd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::Floyd()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Copìamos<sp/>la<sp/>matrid<sp/>de<sp/>adyacencia<sp/>a<sp/>floydC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;num_nodos_;j++){</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j]<sp/>=<sp/><ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[i][j];</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[i][j]!=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>)<sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[i][j]=-1;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k=0;k&lt;num_nodos_;k++)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;num_nodos_;j++){</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux<sp/>=<sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][k]+<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[k][j];</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aux&lt;<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j])<sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j]<sp/>=<sp/>aux;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[i][j]<sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::Floyd()&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_14c0ba27c2dd5a3677e66af2acdb348e4" kindref="member">Grafo::Siguiente</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>destino,<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;sig)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::siguiente(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/>TipoNodoGrafo<sp/>&amp;sig)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>sig<sp/>=<sp/><ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[origen][destino];</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sig==-1)<sp/>sig=destino;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGrafo_14c0ba27c2dd5a3677e66af2acdb348e4" kindref="member">Siguiente</ref>(origen,sig,sig);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::siguiente(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/>TipoNodoGrafo<sp/>&amp;sig)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_125a7ac274277ddc0861a03785f29ec87" kindref="member">Grafo::Adyacentes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;origen,<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;ady)</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Grafo::adyacentes(TipoNodoGrafo<sp/>origen,<sp/>TipoCjtoNodos<sp/>&amp;ady)&quot;</highlight><highlight class="normal">&lt;&lt;endl);<sp/></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//encontramos<sp/>la<sp/>posicion<sp/>del<sp/>nodo:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=-1;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/>aux=<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(origen);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(aux<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[aux][i]<sp/>!=<sp/><ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref><sp/>&amp;&amp;<sp/>i<sp/>!=<sp/>aux)<sp/>ady.push(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i]);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Grafo::adyacentes(TipoNodoGrafo<sp/>origen,<sp/>TipoCjtoNodos<sp/>&amp;ady)&quot;</highlight><highlight class="normal">&lt;&lt;endl);<sp/><sp/></highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8cpp_1bd67fd90183cf2cea5f41d88b098ba97" kindref="member">Maximo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;b)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Maximo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a&gt;b)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Maximo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grafo_8cpp_1ad08456ae6cb5f9aaaee75537f6ef90a" kindref="member">Minimo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;b)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Minimo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a&lt;b)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Minimo&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal">ostream&amp;<sp/><ref refid="classGrafo_1a10916bc791b8c23a52309107d104932" kindref="member">operator &lt;&lt;</ref>(ostream<sp/>&amp;flujo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref><sp/>&amp;G){</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>sobrecarga<sp/>de<sp/>&lt;&lt;&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/>flujo<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ARCOS:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;x&lt;G.<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>;x++){</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y=0;y&lt;G.<ref refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" kindref="member" tooltip="Numero de nodos del grafo.">num_nodos_</ref>;y++){</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flujo.width(3);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(G.<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]!=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>)</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flujo<sp/>&lt;&lt;<sp/>G.<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[x][y]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flujo<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>flujo<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>sobrecarga<sp/>de<sp/>&lt;&lt;&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="classGrafo_1901231e4cb7c93017e36b7491e2db26c" kindref="member">Grafo::MayorGrado</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;grado)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="431"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>MayorGradoSalida(int<sp/>&amp;grado)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>grado=0;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>grado2;<sp/></highlight><highlight class="comment">//Variable<sp/>donde<sp/>guardar<sp/>el<sp/>grado<sp/>de<sp/>el<sp/>ultimo<sp/>nodo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mayor=-1;<sp/></highlight><highlight class="comment">//Guardamos<sp/>la<sp/>posicion<sp/>del<sp/>nodo<sp/>con<sp/>mayor<sp/>grado<sp/>de<sp/>los<sp/>visitados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>grado2=0;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;num_nodos_;j++)<sp/></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[i][j]<sp/>!=<sp/><ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref><sp/>&amp;&amp;<sp/>i<sp/>!=<sp/>j)<sp/>grado2++;<sp/></highlight><highlight class="comment">//hallamos<sp/>el<sp/>grado<sp/>del<sp/>actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(grado&lt;=grado2)<sp/>{<sp/></highlight><highlight class="comment">//si<sp/>el<sp/>ultimo<sp/>nodo<sp/>tiene<sp/>mayor<sp/>grado<sp/>que<sp/>el<sp/>mayor<sp/>de<sp/>los<sp/>anteriores,<sp/>sustituimos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>grado=grado2;</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mayor=i;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[mayor];</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>MayorGradoSalida(int<sp/>&amp;grado)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1a33a7c07992fbf47a0125701f6fd729a" kindref="member">Grafo::MasDistantes</ref>(<ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>a,<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="458"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max=0;<sp/></highlight><highlight class="comment">//variable<sp/>auxiliar<sp/>que<sp/>mantendra<sp/>el<sp/>valor<sp/>del<sp/>mayor<sp/>camino<sp/>encontrado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>MasDistantes(TipoNodoGrafo<sp/>&amp;<sp/>a,<sp/>TipoNodoGrafo<sp/>&amp;<sp/>b)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i+1;j&lt;num_nodos_;j++)<sp/></highlight><highlight class="comment">//Comprueba<sp/>solo<sp/>la<sp/>triangular<sp/>superior<sp/>(grafo<sp/>no<sp/>dirigido)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j]&gt;max)<sp/>{</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j];</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i];</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[j];</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>MasDistantes(TipoNodoGrafo<sp/>&amp;<sp/>a,<sp/>TipoNodoGrafo<sp/>&amp;<sp/>b)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_19d6cbd612abdef73a92f6fb120eb4946" kindref="member">Grafo::MasCorto</ref>(<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>a,<sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="479"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;<sp/></highlight><highlight class="comment">//variable<sp/>auxiliar<sp/>que<sp/>mantendra<sp/>el<sp/>valor<sp/>del<sp/>mayor<sp/>camino<sp/>encontrado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>MasCorto(TipoNodoGrafo<sp/>&amp;<sp/>a,<sp/>TipoNodoGrafo<sp/>&amp;<sp/>b)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i+1;j&lt;num_nodos_;j++)<sp/></highlight><highlight class="comment">//Comprueba<sp/>solo<sp/>la<sp/>triangular<sp/>superior<sp/>(grafo<sp/>no<sp/>dirigido)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j]&lt;min)<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[i][j];</highlight><highlight class="comment">//Podemos<sp/>usar<sp/>la<sp/>matrid<sp/>de<sp/>ayacencia,<sp/>pues<sp/>el<sp/>menor<sp/>coste<sp/>siempre<sp/>se<sp/>conseguira<sp/>en<sp/>los<sp/>adyacentes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i];</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[j];</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>min;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_19cb09aaf7c006d88cdb669d68c9ae7cf" kindref="member">DEPURAR_GRAFO_MSG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>MasCorto(TipoNodoGrafo<sp/>&amp;<sp/>a,<sp/>TipoNodoGrafo<sp/>&amp;<sp/>b)&quot;</highlight><highlight class="normal">&lt;&lt;endl);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1344e71ffc946fe568abd87be23081a94" kindref="member">Grafo::get_warshall_path</ref>(<ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member" tooltip="Matriz de bool de tamaño kMaxVert x kMaxVert.">TipoMatrizBooleana</ref><sp/>&amp;<sp/>WP)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="498"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i;j&lt;kMaxVert;j++)</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>WP[i][j]=WP[j][i]=<ref refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" kindref="member" tooltip="Matriz boleana de Camino (Warshall - Path).">warshall_path_</ref>[i][j];</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1ea3df48d2408f0a4b4e60876e5220ff6" kindref="member">Grafo::get_floyd_path</ref>(<ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>&amp;<sp/>FP)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="509"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i;j&lt;kMaxVert;j++)</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FP[i][j]=FP[j][i]=<ref refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" kindref="member" tooltip="Matriz de Camino (Floyd - Path).">floyd_path_</ref>[i][j];</highlight></codeline>
+<codeline lineno="513"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1012df6698661eb60303cf0bdb3977044" kindref="member">Grafo::get_floyd_cost</ref>(<ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>&amp;<sp/>FC)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="520"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i;j&lt;kMaxVert;j++)</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FC[i][j]=FC[j][i]=<ref refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" kindref="member" tooltip="Matriz de Costes (Floyd - Cost).">floyd_cost_</ref>[i][j];</highlight></codeline>
+<codeline lineno="524"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_12612ac12da97ad8c1de4046521dfd41a" kindref="member">Grafo::MostrarEnProfundidad</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="530"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[kMaxVert];<sp/></highlight><highlight class="comment">//aqui<sp/>almacenaremos<sp/>si<sp/>un<sp/>elemento<sp/>a<sp/>sido<sp/>visitado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>nodos_a_tratar;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/>visitados[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight><highlight class="comment">//inicializamos<sp/>el<sp/>vector<sp/>de<sp/>visitados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!visitados[i])</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;ObtenerEnProf(i,visitados,<sp/>nodos_a_tratar);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!nodos_a_tratar.empty())<sp/>{</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;nodos_a_tratar.front();</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>nodos_a_tratar.pop();</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="541"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_19d0eb1c3977698da6d05cd8b0d1d9c0c" kindref="member">Grafo::ObtenerEnProf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[kMaxVert],<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;prof)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="550"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>ady;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>w;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=-1;<sp/></highlight><highlight class="comment">//lo<sp/>usaremos<sp/>para<sp/>trabajar<sp/>con<sp/>la<sp/>posicion<sp/>del<sp/>nodo<sp/>en<sp/>el<sp/>vector<sp/>&quot;nodos_&quot;<sp/>en<sp/>lugar<sp/>de<sp/>con<sp/>el<sp/>nodo<sp/>en<sp/>si</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classGrafo_125a7ac274277ddc0861a03785f29ec87" kindref="member">Adyacentes</ref>(this-&gt;nodos_[posicion],ady);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>cout&lt;&lt;endl&lt;&lt;&quot;Adyacentes<sp/>de<sp/>:&quot;&lt;&lt;posicion&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>while(!ady.empty()){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;ady.front()&lt;&lt;&quot;<sp/>-<sp/>&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>ady.pop();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/>visitados[posicion]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/>prof.push(this-&gt;nodos_[posicion]);</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!ady.empty()){</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/>w=ady.front();</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/>aux=<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(w);</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!visitados[aux])<sp/>{</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classGrafo_19d0eb1c3977698da6d05cd8b0d1d9c0c" kindref="member">ObtenerEnProf</ref>(aux,visitados,prof);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Procesamiento<sp/>del<sp/>arco.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_18977179d2a324518ae9c5739ed73f3b0" kindref="member">Grafo::MostrarEnAnchura</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="579"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[kMaxVert];<sp/></highlight><highlight class="comment">//aqui<sp/>almacenaremos<sp/>si<sp/>un<sp/>elemento<sp/>a<sp/>sido<sp/>visitado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>nodos_a_tratar;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/>visitados[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight><highlight class="comment">//inicializamos<sp/>el<sp/>vector<sp/>de<sp/>visitados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!visitados[i])</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;ObtenerEnAnch(i,visitados,<sp/>nodos_a_tratar);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!nodos_a_tratar.empty())<sp/>{</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;nodos_a_tratar.front();</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/>nodos_a_tratar.pop();</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1f085eaf3d58dbcdaa78f0514f9b42d40" kindref="member">Grafo::ObtenerEnAnch</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/>posicion,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[kMaxVert],<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;<sp/>anch)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="599"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>v;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>ady;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>w;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/>queue<sp/>&lt;TipoNodoGrafo&gt;<sp/>C;</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/>visitados[posicion]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/>C.push(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[posicion]);</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!C.empty())<sp/>{</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>C.front();</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/>C.pop();</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/>anch.push(v);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classGrafo_125a7ac274277ddc0861a03785f29ec87" kindref="member">Adyacentes</ref>(v,ady);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!ady.empty())<sp/>{</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>ady.front();</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos=this-&gt;<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(w);</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!visitados[pos])<sp/>{</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitados[pos]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>C.push(w);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="630"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_11e658641dd50ffafdbaa0a1a16035bfe" kindref="member">Grafo::ANSaltos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;nodo,<sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>&amp;<sp/>nodos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/>distancia)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="631"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>ady;</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>escogido[kMaxVert];</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/>escogido[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/>nodos.push(nodo);</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=distancia;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(aux&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!nodos.empty()){</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ady.push(nodos.front());</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nodos.pop();</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/>escogido[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!ady.empty())<sp/>{</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[this-&gt;get_pos_nodo(ady.front())][i]<sp/>!=<sp/><ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref><sp/>&amp;&amp;<sp/>i<sp/>!=<sp/>this-&gt;get_pos_nodo(ady.front())<sp/>&amp;&amp;<sp/>!escogido[i]){</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodos.push(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i]);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>escogido[i]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/>aux--;</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="653"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">Grafo::get_pos_nodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>N)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="661"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i]<sp/>==<sp/>N)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="664"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1759e2bb306cf3830a2fdd66d6de1a62f" kindref="member">Grafo::Excentricidad</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>nodo)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="673"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=-1;</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>aux=<ref refid="grafo_8cpp_1bd67fd90183cf2cea5f41d88b098ba97" kindref="member">Maximo</ref>(aux,<sp/>this-&gt;floyd_cost_[this-&gt;get_pos_nodo(nodo)][i]);</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aux;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="classGrafo_1352046b0d3e115ac6e013657b4cead0e" kindref="member">Grafo::Centro</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="685"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>N;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;this-&gt;num_nodos_;i++)<sp/></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;Excentricidad(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i])&lt;aux)<sp/>{</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>N=<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i];</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>aux=<ref refid="classGrafo_1759e2bb306cf3830a2fdd66d6de1a62f" kindref="member">Excentricidad</ref>(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i]);</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>N;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_144b9f53140ae14ad60054104c105fc34" kindref="member">Grafo::ExisteCiclo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>&amp;<sp/>nodo)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="702"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visitados[kMaxVert],<sp/>resultado=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>salir=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>vengo_de[kMaxVert];</highlight><highlight class="comment">//nodos<sp/>desde<sp/>los<sp/>que<sp/>llegamos(es<sp/>decir,<sp/>la<sp/>posicion<sp/>N<sp/>contendra:<sp/>el<sp/>nodo<sp/>desde<sp/>el<sp/>que<sp/>llegamos<sp/>a<sp/>nodos_[N]<sp/>por<sp/>primera<sp/>vez)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/>vengo_de[i]=-1;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kMaxVert;i++)<sp/>visitados[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/>visitados[<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(nodo)]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>vengo_de[get_pos_nodo(nodo)]=get_pos_nodo(nodo);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member" tooltip="Cola para almacenar nodos.">TipoCjtoNodos</ref><sp/>ady,<sp/>nodos;</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/>nodos.push(nodo);</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>N;</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//A<sp/>continuacion,<sp/>vamos<sp/>ampliando<sp/>el<sp/>espacio<sp/>de<sp/>busqueda,<sp/>y<sp/>en<sp/>cada<sp/>espacio,<sp/>comprobamos<sp/>si<sp/>podemos<sp/>llegar<sp/>a<sp/>un<sp/>nodo<sp/>de<sp/>dos<sp/>maneras<sp/>diferentes,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>en<sp/>el<sp/>momento<sp/>que<sp/>se<sp/>llege<sp/>a<sp/>un<sp/>nodo<sp/>de<sp/>2<sp/>formas,<sp/>tenemos<sp/>un<sp/>ciclo,<sp/>saliendo<sp/>de<sp/>todos<sp/>los<sp/>bucles<sp/>y<sp/>devolviendo<sp/>true.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>usamos<sp/>la<sp/>variable<sp/>&quot;nodos&quot;<sp/>como<sp/>el<sp/>siguiente<sp/>espacio<sp/>de<sp/>busqueda<sp/>y<sp/>&quot;ady&quot;<sp/>como<sp/>el<sp/>espacio<sp/>de<sp/>busqueda<sp/>actual.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!salir)<sp/>{</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!nodos.empty()){</highlight><highlight class="comment">//el<sp/>siguiente<sp/>espacio<sp/>de<sp/>busqueda<sp/>pasa<sp/>a<sp/>ser<sp/>el<sp/>actual<sp/>y<sp/>el<sp/>siguiente<sp/>queda<sp/>vacio.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ady.push(nodos.front());</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nodos.pop();</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!ady.empty()&amp;&amp;!resultado)<sp/>{<sp/></highlight><highlight class="comment">//tratamos<sp/>el<sp/>actual<sp/>espacio<sp/>de<sp/>busqueda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>N=ady.front();</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;num_nodos_;i++)<sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//comprobamos<sp/>los<sp/>adyacentes<sp/>de<sp/>el<sp/>primero<sp/>nodo<sp/>del<sp/>espacio<sp/>de<sp/>busqueda<sp/>actual(ady)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" kindref="member" tooltip="Matriz de adyacencia, para almacenar los arcos del grafo.">arcos_</ref>[this-&gt;get_pos_nodo(ady.front())][i]<sp/>!=<sp/><ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref><sp/>&amp;&amp;<sp/>i<sp/>!=<sp/>this-&gt;get_pos_nodo(ady.front())<sp/>&amp;&amp;<sp/>vengo_de[ady.front()]!=i<sp/>){</highlight><highlight class="comment">//Hemos<sp/>encontrado<sp/>un<sp/>nodo<sp/>adyacente(no<sp/>valido<sp/>del<sp/>que<sp/>venimos):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(visitados[i])<sp/>{<sp/></highlight><highlight class="comment">//El<sp/>nodo<sp/>a<sp/>sido<sp/>visitado<sp/>previamente:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultado<sp/>=<sp/>(vengo_de[i]!=<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(ady.front()));<sp/></highlight><highlight class="comment">//si<sp/>hemos<sp/>llegado<sp/>al<sp/>nodo<sp/>por<sp/>una<sp/>ruta<sp/>diferente,<sp/>HAY<sp/>UN<sp/>CICLO!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//El<sp/>nodo<sp/>no<sp/>ha<sp/>sido<sp/>visitado<sp/>previamente</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodos.push(<ref refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" kindref="member" tooltip="Vector que almacena los nodos del grafo.">nodos_</ref>[i]);</highlight><highlight class="comment">//lo<sp/>almacenamos<sp/>el<sp/>el<sp/>siguiente<sp/>espacio<sp/>de<sp/>busqueda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vengo_de[i]=<ref refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" kindref="member">get_pos_nodo</ref>(ady.front());</highlight><highlight class="comment">//indicamos<sp/>el<sp/>nodo<sp/>desde<sp/>el<sp/>cual<sp/>hemos<sp/>llegado<sp/>a<sp/>este</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitados[i]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ady.pop();</highlight><highlight class="comment">//al<sp/>terminar<sp/>de<sp/>tratar<sp/>este<sp/>nodo,<sp/>lo<sp/>sacamos<sp/>del<sp/>actual<sp/>espacio<sp/>de<sp/>busqueda.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>salir<sp/>=<sp/>resultado||nodos.empty();</highlight><highlight class="comment">//si<sp/>no<sp/>tenemos<sp/>mas<sp/>nodos<sp/>que<sp/>procesar,<sp/>o<sp/>hemos<sp/>encontrado<sp/>un<sp/>ciclo,<sp/>salimos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="741"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/grafo.cpp"/>
+  </compounddef>
+</doxygen>

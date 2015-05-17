@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="fichero_8cpp" kind="file">
+    <compoundname>fichero.cpp</compoundname>
+    <includes refid="fichero_8h" local="yes">fichero.h</includes>
+    <includes refid="cargador_8h" local="yes">cargador.h</includes>
+    <incdepgraph>
+      <node id="288">
+        <label>list</label>
+      </node>
+      <node id="289">
+        <label>queue</label>
+      </node>
+      <node id="293">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>iterator</label>
+      </node>
+      <node id="279">
+        <label>fichero.h</label>
+        <link refid="fichero_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>preso.h</label>
+        <link refid="preso_8h"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>fstream</label>
+      </node>
+      <node id="283">
+        <label>cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero.cpp"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>stack</label>
+      </node>
+      <node id="287">
+        <label>vector</label>
+      </node>
+      <node id="304">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>cstdlib</label>
+      </node>
+      <node id="301">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>iostream</label>
+      </node>
+      <node id="302">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementacion de la clase <ref refid="classFicheroCarga" kindref="compound">FicheroCarga</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>09/04/09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fichero_8h" kindref="compound" tooltip="Declaracion de la clase FicheroCarga.">fichero.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cargador_8h" kindref="compound" tooltip="Práctica 2006-2007. Declaracion de la clase Cargador.">cargador.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classFicheroCarga_142d9d8b4602a24c26a2f2e5bf2c5a55b" kindref="member">FicheroCarga::FicheroCarga</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombre){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>FicheroCarga::FicheroCarga(&quot;</highlight><highlight class="normal">&lt;&lt;nombre&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" kindref="member" tooltip="atributo que contiene el nombre del fichero, se inicializa con el constructor.">nombre_fichero_</ref><sp/>=<sp/>nombre;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.open(<ref refid="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" kindref="member" tooltip="atributo que contiene el nombre del fichero, se inicializa con el constructor.">nombre_fichero_</ref>.c_str());</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.good())<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>Apertura&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>FicheroCarga::FicheroCarga(&quot;</highlight><highlight class="normal">&lt;&lt;nombre&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_16883d83049078fdf92cd8b8964b425d1" kindref="member">FicheroCarga::ProcesarFichero</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vector_campos[<ref refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" kindref="member" tooltip="Constante con el numero maximo de campos de una linea del fichero de configuracion...">kMaxCampos</ref>];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>linea[300];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_campos;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>FicheroCarga::ProcesarFichero()&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.eof())<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.bad())<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>Acceso&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.getline(linea,300);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.eof()){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.bad())<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>Acceso&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(linea[0]!=</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>linea[0]!=</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>linea[0]!=</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>linea[1]!=</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="comment">//comprueba<sp/>si<sp/>la<sp/>linea<sp/>NO<sp/>comienza<sp/>por<sp/>&quot;--&quot;(comentario)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_campos<sp/>=<sp/>this-&gt;<ref refid="classFicheroCarga_1f3eda8296f8e63ca76cae9e122da6dc1" kindref="member">TrocearLinea</ref>(linea,vector_campos);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classFicheroCarga_1f48c4dabc5df8fab5899a57fd194300e" kindref="member">ProcesarDatos</ref>(num_campos,<sp/>vector_campos);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.close();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>.bad())<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>ios::failure(</highlight><highlight class="stringliteral">&quot;Error<sp/>de<sp/>Cierre&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>FicheroCarga::ProcesarFichero()&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_1f3eda8296f8e63ca76cae9e122da6dc1" kindref="member">FicheroCarga::TrocearLinea</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>linea,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vector_campos[<ref refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" kindref="member" tooltip="Constante con el numero maximo de campos de una linea del fichero de configuracion...">kMaxCampos</ref>])</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>eol<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos=0,<sp/>posini=0,<sp/>num_campos=0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>FicheroCarga::TrocearLinea<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;linea&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!eol)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>linea.find(</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">,posini);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>==<sp/>string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eol<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vector_campos[num_campos]<sp/>=<sp/>linea.substr(posini,pos);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>linea.erase(posini,pos+1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>num_campos++;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>FicheroCarga::TrocearLinea:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;num_campos);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>num_campos;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_1f48c4dabc5df8fab5899a57fd194300e" kindref="member">FicheroCarga::ProcesarDatos</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_campos,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vector_campos[kMaxCampos]){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>FicheroCarga::ProcesarDatos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref><sp/>*prison=<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="classCargador" kindref="compound" tooltip="La misión de esta clase es cargar el sistema con los elementos del fichero de configuración...">Cargador</ref><sp/>c(prison);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>c.crear(vector_campos[0],num_campos,vector_campos+1);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" kindref="member">DEPURAR_FICHERO_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>FicheroCarga::ProcesarDatos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/fichero.cpp"/>
+  </compounddef>
+</doxygen>

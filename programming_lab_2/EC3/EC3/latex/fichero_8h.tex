@@ -1,0 +1,59 @@
+\section{Escritorio/EC3/src/fichero.h File Reference}
+\label{fichero_8h}\index{Escritorio/EC3/src/fichero.h@{Escritorio/EC3/src/fichero.h}}
+Declaracion de la clase \doxyref{FicheroCarga}{p.}{classFicheroCarga}. 
+
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$cstring$>$}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf FicheroCarga}
+\begin{CompactList}\small\item\em Esta clase carga el sistema con los elementos indicados en el fichero de configuración. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf kDepurarFichero}~0
+\item 
+\#define {\bf DEPURAR\_\-FICHERO\_\-MSG}(msg)~if (kDepurarFichero)\{ cout$<$$<$msg; cin.get();\}
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+const int {\bf kMaxCampos} = 8
+\begin{CompactList}\small\item\em Constante con el numero maximo de campos de una linea del fichero de configuracion. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Declaracion de la clase \doxyref{FicheroCarga}{p.}{classFicheroCarga}. 
+
+\begin{Desc}
+\item[Date:]09/04/09 \end{Desc}
+\begin{Desc}
+\item[Author:]{\bf Nombre:} Mario \par
+ {\bf Apellidos:} Corchero Jimenez \par
+ {\bf Asignatura} Laboratorio de Programacion II \par
+ \end{Desc}
+
+
+\subsection{Define Documentation}
+\index{fichero.h@{fichero.h}!DEPURAR_FICHERO_MSG@{DEPURAR\_\-FICHERO\_\-MSG}}
+\index{DEPURAR_FICHERO_MSG@{DEPURAR\_\-FICHERO\_\-MSG}!fichero.h@{fichero.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define DEPURAR\_\-FICHERO\_\-MSG(msg)~if (kDepurarFichero)\{ cout$<$$<$msg; cin.get();\}}\label{fichero_8h_46104438d21e10d9fd6f0c44da03f1df}
+
+
+Macro utilizada para mostrar mensajes de depuración de programa y retener los mensajes en pantalla \index{fichero.h@{fichero.h}!kDepurarFichero@{kDepurarFichero}}
+\index{kDepurarFichero@{kDepurarFichero}!fichero.h@{fichero.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define kDepurarFichero~0}\label{fichero_8h_3a8b7e76569fece81a7a2fd2f89ab74e}
+
+
+Variable constante utilizada para mostrar o no mensajes de depuracion de programa 
+
+\subsection{Variable Documentation}
+\index{fichero.h@{fichero.h}!kMaxCampos@{kMaxCampos}}
+\index{kMaxCampos@{kMaxCampos}!fichero.h@{fichero.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf kMaxCampos} = 8}\label{fichero_8h_1c3a1cc5d42e196a47f16c55e668e9ec}
+
+
+Constante con el numero maximo de campos de una linea del fichero de configuracion. 
+

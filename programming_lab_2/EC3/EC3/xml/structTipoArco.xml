@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structTipoArco" kind="struct" prot="public">
+    <compoundname>TipoArco</compoundname>
+    <includes refid="grafo_8h" local="no">grafo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTipoArco_1e8c5ce405fb4d5f3787fd6a0b0f39320" prot="public" static="no" mutable="no">
+        <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+        <definition>TipoNodoGrafo TipoArco::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>Nodo de origen del arco. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="95" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTipoArco_12d2138f47d0cbefb0f8d4ad91952955a" prot="public" static="no" mutable="no">
+        <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+        <definition>TipoNodoGrafo TipoArco::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>Nodo de destino del arco. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="96" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tipo que representa un arco, con su origen &quot;x&quot; y su destino &quot;y&quot;. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="94" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="94" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structTipoArco_1e8c5ce405fb4d5f3787fd6a0b0f39320" prot="public" virt="non-virtual"><scope>TipoArco</scope><name>x</name></member>
+      <member refid="structTipoArco_12d2138f47d0cbefb0f8d4ad91952955a" prot="public" virt="non-virtual"><scope>TipoArco</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testpuerta_8cpp" kind="file">
+    <compoundname>testpuerta.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="puerta_8h" local="yes">puerta.h</includes>
+    <incdepgraph>
+      <node id="1461">
+        <label>iomanip</label>
+      </node>
+      <node id="1479">
+        <label>queue</label>
+      </node>
+      <node id="1451">
+        <label>limits</label>
+      </node>
+      <node id="1449">
+        <label>Escritorio/EC3/src/testpuerta.cpp</label>
+        <link refid="testpuerta.cpp"/>
+        <childnode refid="1450" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+      </node>
+      <node id="1454">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1476">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+        <childnode refid="1478" relation="include">
+        </childnode>
+        <childnode refid="1480" relation="include">
+        </childnode>
+      </node>
+      <node id="1472">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1473" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1469">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1470" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+      </node>
+      <node id="1457">
+        <label>string</label>
+      </node>
+      <node id="1468">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1467" relation="include">
+        </childnode>
+      </node>
+      <node id="1477">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1478">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1479" relation="include">
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1474">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>string.h</label>
+      </node>
+      <node id="1463">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+      </node>
+      <node id="1453">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1458" relation="include">
+        </childnode>
+      </node>
+      <node id="1470">
+        <label>utility</label>
+      </node>
+      <node id="1458">
+        <label>sstream</label>
+      </node>
+      <node id="1450">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1466" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+        <childnode refid="1472" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+        <childnode refid="1475" relation="include">
+        </childnode>
+      </node>
+      <node id="1473">
+        <label>iosfwd</label>
+      </node>
+      <node id="1456">
+        <label>iostream</label>
+      </node>
+      <node id="1459">
+        <label>ctype.h</label>
+      </node>
+      <node id="1452">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+      </node>
+      <node id="1475">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1462">
+        <label>set</label>
+      </node>
+      <node id="1465">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1455">
+        <label>stdio.h</label>
+      </node>
+      <node id="1464">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1471">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classPuertaTest" prot="public">PuertaTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testpuerta_8cpp_19bd4ee3e404ef3acaac5b76de3058ce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(PuertaTest, Metodos_de_la_Puerta)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classPuertaTest" kindref="compound">PuertaTest</ref></type>
+        </param>
+        <param>
+          <type>Metodos_de_la_Puerta</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/testpuerta.cpp" bodystart="35" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase <ref refid="classPuerta" kindref="compound">Puerta</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>07-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="puerta_8h" kindref="compound" tooltip="Implementacion del header de la clase puerta.">puerta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//Creamos<sp/>varias<sp/>instancias<sp/>con<sp/>las<sp/>que<sp/>trabajar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classPuertaTest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPuertaTest" kindref="compound">PuertaTest</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>testing::<ref refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" kindref="member">Test</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classPuerta" kindref="compound" tooltip="Esta clase representa los atributos y metodos de puertas.">Puerta</ref><sp/><ref refid="classPuertaTest_1abbc6bb6438ccb7cbb4bc7ab96ea4e53" kindref="member">PE</ref>,<sp/>*<ref refid="classPuertaTest_1259be514186f3576b757fd436a8a86bb" kindref="member">PD</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*<ref refid="classPuertaTest_108d0224c804e7ea5482104babfe58b71" kindref="member">vector</ref>[30];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPuertaTest_1042e0662ae8c4750bda875799ed23205" kindref="member">SetUp</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPuertaTest_1259be514186f3576b757fd436a8a86bb" kindref="member">PD</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPuerta" kindref="compound" tooltip="Esta clase representa los atributos y metodos de puertas.">Puerta</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;30;i++)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPuertaTest_108d0224c804e7ea5482104babfe58b71" kindref="member">vector</ref>[i]=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>(i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPuertaTest_1904a39a38b4e64472702662c9ffa258c" kindref="member">TearDown</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classPuertaTest_1259be514186f3576b757fd436a8a86bb" kindref="member">PD</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;30;i++)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classPuertaTest_108d0224c804e7ea5482104babfe58b71" kindref="member">vector</ref>[i];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classPuertaTest" kindref="compound">PuertaTest</ref>,Metodos_de_la_Puerta){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;Llave*&gt;<sp/>CSecreta;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>ColaGen<sp/>&lt;Llave*&gt;<sp/>Recogidas;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Insertamos<sp/>las<sp/>llaves<sp/>en<sp/>CSecreta<sp/>y<sp/>Recogidas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;30;i++){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>Recogidas.<ref refid="classColaGen_1fb6e23589a639af8b19d27ccad1bce05" kindref="member" tooltip="Inserta un dato en la cola (por el final).">insertar_dato</ref>(vector[i]);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(vector[i]-&gt;get_id()%2==1){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CSecreta.<ref refid="classColaGen_1fb6e23589a639af8b19d27ccad1bce05" kindref="member" tooltip="Inserta un dato en la cola (por el final).">insertar_dato</ref>(vector[i]);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Recogidas.<ref refid="classColaGen_1fb6e23589a639af8b19d27ccad1bce05" kindref="member" tooltip="Inserta un dato en la cola (por el final).">insertar_dato</ref>(vector[i]);}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(45,Recogidas.<ref refid="classColaGen_10bf7db003e1afd90e17b098e36208365" kindref="member" tooltip="Devuelve el número de elementos de la cola.">get_num_elementos</ref>());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(15,CSecreta.<ref refid="classColaGen_10bf7db003e1afd90e17b098e36208365" kindref="member" tooltip="Devuelve el número de elementos de la cola.">get_num_elementos</ref>());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373ccd725d955622b98c479663b62823063e" kindref="member">NOCONFIGURADA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>PE.Configurar(&amp;CSecreta);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c3e7dbe69001feac89ef3e574e68f7fed" kindref="member">ABIERTA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.Cerrar());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c3fe2dc7cc97cdf8e8b9b8e5cac4ac714" kindref="member">CERRADA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(PE.Abrir());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1f2f962e2200ec490248e50436826cc60" kindref="member">ASSERT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c3fe2dc7cc97cdf8e8b9b8e5cac4ac714" kindref="member">CERRADA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//abrimos<sp/>la<sp/>puerta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.ProbarLlave(vector[1]));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.ProbarLlave(vector[5]));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.ProbarLlave(vector[13]));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.ProbarLlave(vector[21]));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(PE.Abrir());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c3e7dbe69001feac89ef3e574e68f7fed" kindref="member">ABIERTA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>PE.Cerrar();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(<ref refid="puerta_8h_1fb70aab6bb71fedd65523f33912d373c3fe2dc7cc97cdf8e8b9b8e5cac4ac714" kindref="member">CERRADA</ref>,PE.get_estado());</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>a<sp/>lanzar<sp/>la<sp/>alarma</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(PE.ProbarLlave(vector[1]));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(PE.ProbarLlave(vector[1]));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testpuerta.cpp"/>
+  </compounddef>
+</doxygen>

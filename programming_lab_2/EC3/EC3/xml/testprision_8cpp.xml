@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testprision_8cpp" kind="file">
+    <compoundname>testprision.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="prision_8h" local="yes">prision.h</includes>
+    <incdepgraph>
+      <node id="1430">
+        <label>list</label>
+      </node>
+      <node id="1411">
+        <label>iomanip</label>
+      </node>
+      <node id="1431">
+        <label>queue</label>
+      </node>
+      <node id="1401">
+        <label>limits</label>
+      </node>
+      <node id="1435">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+      </node>
+      <node id="1427">
+        <label>iterator</label>
+      </node>
+      <node id="1426">
+        <label>prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1404">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1433">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1438">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1439" relation="include">
+        </childnode>
+        <childnode refid="1440" relation="include">
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision.cpp"/>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1426" relation="include">
+        </childnode>
+      </node>
+      <node id="1442">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1440">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>string</label>
+      </node>
+      <node id="1445">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1446" relation="include">
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+      </node>
+      <node id="1416">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+      </node>
+      <node id="1441">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1434">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1446">
+        <label>fstream</label>
+      </node>
+      <node id="1439">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>string.h</label>
+      </node>
+      <node id="1413">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1404" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1428">
+        <label>planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+        <childnode refid="1438" relation="include">
+        </childnode>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1442" relation="include">
+        </childnode>
+        <childnode refid="1443" relation="include">
+        </childnode>
+        <childnode refid="1444" relation="include">
+        </childnode>
+        <childnode refid="1445" relation="include">
+        </childnode>
+        <childnode refid="1447" relation="include">
+        </childnode>
+      </node>
+      <node id="1432">
+        <label>stack</label>
+      </node>
+      <node id="1429">
+        <label>vector</label>
+      </node>
+      <node id="1420">
+        <label>utility</label>
+      </node>
+      <node id="1408">
+        <label>sstream</label>
+      </node>
+      <node id="1400">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1422" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+      </node>
+      <node id="1447">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>iosfwd</label>
+      </node>
+      <node id="1437">
+        <label>cstdlib</label>
+      </node>
+      <node id="1443">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1406">
+        <label>iostream</label>
+      </node>
+      <node id="1409">
+        <label>ctype.h</label>
+      </node>
+      <node id="1402">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1412">
+        <label>set</label>
+      </node>
+      <node id="1444">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1437" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+      </node>
+      <node id="1405">
+        <label>stdio.h</label>
+      </node>
+      <node id="1414">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testprision_8cpp_1b1a960d5f05744786a3f81459eda7c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(TestPrision, MetodosBasicos)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>TestPrision</type>
+        </param>
+        <param>
+          <type>MetodosBasicos</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testprision.cpp" line="17" bodyfile="/home/Mario/Escritorio/EC3/src/testprision.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase prision. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>04-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="prision_8h" kindref="compound" tooltip="Implementación de la clase Prision.">prision.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="gtest_8h_1598efb903152a27abbe3562ea890d1b9" kindref="member">TEST</ref>(TestPrision,MetodosBasicos){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref><sp/>*p=NULL;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(0,<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_numero_plantas());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;<ref refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" kindref="member">set_planta</ref>(p);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(1,<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_numero_plantas());</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(0,<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_planta(5));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(p,<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_planta(0));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testprision.cpp"/>
+  </compounddef>
+</doxygen>

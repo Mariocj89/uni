@@ -1,0 +1,208 @@
+\section{testing::TestInfo Class Reference}
+\label{classtesting_1_1TestInfo}\index{testing::TestInfo@{testing::TestInfo}}
+{\tt \#include $<$gtest.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf $\sim$TestInfo} ()
+\item 
+const char $\ast$ {\bf test\_\-case\_\-name} () const
+\item 
+const char $\ast$ {\bf name} () const
+\item 
+const char $\ast$ {\bf test\_\-case\_\-comment} () const
+\item 
+const char $\ast$ {\bf comment} () const
+\item 
+bool {\bf should\_\-run} () const
+\end{CompactItemize}
+\subsection*{Package Functions}
+\begin{CompactItemize}
+\item 
+int {\bf increment\_\-death\_\-test\_\-count} ()
+\item 
+internal::TestInfoImpl $\ast$ {\bf impl} ()
+\item 
+{\bf TestInfo} (const char $\ast$test\_\-case\_\-name, const char $\ast${\bf name}, const char $\ast${\bf test\_\-case\_\-comment}, const char $\ast${\bf comment}, {\bf internal::TypeId} {\bf fixture\_\-class\_\-id}, {\bf internal::TestFactoryBase} $\ast${\bf factory})
+\item 
+{\bf GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-} ({\bf TestInfo})
+\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-pad0\_\-\_\-}:TestResult$\ast$ result() const
+\item 
+{\bf \_\-\_\-pad1\_\-\_\-}:MakeAndRegisterTestInfo( const char$\ast$ test\_\-case\_\-name
+\item 
+const char $\ast$ {\bf name}
+\item 
+const char const char $\ast$ {\bf test\_\-case\_\-comment}
+\item 
+const char const char const char $\ast$ {\bf comment}
+\item 
+const char const char const char {\bf internal::TypeId} {\bf fixture\_\-class\_\-id}
+\item 
+const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc {\bf set\_\-up\_\-tc}
+\item 
+const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc {\bf tear\_\-down\_\-tc}
+\item 
+const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc {\bf internal::TestFactoryBase} $\ast$ {\bf factory}
+\item 
+{\bf \_\-\_\-pad2\_\-\_\-}:TestInfoImpl$\ast$ impl() const \{ return {\bf impl\_\-}
+\item 
+internal::TestInfoImpl $\ast$ {\bf impl\_\-}
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+class {\bf internal::TestInfoImpl}
+\item 
+class {\bf internal::UnitTestImpl}
+\item 
+class {\bf Test}
+\item 
+class {\bf TestCase}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::TestInfo@{testing::TestInfo}!~TestInfo@{$\sim$TestInfo}}
+\index{~TestInfo@{$\sim$TestInfo}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::TestInfo::$\sim$TestInfo ()}\label{classtesting_1_1TestInfo_5a6046a6bc1990cd3d34b777d1ea2efb}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!TestInfo@{TestInfo}}
+\index{TestInfo@{TestInfo}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::TestInfo::TestInfo (const char $\ast$ {\em test\_\-case\_\-name}, const char $\ast$ {\em name}, const char $\ast$ {\em test\_\-case\_\-comment}, const char $\ast$ {\em comment}, {\bf internal::TypeId} {\em fixture\_\-class\_\-id}, {\bf internal::TestFactoryBase} $\ast$ {\em factory})\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_0c48a55b93a44fbdc86311e095d03443}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::TestInfo@{testing::TestInfo}!test_case_name@{test\_\-case\_\-name}}
+\index{test_case_name@{test\_\-case\_\-name}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::TestInfo::test\_\-case\_\-name () const}\label{classtesting_1_1TestInfo_ce66c230c07aadcacb59fe050b10048c}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!name@{name}}
+\index{name@{name}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf testing::TestInfo::name} () const}\label{classtesting_1_1TestInfo_98187c43314e8e23cc6ccdccb5465d50}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!test_case_comment@{test\_\-case\_\-comment}}
+\index{test_case_comment@{test\_\-case\_\-comment}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf testing::TestInfo::test\_\-case\_\-comment} () const}\label{classtesting_1_1TestInfo_000a4260add151f8f8fdb5f94b0d4f74}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!comment@{comment}}
+\index{comment@{comment}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf testing::TestInfo::comment} () const}\label{classtesting_1_1TestInfo_f2dd6a2ad5fccba8f0bbcc52d5664bca}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!should_run@{should\_\-run}}
+\index{should_run@{should\_\-run}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::TestInfo::should\_\-run () const}\label{classtesting_1_1TestInfo_27e8a3d5b459a30df5e9981645c190b0}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!increment_death_test_count@{increment\_\-death\_\-test\_\-count}}
+\index{increment_death_test_count@{increment\_\-death\_\-test\_\-count}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int testing::TestInfo::increment\_\-death\_\-test\_\-count ()\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_4e9380275eed7e67174b07336ebcb58f}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!impl@{impl}}
+\index{impl@{impl}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}internal::TestInfoImpl$\ast$ testing::TestInfo::impl ()\hspace{0.3cm}{\tt  [inline, package]}}\label{classtesting_1_1TestInfo_a1283eab082d57978d8c5b88ae552320}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}}
+\index{GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::TestInfo::GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\- ({\bf TestInfo})\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_3f510e71137f11b5a90ecf843a171b0f}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{testing::TestInfo@{testing::TestInfo}!internal::TestInfoImpl@{internal::TestInfoImpl}}
+\index{internal::TestInfoImpl@{internal::TestInfoImpl}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class internal::TestInfoImpl\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1TestInfo_5aa7b30faff2d57475f7e9eea1bc8eaa}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!internal::UnitTestImpl@{internal::UnitTestImpl}}
+\index{internal::UnitTestImpl@{internal::UnitTestImpl}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class internal::UnitTestImpl\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1TestInfo_417e83bada4513ea82ec1daf57acefe0}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!Test@{Test}}
+\index{Test@{Test}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test}\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1TestInfo_e7f33bcfe8b908f68c5bd4dfc6012078}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!TestCase@{TestCase}}
+\index{TestCase@{TestCase}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class TestCase\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1TestInfo_2831345fc3341f246c8c26ed33205687}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::TestInfo@{testing::TestInfo}!__pad0__@{\_\-\_\-pad0\_\-\_\-}}
+\index{__pad0__@{\_\-\_\-pad0\_\-\_\-}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::TestInfo::\_\-\_\-pad0\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_8351d36043af6c595e9662daea88bea3}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!__pad1__@{\_\-\_\-pad1\_\-\_\-}}
+\index{__pad1__@{\_\-\_\-pad1\_\-\_\-}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::TestInfo::\_\-\_\-pad1\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_d6e0e4c8e2e9aa236186516dab0ed149}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!name@{name}}
+\index{name@{name}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf testing::TestInfo::name}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_48e80219a1e8df08050eedb9d817ac41}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!test_case_comment@{test\_\-case\_\-comment}}
+\index{test_case_comment@{test\_\-case\_\-comment}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char$\ast$ {\bf testing::TestInfo::test\_\-case\_\-comment}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_f52d0a54d1988531c00a50ce9ca64e59}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!comment@{comment}}
+\index{comment@{comment}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char const char$\ast$ {\bf testing::TestInfo::comment}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_7b28e513de2226d67e1d0f3cf129c93b}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!fixture_class_id@{fixture\_\-class\_\-id}}
+\index{fixture_class_id@{fixture\_\-class\_\-id}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char const char {\bf internal::TypeId} {\bf testing::TestInfo::fixture\_\-class\_\-id}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_a50374588be33bcee7b1b28c4a0d89fb}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!set_up_tc@{set\_\-up\_\-tc}}
+\index{set_up_tc@{set\_\-up\_\-tc}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc {\bf testing::TestInfo::set\_\-up\_\-tc}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_8191266a160e91d889bbea316a7883ef}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!tear_down_tc@{tear\_\-down\_\-tc}}
+\index{tear_down_tc@{tear\_\-down\_\-tc}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc {\bf testing::TestInfo::tear\_\-down\_\-tc}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_beba20073b35ead7e153d76034918252}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!factory@{factory}}
+\index{factory@{factory}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char const char const char {\bf internal::TypeId} Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc {\bf internal::TestFactoryBase}$\ast$ {\bf testing::TestInfo::factory}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_b02555c7691ca9d0fb0bcca5ca328d2d}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!__pad2__@{\_\-\_\-pad2\_\-\_\-}}
+\index{__pad2__@{\_\-\_\-pad2\_\-\_\-}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::TestInfo::\_\-\_\-pad2\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_786579989a4ac4253f63c41f71690098}
+
+
+\index{testing::TestInfo@{testing::TestInfo}!impl_@{impl\_\-}}
+\index{impl_@{impl\_\-}!testing::TestInfo@{testing::TestInfo}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}internal::TestInfoImpl$\ast$ {\bf testing::TestInfo::impl\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1TestInfo_a7cba6a8092514424ef3929120ba4e11}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest.h}\end{CompactItemize}

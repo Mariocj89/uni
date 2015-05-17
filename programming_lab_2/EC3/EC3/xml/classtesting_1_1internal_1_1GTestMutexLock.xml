@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1GTestMutexLock" kind="class" prot="public">
+    <compoundname>testing::internal::GTestMutexLock</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1GTestMutexLock_174c62a9202553b78ab28c216f98c4e72" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::GTestMutexLock::GTestMutexLock</definition>
+        <argsstring>(Mutex *)</argsstring>
+        <name>GTestMutexLock</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1Mutex" kindref="compound">Mutex</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="616" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="616" bodyend="616"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="614" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="614" bodyend="617"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1GTestMutexLock_174c62a9202553b78ab28c216f98c4e72" prot="public" virt="non-virtual"><scope>testing::internal::GTestMutexLock</scope><name>GTestMutexLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

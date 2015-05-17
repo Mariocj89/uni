@@ -1,0 +1,137 @@
+;macros para Practica 8
+
+BORRAR MACRO       
+       MOV AL,0 ;limpio pantalla
+       MOV CX,0
+       MOV DX,2479h
+       MOV BH,7
+       MOV AH,6
+       INT 10h
+       ENDM
+
+
+
+ascdec  MACRO ASC,BINV      ;usada en P8
+       LOCAL ASC1,ASC2,ASC11
+	PUSH	AX
+	PUSH    BX
+	PUSH	CX
+	PUSH	DX
+	PUSH	SI
+	PUSH	DI
+        LEA	SI,ASC[2]  ; nº de menor peso
+        MOV	CX,3	   ; nº maximo de elementos        
+        MOV     BX,1
+        MOV 	BINV,0
+ASC1:   MOV     AL,[SI]	   ; lo dejo en al para operar con el
+	    CMP	AL,' '     ; fitro la cantidad de numeros
+	    JE	asc11
+	    CMP	AL,'0'     ; filtro que solo sean numeros
+	    JL	asc2
+	    CMP	AL,'9'
+	    JG	asc2
+	    SUB     AL,30H     ; lo dejo ya en binario
+	    MOV     AH,0
+        MUL     BL         ; en ax=al*bl salida en Al el otro operando
+        ADD     binv,AL    ; suma acumulada
+	    MOV	AX,10
+	    MUL	BX         ; en ax salida en Al el otro operando
+	    MOV	BX,AX
+ASC11:	DEC	SI
+	    LOOP    asc1	
+asc2:   POP     DI
+	    POP	SI
+	    POP	DX
+	    POP	CX
+	    POP	BX
+	    POP	AX                                        
+    ENDM   
+
+pedir MACRO lon,dir
+        local fin_pedir,pedir1
+	PUSH	AX
+	PUSH    BX
+	PUSH	CX
+	PUSH	DX
+	PUSH	SI
+	PUSH	DI
+	MOV CX,lon ;indico el nº de elementos a leer
+	INC  CX
+	CLD	   ;hago que el stosb vaya hacia adelante
+	MOV AL,'$'
+	LEA DI,dir ;cargo direccion para la salida
+	REP STOSB  ; inicializa la direccion dir con $
+	MOV CX,lon
+	LEA DI,dir ;devuelvo cadena
+pedir1: MOV AH,1
+	INT 21h
+	CMP AL,13  ;si pulso intro salgo
+	JE  fin_pedir
+	STOSB      ;copio resto de cadena
+	LOOP pedir1
+fin_pedir:
+	POP	DI
+	POP	SI
+	POP	DX
+	POP	CX
+	POP	BX
+	POP	AX	
+	
+    ENDM      
+
+CURSOR   MACRO  FILA,COL
+        PUSH    AX
+        PUSH    BX
+        PUSH    DX
+        MOV     DH,fila
+        MOV     DL,col
+        MOV     BH,0
+        MOV     AH,2
+        INT     10h
+        POP     DX
+        POP     BX
+        POP     AX
+    ENDM
+
+       
+DECASC  MACRO  BINVC,ASCC
+        LOCAL DEC1,DEC2
+	PUSH	AX
+	PUSH    BX
+	PUSH	CX
+	PUSH	DX
+	PUSH	SI
+	PUSH	DI
+	LEA	DI,ASCC;
+	
+	MOV 	CX,3
+	MOV	AL,' '
+	REP     STOSB
+	
+        MOV  	AH,0       ;parte alta vacia para las comparaciones
+        MOV     AL,BINVC 
+        LEA	DI,ASCC[2] ; me situo al final de la cadena
+        
+        MOV	BL,10      ; constante para la division
+        
+DEC1:	CMP	AL,10      ; si es menor de 10 solo le sumo 30h y salgo
+	JL	DEC2
+	DIV	BL         ; en ah=resto, el al=cociente
+	ADD     AH,30H     ;sumo cero hexadecimal
+	MOV	[DI],AH    ;llevo a la salida
+	DEC	DI     	   ;me voy al elemento siguiente de mas peso
+	JMP	DEC1
+DEC2:	ADD     AL,30H     ;si menor de 10 solo sumo 30h
+	MOV	[DI],AL    ;llevo a la salida
+	
+	POP	DI
+	POP	SI
+	POP	DX
+	POP	CX
+	POP	BX
+	POP	AX
+    ENDM 
+
+
+
+          

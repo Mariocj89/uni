@@ -1,0 +1,276 @@
+\section{Referencia de la Clase ListaEnlazada}
+\label{classListaEnlazada}\index{ListaEnlazada@{ListaEnlazada}}
+{\tt \#include $<$listaenlazada.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+{\bf ListaEnlazada} ()\label{classListaEnlazada_e82643ddd50a2ffb28f0903d586ae3c2}
+
+\begin{CompactList}\small\item\em Constructor por defecto de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. Apunta l a NULL y carga M. \item\end{CompactList}\item 
+void {\bf Clonar} ({\bf ListaEnlazada} \&dat)
+\begin{CompactList}\small\item\em Copia la clase a dat. \item\end{CompactList}\item 
+void {\bf ObtenerMeses} ({\bf Meses} \&mes) const
+\begin{CompactList}\small\item\em Devuelve por parametro la configuracion de los \doxyref{Meses}{p.}{classMeses}. \item\end{CompactList}\item 
+void {\bf FiltrarPorMes} (const int i)
+\begin{CompactList}\small\item\em Elimina todos los elementos que no sean del mes i. \item\end{CompactList}\item 
+void {\bf FiltrarPorEdad} (const int i)
+\begin{CompactList}\small\item\em Elimina todos los elementos menores(o =) que i. \item\end{CompactList}\item 
+void {\bf InsertarPrincipio} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento al principio. \item\end{CompactList}\item 
+void {\bf InsertarFinal} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento al final. \item\end{CompactList}\item 
+void {\bf InsertarOrden} (const {\bf DatosPersonales} \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento de forma ordenada. \item\end{CompactList}\item 
+int {\bf Ocupacion} () const
+\begin{CompactList}\small\item\em Halla el numero de elementos. \item\end{CompactList}\item 
+bool {\bf Borrar} (const TCadena1 dat)
+\begin{CompactList}\small\item\em Borra un elemento de la lista. \item\end{CompactList}\item 
+void {\bf MostrarES} () const
+\begin{CompactList}\small\item\em Muestra toda la lista en castellano. \item\end{CompactList}\item 
+void {\bf MostrarEN} () const
+\begin{CompactList}\small\item\em Muestra toda la lista en ingles. \item\end{CompactList}\item 
+bool {\bf Buscar} (const TCadena1 i, {\bf DatosPersonales} \&dat) const
+\begin{CompactList}\small\item\em Busca un elemento en la lista. \item\end{CompactList}\item 
+bool {\bf Cargar} (const char nombre[20])
+\begin{CompactList}\small\item\em Carga de datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe existir nombre y debe estar correctamente formateado. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em nombre,:}]Nombre del fichero del que se volcara la informacion a la lista. \end{description}
+\end{Desc}
+\item\end{CompactList}\item 
+bool {\bf Guardar} (const char nombre[20]) const
+\begin{CompactList}\small\item\em Guarda todos los datos en nombre \begin{Desc}
+\item[Precondición:]Debe poderse sobrescribir nombre. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em nombre,:}]Nombre del fichero en el que se volcara la informacion de la lista. \end{description}
+\end{Desc}
+\item\end{CompactList}\item 
+void {\bf Eliminar} ()\label{classListaEnlazada_5e595393fb9bd8539629eaca34550721}
+
+\begin{CompactList}\small\item\em Vacia toda la lista. \item\end{CompactList}\item 
+{\bf $\sim$ListaEnlazada} ()\label{classListaEnlazada_df08c43000ede48ffa5ced078616c2b1}
+
+\begin{CompactList}\small\item\em Destructor de la clase. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos privados}
+\begin{CompactItemize}
+\item 
+PNodo \textbf{l}\label{classListaEnlazada_1911f69a7ec86d04fc02fadf9405ff61}
+
+\item 
+{\bf Meses} \textbf{M}\label{classListaEnlazada_e26f5f0bf901b0a87bf46924cb71abce}
+
+\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}, almacena la informacion relativa a los meses en una lista enlazada. Sus atributos son:\begin{itemize}
+\item l: puntero que apunta a un TipoNodo, el comienzo de la lista.\item M: Tipo \doxyref{Meses}{p.}{classMeses}, contiene la informacion relativa a los meses. \end{itemize}
+
+
+
+
+\subsection{Documentación de las funciones miembro}
+\index{ListaEnlazada@{ListaEnlazada}!Clonar@{Clonar}}
+\index{Clonar@{Clonar}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::Clonar ({\bf ListaEnlazada} \& {\em dat})}\label{classListaEnlazada_5592c9afc4a35722b87ae9fc2639d20f}
+
+
+Copia la clase a dat. 
+
+\begin{Desc}
+\item[ATENCION: SE COPIARA A dat, Y NO AL CONTRARIO, se ha elegido esta impementacion por ser mas sencilla.]\end{Desc}
+\begin{Desc}
+\item[Precondición:]la clase debe estar correctamente inicializado. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]Tipo \doxyref{ListaEnlazada}{p.}{classListaEnlazada} a donde se copiara la configuracion \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!ObtenerMeses@{ObtenerMeses}}
+\index{ObtenerMeses@{ObtenerMeses}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::ObtenerMeses ({\bf Meses} \& {\em mes}) const}\label{classListaEnlazada_47219ac2729b7daa6ab41bbb29ec540e}
+
+
+Devuelve por parametro la configuracion de los \doxyref{Meses}{p.}{classMeses}. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em mes,:}]Parametro que se usara para guardar y devolver la configuracion de los meses \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!FiltrarPorMes@{FiltrarPorMes}}
+\index{FiltrarPorMes@{FiltrarPorMes}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::FiltrarPorMes (const int {\em i})}\label{classListaEnlazada_77ad8bdb80ddeb2d9fec40b2868b9425}
+
+
+Elimina todos los elementos que no sean del mes i. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em i,:}]mes que permanecera \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!FiltrarPorEdad@{FiltrarPorEdad}}
+\index{FiltrarPorEdad@{FiltrarPorEdad}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::FiltrarPorEdad (const int {\em i})}\label{classListaEnlazada_7f38a3fa6c85ca3fe229aa52b38405f5}
+
+
+Elimina todos los elementos menores(o =) que i. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em i,:}]edad que debe superar para permanecer el dato \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!InsertarPrincipio@{InsertarPrincipio}}
+\index{InsertarPrincipio@{InsertarPrincipio}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::InsertarPrincipio (const {\bf DatosPersonales} \& {\em dat})}\label{classListaEnlazada_e5bfbfd897fbec690d9a2eea8f575fa8}
+
+
+Inserta un elemento al principio. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} que se insertara en la lista \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!InsertarFinal@{InsertarFinal}}
+\index{InsertarFinal@{InsertarFinal}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::InsertarFinal (const {\bf DatosPersonales} \& {\em dat})}\label{classListaEnlazada_801bed36c4e29f62a8bc060b5bba220e}
+
+
+Inserta un elemento al final. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} que se insertara en la lista. \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!InsertarOrden@{InsertarOrden}}
+\index{InsertarOrden@{InsertarOrden}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::InsertarOrden (const {\bf DatosPersonales} \& {\em dat})}\label{classListaEnlazada_65c51ce247c1b6e1994b27d83428a896}
+
+
+Inserta un elemento de forma ordenada. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada y ordenada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} que se insertara en la lista. \end{description}
+\end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!Ocupacion@{Ocupacion}}
+\index{Ocupacion@{Ocupacion}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int ListaEnlazada::Ocupacion () const}\label{classListaEnlazada_234cfa905fe5a10240dc20bdd58471fb}
+
+
+Halla el numero de elementos. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Devuelve:]entero con en numero de elementos de la lista. \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!Borrar@{Borrar}}
+\index{Borrar@{Borrar}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ListaEnlazada::Borrar (const TCadena1 {\em dat})}\label{classListaEnlazada_0dca1b9ee554e8c08c15d045a858de78}
+
+
+Borra un elemento de la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]telefono para buscar el elemento a borrar de la lista. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha borrado correctamente, false en caso contrario. \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!MostrarES@{MostrarES}}
+\index{MostrarES@{MostrarES}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::MostrarES () const}\label{classListaEnlazada_12d1c81f7461cb71d418373482f69d95}
+
+
+Muestra toda la lista en castellano. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!MostrarEN@{MostrarEN}}
+\index{MostrarEN@{MostrarEN}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ListaEnlazada::MostrarEN () const}\label{classListaEnlazada_1099e1a3a94174dc44ed553b6c4cfff8}
+
+
+Muestra toda la lista en ingles. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ListaEnlazada::Buscar (const TCadena1 {\em i}, {\bf DatosPersonales} \& {\em dat}) const}\label{classListaEnlazada_d635249684ab87a395f0760d0c8e2df6}
+
+
+Busca un elemento en la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]\doxyref{DatosPersonales}{p.}{classDatosPersonales} donde se copiara el elemento encontrado. \item[{\em i,:}]telefono para buscar el elemento a borrar de la lista. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha encontrado, false en caso contrario. \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!Cargar@{Cargar}}
+\index{Cargar@{Cargar}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ListaEnlazada::Cargar (const char {\em nombre}[20])}\label{classListaEnlazada_800a9e74ebe60e7e53daec71a1a2cec3}
+
+
+Carga de datos\_\-per.txt \begin{Desc}
+\item[Precondición:]Debe existir nombre y debe estar correctamente formateado. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em nombre,:}]Nombre del fichero del que se volcara la informacion a la lista. \end{description}
+\end{Desc}
+
+
+\begin{Desc}
+\item[Devuelve:]false si se ha encontrado algun error de apertura \end{Desc}
+\index{ListaEnlazada@{ListaEnlazada}!Guardar@{Guardar}}
+\index{Guardar@{Guardar}!ListaEnlazada@{ListaEnlazada}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ListaEnlazada::Guardar (const char {\em nombre}[20]) const}\label{classListaEnlazada_c40cfd38c3ac55fdff959ad62addcd2c}
+
+
+Guarda todos los datos en nombre \begin{Desc}
+\item[Precondición:]Debe poderse sobrescribir nombre. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em nombre,:}]Nombre del fichero en el que se volcara la informacion de la lista. \end{description}
+\end{Desc}
+
+
+\begin{Desc}
+\item[Devuelve:]false si se ha encontrado algun error de apertura \end{Desc}
+
+
+La documentación para esta clase fué generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+Escritorio/fase3/src/{\bf listaenlazada.h}\item 
+Escritorio/fase3/src/{\bf listaenlazada.cpp}\end{CompactItemize}

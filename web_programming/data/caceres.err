@@ -1,0 +1,71 @@
+InnoDB: The first specified data file .\ibdata1 did not exist:
+InnoDB: a new database to be created!
+090108 12:38:46  InnoDB: Setting file .\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+090108 12:38:46  InnoDB: Log file .\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+090108 12:38:46  InnoDB: Log file .\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+090108 12:38:47  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '4.0.21-nt'  socket: ''  port: 3306  Source distribution
+090111 20:45:08  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090111 20:45:09  InnoDB: Flushing modified pages from the buffer pool...
+090111 20:45:09  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution
+090112 11:44:29  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090112 11:44:29  InnoDB: Flushing modified pages from the buffer pool...
+090112 11:44:29  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution
+090112 19:28:14  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090112 19:28:14  InnoDB: Flushing modified pages from the buffer pool...
+090112 19:28:14  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution
+090113 12:11:57  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090113 12:11:57  InnoDB: Flushing modified pages from the buffer pool...
+090113 12:11:57  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution
+090114 13:32:05  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090114 13:32:05  InnoDB: Flushing modified pages from the buffer pool...
+090114 13:32:05  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution
+090115 15:39:30  InnoDB: Database was not shut down normally.
+InnoDB: Starting recovery from log files...
+InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 43892
+InnoDB: Doing recovery: scanned up to log sequence number 0 43892
+090115 15:39:30  InnoDB: Flushing modified pages from the buffer pool...
+090115 15:39:30  InnoDB: Started
+E:\Archivos de programa\mysql\bin\mysqld.exe: ready for connections.
+Version: '4.0.21-debug'  socket: ''  port: 3306  Source distribution

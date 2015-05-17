@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="testgrafo_8cpp" kind="file">
+    <compoundname>testgrafo.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="grafo_8h" local="yes">grafo.h</includes>
+    <incdepgraph>
+      <node id="1251">
+        <label>iomanip</label>
+      </node>
+      <node id="1268">
+        <label>queue</label>
+      </node>
+      <node id="1241">
+        <label>limits</label>
+      </node>
+      <node id="1244">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1262">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h"/>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1259">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+      </node>
+      <node id="1247">
+        <label>string</label>
+      </node>
+      <node id="1258">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h"/>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h"/>
+        <childnode refid="1242" relation="include">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>Escritorio/EC3/src/testgrafo.cpp</label>
+        <link refid="testgrafo.cpp"/>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+      </node>
+      <node id="1250">
+        <label>string.h</label>
+      </node>
+      <node id="1253">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h"/>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>utility</label>
+      </node>
+      <node id="1248">
+        <label>sstream</label>
+      </node>
+      <node id="1240">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>iosfwd</label>
+      </node>
+      <node id="1267">
+        <label>cstdlib</label>
+      </node>
+      <node id="1246">
+        <label>iostream</label>
+      </node>
+      <node id="1249">
+        <label>ctype.h</label>
+      </node>
+      <node id="1242">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h"/>
+      </node>
+      <node id="1252">
+        <label>set</label>
+      </node>
+      <node id="1255">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1266">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>stdio.h</label>
+      </node>
+      <node id="1254">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h"/>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classGrafoTest" prot="public">GrafoTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testgrafo_8cpp_11868b06496e0b6e802e92c94816a3c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(GrafoTest, MetodosBasicos)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classGrafoTest" kindref="compound">GrafoTest</ref></type>
+        </param>
+        <param>
+          <type>MetodosBasicos</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testgrafo.cpp" line="33" bodyfile="/home/Mario/Escritorio/EC3/src/testgrafo.cpp" bodystart="33" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="testgrafo_8cpp_12b4d02c01aa42eefe54139d9dcfbd960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(GrafoTest, Algoritmos)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classGrafoTest" kindref="compound">GrafoTest</ref></type>
+        </param>
+        <param>
+          <type>Algoritmos</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/testgrafo.cpp" line="52" bodyfile="/home/Mario/Escritorio/EC3/src/testgrafo.cpp" bodystart="52" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion de los juegos de prueba de la clase grafo. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>07-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 2 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gtest_8h" kindref="compound">gtest/gtest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="grafo_8h" kindref="compound" tooltip="Declaracion de la clase grafo.">grafo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//Creamos<sp/>varias<sp/>instancias<sp/>con<sp/>las<sp/>que<sp/>trabajar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classGrafoTest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGrafoTest" kindref="compound">GrafoTest</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>testing::<ref refid="classtesting_1_1Test_143ef73098874414f6c9fbfa32f90ba95" kindref="member">Test</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref><sp/>*<ref refid="classGrafoTest_187f32e23107438a89c9657532181714b" kindref="member">G</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/><ref refid="classGrafoTest_12226b54b6ad99796d2639543f42f51eb" kindref="member">Sig</ref>,<ref refid="classGrafoTest_13b9f7b7213c1d521b900cf1158a0488b" kindref="member">a</ref>,<ref refid="classGrafoTest_1d2b58fd578a17949ae92b2f23a417aee" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafoTest_17fc48d95e60f64fce936a7213fea2e3c" kindref="member">SetUp</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafoTest_187f32e23107438a89c9657532181714b" kindref="member">G</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo no dirigido valuado.">Grafo</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafoTest_12226b54b6ad99796d2639543f42f51eb" kindref="member">Sig</ref>=0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafoTest_1ceaca37aadcf19e25f5d975b50524f23" kindref="member">TearDown</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classGrafoTest_187f32e23107438a89c9657532181714b" kindref="member">G</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classGrafoTest" kindref="compound">GrafoTest</ref>,MetodosBasicos){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;EsVacio());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(G-&gt;set_arco(0,1,5));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;20;i++)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;set_nodo(i));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(G-&gt;set_arco(0,1,5));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>,<sp/>G-&gt;get_arco(5,6));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(5,<sp/>G-&gt;get_arco(0,1));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>adyacente</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(G-&gt;Adyacente(0,1));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(G-&gt;Adyacente(2,1));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>el<sp/>borrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(G-&gt;del_arco(0,1));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>,G-&gt;get_arco(0,1));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="gtest_8h_165252d195eb5c09683b70370e9447b2f" kindref="member">TEST_F</ref>(<ref refid="classGrafoTest" kindref="compound">GrafoTest</ref>,Algoritmos){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Datos<sp/>ejemplo<sp/>para<sp/>creacion<sp/>grafo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member" tooltip="Tipo referente a los nodos del grafo.(entero).">TipoNodoGrafo</ref><sp/>nodos[10];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1100ccbbce021b9022905e74b443960e3" kindref="member" tooltip="Tipo referente al valor de los arcos del grafo.(entero).">TipoArcoGrafo</ref><sp/>arcos[10][10]<sp/>={{0,97,<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>,<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>,119,kInfinito,kInfinito,kInfinito,kInfinito,kInfinito},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{97,0,10,kInfinito,kInfinito,57,kInfinito,kInfinito,kInfinito,kInfinito},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,10,0,17,kInfinito,kInfinito,67,kInfinito,kInfinito,kInfinito},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,kInfinito,17,0,kInfinito,kInfinito,kInfinito,kInfinito,kInfinito,122},</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{119,kInfinito,kInfinito,kInfinito,0,kInfinito,kInfinito,37,kInfinito,kInfinito},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,57,kInfinito,kInfinito,kInfinito,0,63,kInfinito,50,kInfinito},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,kInfinito,67,kInfinito,kInfinito,63,0,kInfinito,61,kInfinito},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,kInfinito,kInfinito,kInfinito,37,kInfinito,kInfinito,0,72,kInfinito},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,kInfinito,kInfinito,kInfinito,kInfinito,50,61,72,0,153},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{kInfinito,kInfinito,kInfinito,122,kInfinito,kInfinito,kInfinito,kInfinito,153,0}};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>nodos[i]=i;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;set_nodo(nodos[i]));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;10;j++)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;set_arco(nodos[i],nodos[j],arcos[i][j]));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Warshall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>G-&gt;Warshall();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member" tooltip="Matriz de bool de tamaño kMaxVert x kMaxVert.">TipoMatrizBooleana</ref><sp/>B;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>G-&gt;get_warshall_path(B);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;10;j++)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(B[i][j]);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Floyd-path</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>G-&gt;Floyd();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member" tooltip="Matriz de tamaño kMaxVer x kMaxVert de tipo TipoArcoGrafo que se usara para representar...">TipoMatrizAdyacencia</ref><sp/>A;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>G-&gt;get_floyd_path(A);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(-1,A[0][0]);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(2,A[0][3]);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(3,A[0][9]);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(5,A[8][0]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(3,A[9][1]);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(8,A[9][7]);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Floyd-cost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>G-&gt;get_floyd_cost(A);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;10;j++)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest_8h_135f03ed1d38bce3c0e3854fe391feca9" kindref="member">EXPECT_NE</ref>(<ref refid="grafo_8h_1e6b53b2e25c3356e411efd5b30a400d4" kindref="member" tooltip="Constante para tratar el valor 9999 como infinito.">kInfinito</ref>,A[i][j]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(0,A[0][0]);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(124,A[0][3]);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(246,A[0][9]);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(204,A[8][0]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(149,A[9][1]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(225,A[9][7]);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Siguiente</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>G-&gt;Siguiente(nodos[0],nodos[9],Sig);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[1],Sig);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>G-&gt;Siguiente(nodos[5],nodos[2],Sig);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[1],Sig);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>G-&gt;Siguiente(nodos[5],nodos[6],Sig);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[6],Sig);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>G-&gt;Siguiente(nodos[5],nodos[5],Sig);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[5],Sig);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Adyacentes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>queue<sp/>&lt;TipoNodoGrafo&gt;<sp/>ady;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>G-&gt;Adyacentes(nodos[5],ady);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[1],ady.front());</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[6],ady.front());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[8],ady.front());</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>ady.pop();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(ady.empty());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>MayorGrado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>grado=0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[8],G-&gt;MayorGrado(grado));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(4,grado);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>MasDistantes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(262,G-&gt;MasDistantes(a,b));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[4],a);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[9],b);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>MasCorto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(10,G-&gt;MasCorto(a,b));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[1],a);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[2],b);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Excentricidad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(203,G-&gt;Excentricidad(nodos[5]));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>Centro</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_125e2998b97daf08eafcc1b5abc7dd622" kindref="member">EXPECT_EQ</ref>(nodos[5],G-&gt;Centro());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Probamos<sp/>ExisteCiclo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_10954fea9252af6aea1df2d8e6e6caa0e" kindref="member">EXPECT_TRUE</ref>(G-&gt;ExisteCiclo(nodos[4]));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;del_arco(1,5));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;del_arco(2,6));</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;del_arco(7,4));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1bc8edefe2dbf52f5d12542a8e0acc3a3" kindref="member">ASSERT_TRUE</ref>(G-&gt;del_arco(8,6));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="gtest_8h_1588210b9be54e776cc7901a14a21bd31" kindref="member">EXPECT_FALSE</ref>(G-&gt;ExisteCiclo(nodos[4]));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/testgrafo.cpp"/>
+  </compounddef>
+</doxygen>

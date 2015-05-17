@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="prision_8h" kind="file">
+    <compoundname>prision.h</compoundname>
+    <includes local="no">iterator</includes>
+    <includes refid="planta_8h" local="yes">planta.h</includes>
+    <includes refid="persona_8h" local="yes">persona.h</includes>
+    <includedby refid="cargador_8h" local="yes">Escritorio/EC3/src/cargador.h</includedby>
+    <includedby refid="celda_8cpp" local="yes">Escritorio/EC3/src/celda.cpp</includedby>
+    <includedby refid="ec3_8cpp" local="yes">Escritorio/EC3/src/ec3.cpp</includedby>
+    <includedby refid="guardia_8cpp" local="yes">Escritorio/EC3/src/guardia.cpp</includedby>
+    <includedby refid="persona_8cpp" local="yes">Escritorio/EC3/src/persona.cpp</includedby>
+    <includedby refid="preso_8cpp" local="yes">Escritorio/EC3/src/preso.cpp</includedby>
+    <includedby refid="prision_8cpp" local="yes">Escritorio/EC3/src/prision.cpp</includedby>
+    <includedby refid="testpersona_8cpp" local="yes">Escritorio/EC3/src/testpersona.cpp</includedby>
+    <includedby refid="testprision_8cpp" local="yes">Escritorio/EC3/src/testprision.cpp</includedby>
+    <incdepgraph>
+      <node id="1059">
+        <label>list</label>
+      </node>
+      <node id="1060">
+        <label>queue</label>
+      </node>
+      <node id="1065">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>iterator</label>
+      </node>
+      <node id="1055">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision.h"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>fstream</label>
+      </node>
+      <node id="1069">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1061">
+        <label>stack</label>
+      </node>
+      <node id="1058">
+        <label>vector</label>
+      </node>
+      <node id="1077">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>cstdlib</label>
+      </node>
+      <node id="1073">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>iostream</label>
+      </node>
+      <node id="1074">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1078">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision.h"/>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="1081">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="1087">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="1079">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="1082">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="1085">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="1083">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="1088">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="1084">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="1080">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPrision" prot="public">Prision</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="prision_8h_14931acdab06485183ad87a52363b91db" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kNumCeldaCastigo</definition>
+        <argsstring></argsstring>
+        <name>kNumCeldaCastigo</name>
+        <initializer> 1101</initializer>
+        <briefdescription>
+<para>Constante con el numero de la celda de castigo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/prision.h" line="18" bodyfile="/home/Mario/Escritorio/EC3/src/prision.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementación de la clase <ref refid="classPrision" kindref="compound">Prision</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>28/04/09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>PRISION_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PRISION_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18" refid="prision_8h_14931acdab06485183ad87a52363b91db" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="prision_8h_14931acdab06485183ad87a52363b91db" kindref="member" tooltip="Constante con el numero de la celda de castigo.">kNumCeldaCastigo</ref><sp/>=<sp/>1101;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="planta_8h" kindref="compound" tooltip="Declaracion de la clase planta.">planta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="persona_8h" kindref="compound" tooltip="Declaracion de la clase abstracta Persona.">persona.h</ref>&quot;</highlight></codeline>
+<codeline lineno="26" refid="classPrision" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classPrision_1a62c797daed7c29aa6a4cda35e4d6543" kindref="member">~Prision</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref>*<sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">get_instancia</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" kindref="member">set_planta</ref>(<ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_156a0a7eae363c587c04922dde613ca84" kindref="member">get_numero_plantas</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref>*<sp/><ref refid="classPrision_139bb839541f452289be3215ac7c9d4b8" kindref="member">get_planta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;posicion)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_1878f3ec84a96b71263251cc0b0bea362" kindref="member">MostrarPrision</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_17446ac4094d9a93a0542d567a92e95e7" kindref="member">Destruir</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_1ac30af72defaeddd1d534f8762116b8a" kindref="member">set_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;pos,<sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_10a4c122c6743e7fab7a5b62c05e79dd4" kindref="member">ocupacion_celda</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;celda)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classPrision_167c18411597da6386892fff0a046e3b5" kindref="member">sacar_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>celda);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classPrision_11969c3f8073eabb4343529a10287e2a0" kindref="member">get_persona</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;celda)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_12c7faa2a038b1fdfc45eb6469c9d7acc" kindref="member">get_ancho_planta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_115faba9849c3836b7380f6bf7a06caca" kindref="member">get_alto_planta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_1a6ef2f3c44c5d2ff1ad1e8c3899ea7c2" kindref="member">get_entrada_panta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_1582cc08fb4f7c12e9010b0e31f5a6bf3" kindref="member">get_salida_planta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;planta)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_1458e85aca8aee3aa41ae16753093a5f0" kindref="member">meter_celda_castigo</ref>(<ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_11a5595f579bfab6b95308707365b472a" kindref="member">meter_en_fugados</ref>(<ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPrision_161926ad8f4236bc9bc4598779bc017ff" kindref="member">IniciarSimulacion</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classPrision_169eed05859f7f338cb200ef2dfdc8d05" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_169eed05859f7f338cb200ef2dfdc8d05" kindref="member">get_turno</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPrision_1faaa9958fc4848607ae84709e0984101" kindref="member" tooltip="Entero que almacena el turno actual de la simulacion.">turno_</ref>;}<sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50" refid="classPrision_11eb513ef25f72b55c20f35007edabc8b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref>*<sp/><ref refid="classPrision_11eb513ef25f72b55c20f35007edabc8b" kindref="member">instancia_</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classPrision_16bee875b59952faf2eba1e7cfe1c19f4" kindref="member">Prision</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classPrision_1a4a1d11a59f4c03c80493927ded230bf" refkind="member"><highlight class="normal"><sp/><sp/>list<sp/>&lt;Persona*&gt;<sp/><ref refid="classPrision_1a4a1d11a59f4c03c80493927ded230bf" kindref="member" tooltip="Lista de las personas almacenadas en la celda de castigo.">celda_castigo_</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="classPrision_1ca386e5c333f80b5cee1ee678d6859f4" refkind="member"><highlight class="normal"><sp/><sp/>list<sp/>&lt;Persona*&gt;<sp/><ref refid="classPrision_1ca386e5c333f80b5cee1ee678d6859f4" kindref="member" tooltip="Lista de personas que se han fugado.">fugados_</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="classPrision_1faaa9958fc4848607ae84709e0984101" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPrision_1faaa9958fc4848607ae84709e0984101" kindref="member" tooltip="Entero que almacena el turno actual de la simulacion.">turno_</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="classPrision_1620a8c402f03da4cdf93004eab3179c9" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;Planta*&gt;<sp/>*<ref refid="classPrision_1620a8c402f03da4cdf93004eab3179c9" kindref="member" tooltip="Vector que contiene todas las plantas de la prision.">plantas_</ref>;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PRISION_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/prision.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="namespacetesting" kind="namespace">
+    <compoundname>testing</compoundname>
+    <innerclass refid="classtesting_1_1Message" prot="public">testing::Message</innerclass>
+    <innerclass refid="classtesting_1_1ScopedFakeTestPartResultReporter" prot="public">testing::ScopedFakeTestPartResultReporter</innerclass>
+    <innerclass refid="classtesting_1_1TestPartResult" prot="public">testing::TestPartResult</innerclass>
+    <innerclass refid="classtesting_1_1TestPartResultArray" prot="public">testing::TestPartResultArray</innerclass>
+    <innerclass refid="classtesting_1_1TestPartResultReporterInterface" prot="public">testing::TestPartResultReporterInterface</innerclass>
+    <innerclass refid="classtesting_1_1AssertionResult" prot="public">testing::AssertionResult</innerclass>
+    <innerclass refid="classtesting_1_1Test" prot="public">testing::Test</innerclass>
+    <innerclass refid="classtesting_1_1TestInfo" prot="public">testing::TestInfo</innerclass>
+    <innerclass refid="classtesting_1_1Environment" prot="public">testing::Environment</innerclass>
+    <innerclass refid="classtesting_1_1UnitTest" prot="public">testing::UnitTest</innerclass>
+    <innernamespace refid="namespacetesting_1_1internal">testing::internal</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetesting_1e87109d90628580ab2d751fcb36fc975" prot="public" static="no">
+        <name>TestPartResultType</name>
+        <enumvalue id="namespacetesting_1e87109d90628580ab2d751fcb36fc975e815b64e766eaff67a27e79f4346a037" prot="public">
+          <name>TPRT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetesting_1e87109d90628580ab2d751fcb36fc97512d14e9cb7a971c442a978b125fef228" prot="public">
+          <name>TPRT_NONFATAL_FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetesting_1e87109d90628580ab2d751fcb36fc975be071bd93da3babe196a6e02914ee679" prot="public">
+          <name>TPRT_FATAL_FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="44" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetesting_19cac1f5e8a177c033ab6b61c230dc0b8" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int testing::kMaxStackTraceDepth</definition>
+        <argsstring></argsstring>
+        <name>kMaxStackTraceDepth</name>
+        <initializer> 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="97" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetesting_1c971b4a24c645d332b216d2e8002402f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::GTEST_DECLARE_string_</definition>
+        <argsstring>(death_test_style)</argsstring>
+        <name>GTEST_DECLARE_string_</name>
+        <param>
+          <type>death_test_style</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-death-test.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_165c959bf8be30a10b2a122c50f36305b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; testing::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Message &amp;sb)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>sb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" line="218" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-message.h" bodystart="218" bodyend="220"/>
+        <references refid="classtesting_1_1Message_16143ce78324693b7b505c4a0c862c033" compoundref="gtest-message_8h" startline="185" endline="187">testing::Message::GetString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_15812c47abd9863f4f1eef439c4378018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; testing::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const TestPartResult &amp;result)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1984f1c280ed67aa6fba294883a6fb0c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::GTEST_DECLARE_int32_</definition>
+        <argsstring>(stack_trace_depth)</argsstring>
+        <name>GTEST_DECLARE_int32_</name>
+        <param>
+          <type>stack_trace_depth</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1d442d8de4238b60c7e5971ff926a433b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::GTEST_DECLARE_bool_</definition>
+        <argsstring>(show_internal_stack_frames)</argsstring>
+        <name>GTEST_DECLARE_bool_</name>
+        <param>
+          <type>show_internal_stack_frames</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1b729c66d933de254c89cddb7f3c71ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::AssertionSuccess</definition>
+        <argsstring>()</argsstring>
+        <name>AssertionSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="181"/>
+        <referencedby refid="gtest__pred__impl_8h_1bff1527f52d111c17363653c1fbcaf17" compoundref="gtest__pred__impl_8h" startline="87" endline="98">AssertPred1Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_178043d6a1ec90420da5a0b06999f5da3" compoundref="gtest__pred__impl_8h" startline="131" endline="146">AssertPred2Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_1c7ee5e2ca4f22d94e70b62deee763c84" compoundref="gtest__pred__impl_8h" startline="182" endline="201">AssertPred3Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_113d4772c4febac7e79847158d3c0c301" compoundref="gtest__pred__impl_8h" startline="240" endline="263">AssertPred4Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_1654b27ad7a124310670cbc3fe40e721b" compoundref="gtest__pred__impl_8h" startline="305" endline="332">AssertPred5Helper</referencedby>
+        <referencedby refid="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" compoundref="gtest_8h" startline="613" endline="626">testing::internal::CmpHelperEQ</referencedby>
+        <referencedby refid="namespacetesting_1_1internal_10cbdac3d4f193f9e41b888a23967ce49" compoundref="gtest_8h" startline="840" endline="863">testing::internal::CmpHelperFloatingPointEQ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_107666fd50196e9727d0731c056fa1957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::AssertionFailure</definition>
+        <argsstring>(const Message &amp;msg)</argsstring>
+        <name>AssertionFailure</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="184"/>
+        <referencedby refid="gtest__pred__impl_8h_1bff1527f52d111c17363653c1fbcaf17" compoundref="gtest__pred__impl_8h" startline="87" endline="98">AssertPred1Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_178043d6a1ec90420da5a0b06999f5da3" compoundref="gtest__pred__impl_8h" startline="131" endline="146">AssertPred2Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_1c7ee5e2ca4f22d94e70b62deee763c84" compoundref="gtest__pred__impl_8h" startline="182" endline="201">AssertPred3Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_113d4772c4febac7e79847158d3c0c301" compoundref="gtest__pred__impl_8h" startline="240" endline="263">AssertPred4Helper</referencedby>
+        <referencedby refid="gtest__pred__impl_8h_1654b27ad7a124310670cbc3fe40e721b" compoundref="gtest__pred__impl_8h" startline="305" endline="332">AssertPred5Helper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_114f739e29da2c05e23eb563597f31b22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+        <definition>Environment* testing::AddGlobalTestEnvironment</definition>
+        <argsstring>(Environment *env)</argsstring>
+        <name>AddGlobalTestEnvironment</name>
+        <param>
+          <type><ref refid="classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="546" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="546" bodyend="548"/>
+        <references refid="classtesting_1_1UnitTest_1b1427eccd1c7b3fd6a033e22d52cbdee">testing::UnitTest::AddEnvironment</references>
+        <references refid="classtesting_1_1UnitTest_1db04e1d682a2d7cfc3aa2c5afe3cac5f">testing::UnitTest::GetInstance</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_11995fbe86612c912ccc86d18f7e9ef6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::InitGoogleTest</definition>
+        <argsstring>(int *argc, char **argv)</argsstring>
+        <name>InitGoogleTest</name>
+        <param>
+          <type>int *</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="559"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1c5b3e5b1b222c47c29a832b4b781ee53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::InitGoogleTest</definition>
+        <argsstring>(int *argc, wchar_t **argv)</argsstring>
+        <name>InitGoogleTest</name>
+        <param>
+          <type>int *</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>wchar_t **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="563"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1009f08dca0562680a5704f6f88858ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::IsSubstring</definition>
+        <argsstring>(const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</argsstring>
+        <name>IsSubstring</name>
+        <param>
+          <type>const char *</type>
+          <declname>needle_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>needle</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="802"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1ddbc23e7639f0042e9ab95a16ae240dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::IsSubstring</definition>
+        <argsstring>(const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</argsstring>
+        <name>IsSubstring</name>
+        <param>
+          <type>const char *</type>
+          <declname>needle_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack_expr</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>needle</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>haystack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="805"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_11301ced25bb95bc43c5c9e9fd01d5270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::IsNotSubstring</definition>
+        <argsstring>(const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</argsstring>
+        <name>IsNotSubstring</name>
+        <param>
+          <type>const char *</type>
+          <declname>needle_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>needle</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="808"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1d99409245328d36bb2be994569c514af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::IsNotSubstring</definition>
+        <argsstring>(const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</argsstring>
+        <name>IsNotSubstring</name>
+        <param>
+          <type>const char *</type>
+          <declname>needle_expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>haystack_expr</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>needle</declname>
+        </param>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>haystack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="811"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_18df0239796a2652f170dd5237e5a04dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::FloatLE</definition>
+        <argsstring>(const char *expr1, const char *expr2, float val1, float val2)</argsstring>
+        <name>FloatLE</name>
+        <param>
+          <type>const char *</type>
+          <declname>expr1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="1185"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_155e89dc0f65ab5a155ffdf06e6eac327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::DoubleLE</definition>
+        <argsstring>(const char *expr1, const char *expr2, double val1, double val2)</argsstring>
+        <name>DoubleLE</name>
+        <param>
+          <type>const char *</type>
+          <declname>expr1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="1187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-death-test.h" line="43"/>
+  </compounddef>
+</doxygen>

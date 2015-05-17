@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classPreso" kind="class" prot="public">
+    <compoundname>Preso</compoundname>
+    <basecompoundref refid="classPersona" prot="public" virt="non-virtual">Persona</basecompoundref>
+    <includes refid="preso_8h" local="no">preso.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPreso_1076a15832c36f3e900da7d997494f617" prot="private" static="no" mutable="no">
+        <type>queue&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; *</type>
+        <definition>queue&lt;Posicion&gt;* Preso::orientacion_</definition>
+        <argsstring></argsstring>
+        <name>orientacion_</name>
+        <briefdescription>
+<para>Orden de eleccion a la hora de elegir la ruta de escape. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/preso.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPreso_1790d9dded27511a2e7680067d71d0bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Preso::Preso</definition>
+        <argsstring>(const string &amp;nombre, const char &amp;marca, const int &amp;espera, const Posicion orientacion[4], const int &amp;p, const int &amp;c)</argsstring>
+        <name>Preso</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>marca</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>espera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref></type>
+          <declname>orientacion</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classPreso" kindref="compound">Preso</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del preso </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marca</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>marca del preso </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>espera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>turnos que el preso debe esperar antes de actuar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientacion[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>orientacion para calcular la ruta del preso </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta en la que inicia el preso </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que inicia el preso </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="24" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_12bd84753d1ad3c2a2e62ff557776f9d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Preso::P2String</definition>
+        <argsstring>()</argsstring>
+        <name>P2String</name>
+        <reimplements refid="classPersona_1827d49fd22fb68461f1c725fd201c281">P2String</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pasa la informacion del preso a una cadena <simplesect kind="return"><para>cadena con la informacion de la preso </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="25" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="203" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_1de3a030f33a73a0becf63395afe1e376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Preso::~Preso</definition>
+        <argsstring>()</argsstring>
+        <name>~Preso</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase preso </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="26" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="194" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPreso_178b299c11367871e1d2cbbcbd8a17e45" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Preso::Mover</definition>
+        <argsstring>()</argsstring>
+        <name>Mover</name>
+        <reimplements refid="classPersona_1dfe58fef614d78a3bd7e728c9ce30c98">Mover</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mueve a la siguiente celda o si hay una puerta abierta, cambia de planta. <simplesect kind="return"><para>true si a pasado a otra celda, false si ha conseguido escapar de la carcel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="105" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_14529dbfdac1c8a8cbc870e52a90fa056" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Preso::UsarPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>UsarPuerta</name>
+        <reimplements refid="classPersona_1827d80881366e3e086d4d9d5fe726399">UsarPuerta</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que intenta abrir una puerta (si la hay) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_1d6070d6e577b06ede93e4e9f5f33da16" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Preso::Interactuar</definition>
+        <argsstring>()</argsstring>
+        <name>Interactuar</name>
+        <reimplements refid="classPersona_1fa25ad7cbf9d12b4cf4711800c748920">Interactuar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que roba una llave al primer <ref refid="classguardia" kindref="compound">guardia</ref> de la sala (si lo hay) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="26" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_19851666862eb7b29c53f4335f2c712f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Preso::TratarLlave</definition>
+        <argsstring>()</argsstring>
+        <name>TratarLlave</name>
+        <reimplements refid="classPersona_191f8eab1f237e3d4e42a227e4f185e4e">TratarLlave</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que recoge una llave de la celda (si la hay) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_1bef87bbd70ccd79dbcf2dcc68ea96866" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Preso::CalcularRuta</definition>
+        <argsstring>()</argsstring>
+        <name>CalcularRuta</name>
+        <reimplements refid="classPersona_1dfb69e4115ae0f1eddd7130b7cc38b8a">CalcularRuta</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que actualiza la ruta del preso </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="33" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="54" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_1d3806b43edaf22e089001c4c85f1c309" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Preso::CalcularRutaRecursivo</definition>
+        <argsstring>(const int &amp;posicion, stack&lt; Posicion &gt; *pilaux, bool visitados[300])</argsstring>
+        <name>CalcularRutaRecursivo</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>stack&lt; <ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref> &gt; *</type>
+          <declname>pilaux</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visitados</declname>
+          <array>[300]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classPreso_1644db910acb606163ce7f5c0fa6ba239" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Preso::ProbarLlaves</definition>
+        <argsstring>()</argsstring>
+        <name>ProbarLlaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usa todas las llaves que tiene para intentar abrir la puerta <simplesect kind="pre"><para>el preso en encuentra en la celda de la puerta </para></simplesect>
+<simplesect kind="return"><para>true si consige abrir la puerta false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/preso.cpp" bodystart="90" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>clase que define los atributos y metodos de un preso de la prision </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="152">
+        <label>Preso</label>
+        <link refid="classPreso"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>Persona</label>
+        <link refid="classPersona"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="154">
+        <label>Preso</label>
+        <link refid="classPreso"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>Persona</label>
+        <link refid="classPersona"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/preso.h" line="22" bodyfile="/home/Mario/Escritorio/EC3/src/preso.h" bodystart="22" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classPersona_105ccd9155daffb75e63bf7b33129afb9" prot="public" virt="non-virtual"><scope>Preso</scope><name>Actuar</name></member>
+      <member refid="classPreso_1bef87bbd70ccd79dbcf2dcc68ea96866" prot="private" virt="virtual"><scope>Preso</scope><name>CalcularRuta</name></member>
+      <member refid="classPreso_1d3806b43edaf22e089001c4c85f1c309" prot="private" virt="non-virtual"><scope>Preso</scope><name>CalcularRutaRecursivo</name></member>
+      <member refid="classPersona_1242597c6f6d16bbfbd7c9bb535bc036e" prot="protected" virt="non-virtual"><scope>Preso</scope><name>celda_</name></member>
+      <member refid="classPersona_133f40e6a924ac59dc360c06a43e5d772" prot="protected" virt="non-virtual"><scope>Preso</scope><name>Destino</name></member>
+      <member refid="classPersona_1aa564e0699b1b0fcd98ca2c620451a3e" prot="public" virt="non-virtual"><scope>Preso</scope><name>get_marca</name></member>
+      <member refid="classPersona_1edd6cec0572d84557723848814c6fb07" prot="public" virt="non-virtual"><scope>Preso</scope><name>get_nombre</name></member>
+      <member refid="classPersona_1905d516718f6c844ee610c10a276ac8d" prot="public" virt="non-virtual"><scope>Preso</scope><name>get_turno</name></member>
+      <member refid="classPreso_1d6070d6e577b06ede93e4e9f5f33da16" prot="private" virt="virtual"><scope>Preso</scope><name>Interactuar</name></member>
+      <member refid="classPersona_16307abb90e402a21dd35de5a8fd787da" prot="protected" virt="non-virtual"><scope>Preso</scope><name>llaves_</name></member>
+      <member refid="classPersona_17d71cc3f4afda6f8342aa726812025de" prot="protected" virt="non-virtual"><scope>Preso</scope><name>marca_</name></member>
+      <member refid="classPersona_1b7ff6a7c54d2da752d891725cc7713a4" prot="public" virt="non-virtual"><scope>Preso</scope><name>MostrarRuta</name></member>
+      <member refid="classPreso_178b299c11367871e1d2cbbcbd8a17e45" prot="private" virt="virtual"><scope>Preso</scope><name>Mover</name></member>
+      <member refid="classPersona_14b7da84c9a13d1a574d6bc57ca2995f3" prot="protected" virt="non-virtual"><scope>Preso</scope><name>nombre_</name></member>
+      <member refid="classPreso_1076a15832c36f3e900da7d997494f617" prot="private" virt="non-virtual"><scope>Preso</scope><name>orientacion_</name></member>
+      <member refid="classPreso_12bd84753d1ad3c2a2e62ff557776f9d5" prot="public" virt="virtual"><scope>Preso</scope><name>P2String</name></member>
+      <member refid="classPersona_10b0035b70cb2140c28caea37c4488721" prot="public" virt="non-virtual"><scope>Preso</scope><name>Persona</name></member>
+      <member refid="classPersona_1a5d7a70f9fb654635fd35318b070dcb6" prot="protected" virt="non-virtual"><scope>Preso</scope><name>planta_</name></member>
+      <member refid="classPreso_1790d9dded27511a2e7680067d71d0bb2" prot="public" virt="non-virtual"><scope>Preso</scope><name>Preso</name></member>
+      <member refid="classPreso_1644db910acb606163ce7f5c0fa6ba239" prot="private" virt="non-virtual"><scope>Preso</scope><name>ProbarLlaves</name></member>
+      <member refid="classPersona_156c7698f800a43476a72c8f34177c897" prot="public" virt="non-virtual"><scope>Preso</scope><name>put_llave</name></member>
+      <member refid="classPersona_177aae13b0b185d3df95c4c6d8df8cbe4" prot="protected" virt="non-virtual"><scope>Preso</scope><name>ruta_</name></member>
+      <member refid="classPersona_18493b4a96356762d54f7185934349351" prot="public" virt="non-virtual"><scope>Preso</scope><name>sacar_llave</name></member>
+      <member refid="classPersona_16767071fbaa5fd802831182f3067aab6" prot="public" virt="non-virtual"><scope>Preso</scope><name>set_celda</name></member>
+      <member refid="classPreso_19851666862eb7b29c53f4335f2c712f5" prot="private" virt="virtual"><scope>Preso</scope><name>TratarLlave</name></member>
+      <member refid="classPersona_1996f9da3f6b66d61b81ff10bddb88883" prot="protected" virt="non-virtual"><scope>Preso</scope><name>turno_</name></member>
+      <member refid="classPreso_14529dbfdac1c8a8cbc870e52a90fa056" prot="private" virt="virtual"><scope>Preso</scope><name>UsarPuerta</name></member>
+      <member refid="classPersona_10ec7ae504cd0d3c73588cff200755778" prot="public" virt="virtual"><scope>Preso</scope><name>~Persona</name></member>
+      <member refid="classPreso_1de3a030f33a73a0becf63395afe1e376" prot="public" virt="non-virtual"><scope>Preso</scope><name>~Preso</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

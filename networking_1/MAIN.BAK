@@ -1,0 +1,21 @@
+#include "interfaz.h"
+
+
+void main(){
+
+
+	//int gdriver = DETECT, gmode;
+	//initgraph(&gdriver,&gmode,"C:\\ARCHIV~1\\BC3.1\\BGI");
+
+	Interfaz.Iniciar();
+	Interfaz myI;
+
+	for(int i = 0; i<25;i++){
+		for(int t=i; t<25;t++){
+			myI.puerto.EscribirChar('h');
+		}
+		myI.puerto.EscribirChar('\n');
+		getch();
+	}
+	getch();
+}

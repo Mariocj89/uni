@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.1">
+  <compounddef id="dir_68849867a3306b1c94a3f79180c39b92" kind="dir">
+    <compoundname>/home/mario/Escritorio/Proyecto/Fase1/src/</compoundname>
+    <innerfile refid="categoria_8cpp">categoria.cpp</innerfile>
+    <innerfile refid="categoria_8h">categoria.h</innerfile>
+    <innerfile refid="fecha_8cpp">fecha.cpp</innerfile>
+    <innerfile refid="fecha_8h">fecha.h</innerfile>
+    <innerfile refid="gestor_8cpp">gestor.cpp</innerfile>
+    <innerfile refid="gestor_8h">gestor.h</innerfile>
+    <innerfile refid="lpi_8cpp">lpi.cpp</innerfile>
+    <innerfile refid="lpi_8h">lpi.h</innerfile>
+    <innerfile refid="noticias_8cpp">noticias.cpp</innerfile>
+    <innerfile refid="noticias_8h">noticias.h</innerfile>
+    <innerfile refid="ppal_8cpp">ppal.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mario/Escritorio/Proyecto/Fase1/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+\section{testing::Test Class Reference}
+\label{classtesting_1_1Test}\index{testing::Test@{testing::Test}}
+{\tt \#include $<$gtest.h$>$}
+
+Inheritance diagram for testing::Test::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.73913cm]{classtesting_1_1Test}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Test} ()
+\item 
+virtual void {\bf SetUp} ()
+\item 
+virtual void {\bf TearDown} ()
+\end{CompactItemize}
+\subsection*{Package Functions}
+\begin{CompactItemize}
+\item 
+virtual {\bf $\sim$Test} ()
+\item 
+virtual {\bf Setup\_\-should\_\-be\_\-spelled\_\-SetUp} $\ast$ {\bf Setup} ()
+\item 
+{\bf GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-} ({\bf Test})
+\end{CompactItemize}
+\subsection*{Static Package Functions}
+\begin{CompactItemize}
+\item 
+static void {\bf SetUpTestCase} ()
+\item 
+static void {\bf TearDownTestCase} ()
+\item 
+static bool {\bf HasFatalFailure} ()
+\item 
+static void {\bf RecordProperty} (const char $\ast$key, const char $\ast$value)
+\item 
+static void {\bf RecordProperty} (const char $\ast$key, int value)
+\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-pad0\_\-\_\-}:SetUpTestCaseFunc SetUpTestCaseFunc
+\item 
+{\bf \_\-\_\-pad1\_\-\_\-}:TearDownTestCaseFunc TearDownTestCaseFunc
+\item 
+{\bf \_\-\_\-pad2\_\-\_\-}:GTestFlagSaver$\ast$ const gtest\_\-flag\_\-saver\_\-
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void {\bf TestBody} ()=0
+\item 
+void {\bf Run} ()
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static bool {\bf HasSameFixtureClass} ()
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+class {\bf internal::TestInfoImpl}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct {\bf Setup\_\-should\_\-be\_\-spelled\_\-SetUp}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::Test@{testing::Test}!~Test@{$\sim$Test}}
+\index{~Test@{$\sim$Test}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual testing::Test::$\sim$Test ()\hspace{0.3cm}{\tt  [package, virtual]}}\label{classtesting_1_1Test_fb788db3d734171957dc11ebe5f1a9cb}
+
+
+\index{testing::Test@{testing::Test}!Test@{Test}}
+\index{Test@{Test}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Test::Test ()\hspace{0.3cm}{\tt  [protected]}}\label{classtesting_1_1Test_43ef73098874414f6c9fbfa32f90ba95}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::Test@{testing::Test}!SetUpTestCase@{SetUpTestCase}}
+\index{SetUpTestCase@{SetUpTestCase}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static void testing::Test::SetUpTestCase ()\hspace{0.3cm}{\tt  [inline, static, package]}}\label{classtesting_1_1Test_23c50ad7f4dd7c23eb7bead09ca1e25b}
+
+
+\index{testing::Test@{testing::Test}!TearDownTestCase@{TearDownTestCase}}
+\index{TearDownTestCase@{TearDownTestCase}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static void testing::Test::TearDownTestCase ()\hspace{0.3cm}{\tt  [inline, static, package]}}\label{classtesting_1_1Test_a9a9d7e19e41c660b6880d2d25918726}
+
+
+\index{testing::Test@{testing::Test}!HasFatalFailure@{HasFatalFailure}}
+\index{HasFatalFailure@{HasFatalFailure}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static bool testing::Test::HasFatalFailure ()\hspace{0.3cm}{\tt  [static, package]}}\label{classtesting_1_1Test_765821feda4da8debf420af85aa597b5}
+
+
+\index{testing::Test@{testing::Test}!RecordProperty@{RecordProperty}}
+\index{RecordProperty@{RecordProperty}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static void testing::Test::RecordProperty (const char $\ast$ {\em key}, const char $\ast$ {\em value})\hspace{0.3cm}{\tt  [static, package]}}\label{classtesting_1_1Test_91032b7a73c1881bbab4db263fa44447}
+
+
+\index{testing::Test@{testing::Test}!RecordProperty@{RecordProperty}}
+\index{RecordProperty@{RecordProperty}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static void testing::Test::RecordProperty (const char $\ast$ {\em key}, int {\em value})\hspace{0.3cm}{\tt  [static, package]}}\label{classtesting_1_1Test_3992f48623adaaa73107c1b6263cdc56}
+
+
+\index{testing::Test@{testing::Test}!SetUp@{SetUp}}
+\index{SetUp@{SetUp}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void testing::Test::SetUp ()\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classtesting_1_1Test_aa64e7ad495ea976b98f97a5f3738c35}
+
+
+
+
+Reimplemented in {\bf ArbolTest} \doxyref{}{p.}{classArbolTest_a823fbcab8f072ec6737eee597f4856d}, {\bf CeldaTest} \doxyref{}{p.}{classCeldaTest_5ff73c9b8bc9ca8fc62c3acbc8dc0144}, {\bf ColaGenTest} \doxyref{}{p.}{classColaGenTest_f8bcfa3f92ebce820d5a862fa5eca5a7}, {\bf GrafoTest} \doxyref{}{p.}{classGrafoTest_7fc48d95e60f64fce936a7213fea2e3c}, {\bf LlaveTest} \doxyref{}{p.}{classLlaveTest_582fe44f7d7b2aa6df5c415b95ede8e7}, {\bf PersonaTest} \doxyref{}{p.}{classPersonaTest_e49bbdf5cebf1ebe26e15fcfbacaa35c}, and {\bf PuertaTest} \doxyref{}{p.}{classPuertaTest_042e0662ae8c4750bda875799ed23205}.\index{testing::Test@{testing::Test}!TearDown@{TearDown}}
+\index{TearDown@{TearDown}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void testing::Test::TearDown ()\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classtesting_1_1Test_1f5480b7d2c1067f7bba77a8993cf12f}
+
+
+
+
+Reimplemented in {\bf ArbolTest} \doxyref{}{p.}{classArbolTest_4ef59e6e743d7178fc177087ebc41bff}, {\bf CeldaTest} \doxyref{}{p.}{classCeldaTest_694fd2a9195c4618135af2485af87d01}, {\bf ColaGenTest} \doxyref{}{p.}{classColaGenTest_400b35cff4bb5eb074025459342ae25f}, {\bf GrafoTest} \doxyref{}{p.}{classGrafoTest_ceaca37aadcf19e25f5d975b50524f23}, {\bf LlaveTest} \doxyref{}{p.}{classLlaveTest_2c4dd49f094842f2ff5ac3cb1d054d43}, {\bf PersonaTest} \doxyref{}{p.}{classPersonaTest_dba37f312fd5ccd6f0a8d3983d756cc8}, and {\bf PuertaTest} \doxyref{}{p.}{classPuertaTest_904a39a38b4e64472702662c9ffa258c}.\index{testing::Test@{testing::Test}!HasSameFixtureClass@{HasSameFixtureClass}}
+\index{HasSameFixtureClass@{HasSameFixtureClass}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static bool testing::Test::HasSameFixtureClass ()\hspace{0.3cm}{\tt  [static, private]}}\label{classtesting_1_1Test_b3e94213b33ebf1443b00c11b777ef98}
+
+
+\index{testing::Test@{testing::Test}!TestBody@{TestBody}}
+\index{TestBody@{TestBody}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void testing::Test::TestBody ()\hspace{0.3cm}{\tt  [private, pure virtual]}}\label{classtesting_1_1Test_7c987a80f78dec5eba1aee0b9bb726a8}
+
+
+\index{testing::Test@{testing::Test}!Run@{Run}}
+\index{Run@{Run}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::Test::Run ()\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1Test_9cc0df5ee0753f4578f12e0e72c1aa85}
+
+
+\index{testing::Test@{testing::Test}!Setup@{Setup}}
+\index{Setup@{Setup}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Setup\_\-should\_\-be\_\-spelled\_\-SetUp}$\ast$ testing::Test::Setup ()\hspace{0.3cm}{\tt  [inline, package, virtual]}}\label{classtesting_1_1Test_9d4162224b354f9d29e0816d89dde567}
+
+
+\index{testing::Test@{testing::Test}!GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}}
+\index{GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::Test::GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\- ({\bf Test})\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1Test_29540d1bf03baf570118c6e56e4ae901}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{testing::Test@{testing::Test}!internal::TestInfoImpl@{internal::TestInfoImpl}}
+\index{internal::TestInfoImpl@{internal::TestInfoImpl}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}friend class internal::TestInfoImpl\hspace{0.3cm}{\tt  [friend]}}\label{classtesting_1_1Test_5aa7b30faff2d57475f7e9eea1bc8eaa}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::Test@{testing::Test}!__pad0__@{\_\-\_\-pad0\_\-\_\-}}
+\index{__pad0__@{\_\-\_\-pad0\_\-\_\-}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::Test::\_\-\_\-pad0\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1Test_ccbfb9e722f1f1fef94248d056ed918c}
+
+
+\index{testing::Test@{testing::Test}!__pad1__@{\_\-\_\-pad1\_\-\_\-}}
+\index{__pad1__@{\_\-\_\-pad1\_\-\_\-}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::Test::\_\-\_\-pad1\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1Test_b4fbbeba80a377c0ab2ea2793c2a2a33}
+
+
+\index{testing::Test@{testing::Test}!__pad2__@{\_\-\_\-pad2\_\-\_\-}}
+\index{__pad2__@{\_\-\_\-pad2\_\-\_\-}!testing::Test@{testing::Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf testing::Test::\_\-\_\-pad2\_\-\_\-}\hspace{0.3cm}{\tt  [package]}}\label{classtesting_1_1Test_11223d23ca155b8a85bf63b8f1b0074c}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest.h}\end{CompactItemize}

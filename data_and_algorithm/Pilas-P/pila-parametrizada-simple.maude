@@ -1,0 +1,76 @@
+fmod PILA{X :: TRIV} is
+protecting BOOL .
+protecting NAT .
+sort Pila{X} .
+
+
+op crear : -> Pila{X} [ctor] .
+op apilar : Pila{X} X$Elt -> Pila{X} [ctor] .
+op desapilar : Pila{X} -> [Pila{X}] .
+op cima : Pila{X} -> [X$Elt] .
+op esVacia : Pila{X} -> Bool .
+
+
+**** COMO EJERCICIO, DEFINE LAS ECUACIONES CORRESPONDIENTES A LAS OPERACIONES SIGUIENTES
+**** Posteriormente, comprueba la validez de tus operaciones con las reducciones
+**** que encontrarás al final del módulo
+**** op card : Pila{X} -> Nat . *** obtiene el numero de elementos de la Pila
+**** op pertenece : Pila{X} X$Elt -> Bool . *** indica si un elemento está o no en la pila
+**** op invertir : Pila{X} -> Pila{X} . *** Invierte una pila
+**** op fondo : Pila{X} -> [X$Elt] . *** Retorna el elemento del fondo de la pila
+**** op concatenar : Pila{X} Pila{X} -> Pila{X} . *** concatena dos pilas
+********************************************
+
+
+vars P Q : Pila{X} .
+var I J : X$Elt .
+
+cmb desapilar(P) : Pila{X} if (not esVacia(P)) .
+eq desapilar (apilar(P, I)) = P .
+
+cmb cima (P): X$Elt if (not esVacia(P)) .
+eq cima (apilar(P, I)) = I .
+
+eq esVacia (crear) = true .
+eq esVacia (apilar(P, I)) = false .
+endfm
+
+***( 
+***Estas reducciones deben probarse con una pila de enteros (o naturales).
+
+red desapilar(crear) .
+--- result [Pila{Int}]: desapilar(crear)
+red desapilar(apilar(apilar(apilar(crear,4),5),6)) .
+--- result Pila{Int}: apilar(apilar(crear, 4), 5)
+
+red cima(apilar(apilar(crear,5),6)) .
+--- result NzNat: 6
+red cima(crear) .
+--- result [Int]: cima(crear)
+
+red esVacia(apilar(crear,5)) .
+--- result Bool: false
+red esVacia(crear) .
+--- result Bool: true
+
+****** Las reducciones que vienen a continuación son válidas
+****** unicamente cuando se hayan definido las operaciones correspondientes
+red invertir (apilar(apilar(crear,5),6)) .
+--- result Pila{Int}: apilar(apilar(crear, 6), 5)
+red concatenar(apilar(crear,6),apilar(crear,4)) .
+--- result Pila{Int}: apilar(apilar(crear, 6), 4)
+
+red fondo(apilar(apilar(crear,5),6)) .
+--- result NzNat: 5
+red fondo(crear) .
+--- result [Int]: fondo(crear)
+red card (crear) .
+--- result Zero: 0
+
+red card(apilar(apilar(apilar(crear,4),5),6)) .
+--- result NzNat: 3
+red pertenece(apilar(apilar(apilar(crear,4),5),6),2) .
+--- result Bool: false
+red pertenece(apilar(apilar(apilar(crear,4),5),6),5) .
+--- result Bool: true
+)

@@ -1,0 +1,1143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classGrafo" kind="class" prot="public">
+    <compoundname>Grafo</compoundname>
+    <includes refid="grafo_8h" local="no">grafo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grafo::num_nodos_</definition>
+        <argsstring></argsstring>
+        <name>num_nodos_</name>
+        <briefdescription>
+<para>Numero de nodos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="152" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="152" bodyend="-1"/>
+        <referencedby refid="classGrafo_15321811e9af692715820ae9bd6423637" compoundref="grafo_8h" startline="112">get_num_nodos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" prot="private" static="no" mutable="no">
+        <type><ref refid="grafo_8h_1e05f8d1796227eaf9027828807e77936" kindref="member">TipoVectorNodos</ref></type>
+        <definition>TipoVectorNodos Grafo::nodos_</definition>
+        <argsstring></argsstring>
+        <name>nodos_</name>
+        <briefdescription>
+<para>Vector que almacena los nodos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="153" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_1e330a15971717243fd7469f7e79f8ba0" prot="private" static="no" mutable="no">
+        <type><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member">TipoMatrizAdyacencia</ref></type>
+        <definition>TipoMatrizAdyacencia Grafo::arcos_</definition>
+        <argsstring></argsstring>
+        <name>arcos_</name>
+        <briefdescription>
+<para>Matriz de adyacencia, para almacenar los arcos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="154" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" prot="private" static="no" mutable="no">
+        <type><ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member">TipoMatrizBooleana</ref></type>
+        <definition>TipoMatrizBooleana Grafo::warshall_path_</definition>
+        <argsstring></argsstring>
+        <name>warshall_path_</name>
+        <briefdescription>
+<para>Matriz boleana de Camino (Warshall - Path). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="156" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" prot="private" static="no" mutable="no">
+        <type><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member">TipoMatrizAdyacencia</ref></type>
+        <definition>TipoMatrizAdyacencia Grafo::floyd_cost_</definition>
+        <argsstring></argsstring>
+        <name>floyd_cost_</name>
+        <briefdescription>
+<para>Matriz de Costes (Floyd - Cost). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="157" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" prot="private" static="no" mutable="no">
+        <type><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member">TipoMatrizAdyacencia</ref></type>
+        <definition>TipoMatrizAdyacencia Grafo::floyd_path_</definition>
+        <argsstring></argsstring>
+        <name>floyd_path_</name>
+        <briefdescription>
+<para>Matriz de Camino (Floyd - Path). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="158" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGrafo_1d3c8b45fb50abc45e49d42ef78b79ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Grafo::Grafo</definition>
+        <argsstring>(void)</argsstring>
+        <name>Grafo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo constructor por defecto de la clase grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="111" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="18" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_15321811e9af692715820ae9bd6423637" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::get_num_nodos</definition>
+        <argsstring>(void) const</argsstring>
+        <name>get_num_nodos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Metodo que devuelve el numero de nodos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="112" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="112" bodyend="-1"/>
+        <references refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" compoundref="grafo_8h" startline="152">num_nodos_</references>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_100c241c3e011cb2b67e24ee803b30662" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::EsVacio</definition>
+        <argsstring>(void) const</argsstring>
+        <name>EsVacio</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que comprueba si el grafo esta vacio <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor booleano que indica si el grafo esta o no vacio </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="113" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_15ff1c53f81913e5cdb13d6b1077c667f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::set_arco</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, const TipoNodoGrafo &amp;destino, const int &amp;valor)</argsstring>
+        <name>set_arco</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta un nuevo arco en el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de origen del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de destino del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el peso del arco nuevo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo insertar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="114" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="61" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1202743d0396c9ccd66a16797a95a2a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::del_arco</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, const TipoNodoGrafo &amp;destino)</argsstring>
+        <name>del_arco</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que borra un arco del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de origen del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de destino del arco nuevo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo borrar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="115" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="81" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::Adyacente</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, const TipoNodoGrafo &amp;destino) const</argsstring>
+        <name>Adyacente</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que comprueba si dos nodos son adyacentes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor booleano que indica si los dos nodos son adyacentes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="116" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="102" bodyend="112"/>
+        <referencedby refid="classPlanta_121e8fd7acb76cbf0cfe947ef2fd3cb10" compoundref="planta_8h" startline="76" endline="76">Planta::Accesible</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_16f7d1daa75771801a8cb5b15869ba72d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::get_arco</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, const TipoNodoGrafo &amp;destino) const</argsstring>
+        <name>get_arco</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que retorna el peso de un arco <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo del arco </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo del arco </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor entero que contiene el peso del arco </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="117" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="120" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_16333bfcd9102154c2ca00effd457ac76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::set_nodo</definition>
+        <argsstring>(const TipoNodoGrafo &amp;n)</argsstring>
+        <name>set_nodo</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta un nuevo nodo en el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo que se desea insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo insertar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="118" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="139" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_163e6892c0bad12eb9c9d969462356ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::del_nodo</definition>
+        <argsstring>(const TipoNodoGrafo &amp;nodo)</argsstring>
+        <name>del_nodo</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>nodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que elimina un nodo del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que se desea eliminar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo borrar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="119" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="158" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1344e71ffc946fe568abd87be23081a94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::get_warshall_path</definition>
+        <argsstring>(TipoMatrizBooleana &amp;WP) const</argsstring>
+        <name>get_warshall_path</name>
+        <param>
+          <type><ref refid="grafo_8h_161958ae5e333bed0ba9acbae8239c3e8" kindref="member">TipoMatrizBooleana</ref> &amp;</type>
+          <declname>WP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve por parametro la matriz de caminos calculada por el algoritmo de warshall <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matriz booleana de caminos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="120" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="497" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1ea3df48d2408f0a4b4e60876e5220ff6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::get_floyd_path</definition>
+        <argsstring>(TipoMatrizAdyacencia &amp;FP) const </argsstring>
+        <name>get_floyd_path</name>
+        <param>
+          <type><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member">TipoMatrizAdyacencia</ref> &amp;</type>
+          <declname>FP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve por parametro la matriz de caminos calculada por el algoritmo de floyd <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matriz de caminos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="121" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="508" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1012df6698661eb60303cf0bdb3977044" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::get_floyd_cost</definition>
+        <argsstring>(TipoMatrizAdyacencia &amp;FC) const </argsstring>
+        <name>get_floyd_cost</name>
+        <param>
+          <type><ref refid="grafo_8h_1cb0e423c3f696ff8a83568aae94060d3" kindref="member">TipoMatrizAdyacencia</ref> &amp;</type>
+          <declname>FC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve por parametro la matriz de costes hallada por el algoritmo de floyd <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matriz de costes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="122" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="519" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::get_pos_nodo</definition>
+        <argsstring>(const TipoNodoGrafo &amp;N) const</argsstring>
+        <name>get_pos_nodo</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que nos devuelve la posicion de un nodo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo que buscamos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la posicion del nodo, -1 quiere decir que no se encuentra </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="123" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="660" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_15c365de560d70bb0f943827be01e3a6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarArcos</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarArcos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra los arcos del grafo (la matriz de adyacencia) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="126" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="215" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1f398482951c2d0d9ed485ae3a737158c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarNodos</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarNodos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el vector de nodos del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="127" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="199" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_112cff6a9e93b23ab60eb5d5d12f8e218" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarPW</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarPW</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra la matriz de Warshall <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="128" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="238" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_12c46ec74829edbedd9edd09f0a2d5919" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarFloydC</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarFloydC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra las matrices de coste y camino de Floyd <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="129" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="256" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_12612ac12da97ad8c1de4046521dfd41a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarEnProfundidad</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarEnProfundidad</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el recorrido en profundidad del grafo </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="130" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="529" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_18977179d2a324518ae9c5739ed73f3b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::MostrarEnAnchura</definition>
+        <argsstring>(void) const</argsstring>
+        <name>MostrarEnAnchura</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el recorrido en anchura del grafo </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="131" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="578" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1c8c3d8903ad014b5b6e7540e46a81cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::Warshall</definition>
+        <argsstring>(void)</argsstring>
+        <name>Warshall</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza el algoritmo de Warshall sobre el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="134" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="286" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_16ea9d2c7f7ebf7ae473d0bc42041cb4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::Floyd</definition>
+        <argsstring>(void)</argsstring>
+        <name>Floyd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza el algoritmo de Floyd sobre el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="135" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="310" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_14c0ba27c2dd5a3677e66af2acdb348e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::Siguiente</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, const TipoNodoGrafo destino, TipoNodoGrafo &amp;sig) const </argsstring>
+        <name>Siguiente</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el siguiente nodo en la ruta entre un origen y un destino <simplesect kind="pre"><para>Debe estar inicializada la matriz de floyd </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro de entrada salida que devuelve el siguiente nodo en la ruta entre origen y destino </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="136" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="343" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_125a7ac274277ddc0861a03785f29ec87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::Adyacentes</definition>
+        <argsstring>(const TipoNodoGrafo &amp;origen, TipoCjtoNodos &amp;ady) const </argsstring>
+        <name>Adyacentes</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member">TipoCjtoNodos</ref> &amp;</type>
+          <declname>ady</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el conjunto de nodos adyacentes al nodo actual <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo actual </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ady</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro de entrada salida que devuelve el conjunto de nodos adyacentes (en una cola) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="137" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="361" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1901231e4cb7c93017e36b7491e2db26c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+        <definition>TipoNodoGrafo Grafo::MayorGrado</definition>
+        <argsstring>(int &amp;grado) const</argsstring>
+        <name>MayorGrado</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>grado</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe existir algun nodo Funcion que devuelve el elemento con mayor grado de entrada y salida(es no dirigido) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>grado del elemento con mayor grado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>elemento con mayor grado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="138" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="430" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1a33a7c07992fbf47a0125701f6fd729a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::MasDistantes</definition>
+        <argsstring>(TipoNodoGrafo &amp;a, TipoNodoGrafo &amp;b) const</argsstring>
+        <name>MasDistantes</name>
+        <param>
+          <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion que halla los 2 elementos mas distantes entre si en cuanto a caminos minimos, los devuelve por parametro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uno de los 2 elementos mas distantes entre si </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uno de los 2 elementos mas distantes entre si </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>entero con la distancia entre los 2 nodos </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="139" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="457" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_19d6cbd612abdef73a92f6fb120eb4946" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::MasCorto</definition>
+        <argsstring>(TipoNodoGrafo &amp;a, TipoNodoGrafo &amp;b) const</argsstring>
+        <name>MasCorto</name>
+        <param>
+          <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Funcion que halla los 2 elementos menos distantes entre si, los devuelve por parametro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uno de los 2 elementos menoss distantes entre si </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uno de los 2 elementos menoss distantes entre si </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>entero con la distancia entre los 2 nodos </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="140" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="478" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_11e658641dd50ffafdbaa0a1a16035bfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::ANSaltos</definition>
+        <argsstring>(const TipoNodoGrafo &amp;nodo, TipoCjtoNodos &amp;nodos, const int &amp;distancia) const</argsstring>
+        <name>ANSaltos</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>nodo</declname>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member">TipoCjtoNodos</ref> &amp;</type>
+          <declname>nodos</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>distancia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene todos los nodos que se encuentran a n saltos de un nodo dado. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo desde el que empezar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodos encontrados </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distancia</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distancia dada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="141" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="630" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1759e2bb306cf3830a2fdd66d6de1a62f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::Excentricidad</definition>
+        <argsstring>(const TipoNodoGrafo &amp;nodo) const</argsstring>
+        <name>Excentricidad</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>nodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>debe haberse calculado la matriz de costes de floyd Metodo que calcula la excentricidad de un nodo, (el maximo de las distancias minimas a todos los nodos) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo del que se quiere calcular la excentricidad </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>entero con la excentricidad del nodo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="142" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="672" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1352046b0d3e115ac6e013657b4cead0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref></type>
+        <definition>TipoNodoGrafo Grafo::Centro</definition>
+        <argsstring>() const</argsstring>
+        <name>Centro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcula el centro del grafo, es decir, el nodo que tiene menor excentricidad <simplesect kind="return"><para>nodo considerado centro del grafo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="143" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="684" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_144b9f53140ae14ad60054104c105fc34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::ExisteCiclo</definition>
+        <argsstring>(const TipoNodoGrafo &amp;nodo) const</argsstring>
+        <name>ExisteCiclo</name>
+        <param>
+          <type>const <ref refid="grafo_8h_18e423b2f186557a37affc95091e047cb" kindref="member">TipoNodoGrafo</ref> &amp;</type>
+          <declname>nodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nodo que comprueba si existe un ciclo a partir de un nodo dado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo de partida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si existe un cilo, false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="144" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="701" bodyend="741"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classGrafo_1a10916bc791b8c23a52309107d104932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Grafo &amp;G)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGrafo" kindref="compound">Grafo</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt;, muestra la matrid de adyacencia <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo en el que se almacena toda la informacion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>grafo a mostrar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>flujo con toda la informacion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="146" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="406" bodyend="422"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGrafo_19d0eb1c3977698da6d05cd8b0d1d9c0c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::ObtenerEnProf</definition>
+        <argsstring>(const int &amp;posicion, bool visitados[kMaxVert], TipoCjtoNodos &amp;prof) const</argsstring>
+        <name>ObtenerEnProf</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visitados</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member">TipoCjtoNodos</ref> &amp;</type>
+          <declname>prof</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve por parametro todos los nodos en el orden obtenido por el recorrido en profundidad, para despues tratarlos en otro metodo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion en el vector &quot;nodos&quot; del cual se va a partir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitados[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodos visitados previamente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prof</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>conjunto con todos los elementos en el orden indicado por el recorrido en profundidad </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="150" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="549" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1f085eaf3d58dbcdaa78f0514f9b42d40" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::ObtenerEnAnch</definition>
+        <argsstring>(const int &amp;posicion, bool visitados[kMaxVert], TipoCjtoNodos &amp;anch) const</argsstring>
+        <name>ObtenerEnAnch</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visitados</declname>
+          <array>[kMaxVert]</array>
+        </param>
+        <param>
+          <type><ref refid="grafo_8h_1f3cc000f88d2566ca33dd725b2d7659f" kindref="member">TipoCjtoNodos</ref> &amp;</type>
+          <declname>anch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve por parametro todos los nodos en el orden obtenido por el recorrido en anchura, para despues tratarlos en otro metodo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion en el vector &quot;nodos&quot; del cual se va a partir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitados[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodos visitados previamente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>conjunto con todos los elementos en el orden inidicado por el recorrido en anchura </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="151" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.cpp" bodystart="598" bodyend="622"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase define un grafo no dirigido valuado. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/grafo.h" line="109" bodyfile="/home/Mario/Escritorio/EC3/src/grafo.h" bodystart="108" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classGrafo_1f4a79e0c0678ecd61759570bdb42a773" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Adyacente</name></member>
+      <member refid="classGrafo_125a7ac274277ddc0861a03785f29ec87" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Adyacentes</name></member>
+      <member refid="classGrafo_11e658641dd50ffafdbaa0a1a16035bfe" prot="public" virt="non-virtual"><scope>Grafo</scope><name>ANSaltos</name></member>
+      <member refid="classGrafo_1e330a15971717243fd7469f7e79f8ba0" prot="private" virt="non-virtual"><scope>Grafo</scope><name>arcos_</name></member>
+      <member refid="classGrafo_1352046b0d3e115ac6e013657b4cead0e" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Centro</name></member>
+      <member refid="classGrafo_1202743d0396c9ccd66a16797a95a2a20" prot="public" virt="non-virtual"><scope>Grafo</scope><name>del_arco</name></member>
+      <member refid="classGrafo_163e6892c0bad12eb9c9d969462356ecf" prot="public" virt="non-virtual"><scope>Grafo</scope><name>del_nodo</name></member>
+      <member refid="classGrafo_100c241c3e011cb2b67e24ee803b30662" prot="public" virt="non-virtual"><scope>Grafo</scope><name>EsVacio</name></member>
+      <member refid="classGrafo_1759e2bb306cf3830a2fdd66d6de1a62f" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Excentricidad</name></member>
+      <member refid="classGrafo_144b9f53140ae14ad60054104c105fc34" prot="public" virt="non-virtual"><scope>Grafo</scope><name>ExisteCiclo</name></member>
+      <member refid="classGrafo_16ea9d2c7f7ebf7ae473d0bc42041cb4f" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Floyd</name></member>
+      <member refid="classGrafo_16122b3cf632d33f1cb5d385363ed8f4c" prot="private" virt="non-virtual"><scope>Grafo</scope><name>floyd_cost_</name></member>
+      <member refid="classGrafo_1d6d3d4c5e457e9f8b43de4a69001722e" prot="private" virt="non-virtual"><scope>Grafo</scope><name>floyd_path_</name></member>
+      <member refid="classGrafo_16f7d1daa75771801a8cb5b15869ba72d" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_arco</name></member>
+      <member refid="classGrafo_1012df6698661eb60303cf0bdb3977044" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_floyd_cost</name></member>
+      <member refid="classGrafo_1ea3df48d2408f0a4b4e60876e5220ff6" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_floyd_path</name></member>
+      <member refid="classGrafo_15321811e9af692715820ae9bd6423637" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_num_nodos</name></member>
+      <member refid="classGrafo_136fbfae4091a6d8ba809f93c7f29cb74" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_pos_nodo</name></member>
+      <member refid="classGrafo_1344e71ffc946fe568abd87be23081a94" prot="public" virt="non-virtual"><scope>Grafo</scope><name>get_warshall_path</name></member>
+      <member refid="classGrafo_1d3c8b45fb50abc45e49d42ef78b79ee7" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Grafo</name></member>
+      <member refid="classGrafo_19d6cbd612abdef73a92f6fb120eb4946" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MasCorto</name></member>
+      <member refid="classGrafo_1a33a7c07992fbf47a0125701f6fd729a" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MasDistantes</name></member>
+      <member refid="classGrafo_1901231e4cb7c93017e36b7491e2db26c" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MayorGrado</name></member>
+      <member refid="classGrafo_15c365de560d70bb0f943827be01e3a6a" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarArcos</name></member>
+      <member refid="classGrafo_18977179d2a324518ae9c5739ed73f3b0" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarEnAnchura</name></member>
+      <member refid="classGrafo_12612ac12da97ad8c1de4046521dfd41a" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarEnProfundidad</name></member>
+      <member refid="classGrafo_12c46ec74829edbedd9edd09f0a2d5919" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarFloydC</name></member>
+      <member refid="classGrafo_1f398482951c2d0d9ed485ae3a737158c" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarNodos</name></member>
+      <member refid="classGrafo_112cff6a9e93b23ab60eb5d5d12f8e218" prot="public" virt="non-virtual"><scope>Grafo</scope><name>MostrarPW</name></member>
+      <member refid="classGrafo_16c9cfc668919f622d4b3ebf3736c67ab" prot="private" virt="non-virtual"><scope>Grafo</scope><name>nodos_</name></member>
+      <member refid="classGrafo_10eb4578d75539d2bddb3c056cc5140f6" prot="private" virt="non-virtual"><scope>Grafo</scope><name>num_nodos_</name></member>
+      <member refid="classGrafo_1f085eaf3d58dbcdaa78f0514f9b42d40" prot="private" virt="non-virtual"><scope>Grafo</scope><name>ObtenerEnAnch</name></member>
+      <member refid="classGrafo_19d0eb1c3977698da6d05cd8b0d1d9c0c" prot="private" virt="non-virtual"><scope>Grafo</scope><name>ObtenerEnProf</name></member>
+      <member refid="classGrafo_1a10916bc791b8c23a52309107d104932" prot="public" virt="non-virtual"><scope>Grafo</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classGrafo_15ff1c53f81913e5cdb13d6b1077c667f" prot="public" virt="non-virtual"><scope>Grafo</scope><name>set_arco</name></member>
+      <member refid="classGrafo_16333bfcd9102154c2ca00effd457ac76" prot="public" virt="non-virtual"><scope>Grafo</scope><name>set_nodo</name></member>
+      <member refid="classGrafo_14c0ba27c2dd5a3677e66af2acdb348e4" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Siguiente</name></member>
+      <member refid="classGrafo_1c8c3d8903ad014b5b6e7540e46a81cb6" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Warshall</name></member>
+      <member refid="classGrafo_14f1d21e22a26e5e06878318a8b3d8b44" prot="private" virt="non-virtual"><scope>Grafo</scope><name>warshall_path_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

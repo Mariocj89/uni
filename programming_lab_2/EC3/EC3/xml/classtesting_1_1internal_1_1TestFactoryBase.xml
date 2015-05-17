@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1TestFactoryBase" kind="class" prot="public">
+    <compoundname>testing::internal::TestFactoryBase</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1TestFactoryImpl" prot="public" virt="non-virtual">testing::internal::TestFactoryImpl&lt; TestClass &gt;</derivedcompoundref>
+    <includes refid="gtest-internal_8h" local="no">gtest-internal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1TestFactoryBase_12658d02fa0f996176b0130094b606c17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::internal::TestFactoryBase::~TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="528" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="528" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1TestFactoryBase_184e74bad4eccb3eb7df7c2a8f6f4d7b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classtesting_1_1Test" kindref="compound">Test</ref> *</type>
+        <definition>virtual Test* testing::internal::TestFactoryBase::CreateTest</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateTest</name>
+        <reimplementedby refid="classtesting_1_1internal_1_1TestFactoryImpl_14ab23677c6c41e57de97d2142c959f18">CreateTest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="532"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1TestFactoryBase_1fe6283d25da1b66b7a92ebeb5db867d3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestFactoryBase::TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="535" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="535" bodyend="535"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1TestFactoryBase_175cdf36c4859f15ca8d853c75cfa397f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestFactoryBase::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestFactoryBase)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1TestFactoryBase" kindref="compound">TestFactoryBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="538"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="204">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryBase"/>
+      </node>
+      <node id="205">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryImpl"/>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="526" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="526" bodyend="539"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_184e74bad4eccb3eb7df7c2a8f6f4d7b3" prot="public" virt="pure-virtual"><scope>testing::internal::TestFactoryBase</scope><name>CreateTest</name></member>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_175cdf36c4859f15ca8d853c75cfa397f" prot="private" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_1fe6283d25da1b66b7a92ebeb5db867d3" prot="protected" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>TestFactoryBase</name></member>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_12658d02fa0f996176b0130094b606c17" prot="public" virt="virtual"><scope>testing::internal::TestFactoryBase</scope><name>~TestFactoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

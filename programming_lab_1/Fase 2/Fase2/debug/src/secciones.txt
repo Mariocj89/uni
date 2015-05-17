@@ -1,0 +1,7 @@
+LPI: Guguel Blog
+Información de las secciones:
+S1#Deportes
+S3#Actualidad
+S5#Basket
+
+

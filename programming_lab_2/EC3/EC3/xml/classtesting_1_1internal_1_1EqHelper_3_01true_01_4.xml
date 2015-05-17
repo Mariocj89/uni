@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1EqHelper_3_01true_01_4" kind="class" prot="public">
+    <compoundname>testing::internal::EqHelper&lt; true &gt;</compoundname>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1EqHelper_3_01true_01_4_15282d5770e00c45f40ba4824425e230c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>static AssertionResult testing::internal::EqHelper&lt; true &gt;::Compare</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const T1 &amp;expected, const T2 &amp;actual)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="681" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="678" bodyend="684"/>
+        <references refid="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" compoundref="gtest_8h" startline="613" endline="626">testing::internal::CmpHelperEQ</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1EqHelper_3_01true_01_4_1fca81649a11ff352e877756d6954b0be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T1</declname>
+            <defname>T1</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>T2</declname>
+            <defname>T2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <definition>static AssertionResult testing::internal::EqHelper&lt; true &gt;::Compare</definition>
+        <argsstring>(const char *expected_expression, const char *actual_expression, const T1 &amp;expected, T2 *actual)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>expected_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>actual_expression</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>actual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="692" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="689" bodyend="696"/>
+        <references refid="namespacetesting_1_1internal_145932ad30a954e99267502602cb8f7d4" compoundref="gtest_8h" startline="613" endline="626">testing::internal::CmpHelperEQ</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="671" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="671" bodyend="697"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1EqHelper_3_01true_01_4_15282d5770e00c45f40ba4824425e230c" prot="public" virt="non-virtual"><scope>testing::internal::EqHelper&lt; true &gt;</scope><name>Compare</name></member>
+      <member refid="classtesting_1_1internal_1_1EqHelper_3_01true_01_4_1fca81649a11ff352e877756d6954b0be" prot="public" virt="non-virtual"><scope>testing::internal::EqHelper&lt; true &gt;</scope><name>Compare</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

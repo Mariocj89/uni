@@ -1,0 +1,112 @@
+\section{Guardia Class Reference}
+\label{classGuardia}\index{Guardia@{Guardia}}
+{\tt \#include $<$guardia.h$>$}
+
+Inheritance diagram for Guardia::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classGuardia}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+string {\bf P2String} ()
+\item 
+{\bf Guardia} (const string \&nombre, const char \&marca, const int \&espera, const int \&p, const int \&c)
+\item 
+{\bf $\sim$Guardia} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf UsarPuerta} ()
+\item 
+void {\bf Interactuar} ()
+\item 
+void {\bf TratarLlave} ()
+\item 
+void {\bf CalcularRuta} ()
+\item 
+bool {\bf Mover} ()
+\item 
+int {\bf DestinoRuta} () const
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Guardia@{Guardia}!Guardia@{Guardia}}
+\index{Guardia@{Guardia}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Guardia::Guardia (const string \& {\em nombre}, const char \& {\em marca}, const int \& {\em espera}, const int \& {\em p}, const int \& {\em c})}\label{classGuardia_968b1d9571cf0532a8e5fe0f7aad0018}
+
+
+Constructor por defecto de la clase \doxyref{guardia}{p.}{classguardia} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nombre}]nombre del \doxyref{guardia}{p.}{classguardia} \item[{\em marca}]marca del \doxyref{guardia}{p.}{classguardia} \item[{\em espera}]tiempo que debe esperar el \doxyref{guardia}{p.}{classguardia} para actuar \item[{\em p}]planta en la que inicia el \doxyref{guardia}{p.}{classguardia} \item[{\em c}]celda en la que se inicia el \doxyref{guardia}{p.}{classguardia} \end{description}
+\end{Desc}
+\index{Guardia@{Guardia}!~Guardia@{$\sim$Guardia}}
+\index{~Guardia@{$\sim$Guardia}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Guardia::$\sim$Guardia ()}\label{classGuardia_59312eeabb75f2c0b1659ba2d73c9732}
+
+
+Destructor de la clase \doxyref{guardia}{p.}{classguardia} 
+
+\subsection{Member Function Documentation}
+\index{Guardia@{Guardia}!P2String@{P2String}}
+\index{P2String@{P2String}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string Guardia::P2String ()\hspace{0.3cm}{\tt  [virtual]}}\label{classGuardia_7bdc01bf4017bd45ac861a55e6e52ad7}
+
+
+Pasa la informacion del \doxyref{guardia}{p.}{classguardia} a una cadena \begin{Desc}
+\item[Returns:]cadena con la informacion de la \doxyref{guardia}{p.}{classguardia} \end{Desc}
+
+
+Reimplemented from {\bf Persona} \doxyref{}{p.}{classPersona_827d49fd22fb68461f1c725fd201c281}.\index{Guardia@{Guardia}!UsarPuerta@{UsarPuerta}}
+\index{UsarPuerta@{UsarPuerta}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Guardia::UsarPuerta ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classGuardia_fda4ca67ebab9ab5e307a266b9ae22ee}
+
+
+Metodo que cierra la puerta que haya en la celda(en caso de que la haya) 
+
+Implements {\bf Persona} \doxyref{}{p.}{classPersona_827d80881366e3e086d4d9d5fe726399}.\index{Guardia@{Guardia}!Interactuar@{Interactuar}}
+\index{Interactuar@{Interactuar}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Guardia::Interactuar ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classGuardia_127c9942c98cd5332511d9383c2d76e9}
+
+
+Metodo que captura a un preso en la sala 
+
+Implements {\bf Persona} \doxyref{}{p.}{classPersona_fa25ad7cbf9d12b4cf4711800c748920}.\index{Guardia@{Guardia}!TratarLlave@{TratarLlave}}
+\index{TratarLlave@{TratarLlave}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Guardia::TratarLlave ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classGuardia_b14ab83ca126b82fb5b7341545682dcd}
+
+
+Metodo que controla el uso de las llaves 
+
+Implements {\bf Persona} \doxyref{}{p.}{classPersona_91f8eab1f237e3d4e42a227e4f185e4e}.\index{Guardia@{Guardia}!CalcularRuta@{CalcularRuta}}
+\index{CalcularRuta@{CalcularRuta}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Guardia::CalcularRuta ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classGuardia_ed3d1d16abfad909b98e66b57e6efeac}
+
+
+Metodo que actualiza la ruta del \doxyref{guardia}{p.}{classguardia} 
+
+Implements {\bf Persona} \doxyref{}{p.}{classPersona_dfb69e4115ae0f1eddd7130b7cc38b8a}.\index{Guardia@{Guardia}!Mover@{Mover}}
+\index{Mover@{Mover}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Guardia::Mover ()\hspace{0.3cm}{\tt  [private, virtual]}}\label{classGuardia_760220917460d685bff7113115a9cbb8}
+
+
+Se mueve a la siguiente celda \begin{Desc}
+\item[Returns:]true si se a podido mover correctamente \end{Desc}
+
+
+Implements {\bf Persona} \doxyref{}{p.}{classPersona_dfe58fef614d78a3bd7e728c9ce30c98}.\index{Guardia@{Guardia}!DestinoRuta@{DestinoRuta}}
+\index{DestinoRuta@{DestinoRuta}!Guardia@{Guardia}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Guardia::DestinoRuta () const\hspace{0.3cm}{\tt  [private]}}\label{classGuardia_dcf3ca4b4e21e2f658e4df726522b0f3}
+
+
+Halla la celda a la que debera de ir el \doxyref{guardia}{p.}{classguardia}. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf guardia.h}\item 
+Escritorio/EC3/src/{\bf guardia.cpp}\end{CompactItemize}

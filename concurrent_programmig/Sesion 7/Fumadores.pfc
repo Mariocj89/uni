@@ -1,0 +1,95 @@
+program Fumadores;
+
+process mesa;
+  entry poner(x1,y1:integer);
+  entry cogerF1;
+  entry cogerF2;
+  entry cogerF3;
+  var i,num:integer;
+  var items: array[1..3] of boolean ;
+  begin
+       repeat
+             select
+                   when num < 1 =>
+                        accept poner(x1,y1:integer) do begin
+                        items[x1] := true;
+                        items[y1] := true;
+                        end;
+                        num := 2;
+             or
+                   when (num = 2) AND (not items[1]) =>
+                        accept cogerF1 do
+                        items[2] := false;
+                        items[3] := false;
+                        num := 0;
+             or
+                   when (num = 2) AND (not items[2]) =>
+                        accept cogerF2 do
+                        items[1] := false;
+                        items[3] := false;
+                        num := 0;
+             or
+                   when (num = 2) AND (not items[3]) =>
+                        accept cogerF3 do
+                        items[1] := false;
+                        items[2] := false;
+                        num := 0;
+             end;
+       forever
+  end ;
+
+process agente;
+  var i,x,y:integer;
+  begin
+       repeat
+             x:=random(2)+1;
+             y:=x;
+             while x = y do
+                   y:=random(2)+1;
+             mesa.poner(x,y);
+             writeln('Agente pone: ',x,' y ',y);
+       forever
+  end ;
+
+process fumador1;
+  var id:integer;
+  begin
+       id:=1;
+       repeat
+             mesa.cogerF1;
+             writeln('Yo Fumo: ',id);
+       forever
+  end ;
+
+  process fumador2;
+  var id:integer;
+  begin
+       id:=2;
+       repeat
+             mesa.cogerF2;
+             writeln('Yo Fumo: ',id);
+       forever
+  end ;
+
+  process fumador3;
+  var id:integer;
+  begin
+       id:=3;
+       repeat
+             mesa.cogerF3;
+             writeln('Yo Fumo: ',id);
+       forever
+  end ;
+
+
+var
+   i:integer;
+begin
+  cobegin
+         mesa;
+         agente;
+         fumador1;
+         fumador2;
+         fumador3;
+  coend;
+end.

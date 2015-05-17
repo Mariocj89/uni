@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classErrorNumeroLlaves" kind="class" prot="public">
+    <compoundname>ErrorNumeroLlaves</compoundname>
+    <includes refid="errornumerollaves_8h" local="no">errornumerollaves.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classErrorNumeroLlaves_11d1bee2e5a8e51effc38531ab9e172d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ErrorNumeroLlaves::id_planta_</definition>
+        <argsstring></argsstring>
+        <name>id_planta_</name>
+        <briefdescription>
+<para>Identificador de la planta que lanzo el throw. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" line="23" bodyfile="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classErrorNumeroLlaves_1ea362e42a3f99dece01d77309a131bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorNumeroLlaves::ErrorNumeroLlaves</definition>
+        <argsstring>(const int &amp;id)</argsstring>
+        <name>ErrorNumeroLlaves</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de la clase <ref refid="classErrorNumeroLlaves" kindref="compound">ErrorNumeroLlaves</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identificador de la planta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" line="19" bodyfile="/home/Mario/Escritorio/EC3/src/errornumerollaves.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorNumeroLlaves_1cda8524de93f492ff50451619dd8cde0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ErrorNumeroLlaves::what</definition>
+        <argsstring>(int &amp;num) const</argsstring>
+        <name>what</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que procesa la excepcion <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de llaves que se deben generar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>aviso de la excepcion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/errornumerollaves.cpp" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorNumeroLlaves_1d9eb722d5f9918740672191e8164a4bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorNumeroLlaves::~ErrorNumeroLlaves</definition>
+        <argsstring>()</argsstring>
+        <name>~ErrorNumeroLlaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classErrorNumeroLlaves" kindref="compound">ErrorNumeroLlaves</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/errornumerollaves.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" line="17" bodyfile="/home/Mario/Escritorio/EC3/src/errornumerollaves.h" bodystart="17" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classErrorNumeroLlaves_1ea362e42a3f99dece01d77309a131bc5" prot="public" virt="non-virtual"><scope>ErrorNumeroLlaves</scope><name>ErrorNumeroLlaves</name></member>
+      <member refid="classErrorNumeroLlaves_11d1bee2e5a8e51effc38531ab9e172d3" prot="private" virt="non-virtual"><scope>ErrorNumeroLlaves</scope><name>id_planta_</name></member>
+      <member refid="classErrorNumeroLlaves_1cda8524de93f492ff50451619dd8cde0" prot="public" virt="non-virtual"><scope>ErrorNumeroLlaves</scope><name>what</name></member>
+      <member refid="classErrorNumeroLlaves_1d9eb722d5f9918740672191e8164a4bc" prot="public" virt="non-virtual"><scope>ErrorNumeroLlaves</scope><name>~ErrorNumeroLlaves</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

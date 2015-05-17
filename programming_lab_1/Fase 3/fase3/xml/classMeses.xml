@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classMeses" kind="class" prot="public">
+    <compoundname>Meses</compoundname>
+    <includes refid="meses_8h" local="no">meses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMeses_1fdfd4efd7ec76f35454f45ae28c2aa54" prot="private" static="no" mutable="no">
+        <type>PtrNodo</type>
+        <definition>PtrNodo Meses::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="47" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMeses_1f7908636300cbd454835ffb1af782a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Meses::Meses</definition>
+        <argsstring>()</argsstring>
+        <name>Meses</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="54" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_16523ac975c165807691c66c320dc5f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::Clonar</definition>
+        <argsstring>(const Meses &amp;dat)</argsstring>
+        <name>Clonar</name>
+        <param>
+          <type>const <ref refid="classMeses" kindref="compound">Meses</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Copia la clase meses. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>dat debe estar correctamente inicializado, con 12 meses, siendo el primer mes 1 y el ultimo el 12. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo meses de donde se copiara la configuracion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="62" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_13182bd3fe6d6c5704f57875bf5deec5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::InsertarPrincipio</definition>
+        <argsstring>(const TipoDato &amp;dat)</argsstring>
+        <name>InsertarPrincipio</name>
+        <param>
+          <type>const TipoDato &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento al principio. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TipoDato que se insertara en la lista </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="69" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_14041fa911214924768c305aab758c69a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::InsertarFinal</definition>
+        <argsstring>(const TipoDato &amp;dat)</argsstring>
+        <name>InsertarFinal</name>
+        <param>
+          <type>const TipoDato &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento al final. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TipoDato que se insertara en la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="76" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_1129f69534c912e5ea7a46f925ce9ff79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::InsertarOrden</definition>
+        <argsstring>(const TipoDato &amp;dat)</argsstring>
+        <name>InsertarOrden</name>
+        <param>
+          <type>const TipoDato &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un elemento de forma ordenada. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada y ordenada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TipoDato que se insertara en la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="83" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="67" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_180b257997d4769292b17a6e15730dfea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::Mostrar</definition>
+        <argsstring>() const</argsstring>
+        <name>Mostrar</name>
+        <briefdescription>
+<para>Muestra toda la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="89" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="118" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_176959034cbdd7801be117e84d365eaaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Meses::Borrar</definition>
+        <argsstring>(const int &amp;i)</argsstring>
+        <name>Borrar</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Borra un elemento de la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero que indica el elemento que se borrara de la lista. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si lo ha borrado correctamente, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="97" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="92" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_1a4d534314ff3677c0a2b204de10abb00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Meses::Buscar</definition>
+        <argsstring>(const int i, TipoDato &amp;dat) const</argsstring>
+        <name>Buscar</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>TipoDato &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Busca un elemento en la lista. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>La clase debe estar inicializada. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TipoDato donde se copiara el elemento encontrado. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero usado para buscar el elemento. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si lo ha encontrado, false en caso contrario. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="106" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="130" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_16fe9b288dc12957021cfa63c63476ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::Cargar</definition>
+        <argsstring>()</argsstring>
+        <name>Cargar</name>
+        <briefdescription>
+<para>Carga la lista de un archivo (&quot;meses.txt&quot;). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>Debe existir el archivo y tener el formato esperado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="112" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="147" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_11b691d588636573359599097af27b54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Meses::Eliminar</definition>
+        <argsstring>()</argsstring>
+        <name>Eliminar</name>
+        <briefdescription>
+<para>Vacia la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="117" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeses_1c8ded19df98124383823a52813c45cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Meses::~Meses</definition>
+        <argsstring>()</argsstring>
+        <name>~Meses</name>
+        <briefdescription>
+<para>Destructor de la clase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="122" bodyfile="/home/Mario/Escritorio/fase3/src/meses.cpp" bodystart="186" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase <ref refid="classDatosPersonales" kindref="compound">DatosPersonales</ref>, almacena la informacion relativa a los meses en una lista enlazada. Sus atributos son:<itemizedlist>
+<listitem><para>l: puntero que apunta a un TNodo, el comienzo de la lista. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/Mario/Escritorio/fase3/src/meses.h" line="46" bodyfile="/home/Mario/Escritorio/fase3/src/meses.h" bodystart="46" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classMeses_176959034cbdd7801be117e84d365eaaa" prot="public" virt="non-virtual"><scope>Meses</scope><name>Borrar</name></member>
+      <member refid="classMeses_1a4d534314ff3677c0a2b204de10abb00" prot="public" virt="non-virtual"><scope>Meses</scope><name>Buscar</name></member>
+      <member refid="classMeses_16fe9b288dc12957021cfa63c63476ffd" prot="public" virt="non-virtual"><scope>Meses</scope><name>Cargar</name></member>
+      <member refid="classMeses_16523ac975c165807691c66c320dc5f69" prot="public" virt="non-virtual"><scope>Meses</scope><name>Clonar</name></member>
+      <member refid="classMeses_11b691d588636573359599097af27b54a" prot="public" virt="non-virtual"><scope>Meses</scope><name>Eliminar</name></member>
+      <member refid="classMeses_14041fa911214924768c305aab758c69a" prot="public" virt="non-virtual"><scope>Meses</scope><name>InsertarFinal</name></member>
+      <member refid="classMeses_1129f69534c912e5ea7a46f925ce9ff79" prot="public" virt="non-virtual"><scope>Meses</scope><name>InsertarOrden</name></member>
+      <member refid="classMeses_13182bd3fe6d6c5704f57875bf5deec5b" prot="public" virt="non-virtual"><scope>Meses</scope><name>InsertarPrincipio</name></member>
+      <member refid="classMeses_1fdfd4efd7ec76f35454f45ae28c2aa54" prot="private" virt="non-virtual"><scope>Meses</scope><name>l</name></member>
+      <member refid="classMeses_1f7908636300cbd454835ffb1af782a8c" prot="public" virt="non-virtual"><scope>Meses</scope><name>Meses</name></member>
+      <member refid="classMeses_180b257997d4769292b17a6e15730dfea" prot="public" virt="non-virtual"><scope>Meses</scope><name>Mostrar</name></member>
+      <member refid="classMeses_1c8ded19df98124383823a52813c45cbd" prot="public" virt="non-virtual"><scope>Meses</scope><name>~Meses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="celda_8h" kind="file">
+    <compoundname>celda.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">queue</includes>
+    <includes refid="llave_8h" local="yes">llave.h</includes>
+    <includes refid="persona_8h" local="yes">persona.h</includes>
+    <includedby refid="planta_8h" local="yes">Escritorio/EC3/src/planta.h</includedby>
+    <includedby refid="celda_8cpp" local="yes">Escritorio/EC3/src/celda.cpp</includedby>
+    <includedby refid="testcelda_8cpp" local="yes">Escritorio/EC3/src/testcelda.cpp</includedby>
+    <incdepgraph>
+      <node id="112">
+        <label>queue</label>
+      </node>
+      <node id="114">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Escritorio/EC3/src/celda.h</label>
+        <link refid="celda.h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>stack</label>
+      </node>
+      <node id="111">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="130">
+        <label>Escritorio/EC3/src/planta.cpp</label>
+        <link refid="planta_8cpp"/>
+      </node>
+      <node id="118">
+        <label>Escritorio/EC3/src/prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>Escritorio/EC3/src/testplanta.cpp</label>
+        <link refid="testplanta_8cpp"/>
+      </node>
+      <node id="116">
+        <label>Escritorio/EC3/src/celda.h</label>
+        <link refid="celda.h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>Escritorio/EC3/src/testprision.cpp</label>
+        <link refid="testprision_8cpp"/>
+      </node>
+      <node id="121">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="132">
+        <label>Escritorio/EC3/src/testcelda.cpp</label>
+        <link refid="testcelda_8cpp"/>
+      </node>
+      <node id="127">
+        <label>Escritorio/EC3/src/prision.cpp</label>
+        <link refid="prision_8cpp"/>
+      </node>
+      <node id="119">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>Escritorio/EC3/src/preso.cpp</label>
+        <link refid="preso_8cpp"/>
+      </node>
+      <node id="122">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="125">
+        <label>Escritorio/EC3/src/persona.cpp</label>
+        <link refid="persona_8cpp"/>
+      </node>
+      <node id="117">
+        <label>Escritorio/EC3/src/planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>Escritorio/EC3/src/celda.cpp</label>
+        <link refid="celda_8cpp"/>
+      </node>
+      <node id="128">
+        <label>Escritorio/EC3/src/testpersona.cpp</label>
+        <link refid="testpersona_8cpp"/>
+      </node>
+      <node id="124">
+        <label>Escritorio/EC3/src/guardia.cpp</label>
+        <link refid="guardia_8cpp"/>
+      </node>
+      <node id="120">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCelda" prot="public">Celda</innerclass>
+    <briefdescription>
+<para>Declaracion de la clase celda. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>20-04-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>CELDA_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CELDA_H</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="llave_8h" kindref="compound" tooltip="Implementacion del header de la clase Llave.">llave.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="persona_8h" kindref="compound" tooltip="Declaracion de la clase abstracta Persona.">persona.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classCelda" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1255f613383c5100f88c59a402b4b4ac9" kindref="member">Celda</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classCelda_1255f613383c5100f88c59a402b4b4ac9" kindref="member">Celda</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classCelda_14991502c5cab11878ab563b4ec819d34" kindref="member">~Celda</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classCelda_19ebf77f2c605693c10cb670d275f2399" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_19ebf77f2c605693c10cb670d275f2399" kindref="member" tooltip="Metodo que devuelve la id_ de la celda.">get_id</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>;}<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_14282078fa5f3cce5e8efca91e29e622f" kindref="member">set_id</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="classCelda_11ae028893035e539215673ec05256b71" kindref="member">operator&lt;&lt;</ref>(ostream<sp/>&amp;flujo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCelda" kindref="compound" tooltip="Esta representa una celda de una planta.">Celda</ref><sp/>&amp;C);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_185495f01557a7c1762619208501a0cb8" kindref="member">set_llave</ref>(<ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>*llave);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref>*<sp/><ref refid="classCelda_165bb99ee45297f1e63326d073ce07593" kindref="member">sacar_llave</ref>();</highlight></codeline>
+<codeline lineno="39" refid="classCelda_17cd701245d716ad4ee0c6f23a1e7eeac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_17cd701245d716ad4ee0c6f23a1e7eeac" kindref="member" tooltip="Cambia el valor de la marca por uno pasado por parametro.">set_marca</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;marca)<sp/>{<ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>=marca;}<sp/></highlight></codeline>
+<codeline lineno="40" refid="classCelda_12dd0e57428817f6d4a59876660ce1111" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_12dd0e57428817f6d4a59876660ce1111" kindref="member" tooltip="obtiene el valor de la marca.">get_marca</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>;}<sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>void<sp/>Destruir();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCelda_129e79a26f399a6bcdd057f86a0c4867f" kindref="member">set_persona</ref>(<ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_19cae98c132d67911ad14c6dbebd6656a" kindref="member">ocupacion</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classCelda_1dfd04055cf6de2c43d06e66d9cbd6ded" kindref="member">get_persona</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classPersona" kindref="compound" tooltip="clase abstracta que define los atributos y metodos generales de una persona de la...">Persona</ref>*<sp/><ref refid="classCelda_1bfbb71f6ee86a38a31ed962b8e9d1e7f" kindref="member">sacar_persona</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCelda_1bc75b59cd9ee8a0bc7c115c847a0a141" kindref="member">Simular</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_19b7323513a6c6cf91ad51e3244d0ebaf" kindref="member" tooltip="atributo usado por el algoritmo de kruskall">marca_</ref>;<sp/></highlight></codeline>
+<codeline lineno="50" refid="classCelda_11a63da7317f8a091b8e88f645b83471c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCelda_11a63da7317f8a091b8e88f645b83471c" kindref="member" tooltip="identificador de la celda (-1 si no esta inicializado)">id_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" refkind="member"><highlight class="normal"><sp/><sp/>priority_queue&lt;Llave*,<sp/>vector&lt;Llave*&gt;,<sp/><ref refid="classCompLlavesMayor" kindref="compound" tooltip="Objeto funcion para comparar si un puntero a una llave es mayor que otra.">CompLlavesMayor</ref>&gt;*<sp/><ref refid="classCelda_1e25fa0aa2f5529da984cad8e43f6c12a" kindref="member" tooltip="llaves que contiene la celda">llaves_</ref>;<sp/></highlight></codeline>
+<codeline lineno="52" refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" refkind="member"><highlight class="normal"><sp/><sp/>queue&lt;Persona*&gt;*<sp/><ref refid="classCelda_1074964127aaa40f1b9794cdf01344dd9" kindref="member" tooltip="personas que estan en la celda">personas_</ref>;<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//de<sp/>PLANTA_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/celda.h"/>
+  </compounddef>
+</doxygen>

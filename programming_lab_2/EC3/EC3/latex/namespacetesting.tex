@@ -1,0 +1,191 @@
+\section{testing Namespace Reference}
+\label{namespacetesting}\index{testing@{testing}}
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf Message}
+\item 
+class {\bf ScopedFakeTestPartResultReporter}
+\item 
+class {\bf TestPartResult}
+\item 
+class {\bf TestPartResultArray}
+\item 
+class {\bf TestPartResultReporterInterface}
+\item 
+class {\bf AssertionResult}
+\item 
+class {\bf Test}
+\item 
+class {\bf TestInfo}
+\item 
+class {\bf Environment}
+\item 
+class {\bf UnitTest}
+\end{CompactItemize}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf internal}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf TestPartResultType} \{ {\bf TPRT\_\-SUCCESS}, 
+{\bf TPRT\_\-NONFATAL\_\-FAILURE}, 
+{\bf TPRT\_\-FATAL\_\-FAILURE}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\bf GTEST\_\-DECLARE\_\-string\_\-} (death\_\-test\_\-style)
+\item 
+std::ostream \& {\bf operator$<$$<$} (std::ostream \&os, const {\bf Message} \&sb)
+\item 
+std::ostream \& {\bf operator$<$$<$} (std::ostream \&os, const {\bf TestPartResult} \&result)
+\item 
+{\bf GTEST\_\-DECLARE\_\-int32\_\-} (stack\_\-trace\_\-depth)
+\item 
+{\bf GTEST\_\-DECLARE\_\-bool\_\-} (show\_\-internal\_\-stack\_\-frames)
+\item 
+{\bf AssertionResult} {\bf AssertionSuccess} ()
+\item 
+{\bf AssertionResult} {\bf AssertionFailure} (const {\bf Message} \&msg)
+\item 
+{\bf Environment} $\ast$ {\bf AddGlobalTestEnvironment} ({\bf Environment} $\ast$env)
+\item 
+void {\bf InitGoogleTest} (int $\ast$argc, char $\ast$$\ast$argv)
+\item 
+void {\bf InitGoogleTest} (int $\ast$argc, wchar\_\-t $\ast$$\ast$argv)
+\item 
+{\bf AssertionResult} {\bf IsSubstring} (const char $\ast$needle\_\-expr, const char $\ast$haystack\_\-expr, const char $\ast$needle, const char $\ast$haystack)
+\item 
+{\bf AssertionResult} {\bf IsSubstring} (const char $\ast$needle\_\-expr, const char $\ast$haystack\_\-expr, const wchar\_\-t $\ast$needle, const wchar\_\-t $\ast$haystack)
+\item 
+{\bf AssertionResult} {\bf IsNotSubstring} (const char $\ast$needle\_\-expr, const char $\ast$haystack\_\-expr, const char $\ast$needle, const char $\ast$haystack)
+\item 
+{\bf AssertionResult} {\bf IsNotSubstring} (const char $\ast$needle\_\-expr, const char $\ast$haystack\_\-expr, const wchar\_\-t $\ast$needle, const wchar\_\-t $\ast$haystack)
+\item 
+{\bf AssertionResult} {\bf FloatLE} (const char $\ast$expr1, const char $\ast$expr2, float val1, float val2)
+\item 
+{\bf AssertionResult} {\bf DoubleLE} (const char $\ast$expr1, const char $\ast$expr2, double val1, double val2)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+const int {\bf kMaxStackTraceDepth} = 100
+\end{CompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{testing@{testing}!TestPartResultType@{TestPartResultType}}
+\index{TestPartResultType@{TestPartResultType}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf testing::TestPartResultType}}\label{namespacetesting_e87109d90628580ab2d751fcb36fc975}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TPRT_SUCCESS@{TPRT\_\-SUCCESS}!testing@{testing}}\index{testing@{testing}!TPRT_SUCCESS@{TPRT\_\-SUCCESS}}\item[{\em 
+TPRT\_\-SUCCESS\label{namespacetesting_e87109d90628580ab2d751fcb36fc975e815b64e766eaff67a27e79f4346a037}
+}]\index{TPRT_NONFATAL_FAILURE@{TPRT\_\-NONFATAL\_\-FAILURE}!testing@{testing}}\index{testing@{testing}!TPRT_NONFATAL_FAILURE@{TPRT\_\-NONFATAL\_\-FAILURE}}\item[{\em 
+TPRT\_\-NONFATAL\_\-FAILURE\label{namespacetesting_e87109d90628580ab2d751fcb36fc97512d14e9cb7a971c442a978b125fef228}
+}]\index{TPRT_FATAL_FAILURE@{TPRT\_\-FATAL\_\-FAILURE}!testing@{testing}}\index{testing@{testing}!TPRT_FATAL_FAILURE@{TPRT\_\-FATAL\_\-FAILURE}}\item[{\em 
+TPRT\_\-FATAL\_\-FAILURE\label{namespacetesting_e87109d90628580ab2d751fcb36fc975be071bd93da3babe196a6e02914ee679}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\index{testing@{testing}!AddGlobalTestEnvironment@{AddGlobalTestEnvironment}}
+\index{AddGlobalTestEnvironment@{AddGlobalTestEnvironment}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Environment}$\ast$ testing::AddGlobalTestEnvironment (Environment $\ast$ {\em env})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_14f739e29da2c05e23eb563597f31b22}
+
+
+\index{testing@{testing}!AssertionFailure@{AssertionFailure}}
+\index{AssertionFailure@{AssertionFailure}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::AssertionFailure (const Message \& {\em msg})}\label{namespacetesting_07666fd50196e9727d0731c056fa1957}
+
+
+\index{testing@{testing}!AssertionSuccess@{AssertionSuccess}}
+\index{AssertionSuccess@{AssertionSuccess}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::AssertionSuccess ()}\label{namespacetesting_b729c66d933de254c89cddb7f3c71ec4}
+
+
+\index{testing@{testing}!DoubleLE@{DoubleLE}}
+\index{DoubleLE@{DoubleLE}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::DoubleLE (const char $\ast$ {\em expr1}, const char $\ast$ {\em expr2}, double {\em val1}, double {\em val2})}\label{namespacetesting_55e89dc0f65ab5a155ffdf06e6eac327}
+
+
+\index{testing@{testing}!FloatLE@{FloatLE}}
+\index{FloatLE@{FloatLE}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::FloatLE (const char $\ast$ {\em expr1}, const char $\ast$ {\em expr2}, float {\em val1}, float {\em val2})}\label{namespacetesting_8df0239796a2652f170dd5237e5a04dc}
+
+
+\index{testing@{testing}!GTEST_DECLARE_bool_@{GTEST\_\-DECLARE\_\-bool\_\-}}
+\index{GTEST_DECLARE_bool_@{GTEST\_\-DECLARE\_\-bool\_\-}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::GTEST\_\-DECLARE\_\-bool\_\- (show\_\-internal\_\-stack\_\-frames)}\label{namespacetesting_d442d8de4238b60c7e5971ff926a433b}
+
+
+\index{testing@{testing}!GTEST_DECLARE_int32_@{GTEST\_\-DECLARE\_\-int32\_\-}}
+\index{GTEST_DECLARE_int32_@{GTEST\_\-DECLARE\_\-int32\_\-}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::GTEST\_\-DECLARE\_\-int32\_\- (stack\_\-trace\_\-depth)}\label{namespacetesting_984f1c280ed67aa6fba294883a6fb0c9}
+
+
+\index{testing@{testing}!GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}}
+\index{GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::GTEST\_\-DECLARE\_\-string\_\- (death\_\-test\_\-style)}\label{namespacetesting_c971b4a24c645d332b216d2e8002402f}
+
+
+\index{testing@{testing}!InitGoogleTest@{InitGoogleTest}}
+\index{InitGoogleTest@{InitGoogleTest}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::InitGoogleTest (int $\ast$ {\em argc}, wchar\_\-t $\ast$$\ast$ {\em argv})}\label{namespacetesting_c5b3e5b1b222c47c29a832b4b781ee53}
+
+
+\index{testing@{testing}!InitGoogleTest@{InitGoogleTest}}
+\index{InitGoogleTest@{InitGoogleTest}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void testing::InitGoogleTest (int $\ast$ {\em argc}, char $\ast$$\ast$ {\em argv})}\label{namespacetesting_1995fbe86612c912ccc86d18f7e9ef6a}
+
+
+\index{testing@{testing}!IsNotSubstring@{IsNotSubstring}}
+\index{IsNotSubstring@{IsNotSubstring}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::IsNotSubstring (const char $\ast$ {\em needle\_\-expr}, const char $\ast$ {\em haystack\_\-expr}, const wchar\_\-t $\ast$ {\em needle}, const wchar\_\-t $\ast$ {\em haystack})}\label{namespacetesting_d99409245328d36bb2be994569c514af}
+
+
+\index{testing@{testing}!IsNotSubstring@{IsNotSubstring}}
+\index{IsNotSubstring@{IsNotSubstring}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::IsNotSubstring (const char $\ast$ {\em needle\_\-expr}, const char $\ast$ {\em haystack\_\-expr}, const char $\ast$ {\em needle}, const char $\ast$ {\em haystack})}\label{namespacetesting_1301ced25bb95bc43c5c9e9fd01d5270}
+
+
+\index{testing@{testing}!IsSubstring@{IsSubstring}}
+\index{IsSubstring@{IsSubstring}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::IsSubstring (const char $\ast$ {\em needle\_\-expr}, const char $\ast$ {\em haystack\_\-expr}, const wchar\_\-t $\ast$ {\em needle}, const wchar\_\-t $\ast$ {\em haystack})}\label{namespacetesting_ddbc23e7639f0042e9ab95a16ae240dd}
+
+
+\index{testing@{testing}!IsSubstring@{IsSubstring}}
+\index{IsSubstring@{IsSubstring}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf AssertionResult} testing::IsSubstring (const char $\ast$ {\em needle\_\-expr}, const char $\ast$ {\em haystack\_\-expr}, const char $\ast$ {\em needle}, const char $\ast$ {\em haystack})}\label{namespacetesting_009f08dca0562680a5704f6f88858ed3}
+
+
+\index{testing@{testing}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& testing::operator$<$$<$ (std::ostream \& {\em os}, const TestPartResult \& {\em result})}\label{namespacetesting_5812c47abd9863f4f1eef439c4378018}
+
+
+\index{testing@{testing}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& testing::operator$<$$<$ (std::ostream \& {\em os}, const Message \& {\em sb})\hspace{0.3cm}{\tt  [inline]}}\label{namespacetesting_65c959bf8be30a10b2a122c50f36305b}
+
+
+
+
+\subsection{Variable Documentation}
+\index{testing@{testing}!kMaxStackTraceDepth@{kMaxStackTraceDepth}}
+\index{kMaxStackTraceDepth@{kMaxStackTraceDepth}!testing@{testing}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int {\bf testing::kMaxStackTraceDepth} = 100}\label{namespacetesting_9cac1f5e8a177c033ab6b61c230dc0b8}
+
+

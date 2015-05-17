@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="errornumerollaves_8cpp" kind="file">
+    <compoundname>errornumerollaves.cpp</compoundname>
+    <includes refid="errornumerollaves_8h" local="yes">errornumerollaves.h</includes>
+    <incdepgraph>
+      <node id="209">
+        <label>Escritorio/EC3/src/errornumerollaves.cpp</label>
+        <link refid="errornumerollaves.cpp"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementacion de los metodos de la clase <ref refid="classErrorNumeroLlaves" kindref="compound">ErrorNumeroLlaves</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>4-05-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="errornumerollaves_8h" kindref="compound" tooltip="Declaracion de la clase ErrorPuerta.">errornumerollaves.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classErrorNumeroLlaves_1ea362e42a3f99dece01d77309a131bc5" kindref="member">ErrorNumeroLlaves::ErrorNumeroLlaves</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classErrorNumeroLlaves_11d1bee2e5a8e51effc38531ab9e172d3" kindref="member" tooltip="Identificador de la planta que lanzo el throw.">id_planta_</ref>=id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="classErrorNumeroLlaves_1d9eb722d5f9918740672191e8164a4bc" kindref="member">ErrorNumeroLlaves::~ErrorNumeroLlaves</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classErrorNumeroLlaves_1cda8524de93f492ff50451619dd8cde0" kindref="member">ErrorNumeroLlaves::what</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;num)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="37"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aux[100];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>sprintf(aux,<sp/></highlight><highlight class="stringliteral">&quot;Hay<sp/>demasiadas<sp/>llaves<sp/>en<sp/>la<sp/>planta:<sp/>%d<sp/>,<sp/>solo<sp/>se<sp/>insertaran<sp/>10.&quot;</highlight><highlight class="normal">,<ref refid="classErrorNumeroLlaves_11d1bee2e5a8e51effc38531ab9e172d3" kindref="member" tooltip="Identificador de la planta que lanzo el throw.">id_planta_</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>error(aux);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>num=10;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/errornumerollaves.cpp"/>
+  </compounddef>
+</doxygen>

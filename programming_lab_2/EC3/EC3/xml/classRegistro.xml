@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classRegistro" kind="class" prot="public">
+    <compoundname>Registro</compoundname>
+    <includes refid="registro_8h" local="no">registro.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRegistro_12b8b1307bcd751f3b004519c51bcf497" prot="private" static="no" mutable="no">
+        <type>ofstream</type>
+        <definition>ofstream Registro::f_out_</definition>
+        <argsstring></argsstring>
+        <name>f_out_</name>
+        <briefdescription>
+<para>flujo a traves del cual se mandan los datos </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="33" bodyfile="/home/Mario/Escritorio/EC3/src/registro.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRegistro_1ae3b307bfdfc9572595109242b62059c" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Registro::nombre_fichero_</definition>
+        <argsstring></argsstring>
+        <name>nombre_fichero_</name>
+        <briefdescription>
+<para>Nombre de fichero en el que se guardan los datos (por defecto &quot;registro.log&quot;). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="34" bodyfile="/home/Mario/Escritorio/EC3/src/registro.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" prot="private" static="yes" mutable="no">
+        <type><ref refid="classRegistro" kindref="compound">Registro</ref> *</type>
+        <definition>Registro * Registro::instancia_</definition>
+        <argsstring></argsstring>
+        <name>instancia_</name>
+        <initializer> NULL</initializer>
+        <briefdescription>
+<para>Instancia de la propia clase (solo habra una en el sistema). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="35" bodyfile="/home/Mario/Escritorio/EC3/src/registro.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classRegistro_142d4db3fecc09bcde81e2cb71900a5c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRegistro" kindref="compound">Registro</ref> *</type>
+        <definition>Registro * Registro::get_instancia</definition>
+        <argsstring>()</argsstring>
+        <name>get_instancia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la instancia de la clase </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="24" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRegistro_11a61913f579e4c46512658085048dc7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Registro::~Registro</definition>
+        <argsstring>()</argsstring>
+        <name>~Registro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase registro </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="25" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registro::Escribir</definition>
+        <argsstring>(char *mensaje)</argsstring>
+        <name>Escribir</name>
+        <param>
+          <type>char *</type>
+          <declname>mensaje</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe un mensaje en el registro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mensaje</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char* a mandar por el flujo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="26" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistro_177370e6de3ea251fa2205de8bac6e2c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registro::Escribir</definition>
+        <argsstring>(const string mensaje)</argsstring>
+        <name>Escribir</name>
+        <param>
+          <type>const string</type>
+          <declname>mensaje</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe un mensaje en el registro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mensaje</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string a mandar por el flujo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="27" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistro_16d4fdee492751e8155111b2a11d8b429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registro::Escribir</definition>
+        <argsstring>(const int mensaje)</argsstring>
+        <name>Escribir</name>
+        <param>
+          <type>const int</type>
+          <declname>mensaje</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe un mensaje en el registro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mensaje</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int a mandar por el flujo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistro_1a3beb0de20dc0421628ff7396d2f76f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; Registro::Flujo</definition>
+        <argsstring>()</argsstring>
+        <name>Flujo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obiene el flujo abierto por la clase <simplesect kind="return"><para>flujo abierto por la clase </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistro_144c7aa629b33647372b95d8e32f856c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registro::Destruir</definition>
+        <argsstring>()</argsstring>
+        <name>Destruir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Libera toda la memoria almacenada en la instancia </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="87" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classRegistro_179db13a112d147d186e0377c3284b735" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Registro::Registro</definition>
+        <argsstring>()</argsstring>
+        <name>Registro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase registro </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/registro.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Permite mandar datos a un fichero de texto (&quot;registro.log&quot;). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="176">
+        <label>Registro</label>
+        <link refid="classRegistro"/>
+        <childnode refid="176" relation="usage">
+          <edgelabel>instancia_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/registro.h" line="22" bodyfile="/home/Mario/Escritorio/EC3/src/registro.h" bodystart="22" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classRegistro_144c7aa629b33647372b95d8e32f856c7" prot="public" virt="non-virtual"><scope>Registro</scope><name>Destruir</name></member>
+      <member refid="classRegistro_1c1dc4d4b45b2a88ea6671e416d579add" prot="public" virt="non-virtual"><scope>Registro</scope><name>Escribir</name></member>
+      <member refid="classRegistro_177370e6de3ea251fa2205de8bac6e2c5" prot="public" virt="non-virtual"><scope>Registro</scope><name>Escribir</name></member>
+      <member refid="classRegistro_16d4fdee492751e8155111b2a11d8b429" prot="public" virt="non-virtual"><scope>Registro</scope><name>Escribir</name></member>
+      <member refid="classRegistro_12b8b1307bcd751f3b004519c51bcf497" prot="private" virt="non-virtual"><scope>Registro</scope><name>f_out_</name></member>
+      <member refid="classRegistro_1a3beb0de20dc0421628ff7396d2f76f5" prot="public" virt="non-virtual"><scope>Registro</scope><name>Flujo</name></member>
+      <member refid="classRegistro_142d4db3fecc09bcde81e2cb71900a5c8" prot="public" virt="non-virtual"><scope>Registro</scope><name>get_instancia</name></member>
+      <member refid="classRegistro_10ea6b1afa36c1cf3fab4169cf6568e58" prot="private" virt="non-virtual"><scope>Registro</scope><name>instancia_</name></member>
+      <member refid="classRegistro_1ae3b307bfdfc9572595109242b62059c" prot="private" virt="non-virtual"><scope>Registro</scope><name>nombre_fichero_</name></member>
+      <member refid="classRegistro_179db13a112d147d186e0377c3284b735" prot="private" virt="non-virtual"><scope>Registro</scope><name>Registro</name></member>
+      <member refid="classRegistro_11a61913f579e4c46512658085048dc7f" prot="public" virt="non-virtual"><scope>Registro</scope><name>~Registro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

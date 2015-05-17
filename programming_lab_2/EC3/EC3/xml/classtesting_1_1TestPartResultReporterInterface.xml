@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1TestPartResultReporterInterface" kind="class" prot="public">
+    <compoundname>testing::TestPartResultReporterInterface</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper" prot="public" virt="non-virtual">testing::internal::HasNewFatalFailureHelper</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1ScopedFakeTestPartResultReporter" prot="public" virt="non-virtual">testing::ScopedFakeTestPartResultReporter</derivedcompoundref>
+    <includes refid="gtest-test-part_8h" local="no">gtest-test-part.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1TestPartResultReporterInterface_1cfd5b63ec93ef182ed8617f2c5e037d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::TestPartResultReporterInterface::~TestPartResultReporterInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~TestPartResultReporterInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="149" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1TestPartResultReporterInterface_1e5912af5e9bee0ae07acfc83b00a603c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testing::TestPartResultReporterInterface::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)=0</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplementedby refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper_19767505a6dffafe76cda1735294f0c7e">ReportTestPartResult</reimplementedby>
+        <reimplementedby refid="classtesting_1_1ScopedFakeTestPartResultReporter_10a1300ac1cff91171aa65ac5470efd50">ReportTestPartResult</reimplementedby>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="220">
+        <label>testing::internal::HasNewFatalFailureHelper</label>
+        <link refid="classtesting_1_1internal_1_1HasNewFatalFailureHelper"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+      <node id="221">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1ScopedFakeTestPartResultReporter"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" line="147" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest-test-part.h" bodystart="147" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1TestPartResultReporterInterface_1e5912af5e9bee0ae07acfc83b00a603c" prot="public" virt="pure-virtual"><scope>testing::TestPartResultReporterInterface</scope><name>ReportTestPartResult</name></member>
+      <member refid="classtesting_1_1TestPartResultReporterInterface_1cfd5b63ec93ef182ed8617f2c5e037d1" prot="public" virt="virtual"><scope>testing::TestPartResultReporterInterface</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

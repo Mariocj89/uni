@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1TestFactoryImpl" kind="class" prot="public">
+    <compoundname>testing::internal::TestFactoryImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1TestFactoryBase" prot="public" virt="non-virtual">testing::internal::TestFactoryBase</basecompoundref>
+    <includes refid="gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>TestClass</declname>
+        <defname>TestClass</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1TestFactoryImpl_14ab23677c6c41e57de97d2142c959f18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtesting_1_1Test" kindref="compound">Test</ref> *</type>
+        <definition>virtual Test* testing::internal::TestFactoryImpl&lt; TestClass &gt;::CreateTest</definition>
+        <argsstring>()</argsstring>
+        <name>CreateTest</name>
+        <reimplements refid="classtesting_1_1internal_1_1TestFactoryBase_184e74bad4eccb3eb7df7c2a8f6f4d7b3">CreateTest</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="546" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="546" bodyend="546"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="208">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryBase"/>
+      </node>
+      <node id="207">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryImpl"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="210">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryBase"/>
+      </node>
+      <node id="209">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1TestFactoryImpl"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" line="544" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-internal.h" bodystart="544" bodyend="547"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1TestFactoryImpl_14ab23677c6c41e57de97d2142c959f18" prot="public" virt="virtual"><scope>testing::internal::TestFactoryImpl</scope><name>CreateTest</name></member>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_1fe6283d25da1b66b7a92ebeb5db867d3" prot="protected" virt="non-virtual"><scope>testing::internal::TestFactoryImpl</scope><name>TestFactoryBase</name></member>
+      <member refid="classtesting_1_1internal_1_1TestFactoryBase_12658d02fa0f996176b0130094b606c17" prot="public" virt="virtual"><scope>testing::internal::TestFactoryImpl</scope><name>~TestFactoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

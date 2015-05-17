@@ -1,0 +1,225 @@
+\section{Celda Class Reference}
+\label{classCelda}\index{Celda@{Celda}}
+Esta representa una celda de una planta.  
+
+
+{\tt \#include $<$celda.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Celda} ()
+\item 
+{\bf Celda} (const int \&id)
+\item 
+{\bf $\sim$Celda} ()
+\item 
+int {\bf get\_\-id} () const
+\begin{CompactList}\small\item\em Metodo que devuelve la id\_\- de la celda. \item\end{CompactList}\item 
+void {\bf set\_\-id} (const int \&id)
+\item 
+void {\bf set\_\-llave} ({\bf Llave} $\ast$llave)
+\item 
+{\bf Llave} $\ast$ {\bf sacar\_\-llave} ()
+\item 
+void {\bf set\_\-marca} (const int \&marca)
+\begin{CompactList}\small\item\em Cambia el valor de la marca por uno pasado por parametro. \item\end{CompactList}\item 
+int {\bf get\_\-marca} () const
+\begin{CompactList}\small\item\em obtiene el valor de la marca. \item\end{CompactList}\item 
+void {\bf set\_\-persona} ({\bf Persona} $\ast$p)
+\item 
+int {\bf ocupacion} () const
+\item 
+{\bf Persona} $\ast$ {\bf get\_\-persona} () const
+\item 
+{\bf Persona} $\ast$ {\bf sacar\_\-persona} () const
+\item 
+bool {\bf Simular} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf marca\_\-}
+\begin{CompactList}\small\item\em atributo usado por el algoritmo de kruskall \item\end{CompactList}\item 
+int {\bf id\_\-}
+\begin{CompactList}\small\item\em identificador de la celda (-1 si no esta inicializado) \item\end{CompactList}\item 
+priority\_\-queue$<$ {\bf Llave} $\ast$, vector$<$ {\bf Llave} $\ast$ $>$, {\bf CompLlavesMayor} $>$ $\ast$ {\bf llaves\_\-}
+\begin{CompactList}\small\item\em llaves que contiene la celda \item\end{CompactList}\item 
+queue$<$ {\bf Persona} $\ast$ $>$ $\ast$ {\bf personas\_\-}
+\begin{CompactList}\small\item\em personas que estan en la celda \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&flujo, const {\bf Celda} \&C)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Esta representa una celda de una planta. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Celda@{Celda}!Celda@{Celda}}
+\index{Celda@{Celda}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Celda::Celda ()}\label{classCelda_255f613383c5100f88c59a402b4b4ac9}
+
+
+Constructor de la clase celda \index{Celda@{Celda}!Celda@{Celda}}
+\index{Celda@{Celda}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Celda::Celda (const int \& {\em id})}\label{classCelda_418d48636d6a5007dee995d06db42d1a}
+
+
+Constructor parametrizado de la clase celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]parametro a estabalecer como el atributo id\_\- \end{description}
+\end{Desc}
+\index{Celda@{Celda}!~Celda@{$\sim$Celda}}
+\index{~Celda@{$\sim$Celda}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Celda::$\sim$Celda ()}\label{classCelda_4991502c5cab11878ab563b4ec819d34}
+
+
+Destructor de la clase celda 
+
+\subsection{Member Function Documentation}
+\index{Celda@{Celda}!get_id@{get\_\-id}}
+\index{get_id@{get\_\-id}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Celda::get\_\-id () const\hspace{0.3cm}{\tt  [inline]}}\label{classCelda_9ebf77f2c605693c10cb670d275f2399}
+
+
+Metodo que devuelve la id\_\- de la celda. 
+
+\index{Celda@{Celda}!set_id@{set\_\-id}}
+\index{set_id@{set\_\-id}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Celda::set\_\-id (const int \& {\em id})}\label{classCelda_4282078fa5f3cce5e8efca91e29e622f}
+
+
+Modificador que establece la id de la celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]id a copiar \end{description}
+\end{Desc}
+\index{Celda@{Celda}!set_llave@{set\_\-llave}}
+\index{set_llave@{set\_\-llave}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Celda::set\_\-llave ({\bf Llave} $\ast$ {\em llave})}\label{classCelda_85495f01557a7c1762619208501a0cb8}
+
+
+Inserta una llave en la celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em llave}]llave a insertar \end{description}
+\end{Desc}
+\index{Celda@{Celda}!sacar_llave@{sacar\_\-llave}}
+\index{sacar_llave@{sacar\_\-llave}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Llave} $\ast$ Celda::sacar\_\-llave ()}\label{classCelda_65bb99ee45297f1e63326d073ce07593}
+
+
+Obtiene y saca la primera llave \begin{Desc}
+\item[Returns:]llave sacada de la celda \end{Desc}
+\index{Celda@{Celda}!set_marca@{set\_\-marca}}
+\index{set_marca@{set\_\-marca}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Celda::set\_\-marca (const int \& {\em marca})\hspace{0.3cm}{\tt  [inline]}}\label{classCelda_7cd701245d716ad4ee0c6f23a1e7eeac}
+
+
+Cambia el valor de la marca por uno pasado por parametro. 
+
+\index{Celda@{Celda}!get_marca@{get\_\-marca}}
+\index{get_marca@{get\_\-marca}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Celda::get\_\-marca () const\hspace{0.3cm}{\tt  [inline]}}\label{classCelda_2dd0e57428817f6d4a59876660ce1111}
+
+
+obtiene el valor de la marca. 
+
+\begin{Desc}
+\item[Returns:]marca de la celda \end{Desc}
+\index{Celda@{Celda}!set_persona@{set\_\-persona}}
+\index{set_persona@{set\_\-persona}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Celda::set\_\-persona ({\bf Persona} $\ast$ {\em p})}\label{classCelda_29e79a26f399a6bcdd057f86a0c4867f}
+
+
+Introduce una persona en la celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]persona a introducir a la celda \end{description}
+\end{Desc}
+\index{Celda@{Celda}!ocupacion@{ocupacion}}
+\index{ocupacion@{ocupacion}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Celda::ocupacion () const}\label{classCelda_9cae98c132d67911ad14c6dbebd6656a}
+
+
+Obtiene la cantidad de personas que hay en una celda \begin{Desc}
+\item[Returns:]numero de personas que hay en la celda \end{Desc}
+\index{Celda@{Celda}!get_persona@{get\_\-persona}}
+\index{get_persona@{get\_\-persona}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Celda::get\_\-persona () const}\label{classCelda_dfd04055cf6de2c43d06e66d9cbd6ded}
+
+
+Obtiene la primera persona de la celda \begin{Desc}
+\item[Returns:]devuelve la primera persona de la celda \end{Desc}
+\index{Celda@{Celda}!sacar_persona@{sacar\_\-persona}}
+\index{sacar_persona@{sacar\_\-persona}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Celda::sacar\_\-persona () const}\label{classCelda_bfbb71f6ee86a38a31ed962b8e9d1e7f}
+
+
+Saca y devuelve la primera persona de la celda \begin{Desc}
+\item[Returns:]devuelve la primera persona de la celda \end{Desc}
+\index{Celda@{Celda}!Simular@{Simular}}
+\index{Simular@{Simular}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Celda::Simular ()}\label{classCelda_bc75b59cd9ee8a0bc7c115c847a0a141}
+
+
+Realiza el algoritmo de simulacion en la celda \begin{Desc}
+\item[Returns:]devuelve false si algun preso ha salido de la simulacion \end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Celda@{Celda}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em flujo}, const {\bf Celda} \& {\em C})\hspace{0.3cm}{\tt  [friend]}}\label{classCelda_1ae028893035e539215673ec05256b71}
+
+
+Sobrecarga del operador $<$$<$ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flujo}]flujo al que se introduce la informacion \item[{\em C}]celda de la que obtener la informacion \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]flujo con la informacion \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Celda@{Celda}!marca_@{marca\_\-}}
+\index{marca_@{marca\_\-}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Celda::marca\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classCelda_9b7323513a6c6cf91ad51e3244d0ebaf}
+
+
+atributo usado por el algoritmo de kruskall 
+
+\index{Celda@{Celda}!id_@{id\_\-}}
+\index{id_@{id\_\-}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Celda::id\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classCelda_1a63da7317f8a091b8e88f645b83471c}
+
+
+identificador de la celda (-1 si no esta inicializado) 
+
+\index{Celda@{Celda}!llaves_@{llaves\_\-}}
+\index{llaves_@{llaves\_\-}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}priority\_\-queue$<${\bf Llave}$\ast$, vector$<${\bf Llave}$\ast$$>$, {\bf CompLlavesMayor}$>$$\ast$ {\bf Celda::llaves\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classCelda_e25fa0aa2f5529da984cad8e43f6c12a}
+
+
+llaves que contiene la celda 
+
+\index{Celda@{Celda}!personas_@{personas\_\-}}
+\index{personas_@{personas\_\-}!Celda@{Celda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}queue$<${\bf Persona}$\ast$$>$$\ast$ {\bf Celda::personas\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classCelda_074964127aaa40f1b9794cdf01344dd9}
+
+
+personas que estan en la celda 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf celda.h}\item 
+Escritorio/EC3/src/{\bf celda.cpp}\end{CompactItemize}

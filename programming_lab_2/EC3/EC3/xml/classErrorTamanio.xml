@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classErrorTamanio" kind="class" prot="public">
+    <compoundname>ErrorTamanio</compoundname>
+    <includes refid="errortamanio_8h" local="no">errortamanio.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ErrorTamanio::id_planta_</definition>
+        <argsstring></argsstring>
+        <name>id_planta_</name>
+        <briefdescription>
+<para>Identificador de la planta que lanzo el throw. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h" line="23" bodyfile="/home/Mario/Escritorio/EC3/src/errortamanio.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classErrorTamanio_1bdbfa9109e8e5be237f166a9c3d415a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorTamanio::ErrorTamanio</definition>
+        <argsstring>(const int &amp;id)</argsstring>
+        <name>ErrorTamanio</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de la clase <ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valor con el que inicializar el id_planta_ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h" line="19" bodyfile="/home/Mario/Escritorio/EC3/src/errortamanio.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorTamanio_14445403295d4308d5192b05e916c8dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ErrorTamanio::~ErrorTamanio</definition>
+        <argsstring>()</argsstring>
+        <name>~ErrorTamanio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h" line="20" bodyfile="/home/Mario/Escritorio/EC3/src/errortamanio.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorTamanio_145471ee0f66dfc0a2c53089c2348a335" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ErrorTamanio::what</definition>
+        <argsstring>(int &amp;ancho, int &amp;alto) const</argsstring>
+        <name>what</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>ancho</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>alto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo para procesar la excepcion, devuelve el ancho y el alto que debera tener la planta ademas de un mensaje <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ancho</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nuevo ancho de la planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nuevo alto de la planta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string con un aviso de la excepcion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/errortamanio.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/errortamanio.h" line="17" bodyfile="/home/Mario/Escritorio/EC3/src/errortamanio.h" bodystart="17" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classErrorTamanio_1bdbfa9109e8e5be237f166a9c3d415a9" prot="public" virt="non-virtual"><scope>ErrorTamanio</scope><name>ErrorTamanio</name></member>
+      <member refid="classErrorTamanio_1ef15b2ba7020a76a9cc11544c0438dd3" prot="private" virt="non-virtual"><scope>ErrorTamanio</scope><name>id_planta_</name></member>
+      <member refid="classErrorTamanio_145471ee0f66dfc0a2c53089c2348a335" prot="public" virt="non-virtual"><scope>ErrorTamanio</scope><name>what</name></member>
+      <member refid="classErrorTamanio_14445403295d4308d5192b05e916c8dd9" prot="public" virt="non-virtual"><scope>ErrorTamanio</scope><name>~ErrorTamanio</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

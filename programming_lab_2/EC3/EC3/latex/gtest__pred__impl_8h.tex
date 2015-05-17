@@ -1,0 +1,365 @@
+\section{Escritorio/EC3/src/gtest/gtest\_\-pred\_\-impl.h File Reference}
+\label{gtest__pred__impl_8h}\index{Escritorio/EC3/src/gtest/gtest_pred_impl.h@{Escritorio/EC3/src/gtest/gtest\_\-pred\_\-impl.h}}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf GTEST\_\-ASSERT\_\-}(expression, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED\_\-FORMAT1\_\-}(pred\_\-format, v1, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED1\_\-}(pred, v1, on\_\-failure)
+\item 
+\#define {\bf EXPECT\_\-PRED\_\-FORMAT1}(pred\_\-format, v1)~GTEST\_\-PRED\_\-FORMAT1\_\-(pred\_\-format, v1, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf EXPECT\_\-PRED1}(pred, v1)~GTEST\_\-PRED1\_\-(pred, v1, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED\_\-FORMAT1}(pred\_\-format, v1)~GTEST\_\-PRED\_\-FORMAT1\_\-(pred\_\-format, v1, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED1}(pred, v1)~GTEST\_\-PRED1\_\-(pred, v1, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf GTEST\_\-PRED\_\-FORMAT2\_\-}(pred\_\-format, v1, v2, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED2\_\-}(pred, v1, v2, on\_\-failure)
+\item 
+\#define {\bf EXPECT\_\-PRED\_\-FORMAT2}(pred\_\-format, v1, v2)~GTEST\_\-PRED\_\-FORMAT2\_\-(pred\_\-format, v1, v2, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf EXPECT\_\-PRED2}(pred, v1, v2)~GTEST\_\-PRED2\_\-(pred, v1, v2, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED\_\-FORMAT2}(pred\_\-format, v1, v2)~GTEST\_\-PRED\_\-FORMAT2\_\-(pred\_\-format, v1, v2, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED2}(pred, v1, v2)~GTEST\_\-PRED2\_\-(pred, v1, v2, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf GTEST\_\-PRED\_\-FORMAT3\_\-}(pred\_\-format, v1, v2, v3, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED3\_\-}(pred, v1, v2, v3, on\_\-failure)
+\item 
+\#define {\bf EXPECT\_\-PRED\_\-FORMAT3}(pred\_\-format, v1, v2, v3)~GTEST\_\-PRED\_\-FORMAT3\_\-(pred\_\-format, v1, v2, v3, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf EXPECT\_\-PRED3}(pred, v1, v2, v3)~GTEST\_\-PRED3\_\-(pred, v1, v2, v3, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED\_\-FORMAT3}(pred\_\-format, v1, v2, v3)~GTEST\_\-PRED\_\-FORMAT3\_\-(pred\_\-format, v1, v2, v3, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED3}(pred, v1, v2, v3)~GTEST\_\-PRED3\_\-(pred, v1, v2, v3, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf GTEST\_\-PRED\_\-FORMAT4\_\-}(pred\_\-format, v1, v2, v3, v4, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED4\_\-}(pred, v1, v2, v3, v4, on\_\-failure)
+\item 
+\#define {\bf EXPECT\_\-PRED\_\-FORMAT4}(pred\_\-format, v1, v2, v3, v4)~GTEST\_\-PRED\_\-FORMAT4\_\-(pred\_\-format, v1, v2, v3, v4, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf EXPECT\_\-PRED4}(pred, v1, v2, v3, v4)~GTEST\_\-PRED4\_\-(pred, v1, v2, v3, v4, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED\_\-FORMAT4}(pred\_\-format, v1, v2, v3, v4)~GTEST\_\-PRED\_\-FORMAT4\_\-(pred\_\-format, v1, v2, v3, v4, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED4}(pred, v1, v2, v3, v4)~GTEST\_\-PRED4\_\-(pred, v1, v2, v3, v4, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf GTEST\_\-PRED\_\-FORMAT5\_\-}(pred\_\-format, v1, v2, v3, v4, v5, on\_\-failure)
+\item 
+\#define {\bf GTEST\_\-PRED5\_\-}(pred, v1, v2, v3, v4, v5, on\_\-failure)
+\item 
+\#define {\bf EXPECT\_\-PRED\_\-FORMAT5}(pred\_\-format, v1, v2, v3, v4, v5)~GTEST\_\-PRED\_\-FORMAT5\_\-(pred\_\-format, v1, v2, v3, v4, v5, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf EXPECT\_\-PRED5}(pred, v1, v2, v3, v4, v5)~GTEST\_\-PRED5\_\-(pred, v1, v2, v3, v4, v5, GTEST\_\-NONFATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED\_\-FORMAT5}(pred\_\-format, v1, v2, v3, v4, v5)~GTEST\_\-PRED\_\-FORMAT5\_\-(pred\_\-format, v1, v2, v3, v4, v5, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\item 
+\#define {\bf ASSERT\_\-PRED5}(pred, v1, v2, v3, v4, v5)~GTEST\_\-PRED5\_\-(pred, v1, v2, v3, v4, v5, GTEST\_\-FATAL\_\-FAILURE\_\-)
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename Pred, typename T1$>$ }\\AssertionResult {\bf AssertPred1Helper} (const char $\ast$pred\_\-text, const char $\ast$e1, Pred pred, const T1 \&v1)
+\item 
+{\footnotesize template$<$typename Pred, typename T1, typename T2$>$ }\\AssertionResult {\bf AssertPred2Helper} (const char $\ast$pred\_\-text, const char $\ast$e1, const char $\ast$e2, Pred pred, const T1 \&v1, const T2 \&v2)
+\item 
+{\footnotesize template$<$typename Pred, typename T1, typename T2, typename T3$>$ }\\AssertionResult {\bf AssertPred3Helper} (const char $\ast$pred\_\-text, const char $\ast$e1, const char $\ast$e2, const char $\ast$e3, Pred pred, const T1 \&v1, const T2 \&v2, const T3 \&v3)
+\item 
+{\footnotesize template$<$typename Pred, typename T1, typename T2, typename T3, typename T4$>$ }\\AssertionResult {\bf AssertPred4Helper} (const char $\ast$pred\_\-text, const char $\ast$e1, const char $\ast$e2, const char $\ast$e3, const char $\ast$e4, Pred pred, const T1 \&v1, const T2 \&v2, const T3 \&v3, const T4 \&v4)
+\item 
+{\footnotesize template$<$typename Pred, typename T1, typename T2, typename T3, typename T4, typename T5$>$ }\\AssertionResult {\bf AssertPred5Helper} (const char $\ast$pred\_\-text, const char $\ast$e1, const char $\ast$e2, const char $\ast$e3, const char $\ast$e4, const char $\ast$e5, Pred pred, const T1 \&v1, const T2 \&v2, const T3 \&v3, const T4 \&v4, const T5 \&v5)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED1@{ASSERT\_\-PRED1}}
+\index{ASSERT_PRED1@{ASSERT\_\-PRED1}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED1(pred, v1)~GTEST\_\-PRED1\_\-(pred, v1, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_a51f864a7cf311d9fb655a96197ef235}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED2@{ASSERT\_\-PRED2}}
+\index{ASSERT_PRED2@{ASSERT\_\-PRED2}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED2(pred, v1, v2)~GTEST\_\-PRED2\_\-(pred, v1, v2, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_b942730da629dcdd58dcdfa674a85f2e}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED3@{ASSERT\_\-PRED3}}
+\index{ASSERT_PRED3@{ASSERT\_\-PRED3}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED3(pred, v1, v2, v3)~GTEST\_\-PRED3\_\-(pred, v1, v2, v3, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_9e06f28bd29270b0d2be12ba4c27cbb6}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED4@{ASSERT\_\-PRED4}}
+\index{ASSERT_PRED4@{ASSERT\_\-PRED4}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED4(pred, v1, v2, v3, v4)~GTEST\_\-PRED4\_\-(pred, v1, v2, v3, v4, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_3c9851d61189a6c4985f9e87d6c13e7f}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED5@{ASSERT\_\-PRED5}}
+\index{ASSERT_PRED5@{ASSERT\_\-PRED5}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED5(pred, v1, v2, v3, v4, v5)~GTEST\_\-PRED5\_\-(pred, v1, v2, v3, v4, v5, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_9ebc6d49002a7d1b54cfb0d42e7032ec}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED_FORMAT1@{ASSERT\_\-PRED\_\-FORMAT1}}
+\index{ASSERT_PRED_FORMAT1@{ASSERT\_\-PRED\_\-FORMAT1}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED\_\-FORMAT1(pred\_\-format, v1)~GTEST\_\-PRED\_\-FORMAT1\_\-(pred\_\-format, v1, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_301d707584448201b6730fcb051cb9d9}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED_FORMAT2@{ASSERT\_\-PRED\_\-FORMAT2}}
+\index{ASSERT_PRED_FORMAT2@{ASSERT\_\-PRED\_\-FORMAT2}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED\_\-FORMAT2(pred\_\-format, v1, v2)~GTEST\_\-PRED\_\-FORMAT2\_\-(pred\_\-format, v1, v2, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_52b2ca23761186f3e0f6efa7d70e0fa0}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED_FORMAT3@{ASSERT\_\-PRED\_\-FORMAT3}}
+\index{ASSERT_PRED_FORMAT3@{ASSERT\_\-PRED\_\-FORMAT3}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED\_\-FORMAT3(pred\_\-format, v1, v2, v3)~GTEST\_\-PRED\_\-FORMAT3\_\-(pred\_\-format, v1, v2, v3, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_d51f5b7293702c4a73e5b85878bbf292}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED_FORMAT4@{ASSERT\_\-PRED\_\-FORMAT4}}
+\index{ASSERT_PRED_FORMAT4@{ASSERT\_\-PRED\_\-FORMAT4}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED\_\-FORMAT4(pred\_\-format, v1, v2, v3, v4)~GTEST\_\-PRED\_\-FORMAT4\_\-(pred\_\-format, v1, v2, v3, v4, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_5dcb830cd0a1bcab59d2a9245bdc6a42}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!ASSERT_PRED_FORMAT5@{ASSERT\_\-PRED\_\-FORMAT5}}
+\index{ASSERT_PRED_FORMAT5@{ASSERT\_\-PRED\_\-FORMAT5}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT\_\-PRED\_\-FORMAT5(pred\_\-format, v1, v2, v3, v4, v5)~GTEST\_\-PRED\_\-FORMAT5\_\-(pred\_\-format, v1, v2, v3, v4, v5, GTEST\_\-FATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_5d8232dc55005b6dfdfaf7eb1bc68774}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED1@{EXPECT\_\-PRED1}}
+\index{EXPECT_PRED1@{EXPECT\_\-PRED1}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED1(pred, v1)~GTEST\_\-PRED1\_\-(pred, v1, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_764e040be09adc3c6a06e877e83e6113}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED2@{EXPECT\_\-PRED2}}
+\index{EXPECT_PRED2@{EXPECT\_\-PRED2}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED2(pred, v1, v2)~GTEST\_\-PRED2\_\-(pred, v1, v2, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_83857bdfa95ce84aec0c84f83ee30700}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED3@{EXPECT\_\-PRED3}}
+\index{EXPECT_PRED3@{EXPECT\_\-PRED3}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED3(pred, v1, v2, v3)~GTEST\_\-PRED3\_\-(pred, v1, v2, v3, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_b547a2c9920df9998e46014dfa2f8dee}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED4@{EXPECT\_\-PRED4}}
+\index{EXPECT_PRED4@{EXPECT\_\-PRED4}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED4(pred, v1, v2, v3, v4)~GTEST\_\-PRED4\_\-(pred, v1, v2, v3, v4, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_4b6f8cc85983d75f0975dc10dd5d7830}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED5@{EXPECT\_\-PRED5}}
+\index{EXPECT_PRED5@{EXPECT\_\-PRED5}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED5(pred, v1, v2, v3, v4, v5)~GTEST\_\-PRED5\_\-(pred, v1, v2, v3, v4, v5, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_a31ecfba6da13bba51bcb8e9b9c64dd9}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED_FORMAT1@{EXPECT\_\-PRED\_\-FORMAT1}}
+\index{EXPECT_PRED_FORMAT1@{EXPECT\_\-PRED\_\-FORMAT1}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED\_\-FORMAT1(pred\_\-format, v1)~GTEST\_\-PRED\_\-FORMAT1\_\-(pred\_\-format, v1, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_bbc454a39b305b26dadd5a109ed90abc}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED_FORMAT2@{EXPECT\_\-PRED\_\-FORMAT2}}
+\index{EXPECT_PRED_FORMAT2@{EXPECT\_\-PRED\_\-FORMAT2}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED\_\-FORMAT2(pred\_\-format, v1, v2)~GTEST\_\-PRED\_\-FORMAT2\_\-(pred\_\-format, v1, v2, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_b9587b21308816b3b89f518bee130ea4}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED_FORMAT3@{EXPECT\_\-PRED\_\-FORMAT3}}
+\index{EXPECT_PRED_FORMAT3@{EXPECT\_\-PRED\_\-FORMAT3}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED\_\-FORMAT3(pred\_\-format, v1, v2, v3)~GTEST\_\-PRED\_\-FORMAT3\_\-(pred\_\-format, v1, v2, v3, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_cbdce51982acbbb8145543f470b15b6c}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED_FORMAT4@{EXPECT\_\-PRED\_\-FORMAT4}}
+\index{EXPECT_PRED_FORMAT4@{EXPECT\_\-PRED\_\-FORMAT4}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED\_\-FORMAT4(pred\_\-format, v1, v2, v3, v4)~GTEST\_\-PRED\_\-FORMAT4\_\-(pred\_\-format, v1, v2, v3, v4, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_773df87450049eee312ca68001446e6a}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!EXPECT_PRED_FORMAT5@{EXPECT\_\-PRED\_\-FORMAT5}}
+\index{EXPECT_PRED_FORMAT5@{EXPECT\_\-PRED\_\-FORMAT5}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EXPECT\_\-PRED\_\-FORMAT5(pred\_\-format, v1, v2, v3, v4, v5)~GTEST\_\-PRED\_\-FORMAT5\_\-(pred\_\-format, v1, v2, v3, v4, v5, GTEST\_\-NONFATAL\_\-FAILURE\_\-)}\label{gtest__pred__impl_8h_92351507fd71e6cf2b8144edfc32cdac}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_ASSERT_@{GTEST\_\-ASSERT\_\-}}
+\index{GTEST_ASSERT_@{GTEST\_\-ASSERT\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-ASSERT\_\-(expression, on\_\-failure)}\label{gtest__pred__impl_8h_8216a4b47b71c55f51c6889b13115c3d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+  if (const ::testing::AssertionResult gtest_ar = (expression)) \
+    ; \
+  else \
+    on_failure(gtest_ar.failure_message())
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED1_@{GTEST\_\-PRED1\_\-}}
+\index{GTEST_PRED1_@{GTEST\_\-PRED1\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED1\_\-(pred, v1, on\_\-failure)}\label{gtest__pred__impl_8h_7aeea2577a6bd0ad1b25fbe678fd8780}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(::testing::AssertPred1Helper(#pred, \
+                                             #v1, \
+                                             pred, \
+                                             v1), on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED2_@{GTEST\_\-PRED2\_\-}}
+\index{GTEST_PRED2_@{GTEST\_\-PRED2\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED2\_\-(pred, v1, v2, on\_\-failure)}\label{gtest__pred__impl_8h_212427e5889f40469e842bfc5510d04d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(::testing::AssertPred2Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             pred, \
+                                             v1, \
+                                             v2), on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED3_@{GTEST\_\-PRED3\_\-}}
+\index{GTEST_PRED3_@{GTEST\_\-PRED3\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED3\_\-(pred, v1, v2, v3, on\_\-failure)}\label{gtest__pred__impl_8h_1a5b8d39351f3ca4feaac2f24e0162ae}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(::testing::AssertPred3Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3), on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED4_@{GTEST\_\-PRED4\_\-}}
+\index{GTEST_PRED4_@{GTEST\_\-PRED4\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED4\_\-(pred, v1, v2, v3, v4, on\_\-failure)}\label{gtest__pred__impl_8h_0254fa4898c5bc62886cced1dc69227a}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(::testing::AssertPred4Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             #v4, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3, \
+                                             v4), on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED5_@{GTEST\_\-PRED5\_\-}}
+\index{GTEST_PRED5_@{GTEST\_\-PRED5\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED5\_\-(pred, v1, v2, v3, v4, v5, on\_\-failure)}\label{gtest__pred__impl_8h_9ade8b4107951e6cdc254a9e338ae6f6}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(::testing::AssertPred5Helper(#pred, \
+                                             #v1, \
+                                             #v2, \
+                                             #v3, \
+                                             #v4, \
+                                             #v5, \
+                                             pred, \
+                                             v1, \
+                                             v2, \
+                                             v3, \
+                                             v4, \
+                                             v5), on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED_FORMAT1_@{GTEST\_\-PRED\_\-FORMAT1\_\-}}
+\index{GTEST_PRED_FORMAT1_@{GTEST\_\-PRED\_\-FORMAT1\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED\_\-FORMAT1\_\-(pred\_\-format, v1, on\_\-failure)}\label{gtest__pred__impl_8h_7c93df98abc9fd256d6ac9ce0d7dcc7e}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(pred_format(#v1, v1),\
+                on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED_FORMAT2_@{GTEST\_\-PRED\_\-FORMAT2\_\-}}
+\index{GTEST_PRED_FORMAT2_@{GTEST\_\-PRED\_\-FORMAT2\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED\_\-FORMAT2\_\-(pred\_\-format, v1, v2, on\_\-failure)}\label{gtest__pred__impl_8h_86912f7f5e1f3fbae02b890f53e65183}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(pred_format(#v1, #v2, v1, v2),\
+                on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED_FORMAT3_@{GTEST\_\-PRED\_\-FORMAT3\_\-}}
+\index{GTEST_PRED_FORMAT3_@{GTEST\_\-PRED\_\-FORMAT3\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED\_\-FORMAT3\_\-(pred\_\-format, v1, v2, v3, on\_\-failure)}\label{gtest__pred__impl_8h_f0f9deca63ea8518e893d3541bfe74df}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(pred_format(#v1, #v2, #v3, v1, v2, v3),\
+                on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED_FORMAT4_@{GTEST\_\-PRED\_\-FORMAT4\_\-}}
+\index{GTEST_PRED_FORMAT4_@{GTEST\_\-PRED\_\-FORMAT4\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED\_\-FORMAT4\_\-(pred\_\-format, v1, v2, v3, v4, on\_\-failure)}\label{gtest__pred__impl_8h_7836ad1e19812d0fb8b655bf7c725af6}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(pred_format(#v1, #v2, #v3, #v4, v1, v2, v3, v4),\
+                on_failure)
+\end{verbatim}
+\end{Code}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!GTEST_PRED_FORMAT5_@{GTEST\_\-PRED\_\-FORMAT5\_\-}}
+\index{GTEST_PRED_FORMAT5_@{GTEST\_\-PRED\_\-FORMAT5\_\-}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-PRED\_\-FORMAT5\_\-(pred\_\-format, v1, v2, v3, v4, v5, on\_\-failure)}\label{gtest__pred__impl_8h_c8053ffd624d6c9c634bcd77e7b1ae64}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_ASSERT_(pred_format(#v1, #v2, #v3, #v4, #v5, v1, v2, v3, v4, v5),\
+                on_failure)
+\end{verbatim}
+\end{Code}
+
+
+\subsection{Function Documentation}
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!AssertPred1Helper@{AssertPred1Helper}}
+\index{AssertPred1Helper@{AssertPred1Helper}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Pred, typename T1$>$ AssertionResult AssertPred1Helper (const char $\ast$ {\em pred\_\-text}, const char $\ast$ {\em e1}, Pred {\em pred}, const T1 \& {\em v1})\hspace{0.3cm}{\tt  [inline]}}\label{gtest__pred__impl_8h_bff1527f52d111c17363653c1fbcaf17}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!AssertPred2Helper@{AssertPred2Helper}}
+\index{AssertPred2Helper@{AssertPred2Helper}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Pred, typename T1, typename T2$>$ AssertionResult AssertPred2Helper (const char $\ast$ {\em pred\_\-text}, const char $\ast$ {\em e1}, const char $\ast$ {\em e2}, Pred {\em pred}, const T1 \& {\em v1}, const T2 \& {\em v2})\hspace{0.3cm}{\tt  [inline]}}\label{gtest__pred__impl_8h_78043d6a1ec90420da5a0b06999f5da3}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!AssertPred3Helper@{AssertPred3Helper}}
+\index{AssertPred3Helper@{AssertPred3Helper}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Pred, typename T1, typename T2, typename T3$>$ AssertionResult AssertPred3Helper (const char $\ast$ {\em pred\_\-text}, const char $\ast$ {\em e1}, const char $\ast$ {\em e2}, const char $\ast$ {\em e3}, Pred {\em pred}, const T1 \& {\em v1}, const T2 \& {\em v2}, const T3 \& {\em v3})\hspace{0.3cm}{\tt  [inline]}}\label{gtest__pred__impl_8h_c7ee5e2ca4f22d94e70b62deee763c84}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!AssertPred4Helper@{AssertPred4Helper}}
+\index{AssertPred4Helper@{AssertPred4Helper}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Pred, typename T1, typename T2, typename T3, typename T4$>$ AssertionResult AssertPred4Helper (const char $\ast$ {\em pred\_\-text}, const char $\ast$ {\em e1}, const char $\ast$ {\em e2}, const char $\ast$ {\em e3}, const char $\ast$ {\em e4}, Pred {\em pred}, const T1 \& {\em v1}, const T2 \& {\em v2}, const T3 \& {\em v3}, const T4 \& {\em v4})\hspace{0.3cm}{\tt  [inline]}}\label{gtest__pred__impl_8h_13d4772c4febac7e79847158d3c0c301}
+
+
+\index{gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}!AssertPred5Helper@{AssertPred5Helper}}
+\index{AssertPred5Helper@{AssertPred5Helper}!gtest_pred_impl.h@{gtest\_\-pred\_\-impl.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Pred, typename T1, typename T2, typename T3, typename T4, typename T5$>$ AssertionResult AssertPred5Helper (const char $\ast$ {\em pred\_\-text}, const char $\ast$ {\em e1}, const char $\ast$ {\em e2}, const char $\ast$ {\em e3}, const char $\ast$ {\em e4}, const char $\ast$ {\em e5}, Pred {\em pred}, const T1 \& {\em v1}, const T2 \& {\em v2}, const T3 \& {\em v3}, const T4 \& {\em v4}, const T5 \& {\em v5})\hspace{0.3cm}{\tt  [inline]}}\label{gtest__pred__impl_8h_654b27ad7a124310670cbc3fe40e721b}
+
+

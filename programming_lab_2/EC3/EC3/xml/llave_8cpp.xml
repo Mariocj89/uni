@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="llave_8cpp" kind="file">
+    <compoundname>llave.cpp</compoundname>
+    <includes refid="llave_8h" local="yes">llave.h</includes>
+    <incdepgraph>
+      <node id="848">
+        <label>Escritorio/EC3/src/llave.cpp</label>
+        <link refid="llave.cpp"/>
+        <childnode refid="849" relation="include">
+        </childnode>
+      </node>
+      <node id="849">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="850" relation="include">
+        </childnode>
+      </node>
+      <node id="850">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="llave_8cpp_16c539c87157e9ae5fe9d5d1727b05623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;flujo, const Llave &amp;L)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>flujo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga de &quot;&lt;&lt;&quot;, copia la informacion de la llave a un flujo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flujo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento del que copiamos la informacion que se insertara en el flujo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un flujo con la informacion de la clase </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/llave.cpp" line="126" bodyfile="/home/Mario/Escritorio/EC3/src/llave.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementacion del los metodos de la clase <ref refid="classLlave" kindref="compound">Llave</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>13-03-09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre</bold> Mario <linebreak/>
+ <bold>Apellidos</bold> Corchero Jiménez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Grupo</bold> 9 <linebreak/>
+ <bold>Entrega</bold> 1 <bold>Curso</bold> 2º </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="llave_8h" kindref="compound" tooltip="Implementacion del header de la clase Llave.">llave.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="classLlave_17fd5f7306371c7c3b190b80d86f5e4a5" kindref="member">Llave::Llave</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>=-1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="classLlave_17fd5f7306371c7c3b190b80d86f5e4a5" kindref="member">Llave::Llave</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/>i)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>=i;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="classLlave_17fd5f7306371c7c3b190b80d86f5e4a5" kindref="member">Llave::Llave</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>=L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1b26899de1c81551d751bdd0c81986285" kindref="member">Llave::get_id</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLlave_14dac6b5967be18669a17898ff1dac007" kindref="member">Llave::set_id</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<sp/>a)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>=a;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="classLlave_1f341bf8376a92c91bf0ec87a6173a472" kindref="member">Llave::~ Llave</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/><ref refid="classLlave_10f2eb466ab9403a0113e035d422d613f" kindref="member">Llave::operator =</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>=L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLlave_1fabfc9e023a0cc7ed2a1546869253601" kindref="member">Llave::operator &lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="85"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>&lt;L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLlave_12a122594cdffeac7d7a76a340728123c" kindref="member">Llave::operator &gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="95"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>&gt;L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLlave_11c7296c36a22931ca9a0aad141794269" kindref="member">Llave::operator ==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="105"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>==L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLlave_1522a52a45c83e003dc5fe4b099da3b2b" kindref="member">Llave::operator !=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;<sp/>L)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="115"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>!=L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">ostream<sp/>&amp;<ref refid="classLlave_16c539c87157e9ae5fe9d5d1727b05623" kindref="member">operator&lt;&lt;</ref>(<sp/>ostream<sp/>&amp;<sp/>flujo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound" tooltip="Esta clase representa los atributos y metodos de llaves.">Llave</ref><sp/>&amp;L<sp/>)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>flujo&lt;&lt;L.<ref refid="classLlave_138bfe1bd01818c4d647d3117793da954" kindref="member" tooltip="Entero que contiene el identificador de la llave, (-1 representa inicializado pero...">id_</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flujo;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/llave.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1Environment" kind="class" prot="public">
+    <compoundname>testing::Environment</compoundname>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+    <innerclass refid="structtesting_1_1Environment_1_1Setup__should__be__spelled__SetUp" prot="private">testing::Environment::Setup_should_be_spelled_SetUp</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1Environment_11febe35c894ab431777a8ef7079f86c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::Environment::~Environment</definition>
+        <argsstring>()</argsstring>
+        <name>~Environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="409" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="409" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Environment_1562c61c7087bc48651cfc1557af349ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="412" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="412" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Environment_184a68fe128e6d09494c01c6031c0d8f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="415" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="415" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1Environment_14c1b9884d3ce6eb9a9866ea3b328c0c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structtesting_1_1Environment_1_1Setup__should__be__spelled__SetUp" kindref="compound">Setup_should_be_spelled_SetUp</ref> *</type>
+        <definition>virtual Setup_should_be_spelled_SetUp* testing::Environment::Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="420" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="420" bodyend="420"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="406" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="406" bodyend="421"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Environment_1562c61c7087bc48651cfc1557af349ef" prot="public" virt="virtual"><scope>testing::Environment</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Environment_14c1b9884d3ce6eb9a9866ea3b328c0c1" prot="private" virt="virtual"><scope>testing::Environment</scope><name>Setup</name></member>
+      <member refid="classtesting_1_1Environment_184a68fe128e6d09494c01c6031c0d8f7" prot="public" virt="virtual"><scope>testing::Environment</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Environment_11febe35c894ab431777a8ef7079f86c3" prot="public" virt="virtual"><scope>testing::Environment</scope><name>~Environment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

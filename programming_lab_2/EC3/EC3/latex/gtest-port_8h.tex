@@ -1,0 +1,310 @@
+\section{Escritorio/EC3/src/gtest/internal/gtest-port.h File Reference}
+\label{gtest-port_8h}\index{Escritorio/EC3/src/gtest/internal/gtest-port.h@{Escritorio/EC3/src/gtest/internal/gtest-port.h}}
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$sstream$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf testing}
+\item 
+namespace {\bf testing::internal}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf testing::internal::scoped\_\-ptr$<$ T $>$}
+\item 
+class {\bf testing::internal::Mutex}
+\item 
+class {\bf testing::internal::GTestMutexLock}
+\item 
+class {\bf testing::internal::ThreadLocal$<$ T $>$}
+\item 
+struct {\bf testing::internal::bool\_\-constant$<$ bool\_\-value $>$}
+\item 
+struct {\bf testing::internal::is\_\-pointer$<$ T $>$}
+\item 
+struct {\bf testing::internal::is\_\-pointer$<$ T $\ast$ $>$}
+\item 
+class {\bf testing::internal::TypeWithSize$<$ size $>$}
+\item 
+class {\bf testing::internal::TypeWithSize$<$ 4 $>$}
+\item 
+class {\bf testing::internal::TypeWithSize$<$ 8 $>$}
+\item 
+class {\bf testing::internal::GTestCheckProvider}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf GTEST\_\-NAME}~\char`\"{}Google Test\char`\"{}
+\item 
+\#define {\bf GTEST\_\-FLAG\_\-PREFIX}~\char`\"{}gtest\_\-\char`\"{}
+\item 
+\#define {\bf GTEST\_\-FLAG\_\-PREFIX\_\-UPPER}~\char`\"{}GTEST\_\-\char`\"{}
+\item 
+\#define {\bf GTEST\_\-HAS\_\-EXCEPTIONS}~0
+\item 
+\#define {\bf GTEST\_\-HAS\_\-STD\_\-STRING}~1
+\item 
+\#define {\bf GTEST\_\-HAS\_\-GLOBAL\_\-STRING}~0
+\item 
+\#define {\bf GTEST\_\-HAS\_\-STD\_\-WSTRING}~GTEST\_\-HAS\_\-STD\_\-STRING
+\item 
+\#define {\bf GTEST\_\-HAS\_\-GLOBAL\_\-WSTRING}~GTEST\_\-HAS\_\-GLOBAL\_\-STRING
+\item 
+\#define {\bf GTEST\_\-HAS\_\-RTTI}~1
+\item 
+\#define {\bf GTEST\_\-HAS\_\-PTHREAD}~0
+\item 
+\#define {\bf GTEST\_\-HAS\_\-TR1\_\-TUPLE}~0
+\item 
+\#define {\bf GTEST\_\-HAS\_\-CLONE}~0
+\item 
+\#define {\bf GTEST\_\-AMBIGUOUS\_\-ELSE\_\-BLOCKER\_\-}~switch (0) case 0:
+\item 
+\#define {\bf GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}
+\item 
+\#define {\bf GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}(type)
+\item 
+\#define {\bf GTEST\_\-MUST\_\-USE\_\-RESULT\_\-}
+\item 
+\#define {\bf GTEST\_\-LOG\_\-}(severity, msg)
+\item 
+\#define {\bf GTEST\_\-IS\_\-THREADSAFE}~0
+\item 
+\#define {\bf GTEST\_\-CHECK\_\-}(condition)
+\item 
+\#define {\bf GTEST\_\-FLAG}(name)~FLAGS\_\-gtest\_\-\#\#name
+\item 
+\#define {\bf GTEST\_\-DECLARE\_\-bool\_\-}(name)~extern bool GTEST\_\-FLAG(name)
+\item 
+\#define {\bf GTEST\_\-DECLARE\_\-int32\_\-}(name)~extern ::{\bf testing::internal::Int32} GTEST\_\-FLAG(name)
+\item 
+\#define {\bf GTEST\_\-DECLARE\_\-string\_\-}(name)~extern ::{\bf testing::internal::String} GTEST\_\-FLAG(name)
+\item 
+\#define {\bf GTEST\_\-DEFINE\_\-bool\_\-}(name, default\_\-val, doc)~bool GTEST\_\-FLAG(name) = (default\_\-val)
+\item 
+\#define {\bf GTEST\_\-DEFINE\_\-int32\_\-}(name, default\_\-val, doc)~::{\bf testing::internal::Int32} GTEST\_\-FLAG(name) = (default\_\-val)
+\item 
+\#define {\bf GTEST\_\-DEFINE\_\-string\_\-}(name, default\_\-val, doc)~::{\bf testing::internal::String} GTEST\_\-FLAG(name) = (default\_\-val)
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef ::std::stringstream {\bf testing::internal::StrStream}
+\item 
+typedef GTestMutexLock {\bf testing::internal::MutexLock}
+\item 
+typedef bool\_\-constant$<$ false $>$ {\bf testing::internal::false\_\-type}
+\item 
+typedef bool\_\-constant$<$ true $>$ {\bf testing::internal::true\_\-type}
+\item 
+typedef long long {\bf testing::internal::BiggestInt}
+\item 
+typedef TypeWithSize$<$ 4 $>$::Int {\bf testing::internal::Int32}
+\item 
+typedef TypeWithSize$<$ 4 $>$::UInt {\bf testing::internal::UInt32}
+\item 
+typedef TypeWithSize$<$ 8 $>$::Int {\bf testing::internal::Int64}
+\item 
+typedef TypeWithSize$<$ 8 $>$::UInt {\bf testing::internal::UInt64}
+\item 
+typedef TypeWithSize$<$ 8 $>$::Int {\bf testing::internal::TimeInMillis}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf testing::internal::GTestLogSeverity} \{ {\bf testing::internal::GTEST\_\-INFO}, 
+{\bf testing::internal::GTEST\_\-WARNING}, 
+{\bf testing::internal::GTEST\_\-ERROR}, 
+{\bf testing::internal::GTEST\_\-FATAL}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf testing::internal::GTestLog} (GTestLogSeverity severity, const char $\ast$file, int line, const char $\ast$msg)
+\item 
+void {\bf testing::internal::LogToStderr} ()
+\item 
+void {\bf testing::internal::FlushInfoLog} ()
+\item 
+size\_\-t {\bf testing::internal::GetThreadCount} ()
+\item 
+const char $\ast$ {\bf testing::internal::GetEnv} (const char $\ast$name)
+\item 
+void {\bf testing::internal::abort} ()
+\item 
+bool {\bf testing::internal::ParseInt32} (const Message \&src\_\-text, const char $\ast$str, Int32 $\ast$value)
+\item 
+bool {\bf testing::internal::BoolFromGTestEnv} (const char $\ast$flag, bool default\_\-val)
+\item 
+Int32 {\bf testing::internal::Int32FromGTestEnv} (const char $\ast$flag, Int32 default\_\-val)
+\item 
+const char $\ast$ {\bf testing::internal::StringFromGTestEnv} (const char $\ast$flag, const char $\ast$default\_\-val)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+const BiggestInt {\bf testing::internal::kMaxBiggestInt}
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{gtest-port.h@{gtest-port.h}!GTEST_AMBIGUOUS_ELSE_BLOCKER_@{GTEST\_\-AMBIGUOUS\_\-ELSE\_\-BLOCKER\_\-}}
+\index{GTEST_AMBIGUOUS_ELSE_BLOCKER_@{GTEST\_\-AMBIGUOUS\_\-ELSE\_\-BLOCKER\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-AMBIGUOUS\_\-ELSE\_\-BLOCKER\_\-~switch (0) case 0:}\label{gtest-port_8h_fef9217bc28183f8b5a0c0341dc0e9ce}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_ATTRIBUTE_UNUSED_@{GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}}
+\index{GTEST_ATTRIBUTE_UNUSED_@{GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-ATTRIBUTE\_\-UNUSED\_\-}\label{gtest-port_8h_d6622fc3763a54b78963d4628a535862}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_CHECK_@{GTEST\_\-CHECK\_\-}}
+\index{GTEST_CHECK_@{GTEST\_\-CHECK\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-CHECK\_\-(condition)}\label{gtest-port_8h_b4e06887e347fd27742a56dfd5bff91e}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
+    if (condition) \
+      ; \
+    else \
+      ::testing::internal::GTestCheckProvider(\
+          #condition, __FILE__, __LINE__).GetStream()
+\end{verbatim}
+\end{Code}
+\index{gtest-port.h@{gtest-port.h}!GTEST_DECLARE_bool_@{GTEST\_\-DECLARE\_\-bool\_\-}}
+\index{GTEST_DECLARE_bool_@{GTEST\_\-DECLARE\_\-bool\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DECLARE\_\-bool\_\-(name)~extern bool GTEST\_\-FLAG(name)}\label{gtest-port_8h_ec8daec67eb6f6ce40bded77d26d76ef}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DECLARE_int32_@{GTEST\_\-DECLARE\_\-int32\_\-}}
+\index{GTEST_DECLARE_int32_@{GTEST\_\-DECLARE\_\-int32\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DECLARE\_\-int32\_\-(name)~extern ::{\bf testing::internal::Int32} GTEST\_\-FLAG(name)}\label{gtest-port_8h_c164b439f6e7ff87cb870cd1d274925c}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}}
+\index{GTEST_DECLARE_string_@{GTEST\_\-DECLARE\_\-string\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DECLARE\_\-string\_\-(name)~extern ::{\bf testing::internal::String} GTEST\_\-FLAG(name)}\label{gtest-port_8h_976ec43f6217dde8e3bfded5076b2e5e}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DEFINE_bool_@{GTEST\_\-DEFINE\_\-bool\_\-}}
+\index{GTEST_DEFINE_bool_@{GTEST\_\-DEFINE\_\-bool\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DEFINE\_\-bool\_\-(name, default\_\-val, doc)~bool GTEST\_\-FLAG(name) = (default\_\-val)}\label{gtest-port_8h_cb3ab36afc4a59bd29cf3ccff12e5768}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DEFINE_int32_@{GTEST\_\-DEFINE\_\-int32\_\-}}
+\index{GTEST_DEFINE_int32_@{GTEST\_\-DEFINE\_\-int32\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DEFINE\_\-int32\_\-(name, default\_\-val, doc)~::{\bf testing::internal::Int32} GTEST\_\-FLAG(name) = (default\_\-val)}\label{gtest-port_8h_5255c79a2ea5baa5e66ffdf2eb1f1b77}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DEFINE_string_@{GTEST\_\-DEFINE\_\-string\_\-}}
+\index{GTEST_DEFINE_string_@{GTEST\_\-DEFINE\_\-string\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DEFINE\_\-string\_\-(name, default\_\-val, doc)~::{\bf testing::internal::String} GTEST\_\-FLAG(name) = (default\_\-val)}\label{gtest-port_8h_2b3fdd99e7ddfede323b1bf0cd3dc7b0}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}}
+\index{GTEST_DISALLOW_COPY_AND_ASSIGN_@{GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-DISALLOW\_\-COPY\_\-AND\_\-ASSIGN\_\-(type)}\label{gtest-port_8h_b08845a5f4649b939a17c573172fcdeb}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}type(const type &);\
+  void operator=(const type &)
+\end{verbatim}
+\end{Code}
+\index{gtest-port.h@{gtest-port.h}!GTEST_FLAG@{GTEST\_\-FLAG}}
+\index{GTEST_FLAG@{GTEST\_\-FLAG}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-FLAG(name)~FLAGS\_\-gtest\_\-\#\#name}\label{gtest-port_8h_a9537b08f663cffc361cdeb940705731}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_FLAG_PREFIX@{GTEST\_\-FLAG\_\-PREFIX}}
+\index{GTEST_FLAG_PREFIX@{GTEST\_\-FLAG\_\-PREFIX}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-FLAG\_\-PREFIX~\char`\"{}gtest\_\-\char`\"{}}\label{gtest-port_8h_6b4cd8e28f94b0a7952d27645d4da3db}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_FLAG_PREFIX_UPPER@{GTEST\_\-FLAG\_\-PREFIX\_\-UPPER}}
+\index{GTEST_FLAG_PREFIX_UPPER@{GTEST\_\-FLAG\_\-PREFIX\_\-UPPER}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-FLAG\_\-PREFIX\_\-UPPER~\char`\"{}GTEST\_\-\char`\"{}}\label{gtest-port_8h_4899fab4f05f420b4b184bc05e8ad43b}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_CLONE@{GTEST\_\-HAS\_\-CLONE}}
+\index{GTEST_HAS_CLONE@{GTEST\_\-HAS\_\-CLONE}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-CLONE~0}\label{gtest-port_8h_1bd86e20372e9ea966be0bc126088448}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_EXCEPTIONS@{GTEST\_\-HAS\_\-EXCEPTIONS}}
+\index{GTEST_HAS_EXCEPTIONS@{GTEST\_\-HAS\_\-EXCEPTIONS}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-EXCEPTIONS~0}\label{gtest-port_8h_fc996bd9a7178c4f459980f9d7c908f1}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_GLOBAL_STRING@{GTEST\_\-HAS\_\-GLOBAL\_\-STRING}}
+\index{GTEST_HAS_GLOBAL_STRING@{GTEST\_\-HAS\_\-GLOBAL\_\-STRING}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-GLOBAL\_\-STRING~0}\label{gtest-port_8h_45fa310c460409d25247798b01f1f514}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_GLOBAL_WSTRING@{GTEST\_\-HAS\_\-GLOBAL\_\-WSTRING}}
+\index{GTEST_HAS_GLOBAL_WSTRING@{GTEST\_\-HAS\_\-GLOBAL\_\-WSTRING}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-GLOBAL\_\-WSTRING~GTEST\_\-HAS\_\-GLOBAL\_\-STRING}\label{gtest-port_8h_9ed4fa73ee05bba6c3d4a226f13ebe26}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_PTHREAD@{GTEST\_\-HAS\_\-PTHREAD}}
+\index{GTEST_HAS_PTHREAD@{GTEST\_\-HAS\_\-PTHREAD}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-PTHREAD~0}\label{gtest-port_8h_b5815d752d5d97ed6b435ba0bb77d61d}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_RTTI@{GTEST\_\-HAS\_\-RTTI}}
+\index{GTEST_HAS_RTTI@{GTEST\_\-HAS\_\-RTTI}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-RTTI~1}\label{gtest-port_8h_916695cd0aa5bf5d9068ce06e82f7a2f}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_STD_STRING@{GTEST\_\-HAS\_\-STD\_\-STRING}}
+\index{GTEST_HAS_STD_STRING@{GTEST\_\-HAS\_\-STD\_\-STRING}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-STD\_\-STRING~1}\label{gtest-port_8h_0fd9668b4f6fbe243464becee628432e}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_STD_WSTRING@{GTEST\_\-HAS\_\-STD\_\-WSTRING}}
+\index{GTEST_HAS_STD_WSTRING@{GTEST\_\-HAS\_\-STD\_\-WSTRING}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-STD\_\-WSTRING~GTEST\_\-HAS\_\-STD\_\-STRING}\label{gtest-port_8h_56198e3f351faf67313eaeb0141f47a8}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_HAS_TR1_TUPLE@{GTEST\_\-HAS\_\-TR1\_\-TUPLE}}
+\index{GTEST_HAS_TR1_TUPLE@{GTEST\_\-HAS\_\-TR1\_\-TUPLE}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-HAS\_\-TR1\_\-TUPLE~0}\label{gtest-port_8h_3f48676808022aaa0b693087ed18e006}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_IS_THREADSAFE@{GTEST\_\-IS\_\-THREADSAFE}}
+\index{GTEST_IS_THREADSAFE@{GTEST\_\-IS\_\-THREADSAFE}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-IS\_\-THREADSAFE~0}\label{gtest-port_8h_89a97ba3a99a329609d410cee64ca847}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_LOG_@{GTEST\_\-LOG\_\-}}
+\index{GTEST_LOG_@{GTEST\_\-LOG\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-LOG\_\-(severity, msg)}\label{gtest-port_8h_88ad1882d1e6057321ba775eeab7fb26}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}::testing::internal::GTestLog(\
+        ::testing::internal::GTEST_##severity, __FILE__, __LINE__, \
+        (::testing::Message() << (msg)).GetString().c_str())
+\end{verbatim}
+\end{Code}
+\index{gtest-port.h@{gtest-port.h}!GTEST_MUST_USE_RESULT_@{GTEST\_\-MUST\_\-USE\_\-RESULT\_\-}}
+\index{GTEST_MUST_USE_RESULT_@{GTEST\_\-MUST\_\-USE\_\-RESULT\_\-}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-MUST\_\-USE\_\-RESULT\_\-}\label{gtest-port_8h_278b3d9816b7f2389f2cf362e8ba6a3c}
+
+
+\index{gtest-port.h@{gtest-port.h}!GTEST_NAME@{GTEST\_\-NAME}}
+\index{GTEST_NAME@{GTEST\_\-NAME}!gtest-port.h@{gtest-port.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GTEST\_\-NAME~\char`\"{}Google Test\char`\"{}}\label{gtest-port_8h_158df8eb2f6338a36f13b8108fb36594}
+
+

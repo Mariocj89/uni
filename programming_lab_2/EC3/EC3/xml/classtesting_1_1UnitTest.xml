@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1UnitTest" kind="class" prot="public">
+    <compoundname>testing::UnitTest</compoundname>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classtesting_1_1UnitTest_103aec0a97ab57c012431c86abdf69942" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>testing::UnitTest::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield>UnitTestImpl* impl() const { return impl_</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="495" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1UnitTest_1d38a4df6f8f4b5b203b71edc50a4b815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::ScopedTrace</definition>
+        <argsstring></argsstring>
+        <name>internal::ScopedTrace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="499" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1UnitTest_1700e6b4b815535175165bfca2f3a57b4" prot="private" static="no" mutable="yes">
+        <type><ref refid="classtesting_1_1internal_1_1Mutex" kindref="compound">internal::Mutex</ref></type>
+        <definition>internal::Mutex testing::UnitTest::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="516" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1UnitTest_1bdbc21d9a1264600a85748daef2a0c5a" prot="private" static="no" mutable="no">
+        <type>internal::UnitTestImpl *</type>
+        <definition>internal::UnitTestImpl* testing::UnitTest::impl_</definition>
+        <argsstring></argsstring>
+        <name>impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="522" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="522" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1UnitTest_1c6c28ca92bf6f5341970f01987f16711" compoundref="gtest_8h" startline="494" endline="494">impl</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1db04e1d682a2d7cfc3aa2c5afe3cac5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> *</type>
+        <definition>static UnitTest* testing::UnitTest::GetInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="438"/>
+        <referencedby refid="namespacetesting_114f739e29da2c05e23eb563597f31b22" compoundref="gtest_8h" startline="546" endline="548">testing::AddGlobalTestEnvironment</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1b1427eccd1c7b3fd6a033e22d52cbdee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+        <definition>Environment* testing::UnitTest::AddEnvironment</definition>
+        <argsstring>(Environment *env)</argsstring>
+        <name>AddEnvironment</name>
+        <param>
+          <type><ref refid="classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="449"/>
+        <referencedby refid="namespacetesting_114f739e29da2c05e23eb563597f31b22" compoundref="gtest_8h" startline="546" endline="548">testing::AddGlobalTestEnvironment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1fad5417ce02bc444a32f6e1659729a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::UnitTest::AddTestPartResult</definition>
+        <argsstring>(TestPartResultType result_type, const char *file_name, int line_number, const internal::String &amp;message, const internal::String &amp;os_stack_trace)</argsstring>
+        <name>AddTestPartResult</name>
+        <param>
+          <type><ref refid="namespacetesting_1e87109d90628580ab2d751fcb36fc975" kindref="member">TestPartResultType</ref></type>
+          <declname>result_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1String" kindref="compound">internal::String</ref> &amp;</type>
+          <declname>os_stack_trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1aa1fa510a34fb035d88bc5e615fbbd1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::UnitTest::RecordPropertyForCurrentTest</definition>
+        <argsstring>(const char *key, const char *value)</argsstring>
+        <name>RecordPropertyForCurrentTest</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_15fd408b9dd00b8b3495ef66428fa6d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::UnitTest::Run</definition>
+        <argsstring>() GTEST_MUST_USE_RESULT_</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_18e3dd65ddd6627667a394e909c0687b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::UnitTest::original_working_dir</definition>
+        <argsstring>() const</argsstring>
+        <name>original_working_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1d40c5de4a9dada54bbb7b9d4b5f28925" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const TestCase *</type>
+        <definition>const TestCase* testing::UnitTest::current_test_case</definition>
+        <argsstring>() const</argsstring>
+        <name>current_test_case</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_15e8e59d2d42a24233183a0974d02dd40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> *</type>
+        <definition>const TestInfo* testing::UnitTest::current_test_info</definition>
+        <argsstring>() const</argsstring>
+        <name>current_test_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1c6c28ca92bf6f5341970f01987f16711" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>internal::UnitTestImpl *</type>
+        <definition>internal::UnitTestImpl* testing::UnitTest::impl</definition>
+        <argsstring>()</argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="494" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="494" bodyend="494"/>
+        <references refid="classtesting_1_1UnitTest_1bdbc21d9a1264600a85748daef2a0c5a" compoundref="gtest_8h" startline="522">impl_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1ad2f55aa951b8975930d7f4022feff08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::UnitTest::UnitTest</definition>
+        <argsstring>()</argsstring>
+        <name>UnitTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1c320ce8c6d7eb6d02240c181ef30bb07" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual testing::UnitTest::~UnitTest</definition>
+        <argsstring>()</argsstring>
+        <name>~UnitTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_18b32d06aa2322afcef8496aede274d70" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::UnitTest::PushGTestTrace</definition>
+        <argsstring>(const internal::TraceInfo &amp;trace)</argsstring>
+        <name>PushGTestTrace</name>
+        <param>
+          <type>const internal::TraceInfo &amp;</type>
+          <declname>trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="509"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_159b3b5d0b33814363fd9d4ff37c251f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::UnitTest::PopGTestTrace</definition>
+        <argsstring>()</argsstring>
+        <name>PopGTestTrace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1UnitTest_1599d5ac196b5b3408db7c44e3abc4e11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::UnitTest::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(UnitTest)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="525"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="237">
+        <label>testing::UnitTest</label>
+        <link refid="classtesting_1_1UnitTest"/>
+        <childnode refid="238" relation="usage">
+          <edgelabel>mutex_</edgelabel>
+        </childnode>
+      </node>
+      <node id="238">
+        <label>testing::internal::Mutex</label>
+        <link refid="classtesting_1_1internal_1_1Mutex"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" line="433" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/gtest.h" bodystart="433" bodyend="526"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1UnitTest_103aec0a97ab57c012431c86abdf69942" prot="package" virt="non-virtual"><scope>testing::UnitTest</scope><name>__pad0__</name></member>
+      <member refid="classtesting_1_1UnitTest_1b1427eccd1c7b3fd6a033e22d52cbdee" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>AddEnvironment</name></member>
+      <member refid="classtesting_1_1UnitTest_1fad5417ce02bc444a32f6e1659729a80" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>AddTestPartResult</name></member>
+      <member refid="classtesting_1_1UnitTest_1d40c5de4a9dada54bbb7b9d4b5f28925" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>current_test_case</name></member>
+      <member refid="classtesting_1_1UnitTest_15e8e59d2d42a24233183a0974d02dd40" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>current_test_info</name></member>
+      <member refid="classtesting_1_1UnitTest_1db04e1d682a2d7cfc3aa2c5afe3cac5f" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>GetInstance</name></member>
+      <member refid="classtesting_1_1UnitTest_1599d5ac196b5b3408db7c44e3abc4e11" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1UnitTest_1c6c28ca92bf6f5341970f01987f16711" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>impl</name></member>
+      <member refid="classtesting_1_1UnitTest_1bdbc21d9a1264600a85748daef2a0c5a" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>impl_</name></member>
+      <member refid="classtesting_1_1UnitTest_1d38a4df6f8f4b5b203b71edc50a4b815" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>internal::ScopedTrace</name></member>
+      <member refid="classtesting_1_1UnitTest_1700e6b4b815535175165bfca2f3a57b4" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>mutex_</name></member>
+      <member refid="classtesting_1_1UnitTest_18e3dd65ddd6627667a394e909c0687b4" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>original_working_dir</name></member>
+      <member refid="classtesting_1_1UnitTest_159b3b5d0b33814363fd9d4ff37c251f9" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>PopGTestTrace</name></member>
+      <member refid="classtesting_1_1UnitTest_18b32d06aa2322afcef8496aede274d70" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>PushGTestTrace</name></member>
+      <member refid="classtesting_1_1UnitTest_1aa1fa510a34fb035d88bc5e615fbbd1e" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>RecordPropertyForCurrentTest</name></member>
+      <member refid="classtesting_1_1UnitTest_15fd408b9dd00b8b3495ef66428fa6d1c" prot="public" virt="non-virtual"><scope>testing::UnitTest</scope><name>Run</name></member>
+      <member refid="classtesting_1_1UnitTest_1ad2f55aa951b8975930d7f4022feff08" prot="private" virt="non-virtual"><scope>testing::UnitTest</scope><name>UnitTest</name></member>
+      <member refid="classtesting_1_1UnitTest_1c320ce8c6d7eb6d02240c181ef30bb07" prot="private" virt="virtual"><scope>testing::UnitTest</scope><name>~UnitTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

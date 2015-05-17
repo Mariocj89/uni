@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1GTestCheckProvider" kind="class" prot="public">
+    <compoundname>testing::internal::GTestCheckProvider</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1GTestCheckProvider_10d217fc3b141680c698c1b4b88e1e9f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::GTestCheckProvider::GTestCheckProvider</definition>
+        <argsstring>(const char *condition, const char *file, int line)</argsstring>
+        <name>GTestCheckProvider</name>
+        <param>
+          <type>const char *</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="796" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="796" bodyend="799"/>
+        <references refid="classtesting_1_1internal_1_1GTestCheckProvider_1b1912d78c8661bd0614185c6627f415a" compoundref="gtest-port_8h" startline="804" endline="816">FormatFileLocation</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1GTestCheckProvider_1389abd44d5f8b7878c607ac17887053b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::GTestCheckProvider::~GTestCheckProvider</definition>
+        <argsstring>()</argsstring>
+        <name>~GTestCheckProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="800" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="800" bodyend="803"/>
+        <references refid="namespacetesting_1_1internal_14745413dab28201711f46860bdf5f8df" compoundref="gtest-port_8h" startline="777" endline="777">testing::internal::abort</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1GTestCheckProvider_1b1912d78c8661bd0614185c6627f415a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::GTestCheckProvider::FormatFileLocation</definition>
+        <argsstring>(const char *file, int line)</argsstring>
+        <name>FormatFileLocation</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="804" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="804" bodyend="816"/>
+        <referencedby refid="classtesting_1_1internal_1_1GTestCheckProvider_10d217fc3b141680c698c1b4b88e1e9f3" compoundref="gtest-port_8h" startline="796" endline="799">GTestCheckProvider</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1GTestCheckProvider_1792d59eb02feb707ec9ea8d55e3394ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::std::ostream &amp;</type>
+        <definition>::std::ostream&amp; testing::internal::GTestCheckProvider::GetStream</definition>
+        <argsstring>()</argsstring>
+        <name>GetStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="817" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="817" bodyend="817"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="794" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="794" bodyend="818"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1GTestCheckProvider_1b1912d78c8661bd0614185c6627f415a" prot="public" virt="non-virtual"><scope>testing::internal::GTestCheckProvider</scope><name>FormatFileLocation</name></member>
+      <member refid="classtesting_1_1internal_1_1GTestCheckProvider_1792d59eb02feb707ec9ea8d55e3394ef" prot="public" virt="non-virtual"><scope>testing::internal::GTestCheckProvider</scope><name>GetStream</name></member>
+      <member refid="classtesting_1_1internal_1_1GTestCheckProvider_10d217fc3b141680c698c1b4b88e1e9f3" prot="public" virt="non-virtual"><scope>testing::internal::GTestCheckProvider</scope><name>GTestCheckProvider</name></member>
+      <member refid="classtesting_1_1internal_1_1GTestCheckProvider_1389abd44d5f8b7878c607ac17887053b" prot="public" virt="non-virtual"><scope>testing::internal::GTestCheckProvider</scope><name>~GTestCheckProvider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

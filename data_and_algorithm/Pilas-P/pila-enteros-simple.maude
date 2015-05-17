@@ -1,0 +1,59 @@
+fmod PILA is
+protecting BOOL .
+protecting INT .
+sort Pila .
+
+op crear : -> Pila [ctor] .
+op apilar : Pila Int -> Pila [ctor] .
+op desapilar : Pila -> [Pila] .
+op cima : Pila -> [Int] .
+op esVacia : Pila -> Bool .
+
+********Ecuaciones para indicar errores en precondiciones*********
+*** Pueden utilizarse o bien, usar KINDS *****
+op error : -> Pila .
+op error : -> Int .
+
+vars P Q : Pila .
+var I J : Int .
+
+***cmb desapilar (P): Pila if (not esVacia(P)) .
+***Seria equivalente a la siguiente ecuacion
+eq desapilar (crear) = error .
+eq desapilar (apilar(P, I)) = P .
+
+***cmb cima (P): Int if (not esVacia(P)) .
+***Seria equivalente a la siguiente ecuacion
+eq cima(crear) = error .
+eq cima (apilar(P, I)) = I .
+
+eq esVacia (crear) = true .
+eq esVacia (apilar(P, I)) = false .
+
+
+endfm
+***(
+red desapilar(crear) .
+--- result Pila: (error).Pila
+
+red cima(crear) .
+--- result Int: (error).Int
+
+****** Si sustituimos las ecuaciones de error por cmb (Conditional members)
+****** obtendríamos:
+
+red desapilar(crear) .
+--- result [Pila]: desapilar(crear)
+
+red cima(crear) .
+--- result [Int]: cima(crear)
+
+red desapilar(apilar(apilar(apilar(crear,4),5),6)) .
+--- result Pila: apilar(apilar(crear, 4), 5)
+
+red cima(apilar(apilar(crear,5),6)) .
+--- result NzNat: 6
+
+red esVacia(apilar(crear,5)) .
+--- result Bool: false
+)

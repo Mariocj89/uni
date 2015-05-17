@@ -1,0 +1,27 @@
+<?php
+session_start();
+if( $_SESSION["acceso"]!= "si"){
+	$_SESSION["acceso"]="no";
+	}
+
+?>
+
+
+
+<HTML>
+<HEAD>
+<TITLE>Tienda Online</TITLE>
+</HEAD>
+
+<! Quedo los parametros del borde aunque esten desactivados, por si en algun momento, por estetica, decido reactivarlos>
+<FRAMESET ROWS="98,*" FRAMESPACING="0" FRAMEBORDER="NO" BORDER="5" BORDERCOLOR="#000000">
+<FRAME NAME="TITULO" SRC="titulo.HTML"> 
+<FRAMESET COLS="20%,*" FRAMESPACING="0" FRAMEBORDER="NO" BORDER="5" BORDERCOLOR="#000000">
+<FRAME NAME="MENU" SRC="menu.php"> 
+<FRAME NAME="PRINCIPAL" SRC="ppal.php"> 
+</FRAMESET>
+
+</FRAMESET>
+
+
+</HTML>

@@ -1,0 +1,65 @@
+
+fmod NATURAL is
+protecting BOOL .
+
+*** TIPO
+sort Natural .
+
+*** SINTAXIS
+op cero : -> Natural [ctor] .
+op sucesor : Natural -> Natural [ctor] .
+op esCero : Natural -> Bool .
+op igual : Natural Natural -> Bool .
+op suma : Natural Natural -> Natural .
+op resta : Natural Natural -> [Natural] .
+op mayor : Natural Natural -> Bool .
+op max : Natural Natural -> Natural .
+op div : Natural Natural -> [Natural] .
+op _ >= _ : Natural Natural -> Bool .
+op _ + _ : Natural Natural -> Natural .
+op _ - _ : Natural Natural -> [Natural] .
+
+
+*** SEMANTICA
+vars N M : Natural .
+
+cmb N - M : Natural if N >= M .
+cmb resta (N,M) : Natural if N >= M . 
+cmb div (N,M) : Natural if esCero(M)== false .
+
+eq mayor (N, cero) = esCero(N) == false .
+eq mayor (cero, N) = false .
+eq mayor (sucesor(N), sucesor(M)) = mayor(N,M) .
+
+eq N - cero = N .
+eq sucesor (N) - sucesor(M) = N - M .
+
+eq max (cero, N) = N .
+eq max (N, cero) = N .
+eq max (sucesor(N), sucesor(M)) = sucesor (max(N,M)) .
+
+eq cero >= N = esCero(N) .
+eq N >= cero = true .
+eq sucesor(N) >= sucesor(M) = N >= M .
+
+eq div (N, sucesor(cero)) = N .
+eq div (sucesor(N), sucesor(M)) = if sucesor(N) >= sucesor(M) then sucesor(div(resta(sucesor(N), sucesor(M)), sucesor(M)))
+							else cero fi .	
+
+eq esCero (cero) = true .
+eq esCero (sucesor (N)) = false .
+
+eq igual (cero, N) = esCero (N) .
+eq igual (sucesor (N), cero) = false .
+eq igual (sucesor (N), sucesor (M)) = igual (N, M) .
+
+eq suma (cero, N) = N .
+eq suma (sucesor (M), N) = sucesor (suma (M, N)) .
+
+eq cero + N = N .
+eq sucesor (M) + N = sucesor (suma (M, N)) .
+
+eq resta (N, cero) = N .
+eq resta (sucesor(N) , sucesor(M)) = resta (N,M) .
+
+endfm

@@ -1,0 +1,63 @@
+\section{Escritorio/EC3/src/grafo.cpp File Reference}
+\label{grafo_8cpp}\index{Escritorio/EC3/src/grafo.cpp@{Escritorio/EC3/src/grafo.cpp}}
+Implementacion de los metodos de la clase grafo. 
+
+{\tt \#include \char`\"{}grafo.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf Maximo} (const int \&a, const int \&b)
+\item 
+int {\bf Minimo} (const int \&a, const int \&b)
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&flujo, const {\bf Grafo} \&G)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implementacion de los metodos de la clase grafo. 
+
+\begin{Desc}
+\item[Author:]{\bf Nombre:} Mario \par
+ {\bf Apellidos:} Corchero Jimenez \par
+ {\bf Asignatura} Laboratorio de Programacion II \par
+ {\bf Curso} 08/09 \end{Desc}
+
+
+\subsection{Function Documentation}
+\index{grafo.cpp@{grafo.cpp}!Maximo@{Maximo}}
+\index{Maximo@{Maximo}!grafo.cpp@{grafo.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Maximo (const int \& {\em a}, const int \& {\em b})}\label{grafo_8cpp_bd67fd90183cf2cea5f41d88b098ba97}
+
+
+Funcion auxiliar que halla el máximo de dos enteros \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]primer entero \item[{\em b}]segundo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]maximo de los 2, el segundo si son iguales \end{Desc}
+\index{grafo.cpp@{grafo.cpp}!Minimo@{Minimo}}
+\index{Minimo@{Minimo}!grafo.cpp@{grafo.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Minimo (const int \& {\em a}, const int \& {\em b})}\label{grafo_8cpp_ad08456ae6cb5f9aaaee75537f6ef90a}
+
+
+Funcion auxiliar que halla el mínimo de dos enteros \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]primer entero \item[{\em b}]segundo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]minimo de los 2, el segundo si son iguales \end{Desc}
+\index{grafo.cpp@{grafo.cpp}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!grafo.cpp@{grafo.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em flujo}, const {\bf Grafo} \& {\em G})}\label{grafo_8cpp_a10916bc791b8c23a52309107d104932}
+
+
+Sobrecarga del operador $<$$<$, muestra la matrid de adyacencia \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flujo}]flujo en el que se almacena toda la informacion \item[{\em G}]grafo a mostrar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]flujo con toda la informacion \end{Desc}

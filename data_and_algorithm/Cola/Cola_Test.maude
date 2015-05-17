@@ -1,0 +1,34 @@
+load Cola.maude
+
+fmod PRUEBA-COLA is
+protecting COLA{Int} .
+endfm
+
+
+
+***Reducciones:
+
+***		red esVacia(borrar(insertar(crear,3))) .                                 	Bool: True
+***		red esVacia(insertar(borrar(insertar(crear,3)),2)) .						Bool: False
+
+***		red frente(borrar(insertar(borrar(insertar(insertar(crear,1),2)),3))) .		NzNat: 3
+***		red frente(borrar(insertar(crear,2))) .										[Int]: frente(crear)
+
+***		red borrar(crear) .															[Cola{Int}]: borrar(crear)
+***		red borrar(insertar(insertar(crear,1),2)) .									Cola{Int}: insertar(crear, 2)
+
+***		red card(borrar(insertar(insertar(insertar(crear,1),2),3))) .				NzNat: 2
+***		red card(borrar(insertar(crear,1))) .										Zero: 0
+
+***		red pertenece(insertar(insertar(borrar(insertar(insertar(crear,1),2)),3),4),1) .     Bool: False
+***		red pertenece(insertar(insertar(borrar(insertar(insertar(crear,1),2)),3),4),3) .     Bool: True
+
+***		red concatenar(insertar(insertar(insertar(crear,1),2),3),insertar(insertar(insertar(crear,4),5),6)) .
+***		red concatenar(crear,insertar(insertar(crear,1),2)) .
+
+***		red invertir(crear) .
+***		red invertir(concatenar(insertar(insertar(insertar(crear,1),2),3),insertar(insertar(insertar(crear,4),5),6))) .
+
+***		red final(crear) .
+***		red final(insertar(insertar(insertar(crear,4),5),6)) .
+

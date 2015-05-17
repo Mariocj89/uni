@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="lpi_8h" kind="file">
+    <compoundname>lpi.h</compoundname>
+    <includes refid="categoria_8h" local="yes">categoria.h</includes>
+    <includedby refid="categoria_8cpp" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.cpp</includedby>
+    <includedby refid="gestor_8h" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h</includedby>
+    <includedby refid="lpi_8cpp" local="yes">/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp</includedby>
+    <incdepgraph>
+      <node id="62">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h</label>
+        <link refid="lpi.h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>noticias.h</label>
+        <link refid="noticias_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>categoria.h</label>
+        <link refid="categoria_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>fstream</label>
+      </node>
+      <node id="66">
+        <label>fecha.h</label>
+        <link refid="fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="67">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h</label>
+        <link refid="lpi.h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.cpp</label>
+        <link refid="gestor_8cpp"/>
+      </node>
+      <node id="69">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/gestor.h</label>
+        <link refid="gestor_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/ppal.cpp</label>
+        <link refid="ppal_8cpp"/>
+      </node>
+      <node id="72">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.cpp</label>
+        <link refid="lpi_8cpp"/>
+      </node>
+      <node id="68">
+        <label>/home/Mario/Escritorio/Proyecto/Fase1/src/categoria.cpp</label>
+        <link refid="categoria_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlista" prot="public">lista</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lpi_8h_19baf13a1aa39633acbeaefd567559005" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Max_Categorias</definition>
+        <argsstring></argsstring>
+        <name>Max_Categorias</name>
+        <initializer> 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" line="7" bodyfile="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LISTA_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LISTA_H<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="categoria_8h" kindref="compound">categoria.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="lpi_8h_19baf13a1aa39633acbeaefd567559005" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="lpi_8h_19baf13a1aa39633acbeaefd567559005" kindref="member">Max_Categorias</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classlista" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlista" kindref="compound">lista</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classlista_1959745edbf6ef1901d52358137e4b55a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcategoria" kindref="compound">categoria</ref><sp/><sp/><ref refid="classlista_1959745edbf6ef1901d52358137e4b55a" kindref="member">elemento</ref>[<ref refid="lpi_8h_19baf13a1aa39633acbeaefd567559005" kindref="member">Max_Categorias</ref>];</highlight></codeline>
+<codeline lineno="21" refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kindref="member">ocupacion</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classlista_1d5ee420d7672bea5fd4d191c401733be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kindref="member">pi</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlista_17ae1e1582d5b90e6bc26b8ecd2894072" kindref="member">lista</ref><sp/><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classlista_19281356b5743c333b7fa382a1befa2e1" kindref="member">ocupadas</ref><sp/><sp/><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_19767ee9056947047c0c6c204bc4db762" kindref="member">vacia</ref><sp/><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_1982294906d63950bba25f2d1cab21273" kindref="member">llena</ref><sp/><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_12ec76266d65e81e2c4940269b261f833" kindref="member">poner_inicio</ref><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlista_1e1bd3d1b4417a52463b1ef69456ea730" kindref="member">poner_fin</ref><sp/>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_1b68bc836734758ca7e0977b1740d31eb" kindref="member">avanzar</ref><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_1f4d2afee307ae39c83eefdeb40b13d71" kindref="member">retroceder</ref><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_1036798860b016f8f5431335002d15b38" kindref="member">fin</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_129149056d6a592279e575708b0cdc176" kindref="member">inicio</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_10c433976220721607f6e42f44b7cecfe" kindref="member">insertar</ref><sp/><sp/><sp/>(<ref refid="classcategoria" kindref="compound">categoria</ref><sp/>&amp;e);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_18cef95497347095d6207dded1b978358" kindref="member">consultar</ref><sp/><sp/>(<ref refid="classcategoria" kindref="compound">categoria</ref><sp/>&amp;e);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classlista_198cf505fbe1f15ae56f6acef8dca796d" kindref="member">borrar</ref><sp/><sp/><sp/><sp/><sp/>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1c7cbd50511a860cdfb8436a0e31490dc" kindref="member">insertar_Noticia</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNoticia" kindref="compound">TipoDato</ref><sp/>&amp;e);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlista_1d5d12911c92a2c156817844109341a90" kindref="member">borrar_Noticia</ref><sp/>(<ref refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kindref="member">Tcadena1</ref><sp/>cad);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/Proyecto/Fase1/src/lpi.h"/>
+  </compounddef>
+</doxygen>

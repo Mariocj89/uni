@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4" kind="class" prot="public">
+    <compoundname>testing::internal::TypeWithSize&lt; 4 &gt;</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4_1fd38548a58e66083a93f7c31d7f81cf5" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int testing::internal::TypeWithSize&lt; 4 &gt;::Int</definition>
+        <argsstring></argsstring>
+        <name>Int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="728" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4_1f553cbff413a7e2072a7874b7f5db8d0" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int testing::internal::TypeWithSize&lt; 4 &gt;::UInt</definition>
+        <argsstring></argsstring>
+        <name>UInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="729" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="722" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="722" bodyend="730"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4_1fd38548a58e66083a93f7c31d7f81cf5" prot="public" virt="non-virtual"><scope>testing::internal::TypeWithSize&lt; 4 &gt;</scope><name>Int</name></member>
+      <member refid="classtesting_1_1internal_1_1TypeWithSize_3_014_01_4_1f553cbff413a7e2072a7874b7f5db8d0" prot="public" virt="non-virtual"><scope>testing::internal::TypeWithSize&lt; 4 &gt;</scope><name>UInt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

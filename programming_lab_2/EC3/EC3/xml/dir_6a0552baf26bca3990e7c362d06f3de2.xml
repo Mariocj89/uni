@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="dir_6a0552baf26bca3990e7c362d06f3de2" kind="dir">
+    <compoundname>Escritorio/EC3/</compoundname>
+    <innerdir refid="dir_efd56a8929c1c9edcd8beca4d27d542d">Escritorio/EC3/debug/</innerdir>
+    <innerdir refid="dir_83fa4bcb273e081d5c5481d6aaf8f86f">Escritorio/EC3/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/Mario/Escritorio/EC3/"/>
+  </compounddef>
+</doxygen>

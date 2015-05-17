@@ -1,0 +1,139 @@
+\section{testing::TestPartResult Class Reference}
+\label{classtesting_1_1TestPartResult}\index{testing::TestPartResult@{testing::TestPartResult}}
+{\tt \#include $<$gtest-test-part.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf TestPartResult} ({\bf TestPartResultType} type, const char $\ast$file\_\-name, int line\_\-number, const char $\ast$message)
+\item 
+{\bf TestPartResultType} {\bf type} () const
+\item 
+const char $\ast$ {\bf file\_\-name} () const
+\item 
+int {\bf line\_\-number} () const
+\item 
+const char $\ast$ {\bf summary} () const
+\item 
+const char $\ast$ {\bf message} () const
+\item 
+bool {\bf passed} () const
+\item 
+bool {\bf failed} () const
+\item 
+bool {\bf nonfatally\_\-failed} () const
+\item 
+bool {\bf fatally\_\-failed} () const
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf internal::String} {\bf ExtractSummary} (const char $\ast$message)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf TestPartResultType} {\bf type\_\-}
+\item 
+{\bf internal::String} {\bf file\_\-name\_\-}
+\item 
+int {\bf line\_\-number\_\-}
+\item 
+{\bf internal::String} {\bf summary\_\-}
+\item 
+{\bf internal::String} {\bf message\_\-}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{testing::TestPartResult@{testing::TestPartResult}!TestPartResult@{TestPartResult}}
+\index{TestPartResult@{TestPartResult}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}testing::TestPartResult::TestPartResult ({\bf TestPartResultType} {\em type}, const char $\ast$ {\em file\_\-name}, int {\em line\_\-number}, const char $\ast$ {\em message})\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_1f216fe3a45f57431e069d5452d099f3}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{testing::TestPartResult@{testing::TestPartResult}!type@{type}}
+\index{type@{type}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TestPartResultType} testing::TestPartResult::type () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_8db8444af31c1e7bfb6e6e6ce83bf766}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!file_name@{file\_\-name}}
+\index{file_name@{file\_\-name}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::TestPartResult::file\_\-name () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_eb8bff9315635a4ae3bf77570bc7af55}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!line_number@{line\_\-number}}
+\index{line_number@{line\_\-number}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int testing::TestPartResult::line\_\-number () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_31f20b0b0c42da5fec6449645cab358c}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!summary@{summary}}
+\index{summary@{summary}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::TestPartResult::summary () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_49b7714b6ca4c3bdc6417560f004faf1}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!message@{message}}
+\index{message@{message}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing::TestPartResult::message () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_83f21ab742b9d2b4e3cfcf1984d9f599}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!passed@{passed}}
+\index{passed@{passed}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::TestPartResult::passed () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_346f2ee6609398adce9a909614781b4f}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!failed@{failed}}
+\index{failed@{failed}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::TestPartResult::failed () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_0b9816c26825936aa94916bdab569248}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!nonfatally_failed@{nonfatally\_\-failed}}
+\index{nonfatally_failed@{nonfatally\_\-failed}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::TestPartResult::nonfatally\_\-failed () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_7b8d0aea098a5fb35c853eceb8f8ea0d}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!fatally_failed@{fatally\_\-failed}}
+\index{fatally_failed@{fatally\_\-failed}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool testing::TestPartResult::fatally\_\-failed () const\hspace{0.3cm}{\tt  [inline]}}\label{classtesting_1_1TestPartResult_8aaacd9cfa46bd72c96318b418aeb434}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!ExtractSummary@{ExtractSummary}}
+\index{ExtractSummary@{ExtractSummary}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf internal::String} testing::TestPartResult::ExtractSummary (const char $\ast$ {\em message})\hspace{0.3cm}{\tt  [static, private]}}\label{classtesting_1_1TestPartResult_324608df1fe5b130a9fe70341a06c1d6}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{testing::TestPartResult@{testing::TestPartResult}!type_@{type\_\-}}
+\index{type_@{type\_\-}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TestPartResultType} {\bf testing::TestPartResult::type\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1TestPartResult_c4f4167d0feb97e22e5194cbbfcfa405}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!file_name_@{file\_\-name\_\-}}
+\index{file_name_@{file\_\-name\_\-}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::String} {\bf testing::TestPartResult::file\_\-name\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1TestPartResult_a874f042527f6acf586877bf671135cb}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!line_number_@{line\_\-number\_\-}}
+\index{line_number_@{line\_\-number\_\-}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf testing::TestPartResult::line\_\-number\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1TestPartResult_e65a873935245f28134cebd1e6387352}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!summary_@{summary\_\-}}
+\index{summary_@{summary\_\-}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::String} {\bf testing::TestPartResult::summary\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1TestPartResult_90814d8e72d5957d4a5018b7a8efc0ce}
+
+
+\index{testing::TestPartResult@{testing::TestPartResult}!message_@{message\_\-}}
+\index{message_@{message\_\-}!testing::TestPartResult@{testing::TestPartResult}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf internal::String} {\bf testing::TestPartResult::message\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classtesting_1_1TestPartResult_dcdf56e5defd129d26438bc829d5ad48}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/gtest/{\bf gtest-test-part.h}\end{CompactItemize}

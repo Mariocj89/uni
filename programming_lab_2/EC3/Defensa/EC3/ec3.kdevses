@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="10" >
+  <Doc0 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/ec3.cpp" >
+   <View0 Encoding="" line="37" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/presooptimo.h" >
+   <View0 Encoding="" line="23" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/presooptimo.cpp" >
+   <View0 Encoding="" line="21" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/cargador.cpp" >
+   <View0 Encoding="" line="72" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/cargador.h" >
+   <View0 Encoding="" line="16" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/preso.h" >
+   <View0 Encoding="" line="24" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/preso.cpp" >
+   <View0 Encoding="" line="36" Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/persona.cpp" >
+   <View0 Encoding="" line="39" Type="Source" />
+  </Doc7>
+  <Doc8 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/planta.cpp" >
+   <View0 Encoding="" line="692" Type="Source" />
+  </Doc8>
+  <Doc9 NumberOfViews="1" URL="file:///home/usuario/Escritorio/EC3/src/prision.cpp" >
+   <View0 Encoding="" line="230" Type="Source" />
+  </Doc9>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/home/usuario/Escritorio/EC3/src/cargador.cpp:179" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
+     <tracedExpressions/>
+    </breakpoint0>
+   </breakpointList>
+   <showInternalCommands value="0" />
+  </kdevdebugger>
+  <kdevastyle>
+   <Extensions ext="*.cpp *.h,*.c *.h,*.cxx *.hxx,*.c++ *.h++,*.cc *.hh,*.C *.H,*.diff,*.inl,*.java,*.moc,*.patch,*.tlh,*.xpm" />
+   <AStyle IndentPreprocessors="0" FillCount="4" PadParenthesesOut="1" IndentNamespaces="1" IndentLabels="1" Fill="Tabs" MaxStatement="40" Brackets="Break" MinConditional="-1" IndentBrackets="0" PadParenthesesUn="1" BlockBreak="0" KeepStatements="1" KeepBlocks="1" BlockIfElse="0" IndentSwitches="1" PadOperators="0" FStyle="UserDefined" IndentCases="0" FillEmptyLines="0" BracketsCloseHeaders="0" BlockBreakAll="0" PadParenthesesIn="1" IndentClasses="1" IndentBlocks="0" FillForce="0" />
+  </kdevastyle>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="/home/usuario/Escritorio/EC3/debug/src/ec3" params="/home/usuario/Escritorio/EC3/debug/src/inicio.txt" />
+   <valgrind path="/usr/bin/valgrind" params=" --tool=memcheck --leak-check=yes" />
+   <calltree path="/usr/bin/valgrind" params="--tool=callgrind --trace-children=yes" />
+   <kcachegrind path="/usr/bin/kcachegrind" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

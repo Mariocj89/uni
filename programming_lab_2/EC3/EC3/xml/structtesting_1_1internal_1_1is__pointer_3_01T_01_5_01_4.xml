@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="structtesting_1_1internal_1_1is__pointer_3_01T_01_5_01_4" kind="struct" prot="public">
+    <compoundname>testing::internal::is_pointer&lt; T * &gt;</compoundname>
+    <basecompoundref refid="structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">testing::internal::bool_constant&lt; true &gt;</basecompoundref>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="105">
+        <label>true_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="104">
+        <label>testing::internal::is_pointer&lt; T * &gt;</label>
+        <link refid="structtesting_1_1internal_1_1is__pointer_3_01T_01_5_01_4"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="107">
+        <label>true_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="106">
+        <label>testing::internal::is_pointer&lt; T * &gt;</label>
+        <link refid="structtesting_1_1internal_1_1is__pointer_3_01T_01_5_01_4"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" line="673" bodyfile="/home/Mario/Escritorio/EC3/src/gtest/internal/gtest-port.h" bodystart="673" bodyend="673"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1bool__constant_11613a5cefa36e8be056e47179f6725a8" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer&lt; T * &gt;</scope><name>type</name></member>
+      <member refid="structtesting_1_1internal_1_1bool__constant_17f838ce0f0c51ef62c1ae5c8cc909350" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer&lt; T * &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

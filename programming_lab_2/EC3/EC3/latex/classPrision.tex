@@ -1,0 +1,308 @@
+\section{Prision Class Reference}
+\label{classPrision}\index{Prision@{Prision}}
+Clase con un modelo singleton que controla la prision.  
+
+
+{\tt \#include $<$prision.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf $\sim$Prision} ()
+\item 
+void {\bf set\_\-planta} ({\bf Planta} $\ast$p)
+\item 
+int {\bf get\_\-numero\_\-plantas} () const
+\item 
+{\bf Planta} $\ast$ {\bf get\_\-planta} (const int \&posicion) const
+\item 
+void {\bf MostrarPrision} () const
+\item 
+void {\bf Destruir} ()
+\item 
+void {\bf set\_\-persona} (const int \&planta, const int \&pos, {\bf Persona} $\ast$p)
+\item 
+int {\bf ocupacion\_\-celda} (const int \&planta, const int \&celda) const
+\item 
+{\bf Persona} $\ast$ {\bf sacar\_\-persona} (const int \&planta, const int celda)
+\item 
+{\bf Persona} $\ast$ {\bf get\_\-persona} (const int \&planta, const int \&celda) const
+\item 
+int {\bf get\_\-ancho\_\-planta} (const int \&planta) const 
+\item 
+int {\bf get\_\-alto\_\-planta} (const int \&planta) const 
+\item 
+int {\bf get\_\-entrada\_\-panta} (const int \&planta) const 
+\item 
+int {\bf get\_\-salida\_\-planta} (const int \&planta) const 
+\item 
+void {\bf meter\_\-celda\_\-castigo} ({\bf Persona} $\ast$p)
+\item 
+void {\bf meter\_\-en\_\-fugados} ({\bf Persona} $\ast$p)
+\item 
+void {\bf IniciarSimulacion} ()
+\item 
+int {\bf get\_\-turno} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf Prision} $\ast$ {\bf get\_\-instancia} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Prision} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+list$<$ {\bf Persona} $\ast$ $>$ {\bf celda\_\-castigo\_\-}
+\begin{CompactList}\small\item\em Lista de las personas almacenadas en la celda de castigo. \item\end{CompactList}\item 
+list$<$ {\bf Persona} $\ast$ $>$ {\bf fugados\_\-}
+\begin{CompactList}\small\item\em Lista de personas que se han fugado. \item\end{CompactList}\item 
+int {\bf turno\_\-}
+\begin{CompactList}\small\item\em Entero que almacena el turno actual de la simulacion. \item\end{CompactList}\item 
+vector$<$ {\bf Planta} $\ast$ $>$ $\ast$ {\bf plantas\_\-}
+\begin{CompactList}\small\item\em Vector que contiene todas las plantas de la prision. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf Prision} $\ast$ {\bf instancia\_\-} = NULL
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Clase con un modelo singleton que controla la prision. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Prision@{Prision}!~Prision@{$\sim$Prision}}
+\index{~Prision@{$\sim$Prision}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Prision::$\sim$Prision ()}\label{classPrision_a62c797daed7c29aa6a4cda35e4d6543}
+
+
+Destructor de la clase planta \index{Prision@{Prision}!Prision@{Prision}}
+\index{Prision@{Prision}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Prision::Prision ()\hspace{0.3cm}{\tt  [private]}}\label{classPrision_6bee875b59952faf2eba1e7cfe1c19f4}
+
+
+Constructor de la clase prision 
+
+\subsection{Member Function Documentation}
+\index{Prision@{Prision}!get_instancia@{get\_\-instancia}}
+\index{get_instancia@{get\_\-instancia}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Prision} $\ast$ Prision::get\_\-instancia ()\hspace{0.3cm}{\tt  [static]}}\label{classPrision_25471045152afdba8a74f273f8f7ebab}
+
+
+Obtiene la instancia de la clase \doxyref{Prision}{p.}{classPrision}, si no existe la crea. \begin{Desc}
+\item[Returns:]instancia de la clase prision \end{Desc}
+\index{Prision@{Prision}!set_planta@{set\_\-planta}}
+\index{set_planta@{set\_\-planta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::set\_\-planta ({\bf Planta} $\ast$ {\em p})}\label{classPrision_01a3dc1399ddf80453e3f93c95c971b4}
+
+
+Inserta una planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]planta a insertar \end{description}
+\end{Desc}
+\index{Prision@{Prision}!get_numero_plantas@{get\_\-numero\_\-plantas}}
+\index{get_numero_plantas@{get\_\-numero\_\-plantas}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-numero\_\-plantas () const}\label{classPrision_56a0a7eae363c587c04922dde613ca84}
+
+
+Obtiene el numero de plantas \begin{Desc}
+\item[Returns:]numero de plantas \end{Desc}
+\index{Prision@{Prision}!get_planta@{get\_\-planta}}
+\index{get_planta@{get\_\-planta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Planta} $\ast$ Prision::get\_\-planta (const int \& {\em posicion}) const}\label{classPrision_39bb839541f452289be3215ac7c9d4b8}
+
+
+Extrae la planta en la posicion indicada, null si no exite \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em posicion}]posicion indicada \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]planta buscada \end{Desc}
+\index{Prision@{Prision}!MostrarPrision@{MostrarPrision}}
+\index{MostrarPrision@{MostrarPrision}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::MostrarPrision () const}\label{classPrision_878f3ec84a96b71263251cc0b0bea362}
+
+
+Muestra todas las plantas de la prision \index{Prision@{Prision}!Destruir@{Destruir}}
+\index{Destruir@{Destruir}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::Destruir ()}\label{classPrision_7446ac4094d9a93a0542d567a92e95e7}
+
+
+\index{Prision@{Prision}!set_persona@{set\_\-persona}}
+\index{set_persona@{set\_\-persona}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::set\_\-persona (const int \& {\em planta}, const int \& {\em pos}, {\bf Persona} $\ast$ {\em p})}\label{classPrision_ac30af72defaeddd1d534f8762116b8a}
+
+
+Inserta una persona en la prision \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta en la que insertarla \item[{\em pos}]celda en la que insertarla \item[{\em p}]persona a insertar \end{description}
+\end{Desc}
+\index{Prision@{Prision}!ocupacion_celda@{ocupacion\_\-celda}}
+\index{ocupacion_celda@{ocupacion\_\-celda}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::ocupacion\_\-celda (const int \& {\em planta}, const int \& {\em celda}) const}\label{classPrision_0a4c122c6743e7fab7a5b62c05e79dd4}
+
+
+Obtiene la ocupacion de una celda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta en la que se encuentra la celda buscada \item[{\em celda}]celda buscada \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]ocupacion de la celda buscada (-1 si error) \end{Desc}
+\index{Prision@{Prision}!sacar_persona@{sacar\_\-persona}}
+\index{sacar_persona@{sacar\_\-persona}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Prision::sacar\_\-persona (const int \& {\em planta}, const int {\em celda})}\label{classPrision_67c18411597da6386892fff0a046e3b5}
+
+
+Obtiene y borra la primera persona de la celda indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta indicada \item[{\em celda}]celda indicada \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]primera persona de la planta (NULL si no hay) \end{Desc}
+\index{Prision@{Prision}!get_persona@{get\_\-persona}}
+\index{get_persona@{get\_\-persona}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Persona} $\ast$ Prision::get\_\-persona (const int \& {\em planta}, const int \& {\em celda}) const}\label{classPrision_1969c3f8073eabb4343529a10287e2a0}
+
+
+Obtiene la primera persona de la celda indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta indicada \item[{\em celda}]celda indicada \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]primera persona de la planta (NULL si no hay) \end{Desc}
+\index{Prision@{Prision}!get_ancho_planta@{get\_\-ancho\_\-planta}}
+\index{get_ancho_planta@{get\_\-ancho\_\-planta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-ancho\_\-planta (const int \& {\em planta}) const}\label{classPrision_2c7faa2a038b1fdfc45eb6469c9d7acc}
+
+
+Obtiene el ancho de una planta indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta de la que obtener el ancho \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]ancho de la planta indicada(-1 en caso de error) \end{Desc}
+\index{Prision@{Prision}!get_alto_planta@{get\_\-alto\_\-planta}}
+\index{get_alto_planta@{get\_\-alto\_\-planta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-alto\_\-planta (const int \& {\em planta}) const}\label{classPrision_15faba9849c3836b7380f6bf7a06caca}
+
+
+Obtiene el alto de la planta indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta de la que obtener el alto \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]alto de la planta (-1 si error) \end{Desc}
+\index{Prision@{Prision}!get_entrada_panta@{get\_\-entrada\_\-panta}}
+\index{get_entrada_panta@{get\_\-entrada\_\-panta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-entrada\_\-panta (const int \& {\em planta}) const}\label{classPrision_a6ef2f3c44c5d2ff1ad1e8c3899ea7c2}
+
+
+Obtiene la entrada de la planta indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta de la que obtener la posicion de la entrada \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]posicion de la entrada (-1 si error) \end{Desc}
+\index{Prision@{Prision}!get_salida_planta@{get\_\-salida\_\-planta}}
+\index{get_salida_planta@{get\_\-salida\_\-planta}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-salida\_\-planta (const int \& {\em planta}) const}\label{classPrision_582cc08fb4f7c12e9010b0e31f5a6bf3}
+
+
+Obtiene la salida de la planta indicada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em planta}]planta de la que obtener la posicion de la salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]posicion de la salida (-1 si error) \end{Desc}
+\index{Prision@{Prision}!meter_celda_castigo@{meter\_\-celda\_\-castigo}}
+\index{meter_celda_castigo@{meter\_\-celda\_\-castigo}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::meter\_\-celda\_\-castigo ({\bf Persona} $\ast$ {\em p})}\label{classPrision_458e85aca8aee3aa41ae16753093a5f0}
+
+
+Mete un preso en la celda de castigo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]persona a insertar \end{description}
+\end{Desc}
+\index{Prision@{Prision}!meter_en_fugados@{meter\_\-en\_\-fugados}}
+\index{meter_en_fugados@{meter\_\-en\_\-fugados}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::meter\_\-en\_\-fugados ({\bf Persona} $\ast$ {\em p})}\label{classPrision_1a5595f579bfab6b95308707365b472a}
+
+
+Mete un preso en la lista que almacena los presos que se ha fugado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]presos fugados \end{description}
+\end{Desc}
+\index{Prision@{Prision}!IniciarSimulacion@{IniciarSimulacion}}
+\index{IniciarSimulacion@{IniciarSimulacion}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Prision::IniciarSimulacion ()}\label{classPrision_61926ad8f4236bc9bc4598779bc017ff}
+
+
+Inicia la simulacion \index{Prision@{Prision}!get_turno@{get\_\-turno}}
+\index{get_turno@{get\_\-turno}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Prision::get\_\-turno ()\hspace{0.3cm}{\tt  [inline]}}\label{classPrision_69eed05859f7f338cb200ef2dfdc8d05}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Prision@{Prision}!instancia_@{instancia\_\-}}
+\index{instancia_@{instancia\_\-}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Prision} $\ast$ {\bf Prision::instancia\_\-} = NULL\hspace{0.3cm}{\tt  [static, private]}}\label{classPrision_1eb513ef25f72b55c20f35007edabc8b}
+
+
+Metodo que obtiene el turno actual de la simulacion \par
+ $\ast$ \begin{Desc}
+\item[Returns:]turno de la simulacion \end{Desc}
+\index{Prision@{Prision}!celda_castigo_@{celda\_\-castigo\_\-}}
+\index{celda_castigo_@{celda\_\-castigo\_\-}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf Persona}$\ast$$>$ {\bf Prision::celda\_\-castigo\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPrision_a4a1d11a59f4c03c80493927ded230bf}
+
+
+Lista de las personas almacenadas en la celda de castigo. 
+
+\index{Prision@{Prision}!fugados_@{fugados\_\-}}
+\index{fugados_@{fugados\_\-}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf Persona}$\ast$$>$ {\bf Prision::fugados\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPrision_ca386e5c333f80b5cee1ee678d6859f4}
+
+
+Lista de personas que se han fugado. 
+
+\index{Prision@{Prision}!turno_@{turno\_\-}}
+\index{turno_@{turno\_\-}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Prision::turno\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPrision_faaa9958fc4848607ae84709e0984101}
+
+
+Entero que almacena el turno actual de la simulacion. 
+
+\index{Prision@{Prision}!plantas_@{plantas\_\-}}
+\index{plantas_@{plantas\_\-}!Prision@{Prision}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Planta}$\ast$$>$$\ast$ {\bf Prision::plantas\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classPrision_620a8c402f03da4cdf93004eab3179c9}
+
+
+Vector que contiene todas las plantas de la prision. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf prision.h}\item 
+Escritorio/EC3/src/{\bf prision.cpp}\end{CompactItemize}

@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="cargador_8cpp" kind="file">
+    <compoundname>cargador.cpp</compoundname>
+    <includes refid="cargador_8h" local="yes">cargador.h</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>list</label>
+      </node>
+      <node id="36">
+        <label>queue</label>
+      </node>
+      <node id="40">
+        <label>persona.h</label>
+        <link refid="persona_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>iterator</label>
+      </node>
+      <node id="27">
+        <label>fichero.h</label>
+        <link refid="fichero_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>prision.h</label>
+        <link refid="prision_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>preso.h</label>
+        <link refid="preso_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>celda.h</label>
+        <link refid="celda_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>puerta.h</label>
+        <link refid="puerta_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>errorpuerta.h</label>
+        <link refid="errorpuerta_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>colagen.h</label>
+        <link refid="colagen_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>registro.h</label>
+        <link refid="registro_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>llave.h</label>
+        <link refid="llave_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>fstream</label>
+      </node>
+      <node id="26">
+        <label>cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>planta.h</label>
+        <link refid="planta_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>stack</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+      <node id="51">
+        <label>guardia.h</label>
+        <link refid="guardia_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>cstdlib</label>
+      </node>
+      <node id="48">
+        <label>errornumerollaves.h</label>
+        <link refid="errornumerollaves_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>iostream</label>
+      </node>
+      <node id="49">
+        <label>errortamanio.h</label>
+        <link refid="errortamanio_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>cstring</label>
+      </node>
+      <node id="25">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador.cpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Práctica 2007-2008. Implementación de la Clase <ref refid="classCargador" kindref="compound">Cargador</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Profesores</bold> LPII <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programación II <linebreak/>
+ <bold>Curso</bold> 07/08 -- Revisado en Curso 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cargador_8h" kindref="compound" tooltip="Práctica 2006-2007. Declaracion de la clase Cargador.">cargador.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//Inicialización<sp/>del<sp/>mapeo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="structCargador_1_1DatoMapeo" kindref="compound">Cargador::DatoMapeo</ref><sp/><ref refid="classCargador_1b78e3abd0873c21add7485c7c9ab2565" kindref="member" tooltip="Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en...">Cargador::mapeo</ref>[<ref refid="cargador_8h_1b4873f8b01bc74a9741869a278b47c59" kindref="member">NUMELTOSCONF</ref>]<sp/>={</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{Nombre,<sp/>Número<sp/>de<sp/>Campos}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;PLANTA&quot;</highlight><highlight class="normal">,8},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;PRESO&quot;</highlight><highlight class="normal">,5},</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;GUARDIA&quot;</highlight><highlight class="normal">,5}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classCargador_1a98217ffcf9b63265fad5aeb86b2e487" kindref="member">Cargador::Cargador</ref>(<ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref>*<sp/>p)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::Constructor<sp/>parametrizado&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCargador_149af53fff670a9948f02369c2fdbaf17" kindref="member">prision</ref>=p;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::Constructor<sp/>parametrizado&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCargador_1d1f39f31907fde577e25d300070e8b7a" kindref="member">Cargador::queElemento</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>elto)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res=-1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enc=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::queElemento<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;elto&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="cargador_8h_1b4873f8b01bc74a9741869a278b47c59" kindref="member">NUMELTOSCONF</ref><sp/>&amp;&amp;<sp/>!enc;<sp/>i++)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(<ref refid="classCargador_1b78e3abd0873c21add7485c7c9ab2565" kindref="member" tooltip="Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en...">mapeo</ref>[i].nombre,elto.c_str())==0)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res=i;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enc=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::queElemento<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;elto&lt;&lt;</highlight><highlight class="stringliteral">&quot;):<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;res);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCargador_12af26a52a19380d7216cee4bc192cf06" kindref="member">Cargador::crear</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>elto,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCampos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[<ref refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" kindref="member" tooltip="Constante con el numero maximo de campos de una linea del fichero de configuracion...">kMaxCampos</ref>])</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::crear<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;elto&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;numCampos&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Si<sp/>existe<sp/>elemento<sp/>y<sp/>el<sp/>número<sp/>de<sp/>campos<sp/>es<sp/>correcto,<sp/>procesarlo...<sp/>si<sp/>no,<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numElto<sp/>=<sp/><ref refid="classCargador_1d1f39f31907fde577e25d300070e8b7a" kindref="member">queElemento</ref>(elto);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Comprobación<sp/>de<sp/>datos<sp/>básicos<sp/>correctos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numElto!=-1<sp/>&amp;&amp;<sp/><ref refid="classCargador_1b78e3abd0873c21add7485c7c9ab2565" kindref="member" tooltip="Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en...">mapeo</ref>[numElto].numCampos==numCampos)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//procesar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<ref refid="classCargador_1d1f39f31907fde577e25d300070e8b7a" kindref="member">queElemento</ref>(elto))</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_1e7d9bf4c1829eb4e3e17ae16e01f3c29" kindref="member">crearPlanta</ref>(numCampos,vCampos);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_1bc9536db01c68bfffb54e22c4ef61fab" kindref="member">crearPreso</ref>(numCampos,vCampos);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_1f6671839f6e5d604381cb936024b65c0" kindref="member">crearGuarda</ref>(numCampos,vCampos);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;ERROR<sp/>Cargador::crear:<sp/>Datos<sp/>de<sp/>configuración<sp/>incorrectos...<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;elto&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;numCampos&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::crear&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCargador_1e7d9bf4c1829eb4e3e17ae16e01f3c29" kindref="member">Cargador::crearPlanta</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCampos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[kMaxCampos])</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::crearPlanta(&quot;</highlight><highlight class="normal">&lt;&lt;numCampos&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Creada<sp/>planta:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>vCampos[0]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_149af53fff670a9948f02369c2fdbaf17" kindref="member">prision</ref>-&gt;<ref refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" kindref="member">set_planta</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref>(atoi(vCampos[0].c_str()),atoi(vCampos[1].c_str()),atoi(vCampos[2].c_str()),atoi(vCampos[3].c_str()),atoi(vCampos[4].c_str()),<sp/>atoi(vCampos[5].c_str()),<sp/>atoi(vCampos[6].c_str())));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(<ref refid="classErrorTamanio" kindref="compound">ErrorTamanio</ref><sp/>&amp;exc){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anch,<sp/>alt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;exc.<ref refid="classErrorTamanio_145471ee0f66dfc0a2c53089c2348a335" kindref="member">what</ref>(anch,alt)&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_149af53fff670a9948f02369c2fdbaf17" kindref="member">prision</ref>-&gt;<ref refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" kindref="member">set_planta</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref>(atoi(vCampos[0].c_str()),anch,alt,atoi(vCampos[3].c_str()),atoi(vCampos[4].c_str()),<sp/>atoi(vCampos[5].c_str()),<sp/>atoi(vCampos[6].c_str())));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(<ref refid="classErrorPuerta" kindref="compound" tooltip="Clase para controlar las excepciones producidas al obtener una entrada o salida erronea...">ErrorPuerta</ref><sp/>&amp;exc){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;exc.<ref refid="classErrorPuerta_1eeef73861ba2c48352b9fe2c0e8f10cb" kindref="member">what</ref>()&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Se<sp/>procede<sp/>a<sp/>colocarlas<sp/>de<sp/>la<sp/>siguiente<sp/>manera:\n\tEntrada:<sp/>Primera<sp/>Celda.\n\tSalida:<sp/>Ultima<sp/>Celda.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCargador_149af53fff670a9948f02369c2fdbaf17" kindref="member">prision</ref>-&gt;<ref refid="classPrision_101a3dc1399ddf80453e3f93c95c971b4" kindref="member">set_planta</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPlanta" kindref="compound" tooltip="Esta representa una planta de la prision.">Planta</ref>(atoi(vCampos[0].c_str()),atoi(vCampos[1].c_str()),atoi(vCampos[2].c_str()),0,(atoi(vCampos[1].c_str())*atoi(vCampos[2].c_str())-1),<sp/>atoi(vCampos[5].c_str()),<sp/>atoi(vCampos[6].c_str())));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::crearPlanta&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCargador_1bc9536db01c68bfffb54e22c4ef61fab" kindref="member">Cargador::crearPreso</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCampos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[kMaxCampos])</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::crearPreso<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;numCampos&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Creado<sp/>Preso:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>vCampos[1]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe" kindref="member">Posicion</ref><sp/>orientacion[4];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>4;i++)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(vCampos[2][i]){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal"><sp/>:<sp/>orientacion[i]<sp/>=<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbeac1228117cf5f6ce83a82d7e3d20a939" kindref="member">NORTE</ref>;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal"><sp/>:<sp/>orientacion[i]<sp/>=<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbefebceb65588dba8950a8c373955b54ed" kindref="member">SUR</ref>;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal"><sp/>:<sp/>orientacion[i]<sp/>=<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbe0d56eccc4309385d24c9618eef44d945" kindref="member">ESTE</ref>;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal"><sp/>:<sp/>orientacion[i]<sp/>=<sp/><ref refid="persona_8h_1d769c09cdaba85d1ac01839489128bbed27507cc04e07855d6fb320348a1d0e4" kindref="member">OESTE</ref>;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;EXCEPCIOOOOOON!!&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight><highlight class="comment">//TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;<ref refid="classPrision_1ac30af72defaeddd1d534f8762116b8a" kindref="member">set_persona</ref>(<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_numero_plantas()-1,0,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPreso" kindref="compound" tooltip="clase que define los atributos y metodos de un preso de la prision">Preso</ref>(vCampos[0],vCampos[1][0],atoi(vCampos[3].c_str()),orientacion,<ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>()-&gt;get_numero_plantas()-1,0));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(...){</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::crearPreso&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCargador_1f6671839f6e5d604381cb936024b65c0" kindref="member">Cargador::crearGuarda</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCampos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[kMaxCampos])</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Entra<sp/>en<sp/>Cargador::crearGuarda<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;numCampos&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Creado<sp/>Guarda:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>vCampos[1]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPrision" kindref="compound" tooltip="Clase con un modelo singleton que controla la prision.">Prision</ref><sp/>*p=<sp/><ref refid="classPrision_125471045152afdba8a74f273f8f7ebab" kindref="member">Prision::get_instancia</ref>();<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_planta<sp/>=<sp/>atoi(vCampos[2].c_str()),<sp/>n_celda<sp/>=<sp/>p-&gt;<ref refid="classPrision_115faba9849c3836b7380f6bf7a06caca" kindref="member">get_alto_planta</ref>(n_planta)*p-&gt;<ref refid="classPrision_12c7faa2a038b1fdfc45eb6469c9d7acc" kindref="member">get_ancho_planta</ref>(n_planta)-1;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classPrision_1ac30af72defaeddd1d534f8762116b8a" kindref="member">set_persona</ref>(n_planta,n_celda,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classGuardia" kindref="compound">Guardia</ref>(vCampos[0],vCampos[1][0],atoi(vCampos[3].c_str()),n_planta,n_celda));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(...){</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cargador_8h_163f24d6846d51cb1b0804c10fb32aa10" kindref="member">DEPURAR_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Sale<sp/>de<sp/>Cargador::crearGuarda&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/cargador.cpp"/>
+  </compounddef>
+</doxygen>

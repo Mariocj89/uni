@@ -1,0 +1,27 @@
+fmod PILA is
+protecting BOOL .
+protecting INT .
+sort Pila .
+
+op crear : -> Pila [ctor] .
+op apilar : Pila Int -> Pila [ctor] .
+op desapilar : Pila -> [Pila] .
+op cima : Pila -> [Int] .
+op esVacia : Pila -> Bool .
+
+vars P Q : Pila .
+vars e r : Int .
+
+cmb desapilar(P) : Pila if (esVacia(P) == false) .
+
+cmb cima(P) : Int if (esVacia(P) == false) .
+
+eq desapilar(apilar(P,e)) = P .
+
+eq cima(apilar(P,e)) = e .
+
+eq esVacia(crear) = true .
+eq esVacia(apilar(P,e)) = false .
+
+endfm
+

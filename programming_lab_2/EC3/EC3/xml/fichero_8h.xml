@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="fichero_8h" kind="file">
+    <compoundname>fichero.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="cargador_8h" local="yes">Escritorio/EC3/src/cargador.h</includedby>
+    <includedby refid="fichero_8cpp" local="yes">Escritorio/EC3/src/fichero.cpp</includedby>
+    <incdepgraph>
+      <node id="307">
+        <label>Escritorio/EC3/src/fichero.h</label>
+        <link refid="fichero.h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>fstream</label>
+      </node>
+      <node id="309">
+        <label>iostream</label>
+      </node>
+      <node id="310">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="311">
+        <label>Escritorio/EC3/src/fichero.h</label>
+        <link refid="fichero.h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>Escritorio/EC3/src/ec3.cpp</label>
+        <link refid="ec3_8cpp"/>
+      </node>
+      <node id="312">
+        <label>Escritorio/EC3/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>Escritorio/EC3/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+      <node id="313">
+        <label>Escritorio/EC3/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFicheroCarga" prot="public">FicheroCarga</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="fichero_8h_13a8b7e76569fece81a7a2fd2f89ab74e" prot="public" static="no">
+        <name>kDepurarFichero</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable constante utilizada para mostrar o no mensajes de depuracion de programa </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" prot="public" static="no">
+        <name>DEPURAR_FICHERO_MSG</name>
+        <param><defname>msg</defname></param>
+        <initializer>if (kDepurarFichero){ cout&lt;&lt;msg; cin.get();}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro utilizada para mostrar mensajes de depuración de programa y retener los mensajes en pantalla </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="36" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>kMaxCampos</definition>
+        <argsstring></argsstring>
+        <name>kMaxCampos</name>
+        <initializer> 8</initializer>
+        <briefdescription>
+<para>Constante con el numero maximo de campos de una linea del fichero de configuracion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/fichero.h" line="24" bodyfile="/home/Mario/Escritorio/EC3/src/fichero.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declaracion de la clase <ref refid="classFicheroCarga" kindref="compound">FicheroCarga</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="date"><para>09/04/09 </para></simplesect>
+<simplesect kind="author"><para><bold>Nombre:</bold> Mario <linebreak/>
+ <bold>Apellidos:</bold> Corchero Jimenez <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>FICHERO_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FICHERO_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" kindref="member" tooltip="Constante con el numero maximo de campos de una linea del fichero de configuracion...">kMaxCampos</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="fichero_8h_13a8b7e76569fece81a7a2fd2f89ab74e" refkind="member"><highlight class="preprocessor">#define<sp/>kDepurarFichero<sp/>0</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="36" refid="fichero_8h_146104438d21e10d9fd6f0c44da03f1df" refkind="member"><highlight class="preprocessor">#define<sp/>DEPURAR_FICHERO_MSG(msg)<sp/>if<sp/>(kDepurarFichero){<sp/>cout&lt;&lt;msg;<sp/>cin.get();}</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classFicheroCarga" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFicheroCarga" kindref="compound" tooltip="Esta clase carga el sistema con los elementos indicados en el fichero de configuración...">FicheroCarga</ref>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classFicheroCarga_142d9d8b4602a24c26a2f2e5bf2c5a55b" kindref="member">FicheroCarga</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombre);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_16883d83049078fdf92cd8b8964b425d1" kindref="member">ProcesarFichero</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_1f48c4dabc5df8fab5899a57fd194300e" kindref="member">ProcesarDatos</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCampos,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[<ref refid="fichero_8h_11c3a1cc5d42e196a47f16c55e668e9ec" kindref="member" tooltip="Constante con el numero maximo de campos de una linea del fichero de configuracion...">kMaxCampos</ref>]);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//~FicheroCarga();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" refkind="member"><highlight class="normal"><sp/><sp/>ifstream<sp/><ref refid="classFicheroCarga_1f6f1330ca6f4db508d25515af90eed80" kindref="member" tooltip="atributo que contiene el flujo de entrada utilizado para extraer informacion del...">f_in_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_17e3ed176862d0fffc46975fbce4845b3" kindref="member" tooltip="atributo que contiene el nombre del fichero, se inicializa con el constructor.">nombre_fichero_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_1f3eda8296f8e63ca76cae9e122da6dc1" kindref="member">TrocearLinea</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>linea,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[kMaxCampos]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/Mario/Escritorio/EC3/src/fichero.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,160 @@
+\section{Referencia de la Clase Meses}
+\label{classMeses}\index{Meses@{Meses}}
+{\tt \#include $<$meses.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+{\bf Meses} ()\label{classMeses_f7908636300cbd454835ffb1af782a8c}
+
+\begin{CompactList}\small\item\em Constructor por defecto de la clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}. \item\end{CompactList}\item 
+void {\bf Clonar} (const {\bf Meses} \&dat)
+\begin{CompactList}\small\item\em Copia la clase meses. \item\end{CompactList}\item 
+void {\bf InsertarPrincipio} (const TipoDato \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento al principio. \item\end{CompactList}\item 
+void {\bf InsertarFinal} (const TipoDato \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento al final. \item\end{CompactList}\item 
+void {\bf InsertarOrden} (const TipoDato \&dat)
+\begin{CompactList}\small\item\em Inserta un elemento de forma ordenada. \item\end{CompactList}\item 
+void {\bf Mostrar} () const
+\begin{CompactList}\small\item\em Muestra toda la lista. \item\end{CompactList}\item 
+bool {\bf Borrar} (const int \&i)
+\begin{CompactList}\small\item\em Borra un elemento de la lista. \item\end{CompactList}\item 
+bool {\bf Buscar} (const int i, TipoDato \&dat) const
+\begin{CompactList}\small\item\em Busca un elemento en la lista. \item\end{CompactList}\item 
+void {\bf Cargar} ()
+\begin{CompactList}\small\item\em Carga la lista de un archivo (\char`\"{}meses.txt\char`\"{}). \item\end{CompactList}\item 
+void {\bf Eliminar} ()\label{classMeses_1b691d588636573359599097af27b54a}
+
+\begin{CompactList}\small\item\em Vacia la lista. \item\end{CompactList}\item 
+{\bf $\sim$Meses} ()\label{classMeses_c8ded19df98124383823a52813c45cbd}
+
+\begin{CompactList}\small\item\em Destructor de la clase. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos privados}
+\begin{CompactItemize}
+\item 
+PtrNodo \textbf{l}\label{classMeses_fdfd4efd7ec76f35454f45ae28c2aa54}
+
+\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase \doxyref{DatosPersonales}{p.}{classDatosPersonales}, almacena la informacion relativa a los meses en una lista enlazada. Sus atributos son:\begin{itemize}
+\item l: puntero que apunta a un TNodo, el comienzo de la lista. \end{itemize}
+
+
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Meses@{Meses}!Clonar@{Clonar}}
+\index{Clonar@{Clonar}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::Clonar (const {\bf Meses} \& {\em dat})}\label{classMeses_6523ac975c165807691c66c320dc5f69}
+
+
+Copia la clase meses. 
+
+\begin{Desc}
+\item[Precondición:]dat debe estar correctamente inicializado, con 12 meses, siendo el primer mes 1 y el ultimo el 12. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]Tipo meses de donde se copiara la configuracion \end{description}
+\end{Desc}
+\index{Meses@{Meses}!InsertarPrincipio@{InsertarPrincipio}}
+\index{InsertarPrincipio@{InsertarPrincipio}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::InsertarPrincipio (const TipoDato \& {\em dat})}\label{classMeses_3182bd3fe6d6c5704f57875bf5deec5b}
+
+
+Inserta un elemento al principio. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]TipoDato que se insertara en la lista \end{description}
+\end{Desc}
+\index{Meses@{Meses}!InsertarFinal@{InsertarFinal}}
+\index{InsertarFinal@{InsertarFinal}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::InsertarFinal (const TipoDato \& {\em dat})}\label{classMeses_4041fa911214924768c305aab758c69a}
+
+
+Inserta un elemento al final. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]TipoDato que se insertara en la lista. \end{description}
+\end{Desc}
+\index{Meses@{Meses}!InsertarOrden@{InsertarOrden}}
+\index{InsertarOrden@{InsertarOrden}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::InsertarOrden (const TipoDato \& {\em dat})}\label{classMeses_129f69534c912e5ea7a46f925ce9ff79}
+
+
+Inserta un elemento de forma ordenada. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada y ordenada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]TipoDato que se insertara en la lista. \end{description}
+\end{Desc}
+\index{Meses@{Meses}!Mostrar@{Mostrar}}
+\index{Mostrar@{Mostrar}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::Mostrar () const}\label{classMeses_80b257997d4769292b17a6e15730dfea}
+
+
+Muestra toda la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\index{Meses@{Meses}!Borrar@{Borrar}}
+\index{Borrar@{Borrar}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Meses::Borrar (const int \& {\em i})}\label{classMeses_76959034cbdd7801be117e84d365eaaa}
+
+
+Borra un elemento de la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em i,:}]Entero que indica el elemento que se borrara de la lista. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha borrado correctamente, false en caso contrario. \end{Desc}
+\index{Meses@{Meses}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Meses::Buscar (const int {\em i}, TipoDato \& {\em dat}) const}\label{classMeses_a4d534314ff3677c0a2b204de10abb00}
+
+
+Busca un elemento en la lista. 
+
+\begin{Desc}
+\item[Precondición:]La clase debe estar inicializada. \end{Desc}
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em dat,:}]TipoDato donde se copiara el elemento encontrado. \item[{\em i,:}]Entero usado para buscar el elemento. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Devuelve:]true si lo ha encontrado, false en caso contrario. \end{Desc}
+\index{Meses@{Meses}!Cargar@{Cargar}}
+\index{Cargar@{Cargar}!Meses@{Meses}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Meses::Cargar ()}\label{classMeses_6fe9b288dc12957021cfa63c63476ffd}
+
+
+Carga la lista de un archivo (\char`\"{}meses.txt\char`\"{}). 
+
+\begin{Desc}
+\item[Precondición:]Debe existir el archivo y tener el formato esperado \end{Desc}
+
+
+La documentación para esta clase fué generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+Escritorio/fase3/src/{\bf meses.h}\item 
+Escritorio/fase3/src/{\bf meses.cpp}\end{CompactItemize}

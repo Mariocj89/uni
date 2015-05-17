@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.2">
+  <compound refid="classcategoria" kind="class"><name>categoria</name>
+    <member refid="classcategoria_1dd42f15304b339c07165736267ecaa7a" kind="variable"><name>elemento</name></member>
+    <member refid="classcategoria_1d0a9eee7e0454ca35cc882f970878030" kind="variable"><name>ocupacion</name></member>
+    <member refid="classcategoria_19083b8da72b4dc799ac389d90c5c11e2" kind="variable"><name>pi</name></member>
+    <member refid="classcategoria_145a7aa35715ed0d8771a083893c0a1d5" kind="variable"><name>id</name></member>
+    <member refid="classcategoria_1fd381ae3b9d599f234fb5d136c088e06" kind="variable"><name>nombre</name></member>
+    <member refid="classcategoria_12885fb665aa9cee9d0ce1b379b595547" kind="function"><name>categoria</name></member>
+    <member refid="classcategoria_10b040becb66fe1c60c21f51585f3c70d" kind="function"><name>Clonar</name></member>
+    <member refid="classcategoria_169ee94a8901901fc8071a710fee442da" kind="function"><name>Obtener_Referencia</name></member>
+    <member refid="classcategoria_1222db3f24a21e4b54e0854cbb3535752" kind="function"><name>Obtener_Nombre</name></member>
+    <member refid="classcategoria_1ca31a3b977869d5a90967fc7d8d0ba13" kind="function"><name>Poner_Referencia</name></member>
+    <member refid="classcategoria_131c8f93166a5400eb1cf5ba5d80f2edb" kind="function"><name>Poner_Nombre</name></member>
+    <member refid="classcategoria_13c81a61a246b96b2dc933e97c46a03de" kind="function"><name>Vacia</name></member>
+    <member refid="classcategoria_18634ef9c9dbd56df7edd7c089715a7e6" kind="function"><name>Llena</name></member>
+    <member refid="classcategoria_11f2a4822b7c985ad07ce32a2455ce73a" kind="function"><name>Poner_Inicio</name></member>
+    <member refid="classcategoria_1beb2f260b191580130632c25027a3783" kind="function"><name>Poner_Fin</name></member>
+    <member refid="classcategoria_153baa56d033db9288545c5b550ef172f" kind="function"><name>Avanzar</name></member>
+    <member refid="classcategoria_189700ecdc81f118efe4dc5dad6c11171" kind="function"><name>Retroceder</name></member>
+    <member refid="classcategoria_15184bfbbdd0b1ef48cab60e37df559be" kind="function"><name>Fin</name></member>
+    <member refid="classcategoria_13719e0408af403bf100c9508b375acb7" kind="function"><name>Inicio</name></member>
+    <member refid="classcategoria_1dba3ec88315d3ca4a9622370de173aa7" kind="function"><name>Insertar</name></member>
+    <member refid="classcategoria_103c69a487c47f05e65a90c3c91369d03" kind="function"><name>Consultar</name></member>
+    <member refid="classcategoria_1b23b572f74f88d48d936595055b1b4e5" kind="function"><name>Borrar</name></member>
+    <member refid="classcategoria_10c90e1b3afcbe0e472ebb4cd4a934cb8" kind="function"><name>Vaciar</name></member>
+  </compound>
+  <compound refid="classfecha" kind="class"><name>fecha</name>
+    <member refid="classfecha_159c299c690b6584793ed316dd81afa9b" kind="variable"><name>dia</name></member>
+    <member refid="classfecha_1f1e40d8b1eb62d5a03b6fe12a1b95f65" kind="variable"><name>mes</name></member>
+    <member refid="classfecha_194c1d45a967f49f42fa5435dbce3a65d" kind="variable"><name>anio</name></member>
+    <member refid="classfecha_16618aab8a9750692a1ecc00969175b69" kind="function"><name>dias_por_mes</name></member>
+    <member refid="classfecha_1746902dbdf76ebd7140bcdad702d0650" kind="function"><name>bisiesto</name></member>
+    <member refid="classfecha_12ac14aa46a810d2cb0d4d8b639517751" kind="function"><name>fecha_correcta</name></member>
+    <member refid="classfecha_16775ef84b5838e12e28fd341793f4539" kind="function"><name>fecha</name></member>
+    <member refid="classfecha_165cd911ad05a136da161bffdfc56e523" kind="function"><name>fecha</name></member>
+    <member refid="classfecha_1f9c51c65e530811dcbcdac769647f890" kind="function"><name>fecha</name></member>
+    <member refid="classfecha_1ffbc58390398cbbc117bdfa754b0cd35" kind="function"><name>fecha</name></member>
+    <member refid="classfecha_106f3a30edf89c4542d7bf260f5bb4be8" kind="function"><name>Clonar</name></member>
+    <member refid="classfecha_15691bdd8675b0df1745b05f104cf645b" kind="function"><name>incrementar_fecha</name></member>
+    <member refid="classfecha_1a70e6f4e7c53aa9be72afca3a333faf3" kind="function"><name>decrementar_fecha</name></member>
+    <member refid="classfecha_1f847dd726827b02dba1024a020886e22" kind="function"><name>asignar_fecha</name></member>
+    <member refid="classfecha_10e88871e98725a3a179d84f3800494cf" kind="function"><name>obtener_dia</name></member>
+    <member refid="classfecha_1b11a5362f76eb157dd22e90aba2e7f3d" kind="function"><name>obtener_mes</name></member>
+    <member refid="classfecha_194687f580581d853ca7841c542e36b10" kind="function"><name>obtener_anio</name></member>
+    <member refid="classfecha_126e7fd7a163a4cb09ccd2e5d023838b3" kind="function"><name>Mostrar_Fecha</name></member>
+  </compound>
+  <compound refid="classgestor" kind="class"><name>gestor</name>
+    <member refid="classgestor_1e1776d4983d6847c33ca98bde1bbfdb9" kind="variable"><name>list</name></member>
+    <member refid="classgestor_1d127ac39c3a88b78f10312710df6baca" kind="variable"><name>contadorN</name></member>
+    <member refid="classgestor_162947246b34dfec56cb50c19ef093717" kind="variable"><name>contadorC</name></member>
+    <member refid="classgestor_1db7360a0cae16de5d47cd550e69ada05" kind="function"><name>Aumentar_contadorN</name></member>
+    <member refid="classgestor_109b4362f3720d0e10571ee9e5dffaeaf" kind="function"><name>Aumentar_contadorC</name></member>
+    <member refid="classgestor_13c96931163b8b890da99ab4e9e658e31" kind="function"><name>Reducir_contadorC</name></member>
+    <member refid="classgestor_12003a8d63d45043877ee4a4b25a2d531" kind="function"><name>gestor</name></member>
+    <member refid="classgestor_14c8d809e4c39e326bcc6abf20f841c93" kind="function"><name>~gestor</name></member>
+    <member refid="classgestor_1151f2dd417d7e112c2ac80f13e5520cc" kind="function"><name>Insertar</name></member>
+    <member refid="classgestor_1a12ef00d523ae5a1f157a8ae7a93e943" kind="function"><name>Insertar_Categoria</name></member>
+    <member refid="classgestor_1100cb4ad8aa013103783dcf277d82e17" kind="function"><name>Mostrar</name></member>
+    <member refid="classgestor_1e2c07f4989bb9da786908f8586e552f6" kind="function"><name>Mostrar_Categorias</name></member>
+    <member refid="classgestor_155b991e1e33572562fb97a430bb22d64" kind="function"><name>Mostrar_Categoria</name></member>
+    <member refid="classgestor_1bd2c7542ef2bec7ee252874b4384f096" kind="function"><name>Eliminar</name></member>
+    <member refid="classgestor_1e43a8854e95a885f33c67baab7cd337c" kind="function"><name>Eliminar_Categoria</name></member>
+    <member refid="classgestor_12e623119e3ddd5f1834a9cae7ed222f2" kind="function"><name>Buscar</name></member>
+    <member refid="classgestor_12d1eee9b1d0fa176ea1cdf314ca17936" kind="function"><name>Guardar</name></member>
+    <member refid="classgestor_1423999fab9520b418a7779e54d2dc244" kind="function"><name>Cargar</name></member>
+    <member refid="classgestor_15b65e28ca7f034770ea4f92e8896477a" kind="function"><name>Obtener_ContadorN</name></member>
+    <member refid="classgestor_1d530d0021279ce4ee8ea35a43ba4c650" kind="function"><name>Obtener_ContadorC</name></member>
+    <member refid="classgestor_13bbc3851c0d1489efaac618432bae588" kind="function"><name>Pedir_Noticia</name></member>
+    <member refid="classgestor_1e26a59f9ceb4879e3fe427c6ee9b4b89" kind="function"><name>Buscar_Cadena</name></member>
+  </compound>
+  <compound refid="classlista" kind="class"><name>lista</name>
+    <member refid="classlista_1959745edbf6ef1901d52358137e4b55a" kind="variable"><name>elemento</name></member>
+    <member refid="classlista_1e56aaa9eb8c8818ab36f5d578c52f6b0" kind="variable"><name>ocupacion</name></member>
+    <member refid="classlista_1d5ee420d7672bea5fd4d191c401733be" kind="variable"><name>pi</name></member>
+    <member refid="classlista_17ae1e1582d5b90e6bc26b8ecd2894072" kind="function"><name>lista</name></member>
+    <member refid="classlista_19281356b5743c333b7fa382a1befa2e1" kind="function"><name>ocupadas</name></member>
+    <member refid="classlista_19767ee9056947047c0c6c204bc4db762" kind="function"><name>vacia</name></member>
+    <member refid="classlista_1982294906d63950bba25f2d1cab21273" kind="function"><name>llena</name></member>
+    <member refid="classlista_12ec76266d65e81e2c4940269b261f833" kind="function"><name>poner_inicio</name></member>
+    <member refid="classlista_1e1bd3d1b4417a52463b1ef69456ea730" kind="function"><name>poner_fin</name></member>
+    <member refid="classlista_1b68bc836734758ca7e0977b1740d31eb" kind="function"><name>avanzar</name></member>
+    <member refid="classlista_1f4d2afee307ae39c83eefdeb40b13d71" kind="function"><name>retroceder</name></member>
+    <member refid="classlista_1036798860b016f8f5431335002d15b38" kind="function"><name>fin</name></member>
+    <member refid="classlista_129149056d6a592279e575708b0cdc176" kind="function"><name>inicio</name></member>
+    <member refid="classlista_10c433976220721607f6e42f44b7cecfe" kind="function"><name>insertar</name></member>
+    <member refid="classlista_18cef95497347095d6207dded1b978358" kind="function"><name>consultar</name></member>
+    <member refid="classlista_198cf505fbe1f15ae56f6acef8dca796d" kind="function"><name>borrar</name></member>
+    <member refid="classlista_1c7cbd50511a860cdfb8436a0e31490dc" kind="function"><name>insertar_Noticia</name></member>
+    <member refid="classlista_1d5d12911c92a2c156817844109341a90" kind="function"><name>borrar_Noticia</name></member>
+  </compound>
+  <compound refid="classNoticia" kind="class"><name>Noticia</name>
+    <member refid="classNoticia_1b663ec99e9f021fef075a2b4a411bc2d" kind="variable"><name>Ident_N</name></member>
+    <member refid="classNoticia_117037ae5eb5be04babbf631175ab831c" kind="variable"><name>Titulo</name></member>
+    <member refid="classNoticia_165f81704fa6b1275aecee2fbfede20cc" kind="variable"><name>SubTitulo</name></member>
+    <member refid="classNoticia_1f50d403e5df24e84b01bb6a5b5bfc383" kind="variable"><name>Contenido</name></member>
+    <member refid="classNoticia_1cdb29a3081a2fd1a50783fa492f51e0d" kind="variable"><name>Imagen</name></member>
+    <member refid="classNoticia_1de5ca315152e3d7b074ffac7d433eade" kind="variable"><name>Fecha_N</name></member>
+    <member refid="classNoticia_1e5de1fd21c0b8db67b70b5a6bbaba80b" kind="function"><name>Noticia</name></member>
+    <member refid="classNoticia_1cbabfb50db8704e35f29d9be4def129e" kind="function"><name>Noticia</name></member>
+    <member refid="classNoticia_199c2da39992cf9c8b3d9c508efc94ee7" kind="function"><name>Noticia</name></member>
+    <member refid="classNoticia_163c07120d139ee6a943efadb124e71f3" kind="function"><name>Clonar</name></member>
+    <member refid="classNoticia_123b71b8079ef1f9c585805627798991b" kind="function"><name>Poner_Identificador</name></member>
+    <member refid="classNoticia_13cf4fd9fa2c7f493ba127fda6ecaf4a4" kind="function"><name>Poner_Titulo</name></member>
+    <member refid="classNoticia_14fcfe11186521629039996d3e05a6662" kind="function"><name>Poner_SubTitulo</name></member>
+    <member refid="classNoticia_1a1ff7c5fbd7a5400d47160a9abdea2aa" kind="function"><name>Poner_Contenido</name></member>
+    <member refid="classNoticia_18d3ef0dbf9467d008c4ee840a90b1b4d" kind="function"><name>Poner_Imagen</name></member>
+    <member refid="classNoticia_12b7604d405817157cf6f4bace2e13e59" kind="function"><name>Poner_Fecha</name></member>
+    <member refid="classNoticia_18f2cf7625833f1a2e3a0fb6fa17f4936" kind="function"><name>Obtener_Identificador</name></member>
+    <member refid="classNoticia_12e7230a54be139dda293d683369e418d" kind="function"><name>Obtener_Titulo</name></member>
+    <member refid="classNoticia_1a49b2bbc3030feaffaa6c8a19cc1364f" kind="function"><name>Obtener_SubTitulo</name></member>
+    <member refid="classNoticia_190f7edf708afa34797a0210fe857438c" kind="function"><name>Obtener_Fecha</name></member>
+    <member refid="classNoticia_1140c5fb3c38b471056758ba797f42c96" kind="function"><name>Obtener_Contenido</name></member>
+    <member refid="classNoticia_14492711e6298259e6857bff5387d97a7" kind="function"><name>Obtener_Imagen</name></member>
+    <member refid="classNoticia_1d26beba5fea62004588a45df2de8627b" kind="function"><name>Comparar</name></member>
+    <member refid="classNoticia_1bff9262f8b083eb62bcd252dd4c47287" kind="function"><name>Mostrar_Noticia</name></member>
+    <member refid="classNoticia_18366558e0b77bc9c431f4dd5392f4751" kind="function"><name>Guardar_Noticia</name></member>
+    <member refid="classNoticia_144d9d79493df0f17dddba3f2213240de" kind="function"><name>Cargar_Noticia</name></member>
+    <member refid="classNoticia_1d18df61d4aea02bbed8cb2920688aa9c" kind="function"><name>PedirNoticia</name></member>
+    <member refid="classNoticia_11cc5f06574fa1c9cdec4bc277b975185" kind="function"><name>~Noticia</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_10ee1617ff2f6885ef384a3dd46f9b9d7" kind="define"><name>HAVE_DLFCN_H</name></member>
+    <member refid="config_8h_1b90a030ff2790ebdc176660a6dd2a478" kind="define"><name>HAVE_INTTYPES_H</name></member>
+    <member refid="config_8h_1e93a78f9d076138897af441c9f86f285" kind="define"><name>HAVE_MEMORY_H</name></member>
+    <member refid="config_8h_1b6cd6d1c63c1e26ea2d4537b77148354" kind="define"><name>HAVE_STDINT_H</name></member>
+    <member refid="config_8h_19e0e434ec1a6ddbd97db12b5a32905e0" kind="define"><name>HAVE_STDLIB_H</name></member>
+    <member refid="config_8h_1405d10d46190bcb0320524c54eafc850" kind="define"><name>HAVE_STRINGS_H</name></member>
+    <member refid="config_8h_1d4c234dd1625255dc626a15886306e7d" kind="define"><name>HAVE_STRING_H</name></member>
+    <member refid="config_8h_1ce156430ba007d19b4348a950d0c692b" kind="define"><name>HAVE_SYS_STAT_H</name></member>
+    <member refid="config_8h_169dc70bea5d1f8bd2be9740e974fa666" kind="define"><name>HAVE_SYS_TYPES_H</name></member>
+    <member refid="config_8h_1219b06937831d0da94d801ab13987639" kind="define"><name>HAVE_UNISTD_H</name></member>
+    <member refid="config_8h_1ca8570fb706c81df371b7f9bc454ae03" kind="define"><name>PACKAGE</name></member>
+    <member refid="config_8h_11d1d2d7f8d2f95b376954d649ab03233" kind="define"><name>PACKAGE_BUGREPORT</name></member>
+    <member refid="config_8h_11c0439e4355794c09b64274849eb0279" kind="define"><name>PACKAGE_NAME</name></member>
+    <member refid="config_8h_1c73e6f903c16eca7710f92e36e1c6fbf" kind="define"><name>PACKAGE_STRING</name></member>
+    <member refid="config_8h_1f415af6bfede0e8d5453708afe68651c" kind="define"><name>PACKAGE_TARNAME</name></member>
+    <member refid="config_8h_1a326a05d5e30f9e9a4bb0b4469d5d0c0" kind="define"><name>PACKAGE_VERSION</name></member>
+    <member refid="config_8h_1550e5c272cc3cf3814651721167dcd23" kind="define"><name>STDC_HEADERS</name></member>
+    <member refid="config_8h_11c6d5de492ac61ad29aec7aa9a436bbf" kind="define"><name>VERSION</name></member>
+  </compound>
+  <compound refid="categoria_8cpp" kind="file"><name>categoria.cpp</name>
+  </compound>
+  <compound refid="categoria_8h" kind="file"><name>categoria.h</name>
+    <member refid="categoria_8h_190885325454ef932b9c9514fa3323d8c" kind="variable"><name>MAX_ELEMENTOS</name></member>
+    <member refid="categoria_8h_182e9554fd205eb9d0b4f34cc32dc1eca" kind="typedef"><name>TipoDato</name></member>
+    <member refid="categoria_8h_101dcdae5e93f1ed193fe9b500b09a31f" kind="typedef"><name>vector</name></member>
+  </compound>
+  <compound refid="fecha_8cpp" kind="file"><name>fecha.cpp</name>
+  </compound>
+  <compound refid="fecha_8h" kind="file"><name>fecha.h</name>
+  </compound>
+  <compound refid="gestor_8cpp" kind="file"><name>gestor.cpp</name>
+    <member refid="gestor_8cpp_1255487719c3cd70bebf6d08b189db911" kind="function"><name>Pasar_Minusculas</name></member>
+  </compound>
+  <compound refid="gestor_8h" kind="file"><name>gestor.h</name>
+    <member refid="gestor_8h_12754afa7d8b9c5683729df3f4ddbbf1e" kind="variable"><name>MAX_IDENT</name></member>
+    <member refid="gestor_8h_106de4837cf91d89201e34b6af81d98bb" kind="typedef"><name>Tcadena</name></member>
+    <member refid="gestor_8h_1255487719c3cd70bebf6d08b189db911" kind="function"><name>Pasar_Minusculas</name></member>
+  </compound>
+  <compound refid="lpi_8cpp" kind="file"><name>lpi.cpp</name>
+  </compound>
+  <compound refid="lpi_8h" kind="file"><name>lpi.h</name>
+    <member refid="lpi_8h_19baf13a1aa39633acbeaefd567559005" kind="variable"><name>Max_Categorias</name></member>
+  </compound>
+  <compound refid="noticias_8cpp" kind="file"><name>noticias.cpp</name>
+  </compound>
+  <compound refid="noticias_8h" kind="file"><name>noticias.h</name>
+    <member refid="noticias_8h_1eadc47897060eba80e91ae6db1c1f520" kind="variable"><name>MaxCad1</name></member>
+    <member refid="noticias_8h_130362814f157e71716d9bab11bc2004b" kind="variable"><name>MaxCad2</name></member>
+    <member refid="noticias_8h_195183747f01886dcfbb6b81a05b0971b" kind="variable"><name>MaxCad3</name></member>
+    <member refid="noticias_8h_196c5e4e15f549c73471fb112e9056bd2" kind="variable"><name>MaxCadRef</name></member>
+    <member refid="noticias_8h_1c792eacc19904bc5ae9ac858adb30767" kind="variable"><name>MaxCadSec</name></member>
+    <member refid="noticias_8h_1e3f4d60cb8a63210cec6fdff396019fe" kind="typedef"><name>Tcadena1</name></member>
+    <member refid="noticias_8h_14d9cef939352594212276f52943bd480" kind="typedef"><name>Tcadena2</name></member>
+    <member refid="noticias_8h_1f88145e0e7be8b806fd24434b12a269b" kind="typedef"><name>Tcadena3</name></member>
+  </compound>
+  <compound refid="ppal_8cpp" kind="file"><name>ppal.cpp</name>
+    <member refid="ppal_8cpp_19b066ecc1457a81fffa06154af3e3fa0" kind="function"><name>NoCaracter</name></member>
+    <member refid="ppal_8cpp_12f0dda3378145149b8c5461d81ba622a" kind="function"><name>Menu_Principal</name></member>
+    <member refid="ppal_8cpp_1329988a653755cb13f715e9a81cf740a" kind="function"><name>Menu_Noticia</name></member>
+    <member refid="ppal_8cpp_124c1cb527e6d3b8a2b8f0ff21f8126fe" kind="function"><name>Menu_Categoria</name></member>
+    <member refid="ppal_8cpp_1b5b89fb4f6189d608c41682d22353855" kind="function"><name>Opcion_Noticia</name></member>
+    <member refid="ppal_8cpp_161a19b8f484e4b565d10ef0e006e1a51" kind="function"><name>Opcion_Categoria</name></member>
+    <member refid="ppal_8cpp_122f4e607bfb58c45ace1ba080fc95802" kind="function"><name>Opcion_Principal</name></member>
+    <member refid="ppal_8cpp_1e66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_08ea3a53910d09e368a9621df7bf3fdd" kind="dir"><name>/home/Mario/Escritorio/Proyecto/Fase1/debug/</name>
+  </compound>
+  <compound refid="dir_042e73d2887dd1d56a141f2dd77f3aa6" kind="dir"><name>/home/Mario/Escritorio/Proyecto/Fase1/</name>
+  </compound>
+  <compound refid="dir_752423223592f579cb9242a962a7c257" kind="dir"><name>/home/Mario/Escritorio/Proyecto/</name>
+  </compound>
+  <compound refid="dir_7ae67d5a50438faba21da39db89f58c0" kind="dir"><name>/home/Mario/Escritorio/Proyecto/Fase1/src/</name>
+  </compound>
+</doxygenindex>

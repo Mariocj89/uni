@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.2">
+  <compounddef id="classGuardia" kind="class" prot="public">
+    <compoundname>Guardia</compoundname>
+    <basecompoundref refid="classPersona" prot="public" virt="non-virtual">Persona</basecompoundref>
+    <includes refid="guardia_8h" local="no">guardia.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGuardia_17bdc01bf4017bd45ac861a55e6e52ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Guardia::P2String</definition>
+        <argsstring>()</argsstring>
+        <name>P2String</name>
+        <reimplements refid="classPersona_1827d49fd22fb68461f1c725fd201c281">P2String</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pasa la informacion del <ref refid="classguardia" kindref="compound">guardia</ref> a una cadena <simplesect kind="return"><para>cadena con la informacion de la <ref refid="classguardia" kindref="compound">guardia</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="23" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="139" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1968b1d9571cf0532a8e5fe0f7aad0018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Guardia::Guardia</definition>
+        <argsstring>(const string &amp;nombre, const char &amp;marca, const int &amp;espera, const int &amp;p, const int &amp;c)</argsstring>
+        <name>Guardia</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>marca</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>espera</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classguardia" kindref="compound">guardia</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del <ref refid="classguardia" kindref="compound">guardia</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marca</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>marca del <ref refid="classguardia" kindref="compound">guardia</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>espera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tiempo que debe esperar el <ref refid="classguardia" kindref="compound">guardia</ref> para actuar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planta en la que inicia el <ref refid="classguardia" kindref="compound">guardia</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>celda en la que se inicia el <ref refid="classguardia" kindref="compound">guardia</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="24" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_159312eeabb75f2c0b1659ba2d73c9732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Guardia::~Guardia</definition>
+        <argsstring>()</argsstring>
+        <name>~Guardia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de la clase <ref refid="classguardia" kindref="compound">guardia</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="25" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGuardia_1fda4ca67ebab9ab5e307a266b9ae22ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Guardia::UsarPuerta</definition>
+        <argsstring>()</argsstring>
+        <name>UsarPuerta</name>
+        <reimplements refid="classPersona_1827d80881366e3e086d4d9d5fe726399">UsarPuerta</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que cierra la puerta que haya en la celda(en caso de que la haya) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="27" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1127c9942c98cd5332511d9383c2d76e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Guardia::Interactuar</definition>
+        <argsstring>()</argsstring>
+        <name>Interactuar</name>
+        <reimplements refid="classPersona_1fa25ad7cbf9d12b4cf4711800c748920">Interactuar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que captura a un preso en la sala </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="28" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="26" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1b14ab83ca126b82fb5b7341545682dcd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Guardia::TratarLlave</definition>
+        <argsstring>()</argsstring>
+        <name>TratarLlave</name>
+        <reimplements refid="classPersona_191f8eab1f237e3d4e42a227e4f185e4e">TratarLlave</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que controla el uso de las llaves </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="29" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1ed3d1d16abfad909b98e66b57e6efeac" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Guardia::CalcularRuta</definition>
+        <argsstring>()</argsstring>
+        <name>CalcularRuta</name>
+        <reimplements refid="classPersona_1dfb69e4115ae0f1eddd7130b7cc38b8a">CalcularRuta</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que actualiza la ruta del <ref refid="classguardia" kindref="compound">guardia</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="30" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="62" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1760220917460d685bff7113115a9cbb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Guardia::Mover</definition>
+        <argsstring>()</argsstring>
+        <name>Mover</name>
+        <reimplements refid="classPersona_1dfe58fef614d78a3bd7e728c9ce30c98">Mover</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Se mueve a la siguiente celda <simplesect kind="return"><para>true si se a podido mover correctamente </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="31" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="96" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuardia_1dcf3ca4b4e21e2f658e4df726522b0f3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Guardia::DestinoRuta</definition>
+        <argsstring>() const</argsstring>
+        <name>DestinoRuta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Halla la celda a la que debera de ir el <ref refid="classguardia" kindref="compound">guardia</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="32" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.cpp" bodystart="119" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="92">
+        <label>Guardia</label>
+        <link refid="classGuardia"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Persona</label>
+        <link refid="classPersona"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>Guardia</label>
+        <link refid="classGuardia"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>Persona</label>
+        <link refid="classPersona"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/Mario/Escritorio/EC3/src/guardia.h" line="21" bodyfile="/home/Mario/Escritorio/EC3/src/guardia.h" bodystart="21" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classPersona_105ccd9155daffb75e63bf7b33129afb9" prot="public" virt="non-virtual"><scope>Guardia</scope><name>Actuar</name></member>
+      <member refid="classGuardia_1ed3d1d16abfad909b98e66b57e6efeac" prot="private" virt="virtual"><scope>Guardia</scope><name>CalcularRuta</name></member>
+      <member refid="classPersona_1242597c6f6d16bbfbd7c9bb535bc036e" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>celda_</name></member>
+      <member refid="classPersona_133f40e6a924ac59dc360c06a43e5d772" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>Destino</name></member>
+      <member refid="classGuardia_1dcf3ca4b4e21e2f658e4df726522b0f3" prot="private" virt="non-virtual"><scope>Guardia</scope><name>DestinoRuta</name></member>
+      <member refid="classPersona_1aa564e0699b1b0fcd98ca2c620451a3e" prot="public" virt="non-virtual"><scope>Guardia</scope><name>get_marca</name></member>
+      <member refid="classPersona_1edd6cec0572d84557723848814c6fb07" prot="public" virt="non-virtual"><scope>Guardia</scope><name>get_nombre</name></member>
+      <member refid="classPersona_1905d516718f6c844ee610c10a276ac8d" prot="public" virt="non-virtual"><scope>Guardia</scope><name>get_turno</name></member>
+      <member refid="classGuardia_1968b1d9571cf0532a8e5fe0f7aad0018" prot="public" virt="non-virtual"><scope>Guardia</scope><name>Guardia</name></member>
+      <member refid="classGuardia_1127c9942c98cd5332511d9383c2d76e9" prot="private" virt="virtual"><scope>Guardia</scope><name>Interactuar</name></member>
+      <member refid="classPersona_16307abb90e402a21dd35de5a8fd787da" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>llaves_</name></member>
+      <member refid="classPersona_17d71cc3f4afda6f8342aa726812025de" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>marca_</name></member>
+      <member refid="classPersona_1b7ff6a7c54d2da752d891725cc7713a4" prot="public" virt="non-virtual"><scope>Guardia</scope><name>MostrarRuta</name></member>
+      <member refid="classGuardia_1760220917460d685bff7113115a9cbb8" prot="private" virt="virtual"><scope>Guardia</scope><name>Mover</name></member>
+      <member refid="classPersona_14b7da84c9a13d1a574d6bc57ca2995f3" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>nombre_</name></member>
+      <member refid="classGuardia_17bdc01bf4017bd45ac861a55e6e52ad7" prot="public" virt="virtual"><scope>Guardia</scope><name>P2String</name></member>
+      <member refid="classPersona_10b0035b70cb2140c28caea37c4488721" prot="public" virt="non-virtual"><scope>Guardia</scope><name>Persona</name></member>
+      <member refid="classPersona_1a5d7a70f9fb654635fd35318b070dcb6" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>planta_</name></member>
+      <member refid="classPersona_156c7698f800a43476a72c8f34177c897" prot="public" virt="non-virtual"><scope>Guardia</scope><name>put_llave</name></member>
+      <member refid="classPersona_177aae13b0b185d3df95c4c6d8df8cbe4" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>ruta_</name></member>
+      <member refid="classPersona_18493b4a96356762d54f7185934349351" prot="public" virt="non-virtual"><scope>Guardia</scope><name>sacar_llave</name></member>
+      <member refid="classPersona_16767071fbaa5fd802831182f3067aab6" prot="public" virt="non-virtual"><scope>Guardia</scope><name>set_celda</name></member>
+      <member refid="classGuardia_1b14ab83ca126b82fb5b7341545682dcd" prot="private" virt="virtual"><scope>Guardia</scope><name>TratarLlave</name></member>
+      <member refid="classPersona_1996f9da3f6b66d61b81ff10bddb88883" prot="protected" virt="non-virtual"><scope>Guardia</scope><name>turno_</name></member>
+      <member refid="classGuardia_1fda4ca67ebab9ab5e307a266b9ae22ee" prot="private" virt="virtual"><scope>Guardia</scope><name>UsarPuerta</name></member>
+      <member refid="classGuardia_159312eeabb75f2c0b1659ba2d73c9732" prot="public" virt="non-virtual"><scope>Guardia</scope><name>~Guardia</name></member>
+      <member refid="classPersona_10ec7ae504cd0d3c73588cff200755778" prot="public" virt="virtual"><scope>Guardia</scope><name>~Persona</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

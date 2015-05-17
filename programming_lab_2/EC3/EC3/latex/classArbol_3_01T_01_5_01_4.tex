@@ -1,0 +1,494 @@
+\section{Arbol$<$ T $\ast$ $>$ Class Template Reference}
+\label{classArbol_3_01T_01_5_01_4}\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+{\tt \#include $<$arbol.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Arbol} ()
+\item 
+{\bf Arbol} ({\bf Arbol} $\ast$hizq, T $\ast$dato, {\bf Arbol} $\ast$hder)
+\item 
+{\bf Arbol} $\ast$ {\bf hijoIzq} () const
+\item 
+{\bf Arbol} $\ast$ {\bf hijoDer} () const
+\item 
+T $\ast$ {\bf raiz} () const
+\item 
+bool {\bf vacio} () const
+\item 
+bool {\bf insertar} (T $\ast$dato)
+\item 
+bool {\bf pertenece} (T $\ast$dato) const
+\item 
+bool {\bf pertenece} (const T \&dato) const 
+\item 
+void {\bf borrar} (T $\ast$dato)
+\item 
+void {\bf borrar} (const T \&dato)
+\item 
+int {\bf Profundidad} () const
+\item 
+bool {\bf EsHoja} () const
+\item 
+bool {\bf EsHoja} (T $\ast$dato) const
+\item 
+bool {\bf EsHoja} (const T \&dato) const 
+\item 
+int {\bf NodosNivel} (const int \&nivel) const 
+\item 
+void {\bf NumNodos} (int \&hojas, int \&nodos) const
+\item 
+int {\bf NumNodos} (const int \&nivel) const 
+\item 
+int {\bf NumNodos} () const
+\item 
+void {\bf Destruir} ()
+\item 
+bool {\bf Equilibrado} () const
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Equilibrar} ()
+\item 
+bool {\bf operator==} (const {\bf Arbol} \&A) const 
+\item 
+bool {\bf operator!=} (const {\bf Arbol} \&A) const 
+\item 
+void {\bf ACola} (queue$<$ T $\ast$ $>$ \&inorden) const
+\item 
+void {\bf InOrden} () const
+\item 
+void {\bf PreOrden} () const
+\item 
+void {\bf PostOrden} () const
+\item 
+{\bf $\sim$Arbol} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Arbol} $\ast$ {\bf borrarOrden} (T $\ast$dato)
+\item 
+{\bf Arbol} $\ast$ {\bf borrarOrden} (const T \&dato)
+\item 
+int {\bf maximo} (const int \&a, const int \&b) const
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf RotarDerecha} ()
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf RotarIzquierda} ()
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf DobleRotarDerecha} ()
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf DobleRotarIzquierda} ()
+\item 
+int {\bf FactorBalanceo} () const
+\item 
+bool {\bf Iguales} (const {\bf Arbol} $\ast$A) const 
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+T $\ast$ {\bf dato\_\-raiz\_\-}
+\begin{CompactList}\small\item\em Raiz del arbol. \item\end{CompactList}\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf hizq\_\-}
+\item 
+{\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf hder\_\-}
+\begin{CompactList}\small\item\em Ramas del arbol. \item\end{CompactList}\item 
+bool {\bf vacio\_\-}
+\begin{CompactList}\small\item\em Boleano que indica si el arbol esta vacio(si los datos que contiene no son validos). \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{template$<$class T$>$ class Arbol$<$ T $\ast$ $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Arbol@{Arbol}}
+\index{Arbol@{Arbol}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$::{\bf Arbol} ()\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_93341b33c98a4f919d8a3ec2311e385a}
+
+
+Constructor por defecto. Inicializa un objeto de tipo \doxyref{Arbol}{p.}{classArbol} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve un objeto tipo \doxyref{Arbol}{p.}{classArbol} inicializado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Arbol@{Arbol}}
+\index{Arbol@{Arbol}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$::{\bf Arbol} ({\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\em hizq}, T $\ast$ {\em dato}, {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\em hder})\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_44d2d43078c712e25d722599017bc199}
+
+
+Constructor parametrizado. Inicializa un objeto de tipo \doxyref{Arbol}{p.}{classArbol} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hizq}]Hijo izquierdo del árbol a crear \item[{\em dato}]dato a insertar en la raíz \item[{\em hder}]Hijo derecho del árbol a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve un objeto de tipo \doxyref{Arbol}{p.}{classArbol} inicializado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!~Arbol@{$\sim$Arbol}}
+\index{~Arbol@{$\sim$Arbol}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$::$\sim${\bf Arbol} ()\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_2642a42627008ad0da66e9899b439143}
+
+
+Destructor por defecto. Destruye un objeto de tipo \doxyref{Arbol}{p.}{classArbol} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!hijoIzq@{hijoIzq}}
+\index{hijoIzq@{hijoIzq}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::hijoIzq () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_2cafc7ff470af481d93f7f3fc83da280}
+
+
+\begin{Desc}
+\item[Returns:]Devuelve un objeto \doxyref{Arbol}{p.}{classArbol} con el subárbol izquierdo \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!hijoDer@{hijoDer}}
+\index{hijoDer@{hijoDer}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::hijoDer () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_b567396b761aef71319a021b4d4ea2d3}
+
+
+\begin{Desc}
+\item[Returns:]Devuelve un objeto \doxyref{Arbol}{p.}{classArbol} con el subárbol derecho \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!raiz@{raiz}}
+\index{raiz@{raiz}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::raiz () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_ff3e209cf30aa712b232d4bc8e040d35}
+
+
+\begin{Desc}
+\item[Returns:]Devuelve el valor almacenado en la raíz \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!vacio@{vacio}}
+\index{vacio@{vacio}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::vacio () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_1930240962fde966868ee50f854e8990}
+
+
+\begin{Desc}
+\item[Returns:]Devuelve true si el árbol está vacío \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!insertar@{insertar}}
+\index{insertar@{insertar}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::insertar (T $\ast$ {\em dato})\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_858766290b8a2685f81096eeb6711237}
+
+
+Inserta el valor dato en el Árbol Binario de Búsqueda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]Valor a insertar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true si se insertó correctamente \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!pertenece@{pertenece}}
+\index{pertenece@{pertenece}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::pertenece (T $\ast$ {\em dato}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_3450c8f4760b9a1dd83989566dbf091c}
+
+
+Indica si el valor dato existe en el Árbol Binario de Búsqueda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]puntero a el valor buscado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve true si encuentra un nodo con ese valor \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!pertenece@{pertenece}}
+\index{pertenece@{pertenece}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::pertenece (const T \& {\em dato}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_01395876d6382f355352ae0328593bd5}
+
+
+Indica si el valor dato existe en el Árbol Binario de Búsqueda \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]Valor buscado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve true si encuentra un nodo con ese valor \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!borrar@{borrar}}
+\index{borrar@{borrar}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::borrar (T $\ast$ {\em dato})\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_a8ad185ff5dffad9c8ee36878edcce05}
+
+
+Elimina el nodo que contenga el valor dato \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]puntero a el valor a eliminar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!borrar@{borrar}}
+\index{borrar@{borrar}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::borrar (const T \& {\em dato})\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_ac7617598afa888b49df8674d37f00b9}
+
+
+Elimina el nodo que contenga el valor dato \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]valor a eliminar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Profundidad@{Profundidad}}
+\index{Profundidad@{Profundidad}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::Profundidad () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_2368f3c6b8ac5f21249056f0eb49df67}
+
+
+Metodo que halla la profundidad del arbol \begin{Desc}
+\item[Returns:]profundidad del arbol \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!EsHoja@{EsHoja}}
+\index{EsHoja@{EsHoja}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::EsHoja () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_5917110a4a17df1c681a5ef6c8b7e56f}
+
+
+Comprueba si un arbol es hoja o no \begin{Desc}
+\item[Returns:]true si el arbol es hoja(no tiene hijos), false en caso contrario \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!EsHoja@{EsHoja}}
+\index{EsHoja@{EsHoja}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::EsHoja (T $\ast$ {\em dato}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_84b2772f41a7535399275d0031caf477}
+
+
+Modulo que calcula si un nodo es una hoja o no. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]puntero a dato que buscamos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el nodo que buscamos es hoja, false en caso contrario o si esta vacio. \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!EsHoja@{EsHoja}}
+\index{EsHoja@{EsHoja}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::EsHoja (const T \& {\em dato}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_5f119b5c66b0ba93ecb97a4dd72f74cd}
+
+
+Modulo que calcula si un nodo es una hoja o no. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]dato que buscamos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si el nodo que buscamos es hoja, false en caso contrario o si esta vacio. \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!NodosNivel@{NodosNivel}}
+\index{NodosNivel@{NodosNivel}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::NodosNivel (const int \& {\em nivel}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_9ce166a13f2a7c67d4ab9ba034ab2429}
+
+
+Metodo que nos devuelve el numero de nodos que tiene un nivel. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nivel}]nivel en el que hallar el numero de nodos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!NumNodos@{NumNodos}}
+\index{NumNodos@{NumNodos}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::NumNodos (int \& {\em hojas}, int \& {\em nodos}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_8b60e2dec2f4b233ea435be9f1b081e5}
+
+
+Metodo que devuelve por parametro el numero de hojas y nudos de un arbol. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hojas}]numero de hojas que contiene el arbol \item[{\em nodos}]numero de nudos(nodos internos) que contiene el arbol \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Precondition:]hojas y nodos deben valer 0 \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!NumNodos@{NumNodos}}
+\index{NumNodos@{NumNodos}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::NumNodos (const int \& {\em nivel}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_ae0959ddc55f3eb277cea1bd7426c665}
+
+
+Devuelve el numero de nodos que contiene un arbol hasta un nivel dado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nivel}]ultimo nivel a contar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]numero de nodos que tiene un arbol hasta el nivel \char`\"{}nivel\char`\"{} \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!NumNodos@{NumNodos}}
+\index{NumNodos@{NumNodos}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::NumNodos () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_4f1afcd9dfb07a0d755481bfe52a9940}
+
+
+Devuelve el numero de nodos que contiene un arbol \begin{Desc}
+\item[Returns:]numero de nodos que tiene un arbol \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Destruir@{Destruir}}
+\index{Destruir@{Destruir}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::Destruir ()\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_9b56f085769de4093a28b3b3b2843f2b}
+
+
+Metodo que destruye todos los objetos del arbol, libera la memoria relativa a los objetos del arbol, pero NO BORRA EL ARBOL ni los objtetos eliminados del arbol anteriormente \begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Equilibrado@{Equilibrado}}
+\index{Equilibrado@{Equilibrado}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::Equilibrado () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_330f1d0d84ff53a02bae4d512a1dda68}
+
+
+Comprueba si un arbol esta correctamente balanceado \begin{Desc}
+\item[Returns:]true si el arbol esta equilibrado false en caso contrario \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Equilibrar@{Equilibrar}}
+\index{Equilibrar@{Equilibrar}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::Equilibrar ()\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_b2025b351d4a8060e679cc0c6af2474d}
+
+
+Equilibra el arbol usando las funciones de rotar \begin{Desc}
+\item[Returns:]retorna el arbol equilibrado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::operator== (const {\bf Arbol}$<$ T $\ast$ $>$ \& {\em A}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_6ba0f2dd90f6eac09e1e1580ef9f2e3e}
+
+
+Sobrecarga del operador == \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em A}]segundo elemento a comparar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool si son iguales, false en caso contrario \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::operator!= (const {\bf Arbol}$<$ T $\ast$ $>$ \& {\em A}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_362e1a29e1ae1902bb0a293fc1f1213b}
+
+
+Sobrecarga del operador != \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em A}]segundo elemento a comparar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool si no son iguales, false en caso contrario \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!ACola@{ACola}}
+\index{ACola@{ACola}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::ACola (queue$<$ T $\ast$ $>$ \& {\em inorden}) const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_614b9adb23cb1ddc3a6373affd97ef30}
+
+
+devuelve un flujo con los datos del arbol a traves de un recorrido inorden \begin{Desc}
+\item[Returns:]flujo a devolver \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!InOrden@{InOrden}}
+\index{InOrden@{InOrden}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::InOrden () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_06b4abd06de95f5e2124017999b298f0}
+
+
+Metodo que muestra el arbol con un recorrido en profundidad inorden \index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!PreOrden@{PreOrden}}
+\index{PreOrden@{PreOrden}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::PreOrden () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_b8af783d88f11df966cbcbe44d9f8564}
+
+
+Metodo que muestra el arbol con un recorrido en profundidad preorden \index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!PostOrden@{PostOrden}}
+\index{PostOrden@{PostOrden}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Arbol}$<$ T $\ast$ $>$::PostOrden () const\hspace{0.3cm}{\tt  [inline]}}\label{classArbol_3_01T_01_5_01_4_c6a62e868b9edc3ebf3ef6e77dc41b97}
+
+
+Metodo que muestra el arbol con un recorrido en profundidad postorden \index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!borrarOrden@{borrarOrden}}
+\index{borrarOrden@{borrarOrden}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::borrarOrden (T $\ast$ {\em dato})\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_26ee7df9d82fd695f36954cf737e44d2}
+
+
+Función privada auxiliar para realizar el borrado de un nodo. Reestructura el árbol tras el borrado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]puntero a el Valor a eliminar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el árbol resultado del borrado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!borrarOrden@{borrarOrden}}
+\index{borrarOrden@{borrarOrden}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::borrarOrden (const T \& {\em dato})\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_500846ab19b08433e95928771f1bd3fa}
+
+
+Función privada auxiliar para realizar el borrado de un nodo. Reestructura el árbol tras el borrado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dato}]Valor a eliminar \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el árbol resultado del borrado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!maximo@{maximo}}
+\index{maximo@{maximo}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::maximo (const int \& {\em a}, const int \& {\em b}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_44f41d363ad77787997578707c0d3b46}
+
+
+Metodo que devuelve el maximo de dos enteros \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]primer entero \item[{\em b}]segundo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]el mayor de los 2 enteros, en caso de ser iguales devuelve el segundo \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!RotarDerecha@{RotarDerecha}}
+\index{RotarDerecha@{RotarDerecha}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::RotarDerecha ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_0d473bc644c325dc7904a88929ad25a3}
+
+
+Gira en sentido de las manecillas de reloj P(el puntero al nodo con factor de balance no permitido) alrededor de Q(Hijo izquierdo de P) \begin{Desc}
+\item[Returns:]retorna el arbol rotado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!RotarIzquierda@{RotarIzquierda}}
+\index{RotarIzquierda@{RotarIzquierda}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::RotarIzquierda ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_adab445680637d252b31e41e22321edf}
+
+
+Gira en sentido de contrario a las manecillas de reloj P(el puntero al nodo con factor de balance no permitido) alrededor de Q(Hijo izquierdo de P) \begin{Desc}
+\item[Returns:]retorna el arbol rotado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!DobleRotarDerecha@{DobleRotarDerecha}}
+\index{DobleRotarDerecha@{DobleRotarDerecha}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::DobleRotarDerecha ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_2819cfd76996801fdf09d936529d816b}
+
+
+Rotacion a la izquierda de Q alrededor de R seguida de una rotacion a la derecha de P alrededor de R. \begin{Desc}
+\item[Returns:]retorna el arbol rotado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!DobleRotarIzquierda@{DobleRotarIzquierda}}
+\index{DobleRotarIzquierda@{DobleRotarIzquierda}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::DobleRotarIzquierda ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_b33a1ed94f8beb5d599ce6e6510cc3d8}
+
+
+Rotacion a la derecha de Q alrededor de R seguida de una rotacion a la izquierda de P alrededor de R \begin{Desc}
+\item[Returns:]retorna el arbol rotado \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!FactorBalanceo@{FactorBalanceo}}
+\index{FactorBalanceo@{FactorBalanceo}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Arbol}$<$ T $\ast$ $>$::FactorBalanceo () const\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_ae55545322760ac0d2ed47f80de40074}
+
+
+Halla el factor de balanceo de el arbol actual \begin{Desc}
+\item[Returns:]el factor de balanceo \end{Desc}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!Iguales@{Iguales}}
+\index{Iguales@{Iguales}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::Iguales (const {\bf Arbol}$<$ T $\ast$ $>$ $\ast$ {\em A}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classArbol_3_01T_01_5_01_4_63c4102957056ff739bfc4e211077d1c}
+
+
+Funcion auxiliar para la sobrecarga del operador == \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em A}]segundo parametro a comparara \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true si los 2 arboles son iguales, false en caso contrario \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!dato_raiz_@{dato\_\-raiz\_\-}}
+\index{dato_raiz_@{dato\_\-raiz\_\-}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Arbol}$<$ T $\ast$ $>$::{\bf dato\_\-raiz\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classArbol_3_01T_01_5_01_4_c2a5cd1b7e9487b3b7a891784b5421b0}
+
+
+Raiz del arbol. 
+
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!hizq_@{hizq\_\-}}
+\index{hizq_@{hizq\_\-}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$T$\ast$$>$$\ast$ {\bf Arbol}$<$ T $\ast$ $>$::{\bf hizq\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classArbol_3_01T_01_5_01_4_8ae2d974a22af45ad5f00916f4d0838d}
+
+
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!hder_@{hder\_\-}}
+\index{hder_@{hder\_\-}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Arbol}$<$T$\ast$$>$ $\ast$ {\bf Arbol}$<$ T $\ast$ $>$::{\bf hder\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classArbol_3_01T_01_5_01_4_6ed37f87936fd3552c2915212ec864a1}
+
+
+Ramas del arbol. 
+
+\index{Arbol< T * >@{Arbol$<$ T $\ast$ $>$}!vacio_@{vacio\_\-}}
+\index{vacio_@{vacio\_\-}!Arbol< T * >@{Arbol$<$ T $\ast$ $>$}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Arbol}$<$ T $\ast$ $>$::{\bf vacio\_\-}\hspace{0.3cm}{\tt  [private]}}\label{classArbol_3_01T_01_5_01_4_5a152a92b37fae623b6b272cf93ff7b4}
+
+
+Boleano que indica si el arbol esta vacio(si los datos que contiene no son validos). 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Escritorio/EC3/src/{\bf arbol.h}\end{CompactItemize}

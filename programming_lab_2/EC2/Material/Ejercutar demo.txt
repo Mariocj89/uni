@@ -1,0 +1,17 @@
+	Buenas,
+
+Acabamos de publicar el ejecutable de demostración (demo) de la EC2 dentro de la carpeta de Materiales del Proyecto de Programación. estupendo
+
+¿Cómo usarlo?
+Paso 1.- Descomprime el fichero lp2_demo_EC2.tgz
+Paso 2.- Abre un terminal (consola) y accede a la carpeta lp2_demo_EC2 creada
+Paso 3.- Configura la prisión a tu gusto mediante el fichero inicio.txt
+Paso 4.- Ejecuta el programa de demo con el siguiente comando: ./prisionbreak_demoEC2 inicio.txt > salida.txt
+Paso 5.- Comprueba la salida del programa abriendo el fichero salida.txt con un editor de texto
+Paso 6.- Comprueba el registro generado abriendo el fichero registro.log con un editor de texto. Puedes realizar una comparación automática entre este fichero y el que genere tu programa mediante: kompare, meld o diff.
+
+Este programa demo os servirá para comprobar que vuestros algoritmos funcionan correctamente. Sin embargo, esta demo no controla todos los posibles errores que se pueden dar en la ejecución. Es vuestro trabajo pensar y decidir qué errores debéis controlar y de qué manera. sonrisa
+
+Por otra parte, hemos vuelto a publicar el enunciado de la EC2, que corrige la errata comentada en este hilo del foro. confuso
+
+Un saludo
