@@ -1,0 +1,9 @@
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\SubProtocol.exe
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\SubProtocol.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\JONSParser.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\Nugget.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\bin\Debug\Nugget.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\obj\x86\Debug\02 - SubProtocol.csprojResolveAssemblyReference.cache
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\obj\x86\Debug\SubProtocol.exe
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\02 - SubProtocol\obj\x86\Debug\SubProtocol.pdb

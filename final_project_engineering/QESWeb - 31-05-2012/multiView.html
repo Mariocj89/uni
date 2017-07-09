@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>  
+  <script type="text/javascript" src="js/qesscript.js"></script>  
+  <script src="http://js.pusher.com/1.12/pusher.min.js"></script>  
+<!-- To be filled -->
+<script>
+var token = readCookie('token');
+//si no esta logeado, redirigir a la pag de logeo
+if(token == null)
+{	
+	location.href='login.html';
+}
+autoRefresh(0.5,readCookie('token'));//autorefresh the server token
+/*Funcion para leer el parametro de la url*/
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+
+$(document).ready(function(){
+	var recintoParam = getURLParameter('recinto');
+	var size = 150;
+	
+	
+	$panel = $('.big_content');
+	//Carga inicial
+	$.getJSON(server+'GetDispositivos',{token:token},function(data){
+		if(data.Code == -1)
+		{//sesion expirada
+			alert('Sesion Expirada');
+			location.href='login.html';
+			return;
+		}
+		if(data.Code == -2)
+		{//el usuario no tiene acceso a la camara
+			alert('Lo sentimos, pero no tiene acceso a la cámara. Contacte con el administrador.');
+			return;
+		}		
+		$.each(data.Recintos,function(index,recinto)
+		{//recintos
+			if(recinto.Nombre == recintoParam || recintoParam == 'all')
+			{
+				$.each(recinto.Dispositivos,function(index2,camara)
+				{//camaras
+					$.getJSON(server+'GetDetallesCamara',{token:token,camara:camara.Nombre},function(data){
+						var output= displayCamera(data.IP,data.Puerto,data.User,data.Password,size,size);
+						$panel.append(output);
+						/*$panel.append(output);
+						$panel.append(output);
+						$panel.append(output);
+						$panel.append(output);
+						$panel.append(output);*/
+						$('.stream:last').draggable({containment: ".big_content", scroll: false});
+						$('.stream:last').attr('title',camara.Nombre);
+					});
+				});
+			}
+		});
+	});
+	
+	
+	//mouse in a camera
+	/*$panel.on('hover','.stream',function(){
+		var $this= $(this);
+		$this.animate({height:size*3,width:size*3},300);
+	});	
+	
+	$panel.on('mouseleave','.stream',function(){
+		var $this= $(this);
+		if($this.attr('rel') != 'locked')
+		{
+			$this.animate({height:size,width:size},300);
+		}
+	});*/
+	
+	$panel.on('click','.stream',function(){
+		var $this= $(this);
+		if($this.attr('rel') != 'locked')
+		{
+			$this.attr('rel','locked');
+			$this.animate({height:size*3+5*6,width:size*3+5*6},300);
+		}
+		else
+		{
+			$this.attr('rel','');
+			$this.animate({height:size,width:size},300);
+		}
+	});	
+	
+	//Gestion de eventos con Pusher
+    var pusher = new Pusher(pusherKey);
+    var channel = pusher.subscribe(pusherChannel);
+    channel.bind('alertaCamara', function(data) {
+	  $cam = $panel.find(".stream[title='"+data.camara+"']")
+	  if($cam.attr('rel') != 'locked')
+	  {
+		$cam.click();
+	  }
+	  //borde rojo
+	  $cam.addClass("big_border",500).addClass("red_border",500).removeClass("red_border",500).addClass("red_border",500).removeClass("red_border",500).addClass("red_border",500).removeClass("red_border",500).addClass("red_border",500).removeClass("red_border",500).addClass("red_border",500).removeClass("red_border",500).removeClass("big_border",500);
+	  
+	  //sonido
+	  $("#dummyspan").html("<embed src='"+soundFile+"' hidden=true autostart=true loop=false>");	  
+    });
+
+	//puede activar el log
+    //Pusher.log = function(message) {
+    //  if (window.console && window.console.log) window.console.log(message);
+    //};	
+	
+	
+	//Gestion de eventos SSE
+	/* //var lastID = -1;
+	var source = new EventSource(server+'ServerSideEvent');
+	source.onmessage = function (event) {
+	  if(event.id != lastID)
+	  {
+		$panel.find(".stream[title='"+event.data+"']").click();
+		//lastID = event.id;
+	  }
+	  //alert(event.data);
+	};*/
+});
+
+</script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  <!--menu -->
+  <img src="img/logo.png" />
+  <h1>  QES Web</h1>
+  <span id=dummyspan></span>
+  <nav>
+	<ul>
+		<li><a href="index.html"><img src="img/home.png" />Inicio</a></li>
+		
+		<li><a href="login.html"><img src="img/login.png"/>
+		<script>var token = readCookie('token');document.write(token == null? 'Log In' : 'Log Out');</script>
+		</a></li>
+
+
+		<li><a id="current_page" href="recintos.html"><img src="img/cameras.png" />Recintos</a></li>		
+		<li><a href="config.html"><img src="img/config.png" />Configuracion</a></li>			
+	</ul>
+  </nav>
+
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main">
+		<!-- aside -->
+		  <!--Contenido -->
+		<div class="big_content">
+
+		</div>
+		<div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer>
+  <div class="fleft">Quercus Event System - Web 2012 </div>
+  <div class="fright">PFC Mario A. Corchero Jiménez   </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>  
+  <script type="text/javascript" src="js/qesscript.js"></script>
+<!-- To be filled -->
+<script>
+$(document).ready(function(){
+	$('#user').focus();
+	$error = $('.error');
+
+	//login button
+	$('#go').click(function(){
+		$user = $('#user');
+		$password = $('#pass');
+		if($user.val() == '' || $password.val() == '')//empty value
+		{
+			$error.html('<img src="img/exclamacion.png" />Debe rellenar ambos campos.');
+			$error.show('slow');
+			return false;
+		}
+		//get the token
+		$.ajax({//getJson
+		  url: server+'proxy/Login.php',
+		  dataType: 'json',
+		  data: {"user":$user.val(),"password":$password.val()},
+		  success: function(data) 
+			{
+				if(data.Code == '-1')//log in error
+				{
+					$error.html('<img src="img/exclamacion.png" />'+data.Info);
+					$error.show('slow');				
+				}		
+				if(data.Code == '0')//log succesfull
+				{
+					createCookie("token",data.Token,365);
+					location.href='index.html';
+				}
+			},
+		  error: function()//error en la request
+		  {
+				$error.html('<img src="img/exclamacion.png" />Error al comunicar con el servidor.');
+				$error.show('slow');	
+		  }
+		});
+		return false;
+	});
+	
+	
+	$('#user, #pass').focus(function(){
+		$error.hide();
+	});
+	
+	//si estaba logeado, se deslogea automaticamente
+	if(readCookie('token') != null)
+	{
+		$.post(WSserver+'Logout?token='+readCookie('token'));
+		eraseCookie('token');
+		$error.html('<img src="img/exclamacion.png" />Sesión Cerrada.');
+		$error.show('slow');		
+	}
+	
+});
+
+</script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  <!--menu -->
+  <img src="img/logo.png" />
+  <h1>  QES Web</h1>
+  <nav>
+	<ul>
+		<li><a href="index.html"><img src="img/home.png" />Inicio</a></li>
+		<li><a id="current_page" href="login.html"><img src="img/login.png" />Log In</a></li>		
+		<li><a href="recintos.html"><img src="img/cameras.png" />Recintos</a></li>		
+		<li><a><img src="img/config.png" />Configuracion</a></li>			
+	</ul>
+  </nav>
+
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main">
+		<!-- aside -->
+		<aside>
+			<img src="img/logoQuercus.png"/>
+		</aside>
+		
+		  <!--Contenido -->
+		<div class="right_big_colum">
+			  <img src="img/greendoor.png"/>
+			  <br/><h2>Identifíquese</h2><br /><br />
+			  <form id="login">
+			  <label for="user">Usuario:</label>
+				  <input type="text" id="user" />
+				  <br /><br />
+				  <label for="pass">Contraseña:</label>
+				  <input type="password" id="pass" />
+				  <br /><br />
+				  <input type="submit" value="Entrar" id="go" />
+			  </form>
+			  <br />
+			  <p class="error"> </p>
+		</div>
+		<div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer>
+  <div class="fleft">Quercus Event System - Web 2012 </div>
+  <div class="fright">PFC Mario A. Corchero Jiménez   </div>
+  </footer>
+  
+</body>
+</html>

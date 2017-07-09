@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>  
+  <script type="text/javascript" src="js/qesscript.js"></script>  
+<!-- To be filled -->
+<script>
+	autoRefresh(0.5,readCookie('token'));//autorefresh the server token
+</script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  <!--menu -->
+  <img src="img/logo.png" />
+  <h1>  QES Web</h1>
+  <nav>
+	<ul>
+		<li><a id="current_page" href="index.html"><img src="img/home.png" />Inicio</a></li>
+		
+		<li><a href="login.html"><img src="img/login.png"/>
+		<script>var token = readCookie('token');document.write(token == null? 'Log In' : 'Log Out');</script>
+		</a></li>
+		
+
+		<li><a href="recintos.html"><img src="img/cameras.png" />Recintos</a></li>		
+		<li><a><img src="img/config.png" />Configuracion</a></li>			
+	</ul>
+  </nav>
+
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main">
+		<!-- aside -->
+		<aside>
+			<h2>Enlaces </h2>
+			<ul>
+				<li><a href="http://www.unex.es/" target="_blank">Unex</a></li>
+				<li><a href="http://epcc.unex.es/" target="_blank">Epcc</a></li>
+				<li><a href="http://www.unex.es/investigacion/grupos/quercus" target="_blank">Quercus</a></li>
+			</ul>
+		</aside>
+		
+		  <!--Contenido -->
+		<div class="right_big_colum">
+			  <img src="img/logoQuercus.png"/>
+			  <h2>Bienvenido</h2>
+			  <p>Bienvenido a la aplicacion web del sistema gestor de eventos y gestor de vigilancia.<br/>
+			  Esta aplicacion esta orientada a la visualización de camaras y dispositivos instalados y configurados previamente en el sistema.<br/>
+			  Para acceder a la visualizacion de estos es necesario disponer de un usuario y una contraseña creados en el servidor, 
+			  si no dispone de estos datos, contacte con el administrador.<br/>
+			  <p>
+		</div>
+		<div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer>
+  <div class="fleft">Quercus Event System - Web 2012 </div>
+  <div class="fright">PFC Mario A. Corchero Jiménez   </div>
+  </footer>
+  
+</body>
+</html>

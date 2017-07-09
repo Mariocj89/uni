@@ -1,0 +1,4 @@
+<config>
+  <Timeout minutes="0" />
+  <Database type="Windows_ODBC" DSN="QES" />
+</config>

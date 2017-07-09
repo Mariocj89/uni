@@ -1,0 +1,299 @@
+
+/* Global  ======================================================== */
+body { 
+	background:#212222; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:1.125em;
+	color:#242424;
+}
+
+/*===== general =====*/
+.hidden{
+	display:none;
+}
+
+.icon{
+	float:left;
+	width:20px;
+	height:20px;
+}
+
+a{
+	cursor:pointer;
+	text-decoration: none;
+	color:#000000;
+}
+
+div.clear {
+  clear: both;
+}
+
+h2 {
+	font-size:20px;
+	line-height:1.2em;
+	font-weight:normal;
+	color:#212222;
+	margin-bottom:22px;
+}
+	h2 span {
+		color:#8a8a8a;
+	}
+	
+.error{
+	color:red;
+	display:none;
+}	
+
+/*===== header =====*/
+header{
+	background:#000;
+	height:80px;
+	border-style:solid;
+	border-bottom-width:10px;
+	border-bottom-color:#aaaaaa;
+}
+	header h1{
+		float:left;
+		text-align:center;
+		margin:20px;
+		padding:10px;	
+		color:#ffffff;
+		font-size:30px;
+	}
+	
+	header img{
+		float:left;
+	}
+
+	header nav{
+		float:right;
+	}
+	header nav li{
+		float:left;
+		background:#aaa;
+	}
+	
+	header nav ul li a{
+		float:left;
+		text-align:center;
+		margin:20px;
+		font-size:20px;		
+		border-style:solid;
+		border-width:1px;
+		border-radius:4em 2em;
+		padding:10px;
+		background:#fff;
+	}
+	
+	header nav ul li a:hover, header nav ul li a#current_page  {
+		background:#777777;
+	}
+	
+	header nav ul li a img{
+		margin-right:5px;
+	}
+	
+	
+/*===== main container ======*/
+.main {
+	border-top:5px solid #eaeaea;
+	min-height:450px;
+	padding:40px 0px 20px 0px;
+	background:#ffffff;
+	width:100%;
+	margin: 0 auto;
+}	
+
+/*==== Container at the right to be used when there is an aside at the left ====*/
+.right_big_colum
+{
+	position:relative;
+	float:right;
+	width:60%;
+	margin-right:80px;
+	padding:15px;
+	font-size:.8125em;
+	border:5px solid #dadada;
+	border-radius:10px;
+	min-height:300px;
+	overflow:hidden;
+}
+
+		.right_big_colum img{
+			float:left;
+			margin: 5px 10px 5px 1px;
+		}
+
+		.right_big_colum h3{
+			margin: 10px 0px 5px 0px;
+		}
+		
+		.right_big_colum .stream{
+			border:5px solid #ebebeb;
+			border-radius:4px;
+		}
+		
+		.right_big_colum .stream:hover {
+			border-color:#bbb;
+		}
+		
+		.right_big_colum ul li .iconLista{
+			margin-left:5px;
+			float:none;
+		}		
+
+	.right_big_colum ul{
+		margin-left:180px;
+	}
+	
+	.right_big_colum #listaUsuarios .true{
+		list-style-image:url(../img/online.png);
+	}
+	
+	.right_big_colum #listaUsuarios .false{
+		list-style-image:url(../img/offline.png);
+	}
+	
+	.right_big_colum #listaServicios .On{
+		list-style-image:url(../img/active.png);
+	}
+	
+	.right_big_colum #listaServicios .NA{
+		list-style-image:url(../img/lock.png);
+	}
+	
+	.right_big_colum #listaServicios .Off{
+		list-style-image:url(../img/unactive.png);
+	}
+	
+	.right_big_colum .centeredButton{
+		position:absolute;
+		bottom:15px;
+		left:180px;
+		
+	}
+		
+/*==== Coluna izquierda para enlances, contenido,... */
+.main aside{
+	float:left;
+	width:18%;
+	margin-left:30px;
+	padding:15px;
+	border:5px solid #dadada;
+	border-radius:10px;
+}
+
+	.main aside ul li{/*viñeta cerrada (i.e. Recinto)*/
+		margin-left:30px;
+		list-style-image:url(../img/vineta.png);  
+	}
+	
+	.main aside ul .abierta{/*viñeta cerrada (i.e. Recinto)*/
+		list-style-image:url(../img/vinetaAbierta.png);  
+	}	
+	
+	.main aside ul li h3{
+		cursor:pointer;
+		font-weight: normal;
+	}
+	
+	.main aside ul li ul	{/* Todos los submenus empiezan ocultos*/
+		display:none;
+	}
+	
+	.main aside ul li ul li{/*elementos de un menu desplegado (i.e. contenido de un recinto)*/
+		margin-left:28px;
+		list-style-image:url(../img/dispositivo.png); 		
+		cursor:pointer;
+	}
+	
+	/*iconos para los diferentes dispositivos*/
+	.main aside ul li ul .CamaraAxis{
+		list-style-image:url(../img/camera.png); 
+	}
+	
+	.main aside .imgWindowIcon{/*Iconos para indicar como se abren los dispositivos*/
+		float:right;
+		width:25px;
+		height:25px;
+		cursor:pointer;
+	}
+	
+
+/*===== footer =====*/
+footer {
+	color:#fff;
+	padding:10px 0 12px 0;
+	border-top:5px solid #eee;	
+	font-size:15px;
+}
+	footer .fleft {
+		padding-left:40px;
+		float:left;
+	}
+	footer .fright {
+		padding-right:40px;
+		float:right;
+	}
+	
+/*================ Area unica para toda la informacion ===============*/
+.big_content{
+	position:relative;
+	margin:5px;
+	margin-top:0px;
+	padding:15px;
+	font-size:.8125em;
+	border:5px solid #dadada;
+	border-radius:10px;
+	min-height:300px;
+	overflow:hidden;
+}
+
+.big_content .stream{
+	float:left;
+	border:3px solid #333333;
+	border-radius:5px;
+	margin:5px;
+}
+
+.big_content .stream:hover{
+	border:3px solid #aaaaaa;
+}	
+
+.big_border{
+	border-width:10px !important;
+}
+
+.red_border{
+	border-color:#ff0000 !important;
+}	
+	
+/* UI JQuery Styles */
+.dragContainer {
+	display: inline-block;
+	position: absolute;   
+	float:none;
+}
+.ui-icon { width: 16px; height: 16px; background-image: url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/images/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0px; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+
+.dialogo { font-size: 62.5%; }
+	.dialogo	label, input { display:block; }
+	.dialogo	lbcb, input[type='checkbox'] { display:inline; }	
+	.dialogo	input.text { margin-bottom:12px; width:95%; padding: .4em; }
+	.dialogo	fieldset { padding:0; border:0; margin-top:25px; }
+	.dialogo	h1 { font-size: 1.2em; margin: .6em 0; }
+	.ui-dialog .ui-state-error { padding: .3em; }
+	.validateTips { border: 1px solid transparent; padding: 0.3em; }

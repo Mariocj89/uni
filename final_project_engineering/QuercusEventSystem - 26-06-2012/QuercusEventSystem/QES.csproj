@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A44ED0F-681C-4E98-9DD9-35D7159034CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QES</RootNamespace>
+    <AssemblyName>QuercusEventSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QES.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Alchemy">
+      <HintPath>lib\Alchemy.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AXISMEDIACONTROLLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.AXISMEDIACONTROLLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.AXISMEDIACONTROLLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>lib\Interop.AXISMEDIACONTROLLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Loya.Dameer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Loya.Dameer.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.92, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PusherRESTDotNet">
+      <HintPath>..\packages\PusherRESTDotNet.1.2.0.26184\lib\net35\PusherRESTDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DBClient.cs" />
+    <Compile Include="DispositivosCode\CamaraAxis.cs" />
+    <Compile Include="DispositivosCode\QESCamara.cs" />
+    <Compile Include="EventChain\Conectores\QESBody.cs" />
+    <Compile Include="EventChain\Conectores\QESBus.cs" />
+    <Compile Include="EventChain\Consumidores\AxisController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventChain\Consumidores\AxisController.Designer.cs">
+      <DependentUpon>AxisController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventChain\Consumidores\Pusher.cs" />
+    <Compile Include="EventChain\Consumidores\QESEsendexSMS.cs" />
+    <Compile Include="EventChain\Consumidores\QESMailSender.cs" />
+    <Compile Include="EventChain\Consumidores\QESSMS.cs" />
+    <Compile Include="EventChain\Consumidores\QESTail.cs" />
+    <Compile Include="EventChain\Consumidores\QESWebSocket.cs" />
+    <Compile Include="EventChain\Consumidores\VAPIX2Controller.cs" />
+    <Compile Include="EventChain\JerarquiaEventos.cs" />
+    <Compile Include="EventChain\Productores\QESHead.cs" />
+    <Compile Include="EventChain\Productores\QESRecepMensTcp.cs" />
+    <Compile Include="EventChain\Productores\QESTimer.cs" />
+    <Compile Include="EventChain\QESBase.cs" />
+    <Compile Include="Interfaz Configuracion\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Configuracion\BDConfig.xaml.cs">
+      <DependentUpon>BDConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Configuracion\InputBox.xaml.cs">
+      <DependentUpon>InputBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\AxisView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Especifica\AxisView.Designer.cs">
+      <DependentUpon>AxisView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIWebSocket.xaml.cs">
+      <DependentUpon>UIWebSocket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIPusher.xaml.cs">
+      <DependentUpon>UIPusher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIAxisConditionalController.xaml.cs">
+      <DependentUpon>UIAxisConditionalController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIAxisGenericController.xaml.cs">
+      <DependentUpon>UIAxisGenericController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Configuracion\RoleSettings.xaml.cs">
+      <DependentUpon>RoleSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIAxisCamara.xaml.cs">
+      <DependentUpon>UIAxisCamara.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIAxisController.xaml.cs">
+      <DependentUpon>UIAxisController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIMail.xaml.cs">
+      <DependentUpon>UIMail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UICamara.xaml.cs">
+      <DependentUpon>UICamara.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIDispositivo.xaml.cs">
+      <DependentUpon>UIDispositivo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIServicio.xaml.cs">
+      <DependentUpon>UIServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UISMSEsendex.xaml.cs">
+      <DependentUpon>UISMSEsendex.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIRecepTcp.xaml.cs">
+      <DependentUpon>UIRecepTcp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UITimer.xaml.cs">
+      <DependentUpon>UITimer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Especifica\UIUser.xaml.cs">
+      <DependentUpon>UIUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz General\UIConfiguracion.xaml.cs">
+      <DependentUpon>UIConfiguracion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginControl.xaml.cs">
+      <DependentUpon>LoginControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QESDispositivo.cs" />
+    <Compile Include="QESGestor.cs" />
+    <Compile Include="Interfaz General\UIDispositivos.xaml.cs">
+      <DependentUpon>UIDispositivos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz General\UILog.xaml.cs">
+      <DependentUpon>UILog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz General\UIRecintos.xaml.cs">
+      <DependentUpon>UIRecintos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz General\UIServicios.xaml.cs">
+      <DependentUpon>UIServicios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz General\UIUsuarios.xaml.cs">
+      <DependentUpon>UIUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QESLog.cs" />
+    <Compile Include="QESRecinto.cs" />
+    <Compile Include="QESServicio.cs" />
+    <Compile Include="QESUser.cs" />
+    <Compile Include="Service References\EsendexSendService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SendSMSWorld\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="WebServices\Contracts.cs" />
+    <Compile Include="WebServices\QESService.cs" />
+    <Page Include="Interfaz Configuracion\AddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Configuracion\BDConfig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Configuracion\InputBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIWebSocket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Especifica\UIPusher.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Especifica\UIAxisConditionalController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIAxisGenericController.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Configuracion\RoleSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIAxisCamara.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Especifica\UIAxisController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIMail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Especifica\UICamara.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaz Especifica\UIDispositivo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UISMSEsendex.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIRecepTcp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UITimer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz Especifica\UIUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz General\UIConfiguracion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login\CircularProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login\LoginControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login\LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Interfaz General\UIDispositivos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz General\UILog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz General\UIRecintos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz General\UIServicios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaz General\UIUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Interfaz Especifica\AxisView.resx">
+      <DependentUpon>AxisView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EsendexSendService\QES.EsendexSendService.MessageStatusCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EsendexSendService\sendservice.wsdl" />
+    <None Include="Service References\SendSMSWorld\sendsmsworld.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\aselcom.PNG" />
+    <Resource Include="img\camera.png" />
+    <Resource Include="img\pizarradig.PNG" />
+    <Resource Include="img\sensor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\dispositivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\servicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\cameraAxis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\esendex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\pinvestigacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\receptcp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\AxisController.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Login\images\fail.png" />
+    <Resource Include="Login\images\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\EsendexSendService\" />
+    <WCFMetadataStorage Include="Service References\SendSMSWorld\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SendSMSWorld\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SendSMSWorld\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SendSMSWorld\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EsendexSendService\sendservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EsendexSendService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EsendexSendService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EsendexSendService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+    <Resource Include="img\newUser.png" />
+    <Resource Include="img\databaseConfig.png" />
+    <Resource Include="img\add.png" />
+    <Resource Include="img\Remove.png" />
+    <Resource Include="img\increase_arrow.png" />
+    <Resource Include="img\decrease_arrow.png" />
+    <Resource Include="img\timer-icon.png" />
+    <Resource Include="img\wsbut.png" />
+    <Resource Include="img\clearLog.png" />
+    <Resource Include="img\pusher.png" />
+    <Resource Include="img\HTML5_Logo.png" />
+    <Content Include="lib\AxInterop.AXISMEDIACONTROLLib.dll" />
+    <Content Include="lib\Interop.AXISMEDIACONTROLLib.dll" />
+    <Content Include="lib\Loya.Dameer.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Mono.Security.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Npgsql.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

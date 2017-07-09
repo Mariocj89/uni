@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/jquery-ui-1.8.17.custom.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>  
+  <script type="text/javascript" src="js/qesscript.js"></script>  
+<!-- To be filled -->
+<script>
+	var token = readCookie('token');
+	var isAdmin = false;//Bandera para indicar si es admin
+	//si no esta logeado, redirigir a la pag de logeo
+	if(token == null)
+	{	
+		location.href='login.html';
+	}
+	autoRefresh(0.5,token);//autorefresh the server token
+
+	
+	$(document).ready(function(){
+		//Ventana Actual
+		var VENTANA = {//enum
+			INICIO : {value: 0, name: "INICIO", ui: $('#inicio')},
+			PERFIL : {value: 1, name: "PERFIL", ui: $('#perfil')},
+			SERVICIOS : {value: 2, name: "SERVICIOS", ui: $('#servicios')},
+			USUARIOS : {value: 3, name: "USUARIOS", ui: $('#usuarios')},
+			DISPOSITIVOS : {value: 4, name: "DISPOSITIVOS", ui: $('#dispositivos')}
+		}
+		var VentanaActual = VENTANA.INICIO;
+	
+		$.ajax({//Comprobar los permisos que tenemos
+			url:server+'GetUsuarios',
+			dataType: 'json',
+			data:{token:token},
+			success:function(data)
+			{
+				if(data.Code == -1)
+				{//sesion expirada
+					mensaje('Sesion Expirada');
+					location.href='login.html';
+					return;
+				}
+				if(data.Code == -2)
+					isAdmin = false;
+				
+				if(data.Code == 0)
+				{
+					isAdmin = true;
+					$('#usuariosLink').show();
+					$('#serviciosLink').show();
+					$('#dispositivosLink').show();
+				}
+			},
+			error: function()//error en la request
+			{
+					location.href='login.html';
+			}
+		});
+		
+		
+		/* Perfil*/
+		$('#perfilLink').click(function(){
+			VentanaActual.ui.hide();
+			VentanaActual = VENTANA.PERFIL;
+			VentanaActual.ui.show();
+		});
+		
+		
+		$( "#new-password-form" ).dialog({
+			autoOpen: false,
+			height: 350,
+			width: 600,
+			hide: 'fold',
+			show: 'blind',
+			modal: true,
+			buttons: {
+				"Aceptar": function() {
+					var old = $( "#new-password-old" ),
+								pass = $( "#new-password-pass" ),
+								repeat = $( "#new-password-repeat" ),
+								allFields = $( [] ).add( old ).add( pass ).add( repeat ),
+								tips = $( ".validateTips" );				
+					var bValid = true;
+					allFields.removeClass( "ui-state-error" );
+
+					bValid = bValid && checkLength( pass, "Nueva Contraseña", 4, 16 ,tips);
+					bValid = bValid && checkLength( repeat, "Repetir Contraseña", 4, 16 ,tips);
+
+					bValid = bValid && checkRegexp( pass, /^([0-9a-zA-Z])+$/, "Caracteres validos para la contraseña : a-z 0-9" ,tips);
+					bValid = bValid && checkRegexp( repeat, /^([0-9a-zA-Z])+$/, "Caracteres validos para la contraseña : a-z 0-9" ,tips);
+					bValid = bValid && iguales( pass,repeat,"Las contraseñas no coinciden",tips);
+					$this = $(this);
+					if ( bValid ) {
+						$.post(server+'UpdatePassword?token='+token+'&old='+old.val()+'&password='+pass.val(),function(data){
+							switch(data)
+							{
+								case 0:mensaje('Contraseña cambiada con exito');$this.dialog( "close" );break;
+								case -1:mensaje('Sesion Expirada');location.href='login.html';break;
+								case -5:updateTips("La contraseña actual no es correcta.",tips);break;								
+							}
+						});
+					}
+				},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		});		
+		
+		$('#changePass').click(function(){
+			$( "#new-password-form" ).dialog( "open" );
+		});
+		
+		$('#logout').click(function(){
+			location.href='login.html';
+		});
+		
+		/* Usuarios */
+		$('#usuariosLink').click(function(){
+			VentanaActual.ui.hide();
+			VentanaActual = VENTANA.USUARIOS;
+			VentanaActual.ui.show();
+			$.getJSON(server+'getUsuarios',{token:token}, function(data){
+				if(data.Code == -1)
+				{//sesion expirada
+					mensaje('Sesion Expirada');
+					location.href='login.html';
+					return;
+				}
+				if(data.Code == -2)
+				{//el usuario no tiene acceso a la camara
+					mensaje('Lo sentimos, pero no tiene acceso a este panel. Contacte con el administrador.');
+					return;
+				}
+				
+				if(data.Code == 0)
+				{
+					$listaUsuarios = $('#listaUsuarios');
+					$listaUsuarios.html('');
+					var expellIcon ="";
+					$.each(data.Usuarios, function(key, value) { 
+						expellIcon = value.Conectado?'<img src="img/ban.png" class="iconLista" title="Expulsar"/>':'';
+						$listaUsuarios.append('<li class="'+value.Conectado+'">'+value.Nombre+'<a href="'+value.Nombre+'" rel="Rol"><img src="img/confpriv.png" class="iconLista" title="Roles"/></a><a href="'+value.Nombre+'" rel="Expell">'+expellIcon+'</a></li>');
+					});
+				}
+			});
+		});
+		
+		$('.right_big_colum #createButton').button();
+		
+		$( "#new-user-form" ).dialog({
+			autoOpen: false,
+			height: 350,
+			width: 600,
+			hide: 'fold',
+			show: 'blind',
+			modal: true,
+			buttons: {
+				"Aceptar": function() {
+					var name = $( "#new-user-name" ),
+								pass = $( "#new-user-pass" ),
+								repeat = $( "#new-user-repeat" ),
+								allFields = $( [] ).add( name ).add( pass ).add( repeat ),
+								tips = $( ".validateTips" );				
+					var bValid = true;
+					allFields.removeClass( "ui-state-error" );
+
+					bValid = bValid && checkLength( name, "Nombre de Usuario", 4, 16 ,tips);
+					bValid = bValid && checkLength( pass, "Nueva Contraseña", 4, 16 ,tips);
+					bValid = bValid && checkLength( repeat, "Repetir Contraseña", 4, 16 ,tips);
+
+					bValid = bValid && checkRegexp( name, /^([0-9a-zA-Z])+$/, "Caracteres validos para nombre de usuario : a-z 0-9" ,tips);
+					bValid = bValid && checkRegexp( pass, /^([0-9a-zA-Z])+$/, "Caracteres validos para la contraseña : a-z 0-9" ,tips);
+					bValid = bValid && checkRegexp( repeat, /^([0-9a-zA-Z])+$/, "Caracteres validos para la contraseña : a-z 0-9" ,tips);
+					bValid = bValid && iguales( pass,repeat,"Las contraseñas no coinciden",tips);
+					$this = $(this);
+					if ( bValid ) {
+						$.post(server+'CreateUser?token='+token+'&name='+name.val()+'&password='+pass.val(),function(data){
+							switch(data)
+							{
+								case 0:mensaje('Usuario creado con exito');$this.dialog( "close" );$('#usuariosLink').click();break;
+								case -1:mensaje('Sesion Expirada');location.href='login.html';break;
+								case -2:updateTips("Error, no dispone de privilegios, contacte con el administrador.",tips);break;								
+								case -7:updateTips("El nombre de usuario ya existe.",tips);break;								
+							}
+						});
+					}
+				},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		});			
+		
+		$('#createButton').click(function(){
+			$( "#new-user-form" ).dialog( "open" );
+			return false;
+		});
+		
+		$('.right_big_colum ul').on("click",'li a[rel="Rol"]',function(){
+			$( "#roles-list" ).html('');
+			var user = $(this).attr('href');
+			$rolesform = $('#roles-form');
+			$rolesform.attr('rel',user);			
+			$.getJSON(server+'GetPrivilegios',{token:token,user:user}, function(data){
+				if(data.Code == -1)
+				{//sesion expirada
+					mensaje('Sesion Expirada');
+					location.href='login.html';
+					return;
+				}
+				if(data.Code == -2)
+				{//el usuario no tiene acceso
+					mensaje('Lo sentimos, pero no tiene acceso a este panel. Contacte con el administrador.');
+					return;
+				}
+				
+				if(data.Code == 0)
+				{
+					var checked ="";
+					$.each(data.Privilegios, function(key, value) {
+						checked = value.Status? 'checked':'';
+						$( "#roles-list" ).append('<input type="checkbox" '+checked+' name="'+value.Nombre+'"/>'+value.Nombre+'<br/>');
+					});
+				}
+			});
+			
+			if(!$rolesform.dialog( "isOpen" ) == true)$rolesform.dialog( "open" );
+			return false;
+		});
+		
+		$('.right_big_colum ul').on("click",'li a[rel="Expell"]',function(){
+			var user = $(this).attr('href');
+			$.post(server+'DeslogearA?token='+token+'&user='+user,function(data){
+				switch(data)
+				{
+					case 0:mensaje('Usuario desconectado del sistema.');$('#usuariosLink').click();break;
+					case -1:mensaje('Sesion Expirada');location.href='login.html';break;
+					case -2:updateTips("Error, no dispone de privilegios, contacte con el administrador.",tips);break;															
+				}
+			});			
+			return false;
+		});	
+		
+		$( "#roles-form" ).dialog({
+			autoOpen: false,
+			height: 350,
+			width: 250,
+			hide: 'fold',
+			show: 'blind',
+			modal: true,
+			buttons: {
+				"Aceptar": function() {
+					$( this ).dialog( "close" );		
+				}
+			}
+		});			
+		
+		$('#roles-form').on('change','input',function(){
+			var user = $('#roles-form').attr('rel');
+			var $this = $(this);
+			var priv = $this.attr('name');
+			var valor = $this.attr('checked')?true:false;
+			$.post(server+'SetPrivilegios?token='+token+'&user='+user+'&priv='+priv+'&value='+valor,function(data){
+				switch(data)
+				{
+					case 0:$('.right_big_colum ul li a[rel="Rol"][href="'+user+'"]').click();break;
+					case -1:mensaje('Sesion Expirada');location.href='login.html';break;
+					case -2:updateTips("Error, no dispone de privilegios, contacte con el administrador.",tips);break;						
+				}
+			});			
+		});		
+		
+		/** Servicios **/
+		$('#serviciosLink').click(function(){
+			VentanaActual.ui.hide();
+			VentanaActual = VENTANA.SERVICIOS;
+			VentanaActual.ui.show();
+			$.getJSON(server+'GetServicios',{token:token}, function(data){
+				if(data.Code == -1)
+				{//sesion expirada
+					mensaje('Sesion Expirada');
+					location.href='login.html';
+					return;
+				}
+				if(data.Code == -2)
+				{//el usuario no tiene acceso a la camara
+					mensaje('Lo sentimos, pero no tiene acceso a este panel. Contacte con el administrador.');
+					return;
+				}
+				
+				if(data.Code == 0)
+				{
+					$listaServicios = $('#listaServicios');
+					$listaServicios.html('');
+					$.each(data.Servicios, function(key, value) { 
+						$listaServicios.append('<a><li class="'+value.Status+'">'+value.Nombre+'</li></a>');
+					});
+				}
+			});			
+		});
+		
+		$('#listaServicios').on('click','li',function(){
+			var $this = $(this);
+			var	status = $this.attr("class");
+			var name = $this.html();
+			var newStatus;
+			switch(status)
+			{
+				case "On":newStatus = false;break;
+				case "Off":newStatus = true;break;
+				case "NA":mensaje("El servicio seleccionado no puede cambiar de estado.");return 0;
+			}
+			$.post(server+'SetServicio?token='+token+'&servicio='+name+'&status='+newStatus,function(data){
+				switch(data)
+				{
+					case 0:mensaje('Servicio Actualizado');$this.dialog( "close" );$('#serviciosLink').click();break;
+					case -1:mensaje('Sesion Expirada');location.href='login.html';break;
+					case -2:updateTips("Error, no dispone de privilegios, contacte con el administrador.",tips);break;															
+				}
+			});
+			
+		});
+		
+		/** Dispositivos **/
+		$( "#listaDispositivos" ).accordion({
+			autoHeight: false,
+			navigation: true,
+			collapsible: true
+		});		
+		
+		$('#dispositivosLink').click(function(){
+			VentanaActual.ui.hide();
+			VentanaActual = VENTANA.DISPOSITIVOS;
+			VentanaActual.ui.show();
+			
+			$.ajax({//getJson
+				url:server+'GetDispositivos',
+				dataType: 'json',
+				data:{token:readCookie('token')},
+				success:function(data)
+				{
+					if(data.Code != 0)
+					{//sesion expirada
+						alert('Sesion Expirada');
+						location.href='login.html';
+						return;
+					}
+					var $listaDispositivos = $('#listaDispositivos');
+					$listaDispositivos.html('');
+					$.each(data.Recintos,function(index,recinto)
+					{//recintos
+						$.each(recinto.Dispositivos,function(index2,camara)
+						{//camaras
+							//$listaDispositivos.append('<li class="'+camara.Type+'" title="'+camara.Nombre+'">'+camara.Nombre+'</li>')
+							$listaDispositivos.append('<h3><a><img style="float:none" src="img/camera.png">'+camara.Nombre+'</a></h3>');
+							$listaDispositivos.append('<div><p>Recinto: '+recinto.Nombre+'<br/>Tipo: '+camara.Type+'</p></div>');
+						});
+					});
+					$( "#listaDispositivos" ).accordion('destroy').accordion({autoHeight: false,navigation: true,collapsible: true});
+				},
+				error: function()//error en la request
+				  {
+						location.href='login.html';
+				  }
+			});			
+		
+		});		
+		
+	});
+</script>
+</head>
+
+<body>
+  <!-- DIALOGOS -->
+  <!--Nueva password-->
+	<div id="new-password-form" class="dialogo" title="Cambiar contraseña">
+		<p class="validateTips">Rellene todos los campos.</p>
+		<form>
+		<fieldset>
+			<label for="new-password-old">Contraseña Actual</label>
+			<input type="password" name="new-password-old" id="new-password-old" class="text ui-widget-content ui-corner-all" />
+			<label for="new-password-pass">Nueva Contraseña</label>
+			<input type="password" name="new-password-pass" id="new-password-pass" value="" class="text ui-widget-content ui-corner-all" />
+			<label for="new-password-repeat">Repetir Contraseña</label>
+			<input type="password" name="new-password-repeat" id="new-password-repeat" value="" class="text ui-widget-content ui-corner-all" />
+		</fieldset>
+		</form>
+	</div>  
+	
+	<!--Nuevo usuario-->
+	<div id="new-user-form" class="dialogo" title="Nuevo Usuario">
+		<p class="validateTips">Rellene todos los campos.</p>
+		<form>
+		<fieldset>
+			<label for="new-user-name">Nombre del usuario</label>
+			<input type="text" name="new-user-name" id="new-user-name" class="text ui-widget-content ui-corner-all" />
+			<label for="new-user-pass">Contraseña</label>
+			<input type="password" name="new-user-pass" id="new-user-pass" value="" class="text ui-widget-content ui-corner-all" />
+			<label for="new-user-repeat">Repetir Contraseña</label>
+			<input type="password" name="new-user-repeat" id="new-user-repeat" value="" class="text ui-widget-content ui-corner-all" />
+		</fieldset>
+		</form>
+	</div>
+	
+	<!--Roles-->
+	<div id="roles-form" class="dialogo" title="Roles Asignados">
+		<p class="validateTips">Lista de roles asignados al usuario.</p>
+		<form>
+		<fieldset id="roles-list">
+
+		</fieldset>
+		</form>
+	</div>  	
+	
+	
+  <!-- header -->
+  <header>
+  <!--menu -->
+  <img src="img/logo.png" />
+  <h1>  QES Web</h1>
+  <nav>
+	<ul>
+		<li><a href="index.html"><img src="img/home.png" />Inicio</a></li>
+		
+		<li><a href="login.html"><img src="img/login.png"/>
+		<script>var token = readCookie('token');document.write(token == null? 'Log In' : 'Log Out');</script>
+		</a></li>
+		<li><a href="recintos.html"><img src="img/cameras.png" />Recintos</a></li>		
+		<li><a href="config.html" id="current_page"><img src="img/config.png" />Configuracion</a></li>			
+	</ul>
+  </nav>
+
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main">
+		<!-- aside -->
+		<aside>
+			<h2>Menú </h2>
+			<ul>
+				<li id="perfilLink"><a href="#" >Perfil</a></li>
+				<li id="usuariosLink" class="hidden"><a href="#" >Usuarios</a></li>				
+				<li id="serviciosLink" class="hidden"><a href="#" >Servicios</a></li>
+				<li id="dispositivosLink" class="hidden"><a href="#" >Dispositivos</a></li>				
+			</ul>
+		</aside>
+		
+		  <!--Contenido -->
+		<div class="right_big_colum" id="inicio">
+			  <img src="img/logoQuercus.png"/>
+			  <h2>Bienvenido</h2>
+			  <p>Bienvenido a la pantalla de configuracion.<br/>
+			  En esta ventana, en funcion de el rol que tengas asignado podras realizar una serie de acciones para configurar tu cuenta o el sistema.<br/>
+			  <p>
+		</div>
+		<div class="right_big_colum hidden" id="perfil">
+			  <img src="img/user.png"/>
+			  <h2>Perfil</h2>
+			  <a id="changePass">
+				  <img class="icon" src="img/changePass.png" />
+				  <p style="padding-top:5px">Cambiar Contraseña</p>
+			  </a><br/><br/>
+			  <a id="logout">
+				  <img class="icon" src="img/logout.png" />
+				  <p style="padding-top:5px">Salir</p>
+			  </a>			  
+			  <p>		
+		</div>
+		<div class="right_big_colum hidden" id="usuarios">
+			<img src="img/usuarios.png"/>
+			  <h2>Usuarios</h2>
+			  <ul id="listaUsuarios">
+			  </ul>
+			  <button class="centeredButton" id="createButton"><img class="icon" src="img/user.png"/>Crear Usuario</button>
+		</div>
+		<div class="right_big_colum hidden" id="servicios">
+			<img src="img/services.png"/>
+			  <h2>Servicios</h2>
+			  <ul id="listaServicios">
+			  </ul>
+		</div>		
+		<div class="right_big_colum hidden" id="dispositivos">
+			<img src="img/dispositivos.png"/>
+			  <h2>Dispositivos</h2>
+			  <div style="margin-left:160px;">
+				<div id="listaDispositivos">
+
+				</div>
+			  </div>
+		</div>				
+		<div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer>
+  <div class="fleft">Quercus Event System - Web 2012 </div>
+  <div class="fright">PFC Mario A. Corchero Jiménez   </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Este fichero no deberia de rellenarse a mano
+	 en caso de acerse asi, consulte la documentacion -->
+<!-- Configuracion del conector de la BD -->
+<config>
+  <Database type="Windows_ODBC" DSN="QES" />
+  <Timeout minutes="2" />
+</config>

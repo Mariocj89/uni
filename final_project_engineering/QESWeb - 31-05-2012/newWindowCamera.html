@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">	
+	<script type="text/javascript" src="js/jquery.js"></script>	
+<script type="text/javascript">
+
+var dataParent;
+function init() {
+        //document.write(dataParent);
+		$('#dummy').html(dataParent);
+    }
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(window).resize(function(){
+		var stream = $('.stream');
+		var $window = $(window);
+		stream.attr('height',$window.height());
+		stream.attr('width',$window.width());
+	});
+});
+</script>
+</head>
+<body>
+<div id="dummy"> </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Quercus Event System - Web</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>  
+  <script type="text/javascript" src="js/qesscript.js"></script>
+<!-- To be filled -->
+
+<script>
+	var token = readCookie('token');
+	//si no esta logeado, redirigir a la pag de logeo
+	if(token == null)
+	{	
+		location.href='login.html';
+	}
+	autoRefresh(0.5,token);//autorefresh the server token
+
+
+$(document).ready(function(){
+	//Variables globales
+	var startScreen = true;//Aun se encuentra la pantalla de inicio
+	
+	//Modo de vista
+	var VISTA = {//enum
+		UNICA : {value: 0, name: "UNICA"},
+		MULTIPLE : {value: 1, name: "MULTIPLE"}
+	}
+	var modoDeVista = VISTA.UNICA;
+	var onNewWindowIcon = new Image();
+	onNewWindowIcon.src = 'img/onNewWindowIcon.png';
+	var onActualWindowIcon = 'img/onActualWindowIcon.png';
+	$('.imgWindowIcon').click(
+		function(){
+			if($(this).attr('src') == onActualWindowIcon)
+			{
+				$(this).attr('src',onNewWindowIcon.src);
+				modoDeVista = VISTA.MULTIPLE;
+			}
+			else
+			{
+				$(this).attr('src',onActualWindowIcon);
+				modoDeVista = VISTA.UNICA;
+			}
+	});	
+	
+	//Camaras. Evento para que se abran
+	$('.main aside ul').on('click','li ul li',
+		function()
+		{
+			var $panel = $('.right_big_colum')
+			if(startScreen && modoDeVista != VISTA.MULTIPLE) 
+			{
+				$panel.html('<div class="clear"></div> ');
+				startScreen = false;
+				//contenedor de camaras resizable
+				$('.right_big_colum').resizable({containment: ".main",handles: 's',minHeight: 300,	minWidth: 300});
+			}
+			switch($(this).attr('class'))
+			{
+				case 'CamaraAxis':
+					$.getJSON(server+'GetDetallesCamara',{token:readCookie('token'),camara:($(this).html())},function(data)
+					{
+						if(data.Code == -1)
+						{//sesion expirada
+							alert('Sesion Expirada');
+							location.href='login.html';
+							return;
+						}
+						if(data.Code == -2)
+						{//el usuario no tiene acceso a la camara
+							alert('Lo sentimos, pero no tiene acceso a la cámara. Contacte con el administrador.');
+							return;
+						}							
+						
+						var output= "";
+						output+= displayCamera(data.IP,data.Puerto,data.User,data.Password);
+						
+						switch(modoDeVista)
+						{
+							case VISTA.UNICA:
+							{
+								$panel.append(output);
+								
+								//Resize & drag videos
+								$('.stream:last').wrap('<div class="dragContainer"></div>')
+								$('.dragContainer:last').draggable({containment: ".right_big_colum", scroll: false});
+								
+								if (!((navigator.appName == "Microsoft Internet Explorer") &&	(navigator.platform != "MacPPC") && (navigator.platform != "Mac68k")))
+								{//en iexplorer con el plugin no se puede activar resizable...
+									$('.stream:last').resizable({containment: ".right_big_colum",minHeight: 100,	minWidth: 100,
+										resize: function(event, ui)//also resize container
+										{
+											var imageOffsetbot = ui.position.top+ui.size.height;
+											var panelOffsetbot = $panel.offset().top+$panel.outerHeight();
+											if(imageOffsetbot + 200 > panelOffsetbot)//si va a salir del area incrementamos el area
+												$panel.css("height",imageOffsetbot+"px");
+										}									
+									});
+								}
+							}break;
+							case VISTA.MULTIPLE:
+							{
+								var OpenWindow = window.open('newWindowCamera.html','_blank','width=335,height=330,resizable=1');
+								OpenWindow.dataParent = output;
+								if (navigator.appName == "Microsoft Internet Explorer")
+									OpenWindow.init();
+								else
+									OpenWindow.onload = function(){OpenWindow.init();}
+
+							}break;
+						}
+					});break;//Fin: Camara axis
+				default:alert('Not Implemented');break;
+			}//end switch class
+		}
+	);	//FIN: Camaras. Evento para que se abran
+	
+	var GlobalData;
+	$.ajax({//getJson
+		url:server+'GetDispositivos',
+		dataType: 'json',
+		data:{token:readCookie('token')},
+		success:function(data)
+		{
+			if(data.Code != 0)
+			{//sesion expirada
+				alert('Sesion Expirada');
+				location.href='login.html';
+				return;
+			}
+						
+			var $lista = $('aside ul');
+			GlobalData = data.Recintos;
+			$.each(GlobalData,function(index,recinto)
+			{//recintos
+				var PlanoSplit = recinto.Plano.split(/[\\\/]+/);
+				var idRencinto = recinto.Nombre.replace(' ','_');
+				$lista.append('<li id="'+idRencinto+'" title="'+PlanoSplit[PlanoSplit.length-1]+'" rel="'+recinto.Nombre+'">');
+				var $recintoHTML = $lista.find('#'+idRencinto);
+				$recintoHTML.append('<h3>'+recinto.Nombre+'<img class="viewAll" style="float:right" rel="'+recinto.Nombre+'" title="Ver Todas" src="img/eye.png" /></h3>');
+				$recintoHTML.append('<ul>');
+				var $camarasRecintoHTML = $recintoHTML.find('ul');
+				$.each(recinto.Dispositivos,function(index2,camara)
+				{//camaras
+					$camarasRecintoHTML.append('<li class="'+camara.Type+'" title="'+camara.Nombre+'">'+camara.Nombre+'</li>')
+				});
+				$recintoHTML.append('</ul>');
+				$lista.append('</li>');
+			});
+		},
+		error: function()//error en la request
+		  {
+				location.href='login.html';
+		  }
+	});
+	
+	//Cerrar las caaras
+	$('.right_big_colum').on('dblclick','.dragContainer',function()
+	{
+		var $this = $(this);
+		$this.hide('slow',function(){$this.remove();}); 
+		if($('.right_big_colum').find('.stream').length != 0) startScreen = true;
+	});
+	
+	//Click en una camara en un plano
+	$('.right_big_colum').on('click','.camera',function()
+	{
+		var name = $(this).attr('title');
+		$('.main aside ul li ul li[title="'+name+'"]').click();
+
+	});	
+
+	
+	//Menu desplegable en aside 
+	$('.main aside ul').on('click','li h3',
+		function()
+		{
+			$this = $(this);
+			$panel = $('.right_big_colum');
+			if((startScreen || $panel.find('img').length == 0 ) && modoDeVista == VISTA.MULTIPLE)
+			{
+				$panel.resizable('destroy');//undo resizable
+				$panel.html('<img class="plano" src="planos/'+$this.parent().attr('title')+'"/>');
+				$.each(GlobalData,function(index,recinto)//pintar las camaras
+				{
+					if(recinto.Nombre == $this.parent().attr('rel'))
+					{
+						$.each(recinto.Dispositivos,function(index2,camara)
+						{
+							var imagen;
+							switch(camara.Type)
+							{
+								case 'CamaraAxis': imagen = "img/camera.png";break;
+								default : imagen = "img/dispositivo.png";break;
+							}
+							//var planoposition = $panel.find('img').offset();
+							var xPosition = ($panel.outerHeight(false) - $panel.innerHeight())+camara.X+5;
+							var yPosition = ($panel.outerHeight(false) - $panel.innerHeight())+camara.Y+15;
+							$panel.append('<img class="camera" src="'+imagen+'" title="'+camara.Nombre+'" style="position:absolute;left:'+xPosition+'px;top:'+yPosition+'px;cursor:pointer;" >');
+						});
+					}
+				});
+			}
+	
+			if(!$this.parent().hasClass('abierta')){
+				$this.parent().addClass('abierta');
+				$this.next('ul').show('slow');
+			}else{
+				$this.parent().removeClass('abierta');		
+				$this.next('ul').hide('slow');	
+				}
+		}
+	);
+	
+	//ver Recinto
+	$('.main aside').on('click','ul li h3 img, .viewAll',function(){
+		location.href="multiView.html?recinto="+$(this).attr('rel');
+		return false;
+	});
+	
+});
+
+
+</script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  <!--menu -->
+  <img src="img/logo.png" />
+  <h1>  QES Web</h1>
+  <nav>
+	<ul>
+		<li><a href="index.html"><img src="img/home.png" />Inicio</a></li>
+				
+		<li><a href="login.html"><img src="img/login.png"/>
+		<script>var token = readCookie('token');document.write(token == null? 'Log In' : 'Log Out');</script>
+		</a></li>
+		
+		<li><a id="current_page" href="recintos.html"><img src="img/cameras.png" />Recintos</a></li>		
+		<li><a href="config.html"><img src="img/config.png" />Configuracion</a></li>			
+	</ul>
+  </nav>
+
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main">
+		<!-- aside -->
+		<aside>
+			<img class="imgWindowIcon" src="img/onActualWindowIcon.png" title="Vista"/>		
+			<a><img class="viewAll" style="float:right;margin-right:10px;margin-top:3px;" rel="all" title="Ver Todas" src="img/eye.png" /></a>
+			<h2>Camaras </h2>
+			<ul>
+				<!-- Ejemplo
+				<li id="Laboratorio">
+					<h3>Laboratorio</h3>
+					<ul>
+						<li>Quercus 0</li>
+						<li>Quercus 1</li>
+					</ul>
+				</li>
+				<li id="EdificioAcustica">
+					<h3>Edificio Acústica</h3>
+					<ul>
+						<li>Quercus 3</li>
+						<li>Quercus 4</li>
+					</ul>	
+				</li>					
+				<li id="Cafeteria">
+					<h3>Cafetería</h3>
+				</li>-->
+			</ul>
+		</aside>
+		
+		  <!--Contenido -->
+		<div class="right_big_colum">
+			  <img src="img/logoQuercus.png"/>
+			  <h2>Bienvenido</h2>
+			  <p>
+				Bienvenido a la seccion de camaras, aquí podrá visualizar las camaras de diferentes modos.<br />
+				En la barra lateral de la izquierda puede observar todas camaras agrupadas por recintos, haga click en un recinto para abrirlo
+				y visualizar las camaras que contiene.<br />
+				Hay dos vistas disponibles, puede cambiar el modo en la esquina superior derecha de este panel.
+			  </p>
+			  <div class="clear"> </div>
+			  <h3>Vista en ventana única</h3>
+			  <p>
+				Al hacer click en una camara, se añadirá al area central para visualizarla. Una vez tenga asignada una cámara a un área puede redimensionarla/reposicionarla a placer.
+				Si desea quitar una cámara solo tiene que hacer doble click sobre ella.
+				<br/>Nota: Si al redimensionar mantiene shift pulsado se mantiene la proporcion.
+			  <p>			  
+			  <h3>Vista en múltiples ventanas</h3>
+			  <p>
+				Al hacer click en un recinto, podra ver el plano  en este area central para acceder a las camaras mas comodamente.<br />
+				Cuando haga click en una camara, ya sea en el panel o en el plano, aparecerá en una nueva ventana.
+			  <p>
+		</div>
+		<div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer>
+  <div class="fleft">Quercus Event System - Web 2012 </div>
+  <div class="fright">PFC Mario A. Corchero Jiménez   </div>
+  </footer>
+  
+</body>
+</html>

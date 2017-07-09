@@ -1,0 +1,3622 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuercusEventSystem</name>
+    </assembly>
+    <members>
+        <member name="T:QES.UIRecepTcp">
+            <summary>
+            Interaction logic for UITcpSender.xaml
+            </summary>
+            <summary>
+            UIRecepTcp
+            </summary>
+        </member>
+        <member name="F:QES.UIRecepTcp._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIRecepTcp.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIRecepTcp.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.UIDispositivo">
+            <summary>
+            Lógica de interacción para Dispositivo.xaml
+            </summary>
+            <summary>
+            UIDispositivo
+            </summary>
+        </member>
+        <member name="F:QES.UIDispositivo._dispositivo">
+            <summary>
+            Dispositivo con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIDispositivo.#ctor(QES.QESDispositivo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIDispositivo"/> class.
+            </summary>
+            <param name="d">dispositivo a mostrar.</param>
+        </member>
+        <member name="M:QES.UIDispositivo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIDispositivo.Dispositivo">
+            <summary>
+            Gets the dispositivo.
+            </summary>
+        </member>
+        <member name="T:QES.UICamara">
+            <summary>
+            Lógica de interacción para Dispositivo.xaml
+            </summary>
+            <summary>
+            UICamara
+            </summary>
+        </member>
+        <member name="F:QES.UICamara._dispositivo">
+            <summary>
+            Dispositivo con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UICamara.#ctor(QES.QESCamara)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UICamara"/> class.
+            </summary>
+            <param name="d">dispositivo a mostrar.</param>
+        </member>
+        <member name="M:QES.UICamara.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UICamara.Dispositivo">
+            <summary>
+            Gets the dispositivo.
+            </summary>
+        </member>
+        <member name="T:QES.UIAxisConditionalController">
+            <summary>
+            Interaction logic for UIAxisConditionalController.xaml
+            </summary>
+            <summary>
+            UIAxisConditionalController
+            </summary>
+        </member>
+        <member name="F:QES.UIAxisConditionalController._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIAxisConditionalController.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIAxisConditionalController"/> class.
+            </summary>
+            <param name="servicio">The servicio.</param>
+        </member>
+        <member name="M:QES.UIAxisConditionalController.updateCameras">
+            <summary>
+            Actualiza el menu del ui
+            </summary>
+            <param name="ax">The ax.</param>
+        </member>
+        <member name="M:QES.UIAxisConditionalController.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIAxisConditionalController.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.QESDispositivo">
+            <summary>
+            Recinto que contiene dispositivos y al que se le asignan roles
+            </summary>
+        </member>
+        <member name="M:QES.QESDispositivo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESDispositivo"/> class.
+            </summary>
+            <param name="nombre">Nombre del dispositivo.</param>
+        </member>
+        <member name="M:QES.QESDispositivo.Visualizar">
+            <summary>
+            Metodo para visualizar el dispositivo
+            </summary>
+        </member>
+        <member name="P:QES.QESDispositivo.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>
+            nombre del dispositivo
+            </value>
+        </member>
+        <member name="P:QES.QESDispositivo.Interfaz">
+            <summary>
+            Interfaz para motrar al usuario
+            </summary>
+        </member>
+        <member name="P:QES.QESDispositivo.Rol">
+            <summary>
+            Gets or sets the rol.
+            </summary>
+            <value>
+            Rol asociado al dispositivo.
+            </value>
+        </member>
+        <member name="T:QES.QESWebService">
+            <summary>
+            Servicio de login
+            </summary>
+        </member>
+        <member name="T:QES.IQESWebService">
+            <summary>
+            Interfaz para conectar con el sistema
+            </summary>
+        </member>
+        <member name="M:QES.IQESWebService.Login(System.String,System.String)">
+            <summary>
+            Logins the specified user.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns>
+            devuelve el token de autentificacion
+            </returns>
+        </member>
+        <member name="M:QES.IQESWebService.LogOut(System.String)">
+            <summary>
+            Deslogea al usuario del sistema
+            </summary>
+            <param name="username">The user token.</param>
+        </member>
+        <member name="M:QES.IQESWebService.Refresh(System.String)">
+            <summary>
+            Renueva la sesion del usuario
+            </summary>
+            <param name="username">The user token.</param>
+        </member>
+        <member name="M:QES.IQESWebService.ObtenerDispositivos(System.String)">
+            <summary>
+            Obtiene los dispositivos agrupados por recintos
+            </summary>
+            <param name="token">The token.</param>
+            <returns>Json con los datos de los recintos y dispositivos dentro</returns>
+        </member>
+        <member name="M:QES.IQESWebService.ObtenerDetallesCamara(System.String,System.String)">
+            <summary>
+            Dada una camara, obtiene los detalles de esta
+            </summary>
+            <param name="token">The token.</param>
+            <param name="camera">The camera.</param>
+            <returns>JSON con user, pass, y demas deles de la camra</returns>
+        </member>
+        <member name="M:QES.IQESWebService.GetUsuarios(System.String)">
+            <summary>
+            Devuelve los usuarios del sistema
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <returns>Usuarios del sistema</returns>
+        </member>
+        <member name="M:QES.IQESWebService.CrearUsuario(System.String,System.String,System.String)">
+            <summary>
+            Crea un nuevo usuario
+            </summary>
+            <param name="token">token de autenticacion</param>
+            <param name="name">Nombre del usuario a crear.</param>
+            <param name="password">contraseña del usuario a crear.</param>
+            <returns>codigo de error, 0 =success</returns>
+        </member>
+        <member name="M:QES.IQESWebService.UpdatePassword(System.String,System.String,System.String)">
+            <summary>
+            Cambia la contraseña del usuario
+            </summary>
+            <param name="token">token que identifica al usuario.</param>
+            <param name="old">contraseña antigua.</param>
+            <param name="password">Contraseña nueva.</param>
+            <returns>true si se cambio correctamente, false en caso cotnrario</returns>
+        </member>
+        <member name="M:QES.IQESWebService.GetServicios(System.String)">
+            <summary>
+            Devuelve los servicios del sistem
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <returns>Servicios del sistema</returns>
+        </member>
+        <member name="M:QES.IQESWebService.SetServicio(System.String,System.String,System.Boolean)">
+            <summary>
+            Cambia el estado de un servicio
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="servicio">Servicio a cambiar.</param>
+            <param name="status">if set to <c>true</c> activado.</param>
+            <returns>true si se ha cambiado con exito, false en caso contrario</returns>ç
+        </member>
+        <member name="M:QES.IQESWebService.GetPrivilegios(System.String,System.String)">
+            <summary>
+            Obtiene todos los privilegios e indica cuales posee el usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="user">Usuario.</param>
+            <returns>privilegios</returns>
+        </member>
+        <member name="M:QES.IQESWebService.SetPrivilegios(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Actualiza los privilegios de un usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="priv">lista de privilegios.</param>
+            <returns>codigo de resultado</returns>
+        </member>
+        <member name="M:QES.IQESWebService.DeslogearA(System.String,System.String)">
+            <summary>
+            Expulsa a un usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="usuario">Usuario a echar.</param>
+            <returns>codigo de resultado</returns>
+        </member>
+        <member name="F:QES.QESWebService.TokensUser">
+            <summary>
+            Usuarios actualmente logeados en el sistema
+            </summary>
+        </member>
+        <member name="F:QES.QESWebService.TokensTimer">
+            <summary>
+            Temporizadores de validez de tokens
+            </summary>
+        </member>
+        <member name="M:QES.QESWebService.Login(System.String,System.String)">
+            <summary>
+            Logins the specified user.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns>
+            devuelve el token de autentificacion
+            </returns>
+        </member>
+        <member name="M:QES.QESWebService.LogOut(System.String)">
+            <summary>
+            Deslogea al usuario del sistema
+            </summary>
+            <param name="username">The user token.</param>
+        </member>
+        <member name="M:QES.QESWebService.Refresh(System.String)">
+            <summary>
+            Refreshes the specified token timer.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="M:QES.QESWebService.ObtenerDispositivos(System.String)">
+            <summary>
+            Obtiene los dispositivos agrupados por recintos
+            </summary>
+            <param name="token">The token.</param>
+            <returns>
+            Json con los datos de los recintos y dispositivos dentro
+            </returns>
+        </member>
+        <member name="M:QES.QESWebService.ObtenerDetallesCamara(System.String,System.String)">
+            <summary>
+            Dada una camara, obtiene los detalles de esta
+            </summary>
+            <param name="token">The token.</param>
+            <param name="camera">The camera.</param>
+            <returns>
+            JSON con user, pass, y demas deles de la camra
+            </returns>
+        </member>
+        <member name="M:QES.QESWebService.CreateToken">
+            <summary>
+            Crea un token aleatorio
+            </summary>
+            <returns>Token aleatorio</returns>
+        </member>
+        <member name="M:QES.QESWebService.GetUsuarios(System.String)">
+            <summary>
+            Devuelve los usuarios del sistema
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <returns>Usuarios del sistema</returns>
+        </member>
+        <member name="M:QES.QESWebService.CrearUsuario(System.String,System.String,System.String)">
+            <summary>
+            Crea un nuevo usuario
+            </summary>
+            <param name="token">token de autenticacion</param>
+            <param name="name">Nombre del usuario a crear.</param>
+            <param name="password">contraseña del usuario a crear.</param>
+            <returns>codigo de error, 0 =success</returns>
+        </member>
+        <member name="M:QES.QESWebService.UpdatePassword(System.String,System.String,System.String)">
+            <summary>
+            Cambia la contraseña del usuario
+            </summary>
+            <param name="token">token que identifica al usuario.</param>
+            <param name="old">contraseña antigua.</param>
+            <param name="password">Contraseña nueva.</param>
+            <returns>true si se cambio correctamente, false en caso cotnrario</returns>
+        </member>
+        <member name="M:QES.QESWebService.GetServicios(System.String)">
+            <summary>
+            Devuelve los servicios del sistem
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <returns>Servicios del sistema</returns>
+        </member>
+        <member name="M:QES.QESWebService.SetServicio(System.String,System.String,System.Boolean)">
+            <summary>
+            Cambia el estado de un servicio
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="servicio">Servicio a cambiar.</param>
+            <param name="status">if set to <c>true</c> activado.</param>
+            <returns>true si se ha cambiado con exito, false en caso contrario</returns>
+        </member>
+        <member name="M:QES.QESWebService.GetPrivilegios(System.String,System.String)">
+            <summary>
+            Obtiene todos los privilegios e indica cuales posee el usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="user">Usuario.</param>
+            <returns>
+            privilegios
+            </returns>
+        </member>
+        <member name="M:QES.QESWebService.SetPrivilegios(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Actualiza los privilegios de un usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="priv">lista de privilegios establecidos.</param>
+            <returns>
+            codigo de resultado
+            </returns>
+        </member>
+        <member name="M:QES.QESWebService.DeslogearA(System.String,System.String)">
+            <summary>
+            Expulsa a un usuario
+            </summary>
+            <param name="token">token de autenticacion.</param>
+            <param name="usuario">Usuario a echar.</param>
+            <returns>
+            codigo de resultado
+            </returns>
+        </member>
+        <member name="P:QES.QESWebService.TimeToDiscard">
+            <summary>
+            Gets or sets the time to discard.
+            </summary>
+            <value>
+            Minutos para descartar un token
+            </value>
+        </member>
+        <member name="T:QES.UISMSEsendex">
+            <summary>
+            Interaction logic for UISMSEsendex.xaml
+            </summary>
+            <summary>
+            UISMSEsendex
+            </summary>
+        </member>
+        <member name="F:QES.UISMSEsendex._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UISMSEsendex.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UISMSEsendex"/> class.
+            </summary>
+            <param name="servicio">Servicio que muestra la interfaz.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.addButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the addButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.numListBox_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the numListBox control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.removeButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the removeButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.increase_button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the increase_button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.decrease_button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the decrease_button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UISMSEsendex.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UISMSEsendex.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.UIServicio">
+            <summary>
+            Lógica de interacción para UIServicio.xaml
+            </summary>
+            <summary>
+            UIServicio
+            </summary>
+        </member>
+        <member name="F:QES.UIServicio._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIServicio.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIServicio"/> class.
+            </summary>
+            <param name="servicio">servicio que muestra la interfaz.</param>
+        </member>
+        <member name="M:QES.UIServicio.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIServicio.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.InputBox">
+            <summary>
+            Interaction logic for ImputBox.xaml
+            </summary>
+            <summary>
+            InputBox
+            </summary>
+        </member>
+        <member name="M:QES.InputBox.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:QES.InputBox"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:QES.InputBox.Show(System.String,System.String)">
+            <summary>
+            Muestra el formulario para entrar datos
+            </summary>
+            <param name="title">The title.</param>
+            <param name="label">The label.</param>
+            <returns>Contenido entrado en la textbox</returns>
+        </member>
+        <member name="M:QES.InputBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESRecepMensTcp`1">
+            <summary>
+            Clase que genera eventos de tipo QESEvent tras la recepcion de un mensaje TCP
+            </summary>
+            <typeparam name="T">Tipo de eventos que emite</typeparam>
+        </member>
+        <member name="T:QuercusEventChain.QESHead`1">
+            <summary>
+            Clase que genera un evento interno del systema, ya sea transformando uno del exterior o generandolo
+            por cualquier situacion. Ej: Receptor de mensajes por TCP
+            Para lanzar el evento de forma asincrona se debe llamar a "lanzar"
+            Es una clase generica, el tipo indicado corresponde al tipo de evento que generará en el sistema.
+            </summary>
+            <typeparam name="T">tipo del evento lanzado</typeparam>
+        </member>
+        <member name="T:QuercusEventChain.QESBase">
+            <summary>
+            Implementacion de la clase QESBase, base de todas los servicios de la libreria
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESHead`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESHead`1"/> class.
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESHead`1.Conectar(QuercusEventChain.QESTail{`0})">
+            <summary>
+            Conecta una clase a esta, suscribiendo su metodo Manejar a el evento de esta.
+            </summary>
+            <param name="cola">clase a suscribir al evento.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESHead`1.Desconectar(QuercusEventChain.QESTail{`0})">
+            <summary>
+            Desconecta una clase de esta, desasociando su metodo Manejar a el evento de esta.
+            </summary>
+            <param name="cola">clase a desasociar del evento.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESHead`1.lanzar(`0)">
+            <summary>
+            lanza de forma asincrona todos los metodos asociados al evento, enviando el argumento indicado.
+            antes de lanzar el evento comprueba que se cumple el metodo condicion. Es posible sobreescribirlo
+            aunque no se recomienda.
+            </summary>
+            <param name="args">Argumento del tipo generico que se enviara a los metodos asociados al evento.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESHead`1.condicion(System.Object)">
+            <summary>
+            metodo encargado de "decidir" si es correcto que se lance un evento determinado, puede sobreescribirse para 
+            decidir como se comporta lanzar frente a un parametro determinado
+            </summary>
+            <param name="args">Argumento segun el cual realizar la decision. Si no se sobreescribe lanzar sera el que se envie con el evento..</param>
+            <returns>true si y solo si la condicion de lanzado es correcta</returns>
+        </member>
+        <member name="E:QuercusEventChain.QESHead`1.QESEvent">
+            <summary>
+            Evento al que se asociaran metodos para que sean ejecutados al lanzanrse.
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESHead`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESHead`1.QESDelegado">
+            <summary>
+            definicion del tipo de delegado QESDelegado, usado para crear el evento mas adelante. Especifica que argumentos
+            deben tener los metodos que se asocien al evento, en este caso, un solo argumento del tipo generico indicado.
+            </summary>
+            <param name="info">informacion del evento.</param>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._workercallback">
+            <summary>
+            Callback para la recepcion asincrona de los datos
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._mainsocket">
+            <summary>
+            socket que atiende las llamadas entrantes
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._workersockets">
+            <summary>
+            Array de sockets para comunicacion con clientes
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._clientcount">
+            <summary>
+            Numero de sockets activos
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._log">
+            <summary>
+            Si no esta a null, entidad encargada de recibir entradas para generar un log
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1._port">
+            <summary>
+            puerto por el que se recibe
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.#ctor(System.Int32,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESRecepMensTcp`1"/> class.
+            </summary>
+            <param name="puerto">puerto de escucha.</param>
+            <param name="clientsOnW8">Numero maximo de clientes en cola.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.OnClientConnect(System.IAsyncResult)">
+            <summary>
+            Called when [client connect].
+            </summary>
+            <param name="asyn">Resultado asincrono.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.WaitForData(System.Net.Sockets.Socket,System.Int32)">
+            <summary>
+            Espera la llegada de datos
+            </summary>
+            <param name="soc">Socket de recepcion de datos.</param>
+            <param name="clientnumber">Identificador de cliente.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.OnDataReceived(System.IAsyncResult)">
+            <summary>
+            Called when [data received].
+            </summary>
+            <param name="asyn">Resultado asincrono.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.producirLog(System.Net.EndPoint,System.String)">
+            <summary>
+            Añade una entrada al log
+            </summary>
+            <param name="endPoint">The end point.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.emitir(System.Net.EndPoint,System.String)">
+            <summary>
+            Metodo a sobreescribir, se llamara cada vez que se reciba una cadena
+            </summary>
+            <param name="endPoint">emisor del mensaje.</param>
+            <param name="data">mensaje recibido via tcp.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESRecepMensTcp`1.Port">
+            <summary>
+            Obtiene el puerto
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESRecepMensTcp`1.SocketPacket">
+            <summary>
+            Paquete de datos recibido
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1.SocketPacket.currentsocket">
+            <summary>
+            Socket que gestiona la recepcion de este paquete
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1.SocketPacket.buffer">
+            <summary>
+            array donde se almacenan los datos recibidos
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESRecepMensTcp`1.SocketPacket.clientnumber">
+            <summary>
+            Identificador del cliente que envia los datos
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp`1.SocketPacket.#ctor(System.Net.Sockets.Socket,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESRecepMensTcp`1.SocketPacket"/> class.
+            </summary>
+            <param name="_currentsocket">Socket que gestiona la recepcion de este paquete.</param>
+            <param name="_clientnumber">Identificador del cliente que envia los datos.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESRecepMensTcp`1.SocketPacket.Emisor">
+            <summary>
+            Obtiene o Modifica el emisor del paquete
+            </summary>
+            <value>
+            Emisor del paquete
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESRecepMensTcp">
+            <summary>
+            Clase que genera eventos de tipo QESEvent(subtipo QESTcpEvent) tras la recepcion de un mensaje TCP
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp.#ctor(System.Int32,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESRecepMensTcp"/> class.
+            </summary>
+            <param name="puerto">puerto puerto de escucha.</param>
+            <param name="clientsOnW8"> Numero maximo de clientes en cola. Opcional</param>
+        </member>
+        <member name="M:QuercusEventChain.QESRecepMensTcp.emitir(System.Net.EndPoint,System.String)">
+            <summary>
+            se llamara cada vez que se reciba una cadena, lanza un evento
+            </summary>
+            <param name="endPoint">Emisor del mensaje.</param>
+            <param name="data">data mensaje recibido via tcp.</param>
+        </member>
+        <member name="T:QuercusEventChain.QESTail`1">
+            <summary>
+            Interfaz que consume un evento interno del systema, ya sea para transformarlo en uno del exterior o cualquier proposito.
+            Ej: Servicio de emails
+            Es una interfaz generica, el tipo indicado corresponde al tipo de evento que consumirá del sistema.
+            </summary>
+            <typeparam name="T">tipo de evento que recibe</typeparam>
+        </member>
+        <member name="M:QuercusEventChain.QESTail`1.Manejar(`0)">
+            <summary>
+            metodo con el que se tratara un evento lanzado por la clase a la que este suscrito.
+            </summary>
+            <param name="e">argumento del evento a Manejar.</param>
+        </member>
+        <member name="T:QES.UIConfiguracion">
+            <summary>
+            Interaction logic for UIConfiguracion.xaml
+            </summary>
+            <summary>
+            UIConfiguracion
+            </summary>
+        </member>
+        <member name="M:QES.UIConfiguracion.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIConfiguracion"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIConfiguracion.addUserBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the addUserBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIConfiguracion.bdBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the bdBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIConfiguracion.wsTimeoutBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the wsTimeoutBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIConfiguracion.wsoffBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the wsoffBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:QES.UIConfiguracion.wson">
+            <summary>
+            Servicios web on/off
+            </summary>
+        </member>
+        <member name="M:QES.UIConfiguracion.clearLog_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the clearLog control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIConfiguracion.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.QESRole">
+            <summary>
+            Rol del sistema, se puede relacionar con dispositivos/servicios para indicar que
+            tiene privilegios para visualizarlos, No puede haber dos roles/usuarios con el mismo nombre.
+            </summary> 
+        </member>
+        <member name="F:QES.QESRole.MainRoles">
+            <summary>
+            Lista con los roles por defecto. Al iniciar el programa se agregara uno para cada dispositivo
+            </summary>
+        </member>
+        <member name="M:QES.QESRole.#ctor(System.String,QES.QESRole[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESRole"/> class.
+            </summary>
+            <param name="name">Nombre del rol.</param>
+            <param name="rolList">Varargs de superroles.</param>
+        </member>
+        <member name="M:QES.QESRole.AddSuperRole(QES.QESRole)">
+            <summary>
+            Añade un superRol(rol de que hereda todos sus privilegios)
+            </summary>
+            <param name="rol">Rol a añadir.</param>
+            <returns>
+            true si se ha añadido, false si ya existia
+            </returns>
+        </member>
+        <member name="M:QES.QESRole.RemoveSuperRole(QES.QESRole)">
+            <summary>
+            Elimina un rol de la lista de superoles
+            </summary>
+            <param name="rol">Rol a eliminar.</param>
+            <returns>true si se elimino correctamente, false si no existe</returns>
+        </member>
+        <member name="M:QES.QESRole.HasRole(QES.QESRole[])">
+            <summary>
+            Comprueba si contiene alguno de los roles indicados
+            </summary>
+            <param name="rolList">Lista de roles a comprobar.</param>
+            <returns>
+              <c>true</c> si contiene alguno de ellos; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:QES.QESRole.hasRole(QES.QESRole[],System.Collections.Generic.ISet{QES.QESRole})">
+            <summary>
+            Funcion sumergida que realiza el checkeo de roles
+            </summary>
+            <param name="rolList">Lista de roles a comprobar.</param>
+            <param name="checkeds">Roles comprobados.</param>
+            <returns>
+              <c>true</c> if the specified rol list has role; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="F:QES.QESRole._superRoles">
+            <summary>
+            Conjunto de roles de los que hereda privilegios
+            </summary>
+        </member>
+        <member name="F:QES.QESRole._name">
+            <summary>
+            nombre del rol
+            </summary>
+        </member>
+        <member name="M:QES.QESRole.GetDataToStore">
+            <summary>
+            Gets the data to store.
+            </summary>
+            <returns>array de cadenas, en la posicion 0 nombre, en la 1 superroles separados por ;</returns>
+        </member>
+        <member name="P:QES.QESRole.Admin">
+            <summary>
+            Gets the admin role.
+            </summary>
+        </member>
+        <member name="P:QES.QESRole.Viewer">
+            <summary>
+            Gets the admin role.
+            </summary>
+        </member>
+        <member name="P:QES.QESRole.Name">
+            <summary>
+            Propiedad para acceder al nombre
+            </summary>
+        </member>
+        <member name="T:QES.QESUser">
+            <summary>
+            Usuario del sistema, es un rol con el que se puede acceder al sistema,
+            es decir, ademas de nombre tiene contraseña y datos personales.
+            </summary>
+        </member>
+        <member name="M:QES.QESUser.#ctor(System.String,System.String,QES.QESRole[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESUser"/> class.
+            </summary>
+            <param name="name">Nombre de usuario.</param>
+            <param name="pass">contraseña.</param>
+            <param name="rolList">Varargs de superRoles.</param>
+        </member>
+        <member name="M:QES.QESUser.CheckPassword(System.String)">
+            <summary>
+            Comprueba si la contraseña coincide
+            </summary>
+            <param name="pass">Contraseña a probar.</param>
+            <returns></returns>
+        </member>
+        <member name="F:QES.QESUser._pass">
+            <summary>
+            Contraseña del usuario
+            </summary>
+        </member>
+        <member name="P:QES.QESUser.Password">
+            <summary>
+            Establece la contraseña
+            </summary>
+            <value>
+            Contraseña
+            </value>
+        </member>
+        <member name="T:QES.Login.LoginControl">
+            <summary>
+            Interaction logic for LoginControl.xaml
+            </summary>
+            <summary>
+            LoginControl
+            </summary>
+        </member>
+        <member name="M:QES.Login.LoginControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.AddUser">
+            <summary>
+            Interaction logic for AddUser.xaml
+            </summary>
+            <summary>
+            AddUser
+            </summary>
+        </member>
+        <member name="M:QES.AddUser.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.AddUser"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.AddUser.createBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the createBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.AddUser.cancelBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the cancelBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.AddUser.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.QESAxisView">
+            <summary>
+            Ventana para la visualizacion de una camara axis
+            </summary>
+        </member>
+        <member name="F:QES.QESAxisView.components">
+            <summary>
+            Variable del diseñador requerida.
+            </summary>
+        </member>
+        <member name="M:QES.QESAxisView.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
+        </member>
+        <member name="M:QES.QESAxisView.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido del método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:QES.QESAxisView.#ctor(System.Boolean,System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESAxisView"/> class.
+            </summary>
+            <param name="audio">Indica si la camara dispone de audio.</param>
+            <param name="audiotransmit">Indica si la camara transmite audio.</param>
+            <param name="ip">IP de la camara.</param>
+            <param name="port"> Puerto TCP de la camara.</param>
+            <param name="ptz">Indica si la camara tiene opcion de movimiento.</param>
+            <param name="login">Usuario de la camara.</param>
+            <param name="pass">Password de la camara.</param>
+        </member>
+        <member name="M:QES.QESAxisView.amcView_OnDoubleClick(System.Object,AxAXISMEDIACONTROLLib._IAxisMediaControlEvents_OnDoubleClickEvent)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">Objeto que emite el evento.</param>
+            <param name="e">Parametros del evento.</param>
+        </member>
+        <member name="M:QES.QESAxisView.x480ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.QESAxisView.x360ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.QESAxisView.x240ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.QESAxisView.x180ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.QESAxisView.x120ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:QuercusEventChain.VAPIX2VideoRecorder`1">
+            <summary>
+            Clase para realizar grabaciones de camaras que cumplan el estandar VAPIX 2.0
+            en respuesta a un evento. No funciona correctamente
+            </summary>
+            <typeparam name="T">Tipo de evetos que recibe</typeparam>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2VideoRecorder`1.#ctor(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.VAPIX2VideoRecorder`1"/> class.
+            </summary>
+            <param name="user">Usuario de la camara.</param>
+            <param name="password">Password de la camara.</param>
+            <param name="ip">Ip de la camara.</param>
+            <param name="port">Puerto de la camara.</param>
+            <param name="name">Nombre de la camara. Opcional</param>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2VideoRecorder`1.Captura">
+            <summary>
+            Captura una imagen de la camara y la guarda en un fichero con el nombre
+            de la camara y la fecha actual
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2VideoRecorder`1.Manejar(`0)">
+            <summary>
+            Responde al evento capturando video
+            </summary>
+            <param name="ev">Evento.</param>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2VideoRecorder`1._request">
+            <summary>
+            Webrequest con la url de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2VideoRecorder`1._name">
+            <summary>
+            Nombre de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2VideoRecorder`1._url">
+            <summary>
+            Url para acceder a la imagen de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2VideoRecorder`1._credentials">
+            <summary>
+            Credenciales para acceder a la camara
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.VAPIX2VideoRecorder`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.VAPIX2ImageCapturer`1">
+            <summary>
+            Clase para realizar capturas de imagenes de camaras que cumplan el estandar VAPIX 2.0
+            en respuesta a un evento.
+            </summary>
+            <typeparam name="T">Tipo de eventos que recibe</typeparam>
+        </member>
+        <member name="T:QuercusEventChain.IToggleable">
+            <summary>
+            Interfaz para marcar un servicio como activable/desactivable
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2ImageCapturer`1.#ctor(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.VAPIX2ImageCapturer`1"/> class.
+            </summary>
+            <param name="user">Usuario de la camara.</param>
+            <param name="password">Password de la camara.</param>
+            <param name="ip">Ip de la camara.</param>
+            <param name="port">Puerto de la camara.</param>
+            <param name="name">Nombre de la camara. Opcional</param>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2ImageCapturer`1.Captura">
+            <summary>
+            Captura una imagen de la camara y la guarda en un fichero con el nombre
+            de la camara y la fecha actual
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.VAPIX2ImageCapturer`1.Manejar(`0)">
+            <summary>
+            Maneja el evento realizando una captura
+            </summary>
+            <param name="ev">Evento recibido.</param>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2ImageCapturer`1._request">
+            <summary>
+            Webrequest con la url de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2ImageCapturer`1._name">
+            <summary>
+            Nombre de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2ImageCapturer`1._url">
+            <summary>
+            Url para acceder a la imagen de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.VAPIX2ImageCapturer`1._credentials">
+            <summary>
+            Credenciales para acceder a la camara
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.VAPIX2ImageCapturer`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QES.UITimer">
+            <summary>
+            Interaction logic for UITimer.xaml
+            </summary>
+            <summary>
+            UITimer
+            </summary>
+        </member>
+        <member name="M:QES.UITimer.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UITimer"/> class.
+            </summary>
+            <param name="servicio">The servicio.</param>
+        </member>
+        <member name="M:QES.UITimer.crear_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the crear control. Añade un nuevo evento de temporizador
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UITimer.delete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the delete control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UITimer.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UITimer.Servicio">
+            <summary>
+            Gets or sets the servicio.
+            </summary>
+            <value>
+            The servicio.
+            </value>
+        </member>
+        <member name="T:QES.UIAxisController">
+            <summary>
+            Interaction logic for UIAxisController1.xaml
+            </summary>
+            <summary>
+            UIAxisController
+            </summary>
+        </member>
+        <member name="F:QES.UIAxisController._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIAxisController.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIAxisController"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIAxisController.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIAxisController.Dispositivo">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.QESLog">
+            <summary>
+            Clase para la gestion del log
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.ILogeable">
+            <summary>
+            Interfaz para clases que actuen de log y permitan añadir entradas a este
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.ILogeable.AddEntry(System.String)">
+            <summary>
+            Añade una entrada al log
+            </summary>
+            <param name="entry">The entry.</param>
+        </member>
+        <member name="F:QES.QESLog.Interfaz">
+            <summary>
+            Interfaz que muestra el log
+            </summary>
+        </member>
+        <member name="M:QES.QESLog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESLog"/> class.
+            </summary>
+        </member>
+        <member name="F:QES.QESLog._entradas">
+            <summary>
+            Diccionario con dia/conjunto de entradas
+            </summary>
+        </member>
+        <member name="M:QES.QESLog.AddEntry(System.String)">
+            <summary>
+            Añade una entrada al log con fecha ahora
+            </summary>
+            <param name="content">contenido de la entrada a añadir.</param>
+        </member>
+        <member name="P:QES.QESLog.Entradas">
+            <summary>
+            Gets the entradas.
+            </summary>
+        </member>
+        <member name="T:QES.QESLog.ParLog">
+            <summary>
+            Par de valores con la fecha y la info
+            </summary>
+        </member>
+        <member name="M:QES.QESLog.ParLog.#ctor(System.TimeSpan,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESLog.ParLog"/> class.
+            </summary>
+            <param name="date">tiempo.</param>
+            <param name="content">contenido.</param>
+        </member>
+        <member name="M:QES.QESLog.ParLog.CompareTo(System.Object)">
+            <summary>
+            Compara el objeto con otro
+            </summary>
+            <param name="o">Objeto a comparar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.QESLog.ParLog.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:QES.QESLog.ParLog._Time">
+            <summary>
+            Obtiene o modifica la hora
+            </summary>
+            <value>
+            hora de entrada de la entrada de log.
+            </value>
+        </member>
+        <member name="P:QES.QESLog.ParLog.Time">
+            <summary>
+            Obtiene el tiempo de la fecha. formato largo
+            </summary>
+        </member>
+        <member name="P:QES.QESLog.ParLog.Content">
+            <summary>
+            Obtiene o modifica el contenido
+            </summary>
+            <value>
+            Cotenido de la entrada
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.AxisController">
+            <summary>
+            Clase para la grabacion/captura de imagenes de una camara axis
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.IParametrizale">
+            <summary>
+            Interfaz para implementar las clases con parametros que necesiten salvarse/recuperarse en/de la base de datos
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.IParametrizale.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.IParametrizale.RestoreFromData(System.String[])">
+            <summary>
+            Dados un par de string (atributo, valor), establece la configuracion
+            </summary>
+            <param name="parametros">clave + valor.</param>
+        </member>
+        <member name="F:QuercusEventChain.AxisController._log">
+            <summary>
+            Si no esta a null, entidad encargada de recibir entradas para generar un log
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.AxisController._imageUrl">
+            <summary>
+            Url para captura de imagenes
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.producirLog">
+            <summary>
+            Añade una entrada al log de una grabacion
+            </summary>
+            <param name="endPoint">The end point.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.#ctor(System.String,System.String,System.String,System.Int32,QuercusEventChain.AxisController.Mode,System.String,System.String,System.Boolean,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="!:SpecificAxisRecorder"/> class.
+            </summary>
+            <param name="ip">IP de la camara.</param>
+            <param name="login">Usuario de la camara.</param>
+            <param name="pass">Password de la camara.</param>
+            <param name="time">Tiempo de grabacion en segundos.</param>
+            <param name="modo">Modo de reaccion al evento.</param>
+            <param name="port">Puerto de la camara. Opcional</param>
+            <param name="name">Nombre de la camara. Opcional</param>
+            <param name="showGrabacion">if set to <c>true</c> Muestra la grabacion mientras se realiza.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.Manejar(QuercusEventChain.QESEvent)">
+            <summary>
+            Maneja el evento recibido realizando una grabacion /capturando una imagen
+            de la camara asociada en el constructor
+            </summary>
+            <param name="args">argumentos del evento a tratar.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.capturaImagen">
+            <summary>
+            Captura una imagen de la camara
+            Mas a menudo de lo que deberia no funciona, se recomienda utilizar VAPIX 
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.grabacionTemporizada">
+            <summary>
+            Realiza una grabacion temporizada con todos los datos indicados anteriormente
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.AxisController._amc">
+            <summary>
+            ActiveX para controlar la camra
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.AxisController._name">
+            <summary>
+            nombre de la camara
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.AxisController._show">
+            <summary>
+            Muestra la grabacion mientras se realiza
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.amcView_OnDoubleClick(System.Object,AxAXISMEDIACONTROLLib._IAxisMediaControlEvents_OnDoubleClickEvent)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">Objeto que emite el evento.</param>
+            <param name="e">Parametros del evento.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.x480ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.x360ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.x240ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.x180ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.x120ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Seleccion de resolucion
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="F:QuercusEventChain.AxisController.components">
+            <summary>
+            Variable del diseñador requerida.
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisController.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido del método con el editor de código.
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.AxisController.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.AxisController.Time">
+            <summary>
+            tiempo de grabacion
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.AxisController.Nombre">
+            <summary>
+            Gets the name of the control.
+            </summary>
+            <returns>The name of the control. The default is an empty string ("").</returns>
+        </member>
+        <member name="P:QuercusEventChain.AxisController.Modo">
+            <summary>
+            Gets or sets el modo de reaccion de la camara
+            </summary>
+            <value>
+            Modo de reaccion del controlador. (captura de video, imagen, ambos y ninguno)
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.AxisController.Mode">
+            <summary>
+            Enum para indicar que hara el controlador al recibir un evento
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.GenericAxisController">
+            <summary>
+            Clase para la grabacion/captura de imagenes de camaras axis. 
+            Cuando recibe un evento, en el evento debe incluirse los datos de la camara de la que grabar
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.GenericAxisController._showGrabacion">
+            <summary>
+            true si debe mostrarse una ventana visualizando la grabacion
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.GenericAxisController._log">
+            <summary>
+            Instancia para emitir logs
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.GenericAxisController.Manejar(QuercusEventChain.QESEvent)">
+            <summary>
+            Cuando recive un evento, si es del tipo <see cref="T:QuercusEventChain.QESAxisCameraEvent"/> realiza una captura/grabacion
+            en la camara que indique el evento
+            </summary>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:QuercusEventChain.GenericAxisController.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.GenericAxisController.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="P:QuercusEventChain.GenericAxisController.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.GenericAxisController.Time">
+            <summary>
+            Gets or sets the time.
+            </summary>
+            <value>
+            Tiempo entre grabaciones
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.GenericAxisController.Modo">
+            <summary>
+            Gets or sets the modo.
+            </summary>
+            <value>
+            Modo de operar con las camaras
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.GenericAxisController.Grabadores">
+            <summary>
+            Gets or sets the grabadores.
+            </summary>
+            <value>
+            Controladores para realizar grabaciones
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.AxisConditionalController">
+            <summary>
+            Clase para realizar grabaciones en las camaras en funcion de las que hay definidas en el sistema
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.AxisConditionalController.#ctor(System.Int32,QuercusEventChain.AxisController.Mode,System.Boolean,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.AxisConditionalController"/> class.
+            </summary>
+            <param name="time">tiempo de grabacion.</param>
+            <param name="modo">modo de reaccion(imagen, video).</param>
+            <param name="showGrabacion">indica si mostrar la grabacion mientras se graba.</param>
+            <param name="log">The log.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisConditionalController.Manejar(QuercusEventChain.QESEvent)">
+            <summary>
+            Cuando recive un evento, si es del tipo <see cref="T:QuercusEventChain.QESAxisCameraEvent"/> realiza una captura/grabacion
+            en la camara que indique el evento, filtrando ademas por camara
+            </summary>
+            <param name="e">The event.</param>
+        </member>
+        <member name="M:QuercusEventChain.AxisConditionalController.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.AxisConditionalController.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="P:QuercusEventChain.AxisConditionalController.Camaras">
+            <summary>
+            Lista de camaras que el sistema grabará
+            </summary>
+            <value>
+            Lista de camaras que el sistema grabará
+            </value>
+        </member>
+        <member name="T:QES.App">
+            <summary>
+            Lógica de interacción para App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:QES.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:QES.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:QES.UIServicios">
+            <summary>
+            Lógica de interacción para UIServicios.xaml
+            </summary>
+            <summary>
+            UIServicios
+            </summary>
+        </member>
+        <member name="M:QES.UIServicios.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIServicios"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIServicios.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.UIRecintos">
+            <summary>
+            Lógica de interacción para UIRecintos.xaml
+            </summary>
+            <summary>
+            UIRecintos
+            </summary>
+        </member>
+        <member name="M:QES.UIRecintos.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIRecintos"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIRecintos.UserControl_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the UserControl control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIRecintos.camera_click(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handles the OnClick event on a dispositive
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIRecintos.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.Login.CircularProgressBar">
+            <summary>
+            Circulo de progreso
+            </summary>
+            <summary>
+            CircularProgressBar
+            </summary>
+        </member>
+        <member name="M:QES.Login.CircularProgressBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.Login.CircularProgressBar"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.Login.CircularProgressBar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.UIUser">
+            <summary>
+            Interaction logic for UIUser.xaml
+            </summary>
+            <summary>
+            UIUser
+            </summary>
+        </member>
+        <member name="F:QES.UIUser._user">
+            <summary>
+            Usuario asociado a la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIUser.#ctor(QES.QESUser)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIUser"/> class.
+            </summary>
+            <param name="user">The user.</param>
+        </member>
+        <member name="M:QES.UIUser.deleteBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the deleteBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIUser.adminBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the adminBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIUser.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIUser.Usuario">
+            <summary>
+            Gets the usuario.
+            </summary>
+        </member>
+        <member name="T:QES.UIMail">
+            <summary>
+            Lógica de interacción para UIServicio.xaml
+            </summary>
+            <summary>
+            UIMail
+            </summary>
+        </member>
+        <member name="F:QES.UIMail._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIMail.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIMail"/> class.
+            </summary>
+            <param name="servicio">Servicio a mostrar por la interfaz.</param>
+        </member>
+        <member name="M:QES.UIMail.addButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the addButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIMail.removeButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the removeButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIMail.mailListBox_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the mailListBox control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIMail.increase_button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the increase_button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIMail.decrease_button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the decrease_button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UIMail.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIMail.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QES.UIDispositivos">
+            <summary>
+            Lógica de interacción para UIDispositivos.xaml
+            </summary>
+            <summary>
+            UIDispositivos
+            </summary>
+        </member>
+        <member name="M:QES.UIDispositivos.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIDispositivos"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIDispositivos.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.Login.LoginWindow">
+            <summary>
+            Ventana principal de login
+            </summary>
+            <summary>
+            LoginWindow
+            </summary>
+        </member>
+        <member name="F:QES.Login.LoginWindow._logSuccesful">
+            <summary>
+            A ejecutar cuando el login es correcto
+            </summary>
+        </member>
+        <member name="M:QES.Login.LoginWindow.#ctor(System.Action,QES.Login.LoginWindow.CheckLoginDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.Login.LoginWindow.Login_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Login control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.Login.LoginWindow.Rectangle_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handles the MouseLeftButtonDown event of the Rectangle control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.Login.LoginWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.Login.LoginWindow.CheckLoginDelegate">
+            <summary>
+            Dlegado para comprobar el login
+            </summary>
+            <param name="user">The user.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="T:QES.QESServicio">
+            <summary>
+            Clase que ofrece servicios en respuesta a un evento
+            </summary>
+        </member>
+        <member name="M:QES.QESServicio.#ctor(System.String,QuercusEventChain.QESBase,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESServicio"/> class.
+            </summary>
+            <param name="nombre">Nombre del servicio.</param>
+            <param name="servicio">Servicio que contiene.</param>
+            <param name="tipoInterfaz">tipo de la interfaz para el servicio.</param>
+        </member>
+        <member name="F:QES.QESServicio._tipoInterfaz">
+            <summary>
+            Tipo que define la interfaz del servicio
+            </summary>
+        </member>
+        <member name="F:QES.QESServicio._servicio">
+            <summary>
+            servicio configurable que trata eventos
+            </summary>
+        </member>
+        <member name="P:QES.QESServicio.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>
+            nombre del servicio
+            </value>
+        </member>
+        <member name="P:QES.QESServicio.Servicio">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="P:QES.QESServicio.Interfaz">
+            <summary>
+            Interfaz para motrar al usuario
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.MAILTimer">
+            <summary>
+            Estructura para el control temporal de un MAIL
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.MAILTimer.watch">
+            <summary>
+            Supervisa la temporizacion del mail
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.MAILTimer.txt">
+            <summary>
+            Texto del mail
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESMailSender`1">
+            <summary>
+            Clase que envia emails a distintos destinatarios.(Esta clase deberia llamarse de forma asincrona)
+            </summary>
+            <typeparam name="T">tipo de evento que recibe</typeparam>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1._user">
+            <summary>
+            usuario de correo
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1._pass">
+            <summary>
+            contraseña del correo
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1.cliente">
+            <summary>
+            cliente de mensajeria encargado del envio de mensajes
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1.mensaje">
+            <summary>
+            mensaje a enviar, contiene el destinatario, asunto, cuerpo...
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1.MIN_MINUTES">
+            <summary>
+            minutos que deben pasar hasta que se envie el proximo mail(con el mismo contenido).
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1.timers">
+            <summary>
+            Lista de temporizadores activos
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1.clock">
+            <summary>
+            Reloj de evento de actualizacion de temporizadores
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESMailSender`1._log">
+            <summary>
+            Si no esta a null, entidad encargada de recibir entradas para generar un log
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESMailSender`1"/> class.
+            </summary>
+            <param name="origen">Al receptor le aparecera esta cadena como origen del mensaje..</param>
+            <param name="usuario">usuario del servidor de correo.</param>
+            <param name="pass">pass del servidor de correo.</param>
+            <param name="host">direccion del servidor de correo.</param>
+            <param name="puerto">puerto del servidor de correo.</param>
+            <param name="step">tiempo entre envio de mails.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.SendMail(System.String,System.String,System.String)">
+            <summary>
+            rellena el mensaje y lo envia
+            </summary>
+            <param name="asunto">asunto del mensaje.</param>
+            <param name="cuerpo">cuerpo del mensaje.</param>
+            <param name="archivo">ruta del fichero a enviar. En caso de ser null no se incluye fichero.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.clockElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Evento de contador de reloj finalizado
+            </summary>
+            <param name="sender">Objeto que produce el evento.</param>
+            <param name="e">The <see cref="T:System.Timers.ElapsedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.Manejar(`0)">
+            <summary>
+            Metodo a sobrescribir para Manejar el evento recibido y mandar un mail
+            </summary>
+            <param name="args">evento.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender`1.producirLog(System.String,System.String)">
+            <summary>
+            Añade una entrada al log
+            </summary>
+            <param name="endPoint">The end point.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Origen">
+            <summary>
+            Gets or sets the origen.
+            </summary>
+            <value>
+            Texto origen del mail, debe ser una direccion de correo
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Usuario">
+            <summary>
+            Gets or sets the usuario.
+            </summary>
+            <value>
+            Usuario de la cuenta de correo
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>
+            contraseña del correo
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value>
+            Direccion del Servidor de correo
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Puerto">
+            <summary>
+            Gets or sets the puerto.
+            </summary>
+            <value>
+            Puerto del servidor de correo
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Step">
+            <summary>
+            Gets or sets the step.
+            </summary>
+            <value>
+            Tiempo entre mails
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Destinatarios">
+            <summary>
+            Propiedad para el acceso a los destinatarios
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESMailSender">
+            <summary>
+            Clase que envia emails a distintos destinatarios.(Esta clase deberia llamarse de forma asincrona)
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESMailSender"/> class.
+            </summary>
+            <param name="origen">Al receptor le aparecera esta cadena como origen del mensaje..</param>
+            <param name="usuario">usuario del servidor de correo.</param>
+            <param name="pass">pass del servidor de correo.</param>
+            <param name="host">direccion del servidor de correo.</param>
+            <param name="puerto">puerto del servidor de correo.</param>
+            <param name="step">tiempo entre envio de mails.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESMailSender.Manejar(QuercusEventChain.QESEvent)">
+            <summary>
+            metodo para el trato de un evento, envia un correo
+            </summary>
+            <param name="args">argumentos del evento manejado.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESMailSender.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESTypeBus`1">
+            <summary>
+            Clase que coge un evento y segun el tipo que sea lo envia por una salida(evento) u otra
+            al añadir conectar un evento de salida debe indicarse el tipo de este.
+            </summary>
+            <typeparam name="Q">tipo de evento del bus</typeparam>
+        </member>
+        <member name="F:QuercusEventChain.QESTypeBus`1._heads">
+            <summary>
+            diccionario con las "heads" productoras de eventos asociadas a los tipos
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESTypeBus`1.agregarEvento``1">
+            <summary>
+            agrega un tipo de evento a los que se permitirá producir a este bus si no existe
+            </summary>
+            <typeparam name="T">tipo de evento que se agrega</typeparam>
+        </member>
+        <member name="M:QuercusEventChain.QESTypeBus`1.Conectar``1(QuercusEventChain.QESTail{``0})">
+            <summary>
+            conecta un evento con su tipo asociado en el bus
+            </summary>
+            <typeparam name="T">tipo de evento que se conecta</typeparam>
+            <param name="cola">cola instacia a conectar</param>
+        </member>
+        <member name="M:QuercusEventChain.QESTypeBus`1.lanzar``1(``0)">
+            <summary>
+            lanza un evento del tipo al que corresponda args
+            </summary>
+            <typeparam name="T">tipo del parametro del evento que se lanza</typeparam>
+            <param name="args">argumento del evento lanzado.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESTypeBus`1.condicion(System.Object)">
+            <summary>
+            condicion de lanzado
+            </summary>
+            <param name="args">parametro de la condicion.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QuercusEventChain.QESTypeBus`1.Manejar(`0)">
+            <summary>
+            reaccion al lanzamiento de un evento
+            </summary>
+            <param name="e">Evento a Manejar.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:QuercusEventChain.QESTypeBus`1.QESAutoHead`1" -->
+        <member name="T:QuercusEventChain.QESConditionBus`1">
+            <summary>
+            Clase, a la que llega un evento y salen tantos como condiciones indicadas se cumplan
+            Una especie de "difusor" con condicion
+            </summary>
+            <typeparam name="T">tipo de evento de entrada y salida(debe coincidir con las conexiones)</typeparam>
+        </member>
+        <member name="M:QuercusEventChain.QESConditionBus`1.Conectar(QuercusEventChain.QESConditionBus{`0}.DelegadoCondicion,QuercusEventChain.QESTail{`0})">
+            <summary>
+            Añade una salida con una condicion asociada
+            </summary>
+            <param name="cond">Condicion para que el evento pase a la salida.</param>
+            <param name="salida">Salida que recibira el evento en caso de que se cumpla la condicion.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESConditionBus`1.Manejar(`0)">
+            <summary>
+            Maneja el evento recibido. Lanzando el evento en todas las salidas que cumplan
+            su condicion asociada.
+            </summary>
+            <param name="ev">evento recibido.</param>
+        </member>
+        <member name="T:QuercusEventChain.QESConditionBus`1.DelegadoCondicion">
+            <summary>
+            Tipo de delegado que devuelve un boolean dado un evento
+            Es el tipo de metodo que se le pasara a la clase para checkear una salida
+            </summary>
+            <param name="ev">evento a evaluar.</param>
+            <returns>true si se cumple, false en caso contrario</returns>
+        </member>
+        <member name="T:QES.UILog">
+            <summary>
+            Lógica de interacción para UILog.xaml
+            </summary>
+            <summary>
+            UILog
+            </summary>
+        </member>
+        <member name="F:QES.UILog._log">
+            <summary>
+            Log del que toma todas las entradas
+            </summary>
+        </member>
+        <member name="M:QES.UILog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UILog"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UILog.AddDay(System.DateTime)">
+            <summary>
+            Adds the day.
+            </summary>
+            <param name="d">The day.</param>
+        </member>
+        <member name="M:QES.UILog.Clear">
+            <summary>
+            Elimina todas las entradas del log(grafico)
+            </summary>
+        </member>
+        <member name="M:QES.UILog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESEvent">
+            <summary>
+            Evento basico del sistema, solo contiene un campo de informacion
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESEvent.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESEvent"/> class.
+            </summary>
+            <param name="info">info informacion del evento</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEvent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESEvent"/> class.
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESEvent.Info">
+            <summary>
+            Gets or sets the information of the event.
+            </summary>
+            <value>
+            informacion básica del evento
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESTcpEvent">
+            <summary>
+            Evento producido al llegar un mensaje TCP
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESTcpEvent.#ctor(System.String,System.Net.EndPoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESTcpEvent"/> class.
+            </summary>
+            <param name="info">Mensaje.</param>
+            <param name="emisor">El emisor del mensaje.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESTcpEvent.Emisor">
+            <summary>
+            Obtiene o modifica el emisor del mensaje
+            </summary>
+            <value>
+            EndPoint que envio el mensaje
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESMailEvent">
+            <summary>
+            evento para el envio de un mail.
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESMailEvent.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESMailEvent"/> class.
+            </summary>
+            <param name="_asunto">asunto.</param>
+            <param name="_adjunto">fichero adjunto.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESMailEvent.Asunto">
+            <summary>
+            Gets or sets asunto.
+            </summary>
+            <value>
+            propiedad que identifica el asunto del mensaje.
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESMailEvent.Adjunto">
+            <summary>
+            Gets or sets adjunto.
+            </summary>
+            <value>
+            fichero adjunto al email
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESDisposivitoEvent">
+            <summary>
+            Evento lanzado por un dispositivo
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESDisposivitoEvent.#ctor(System.String,QES.QESDispositivo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESDisposivitoEvent"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="dispositivo">The dispositivo.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESDisposivitoEvent.Dispositivo">
+            <summary>
+            Gets or sets the dispositivo.
+            </summary>
+            <value>
+            Dispositivo relacionado con el evento
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESCameraEvent">
+            <summary>
+            Evento lanzado por una camara
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESCameraEvent.#ctor(System.String,QES.QESCamara)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESCameraEvent"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="camara">The camara.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESCameraEvent.Dispositivo">
+            <summary>
+            Gets or sets the dispositivo.
+            </summary>
+            <value>
+            Camara relacionado con el evento
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESAxisCameraEvent">
+            <summary>
+            Evento lanzado por una camara axis (tambien usado para solicitar una grabacion)
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisCameraEvent.#ctor(System.String,QES.CamaraAxis)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESAxisCameraEvent"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="camara">The camara.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisCameraEvent.Dispositivo">
+            <summary>
+            Gets or sets the dispositivo.
+            </summary>
+            <value>
+            Camara axis relacionado con el evento
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESAxisCameraEvent.QESMotionDetectedEvent">
+            <summary>
+            Evento de deteccion de movimiento en una camara axis
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisCameraEvent.QESMotionDetectedEvent.#ctor(System.String,QES.CamaraAxis)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESAxisCameraEvent.QESMotionDetectedEvent"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="camara">The camara.</param>
+        </member>
+        <member name="T:QuercusEventChain.QESAxisCameraEvent.QESCrossLineEvent">
+            <summary>
+            Evento de cross line en una camara axis
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisCameraEvent.QESCrossLineEvent.#ctor(System.String,QES.CamaraAxis)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESAxisCameraEvent.QESCrossLineEvent"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="camara">The camara.</param>
+        </member>
+        <member name="T:QuercusEventChain.EventsExtensionMethods">
+            <summary>
+            Clase para añadir un metodo a QESTCPEvent 
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.EventsExtensionMethods.AsAxisCamera(QuercusEventChain.QESTcpEvent)">
+            <summary>
+            Metodo para pasar un evento Tcp a un evento de camara axis
+            </summary>
+            <param name="ev">The ev.</param>
+            <returns></returns>
+        </member>
+        <member name="T:QuercusEventChain.QESBody`2">
+            <summary>
+            Clase que consume eventos del sistema y genera otro de tipo diferente, siendo una
+            especie de "pieza" intermedia. Ej: Clase que al recibir dos eventos difrentes emita otro.  
+            Es una clase generica, el primer tipo corresponde al que consume y el segundo al que genera.
+            </summary>
+            <typeparam name="Q"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:QuercusEventChain.QESBody`1">
+            <summary>
+            Esta implementacion recibe y genera los eventos del mismo tipo.
+            Ej: Clase que al recibir dos eventos difrentes emita otro.    
+            Es una clase generica, el primer tipo corresponde al que consume y el segundo al que genera.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:QuercusEventChain.QESBody`1.Manejar(`0)">
+            <summary>
+            metodo con el que se trata el evento lanzado por la case a la que esta suscrito, no hace mas
+            que volver a lanzarlo.
+            </summary>
+            <param name="args">argumento del evento a pasar.</param>
+        </member>
+        <member name="T:QES.MainWindow">
+            <summary>
+            Lógica de interacción para MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:QES.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.MainWindow.Window_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the Closing event of the Window control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.CancelEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.BDConfig">
+            <summary>
+            Interaction logic for BDConfig.xaml
+            </summary>
+            <summary>
+            BDConfig
+            </summary>
+        </member>
+        <member name="F:QES.BDConfig.elementosUI">
+            <summary>
+            Elementos de la UI a mostrar/ocultar segun la seleccion del combobox
+            </summary>
+        </member>
+        <member name="M:QES.BDConfig.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.BDConfig"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.BDConfig.cancelBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the cancelBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.BDConfig.acceptBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the acceptBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.BDConfig.bdTestBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the bdTestBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.BDConfig.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESSMS`1">
+            <summary>
+            Gestiona el envio de SMS
+            Atencion:La ultima vez que se testeo, el servicio web, no funcionaba correctamente
+            </summary>
+            <typeparam name="T">tipo de eventos que recibe</typeparam>
+        </member>
+        <member name="F:QuercusEventChain.QESSMS`1.client">
+            <summary>
+            cliente sms
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESSMS`1._log">
+            <summary>
+            Si no esta a null, entidad encargada de recibir entradas para generar un log
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESSMS`1.#ctor(QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESSMS`1"/> class.
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESSMS`1.SendSMS(System.String,System.String,System.String,System.String)">
+            <summary>
+            Envia un sms con los datos proporcionados como parametros
+            </summary>
+            <param name="from">quien envia el mensaje(email).</param>
+            <param name="code">codigo telefonico del pais.</param>
+            <param name="number">numero de telefono.</param>
+            <param name="message">cuerpo del mensaje.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESSMS`1.producirLog(System.String,System.String)">
+            <summary>
+            Añade una entrada al log
+            </summary>
+            <param name="endPoint">The end point.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESSMS`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QES.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:QES.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:QES.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:QES.EsendexSendService.MessengerHeader">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.MessengerHeader.Username">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.MessengerHeader.Password">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.MessengerHeader.Account">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.MessengerHeader.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:QES.EsendexSendService.messagesubmission">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.messagesubmission.originator">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.messagesubmission.recipient">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.messagesubmission.body">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.messagesubmission.type">
+            <remarks/>
+        </member>
+        <member name="P:QES.EsendexSendService.messagesubmission.validityperiod">
+            <remarks/>
+        </member>
+        <member name="T:QES.EsendexSendService.MessageContentType">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.Text">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.Binary">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.SmartMessage">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.Unicode">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.WapPush">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.LongMessage">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.WDPMessage">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.AdvancedMessage">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageContentType.VoiceMessage">
+            <remarks/>
+        </member>
+        <member name="T:QES.EsendexSendService.MessageType">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageType.Text">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageType.Binary">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageType.SmartMessage">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageType.Unicode">
+            <remarks/>
+        </member>
+        <member name="T:QES.EsendexSendService.MessageStatusCode">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageStatusCode.Queued">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageStatusCode.Sent">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageStatusCode.Delivered">
+            <remarks/>
+        </member>
+        <member name="F:QES.EsendexSendService.MessageStatusCode.Failed">
+            <remarks/>
+        </member>
+        <member name="T:QES.RoleSettings">
+            <summary>
+            Interaction logic for RoleSettings.xaml
+            </summary>
+            <summary>
+            RoleSettings
+            </summary>
+        </member>
+        <member name="M:QES.RoleSettings.#ctor(QES.QESRole)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.RoleSettings"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.RoleSettings.cancelBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the cancelBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.RoleSettings.acceptBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the acceptBut control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.RoleSettings.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.RoleSettings.Rol">
+            <summary>
+            Gets or sets the rol.
+            </summary>
+            <value>
+            The rol.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESTimer`1">
+            <summary>
+            Clase a heredar para implementar como se lanzaran los eventos ante la activacion de temoprizadores
+            </summary>
+            <typeparam name="T">tipo de eventos que emite</typeparam>
+        </member>
+        <member name="F:QuercusEventChain.QESTimer`1._timers">
+            <summary>
+            Temporizadores que contiene la clase
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESTimer`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESTimer`1"/> class.
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESTimer`1.AddEvent(System.DateTime,QuercusEventChain.QESTimer{`0}.TimerAction,QuercusEventChain.QESTimer{`0}.REPEAT)">
+            <summary>
+            Add an acction asociated to a specific date
+            </summary>
+            <param name="datetime">The date.</param>
+            <param name="accion">The accion.</param>
+            <param name="repetir">The repetir.</param>
+        </member>
+        <member name="T:QuercusEventChain.QESTimer`1.TimerAction">
+            <summary>
+            Firma de metodo que se ejecutará al finalizar el temporizador
+            </summary>
+            <returns>Evento a lanzar, null si no se debe lanzar</returns>
+        </member>
+        <member name="T:QuercusEventChain.QESTimer`1.REPEAT">
+            <summary>
+            Tipo para definir cada cuanto se debe repetir el temporizador
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESAxisRecordingTimer">
+            <summary>
+            Al cumplirse una fecha, se envía un evento de grabación, cámara + duración en campo info.
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESAxisRecordingTimer._eventos">
+            <summary>
+            Lista de los eventos salvados
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisRecordingTimer.AddEvent(System.String,System.DateTime,System.DateTime,QuercusEventChain.QESTimer{QuercusEventChain.QESEvent}.REPEAT)">
+            <summary>
+            Añade un temporizador para una grabacion
+            </summary>
+            <param name="Camera">The camera.</param>
+            <param name="from">fecha y hora de inicio.</param>
+            <param name="to">fecha y hora de fin.</param>
+            <param name="repetir">Modo de repeticion. Por defecto NO</param>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisRecordingTimer.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.QESAxisRecordingTimer.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.Eventos">
+            <summary>
+            Obtiene la lista de eventos
+            </summary>
+            <value>
+            Lista de los eventos salvados
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESAxisRecordingTimer.EventEntry">
+            <summary>
+            Clase que representa una entrada para un evento
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.EventEntry.Camera">
+            <summary>
+            Gets or sets the camera.
+            </summary>
+            <value>
+            Camara d ela que grabar
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.EventEntry.From">
+            <summary>
+            Gets or sets from.
+            </summary>
+            <value>
+            Inicio de la grabacion
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.EventEntry.To">
+            <summary>
+            Gets or sets to.
+            </summary>
+            <value>
+            Fin de la grabacion
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.EventEntry.Repetir">
+            <summary>
+            Gets or sets the repetir.
+            </summary>
+            <value>
+            Indica si hay que repetir el evento
+            </value>
+        </member>
+        <member name="P:QuercusEventChain.QESAxisRecordingTimer.EventEntry.Temporizador">
+            <summary>
+            Gets or sets the temporizador.
+            </summary>
+            <value>
+            Timer del evento
+            </value>
+        </member>
+        <member name="T:QES.CamaraAxis">
+            <summary>
+            Camara del sistema, con toda la informacion necesaria
+            </summary>
+        </member>
+        <member name="T:QES.QESCamara">
+            <summary>
+            Camara del sistema, con toda la informacion necesaria
+            </summary>
+        </member>
+        <member name="M:QES.QESCamara.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESCamara"/> class.
+            </summary>
+            <param name="nombre">Nombre de la camara.</param>
+            <param name="ip">ip de la camara.</param>
+            <param name="port">puerto de la camara. Opcional</param>
+        </member>
+        <member name="M:QES.QESCamara.Visualizar">
+            <summary>
+            Metodo para visualizar el dispositivo
+            </summary>
+        </member>
+        <member name="P:QES.QESCamara.IP">
+            <summary>
+            Gets or sets the IP.
+            </summary>
+            <value>
+            Direccion IP de la camara en IPAddress
+            </value>
+        </member>
+        <member name="P:QES.QESCamara.IPString">
+            <summary>
+            Gets or sets the IP string.
+            </summary>
+            <value>
+            Direccion IP de la camara en String
+            </value>
+        </member>
+        <member name="P:QES.QESCamara.Puerto">
+            <summary>
+            Gets or sets the puerto.
+            </summary>
+            <value>
+            Puerto que usa la camara
+            </value>
+        </member>
+        <member name="P:QES.QESCamara.Interfaz">
+            <summary>
+            Interfaz para motrar al usuario
+            </summary>
+        </member>
+        <member name="M:QES.CamaraAxis.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.CamaraAxis"/> class.
+            </summary>
+            <param name="nombre">Nombre de la camar.</param>
+            <param name="ip">ip.</param>
+            <param name="user">user.</param>
+            <param name="pass"> pass.</param>
+            <param name="audio">if set to <c>true</c> [audio].</param>
+            <param name="audioOut">if set to <c>true</c> [audio out].</param>
+            <param name="ptz">if set to <c>true</c> [PTZ].</param>
+            <param name="port">The port.</param>
+        </member>
+        <member name="F:QES.CamaraAxis._user">
+            <summary>
+            Usuario para conectarse a la camara
+            </summary>
+        </member>
+        <member name="F:QES.CamaraAxis._pass">
+            <summary>
+            Contraseña para conectarse a la camara
+            </summary>
+        </member>
+        <member name="F:QES.CamaraAxis._audio">
+            <summary>
+            Boleano que indica si la camara envia audio
+            </summary>
+        </member>
+        <member name="F:QES.CamaraAxis._audioOut">
+            <summary>
+            Boleano que indica si la camara recibe audio(y emite al exterior)
+            </summary>
+        </member>
+        <member name="F:QES.CamaraAxis._ptz">
+            <summary>
+            Boleano que indica si la camara es PTZ
+            </summary>
+        </member>
+        <member name="M:QES.CamaraAxis.Visualizar">
+            <summary>
+            Metodo para visualizar el dispositivo
+            </summary>
+        </member>
+        <member name="P:QES.CamaraAxis.User">
+            <summary>
+            Gets the user.
+            </summary>
+        </member>
+        <member name="P:QES.CamaraAxis.Pass">
+            <summary>
+            Gets the pass.
+            </summary>
+        </member>
+        <member name="P:QES.CamaraAxis.Audio">
+            <summary>
+            Gets a value indicating whether this <see cref="T:QES.CamaraAxis"/> is audio.
+            </summary>
+            <value>
+              <c>true</c> if audio; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:QES.CamaraAxis.AudioOut">
+            <summary>
+            Gets a value indicating whether [audio out].
+            </summary>
+            <value>
+              <c>true</c> if [audio out]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:QES.CamaraAxis.PTZ">
+            <summary>
+            Gets a value indicating whether this <see cref="T:QES.CamaraAxis"/> is PTZ.
+            </summary>
+            <value>
+              <c>true</c> if PTZ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:QES.CamaraAxis.Interfaz">
+            <summary>
+            Interfaz para motrar al usuario
+            </summary>
+        </member>
+        <member name="T:QES.LoginReturn">
+            <summary>
+            Clase que instancia el servidor al devolver el token del login
+            Se podrian utilizar clases anonimas, pero no es igual de limpio y da mas problemas al serializar
+            </summary>
+        </member>
+        <member name="T:QES.DispositivosReturn">
+            <summary>
+            clase que se instanciar al devolver la lista de todos los dispositivos
+            </summary>
+        </member>
+        <member name="T:QES.CamaraDetailReturn">
+            <summary>
+            clase que se instanciar al devolverdetalles de una camara
+            </summary>
+        </member>
+        <member name="T:QES.ServiciosReturn">
+            <summary>
+            Contenedor de servicios
+            </summary>
+        </member>
+        <member name="T:QES.UsuariosReturn">
+            <summary>
+            Contenedor de usuarios
+            </summary>
+        </member>
+        <member name="T:QES.PrivilegiosReturn">
+            <summary>
+            Contenedor de privilegios
+            </summary>
+        </member>
+        <member name="T:QES.QESRecinto">
+            <summary>
+            Recinto que contiene dispositivos y al que se le asignan roles
+            </summary>
+        </member>
+        <member name="M:QES.QESRecinto.#ctor(System.String,System.String,QES.QESRecinto.DispEntry[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESRecinto"/> class.
+            </summary>
+            <param name="camaras">Camaras a incluir.</param>
+        </member>
+        <member name="F:QES.QESRecinto._dispositivos">
+            <summary>
+            Coleccion privada contenedora de los dispositvos, la clave es el nombre(String) 
+            y el valor el dispositivo en si
+            </summary>
+        </member>
+        <member name="P:QES.QESRecinto.Dispositivos">
+            <summary>
+            Propiedad para el acceso solo de lectura a la coleccion de dispositivos contenidas
+            en el recinto.
+            </summary>
+        </member>
+        <member name="P:QES.QESRecinto.Nombre">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            Nombre del recinto.
+            </value>
+        </member>
+        <member name="P:QES.QESRecinto.Plano">
+            <summary>
+            Gets or sets the plano.
+            </summary>
+            <value>
+            plano del recinto.
+            </value>
+        </member>
+        <member name="T:QES.QESRecinto.DispEntry">
+            <summary>
+            Entrada para guardar el dispositivo y los datos para le plano
+            </summary>
+        </member>
+        <member name="M:QES.QESRecinto.DispEntry.#ctor(QES.QESDispositivo,System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.QESRecinto.DispEntry"/> class.
+            </summary>
+        </member>
+        <member name="P:QES.QESRecinto.DispEntry.Dispositivo">
+            <summary>
+            Dispositivo
+            </summary>
+            <value>
+            The dispositivo.
+            </value>
+        </member>
+        <member name="P:QES.QESRecinto.DispEntry.X">
+            <summary>
+            Distancia en pixeles de la izquierda
+            </summary>
+            <value>
+            corrdenada x
+            </value>
+        </member>
+        <member name="P:QES.QESRecinto.DispEntry.Y">
+            <summary>
+            Distancia en pixeles de arriba
+            </summary>
+            <value>
+            coordenada y
+            </value>
+        </member>
+        <member name="P:QES.QESRecinto.DispEntry.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+            <value>
+            icono.
+            </value>
+        </member>
+        <member name="T:QES.QESGestor">
+            <summary>
+            Gestor encargado de coordinar la aplicación, es una instancia Singleton
+            que puede ser accedida desde cualquier parte del proyecto
+            </summary>
+        </member>
+        <member name="M:QES.QESGestor.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:QES.QESGestor"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:QES.QESGestor.StartWebServices">
+            <summary>
+            Starts the web services.
+            </summary>
+        </member>
+        <member name="M:QES.QESGestor.Dispose">
+            <summary>
+            Releases unmanaged and - optionally - managed resources
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._instancia">
+            <summary>
+            variable que referencia a la unica instancia posible de la clase QESGestor
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._activeServices">
+            <summary>
+            Cola de servicios web
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._log">
+            <summary>
+            Log del sistema
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._dispositivos">
+            <summary>
+            dispositivos contenidos en el sistema
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._recintos">
+            <summary>
+            recinstos en los que se divide el sistema
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._servicios">
+            <summary>
+            servicios que ofrece el sistema en respuesta a eventos
+            </summary>
+        </member>
+        <member name="F:QES.QESGestor._users">
+            <summary>
+            Usuarios que posee el systema
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Instancia">
+            <summary>
+            propiedad para el acceso a la instancia de la clase
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Log">
+            <summary>
+            Gets the log.
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Dispositivos">
+            <summary>
+            Gets the dispositivos.
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Recintos">
+            <summary>
+            Gets the recintos.
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Servicios">
+            <summary>
+            Gets the servicios.
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.Usuarios">
+            <summary>
+            Gets the usuarios.
+            </summary>
+        </member>
+        <member name="P:QES.QESGestor.ClienteBD">
+            <summary>
+            Gets or sets the ciente BD.
+            </summary>
+            <value>
+            The ciente BD.
+            </value>
+        </member>
+        <member name="T:QES.UIUsuarios">
+            <summary>
+            Lógica de interacción para UIUsuarios.xaml
+            </summary>
+            <summary>
+            UIUsuarios
+            </summary>
+        </member>
+        <member name="M:QES.UIUsuarios.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIUsuarios"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIUsuarios.AddUser(QES.QESUser)">
+            <summary>
+            Adds the user to the interface.
+            </summary>
+            <param name="user">The user.</param>
+        </member>
+        <member name="M:QES.UIUsuarios.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.UIGenericAxisController">
+            <summary>
+            Interaction logic for UIAxisController1.xaml
+            </summary>
+            <summary>
+            UIGenericAxisController
+            </summary>
+        </member>
+        <member name="F:QES.UIGenericAxisController._servicio">
+            <summary>
+            Servicio con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UIGenericAxisController.#ctor(QES.QESServicio)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UIAxisController"/> class.
+            </summary>
+        </member>
+        <member name="M:QES.UIGenericAxisController.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:QES.UIGenericAxisController.Dispositivo">
+            <summary>
+            Gets the servicio.
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.SMSTimer">
+            <summary>
+            Estructura para el control temporal de un SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.SMSTimer.watch">
+            <summary>
+            Supervisa la temporizacion del SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.SMSTimer.sms">
+            <summary>
+            Texto del SMS
+            </summary>
+        </member>
+        <member name="T:QuercusEventChain.QESEsendexSMS`1">
+            <summary>
+            Gestiona el envio de SMS a traves de una cuenta Essendex
+            </summary>
+            <typeparam name="T">Evento que trata</typeparam>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._recipients">
+            <summary>
+            lista de destinatarios
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1.MIN_SMS_MINUTES">
+            <summary>
+            Tiempo minimo que debe transcurrir entre un SMS y otro
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._smsaccount">
+            <summary>
+            Nombre de la cuenta de envio de SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._smslogin">
+            <summary>
+            Login de la cuenta de envio de SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._smspassword">
+            <summary>
+            Password de la cuenta de envio de SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1.timers">
+            <summary>
+            Lista de temporizadores activos
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._clock">
+            <summary>
+            Reloj de evento de actualizacion de temporizadores
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._sendsms">
+            <summary>
+            Servicio para el envio de SMS
+            </summary>
+        </member>
+        <member name="F:QuercusEventChain.QESEsendexSMS`1._log">
+            <summary>
+            Si no esta a null, entidad encargada de recibir entradas para generar un log
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.PopulateServiceHeader">
+            <summary>
+            Establece lo parametros para la cabecera de envio de SMS
+            </summary>
+            <returns>Cabecera del mensaje</returns>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.#ctor(System.String,System.String,System.String,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESEsendexSMS`1"/> class.
+            </summary>
+            <param name="account">ID de la cuenta de acceso a esendex.</param>
+            <param name="login">nombre de la cuenta de acceso a esendex.</param>
+            <param name="password">contraseña de la cuenta.</param>
+            <param name="step">tiempo en minutos entre envio de sms.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.clockElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Evento de contador de reloj finalizado
+            </summary>
+            <param name="sender">sender Objeto que produce el evento.</param>
+            <param name="e">The <see cref="T:System.Timers.ElapsedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.sendSMS(System.String)">
+            <summary>
+            Envia un mensaje de texto a cada uno de los telefonos con acceso a la camara
+            </summary>
+            <param name="sms">Mensaje que se desea enviar.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.producirLog(System.String,System.String)">
+            <summary>
+            Añade una entrada al log
+            </summary>
+            <param name="endPoint">The end point.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.GetDataToStore">
+            <summary>
+            Devuelve todos los datos que deben ser almacenados
+            </summary>
+            <returns>Conjunto de pares. Cada par contiene Clave + valor</returns>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.RestoreFromData(System.String[])">
+            <summary>
+            Pone el valor a un atributo por parametro.
+            </summary>
+            <param name="parametros">El parametro.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS`1.Manejar(`0)">
+            <summary>
+            Metodo a sobrescribir para manejar el evento recibido
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESEsendexSMS`1.Recipients">
+            <summary>
+            Propiedad para el acceso a los destinatarios
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESEsendexSMS`1.Account">
+            <summary>
+            Obtiene el usuario de la cuenta essendex
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESEsendexSMS`1.Step">
+            <summary>
+            Obtiene el intervalo en minutos entre el envio de sms
+            </summary>
+        </member>
+        <member name="P:QuercusEventChain.QESEsendexSMS`1.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QuercusEventChain.QESEsendexSMS">
+            <summary>
+            Gestiona el envio de SMS
+            </summary>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS.#ctor(System.String,System.String,System.String,System.Int32,QuercusEventChain.ILogeable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuercusEventChain.QESEsendexSMS"/> class.
+            </summary>
+            <param name="account">ID de la cuenta de acceso a esendex.</param>
+            <param name="login">nombre de la cuenta de acceso a esendex.</param>
+            <param name="password">contraseña de la cuenta.</param>
+            <param name="step">tiempo en minutos entre envio de sms.</param>
+        </member>
+        <member name="M:QuercusEventChain.QESEsendexSMS.Manejar(QuercusEventChain.QESEvent)">
+            <summary>
+            implementacion del comportamiento de la clase al recibir un evento
+            </summary>
+            <param name="args">parametros del evento.</param>
+        </member>
+        <member name="P:QuercusEventChain.QESEsendexSMS.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:QuercusEventChain.QESBase"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:QES.UtilBD">
+            <summary>
+            Clase con extension method para aislar todo el codigo SQL
+            </summary>
+        </member>
+        <member name="M:QES.UtilBD.SaveToDB(QES.QESLog,QES.DBClient)">
+            <summary>
+            Save the log to DB.
+            </summary>
+            <param name="log">The log.</param>
+            <param name="cliente">The cliente.</param>
+        </member>
+        <member name="M:QES.UtilBD.LoadFromDB(QES.QESLog,QES.DBClient)">
+            <summary>
+            Carga el log desde la BD.
+            </summary>
+            <param name="log">The log.</param>
+            <param name="clienteBD">The cliente BD.</param>
+        </member>
+        <member name="M:QES.UtilBD.SaveComponentData(QES.QESGestor)">
+            <summary>
+            Almacena los parametros de todos los componentes
+            </summary>
+        </member>
+        <member name="M:QES.UtilBD.RestoreComponentData(QES.QESGestor)">
+            <summary>
+            Carga todos los parametros de los servicios
+            </summary>
+        </member>
+        <member name="M:QES.UtilBD.SaveUserData(QES.QESGestor)">
+            <summary>
+            Almacena los datos de todos los usuarios
+            </summary>
+        </member>
+        <member name="M:QES.UtilBD.RestoreUsersData(QES.QESGestor)">
+            <summary>
+            Carga todos los usuarios
+            </summary>
+        </member>
+        <member name="T:QES.XmlFileManager">
+            <summary>
+            Clase para cargar configuracion de fichero xml
+            </summary>
+        </member>
+        <member name="M:QES.XmlFileManager.LoadDB(System.String)">
+            <summary>
+            Devuelve un DBclient en funcion de la configuracion en el archivo indicado.
+            null en caso de errores
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.XmlFileManager.LoadTimeout(System.String)">
+            <summary>
+            Devuelve el tiempo de desconecsion de los usuarios cargado del fichero xml.
+            null en caso de errores
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="T:QES.UICamaraAxis">
+            <summary>
+            Lógica de interacción para Dispositivo.xaml
+            </summary>
+            <summary>
+            UICamaraAxis
+            </summary>
+        </member>
+        <member name="F:QES.UICamaraAxis._dispositivo">
+            <summary>
+            Dispositivo con el que se rellena la interfaz
+            </summary>
+        </member>
+        <member name="M:QES.UICamaraAxis.#ctor(QES.CamaraAxis)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.UICamaraAxis"/> class.
+            </summary>
+            <param name="d">dispositivo que mostrará la interfaz.</param>
+        </member>
+        <member name="M:QES.UICamaraAxis.button1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the button1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:QES.UICamaraAxis.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:QES.DBConectionTypes">
+            <summary>
+            Enum con los tipos de conexiones soportados
+            </summary>
+        </member>
+        <member name="T:QES.DBClient">
+            <summary>
+            Interface para acceder a la BD
+            </summary>
+        </member>
+        <member name="M:QES.DBClient.Select(System.String)">
+            <summary>
+            Obtiene el resultado de una cosulta SQL
+            </summary>
+            <param name="select">The select.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.DBClient.Command(System.String)">
+            <summary>
+            Operacion sql sin resultado
+            </summary>
+            <param name="command">The command.</param>
+            <returns>codigo de resultado</returns>
+        </member>
+        <member name="P:QES.DBClient.ConfigToSave">
+            <summary>
+            Gets or sets the pairs to save.
+            </summary>
+            <value>
+            Valores a guardar en el archivo
+            </value>
+        </member>
+        <member name="T:QES.ODBCClient">
+            <summary>
+            Cliente para conectar a la base de datos a traves de ODBC
+            </summary>
+        </member>
+        <member name="F:QES.ODBCClient.connection">
+            <summary>
+            Conexion con la base de datos
+            </summary>
+        </member>
+        <member name="F:QES.ODBCClient.connectionString">
+            <summary>
+            Cadena de conexion a la base de datos
+            </summary>
+        </member>
+        <member name="F:QES.ODBCClient.timeOut">
+            <summary>
+            Temporizador para la conexion SQL
+            </summary>
+        </member>
+        <member name="M:QES.ODBCClient.OpenConnection">
+            <summary>
+            Open the connection.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.ODBCClient.Select(System.String)">
+            <summary>
+            Select from db
+            </summary>
+            <param name="select">The select command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.ODBCClient.Command(System.String)">
+            <summary>
+            Realiza una operacion sql
+            </summary>
+            <param name="command">The command.</param>
+            <returns>codigo de resultado</returns>
+        </member>
+        <member name="P:QES.ODBCClient.ConfigToSave">
+            <summary>
+            Gets or sets the pairs to save.
+            </summary>
+            <value>
+            Valores a guardar en el archivo
+            </value>
+        </member>
+        <member name="T:QES.PostgreClient">
+            <summary>
+            Clase para conectarse a la base de datos a traves del driver de postgre NPGSQL
+            </summary>
+        </member>
+        <member name="F:QES.PostgreClient.connection">
+            <summary>
+            Conexion a la base de datos
+            </summary>
+        </member>
+        <member name="F:QES.PostgreClient.connectionString">
+            <summary>
+            Cadena de conexion de la BD
+            </summary>
+        </member>
+        <member name="F:QES.PostgreClient.timeOut">
+            <summary>
+            Temporizador para la conexion SQL
+            </summary>
+        </member>
+        <member name="M:QES.PostgreClient.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QES.PostgreClient"/> class.
+            </summary>
+            <param name="server">The server.</param>
+            <param name="port">The port.</param>
+            <param name="database">The database.</param>
+            <param name="user">The user.</param>
+            <param name="pass">The pass.</param>
+        </member>
+        <member name="M:QES.PostgreClient.OpenConnection">
+            <summary>
+            Open the connection.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.PostgreClient.Select(System.String)">
+            <summary>
+            Select from db
+            </summary>
+            <param name="select">The select command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QES.PostgreClient.Command(System.String)">
+            <summary>
+            Realiza una operacion sql
+            </summary>
+            <param name="command">The command.</param>
+            <returns>codigo de resultado</returns>
+        </member>
+        <member name="P:QES.PostgreClient.ConfigToSave">
+            <summary>
+            Gets or sets the pairs to save.
+            </summary>
+            <value>
+            Valores a guardar en el archivo
+            </value>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\Nugget.Tests.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\Nugget.Tests.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\Nugget.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\nunit.framework.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\bin\Debug\Nugget.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\obj\Debug\Nugget.Tests.csprojResolveAssemblyReference.cache
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\obj\Debug\Nugget.Tests.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Tests\obj\Debug\Nugget.Tests.pdb

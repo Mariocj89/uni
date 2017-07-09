@@ -1,0 +1,8 @@
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\bin\Debug\ConsoleApp.exe
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\bin\Debug\ConsoleApp.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\bin\Debug\Nugget.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\bin\Debug\Nugget.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\obj\x86\Debug\ConsoleApp.exe
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\obj\x86\Debug\ConsoleApp.pdb
+D:\Mis Documentos\workspace\Visual Studio\QuercusEventSystem\Nugget\Samples\01 - ConsoleApp\obj\x86\Debug\01 - ConsoleApp.csprojResolveAssemblyReference.cache

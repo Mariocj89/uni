@@ -1,0 +1,21 @@
+﻿<Application x:Class="QES.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="ContenedorContenido" TargetType="UserControl">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+        </Style>
+        <Style x:Key="Contenido" TargetType="TabControl">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="TabStripPlacement" Value="Left" />
+        </Style>
+        <Style x:Key="Pestania" TargetType="TabItem">
+            <Setter Property="MinWidth" Value="100" />
+        </Style>
+    </Application.Resources>
+</Application>
